@@ -1,0 +1,571 @@
+{
+  "result": "PASS",
+  "expected": 47,
+  "actual": 47,
+  "images": [
+    {
+      "file": "angry1.png",
+      "size": [
+        990,
+        1589
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "sha256": "71ed266f309d032a32dc658fe4ccf6a0f21272134ead8f9a7315adb608e36823"
+    },
+    {
+      "file": "angry2.png",
+      "size": [
+        990,
+        1589
+      ],
+      "alpha_extrema": [
+        0,
+        254
+      ],
+      "sha256": "6743e6ffc9d2d996da9f3e52c72dd1bd02b9e7a8c5c2d38aceb76401a82e4456"
+    },
+    {
+      "file": "angry3.png",
+      "size": [
+        990,
+        1589
+      ],
+      "alpha_extrema": [
+        0,
+        254
+      ],
+      "sha256": "ad128150608af1b0360af0b02f937931a1c64a4b50c2d18e4514fd2f3ba5bc0f"
+    },
+    {
+      "file": "blood.png",
+      "size": [
+        990,
+        1588
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "sha256": "410a4463f06b56264138681a6ba7eed23bbe2c84d590f9d9c592dff7842bb96e"
+    },
+    {
+      "file": "blood_laugh1.png",
+      "size": [
+        990,
+        1589
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "sha256": "66b47a05f1a151b1ef9a285da75be34f7a229e0ea0900e82c50efc45a19c5f4e"
+    },
+    {
+      "file": "blood_nervous1.png",
+      "size": [
+        990,
+        1589
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "sha256": "d81baf66c13a456c0cc2753b96745dfa18efc1c1b58af58a4e78f22555069648"
+    },
+    {
+      "file": "blood_no_weapon.png",
+      "size": [
+        991,
+        1587
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "sha256": "eae91a8a63ba0e223c7f8e53f0f840b125af45171ab04531c444f3cb41ead2d2"
+    },
+    {
+      "file": "blood_no_weapon_laugh1.png",
+      "size": [
+        990,
+        1589
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "sha256": "12d412867bbea241c6ce8bd833b7138293fcc9e96e15ee89e7b3592e6514423a"
+    },
+    {
+      "file": "caught.png",
+      "size": [
+        991,
+        1588
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "sha256": "06b809757ba53bd72cd7548fbc35b26db68a0154c960835c67c380252ab4ddf6"
+    },
+    {
+      "file": "close_eye.png",
+      "size": [
+        990,
+        1588
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "sha256": "f125846f5255fe07f44173c549dfa97c2a329aeb75526c3d5001d85b352141c1"
+    },
+    {
+      "file": "close_eye_laugh.png",
+      "size": [
+        990,
+        1589
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "sha256": "e016df47acb266f053e14cc554bff277b8488f3ffa5bd98bde1ce1430b55aa5a"
+    },
+    {
+      "file": "close_eye_nervous.png",
+      "size": [
+        990,
+        1589
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "sha256": "148f40a72e36022e8dafd8e96bb4a167168164cd6e7c8587ae791c9612d5fc83"
+    },
+    {
+      "file": "close_eye_nervous2.png",
+      "size": [
+        990,
+        1589
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "sha256": "0850abe76b0f816ff3bd96c7656c29b9a8a3d33cf557dc3645e0bdf732cf4dcb"
+    },
+    {
+      "file": "close_eye_powder.png",
+      "size": [
+        990,
+        1588
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "sha256": "557062f5d8f70af0727e59ff84f8b90be29e6cf94ababcacaac8f19f1b863c55"
+    },
+    {
+      "file": "determined.png",
+      "size": [
+        991,
+        1587
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "sha256": "f764e80866cf6b412db7b128102c189ab8b90018256f12e0c0c264b2f4792334"
+    },
+    {
+      "file": "die.png",
+      "size": [
+        991,
+        1587
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "sha256": "f85a4873b548e76e725fdf106cf2c4fca7b9af73d67dd4051e384b601b8b7e45"
+    },
+    {
+      "file": "doubt.png",
+      "size": [
+        990,
+        1589
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "sha256": "885f501c28dd22b1d747e168367c0d2a0d472d8c2817703f0233c954b1eff56f"
+    },
+    {
+      "file": "eye_mask_nervous1.png",
+      "size": [
+        990,
+        1589
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "sha256": "9855fd620390edb73077fce38608b171e73b74033b47ab3f8920d17e22886ce3"
+    },
+    {
+      "file": "eye_mask_nervous2.png",
+      "size": [
+        990,
+        1589
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "sha256": "5dc291ec0cb10db9b95e7158abe8563808cd0848a1691c72950553d2ddccd4b4"
+    },
+    {
+      "file": "fist_north_star.png",
+      "size": [
+        1054,
+        1492
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "sha256": "17484291d8c3af868189c168277039de9e80ffd39c44063150a00cdaa6daff7d"
+    },
+    {
+      "file": "gloomy2.png",
+      "size": [
+        991,
+        1587
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "sha256": "52da58588d8ab583bd3ac05d7e8099f839ad46b0faa28aa4f8dd71848bc15a48"
+    },
+    {
+      "file": "god_thunder.png",
+      "size": [
+        1105,
+        1424
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "sha256": "ab5e0632ec0bf542ccf5b74a12b3968b8967cc564ed315e144dff5f9b940be8e"
+    },
+    {
+      "file": "head.png",
+      "size": [
+        991,
+        1587
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "sha256": "18fe6959f46d9b2e4037b71dba696f77eac8acd996abb40a5287b2259ee0309b"
+    },
+    {
+      "file": "hero_landing.png",
+      "size": [
+        1054,
+        1493
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "sha256": "326d81529cdf811b7c92eab233c7341d7d2feb98c11c3763c5b9c8c2733a7d58"
+    },
+    {
+      "file": "hurt.png",
+      "size": [
+        991,
+        1587
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "sha256": "cebbb70b32af444cf978811f5bb41cd552ba6c9b08ccd9a4eca98bd59fad903b"
+    },
+    {
+      "file": "hurt2.png",
+      "size": [
+        990,
+        1589
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "sha256": "3902a0113e194995e7ad204fe028264f83b6e6a7c4574270cb9fbfd5ff77c360"
+    },
+    {
+      "file": "hurt_fist.png",
+      "size": [
+        1163,
+        1353
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "sha256": "fb9293d16d291d6f3f7074a4633b786ea7216855b0c25845543643c74404a1b2"
+    },
+    {
+      "file": "laugh1.png",
+      "size": [
+        990,
+        1589
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "sha256": "7491aa49e86551424fb7a8d3eb0a4cd5de9e1fb316a2c2b3bd4ff253b7850fef"
+    },
+    {
+      "file": "laugh2.png",
+      "size": [
+        990,
+        1589
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "sha256": "784fd32b12380bbd6a5c652d35d2a34cc1ecaf1511d193dc2c03171b8c7b22d3"
+    },
+    {
+      "file": "mask.png",
+      "size": [
+        990,
+        1589
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "sha256": "b2e6b814d5d82b7843fe9142030578c36d4a0b56d746b04b4ced6be5bbb6ab76"
+    },
+    {
+      "file": "mud.png",
+      "size": [
+        991,
+        1587
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "sha256": "d428346e57623e5f64cc83cfcaccb12e516d645a62a8c00e4b4c039672a2c212"
+    },
+    {
+      "file": "nervous1.png",
+      "size": [
+        990,
+        1589
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "sha256": "4294b3c6893eadd686b92f66540922a49286da736ee230baffa15b98e5106362"
+    },
+    {
+      "file": "nervous2.png",
+      "size": [
+        990,
+        1589
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "sha256": "d74a6c41515426522faeab0f30872bfff259b321d5044e6a180a5335237761da"
+    },
+    {
+      "file": "nervous3.png",
+      "size": [
+        990,
+        1589
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "sha256": "593171cbaec06cebc0ff6548ca46366cd95b2f7c714afe5f59d7a6cc187c1d9d"
+    },
+    {
+      "file": "normal.png",
+      "size": [
+        943,
+        1667
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "sha256": "641270658ef35691fe7e1efc564db70629a4ad8c20f2449c3b0097053b3358d4"
+    },
+    {
+      "file": "oraora.png",
+      "size": [
+        990,
+        1589
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "sha256": "4a87f77d0d7067689e035e2faa01f98e5eef8a05ec3f3c962711e1c569d1a703"
+    },
+    {
+      "file": "revel.png",
+      "size": [
+        990,
+        1589
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "sha256": "8360da7e2c5f46bacab07def0e83dfb46115de5ad9ce39d9d69ef9486799d940"
+    },
+    {
+      "file": "sad1.png",
+      "size": [
+        990,
+        1589
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "sha256": "b6d0d73f58ab79e2abb98776e419360d5936b952b3219106f95286e1e9c2e643"
+    },
+    {
+      "file": "shake.png",
+      "size": [
+        989,
+        1589
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "sha256": "26785f7f528b0698a9ca0074b8836813ed399e1f6101bb7daeb25f96b7aa97f3"
+    },
+    {
+      "file": "shake2.png",
+      "size": [
+        990,
+        1588
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "sha256": "52c02f0ad68067c6196be2be4c106649e9bfb2776e185d34d2429c86d3882313"
+    },
+    {
+      "file": "shock.png",
+      "size": [
+        990,
+        1589
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "sha256": "cb619807925e449ab6a218c2eedcb1c2c4ac9a732c1c3cf1b7c6627b5c660e46"
+    },
+    {
+      "file": "soul.png",
+      "size": [
+        991,
+        1588
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "sha256": "580c1be9fad931a0fd6f78648bff78ce42e7b0412b9b51e1de5f64b5f3de4492"
+    },
+    {
+      "file": "special1.png",
+      "size": [
+        990,
+        1589
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "sha256": "805e81bd85a33aca2848eccffb3d769d2fdcdc4e4194d795acd63470db8eb197"
+    },
+    {
+      "file": "stupid.png",
+      "size": [
+        990,
+        1589
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "sha256": "73873c0300ecf8712e8430cfc4e594aced213229ea817d04d2565a66e5f54b2f"
+    },
+    {
+      "file": "suck1.png",
+      "size": [
+        990,
+        1589
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "sha256": "e988a9014de910fa63b9cd535e121f198a24e83aaa9f78168da97fbea968e35e"
+    },
+    {
+      "file": "suck3.png",
+      "size": [
+        990,
+        1589
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "sha256": "bf7a0673934f5e00f9931e837d2aee3029f96c3ab1042a2815e8780b42680ac9"
+    },
+    {
+      "file": "suck4.png",
+      "size": [
+        990,
+        1589
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "sha256": "68ef6c8d547973eedcec0d8a1d1556d92e4675512c791aae713b7a9a7d54246f"
+    }
+  ]
+}

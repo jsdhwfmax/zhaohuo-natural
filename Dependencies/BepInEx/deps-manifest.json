@@ -1,0 +1,427 @@
+{
+  "SchemaVersion": 1,
+  "PreparedOn": "2026-10-15",
+  "HashAlgorithm": "SHA256",
+  "ChecksumNote": "Checksums were computed from official HTTPS downloads; they are not claims of upstream-signed digest files.",
+  "Runtime": {
+    "Name": "BepInEx",
+    "Version": "6.0.0-be.692+851521c",
+    "Commit": "851521cc126e4f9d841d2d9bfe857558f0395939",
+    "License": "LGPL-2.1-only",
+    "OfficialBuildIndex": "https://builds.bepinex.dev/projects/bepinex_be",
+    "OfficialArchiveUrl": "https://builds.bepinex.dev/projects/bepinex_be/692/BepInEx-Unity.Mono-win-x64-6.0.0-be.692%2B851521c.zip",
+    "OfficialArchiveSha256": "9A3472F5EEFB35A84AE8C6DEA16814B728AFF807C67C14FBFD448E20112951A6",
+    "OfficialArchiveSizeBytes": 645702,
+    "RedistributedFilesUnmodified": true,
+    "Files": [
+      {
+        "RelativePath": "BepInEx/core/0Harmony.dll",
+        "Sha256": "93C0A24085BABF49D8478B28B8271217A76DD02A5DB68794E222BAAA3CE6F2FB",
+        "SizeBytes": 263168
+      },
+      {
+        "RelativePath": "BepInEx/core/AssetRipper.Primitives.dll",
+        "Sha256": "677B7513CD9EAC47385B66365CADA31F8679C37BDD7E132C48E2A072DAA31C04",
+        "SizeBytes": 21504
+      },
+      {
+        "RelativePath": "BepInEx/core/BepInEx.Core.dll",
+        "Sha256": "0C3AE15668F9AEFF35FEB05D29A65A249C025C7B9418D7149404EE8F234B866E",
+        "SizeBytes": 128512
+      },
+      {
+        "RelativePath": "BepInEx/core/BepInEx.Preloader.Core.dll",
+        "Sha256": "5D0D3C4AC7B8B92776F212EE4BD096564BBF5609ECC8FFC38C034B206176EBB4",
+        "SizeBytes": 48128
+      },
+      {
+        "RelativePath": "BepInEx/core/BepInEx.Unity.Common.dll",
+        "Sha256": "541F377BA0445D0560664E86ECD0778A2CAC7DC862C32B8989E52AFBCF7DDDB9",
+        "SizeBytes": 9216
+      },
+      {
+        "RelativePath": "BepInEx/core/BepInEx.Unity.Mono.dll",
+        "Sha256": "F1F0CDC821A6F7D824A4A027950FAE95E12F7DE12219B5D0F57F3AE875A935C8",
+        "SizeBytes": 34816
+      },
+      {
+        "RelativePath": "BepInEx/core/BepInEx.Unity.Mono.Preloader.dll",
+        "Sha256": "0FCFA54344626F8F791D768538C85E115C6ED890239B039AB08BD60CF176BCA1",
+        "SizeBytes": 33280
+      },
+      {
+        "RelativePath": "BepInEx/core/Mono.Cecil.dll",
+        "Sha256": "7AE470288FFF4A402899C254D0A76CEFEF55877F5C54F96E83C797CC5BB6E2F6",
+        "SizeBytes": 339456
+      },
+      {
+        "RelativePath": "BepInEx/core/Mono.Cecil.Mdb.dll",
+        "Sha256": "5896D1898F616701FFF18F3B2C71E6B844D2390EF9F41E1C5FCCCE8CB27C698E",
+        "SizeBytes": 43008
+      },
+      {
+        "RelativePath": "BepInEx/core/Mono.Cecil.Pdb.dll",
+        "Sha256": "174DB44A067F58561510AF746F3CAEB032037762C57A31C8D9EE32DB25174984",
+        "SizeBytes": 86528
+      },
+      {
+        "RelativePath": "BepInEx/core/Mono.Cecil.Rocks.dll",
+        "Sha256": "54AC539FB5DDC8B44C0E9ACD0FCB7324F89D1A072EDF8EBC1B06DD691E3D3927",
+        "SizeBytes": 27648
+      },
+      {
+        "RelativePath": "BepInEx/core/MonoMod.RuntimeDetour.dll",
+        "Sha256": "BD349394835AF325854045AEA90EC58117D029D2303EBB4748B177B73186AFD0",
+        "SizeBytes": 107520
+      },
+      {
+        "RelativePath": "BepInEx/core/MonoMod.Utils.dll",
+        "Sha256": "0C6CBEDE5A816FD00F8158548F0F4011D33D1AB3B61DBEE56037604AC36D58A0",
+        "SizeBytes": 188416
+      },
+      {
+        "RelativePath": "BepInEx/core/SemanticVersioning.dll",
+        "Sha256": "8603F22E2D552A37A9B59474E952FAD4320B53B20A902AB639E7A2ADDDF4FA3E",
+        "SizeBytes": 35328
+      },
+      {
+        "RelativePath": "doorstop_config.ini",
+        "Sha256": "BE1262BFC70F34BAB7CF47C4355CCE1421D1BE34E6B912B1B350BEB9E470ACED",
+        "SizeBytes": 1695
+      }
+    ]
+  },
+  "Loader": {
+    "Name": "UnityDoorstop",
+    "Version": "4.3.0",
+    "Commit": "d061d7eabe9fc36140e7239955515801e2b9db12",
+    "License": "LGPLv2.1",
+    "PackageRelativePath": "Loader/winhttp.dll",
+    "RuntimeManifestIncludesLoader": false,
+    "PeMachine": "0x8664",
+    "Sha256": "D3B62F4C9C3E2196EF82603C52D6B98C043A0D6C125C081FD33D7CA3798B41B8",
+    "SourceArchiveEntry": "x64/winhttp.dll",
+    "OfficialReleaseUrl": "https://github.com/NeighTools/UnityDoorstop/releases/tag/v4.3.0",
+    "OfficialArchiveUrl": "https://github.com/NeighTools/UnityDoorstop/releases/download/v4.3.0/doorstop_win_release_4.3.0.zip",
+    "OfficialArchiveSha256": "E23FEC7A6ADFA07BA26A3E209B617584D0319A1145506AE4E1B892C44E86F679",
+    "Modified": false,
+    "BundledBepInExArchiveEntry": "winhttp.dll",
+    "MatchesBepInEx692BundledLoader": true
+  },
+  "ThirdPartyComponents": [
+    {
+      "Id": "HarmonyX",
+      "Version": "2.10.1",
+      "License": "MIT",
+      "Repository": "https://github.com/BepInEx/HarmonyX",
+      "SourceRef": "46b77d08eac32f8d17f0cbe761bd74cd2be21ff7",
+      "OfficialPackageUrl": "https://api.nuget.org/v3-flatcontainer/harmonyx/2.10.1/harmonyx.2.10.1.nupkg",
+      "OfficialPackageSha256": "B5B07AE4C4E26E60D98BF6A5081385151C0A22A2C2D180B6DDA5E4E7BBBA7DDD",
+      "PackageRedistributed": false,
+      "BinaryProvenance": [
+        {
+          "RuntimeFile": "BepInEx/core/0Harmony.dll",
+          "MatchingOfficialPackageEntries": [
+            "lib/net35/0Harmony.dll"
+          ]
+        }
+      ]
+    },
+    {
+      "Id": "MonoMod.Utils",
+      "Version": "22.5.1.1",
+      "License": "MIT",
+      "Repository": "https://github.com/MonoMod/MonoMod",
+      "SourceRef": "bab61c308f2dbf3a27fea1e29a6a2f200aa72830",
+      "OfficialPackageUrl": "https://api.nuget.org/v3-flatcontainer/monomod.utils/22.5.1.1/monomod.utils.22.5.1.1.nupkg",
+      "OfficialPackageSha256": "E66E82F1A9C2D19E0885AC60E8F4E65D4ED43868B2CD5F9BC990CEF3EC3F925F",
+      "PackageRedistributed": false,
+      "BinaryProvenance": [
+        {
+          "RuntimeFile": "BepInEx/core/MonoMod.Utils.dll",
+          "MatchingOfficialPackageEntries": [
+            "lib/net35/MonoMod.Utils.dll"
+          ]
+        }
+      ]
+    },
+    {
+      "Id": "MonoMod.RuntimeDetour",
+      "Version": "22.5.1.1",
+      "License": "MIT",
+      "Repository": "https://github.com/MonoMod/MonoMod",
+      "SourceRef": "bab61c308f2dbf3a27fea1e29a6a2f200aa72830",
+      "OfficialPackageUrl": "https://api.nuget.org/v3-flatcontainer/monomod.runtimedetour/22.5.1.1/monomod.runtimedetour.22.5.1.1.nupkg",
+      "OfficialPackageSha256": "8AFC5027A556C736A96B1903BE4459BC34158297E614FD5A7D1971EB2A250573",
+      "PackageRedistributed": false,
+      "BinaryProvenance": [
+        {
+          "RuntimeFile": "BepInEx/core/MonoMod.RuntimeDetour.dll",
+          "MatchingOfficialPackageEntries": [
+            "lib/net35/MonoMod.RuntimeDetour.dll"
+          ]
+        }
+      ]
+    },
+    {
+      "Id": "Mono.Cecil",
+      "Version": "0.10.4",
+      "License": "MIT",
+      "Repository": "https://github.com/jbevain/cecil",
+      "SourceRef": "0.10.4",
+      "OfficialPackageUrl": "https://api.nuget.org/v3-flatcontainer/mono.cecil/0.10.4/mono.cecil.0.10.4.nupkg",
+      "OfficialPackageSha256": "3451A4A112A81BE0BF76B8DC2BCA396ACDF0455D80C8961E7903CE1FB35C2A9A",
+      "PackageRedistributed": false,
+      "BinaryProvenance": [
+        {
+          "RuntimeFile": "BepInEx/core/Mono.Cecil.dll",
+          "MatchingOfficialPackageEntries": [
+            "lib/net35/Mono.Cecil.dll"
+          ]
+        },
+        {
+          "RuntimeFile": "BepInEx/core/Mono.Cecil.Mdb.dll",
+          "MatchingOfficialPackageEntries": [
+            "lib/net35/Mono.Cecil.Mdb.dll"
+          ]
+        },
+        {
+          "RuntimeFile": "BepInEx/core/Mono.Cecil.Pdb.dll",
+          "MatchingOfficialPackageEntries": [
+            "lib/net35/Mono.Cecil.Pdb.dll"
+          ]
+        },
+        {
+          "RuntimeFile": "BepInEx/core/Mono.Cecil.Rocks.dll",
+          "MatchingOfficialPackageEntries": [
+            "lib/net35/Mono.Cecil.Rocks.dll"
+          ]
+        }
+      ]
+    },
+    {
+      "Id": "SemanticVersioning",
+      "Version": "2.0.2",
+      "License": "MIT",
+      "Repository": "https://github.com/adamreeve/semver.net",
+      "SourceRef": "c52c9d4c5d34a6a3bb6ff45f7276d8b6e951a42d",
+      "OfficialPackageUrl": "https://api.nuget.org/v3-flatcontainer/semanticversioning/2.0.2/semanticversioning.2.0.2.nupkg",
+      "OfficialPackageSha256": "779B5426C8431E4FEB84DAADED197D4BF160E76E9E9757DA79A9CD1CA72AB408",
+      "PackageRedistributed": false,
+      "BinaryProvenance": [
+        {
+          "RuntimeFile": "BepInEx/core/SemanticVersioning.dll",
+          "MatchingOfficialPackageEntries": [
+            "lib/net35/SemanticVersioning.dll"
+          ]
+        }
+      ]
+    },
+    {
+      "Id": "AssetRipper.Primitives",
+      "Version": "3.1.1",
+      "License": "MIT",
+      "Repository": "https://github.com/AssetRipper/AssetRipper.Primitives",
+      "SourceRef": "2e8940973fe58184b259ba9959b1359d87fce790",
+      "OfficialPackageUrl": "https://api.nuget.org/v3-flatcontainer/assetripper.primitives/3.1.1/assetripper.primitives.3.1.1.nupkg",
+      "OfficialPackageSha256": "EBCF9EF12BE709C196B30E61F0FF789E69C3CA94096E683E66373CD8921D1955",
+      "PackageRedistributed": false,
+      "BinaryProvenance": [
+        {
+          "RuntimeFile": "BepInEx/core/AssetRipper.Primitives.dll",
+          "MatchingOfficialPackageEntries": [
+            "lib/net35/AssetRipper.Primitives.dll"
+          ]
+        }
+      ]
+    }
+  ],
+  "Licenses": [
+    {
+      "RelativePath": "licenses/BepInEx-LGPL-2.1.txt",
+      "SourceUrl": "https://raw.githubusercontent.com/BepInEx/BepInEx/851521cc126e4f9d841d2d9bfe857558f0395939/LICENSE",
+      "SourceArchiveEntry": "",
+      "Sha256": "F2CECA48AF033D8ADF337A8F9453E633CFAD10A1F8C9FEC2E5AE55A2D8FFE952",
+      "SizeBytes": 25338,
+      "Modified": false
+    },
+    {
+      "RelativePath": "licenses/HarmonyX-2.10.1-LICENSE.txt",
+      "SourceUrl": "https://api.nuget.org/v3-flatcontainer/harmonyx/2.10.1/harmonyx.2.10.1.nupkg",
+      "SourceArchiveEntry": "LICENSE",
+      "Sha256": "1AAF59A35B7D0BC58CDC4FFE303558974AD5ACAE6700BA9E04A182E9F6CB5C8B",
+      "SizeBytes": 1083,
+      "Modified": false
+    },
+    {
+      "RelativePath": "licenses/Harmony-original-LICENSE.txt",
+      "SourceUrl": "https://raw.githubusercontent.com/BepInEx/HarmonyX/v2.10.1/LICENSE.Harmony",
+      "SourceArchiveEntry": "",
+      "Sha256": "27E65B8ADEEDD73C2F76088346EFA3756A00E4E88CCA5ACE0C196CE1733EF570",
+      "SizeBytes": 1072,
+      "Modified": false
+    },
+    {
+      "RelativePath": "licenses/MonoMod-22.5.1.1-LICENSE.txt",
+      "SourceUrl": "https://raw.githubusercontent.com/MonoMod/MonoMod/bab61c308f2dbf3a27fea1e29a6a2f200aa72830/LICENSE",
+      "SourceArchiveEntry": "",
+      "Sha256": "0B64833222E3C6A426AD29362D26334619FE02EAF2B89EA9C37805521896C920",
+      "SizeBytes": 1080,
+      "Modified": false
+    },
+    {
+      "RelativePath": "licenses/Mono.Cecil-0.10.4-LICENSE.txt",
+      "SourceUrl": "https://raw.githubusercontent.com/jbevain/cecil/0.10.4/LICENSE.txt",
+      "SourceArchiveEntry": "",
+      "Sha256": "13D58ECBED676511C0C4C4009BFF107025E50007FF5E7901DC562700EC62509E",
+      "SizeBytes": 1098,
+      "Modified": false
+    },
+    {
+      "RelativePath": "licenses/SemanticVersioning-2.0.2-LICENSE.txt",
+      "SourceUrl": "https://raw.githubusercontent.com/adamreeve/semver.net/c52c9d4c5d34a6a3bb6ff45f7276d8b6e951a42d/LICENSE",
+      "SourceArchiveEntry": "",
+      "Sha256": "26A00BAD0D14CA2FC93C10398D477FA9609D6FD36068867DE53384218C1F64A3",
+      "SizeBytes": 1054,
+      "Modified": false
+    },
+    {
+      "RelativePath": "licenses/AssetRipper.Primitives-3.1.1-LICENSE.txt",
+      "SourceUrl": "https://raw.githubusercontent.com/AssetRipper/AssetRipper.Primitives/2e8940973fe58184b259ba9959b1359d87fce790/License.md",
+      "SourceArchiveEntry": "",
+      "Sha256": "DAE6148FF7AD3331A6380A2CE0CBB87F71B8F177891ABA1661B1D3A6FE52D5DE",
+      "SizeBytes": 1062,
+      "Modified": false
+    },
+    {
+      "RelativePath": "licenses/AssetRipper-uTinyRipper-LICENSE.txt",
+      "SourceUrl": "https://raw.githubusercontent.com/AssetRipper/AssetRipper.Primitives/2e8940973fe58184b259ba9959b1359d87fce790/Licenses/uTinyRipper.md",
+      "SourceArchiveEntry": "",
+      "Sha256": "4BCFD56E4CF313D10CC6A0A3A4A9862076A40B430BB51EFE9E9C827FF5C94FFE",
+      "SizeBytes": 1063,
+      "Modified": false
+    },
+    {
+      "RelativePath": "licenses/UnityDoorstop-4.3.0-LICENSE.txt",
+      "SourceUrl": "https://raw.githubusercontent.com/NeighTools/UnityDoorstop/v4.3.0/LICENSE",
+      "SourceArchiveEntry": "",
+      "Sha256": "20C17D8B8C48A600800DFD14F95D5CB9FF47066A9641DDEAB48DC54AEC96E331",
+      "SizeBytes": 26526,
+      "Modified": false
+    }
+  ],
+  "CorrespondingSourceArchives": [
+    {
+      "RelativePath": "sources/BepInEx-851521cc126e4f9d841d2d9bfe857558f0395939.zip",
+      "SourceUrl": "https://codeload.github.com/BepInEx/BepInEx/zip/851521cc126e4f9d841d2d9bfe857558f0395939",
+      "Commit": "851521cc126e4f9d841d2d9bfe857558f0395939",
+      "Sha256": "FE4C1B18C6C6634FE16D5768958462C99E369ADF374848D2A11B391AC21C82B2",
+      "SizeBytes": 251184,
+      "Modified": false
+    },
+    {
+      "RelativePath": "sources/UnityDoorstop-v4.3.0.zip",
+      "SourceUrl": "https://codeload.github.com/NeighTools/UnityDoorstop/zip/refs/tags/v4.3.0",
+      "Commit": "d061d7eabe9fc36140e7239955515801e2b9db12",
+      "Sha256": "63A7364D13B82C18E646EFB5504F0B9BDA64650450632F85AC43622F981334AC",
+      "SizeBytes": 105043,
+      "Modified": false
+    }
+  ],
+  "PathBases": {
+    "RuntimeFiles": "Game root; payload is BepInEx/files/ relative to Dependencies",
+    "Licenses": "Dependencies",
+    "CorrespondingSourceArchives": "Dependencies",
+    "Loader": "Release package root"
+  },
+  "CompatibilityVerification": {
+    "Method": "SHA256 equality against the BepInEx core already exercised in the in-game validation",
+    "GameSteamBuildId": "25953419",
+    "GameVersion": "release_1.0.6000.0",
+    "ComparedDlls": 14,
+    "MatchingDlls": 14,
+    "CopiedFromGame": false,
+    "Files": [
+      {
+        "RelativePath": "BepInEx/core/0Harmony.dll",
+        "Sha256": "93C0A24085BABF49D8478B28B8271217A76DD02A5DB68794E222BAAA3CE6F2FB",
+        "MatchesValidatedInstallation": true
+      },
+      {
+        "RelativePath": "BepInEx/core/AssetRipper.Primitives.dll",
+        "Sha256": "677B7513CD9EAC47385B66365CADA31F8679C37BDD7E132C48E2A072DAA31C04",
+        "MatchesValidatedInstallation": true
+      },
+      {
+        "RelativePath": "BepInEx/core/BepInEx.Core.dll",
+        "Sha256": "0C3AE15668F9AEFF35FEB05D29A65A249C025C7B9418D7149404EE8F234B866E",
+        "MatchesValidatedInstallation": true
+      },
+      {
+        "RelativePath": "BepInEx/core/BepInEx.Preloader.Core.dll",
+        "Sha256": "5D0D3C4AC7B8B92776F212EE4BD096564BBF5609ECC8FFC38C034B206176EBB4",
+        "MatchesValidatedInstallation": true
+      },
+      {
+        "RelativePath": "BepInEx/core/BepInEx.Unity.Common.dll",
+        "Sha256": "541F377BA0445D0560664E86ECD0778A2CAC7DC862C32B8989E52AFBCF7DDDB9",
+        "MatchesValidatedInstallation": true
+      },
+      {
+        "RelativePath": "BepInEx/core/BepInEx.Unity.Mono.dll",
+        "Sha256": "F1F0CDC821A6F7D824A4A027950FAE95E12F7DE12219B5D0F57F3AE875A935C8",
+        "MatchesValidatedInstallation": true
+      },
+      {
+        "RelativePath": "BepInEx/core/BepInEx.Unity.Mono.Preloader.dll",
+        "Sha256": "0FCFA54344626F8F791D768538C85E115C6ED890239B039AB08BD60CF176BCA1",
+        "MatchesValidatedInstallation": true
+      },
+      {
+        "RelativePath": "BepInEx/core/Mono.Cecil.dll",
+        "Sha256": "7AE470288FFF4A402899C254D0A76CEFEF55877F5C54F96E83C797CC5BB6E2F6",
+        "MatchesValidatedInstallation": true
+      },
+      {
+        "RelativePath": "BepInEx/core/Mono.Cecil.Mdb.dll",
+        "Sha256": "5896D1898F616701FFF18F3B2C71E6B844D2390EF9F41E1C5FCCCE8CB27C698E",
+        "MatchesValidatedInstallation": true
+      },
+      {
+        "RelativePath": "BepInEx/core/Mono.Cecil.Pdb.dll",
+        "Sha256": "174DB44A067F58561510AF746F3CAEB032037762C57A31C8D9EE32DB25174984",
+        "MatchesValidatedInstallation": true
+      },
+      {
+        "RelativePath": "BepInEx/core/Mono.Cecil.Rocks.dll",
+        "Sha256": "54AC539FB5DDC8B44C0E9ACD0FCB7324F89D1A072EDF8EBC1B06DD691E3D3927",
+        "MatchesValidatedInstallation": true
+      },
+      {
+        "RelativePath": "BepInEx/core/MonoMod.RuntimeDetour.dll",
+        "Sha256": "BD349394835AF325854045AEA90EC58117D029D2303EBB4748B177B73186AFD0",
+        "MatchesValidatedInstallation": true
+      },
+      {
+        "RelativePath": "BepInEx/core/MonoMod.Utils.dll",
+        "Sha256": "0C6CBEDE5A816FD00F8158548F0F4011D33D1AB3B61DBEE56037604AC36D58A0",
+        "MatchesValidatedInstallation": true
+      },
+      {
+        "RelativePath": "BepInEx/core/SemanticVersioning.dll",
+        "Sha256": "8603F22E2D552A37A9B59474E952FAD4320B53B20A902AB639E7A2ADDDF4FA3E",
+        "MatchesValidatedInstallation": true
+      }
+    ]
+  },
+  "Exclusions": [
+    "Duplicate winhttp.dll from the BepInEx archive",
+    "XML API documentation",
+    "changelog.txt",
+    "Empty directories",
+    "Game assemblies",
+    "Unity assemblies",
+    "User configuration and saves",
+    "Unrelated mods"
+  ]
+}

@@ -1,0 +1,50 @@
+[
+  {
+    "name": "fist_north_star",
+    "prompt": "Use case: precise-object-edit. Asset type: transparent game portrait for Legend of Mortal.\nImage 1 is the EDIT TARGET, original fist_north_star; Image 2 is ONLY the facial IDENTITY REFERENCE.\nReplace only face anatomy with the same grounded naturally pleasant young adult Chinese man of Image 2: proportional nose, jaw and mouth, thick dark brows and recognizable identity, retaining the target head angle and expressive facial action. Keep rough black ink outlines and textured painted game shading and dark tied ponytail.\nTriumphant martial pose. His right arm is raised straight high above his head on the viewer-left with a closed fist; left arm lowered. Preserve eyes gently closed, determined arched brows and a confident cheerful restrained grin. Keep the entire raised arm, hand and the long ponytail.\nPreserve all body pose, costume, accessories, original color palette, material texture, visual effects and lighting. Target expression is required, do not merely copy reference smile. True alpha transparency outside the figure, no black painted background. Keep original 1200x1700 aspect ratio, framing and transparent margin; one standalone game sprite, no text, no collage.",
+    "generator": "gpt-image (Codex image_gen)",
+    "transparent_background": true,
+    "reference_note": "Original pose/expression extracted locally from a licensed game; normal.png is the generated identity reference. Original reference sprites are not redistributed.",
+    "output": "BepInEx/plugins/ZhaoHuoNatural/Portraits/fist_north_star.png"
+  },
+  {
+    "name": "god_thunder",
+    "prompt": "Use case: precise-object-edit. Asset type: transparent game portrait for Legend of Mortal.\nImage 1 is the EDIT TARGET, original god_thunder; Image 2 is ONLY the facial IDENTITY REFERENCE.\nReplace only face anatomy with the same grounded naturally pleasant young adult Chinese man of Image 2: proportional nose, jaw and mouth, thick dark brows and recognizable identity, retaining the target head angle and expressive facial action. Keep rough black ink outlines and textured painted game shading and dark tied ponytail.\nWounded warrior standing with a large ornate gold-guard sword held down toward the viewer-left bottom edge. Preserve exact sword silhouette and position, plain blue robe stained with blood, cuts and sweat on face and hands, and brave strained focused expression with furrowed brows. Preserve the asymmetrical canvas layout and sword crop. Do not add lightning or any effects absent from the original.\nPreserve all body pose, costume, accessories, original color palette, material texture, visual effects and lighting. Target expression is required, do not merely copy reference smile. True alpha transparency outside the figure, no black painted background. Keep original 1320x1700 aspect ratio, framing and transparent margin; one standalone game sprite, no text, no collage.",
+    "generator": "gpt-image (Codex image_gen)",
+    "transparent_background": true,
+    "reference_note": "Original pose/expression extracted locally from a licensed game; normal.png is the generated identity reference. Original reference sprites are not redistributed.",
+    "output": "BepInEx/plugins/ZhaoHuoNatural/Portraits/god_thunder.png"
+  },
+  {
+    "name": "hero_landing",
+    "prompt": "Use case: precise-object-edit. Asset type: transparent game portrait for Legend of Mortal.\nImage 1 is the EDIT TARGET, original hero_landing; Image 2 is ONLY the facial IDENTITY REFERENCE.\nReplace only face anatomy with the same grounded naturally pleasant young adult Chinese man of Image 2: proportional nose, jaw and mouth, thick dark brows and recognizable identity, retaining the target head angle and expressive facial action. Keep rough black ink outlines and textured painted game shading and dark tied ponytail.\nSuperhero landing martial pose: he kneels low with right fist touching the ground on viewer-left, one bent knee and tall black boot forward on viewer-right, left arm thrown straight back with an open hand, ponytail curved upward behind head. Preserve complete hand, boot and body silhouette with the same perspective, intense frowning battle-ready face, drawn falling motion accents. Do not convert to standing portrait.\nPreserve all body pose, costume, accessories, original color palette, material texture, visual effects and lighting. Target expression is required, do not merely copy reference smile. True alpha transparency outside the figure, no black painted background. Keep original 1200x1700 aspect ratio, framing and transparent margin; one standalone game sprite, no text, no collage.",
+    "generator": "gpt-image (Codex image_gen)",
+    "transparent_background": true,
+    "reference_note": "Original pose/expression extracted locally from a licensed game; normal.png is the generated identity reference. Original reference sprites are not redistributed.",
+    "output": "BepInEx/plugins/ZhaoHuoNatural/Portraits/hero_landing.png"
+  },
+  {
+    "name": "oraora",
+    "prompt": "Use case: precise-object-edit. Asset type: transparent game portrait mod for Legend of Mortal.\nImage 1 is EDIT TARGET original oraora. Image 2 is ONLY face IDENTITY REFERENCE.\nRepaint target face anatomy into the same naturally pleasant grounded young adult Chinese man of image 2, proportional nose and jaw and recognizable features, but target emotional expression, colors and effects take precedence. Preserve original rough ink and textured painted game style.\nKeep the unusual comedic rapid-impact animation frame: one body with multiple semitransparent overlapping head afterimages shaking left and right, both open-mouthed and dazed, sideways motion blur on head and torso, scattered saliva flecks, and blue clothing. Repaint ALL visible face afterimages to the reference identity. Do not collapse into one still sharp neutral head; keep original motion afterimages and overlap.\nPreserve target body, head angle, ponytail, clothes, lighting, grain and framing. Do not add scenes, text or new props. Genuine transparent alpha background, not painted black. Keep full original 1060x1700 portrait ratio with original top transparent space and bottom crop. One standalone portrait.",
+    "generator": "gpt-image (Codex image_gen)",
+    "transparent_background": true,
+    "reference_note": "Original pose/expression extracted locally from a licensed game; normal.png is the generated identity reference. Original reference sprites are not redistributed.",
+    "output": "BepInEx/plugins/ZhaoHuoNatural/Portraits/oraora.png"
+  },
+  {
+    "name": "shake",
+    "prompt": "Use case: precise-object-edit. Asset type: transparent game portrait mod for Legend of Mortal.\nImage 1 is EDIT TARGET original shake. Image 2 is ONLY face IDENTITY REFERENCE.\nRepaint target face anatomy into the same naturally pleasant grounded young adult Chinese man of image 2, proportional nose and jaw and recognizable features, but target emotional expression, colors and effects take precedence. Preserve original rough ink and textured painted game style.\nComedic trembling shock: eyes rolled and unfocused with sweat bead at cheek, mouth open in a strained startled gasp, body standing rigid with tense clawed lowered hands, doubled translucent contour echoes at the left of head, shoulder and arms. Preserve the original visible shaking outline and subtle blur. Do not smile or remove the shaking double exposure.\nPreserve target body, head angle, ponytail, clothes, lighting, grain and framing. Do not add scenes, text or new props. Genuine transparent alpha background, not painted black. Keep full original 1060x1700 portrait ratio with original top transparent space and bottom crop. One standalone portrait.",
+    "generator": "gpt-image (Codex image_gen)",
+    "transparent_background": true,
+    "reference_note": "Original pose/expression extracted locally from a licensed game; normal.png is the generated identity reference. Original reference sprites are not redistributed.",
+    "output": "BepInEx/plugins/ZhaoHuoNatural/Portraits/shake.png"
+  },
+  {
+    "name": "shake2",
+    "prompt": "Use case: precise-object-edit. Asset type: transparent game portrait mod for Legend of Mortal.\nImage 1 is EDIT TARGET original shake2. Image 2 is ONLY face IDENTITY REFERENCE.\nRepaint target face anatomy into the same naturally pleasant grounded young adult Chinese man of image 2, proportional nose and jaw and recognizable features, but target emotional expression, colors and effects take precedence. Preserve original rough ink and textured painted game style.\nThis is the INVERTED-COLOR shocked trembling frame, not natural coloration. Preserve dark blue negative face and skin, near-white hair, white ink lines, pale cream negative-color robe, inverted cyan arm guards, rolled glowing white eyes, open mouth and sweat. Keep exact rigid pose, lowered tense hands and double-exposure trembling outline. Use reference facial anatomy but recolor it to the target's inverted negative palette. Never restore warm skin or blue robe in this special frame.\nPreserve target body, head angle, ponytail, clothes, lighting, grain and framing. Do not add scenes, text or new props. Genuine transparent alpha background, not painted black. Keep full original 1060x1700 portrait ratio with original top transparent space and bottom crop. One standalone portrait.",
+    "generator": "gpt-image (Codex image_gen)",
+    "transparent_background": true,
+    "reference_note": "Original pose/expression extracted locally from a licensed game; normal.png is the generated identity reference. Original reference sprites are not redistributed.",
+    "output": "BepInEx/plugins/ZhaoHuoNatural/Portraits/shake2.png"
+  }
+]

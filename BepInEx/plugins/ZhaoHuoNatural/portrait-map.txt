@@ -1,0 +1,2 @@
+# The two status-panel variants are both named normal in the current game.
+Avatar/normal=normal.png

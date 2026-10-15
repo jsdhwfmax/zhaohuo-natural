@@ -1,0 +1,5 @@
+blank_issues_enabled: true
+contact_links:
+  - name: 常见问题
+    url: https://github.com/jsdhwfmax/zhaohuo-natural/blob/main/docs/常见问题.md
+    about: 安装前先查看覆盖范围、下载方式与版本限制

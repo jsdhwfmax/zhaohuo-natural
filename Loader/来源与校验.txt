@@ -1,0 +1,14 @@
+UnityDoorstop 4.3.0 official x64 Windows loader
+
+Release: https://github.com/NeighTools/UnityDoorstop/releases/tag/v4.3.0
+Archive: https://github.com/NeighTools/UnityDoorstop/releases/download/v4.3.0/doorstop_win_release_4.3.0.zip
+Archive SHA256: E23FEC7A6ADFA07BA26A3E209B617584D0319A1145506AE4E1B892C44E86F679
+Included path inside archive: x64/winhttp.dll
+Included file size: 26112 bytes
+Included file SHA256: D3B62F4C9C3E2196EF82603C52D6B98C043A0D6C125C081FD33D7CA3798B41B8
+Machine: AMD64 (0x8664)
+
+The installer backs up the existing game-root winhttp.dll, installs this file,
+and leaves doorstop_config.ini and all BepInEx core files unchanged.
+The uninstaller restores the exact original bytes from the verified backup.
+See Doorstop-LICENSE.txt for the upstream license.

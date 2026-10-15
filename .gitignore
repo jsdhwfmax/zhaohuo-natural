@@ -1,0 +1,17 @@
+# Local builds, installers and logs
+/dist/
+/.work/
+*.pdb
+*.rsp
+*.log
+*.tmp
+**/Diagnostics/
+**/ActiveManifest.json
+**/Backups/
+# Local game resources must never be committed
+/Game/
+/game/
+/Mortal_Data/
+/.env
+/.env.*
+__pycache__/
