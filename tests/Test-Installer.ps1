@@ -25,8 +25,9 @@ $pe = New-Object byte[] 256
 $pe[0] = 0x4D; $pe[1] = 0x5A; $pe[0x3C] = 0x80; $pe[0x80] = 0x50; $pe[0x81] = 0x45; $pe[0x84] = 0x64; $pe[0x85] = 0x86
 function New-Fixture([string]$Name, [switch]$Existing) {
     $script:Counter++
-    $game = Join-Path $work (('game-{0:D2}-' -f $script:Counter) + $Name)
+    $game = Join-Path (Join-Path $work (('game-{0:D2}-' -f $script:Counter) + $Name)) 'steamapps\common\LegendOfMortal'
     New-Item -ItemType Directory -Path (Join-Path $game 'Mortal_Data\Managed') -Force | Out-Null
+    [IO.File]::WriteAllText((Join-Path ([IO.Directory]::GetParent($game).Parent.FullName) 'appmanifest_1859910.acf'),'"AppState" { "buildid" "90000001" }')
     [IO.File]::WriteAllBytes((Join-Path $game 'Mortal.exe'), $pe)
     [IO.File]::WriteAllBytes((Join-Path $game 'UnityPlayer.dll'), $pe)
     foreach ($name in @('Assembly-CSharp.dll','Mortal.Core.dll','Mortal.Story.dll','Fungus.dll')) {
@@ -69,25 +70,54 @@ try {
     foreach ($name in @('Mortal.Core.dll','Mortal.Story.dll')) {
         [IO.File]::WriteAllText((Join-Path $updated ('Mortal_Data\Managed\' + $name)), ('fixture-second-build:' + $name))
     }
+    [IO.File]::WriteAllText((Join-Path ([IO.Directory]::GetParent($updated).Parent.FullName) 'appmanifest_1859910.acf'),'"AppState" { "buildid" "90000002" }')
     $secondHashes = [ordered]@{}
     foreach ($name in $firstHashes.Keys) { $secondHashes[$name] = (Get-FileHash -LiteralPath (Join-Path $updated ('Mortal_Data\Managed\' + $name))).Hash }
     & $module {
         param($First,$Second)
         $script:SupportedGameBuilds = @(
-            [pscustomobject]@{ BuildId = 'fixture-1'; Hashes = $First },
-            [pscustomobject]@{ BuildId = 'fixture-2'; Hashes = $Second }
+            [pscustomobject]@{ BuildId = '90000001'; Hashes = $First },
+            [pscustomobject]@{ BuildId = '90000002'; Hashes = $Second }
         )
     } $firstHashes $secondHashes
+    # This suite verifies installer integration and fail-closed behavior. The
+    # real read-only metadata probe has a separate fixture suite; dummy game
+    # files here cannot be used as evidence of actual runtime compatibility.
+    & $module {
+        $script:ProbeFixtureMode = 'Reject'
+        $script:ProbeCallCount = 0
+        function script:Invoke-ZHCompatibilityProbe([string]$GamePath,[string]$PackageRoot) {
+            $script:ProbeCallCount++
+            if ($script:ProbeFixtureMode -eq 'Throw') { throw 'fixture probe read failure' }
+            $fingerprints = [ordered]@{}
+            foreach ($name in $script:GameAssemblyNames) { $fingerprints[$name] = Get-ZHHash (Get-ZHChild $GamePath ('Mortal_Data\Managed\' + $name)) }
+            if ($script:ProbeFixtureMode -eq 'WrongFingerprint') { $fingerprints['Mortal.Core.dll'] = '0' * 64 }
+            if ($script:ProbeFixtureMode -eq 'ChangedSteamManifest') {
+                [IO.File]::WriteAllText((Join-Path ([IO.Directory]::GetParent($GamePath).Parent.FullName) 'appmanifest_1859910.acf'),'"AppState" { "buildid" "88888888" }')
+            }
+            $accepted = $script:ProbeFixtureMode -ne 'Reject'
+            if ($script:ProbeFixtureMode -eq 'Malformed') { $accepted = 'true' }
+            $checks = @([pscustomobject]@{ Name = 'FixtureContract'; Passed = $true })
+            if ($script:ProbeFixtureMode -eq 'FailedCheck') { $checks[0].Passed = $false }
+            if ($script:ProbeFixtureMode -eq 'MissingEvidence') { $checks = @() }
+            [pscustomobject]@{
+                Compatible = $accepted; Method = 'OfflineCompatibilityProbe'; BaselineBuildIds = @('90000001')
+                Reasons = @('fixture critical interface changed'); Checks = $checks
+                FingerprintSet = $fingerprints
+            }
+        }
+    }
     $checkFirst = Install-ZhaoHuo -GamePath $clean -PackageRoot $package -CheckOnly -Log $quiet
-    Assert-True ($checkFirst.Validation.MatchedBuildId -eq 'fixture-1') 'First verified four-assembly group remains supported'
+    Assert-True ($checkFirst.Validation.MatchedBuildId -eq '90000001') 'First verified four-assembly group remains supported'
+    Assert-True ($checkFirst.Validation.CompatibilityMode -eq 'VerifiedFingerprint' -and (& $module { $script:ProbeCallCount }) -eq 0) 'Known fingerprint group uses the verified fast path without calling the probe'
     Assert-True (-not (Test-Path -LiteralPath (Join-Path $clean 'BepInEx'))) 'Clean CheckOnly creates no game files'
     $checkSecond = Install-ZhaoHuo -GamePath $updated -PackageRoot $package -CheckOnly -Log $quiet
-    Assert-True ($checkSecond.Validation.MatchedBuildId -eq 'fixture-2' -and -not (Test-Path -LiteralPath (Join-Path $updated 'BepInEx'))) 'Second complete group passes CheckOnly without changing game files'
+    Assert-True ($checkSecond.Validation.MatchedBuildId -eq '90000002' -and -not (Test-Path -LiteralPath (Join-Path $updated 'BepInEx'))) 'Second complete group passes CheckOnly without changing game files'
     Install-ZhaoHuo -GamePath $clean -PackageRoot $package -Log $quiet | Out-Null
     $state = Read-State $clean
     Assert-True ($state.SchemaVersion -eq 3 -and $state.Environment -eq 'CleanGame' -and @($state.OwnedFiles).Count -eq 66) 'Clean install records all 66 owned files in schema 3'
     Assert-True (@($state.GameAssemblySha256.PSObject.Properties).Count -eq 4) 'Manifest records all four game hashes'
-    Assert-True ($state.MatchedBuildId -eq 'fixture-1') 'Manifest records the complete fingerprint group that matched'
+    Assert-True ($state.MatchedBuildId -eq '90000001') 'Manifest records the complete fingerprint group that matched'
     Assert-True ((Get-FileHash -LiteralPath (Join-Path $clean 'winhttp.dll')).Hash -eq 'D3B62F4C9C3E2196EF82603C52D6B98C043A0D6C125C081FD33D7CA3798B41B8') 'Clean install uses verified official x64 loader'
     $manifestPath = Join-Path $clean 'BepInEx\ZhaoHuoNatural-install\ActiveManifest.json'
     $before = (Get-FileHash -LiteralPath $manifestPath).Hash
@@ -97,13 +127,17 @@ try {
     # the game must not force an uninstall when the portrait payload is unchanged.
     $state.PSObject.Properties.Remove('MatchedBuildId')
     $state.PSObject.Properties.Remove('AdoptedUntrackedPayload')
+    $state.PSObject.Properties.Remove('CompatibilityMode')
+    $state.PSObject.Properties.Remove('DetectedBuild')
+    $state.PSObject.Properties.Remove('CompatibilityEvidence')
     Write-State $clean $state
     $beforeUpdate = (Get-FileHash -LiteralPath $manifestPath).Hash
     foreach ($name in @('Mortal.Core.dll','Mortal.Story.dll')) {
         Copy-Item -LiteralPath (Join-Path $updated ('Mortal_Data\Managed\' + $name)) -Destination (Join-Path $clean ('Mortal_Data\Managed\' + $name))
     }
+    [IO.File]::WriteAllText((Join-Path ([IO.Directory]::GetParent($clean).Parent.FullName) 'appmanifest_1859910.acf'),'"AppState" { "buildid" "90000002" }')
     $upgrade = Install-ZhaoHuo -GamePath $clean -PackageRoot $package -Log $quiet
-    Assert-True ($upgrade.AlreadyInstalled -and $upgrade.Validation.MatchedBuildId -eq 'fixture-2' -and (Get-FileHash -LiteralPath $manifestPath).Hash -eq $beforeUpdate) 'Existing v1.0.0 schema3 installation accepts a verified game update without uninstall or overwrite'
+    Assert-True ($upgrade.AlreadyInstalled -and $upgrade.Validation.MatchedBuildId -eq '90000002' -and (Get-FileHash -LiteralPath $manifestPath).Hash -eq $beforeUpdate) 'Existing v1.0.0 schema3 installation accepts a verified game update without uninstall or overwrite'
     $storyPath = Join-Path $clean 'Mortal_Data\Managed\Mortal.Story.dll'
     [IO.File]::WriteAllText($storyPath,'fixture-game-assembly:Mortal.Story.dll')
     Assert-Rejected { Install-ZhaoHuo -GamePath $clean -PackageRoot $package -Log $quiet } '*游戏版本不受支持*' 'Known Core and Story hashes from different builds are rejected as a mixed group'
@@ -185,15 +219,58 @@ try {
         $actualHash = (Get-FileHash -LiteralPath (Join-Path $version ('Mortal_Data\Managed\' + $name))).Hash
         if (-not $diagnostic.Contains($name + ' SHA-256: ' + $actualHash)) { $allHashesIncluded = $false }
     }
-    Assert-True ($allHashesIncluded -and $diagnostic.Contains('fixture-1') -and $diagnostic.Contains('fixture-2') -and $diagnostic.Contains('/releases')) 'Unsupported-version feedback contains every actual hash, supported groups and update link'
-    $metadata = New-Fixture 'metadata\steamapps\common\LegendOfMortal'
+    Assert-True ($allHashesIncluded -and $diagnostic.Contains('90000001') -and $diagnostic.Contains('90000002') -and $diagnostic.Contains('/releases')) 'Unsupported-version feedback contains every actual hash, supported groups and update link'
+    $metadata = New-Fixture 'metadata'
     $acfPath = Join-Path ([IO.Directory]::GetParent($metadata).Parent.FullName) 'appmanifest_1859910.acf'
     [IO.File]::WriteAllText($acfPath,'"AppState" { "buildid" "99999999" }')
+    $callsBeforeMetadata = & $module { $script:ProbeCallCount }
+    Assert-Rejected { Install-ZhaoHuo -GamePath $metadata -PackageRoot $package -CheckOnly -Log $quiet } '*fixture critical interface changed*' 'A new build with unchanged four DLLs is rejected when the resource or interface probe fails'
+    Assert-True ((& $module { $script:ProbeCallCount }) -gt $callsBeforeMetadata) 'A new Steam build never skips the probe merely because four DLL hashes are known'
+    & $module { $script:ProbeFixtureMode = 'Pass' }
     $metadataPlan = Install-ZhaoHuo -GamePath $metadata -PackageRoot $package -CheckOnly -Log $quiet
-    Assert-True ($metadataPlan.Validation.BuildId -eq '99999999' -and $metadataPlan.Validation.MatchedBuildId -eq 'fixture-1') 'Stale Steam metadata does not reject an exact verified fingerprint group'
+    Assert-True ($metadataPlan.Validation.BuildId -eq '99999999' -and $null -eq $metadataPlan.Validation.MatchedBuildId -and $metadataPlan.Validation.CompatibilityMode -eq 'OfflineCompatibilityProbe') 'New Steam metadata can be accepted by the probe without claiming a known build match'
+    Remove-Item -LiteralPath $acfPath
+    $noMetadataPlan = Install-ZhaoHuo -GamePath $metadata -PackageRoot $package -CheckOnly -Log $quiet
+    Assert-True ($null -eq $noMetadataPlan.Validation.DetectedBuild -and $noMetadataPlan.Validation.CompatibilityMode -eq 'OfflineCompatibilityProbe') 'Missing Steam metadata requires the offline probe even with known DLL fingerprints'
+    & $module { $script:ProbeFixtureMode = 'Reject' }
     [IO.File]::WriteAllText($acfPath,'"AppState" { "buildid" "25953419" }')
     [IO.File]::WriteAllText((Join-Path $metadata 'Mortal_Data\Managed\Mortal.Core.dll'),'unknown future core')
     Assert-Rejected { Install-ZhaoHuo -GamePath $metadata -PackageRoot $package -CheckOnly -Log $quiet } '*游戏版本不受支持*' 'A familiar Steam build label cannot bypass unknown assembly fingerprints'
+
+    $automatic = New-Fixture 'auto-update'
+    [IO.File]::WriteAllText((Join-Path $automatic 'Mortal_Data\Managed\Mortal.Core.dll'),'future non-portrait update fixture')
+    $automaticAcf = Join-Path ([IO.Directory]::GetParent($automatic).Parent.FullName) 'appmanifest_1859910.acf'
+    [IO.File]::WriteAllText($automaticAcf,'"AppState" { "buildid" "99999999" }')
+    & $module { $script:ProbeFixtureMode = 'Pass' }
+    $automaticPlan = Install-ZhaoHuo -GamePath $automatic -PackageRoot $package -CheckOnly -Log $quiet
+    Assert-True ($automaticPlan.Validation.CompatibilityMode -eq 'OfflineCompatibilityProbe' -and $null -eq $automaticPlan.Validation.MatchedBuildId -and $automaticPlan.Validation.DetectedBuild -eq '99999999') 'Unknown compatible update uses probe mode and never claims a verified build match'
+    Assert-True (-not (Test-Path -LiteralPath (Join-Path $automatic 'BepInEx'))) 'Automatic compatibility CheckOnly leaves the game directory unchanged'
+    Install-ZhaoHuo -GamePath $automatic -PackageRoot $package -Log $quiet | Out-Null
+    $automaticState = Read-State $automatic
+    Assert-True ($automaticState.CompatibilityMode -eq 'OfflineCompatibilityProbe' -and $automaticState.DetectedBuild -eq '99999999' -and $null -eq $automaticState.MatchedBuildId -and @($automaticState.CompatibilityEvidence.Checks).Count -eq 1) 'Automatic installation records detected build and offline compatibility evidence'
+    foreach ($property in @('CompatibilityMode','DetectedBuild','CompatibilityEvidence','MatchedBuildId')) { $automaticState.PSObject.Properties.Remove($property) }
+    Write-State $automatic $automaticState
+    $automaticManifest = Join-Path $automatic 'BepInEx\ZhaoHuoNatural-install\ActiveManifest.json'
+    $automaticBefore = (Get-FileHash -LiteralPath $automaticManifest).Hash
+    $automaticRepeat = Install-ZhaoHuo -GamePath $automatic -PackageRoot $package -Log $quiet
+    Assert-True ($automaticRepeat.AlreadyInstalled -and $automaticRepeat.Validation.CompatibilityMode -eq 'OfflineCompatibilityProbe' -and (Get-FileHash -LiteralPath $automaticManifest).Hash -eq $automaticBefore) 'Older schema3 records work with automatic compatibility without rewriting installation history'
+    & $module { $script:ProbeFixtureMode = 'Reject' }
+    Assert-Rejected { Install-ZhaoHuo -GamePath $automatic -PackageRoot $package -CheckOnly -Log $quiet } '*fixture critical interface changed*' 'A critical interface rejection blocks an already installed unknown update'
+    Assert-True ((Get-FileHash -LiteralPath $automaticManifest).Hash -eq $automaticBefore) 'Failed automatic revalidation preserves the existing install record'
+    Uninstall-ZhaoHuo -GamePath $automatic -Log $quiet
+    Assert-True (-not (Test-Path -LiteralPath (Join-Path $automatic 'winhttp.dll'))) 'An automatically accepted update remains uninstallable after compatibility changes'
+    foreach ($probeFailure in @('Throw','WrongFingerprint','Malformed','FailedCheck','MissingEvidence')) {
+        & $module { param($Mode) $script:ProbeFixtureMode = $Mode } $probeFailure
+        Assert-Rejected { Install-ZhaoHuo -GamePath $automatic -PackageRoot $package -CheckOnly -Log $quiet } '*游戏版本不受支持*' ('Probe failure is rejected safely: ' + $probeFailure)
+    }
+    & $module { $script:ProbeFixtureMode = 'ChangedSteamManifest' }
+    Assert-Rejected { Install-ZhaoHuo -GamePath $automatic -PackageRoot $package -CheckOnly -Log $quiet } '*Steam 安装清单发生变化*' 'Changing Steam metadata during a probe rejects the result before installation'
+    Remove-Item -LiteralPath $automaticAcf
+    Assert-Rejected { Install-ZhaoHuo -GamePath $automatic -PackageRoot $package -CheckOnly -Log $quiet } '*Steam 安装清单发生变化*' 'A Steam manifest appearing during a probe also invalidates its result'
+    & $module { $script:ProbeFixtureMode = 'Pass' }
+    [IO.File]::WriteAllText((Join-Path $automatic 'winhttp.dll'),'unknown graphics proxy')
+    Assert-Rejected { Install-ZhaoHuo -GamePath $automatic -PackageRoot $package -CheckOnly -Log $quiet } '*未知 winhttp.dll*' 'A successful offline probe does not bypass loader protection'
+    & $module { $script:ProbeFixtureMode = 'Reject' }
     $x86 = New-Fixture 'wrong-architecture'
     $x86Bytes = [byte[]]$pe.Clone(); $x86Bytes[0x84] = 0x4C; $x86Bytes[0x85] = 0x01
     [IO.File]::WriteAllBytes((Join-Path $x86 'Mortal.exe'),$x86Bytes)
@@ -210,13 +287,15 @@ try {
     $insideGame = New-Fixture 'package-inside-game'
     Assert-Rejected { Install-ZhaoHuo -GamePath $insideGame -PackageRoot $insideGame -Log $quiet } '*重新完整解压到游戏目录之外*' 'Running the extracted package from the game root gives a recovery instruction'
     $adopt = New-Fixture 'exact-untracked-copy'
+    [IO.File]::WriteAllText((Join-Path $adopt 'Mortal_Data\Managed\Mortal.Core.dll'),'future non-portrait update fixture')
+    & $module { $script:ProbeFixtureMode = 'Pass' }
     $adoptPlugin = Join-Path $adopt 'BepInEx\plugins\ZhaoHuoNatural'
     New-Item -ItemType Directory -Path (Split-Path -Parent $adoptPlugin) -Force | Out-Null
     Copy-Item -LiteralPath $payload -Destination $adoptPlugin -Recurse
     $otherMod = Join-Path $adopt 'BepInEx\plugins\OtherManualMod.dll'
     [IO.File]::WriteAllText($otherMod,'unrelated manual mod')
     $adoptCheck = Install-ZhaoHuo -GamePath $adopt -PackageRoot $package -CheckOnly -Log $quiet
-    Assert-True ($adoptCheck.AdoptedUntrackedPayload -and -not (Test-Path -LiteralPath (Join-Path $adopt 'BepInEx\ZhaoHuoNatural-install'))) 'Exact untracked payload can be checked without creating installation state'
+    Assert-True ($adoptCheck.AdoptedUntrackedPayload -and $adoptCheck.Validation.CompatibilityMode -eq 'OfflineCompatibilityProbe' -and -not (Test-Path -LiteralPath (Join-Path $adopt 'BepInEx\ZhaoHuoNatural-install'))) 'Exact untracked payload recovery still works after automatic compatibility checking'
     Install-ZhaoHuo -GamePath $adopt -PackageRoot $package -Log $quiet | Out-Null
     $adoptState = Read-State $adopt
     $adoptRecords = @($adoptState.OwnedFiles | Where-Object { $_.Category -eq 'Plugin' })
@@ -240,6 +319,7 @@ try {
     Assert-True ((Get-Content -LiteralPath $adoptNormal -Raw) -eq 'modified existing portrait') 'Rejected adoption preserves modified portrait bytes'
     Remove-Item -LiteralPath $adoptNormal
     Assert-Rejected { Install-ZhaoHuo -GamePath $adopt -PackageRoot $package -Log $quiet } '*文件与本发布包不完全一致*' 'A missing portrait prevents adopting an incomplete extracted copy'
+    & $module { $script:ProbeFixtureMode = 'Reject' }
 
     $failure = New-Fixture 'rollback'
     $failureLegacy = Join-Path $failure 'BepInEx\plugins\Tianfei\MortalBeauty.dll'
@@ -305,7 +385,7 @@ try {
     $discovered = @(Get-ZhaoHuoSteamCandidates -SteamRoots @($steamA))
     Assert-True ($discovered.Count -eq 2 -and $discovered -contains (Join-Path $steamB 'steamapps\common\LegendOfMortal')) 'Steam library discovery handles multiple libraries and spaces'
 
-    $summary = [ordered]@{ status='passed'; powershell=$PSVersionTable.PSVersion.ToString(); assertionCount=$script:Assertions.Count; durationSeconds=[Math]::Round(([DateTime]::UtcNow-$start).TotalSeconds,2); scope='Self-contained synthetic game fixtures, official bundled runtime, no real game installation or execution'; checks=@($script:Assertions) }
+    $summary = [ordered]@{ status='passed'; powershell=$PSVersionTable.PSVersion.ToString(); assertionCount=$script:Assertions.Count; durationSeconds=[Math]::Round(([DateTime]::UtcNow-$start).TotalSeconds,2); scope='Installer integration with synthetic game fixtures, official bundled runtime and stubbed offline-probe results; metadata probe tested separately; no real game installation or execution'; checks=@($script:Assertions) }
     [IO.File]::WriteAllText((Join-Path $PSScriptRoot 'results-summary.json'),($summary | ConvertTo-Json -Depth 6),(New-Object Text.UTF8Encoding($false)))
     Write-Host "ALL $($script:Assertions.Count) ASSERTIONS PASSED. No real game files were modified."
 } catch {

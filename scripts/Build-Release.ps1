@@ -1,7 +1,7 @@
 #requires -Version 5.1
 [CmdletBinding()]
 param(
-    [ValidatePattern('^[0-9]+\.[0-9]+\.[0-9]+$')][string]$Version = '1.0.1',
+    [ValidatePattern('^[0-9]+\.[0-9]+\.[0-9]+$')][string]$Version = '1.0.2',
     [string]$OutputDirectory
 )
 $ErrorActionPreference = 'Stop'
@@ -54,7 +54,12 @@ $requiredFiles = @(
     'BepInEx\plugins\ZhaoHuoNatural\portrait-map.txt',
     'BepInEx\plugins\ZhaoHuoNatural\portrait-layout.tsv',
     'Loader\winhttp.dll', 'Dependencies\BepInEx\runtime-manifest.json',
-    'installer\Gui.ps1', 'installer\ZhaoHuoInstaller.psm1'
+    'installer\Gui.ps1', 'installer\ZhaoHuoInstaller.psm1',
+    'installer\CompatibilityProbe.ps1', 'installer\compatibility-baseline.json',
+    'Dependencies\BepInEx\files\BepInEx\core\Mono.Cecil.dll',
+    'verification\installer-tests.json', 'verification\installer-tests-v1.0.1.json',
+    'verification\compatibility-probe-tests.json',
+    'verification\runtime\PASS.txt', 'verification\runtime-build25957922\PASS.txt'
 )
 foreach ($relative in $requiredFiles) {
     if (-not (Test-Path -LiteralPath (Join-Path $stage $relative) -PathType Leaf)) { throw "Required release file missing: $relative" }
@@ -66,6 +71,32 @@ foreach ($entry in $runtime.Files) {
         -not (Test-Path -LiteralPath $runtimePath -PathType Leaf) -or
         (Get-FileHash -LiteralPath $runtimePath -Algorithm SHA256).Hash -ne $entry.Sha256) { throw "Runtime hash validation failed: $($entry.RelativePath)" }
 }
+$probeRelativePath = 'installer\CompatibilityProbe.ps1'
+$baselineRelativePath = 'installer\compatibility-baseline.json'
+$probePath = Join-Path $stage $probeRelativePath
+$baselinePath = Join-Path $stage $baselineRelativePath
+$baselineHash = (Get-FileHash -LiteralPath $baselinePath -Algorithm SHA256).Hash
+$baselinePin = [regex]::Match([IO.File]::ReadAllText($probePath), '(?m)^\$script:ZHCompatibilityBaselineHash\s*=\s*''([0-9A-Fa-f]{64})''')
+if (-not $baselinePin.Success -or $baselinePin.Groups[1].Value -ne $baselineHash) {
+    throw 'Compatibility baseline does not match the hash pinned in the probe, or its release hash is still pending.'
+}
+$compatibilityBaseline = Get-Content -LiteralPath $baselinePath -Raw -Encoding UTF8 | ConvertFrom-Json
+if ($compatibilityBaseline.SchemaVersion -ne 1 -or @($compatibilityBaseline.BaselineBuildIds).Count -eq 0 -or
+    @($compatibilityBaseline.FixedFiles).Count -eq 0 -or @($compatibilityBaseline.CoreSurface.Methods).Count -eq 0 -or
+    $compatibilityBaseline.PluginSha256 -ne (Get-FileHash -LiteralPath (Join-Path $stage 'BepInEx\plugins\ZhaoHuoNatural\ZhaoHuoNatural.dll') -Algorithm SHA256).Hash) {
+    throw 'Compatibility baseline is incomplete or belongs to a different plugin.'
+}
+foreach ($reportRelativePath in @('verification\installer-tests.json', 'verification\compatibility-probe-tests.json')) {
+    $report = Get-Content -LiteralPath (Join-Path $stage $reportRelativePath) -Raw -Encoding UTF8 | ConvertFrom-Json
+    $reportPassed = $false
+    if ($report.PSObject.Properties['status']) { $reportPassed = ($report.status -eq 'passed') }
+    elseif ($report.PSObject.Properties['Passed']) { $reportPassed = ($report.Passed -is [bool] -and $report.Passed) }
+    if (-not $reportPassed) { throw "Release verification is not passing: $reportRelativePath" }
+    if ($reportRelativePath -eq 'verification\compatibility-probe-tests.json' -and
+        (-not $report.PSObject.Properties['BaselineSha256'] -or $report.BaselineSha256 -ne $baselineHash)) {
+        throw 'Compatibility probe test report belongs to a different baseline.'
+    }
+}
 $files = @(Get-ChildItem -LiteralPath $stage -Recurse -File)
 $portraits = @(Get-ChildItem -LiteralPath (Join-Path $stage 'BepInEx\plugins\ZhaoHuoNatural\Portraits') -File -Filter '*.png')
 if ($portraits.Count -ne 47) { throw "Expected 47 portraits, got $($portraits.Count)" }
@@ -75,8 +106,20 @@ $manifest = [ordered]@{
     SteamAppId = 1859910
     SteamBuildId = [long]$releaseBuildId
     GameVersion = $gameVersionsByBuild[$releaseBuildId]
-    SupportedSteamBuildIds = @($supportedGameBuilds | ForEach-Object { [long]$_.BuildId })
-    SupportedGameBuilds = $supportedGameBuilds
+    VerifiedSteamBuildIds = @($supportedGameBuilds | ForEach-Object { [long]$_.BuildId })
+    VerifiedGameBuilds = $supportedGameBuilds
+    CompatibilityCheck = [ordered]@{
+        Trigger = 'InstallerCheckOrInstall'
+        FastPathRequiresSteamBuildAndCompleteFingerprint = $true
+        UnknownBuildMode = 'OfflineCompatibilityProbe'
+        AutoRunOnGameStart = $false
+        NetworkRequired = $false
+        ProbePath = $probeRelativePath.Replace('\','/')
+        ProbeSha256 = (Get-FileHash -LiteralPath $probePath -Algorithm SHA256).Hash
+        BaselinePath = $baselineRelativePath.Replace('\','/')
+        BaselineSha256 = $baselineHash
+        BaselineBuildIds = @($compatibilityBaseline.BaselineBuildIds)
+    }
     PortraitCount = $portraits.Count
     Files = @($files | Sort-Object FullName | ForEach-Object {
         [ordered]@{Path=$_.FullName.Substring($stage.Length+1).Replace('\','/'); SHA256=(Get-FileHash -LiteralPath $_.FullName -Algorithm SHA256).Hash; Bytes=$_.Length}

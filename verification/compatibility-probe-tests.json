@@ -1,0 +1,565 @@
+﻿{
+    "Passed":  true,
+    "PowerShellVersion":  "5.1.26100.9711",
+    "BaselineSha256":  "830863946FC21FD8B33846B9B68A2046820D839EE477B5075744B1596065246C",
+    "TestCount":  12,
+    "Tests":  [
+                  {
+                      "Test":  "Current validated game, read only",
+                      "Passed":  true,
+                      "ExpectedCompatible":  true,
+                      "Seconds":  10.38,
+                      "Reasons":  [
+
+                                  ],
+                      "Checks":  [
+                                     {
+                                         "Name":  "PinnedBaseline",
+                                         "Passed":  true,
+                                         "Sha256":  "830863946FC21FD8B33846B9B68A2046820D839EE477B5075744B1596065246C"
+                                     },
+                                     {
+                                         "Name":  "TrustedCecil",
+                                         "Passed":  true,
+                                         "Sha256":  "7AE470288FFF4A402899C254D0A76CEFEF55877F5C54F96E83C797CC5BB6E2F6"
+                                     },
+                                     {
+                                         "Name":  "MonoRuntime",
+                                         "Passed":  true,
+                                         "Count":  20,
+                                         "Sha256":  "EF09D3985C97CF69636B9232FDAF7A18DA04BDADE50900DD68A87A0804AA97EB"
+                                     },
+                                     {
+                                         "Name":  "SceneAndSerializedAssets",
+                                         "Passed":  true,
+                                         "Count":  51,
+                                         "Sha256":  "BF7B11E5A785E6103D8B740606005030A6489EDAEAA892B479CE9B76E6C8CA83"
+                                     },
+                                     {
+                                         "Name":  "ManagedDependencies",
+                                         "Passed":  true,
+                                         "Count":  130,
+                                         "Sha256":  "D423465CC3B724E90BF548893084D020BC6F55914361CD41DBA837C97EDAC12E"
+                                     },
+                                     {
+                                         "Name":  "AddressablesCatalog",
+                                         "Passed":  true,
+                                         "Count":  2,
+                                         "Sha256":  "C7997FB91E2DECD1898FD564C72A75EEB4871D1ABBA90A6DE6C507D76B657124"
+                                     },
+                                     {
+                                         "Name":  "AddressablesBundles",
+                                         "Passed":  true,
+                                         "Count":  190,
+                                         "Sha256":  "B5F5AA260F11C809B39B0FC13426B499992DDB59126A7050E712945E4336A6CB"
+                                     },
+                                     {
+                                         "Name":  "UnityRuntime",
+                                         "Passed":  true,
+                                         "Count":  2,
+                                         "Sha256":  "AB2BAFE13DC1B89EC884AB0172522156085A18C44147B5878DC9EDAE08709F4A"
+                                     },
+                                     {
+                                         "Name":  "VersionMetadata",
+                                         "Passed":  true,
+                                         "Sha256":  "678C45802FFBCEAA9E2C6B7B2A334B2F042301203BFC70555A3AE6CB9C8AD8B7"
+                                     },
+                                     {
+                                         "Name":  "ManagedAssemblyNames",
+                                         "Passed":  true,
+                                         "Count":  131,
+                                         "Sha256":  "49002CC72F7E2A86ACAF0677B2770CF7E6FCF594EFA9ACDA7A0FDED79DD878A4"
+                                     },
+                                     {
+                                         "Name":  "CoreMethods",
+                                         "Passed":  true,
+                                         "Count":  147,
+                                         "Sha256":  "C6E7206E8670B0D20C81F87C41C110108D422B53544A8CE0D91D049E039833D4"
+                                     },
+                                     {
+                                         "Name":  "CoreTypes",
+                                         "Passed":  true,
+                                         "Count":  35,
+                                         "Sha256":  "21D1597E2509FED6B9E1D836A9B3D2E666B9F626CF07365FAE2129D497F17D93"
+                                     },
+                                     {
+                                         "Name":  "GameMemberReferences",
+                                         "Passed":  true,
+                                         "Count":  19,
+                                         "Sha256":  "535C86701227FBCAFD0825E84CC945477BBC102B93E8D9AB6B8A8806C3207509"
+                                     }
+                                 ]
+                  },
+                  {
+                      "Test":  "Prior authentic core with current validated resources",
+                      "Passed":  true,
+                      "ExpectedCompatible":  true,
+                      "Seconds":  25.4,
+                      "Reasons":  [
+
+                                  ],
+                      "Checks":  [
+                                     {
+                                         "Name":  "PinnedBaseline",
+                                         "Passed":  true,
+                                         "Sha256":  "830863946FC21FD8B33846B9B68A2046820D839EE477B5075744B1596065246C"
+                                     },
+                                     {
+                                         "Name":  "TrustedCecil",
+                                         "Passed":  true,
+                                         "Sha256":  "7AE470288FFF4A402899C254D0A76CEFEF55877F5C54F96E83C797CC5BB6E2F6"
+                                     },
+                                     {
+                                         "Name":  "MonoRuntime",
+                                         "Passed":  true,
+                                         "Count":  20,
+                                         "Sha256":  "EF09D3985C97CF69636B9232FDAF7A18DA04BDADE50900DD68A87A0804AA97EB"
+                                     },
+                                     {
+                                         "Name":  "SceneAndSerializedAssets",
+                                         "Passed":  true,
+                                         "Count":  51,
+                                         "Sha256":  "BF7B11E5A785E6103D8B740606005030A6489EDAEAA892B479CE9B76E6C8CA83"
+                                     },
+                                     {
+                                         "Name":  "ManagedDependencies",
+                                         "Passed":  true,
+                                         "Count":  130,
+                                         "Sha256":  "D423465CC3B724E90BF548893084D020BC6F55914361CD41DBA837C97EDAC12E"
+                                     },
+                                     {
+                                         "Name":  "AddressablesCatalog",
+                                         "Passed":  true,
+                                         "Count":  2,
+                                         "Sha256":  "C7997FB91E2DECD1898FD564C72A75EEB4871D1ABBA90A6DE6C507D76B657124"
+                                     },
+                                     {
+                                         "Name":  "AddressablesBundles",
+                                         "Passed":  true,
+                                         "Count":  190,
+                                         "Sha256":  "B5F5AA260F11C809B39B0FC13426B499992DDB59126A7050E712945E4336A6CB"
+                                     },
+                                     {
+                                         "Name":  "UnityRuntime",
+                                         "Passed":  true,
+                                         "Count":  2,
+                                         "Sha256":  "AB2BAFE13DC1B89EC884AB0172522156085A18C44147B5878DC9EDAE08709F4A"
+                                     },
+                                     {
+                                         "Name":  "VersionMetadata",
+                                         "Passed":  true,
+                                         "Sha256":  "678C45802FFBCEAA9E2C6B7B2A334B2F042301203BFC70555A3AE6CB9C8AD8B7"
+                                     },
+                                     {
+                                         "Name":  "ManagedAssemblyNames",
+                                         "Passed":  true,
+                                         "Count":  131,
+                                         "Sha256":  "49002CC72F7E2A86ACAF0677B2770CF7E6FCF594EFA9ACDA7A0FDED79DD878A4"
+                                     },
+                                     {
+                                         "Name":  "CoreMethods",
+                                         "Passed":  true,
+                                         "Count":  147,
+                                         "Sha256":  "C6E7206E8670B0D20C81F87C41C110108D422B53544A8CE0D91D049E039833D4"
+                                     },
+                                     {
+                                         "Name":  "CoreTypes",
+                                         "Passed":  true,
+                                         "Count":  35,
+                                         "Sha256":  "21D1597E2509FED6B9E1D836A9B3D2E666B9F626CF07365FAE2129D497F17D93"
+                                     },
+                                     {
+                                         "Name":  "GameMemberReferences",
+                                         "Passed":  true,
+                                         "Count":  19,
+                                         "Sha256":  "535C86701227FBCAFD0825E84CC945477BBC102B93E8D9AB6B8A8806C3207509"
+                                     }
+                                 ]
+                  },
+                  {
+                      "Test":  "Unrelated IL edit plus new method and metadata rewrite",
+                      "Passed":  true,
+                      "ExpectedCompatible":  true,
+                      "Seconds":  11.81,
+                      "Reasons":  [
+
+                                  ],
+                      "Checks":  [
+                                     {
+                                         "Name":  "PinnedBaseline",
+                                         "Passed":  true,
+                                         "Sha256":  "830863946FC21FD8B33846B9B68A2046820D839EE477B5075744B1596065246C"
+                                     },
+                                     {
+                                         "Name":  "TrustedCecil",
+                                         "Passed":  true,
+                                         "Sha256":  "7AE470288FFF4A402899C254D0A76CEFEF55877F5C54F96E83C797CC5BB6E2F6"
+                                     },
+                                     {
+                                         "Name":  "MonoRuntime",
+                                         "Passed":  true,
+                                         "Count":  20,
+                                         "Sha256":  "EF09D3985C97CF69636B9232FDAF7A18DA04BDADE50900DD68A87A0804AA97EB"
+                                     },
+                                     {
+                                         "Name":  "SceneAndSerializedAssets",
+                                         "Passed":  true,
+                                         "Count":  51,
+                                         "Sha256":  "BF7B11E5A785E6103D8B740606005030A6489EDAEAA892B479CE9B76E6C8CA83"
+                                     },
+                                     {
+                                         "Name":  "ManagedDependencies",
+                                         "Passed":  true,
+                                         "Count":  130,
+                                         "Sha256":  "D423465CC3B724E90BF548893084D020BC6F55914361CD41DBA837C97EDAC12E"
+                                     },
+                                     {
+                                         "Name":  "AddressablesCatalog",
+                                         "Passed":  true,
+                                         "Count":  2,
+                                         "Sha256":  "C7997FB91E2DECD1898FD564C72A75EEB4871D1ABBA90A6DE6C507D76B657124"
+                                     },
+                                     {
+                                         "Name":  "AddressablesBundles",
+                                         "Passed":  true,
+                                         "Count":  190,
+                                         "Sha256":  "B5F5AA260F11C809B39B0FC13426B499992DDB59126A7050E712945E4336A6CB"
+                                     },
+                                     {
+                                         "Name":  "UnityRuntime",
+                                         "Passed":  true,
+                                         "Count":  2,
+                                         "Sha256":  "AB2BAFE13DC1B89EC884AB0172522156085A18C44147B5878DC9EDAE08709F4A"
+                                     },
+                                     {
+                                         "Name":  "VersionMetadata",
+                                         "Passed":  true,
+                                         "Sha256":  "678C45802FFBCEAA9E2C6B7B2A334B2F042301203BFC70555A3AE6CB9C8AD8B7"
+                                     },
+                                     {
+                                         "Name":  "ManagedAssemblyNames",
+                                         "Passed":  true,
+                                         "Count":  131,
+                                         "Sha256":  "49002CC72F7E2A86ACAF0677B2770CF7E6FCF594EFA9ACDA7A0FDED79DD878A4"
+                                     },
+                                     {
+                                         "Name":  "CoreMethods",
+                                         "Passed":  true,
+                                         "Count":  147,
+                                         "Sha256":  "C6E7206E8670B0D20C81F87C41C110108D422B53544A8CE0D91D049E039833D4"
+                                     },
+                                     {
+                                         "Name":  "CoreTypes",
+                                         "Passed":  true,
+                                         "Count":  35,
+                                         "Sha256":  "21D1597E2509FED6B9E1D836A9B3D2E666B9F626CF07365FAE2129D497F17D93"
+                                     },
+                                     {
+                                         "Name":  "GameMemberReferences",
+                                         "Passed":  true,
+                                         "Count":  19,
+                                         "Sha256":  "535C86701227FBCAFD0825E84CC945477BBC102B93E8D9AB6B8A8806C3207509"
+                                     }
+                                 ]
+                  },
+                  {
+                      "Test":  "Changed direct portrait hook rejected",
+                      "Passed":  true,
+                      "ExpectedCompatible":  false,
+                      "Seconds":  11.46,
+                      "Reasons":  [
+                                      "立绘接口或行为发生变化：System.Void Mortal.Core.PlayerAvatarPanel::OnEnable()"
+                                  ],
+                      "Checks":  [
+                                     {
+                                         "Name":  "PinnedBaseline",
+                                         "Passed":  true,
+                                         "Sha256":  "830863946FC21FD8B33846B9B68A2046820D839EE477B5075744B1596065246C"
+                                     },
+                                     {
+                                         "Name":  "TrustedCecil",
+                                         "Passed":  true,
+                                         "Sha256":  "7AE470288FFF4A402899C254D0A76CEFEF55877F5C54F96E83C797CC5BB6E2F6"
+                                     },
+                                     {
+                                         "Name":  "MonoRuntime",
+                                         "Passed":  true,
+                                         "Count":  20,
+                                         "Sha256":  "EF09D3985C97CF69636B9232FDAF7A18DA04BDADE50900DD68A87A0804AA97EB"
+                                     },
+                                     {
+                                         "Name":  "SceneAndSerializedAssets",
+                                         "Passed":  true,
+                                         "Count":  51,
+                                         "Sha256":  "BF7B11E5A785E6103D8B740606005030A6489EDAEAA892B479CE9B76E6C8CA83"
+                                     },
+                                     {
+                                         "Name":  "ManagedDependencies",
+                                         "Passed":  true,
+                                         "Count":  130,
+                                         "Sha256":  "D423465CC3B724E90BF548893084D020BC6F55914361CD41DBA837C97EDAC12E"
+                                     },
+                                     {
+                                         "Name":  "AddressablesCatalog",
+                                         "Passed":  true,
+                                         "Count":  2,
+                                         "Sha256":  "C7997FB91E2DECD1898FD564C72A75EEB4871D1ABBA90A6DE6C507D76B657124"
+                                     },
+                                     {
+                                         "Name":  "AddressablesBundles",
+                                         "Passed":  true,
+                                         "Count":  190,
+                                         "Sha256":  "B5F5AA260F11C809B39B0FC13426B499992DDB59126A7050E712945E4336A6CB"
+                                     },
+                                     {
+                                         "Name":  "UnityRuntime",
+                                         "Passed":  true,
+                                         "Count":  2,
+                                         "Sha256":  "AB2BAFE13DC1B89EC884AB0172522156085A18C44147B5878DC9EDAE08709F4A"
+                                     },
+                                     {
+                                         "Name":  "VersionMetadata",
+                                         "Passed":  true,
+                                         "Sha256":  "678C45802FFBCEAA9E2C6B7B2A334B2F042301203BFC70555A3AE6CB9C8AD8B7"
+                                     },
+                                     {
+                                         "Name":  "ManagedAssemblyNames",
+                                         "Passed":  true,
+                                         "Count":  131,
+                                         "Sha256":  "49002CC72F7E2A86ACAF0677B2770CF7E6FCF594EFA9ACDA7A0FDED79DD878A4"
+                                     }
+                                 ]
+                  },
+                  {
+                      "Test":  "Changed transitive asset loader helper rejected",
+                      "Passed":  true,
+                      "ExpectedCompatible":  false,
+                      "Seconds":  11.87,
+                      "Reasons":  [
+                                      "立绘接口或行为发生变化：T Mortal.Core.AssetReferenceCache`1::LoadSync()"
+                                  ],
+                      "Checks":  [
+                                     {
+                                         "Name":  "PinnedBaseline",
+                                         "Passed":  true,
+                                         "Sha256":  "830863946FC21FD8B33846B9B68A2046820D839EE477B5075744B1596065246C"
+                                     },
+                                     {
+                                         "Name":  "TrustedCecil",
+                                         "Passed":  true,
+                                         "Sha256":  "7AE470288FFF4A402899C254D0A76CEFEF55877F5C54F96E83C797CC5BB6E2F6"
+                                     },
+                                     {
+                                         "Name":  "MonoRuntime",
+                                         "Passed":  true,
+                                         "Count":  20,
+                                         "Sha256":  "EF09D3985C97CF69636B9232FDAF7A18DA04BDADE50900DD68A87A0804AA97EB"
+                                     },
+                                     {
+                                         "Name":  "SceneAndSerializedAssets",
+                                         "Passed":  true,
+                                         "Count":  51,
+                                         "Sha256":  "BF7B11E5A785E6103D8B740606005030A6489EDAEAA892B479CE9B76E6C8CA83"
+                                     },
+                                     {
+                                         "Name":  "ManagedDependencies",
+                                         "Passed":  true,
+                                         "Count":  130,
+                                         "Sha256":  "D423465CC3B724E90BF548893084D020BC6F55914361CD41DBA837C97EDAC12E"
+                                     },
+                                     {
+                                         "Name":  "AddressablesCatalog",
+                                         "Passed":  true,
+                                         "Count":  2,
+                                         "Sha256":  "C7997FB91E2DECD1898FD564C72A75EEB4871D1ABBA90A6DE6C507D76B657124"
+                                     },
+                                     {
+                                         "Name":  "AddressablesBundles",
+                                         "Passed":  true,
+                                         "Count":  190,
+                                         "Sha256":  "B5F5AA260F11C809B39B0FC13426B499992DDB59126A7050E712945E4336A6CB"
+                                     },
+                                     {
+                                         "Name":  "UnityRuntime",
+                                         "Passed":  true,
+                                         "Count":  2,
+                                         "Sha256":  "AB2BAFE13DC1B89EC884AB0172522156085A18C44147B5878DC9EDAE08709F4A"
+                                     },
+                                     {
+                                         "Name":  "VersionMetadata",
+                                         "Passed":  true,
+                                         "Sha256":  "678C45802FFBCEAA9E2C6B7B2A334B2F042301203BFC70555A3AE6CB9C8AD8B7"
+                                     },
+                                     {
+                                         "Name":  "ManagedAssemblyNames",
+                                         "Passed":  true,
+                                         "Count":  131,
+                                         "Sha256":  "49002CC72F7E2A86ACAF0677B2770CF7E6FCF594EFA9ACDA7A0FDED79DD878A4"
+                                     }
+                                 ]
+                  },
+                  {
+                      "Test":  "Changed portrait field layout rejected",
+                      "Passed":  true,
+                      "ExpectedCompatible":  false,
+                      "Seconds":  11.69,
+                      "Reasons":  [
+                                      "立绘接口或行为发生变化：System.Void Mortal.Core.PlayerAvatarPanel::OnEnable()"
+                                  ],
+                      "Checks":  [
+                                     {
+                                         "Name":  "PinnedBaseline",
+                                         "Passed":  true,
+                                         "Sha256":  "830863946FC21FD8B33846B9B68A2046820D839EE477B5075744B1596065246C"
+                                     },
+                                     {
+                                         "Name":  "TrustedCecil",
+                                         "Passed":  true,
+                                         "Sha256":  "7AE470288FFF4A402899C254D0A76CEFEF55877F5C54F96E83C797CC5BB6E2F6"
+                                     },
+                                     {
+                                         "Name":  "MonoRuntime",
+                                         "Passed":  true,
+                                         "Count":  20,
+                                         "Sha256":  "EF09D3985C97CF69636B9232FDAF7A18DA04BDADE50900DD68A87A0804AA97EB"
+                                     },
+                                     {
+                                         "Name":  "SceneAndSerializedAssets",
+                                         "Passed":  true,
+                                         "Count":  51,
+                                         "Sha256":  "BF7B11E5A785E6103D8B740606005030A6489EDAEAA892B479CE9B76E6C8CA83"
+                                     },
+                                     {
+                                         "Name":  "ManagedDependencies",
+                                         "Passed":  true,
+                                         "Count":  130,
+                                         "Sha256":  "D423465CC3B724E90BF548893084D020BC6F55914361CD41DBA837C97EDAC12E"
+                                     },
+                                     {
+                                         "Name":  "AddressablesCatalog",
+                                         "Passed":  true,
+                                         "Count":  2,
+                                         "Sha256":  "C7997FB91E2DECD1898FD564C72A75EEB4871D1ABBA90A6DE6C507D76B657124"
+                                     },
+                                     {
+                                         "Name":  "AddressablesBundles",
+                                         "Passed":  true,
+                                         "Count":  190,
+                                         "Sha256":  "B5F5AA260F11C809B39B0FC13426B499992DDB59126A7050E712945E4336A6CB"
+                                     },
+                                     {
+                                         "Name":  "UnityRuntime",
+                                         "Passed":  true,
+                                         "Count":  2,
+                                         "Sha256":  "AB2BAFE13DC1B89EC884AB0172522156085A18C44147B5878DC9EDAE08709F4A"
+                                     },
+                                     {
+                                         "Name":  "VersionMetadata",
+                                         "Passed":  true,
+                                         "Sha256":  "678C45802FFBCEAA9E2C6B7B2A334B2F042301203BFC70555A3AE6CB9C8AD8B7"
+                                     },
+                                     {
+                                         "Name":  "ManagedAssemblyNames",
+                                         "Passed":  true,
+                                         "Count":  131,
+                                         "Sha256":  "49002CC72F7E2A86ACAF0677B2770CF7E6FCF594EFA9ACDA7A0FDED79DD878A4"
+                                     }
+                                 ]
+                  },
+                  {
+                      "Test":  "Changed portrait bundle with unchanged catalog rejected",
+                      "Passed":  true,
+                      "ExpectedCompatible":  false,
+                      "Seconds":  9.05,
+                      "Reasons":  [
+                                      "相关框架或资源发生变化，需人工适配：Mortal_Data/StreamingAssets/aa/StandaloneWindows64/portrait_player_assets_all_7bec2bcbfba83b3c2a6357abd0d0fcdf.bundle"
+                                  ],
+                      "Checks":  [
+                                     {
+                                         "Name":  "PinnedBaseline",
+                                         "Passed":  true,
+                                         "Sha256":  "830863946FC21FD8B33846B9B68A2046820D839EE477B5075744B1596065246C"
+                                     },
+                                     {
+                                         "Name":  "TrustedCecil",
+                                         "Passed":  true,
+                                         "Sha256":  "7AE470288FFF4A402899C254D0A76CEFEF55877F5C54F96E83C797CC5BB6E2F6"
+                                     }
+                                 ]
+                  },
+                  {
+                      "Test":  "Changed Addressables catalog rejected",
+                      "Passed":  true,
+                      "ExpectedCompatible":  false,
+                      "Seconds":  6.03,
+                      "Reasons":  [
+                                      "相关框架或资源发生变化，需人工适配：Mortal_Data/StreamingAssets/aa/catalog.json"
+                                  ],
+                      "Checks":  [
+                                     {
+                                         "Name":  "PinnedBaseline",
+                                         "Passed":  true,
+                                         "Sha256":  "830863946FC21FD8B33846B9B68A2046820D839EE477B5075744B1596065246C"
+                                     },
+                                     {
+                                         "Name":  "TrustedCecil",
+                                         "Passed":  true,
+                                         "Sha256":  "7AE470288FFF4A402899C254D0A76CEFEF55877F5C54F96E83C797CC5BB6E2F6"
+                                     }
+                                 ]
+                  },
+                  {
+                      "Test":  "Changed Addressables runtime rejected",
+                      "Passed":  true,
+                      "ExpectedCompatible":  false,
+                      "Seconds":  2.24,
+                      "Reasons":  [
+                                      "相关框架或资源发生变化，需人工适配：Mortal_Data/Managed/Unity.Addressables.dll"
+                                  ],
+                      "Checks":  [
+                                     {
+                                         "Name":  "PinnedBaseline",
+                                         "Passed":  true,
+                                         "Sha256":  "830863946FC21FD8B33846B9B68A2046820D839EE477B5075744B1596065246C"
+                                     },
+                                     {
+                                         "Name":  "TrustedCecil",
+                                         "Passed":  true,
+                                         "Sha256":  "7AE470288FFF4A402899C254D0A76CEFEF55877F5C54F96E83C797CC5BB6E2F6"
+                                     }
+                                 ]
+                  },
+                  {
+                      "Test":  "Changed baseline rejected",
+                      "Passed":  true,
+                      "ExpectedCompatible":  false,
+                      "Seconds":  0.02,
+                      "Reasons":  [
+                                      "兼容性基线校验失败，请重新下载完整安装包。"
+                                  ],
+                      "Checks":  [
+
+                                 ]
+                  },
+                  {
+                      "Test":  "Changed trusted metadata reader rejected",
+                      "Passed":  true,
+                      "ExpectedCompatible":  false,
+                      "Seconds":  0.18,
+                      "Reasons":  [
+                                      "包内官方 Mono.Cecil 校验失败，请重新下载完整安装包。"
+                                  ],
+                      "Checks":  [
+                                     {
+                                         "Name":  "PinnedBaseline",
+                                         "Passed":  true,
+                                         "Sha256":  "830863946FC21FD8B33846B9B68A2046820D839EE477B5075744B1596065246C"
+                                     }
+                                 ]
+                  },
+                  {
+                      "Test":  "Source game assembly fingerprints unchanged",
+                      "Passed":  true
+                  }
+              ]
+}

@@ -11,3 +11,5 @@
 Dependencies/** -text
 Loader/** -text
 BepInEx/** -text
+# The offline probe pins the exact baseline bytes, including line endings.
+installer/compatibility-baseline.json -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol

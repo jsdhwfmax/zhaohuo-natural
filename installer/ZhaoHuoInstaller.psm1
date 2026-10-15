@@ -130,7 +130,14 @@ function Get-ZHLocations([string]$GamePath) {
         Disabled = (Get-ZHChild $game ($script:LegacyRelative + '.disabled-by-zhaohuo-natural'))
     }
 }
-function Get-ZHGameValidation([string]$GamePath) {
+function Invoke-ZHCompatibilityProbe([string]$GamePath, [string]$PackageRoot) {
+    $probePath = Join-Path $PSScriptRoot 'CompatibilityProbe.ps1'
+    Assert-ZHNoLink $probePath
+    if (-not (Test-Path -LiteralPath $probePath -PathType Leaf)) { throw '离线兼容检测文件缺失，请重新完整解压发布包。' }
+    . $probePath
+    Test-ZhaoHuoCompatibility -GamePath $GamePath -PackageRoot $PackageRoot
+}
+function Get-ZHGameValidation([string]$GamePath, [string]$PackageRoot) {
     $paths = Get-ZHLocations $GamePath
     foreach ($path in @($paths.Game, $paths.Plugin, $paths.State, $paths.Manifest, $paths.Legacy, $paths.Disabled)) { Assert-ZHNoLink $path }
     Assert-ZHStopped $paths.Game
@@ -148,10 +155,13 @@ function Get-ZHGameValidation([string]$GamePath) {
         $hashes[$name] = Get-ZHHash $file
     }
     $build = $null
+    $acf = $null
+    $acfHash = $null
     $parent = [IO.Directory]::GetParent($paths.Game)
     if ($parent -and $parent.Parent) {
         $acf = Join-Path $parent.Parent.FullName 'appmanifest_1859910.acf'
         if (Test-Path -LiteralPath $acf -PathType Leaf) {
+            $acfHash = Get-ZHHash $acf
             if ((Get-Content -LiteralPath $acf -Raw) -match '"buildid"\s+"([0-9]+)"') { $build = $Matches[1] }
         }
     }
@@ -161,19 +171,57 @@ function Get-ZHGameValidation([string]$GamePath) {
         foreach ($name in $script:GameAssemblyNames) {
             if ($hashes[$name] -ne $candidate.Hashes[$name]) { $matchesAll = $false; break }
         }
-        if ($matchesAll) { $matchedBuild = $candidate; break }
+        # A new Steam build may change only resources while keeping these four
+        # DLLs. It still needs the resource/interface probe, as does missing
+        # Steam metadata; only a matching build and fingerprint use this path.
+        if ($matchesAll -and $build -eq $candidate.BuildId) { $matchedBuild = $candidate; break }
     }
-    if ($null -eq $matchedBuild) {
-        $detected = if ($build) { $build } else { '未知（未找到 Steam 清单）' }
-        $supported = ($script:SupportedGameBuilds | ForEach-Object { $_.BuildId }) -join '、'
-        $details = @($script:GameAssemblyNames | ForEach-Object { $_ + ' SHA-256: ' + $hashes[$_] }) -join [Environment]::NewLine
-        throw ("游戏版本不受支持：四个程序集未匹配任一已验证的完整组合，未改动游戏文件。`r`n" +
-            "检测到 Steam build：$detected；已验证 build：$supported。`r`n" +
-            "请从 https://github.com/jsdhwfmax/zhaohuo-natural/releases 下载最新安装包；仍不支持时请附上以下四行信息反馈，不要跳过检查。`r`n" + $details)
+    $mode = 'VerifiedFingerprint'
+    $matchedBuildId = $null
+    $probe = $null
+    if ($null -ne $matchedBuild) { $matchedBuildId = $matchedBuild.BuildId }
+    else {
+        $probeReasons = @()
+        $compatible = $false
+        try {
+            $probe = Invoke-ZHCompatibilityProbe -GamePath $paths.Game -PackageRoot $PackageRoot
+            if ($probe.Compatible -isnot [bool] -or $probe.Method -ne 'OfflineCompatibilityProbe') { throw '离线兼容检测未返回有效结果。' }
+            $compatible = $probe.Compatible
+            $probeReasons = @($probe.Reasons)
+            if ($compatible) {
+                if (@($probe.Checks).Count -eq 0 -or @($probe.BaselineBuildIds).Count -eq 0) { throw '离线兼容检测缺少检查依据。' }
+                foreach ($check in @($probe.Checks)) {
+                    if ($null -eq $check -or $check.Passed -isnot [bool] -or -not $check.Passed) { throw '离线兼容检测含有未通过的检查。' }
+                }
+                foreach ($baseline in @($probe.BaselineBuildIds)) {
+                    if ([string]::IsNullOrWhiteSpace([string]$baseline)) { throw '离线兼容检测缺少基准版本。' }
+                }
+                $currentAcfHash = $null
+                if ($acf -and (Test-Path -LiteralPath $acf -PathType Leaf)) { $currentAcfHash = Get-ZHHash $acf }
+                if ($currentAcfHash -ne $acfHash) { throw '检测期间 Steam 安装清单发生变化，请等待游戏更新完成后重试。' }
+                foreach ($name in $script:GameAssemblyNames) {
+                    $probeHash = if ($probe.FingerprintSet -is [Collections.IDictionary]) { $probe.FingerprintSet[$name] } else { $probe.FingerprintSet.PSObject.Properties[$name].Value }
+                    $currentHash = Get-ZHHash (Get-ZHChild $paths.Game ('Mortal_Data\Managed\' + $name))
+                    if ($probeHash -ne $hashes[$name] -or $currentHash -ne $hashes[$name]) { throw "检测期间游戏文件发生变化，请等待 Steam 更新完成后重试：$name" }
+                }
+            }
+        } catch { $compatible = $false; $probeReasons = @($_.Exception.Message) }
+        if (-not $compatible) {
+            $detected = if ($build) { $build } else { '未知（未找到 Steam 清单）' }
+            $supported = ($script:SupportedGameBuilds | ForEach-Object { $_.BuildId }) -join '、'
+            $details = @($script:GameAssemblyNames | ForEach-Object { $_ + ' SHA-256: ' + $hashes[$_] }) -join [Environment]::NewLine
+            $reasonText = $probeReasons -join '；'
+            if ([string]::IsNullOrWhiteSpace($reasonText)) { $reasonText = '未取得足够的离线兼容证据。' }
+            throw ("游戏版本不受支持：未匹配实机验证指纹，且离线兼容检测未通过，未改动游戏文件。`r`n" +
+                "检测到 Steam build：$detected；已实机验证 build：$supported。`r`n" +
+                "检测原因：$reasonText`r`n" +
+                "请从 https://github.com/jsdhwfmax/zhaohuo-natural/releases 查看适配情况；反馈时请附上检测原因和以下四行信息，不要跳过检查。`r`n" + $details)
+        }
+        $mode = 'OfflineCompatibilityProbe'
     }
-    # Steam's build ID is diagnostic metadata; verified assembly bytes decide
-    # compatibility even if a library was copied or its appmanifest is stale.
-    [pscustomobject]@{ Paths = $paths; Hashes = $hashes; BuildId = $build; MatchedBuildId = $matchedBuild.BuildId }
+    # The observed build is never treated as proof by itself. A fast-path result
+    # requires its full fingerprint; all other cases require the offline probe.
+    [pscustomobject]@{ Paths = $paths; Hashes = $hashes; BuildId = $build; DetectedBuild = $build; MatchedBuildId = $matchedBuildId; CompatibilityMode = $mode; Probe = $probe }
 }
 function Read-ZHDependencies([string]$PackageRoot) {
     $root = Get-ZHChild $PackageRoot 'Dependencies\BepInEx'
@@ -302,7 +350,7 @@ function Get-ZhaoHuoInstallPlan {
     [CmdletBinding()]
     param([Parameter(Mandatory=$true)][string]$GamePath, [Parameter(Mandatory=$true)][string]$PackageRoot)
     $package = Get-ZHCanonical $PackageRoot
-    $validation = Get-ZHGameValidation $GamePath
+    $validation = Get-ZHGameValidation -GamePath $GamePath -PackageRoot $package
     $paths = $validation.Paths
     if ($package -eq $paths.Game -or $package.StartsWith($paths.Game.TrimEnd('\') + '\', [StringComparison]::OrdinalIgnoreCase)) {
         throw '请将原安装包 ZIP 重新完整解压到游戏目录之外的独立文件夹（例如桌面），再运行 Install.cmd。不要直接解压到游戏目录。若此前误解压，安装器会检查并备份与发布包完全一致的本插件文件；不会删除其他模组。'
@@ -388,9 +436,11 @@ function Install-ZhaoHuo {
     [CmdletBinding()]
     param([Parameter(Mandatory=$true)][string]$GamePath, [Parameter(Mandatory=$true)][string]$PackageRoot, [switch]$CheckOnly, [scriptblock]$Log)
     $plan = Get-ZhaoHuoInstallPlan -GamePath $GamePath -PackageRoot $PackageRoot
-    Write-ZHLog $Log "64 位游戏与四个程序集 SHA-256 校验通过，匹配已验证 Steam build $($plan.Validation.MatchedBuildId)。"
-    if ($plan.Validation.BuildId -and $plan.Validation.BuildId -ne $plan.Validation.MatchedBuildId) {
-        Write-ZHLog $Log "Steam 清单显示 build $($plan.Validation.BuildId)；当前四个程序集的完整指纹匹配 build $($plan.Validation.MatchedBuildId)，以实际文件校验为准。" 'Warning'
+    if ($plan.Validation.CompatibilityMode -eq 'OfflineCompatibilityProbe') {
+        $detected = if ($plan.Validation.DetectedBuild) { $plan.Validation.DetectedBuild } else { '未知' }
+        Write-ZHLog $Log "Steam build $detected 的离线兼容检测通过，允许继续安装或检查。该构建尚未经本项目实机验证；关键立绘接口与资源通过检测不代表所有剧情已验证。" 'Warning'
+    } else {
+        Write-ZHLog $Log "64 位游戏与四个程序集 SHA-256 校验通过，匹配已验证 Steam build $($plan.Validation.MatchedBuildId)。"
     }
     if ($plan.AlreadyInstalled) { Write-ZHLog $Log '已经安装同一份美化包，文件校验通过，无需重复覆盖。'; return $plan }
     if ($plan.Environment -eq 'CleanGame') { Write-ZHLog $Log '识别为纯净游戏：将添加离线官方 BepInEx 6 运行库、配置和 x64 加载器。' }
@@ -432,6 +482,8 @@ function Install-ZhaoHuo {
         SchemaVersion = 3; PackageId = 'ZhaoHuoNatural'; InstallationId = $id; Status = 'installing'; GamePath = $paths.Game
         InstalledAtUtc = [DateTime]::UtcNow.ToString('o'); GameAssemblySha256 = $plan.Validation.Hashes; SteamBuildId = $plan.Validation.BuildId
         MatchedBuildId = $plan.Validation.MatchedBuildId
+        CompatibilityMode = $plan.Validation.CompatibilityMode; DetectedBuild = $plan.Validation.DetectedBuild
+        CompatibilityEvidence = $(if ($plan.Validation.Probe) { [pscustomobject]@{ BaselineBuildIds = @($plan.Validation.Probe.BaselineBuildIds); Checks = @($plan.Validation.Probe.Checks) } } else { $null })
         AdoptedUntrackedPayload = $plan.AdoptedUntrackedPayload
         Environment = $plan.Environment; BackupRelativePath = $backupRelative; OwnedFiles = $records; CreatedDirectories = @($created.Keys)
         Legacy = [pscustomobject]@{ WasPresent = $plan.LegacyPresent; DisabledByThisInstall = $plan.LegacyPresent; Sha256 = $legacyHash; Stage = 'pending' }
