@@ -1,0 +1,87 @@
+{
+  "SchemaVersion": 1,
+  "ValidationDate": "2026-10-16",
+  "SteamAppId": "1859910",
+  "SteamBuildId": "25957922",
+  "GameVersion": "release_1.0.6000.2",
+  "UnityVersion": "2020.3.49f1",
+  "Platform": "Windows x64 / Unity Mono",
+  "BepInExVersion": "6.0.0-be.692",
+  "DoorstopVersion": "4.3.0 x64",
+  "PluginVersion": "1.0.0",
+  "PluginSha256": "66F6D545562FDEDF2F5E0CAA1AA8609629A42556C5779DF1C45B61F93EA00095",
+  "MatchesPublicPlugin": true,
+  "RuntimeResult": "PASS",
+  "TestCompletedAtUtc": "2026-10-15T22:20:39.9914501Z",
+  "OriginalDiagnosticDirectory": "20261016-092017",
+  "RuntimeScope": "Steam-launched actual Unity process; isolated real StoryCharacterController and PlayerAvatarPanel fixtures; actual Addressables and game-created UI Images; no story progression or savegame access",
+  "Resources": 50,
+  "Replaced": 47,
+  "OriginalFallback": [
+    "back",
+    "shadow_left",
+    "shadow_right"
+  ],
+  "AvatarBranches": 2,
+  "AvatarReplaced": 2,
+  "PortraitReportRows": 52,
+  "VisualSpotCheck": [
+    "portraits-01.png",
+    "avatar-panel-1.png"
+  ],
+  "ScreenshotDistribution": "Screenshots remain local; no game original art is copied into this evidence directory",
+  "Files": [
+    {
+      "Name": "Assembly-CSharp.dll",
+      "Sha256": "5803AF11CFA7428CF1E8E6B9F0447CAC607C1310119F7DB1CE013DB651D8BF23",
+      "Baseline25953419Sha256": "5803AF11CFA7428CF1E8E6B9F0447CAC607C1310119F7DB1CE013DB651D8BF23"
+    },
+    {
+      "Name": "Mortal.Core.dll",
+      "Sha256": "E2FE344EA90DED6E11F06711DE86F27290E005D817B21755149F9EE24966FC9F",
+      "Baseline25953419Sha256": "A377455BBD41E33B680E1647DD6199B27079AC07D9E6999716204F7805584D84"
+    },
+    {
+      "Name": "Mortal.Story.dll",
+      "Sha256": "69340F2B4908A96DE26ED947B870752D674D2CF7193DA17431F4F94A6F41F66A",
+      "Baseline25953419Sha256": "69340F2B4908A96DE26ED947B870752D674D2CF7193DA17431F4F94A6F41F66A"
+    },
+    {
+      "Name": "Fungus.dll",
+      "Sha256": "16DCD300966F3CB747E693B3BD7996AD6C36303B9112B81F9696D2B4C8BC0114",
+      "Baseline25953419Sha256": "16DCD300966F3CB747E693B3BD7996AD6C36303B9112B81F9696D2B4C8BC0114"
+    }
+  ],
+  "OfflineCompatibility": {
+    "Method": "Mono.Cecil method IL, signature, type and field comparison against build25953419; reference resolution against updated game assemblies",
+    "UnchangedAssemblies": [
+      "Assembly-CSharp.dll",
+      "Mortal.Story.dll",
+      "Fungus.dll"
+    ],
+    "ChangedCoreMethods": [
+      "Mortal.Core.MartialPanel.GetNextLevelStatText(Mortal.Core.Book)",
+      "Mortal.Core.MartialPanel.UpdateStatRelation()"
+    ],
+    "AddedCoreMethods": [
+      "Mortal.Core.MartialStatReference.IsHiddenStat()"
+    ],
+    "RemovedCoreMethods": 0,
+    "ChangedFieldTypes": 0,
+    "AddedTypes": 0,
+    "RemovedTypes": 0,
+    "PortraitHookImplementationChanges": 0,
+    "ResolvedPluginGameMemberReferences": 19,
+    "UnresolvedPluginGameMemberReferences": 0
+  },
+  "EvidenceFiles": [
+    {
+      "Name": "PASS.txt",
+      "Sha256": "F6AA517C5A800139C42D28A0C33E1CB6675896E6B9B0CC2DB4BECA586DF4ED4D"
+    },
+    {
+      "Name": "portraits.tsv",
+      "Sha256": "66EE9B9E171B37FD3EBA2443A65AEA593D09AFA1B9DACD71414666D1AE083500"
+    }
+  ]
+}

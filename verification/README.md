@@ -1,6 +1,13 @@
 # 验证记录
 
-`runtime/PASS.txt` 来自游戏 `release_1.0.6000.0` / Steam build `25953419` 的实际 Unity 进程。它是独立资源和 UI 测试的输出，测试边界见 `Source/适配说明.md`。这次公开版沿用已验证的插件和 47 张 PNG，更新的是通用安装器、依赖打包和文档。
+以下记录来自通过 Steam 启动的实际 Unity 进程，验证立绘资源和 UI 显示链路。两个构建均使用同一份立绘插件和 47 张 PNG。
+
+| 验证日期 | 游戏版本 | Steam build | 记录 |
+| --- | --- | --- | --- |
+| 2026-10-15 | `release_1.0.6000.0` | `25953419` | [初版 PASS](runtime/PASS.txt) |
+| 2026-10-16 | `release_1.0.6000.2` | `25957922` | [热修复版验证说明](runtime-build25957922/README.md)、[PASS](runtime-build25957922/PASS.txt)、[版本与指纹](runtime-build25957922/compatibility.json) |
+
+两次均为 50/50 个成人资源加载成功、47/47 张新图替换成功、属性面板 2/2 个分支通过；正常 Setup、同步与异步加载、UI 引用、缓存及非主角保护均通过。新版逐项结果中的个人目录已移除，见 [portraits.tsv](runtime-build25957922/portraits.tsv)。测试边界见[兼容性与验证](../docs/兼容性与验证.md)。这些结果不代表全剧情通关或所有模组组合验证。
 
 该运行验证使用的插件 SHA-256：
 

@@ -1,16 +1,27 @@
 #requires -Version 5.1
 [CmdletBinding()]
 param(
-    [ValidatePattern('^[0-9]+\.[0-9]+\.[0-9]+$')][string]$Version = '1.0.0',
+    [ValidatePattern('^[0-9]+\.[0-9]+\.[0-9]+$')][string]$Version = '1.0.1',
     [string]$OutputDirectory
 )
 $ErrorActionPreference = 'Stop'
 Set-StrictMode -Version 2.0
 $repo = [IO.Path]::GetFullPath((Join-Path $PSScriptRoot '..'))
+$releaseBuildId = '25957922'
+$gameVersionsByBuild = @{ '25953419' = 'release_1.0.6000.0'; '25957922' = 'release_1.0.6000.2' }
+# Use the installer's complete fingerprint groups as the release metadata source.
+$installerModule = Import-Module (Join-Path $repo 'installer\ZhaoHuoInstaller.psm1') -Force -PassThru
+$supportedGameBuilds = @(& $installerModule { $script:SupportedGameBuilds } | ForEach-Object {
+    if (-not $gameVersionsByBuild.ContainsKey([string]$_.BuildId)) { throw "Game version metadata missing for supported build: $($_.BuildId)" }
+    [ordered]@{ BuildId = [string]$_.BuildId; GameVersion = $gameVersionsByBuild[[string]$_.BuildId]; Hashes = $_.Hashes }
+})
+if (@($supportedGameBuilds | Where-Object { $_.BuildId -eq $releaseBuildId }).Count -ne 1) {
+    throw "The release build is not uniquely present in the installer fingerprint list: $releaseBuildId"
+}
 if (-not $OutputDirectory) { $OutputDirectory = Join-Path $repo 'dist' }
 $OutputDirectory = [IO.Path]::GetFullPath($OutputDirectory)
 New-Item -ItemType Directory -Path $OutputDirectory -Force | Out-Null
-$name = "ZhaoHuoNatural-v$Version-build25953419-win-x64"
+$name = "ZhaoHuoNatural-v$Version-build$releaseBuildId-win-x64"
 $zipPath = Join-Path $OutputDirectory ($name + '.zip')
 if (Test-Path -LiteralPath $zipPath) { throw "Output already exists; use a new output directory: $zipPath" }
 $workRoot = Join-Path $OutputDirectory ('staging-' + [Guid]::NewGuid().ToString('N'))
@@ -62,8 +73,10 @@ $manifest = [ordered]@{
     Package = 'ZhaoHuoNatural'
     Version = $Version
     SteamAppId = 1859910
-    SteamBuildId = 25953419
-    GameVersion = 'release_1.0.6000.0'
+    SteamBuildId = [long]$releaseBuildId
+    GameVersion = $gameVersionsByBuild[$releaseBuildId]
+    SupportedSteamBuildIds = @($supportedGameBuilds | ForEach-Object { [long]$_.BuildId })
+    SupportedGameBuilds = $supportedGameBuilds
     PortraitCount = $portraits.Count
     Files = @($files | Sort-Object FullName | ForEach-Object {
         [ordered]@{Path=$_.FullName.Substring($stage.Length+1).Replace('\','/'); SHA256=(Get-FileHash -LiteralPath $_.FullName -Algorithm SHA256).Hash; Bytes=$_.Length}

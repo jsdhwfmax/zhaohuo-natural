@@ -63,18 +63,52 @@ try {
     $clean = New-Fixture 'clean'
     # Only this test process changes the module's expected hashes, to allow
     # self-contained dummy game assemblies. Production scripts expose no bypass.
-    & $module { param($Hashes) $script:GameHashes = $Hashes } $script:FixtureGameHashes
-    Install-ZhaoHuo -GamePath $clean -PackageRoot $package -CheckOnly -Log $quiet | Out-Null
+    $firstHashes = [ordered]@{}
+    foreach ($name in $script:FixtureGameHashes.Keys) { $firstHashes[$name] = $script:FixtureGameHashes[$name] }
+    $updated = New-Fixture 'updated-build'
+    foreach ($name in @('Mortal.Core.dll','Mortal.Story.dll')) {
+        [IO.File]::WriteAllText((Join-Path $updated ('Mortal_Data\Managed\' + $name)), ('fixture-second-build:' + $name))
+    }
+    $secondHashes = [ordered]@{}
+    foreach ($name in $firstHashes.Keys) { $secondHashes[$name] = (Get-FileHash -LiteralPath (Join-Path $updated ('Mortal_Data\Managed\' + $name))).Hash }
+    & $module {
+        param($First,$Second)
+        $script:SupportedGameBuilds = @(
+            [pscustomobject]@{ BuildId = 'fixture-1'; Hashes = $First },
+            [pscustomobject]@{ BuildId = 'fixture-2'; Hashes = $Second }
+        )
+    } $firstHashes $secondHashes
+    $checkFirst = Install-ZhaoHuo -GamePath $clean -PackageRoot $package -CheckOnly -Log $quiet
+    Assert-True ($checkFirst.Validation.MatchedBuildId -eq 'fixture-1') 'First verified four-assembly group remains supported'
     Assert-True (-not (Test-Path -LiteralPath (Join-Path $clean 'BepInEx'))) 'Clean CheckOnly creates no game files'
+    $checkSecond = Install-ZhaoHuo -GamePath $updated -PackageRoot $package -CheckOnly -Log $quiet
+    Assert-True ($checkSecond.Validation.MatchedBuildId -eq 'fixture-2' -and -not (Test-Path -LiteralPath (Join-Path $updated 'BepInEx'))) 'Second complete group passes CheckOnly without changing game files'
     Install-ZhaoHuo -GamePath $clean -PackageRoot $package -Log $quiet | Out-Null
     $state = Read-State $clean
     Assert-True ($state.SchemaVersion -eq 3 -and $state.Environment -eq 'CleanGame' -and @($state.OwnedFiles).Count -eq 66) 'Clean install records all 66 owned files in schema 3'
     Assert-True (@($state.GameAssemblySha256.PSObject.Properties).Count -eq 4) 'Manifest records all four game hashes'
+    Assert-True ($state.MatchedBuildId -eq 'fixture-1') 'Manifest records the complete fingerprint group that matched'
     Assert-True ((Get-FileHash -LiteralPath (Join-Path $clean 'winhttp.dll')).Hash -eq 'D3B62F4C9C3E2196EF82603C52D6B98C043A0D6C125C081FD33D7CA3798B41B8') 'Clean install uses verified official x64 loader'
     $manifestPath = Join-Path $clean 'BepInEx\ZhaoHuoNatural-install\ActiveManifest.json'
     $before = (Get-FileHash -LiteralPath $manifestPath).Hash
     Install-ZhaoHuo -GamePath $clean -PackageRoot $package -Log $quiet | Out-Null
     Assert-True ((Get-FileHash -LiteralPath $manifestPath).Hash -eq $before) 'Repeated identical install is a no-op'
+    # Recreate the v1.0.0 schema3 shape, which predates MatchedBuildId. Updating
+    # the game must not force an uninstall when the portrait payload is unchanged.
+    $state.PSObject.Properties.Remove('MatchedBuildId')
+    $state.PSObject.Properties.Remove('AdoptedUntrackedPayload')
+    Write-State $clean $state
+    $beforeUpdate = (Get-FileHash -LiteralPath $manifestPath).Hash
+    foreach ($name in @('Mortal.Core.dll','Mortal.Story.dll')) {
+        Copy-Item -LiteralPath (Join-Path $updated ('Mortal_Data\Managed\' + $name)) -Destination (Join-Path $clean ('Mortal_Data\Managed\' + $name))
+    }
+    $upgrade = Install-ZhaoHuo -GamePath $clean -PackageRoot $package -Log $quiet
+    Assert-True ($upgrade.AlreadyInstalled -and $upgrade.Validation.MatchedBuildId -eq 'fixture-2' -and (Get-FileHash -LiteralPath $manifestPath).Hash -eq $beforeUpdate) 'Existing v1.0.0 schema3 installation accepts a verified game update without uninstall or overwrite'
+    $storyPath = Join-Path $clean 'Mortal_Data\Managed\Mortal.Story.dll'
+    [IO.File]::WriteAllText($storyPath,'fixture-game-assembly:Mortal.Story.dll')
+    Assert-Rejected { Install-ZhaoHuo -GamePath $clean -PackageRoot $package -Log $quiet } '*游戏版本不受支持*' 'Known Core and Story hashes from different builds are rejected as a mixed group'
+    Assert-True ((Get-FileHash -LiteralPath $manifestPath).Hash -eq $beforeUpdate) 'Rejected mixed group leaves the previous installation record unchanged'
+    Copy-Item -LiteralPath (Join-Path $updated 'Mortal_Data\Managed\Mortal.Story.dll') -Destination $storyPath
     Uninstall-ZhaoHuo -GamePath $clean -CheckOnly -Log $quiet
     Assert-True (Test-Path -LiteralPath (Join-Path $clean 'winhttp.dll')) 'Uninstall CheckOnly does not remove loader'
     $normal = Join-Path $clean 'BepInEx\plugins\ZhaoHuoNatural\Portraits\normal.png'
@@ -144,6 +178,22 @@ try {
     $version = New-Fixture 'story-update'
     [IO.File]::WriteAllText((Join-Path $version 'Mortal_Data\Managed\Mortal.Story.dll'),'only Story changed')
     Assert-Rejected { Install-ZhaoHuo -GamePath $version -PackageRoot $package -Log $quiet } '*Mortal.Story.dll*' 'Story-only version update is rejected'
+    $diagnostic = $null
+    try { Install-ZhaoHuo -GamePath $version -PackageRoot $package -CheckOnly -Log $quiet | Out-Null } catch { $diagnostic = $_.Exception.Message }
+    $allHashesIncluded = $true
+    foreach ($name in $firstHashes.Keys) {
+        $actualHash = (Get-FileHash -LiteralPath (Join-Path $version ('Mortal_Data\Managed\' + $name))).Hash
+        if (-not $diagnostic.Contains($name + ' SHA-256: ' + $actualHash)) { $allHashesIncluded = $false }
+    }
+    Assert-True ($allHashesIncluded -and $diagnostic.Contains('fixture-1') -and $diagnostic.Contains('fixture-2') -and $diagnostic.Contains('/releases')) 'Unsupported-version feedback contains every actual hash, supported groups and update link'
+    $metadata = New-Fixture 'metadata\steamapps\common\LegendOfMortal'
+    $acfPath = Join-Path ([IO.Directory]::GetParent($metadata).Parent.FullName) 'appmanifest_1859910.acf'
+    [IO.File]::WriteAllText($acfPath,'"AppState" { "buildid" "99999999" }')
+    $metadataPlan = Install-ZhaoHuo -GamePath $metadata -PackageRoot $package -CheckOnly -Log $quiet
+    Assert-True ($metadataPlan.Validation.BuildId -eq '99999999' -and $metadataPlan.Validation.MatchedBuildId -eq 'fixture-1') 'Stale Steam metadata does not reject an exact verified fingerprint group'
+    [IO.File]::WriteAllText($acfPath,'"AppState" { "buildid" "25953419" }')
+    [IO.File]::WriteAllText((Join-Path $metadata 'Mortal_Data\Managed\Mortal.Core.dll'),'unknown future core')
+    Assert-Rejected { Install-ZhaoHuo -GamePath $metadata -PackageRoot $package -CheckOnly -Log $quiet } '*游戏版本不受支持*' 'A familiar Steam build label cannot bypass unknown assembly fingerprints'
     $x86 = New-Fixture 'wrong-architecture'
     $x86Bytes = [byte[]]$pe.Clone(); $x86Bytes[0x84] = 0x4C; $x86Bytes[0x85] = 0x01
     [IO.File]::WriteAllBytes((Join-Path $x86 'Mortal.exe'),$x86Bytes)
@@ -157,10 +207,48 @@ try {
     New-Item -ItemType Directory -Path (Join-Path $unknownDirectory 'BepInEx\plugins\ZhaoHuoNatural') -Force | Out-Null
     Assert-Rejected { Install-ZhaoHuo -GamePath $unknownDirectory -PackageRoot $package -Log $quiet } '*专用目录已存在*' 'Unrecorded existing plugin directory is not overwritten'
 
+    $insideGame = New-Fixture 'package-inside-game'
+    Assert-Rejected { Install-ZhaoHuo -GamePath $insideGame -PackageRoot $insideGame -Log $quiet } '*重新完整解压到游戏目录之外*' 'Running the extracted package from the game root gives a recovery instruction'
+    $adopt = New-Fixture 'exact-untracked-copy'
+    $adoptPlugin = Join-Path $adopt 'BepInEx\plugins\ZhaoHuoNatural'
+    New-Item -ItemType Directory -Path (Split-Path -Parent $adoptPlugin) -Force | Out-Null
+    Copy-Item -LiteralPath $payload -Destination $adoptPlugin -Recurse
+    $otherMod = Join-Path $adopt 'BepInEx\plugins\OtherManualMod.dll'
+    [IO.File]::WriteAllText($otherMod,'unrelated manual mod')
+    $adoptCheck = Install-ZhaoHuo -GamePath $adopt -PackageRoot $package -CheckOnly -Log $quiet
+    Assert-True ($adoptCheck.AdoptedUntrackedPayload -and -not (Test-Path -LiteralPath (Join-Path $adopt 'BepInEx\ZhaoHuoNatural-install'))) 'Exact untracked payload can be checked without creating installation state'
+    Install-ZhaoHuo -GamePath $adopt -PackageRoot $package -Log $quiet | Out-Null
+    $adoptState = Read-State $adopt
+    $adoptRecords = @($adoptState.OwnedFiles | Where-Object { $_.Category -eq 'Plugin' })
+    $adoptBackupRoot = Join-Path (Join-Path $adopt 'BepInEx\ZhaoHuoNatural-install') $adoptState.BackupRelativePath
+    $allAdoptBackups = $true
+    foreach ($record in $adoptRecords) {
+        if (-not $record.WasPresent -or (Get-FileHash -LiteralPath (Join-Path $adoptBackupRoot $record.BackupRelativePath)).Hash -ne $record.OriginalSha256) { $allAdoptBackups = $false }
+    }
+    Assert-True ($adoptState.AdoptedUntrackedPayload -and $adoptRecords.Count -eq 50 -and $allAdoptBackups) 'Adopting an exact untracked payload backs up all 50 pre-existing files'
+    Uninstall-ZhaoHuo -GamePath $adopt -Log $quiet
+    $restoredAdoptFiles = @(Get-ChildItem -LiteralPath $adoptPlugin -File -Recurse)
+    Assert-True ($restoredAdoptFiles.Count -eq 50 -and (Get-Content -LiteralPath $otherMod -Raw) -eq 'unrelated manual mod' -and -not (Test-Path -LiteralPath (Join-Path $adopt 'winhttp.dll'))) 'Adopted payload uninstall restores pre-existing files and leaves other mods intact'
+    $unknownAdoptFile = Join-Path $adoptPlugin 'user-extra.txt'
+    [IO.File]::WriteAllText($unknownAdoptFile,'keep this unknown file')
+    Assert-Rejected { Install-ZhaoHuo -GamePath $adopt -PackageRoot $package -Log $quiet } '*文件与本发布包不完全一致*' 'An extra file prevents adoption of an untracked portrait directory'
+    Assert-True ((Get-Content -LiteralPath $unknownAdoptFile -Raw) -eq 'keep this unknown file') 'Rejected adoption preserves unknown user files'
+    Remove-Item -LiteralPath $unknownAdoptFile
+    $adoptNormal = Join-Path $adoptPlugin 'Portraits\normal.png'
+    [IO.File]::WriteAllText($adoptNormal,'modified existing portrait')
+    Assert-Rejected { Install-ZhaoHuo -GamePath $adopt -PackageRoot $package -Log $quiet } '*文件与本发布包不完全一致*' 'A modified portrait prevents adoption even when names match'
+    Assert-True ((Get-Content -LiteralPath $adoptNormal -Raw) -eq 'modified existing portrait') 'Rejected adoption preserves modified portrait bytes'
+    Remove-Item -LiteralPath $adoptNormal
+    Assert-Rejected { Install-ZhaoHuo -GamePath $adopt -PackageRoot $package -Log $quiet } '*文件与本发布包不完全一致*' 'A missing portrait prevents adopting an incomplete extracted copy'
+
     $failure = New-Fixture 'rollback'
     $failureLegacy = Join-Path $failure 'BepInEx\plugins\Tianfei\MortalBeauty.dll'
     New-Item -ItemType Directory -Path (Split-Path -Parent $failureLegacy) -Force | Out-Null
     [IO.File]::WriteAllText($failureLegacy,'rollback legacy bytes')
+    $adoptFailure = New-Fixture 'adoption-rollback'
+    $adoptFailurePlugin = Join-Path $adoptFailure 'BepInEx\plugins\ZhaoHuoNatural'
+    New-Item -ItemType Directory -Path (Split-Path -Parent $adoptFailurePlugin) -Force | Out-Null
+    Copy-Item -LiteralPath $payload -Destination $adoptFailurePlugin -Recurse
     & $module {
         $script:OriginalCopy = ${function:Copy-ZHVerified}
         function script:Copy-ZHVerified([string]$Source,[string]$Destination,[string]$Sha256) {
@@ -168,10 +256,20 @@ try {
             if ($Source -like '*\Loader\winhttp.dll') { throw 'INJECTED_FAILURE_AFTER_LOADER_COPY' }
         }
     }
-    try { Assert-Rejected { Install-ZhaoHuo -GamePath $failure -PackageRoot $package -Log $quiet } '*INJECTED_FAILURE*' 'Injected failure exercises automatic rollback' }
+    try {
+        Assert-Rejected { Install-ZhaoHuo -GamePath $failure -PackageRoot $package -Log $quiet } '*INJECTED_FAILURE*' 'Injected failure exercises automatic rollback'
+        Assert-Rejected { Install-ZhaoHuo -GamePath $adoptFailure -PackageRoot $package -Log $quiet } '*INJECTED_FAILURE*' 'Injected failure also exercises rollback after untracked payload adoption'
+    }
     finally { & $module { Set-Item -Path Function:script:Copy-ZHVerified -Value $script:OriginalCopy } }
     Assert-True (-not (Test-Path -LiteralPath (Join-Path $failure 'winhttp.dll')) -and -not (Test-Path -LiteralPath (Join-Path $failure 'BepInEx\plugins\ZhaoHuoNatural')) -and -not (Test-Path -LiteralPath (Join-Path $failure 'BepInEx\ZhaoHuoNatural-install\ActiveManifest.json'))) 'Rollback removes partially installed files and retires active state'
     Assert-True ((Get-Content -LiteralPath $failureLegacy -Raw) -eq 'rollback legacy bytes') 'Rollback restores previously disabled legacy plugin'
+    $adoptRollbackRestored = $true
+    foreach ($file in @(Get-ChildItem -LiteralPath $payload -Recurse -File)) {
+        $relative = $file.FullName.Substring($payload.Length + 1)
+        $restored = Join-Path $adoptFailurePlugin $relative
+        if (-not (Test-Path -LiteralPath $restored -PathType Leaf) -or (Get-FileHash -LiteralPath $restored).Hash -ne (Get-FileHash -LiteralPath $file.FullName).Hash) { $adoptRollbackRestored = $false }
+    }
+    Assert-True ($adoptRollbackRestored -and -not (Test-Path -LiteralPath (Join-Path $adoptFailure 'winhttp.dll')) -and -not (Test-Path -LiteralPath (Join-Path $adoptFailure 'BepInEx\ZhaoHuoNatural-install\ActiveManifest.json'))) 'Failed adoption restores every original portrait and removes its partial installation state'
 
     $tampered = New-Fixture 'tampered-record'
     Install-ZhaoHuo -GamePath $tampered -PackageRoot $package -Log $quiet | Out-Null
