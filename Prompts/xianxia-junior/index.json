@@ -1,0 +1,781 @@
+{
+    "SchemaVersion":  1,
+    "Variant":  "xianxia",
+    "Design":  "junior-master-v1",
+    "GenerationMethod":  "builtin imagegen",
+    "ExpectedAssets":  47,
+    "RecordedAssets":  47,
+    "Complete":  true,
+    "PendingAssets":  [
+
+                      ],
+    "Warnings":  [
+                     "Actual recorded request begins with literal undefined; preserved without invention: caught",
+                     "Actual recorded request begins with literal undefined; preserved without invention: eye_mask_nervous2",
+                     "Actual recorded request begins with literal undefined; preserved without invention: mask",
+                     "Actual recorded request begins with literal undefined; preserved without invention: suck4"
+                 ],
+    "PromptTextPolicy":  "Actual requests are preserved. Four root records with an ineffective undefined prefix expose rawPrompt plus cleanPrompt with only that prefix removed; no common instructions are invented. File/reference metadata is normalized.",
+    "ReferencesPolicy":  "Reference and generated names identify source assets; reference images and raw generator outputs are not included by this collector.",
+    "PayloadFingerprint":  "12BC83F70EF4C99BBD49A13ABBA4A1867998B6DD794873EFAE47B065870A9802",
+    "StagedPayloadMatched":  true,
+    "Assets":  [
+                   {
+                       "Name":  "angry1",
+                       "Output":  "BepInEx/plugins/ZhaoHuoNatural/Portraits/angry1.png",
+                       "Record":  "prompts-group-basic-junior.json",
+                       "OutputSHA256":  "BFBED916437B08F0CA3A2C7811D3EBADD28F0A343DE3E378A45BD7F20C4D408F",
+                       "SelectedGeneration":  {
+                                                  "Record":  "prompts-group-basic-junior.json",
+                                                  "EntryIndex":  16,
+                                                  "Source":  "generated/exec-a0931bc0-93ff-4de6-a9dd-5de040cc8f9d.png",
+                                                  "SHA256":  "BFBED916437B08F0CA3A2C7811D3EBADD28F0A343DE3E378A45BD7F20C4D408F"
+                                              },
+                       "RecordedAttempts":  2
+                   },
+                   {
+                       "Name":  "angry2",
+                       "Output":  "BepInEx/plugins/ZhaoHuoNatural/Portraits/angry2.png",
+                       "Record":  "prompts-group-basic-junior.json",
+                       "OutputSHA256":  "B933F8DB6AD62CD886F28F92EE09BA6F9012EDA4A068A5408DC3F9D17937FD5C",
+                       "SelectedGeneration":  {
+                                                  "Record":  "prompts-group-basic-junior.json",
+                                                  "EntryIndex":  2,
+                                                  "Source":  "generated/exec-fbb32197-49c5-47c5-842e-5a882f95e55f.png",
+                                                  "SHA256":  "B933F8DB6AD62CD886F28F92EE09BA6F9012EDA4A068A5408DC3F9D17937FD5C"
+                                              },
+                       "RecordedAttempts":  1
+                   },
+                   {
+                       "Name":  "angry3",
+                       "Output":  "BepInEx/plugins/ZhaoHuoNatural/Portraits/angry3.png",
+                       "Record":  "prompts-group-basic-junior.json",
+                       "OutputSHA256":  "1523A469F11F29BE3989346E71123CE79E7DC9F6DD45FAFD98D1F79529DBD087",
+                       "SelectedGeneration":  {
+                                                  "Record":  "prompts-group-basic-junior.json",
+                                                  "EntryIndex":  3,
+                                                  "Source":  "generated/exec-52d4a4a1-c7ee-4023-93c3-82bec16a1ff9.png",
+                                                  "SHA256":  "1523A469F11F29BE3989346E71123CE79E7DC9F6DD45FAFD98D1F79529DBD087"
+                                              },
+                       "RecordedAttempts":  1
+                   },
+                   {
+                       "Name":  "blood_laugh1",
+                       "Output":  "BepInEx/plugins/ZhaoHuoNatural/Portraits/blood_laugh1.png",
+                       "Record":  "prompts-group-action-junior.json",
+                       "OutputSHA256":  "77B82707C78CD9DA664EB2E05EF80D4C7F94E1A5B0A33E3B6EF9D57A40175B0B",
+                       "SelectedGeneration":  {
+                                                  "Record":  "prompts-group-action-junior.json",
+                                                  "EntryIndex":  8,
+                                                  "Source":  "generated/exec-4ee2c247-6b33-4a0b-9872-dfd72b4e2f2b.png",
+                                                  "SHA256":  "77B82707C78CD9DA664EB2E05EF80D4C7F94E1A5B0A33E3B6EF9D57A40175B0B"
+                                              },
+                       "RecordedAttempts":  1
+                   },
+                   {
+                       "Name":  "blood_nervous1",
+                       "Output":  "BepInEx/plugins/ZhaoHuoNatural/Portraits/blood_nervous1.png",
+                       "Record":  "prompts-group-action-junior.json",
+                       "OutputSHA256":  "4309D08A2875B269E200924E6DAEC5A1F8EC7CDEC5D49A731E6048017850D55E",
+                       "SelectedGeneration":  {
+                                                  "Record":  "prompts-group-action-junior.json",
+                                                  "EntryIndex":  9,
+                                                  "Source":  "generated/exec-0a51f5d5-f5d2-419a-b561-7832760acd21.png",
+                                                  "SHA256":  "4309D08A2875B269E200924E6DAEC5A1F8EC7CDEC5D49A731E6048017850D55E"
+                                              },
+                       "RecordedAttempts":  1
+                   },
+                   {
+                       "Name":  "blood_no_weapon_laugh1",
+                       "Output":  "BepInEx/plugins/ZhaoHuoNatural/Portraits/blood_no_weapon_laugh1.png",
+                       "Record":  "prompts-group-action-junior.json",
+                       "OutputSHA256":  "C3A94F02B3EE2856A49BE8F7AA59F12CD508B83FDC9E63AA4CCB84FD168FA782",
+                       "SelectedGeneration":  {
+                                                  "Record":  "prompts-group-action-junior.json",
+                                                  "EntryIndex":  11,
+                                                  "Source":  "generated/exec-b8398a4c-3979-474d-97c9-fd30b25b8996.png",
+                                                  "SHA256":  "C3A94F02B3EE2856A49BE8F7AA59F12CD508B83FDC9E63AA4CCB84FD168FA782"
+                                              },
+                       "RecordedAttempts":  1
+                   },
+                   {
+                       "Name":  "blood_no_weapon",
+                       "Output":  "BepInEx/plugins/ZhaoHuoNatural/Portraits/blood_no_weapon.png",
+                       "Record":  "prompts-group-action-junior.json",
+                       "OutputSHA256":  "EE3DEB98C593B3A2AB33F4C8B329F30EB4135F300475842FC42473CE1BE3FF7A",
+                       "SelectedGeneration":  {
+                                                  "Record":  "prompts-group-action-junior.json",
+                                                  "EntryIndex":  10,
+                                                  "Source":  "generated/exec-30c57a10-899f-48cf-a67e-76d8c1ab08bc.png",
+                                                  "SHA256":  "EE3DEB98C593B3A2AB33F4C8B329F30EB4135F300475842FC42473CE1BE3FF7A"
+                                              },
+                       "RecordedAttempts":  1
+                   },
+                   {
+                       "Name":  "blood",
+                       "Output":  "BepInEx/plugins/ZhaoHuoNatural/Portraits/blood.png",
+                       "Record":  "prompts-group-action-junior.json",
+                       "OutputSHA256":  "F1BCE8B2023D4B7651EADEC31CE81AA2938C2F47B4398BFB9F76FDB2C5DDC383",
+                       "SelectedGeneration":  {
+                                                  "Record":  "prompts-group-action-junior.json",
+                                                  "EntryIndex":  7,
+                                                  "Source":  "generated/exec-462d2f0b-9366-47c8-b8d4-6bffbcee418b.png",
+                                                  "SHA256":  "F1BCE8B2023D4B7651EADEC31CE81AA2938C2F47B4398BFB9F76FDB2C5DDC383"
+                                              },
+                       "RecordedAttempts":  1
+                   },
+                   {
+                       "Name":  "caught",
+                       "Output":  "BepInEx/plugins/ZhaoHuoNatural/Portraits/caught.png",
+                       "Record":  "root/caught.json",
+                       "OutputSHA256":  "2B1688A30D5F38AA1B29DCD401254DF58D8034B1FF6F92429841D04B29343FA7",
+                       "SelectedGeneration":  {
+                                                  "Record":  "root/caught.json",
+                                                  "EntryIndex":  1,
+                                                  "Source":  "generated/exec-7dd14be7-490a-435c-b332-a212d437ab50.png",
+                                                  "SHA256":  "2B1688A30D5F38AA1B29DCD401254DF58D8034B1FF6F92429841D04B29343FA7"
+                                              },
+                       "RecordedAttempts":  1
+                   },
+                   {
+                       "Name":  "close_eye_laugh",
+                       "Output":  "BepInEx/plugins/ZhaoHuoNatural/Portraits/close_eye_laugh.png",
+                       "Record":  "prompts-group-basic-junior.json",
+                       "OutputSHA256":  "2753D4C3C11D554EFEBC23B9A2E2FE6C3C3D044E2E36C521D4DE98EC0AF4B7E4",
+                       "SelectedGeneration":  {
+                                                  "Record":  "prompts-group-basic-junior.json",
+                                                  "EntryIndex":  13,
+                                                  "Source":  "generated/exec-7d13539f-0a75-43a8-bd9c-36bbcdde7e0a.png",
+                                                  "SHA256":  "2753D4C3C11D554EFEBC23B9A2E2FE6C3C3D044E2E36C521D4DE98EC0AF4B7E4"
+                                              },
+                       "RecordedAttempts":  1
+                   },
+                   {
+                       "Name":  "close_eye_nervous",
+                       "Output":  "BepInEx/plugins/ZhaoHuoNatural/Portraits/close_eye_nervous.png",
+                       "Record":  "prompts-group-basic-junior.json",
+                       "OutputSHA256":  "BCC6FEEA86643A3CF56AFF9205658261FF2B89E811843E72775DA0045FF843FC",
+                       "SelectedGeneration":  {
+                                                  "Record":  "prompts-group-basic-junior.json",
+                                                  "EntryIndex":  12,
+                                                  "Source":  "generated/exec-208a8d1a-013e-4e12-b2a1-32c1a95ef458.png",
+                                                  "SHA256":  "BCC6FEEA86643A3CF56AFF9205658261FF2B89E811843E72775DA0045FF843FC"
+                                              },
+                       "RecordedAttempts":  1
+                   },
+                   {
+                       "Name":  "close_eye_nervous2",
+                       "Output":  "BepInEx/plugins/ZhaoHuoNatural/Portraits/close_eye_nervous2.png",
+                       "Record":  "prompts-group-basic-junior.json",
+                       "OutputSHA256":  "E8C00F2DDD9ECD5FE63B2A21982A81919C86D0706538E25CF7C3DEC4AD7C3C2F",
+                       "SelectedGeneration":  {
+                                                  "Record":  "prompts-group-basic-junior.json",
+                                                  "EntryIndex":  14,
+                                                  "Source":  "generated/exec-d199e834-099e-49c2-8394-5100e1b1b949.png",
+                                                  "SHA256":  "E8C00F2DDD9ECD5FE63B2A21982A81919C86D0706538E25CF7C3DEC4AD7C3C2F"
+                                              },
+                       "RecordedAttempts":  1
+                   },
+                   {
+                       "Name":  "close_eye_powder",
+                       "Output":  "BepInEx/plugins/ZhaoHuoNatural/Portraits/close_eye_powder.png",
+                       "Record":  "prompts-group-basic-junior.json",
+                       "OutputSHA256":  "0C805B07E6C83F174BD4ED277F3DD0B7851789520F3F6544A096BDAF89D1337B",
+                       "SelectedGeneration":  {
+                                                  "Record":  "prompts-group-basic-junior.json",
+                                                  "EntryIndex":  15,
+                                                  "Source":  "generated/exec-cd451d26-6d30-4aae-81a0-af65f80bede1.png",
+                                                  "SHA256":  "0C805B07E6C83F174BD4ED277F3DD0B7851789520F3F6544A096BDAF89D1337B"
+                                              },
+                       "RecordedAttempts":  1
+                   },
+                   {
+                       "Name":  "close_eye",
+                       "Output":  "BepInEx/plugins/ZhaoHuoNatural/Portraits/close_eye.png",
+                       "Record":  "prompts-group-basic-junior.json",
+                       "OutputSHA256":  "3D8E93A573C88AF174E4C314B6E47E54E4D749BB3456A80CBC428DBBF1331E96",
+                       "SelectedGeneration":  {
+                                                  "Record":  "prompts-group-basic-junior.json",
+                                                  "EntryIndex":  11,
+                                                  "Source":  "generated/exec-9ced82e3-4398-4b0e-aade-ad6ccd848f78.png",
+                                                  "SHA256":  "3D8E93A573C88AF174E4C314B6E47E54E4D749BB3456A80CBC428DBBF1331E96"
+                                              },
+                       "RecordedAttempts":  1
+                   },
+                   {
+                       "Name":  "determined",
+                       "Output":  "BepInEx/plugins/ZhaoHuoNatural/Portraits/determined.png",
+                       "Record":  "root/determined.json",
+                       "OutputSHA256":  "053A7019BD09345CEFC923A870097FC2A15DCA6BB09DAE6ECFDFC99ACC82AA84",
+                       "SelectedGeneration":  {
+                                                  "Record":  "root/determined.json",
+                                                  "EntryIndex":  1,
+                                                  "Source":  "generated/exec-151ebf29-8a7d-45be-a08d-f7ec513747de.png",
+                                                  "SHA256":  "053A7019BD09345CEFC923A870097FC2A15DCA6BB09DAE6ECFDFC99ACC82AA84"
+                                              },
+                       "RecordedAttempts":  1
+                   },
+                   {
+                       "Name":  "die",
+                       "Output":  "BepInEx/plugins/ZhaoHuoNatural/Portraits/die.png",
+                       "Record":  "prompts-group-action-junior.json",
+                       "OutputSHA256":  "97A42811C3916F7AB790351C5CA5A23A197F58F6FF061F663AEAE4F54BCAC741",
+                       "SelectedGeneration":  {
+                                                  "Record":  "prompts-group-action-junior.json",
+                                                  "EntryIndex":  15,
+                                                  "Source":  "generated/exec-bb5fbff5-f566-4caa-a511-c5aa75764777.png",
+                                                  "SHA256":  "97A42811C3916F7AB790351C5CA5A23A197F58F6FF061F663AEAE4F54BCAC741"
+                                              },
+                       "RecordedAttempts":  1
+                   },
+                   {
+                       "Name":  "doubt",
+                       "Output":  "BepInEx/plugins/ZhaoHuoNatural/Portraits/doubt.png",
+                       "Record":  "root/doubt.json",
+                       "OutputSHA256":  "AE7C223B9CFA2AA85D47BB7FE42273975637DBE57402BC4C95DE2515B7B8F928",
+                       "SelectedGeneration":  {
+                                                  "Record":  "root/doubt.json",
+                                                  "EntryIndex":  1,
+                                                  "Source":  "generated/exec-b097c86e-41d4-418d-9471-c00462f2bd9e.png",
+                                                  "SHA256":  "AE7C223B9CFA2AA85D47BB7FE42273975637DBE57402BC4C95DE2515B7B8F928"
+                                              },
+                       "RecordedAttempts":  1
+                   },
+                   {
+                       "Name":  "eye_mask_nervous1",
+                       "Output":  "BepInEx/plugins/ZhaoHuoNatural/Portraits/eye_mask_nervous1.png",
+                       "Record":  "root/eye_mask_nervous1.json",
+                       "OutputSHA256":  "AC3307F4E11FD0CBC557E0DDE5099C6A21CEFB229C35DE5B7F758C37367470D8",
+                       "SelectedGeneration":  {
+                                                  "Record":  "root/eye_mask_nervous1.json",
+                                                  "EntryIndex":  1,
+                                                  "Source":  "generated/exec-7c12a4e1-851c-47dc-9b83-55d8a20c1523.png",
+                                                  "SHA256":  "AC3307F4E11FD0CBC557E0DDE5099C6A21CEFB229C35DE5B7F758C37367470D8"
+                                              },
+                       "RecordedAttempts":  1
+                   },
+                   {
+                       "Name":  "eye_mask_nervous2",
+                       "Output":  "BepInEx/plugins/ZhaoHuoNatural/Portraits/eye_mask_nervous2.png",
+                       "Record":  "root/eye_mask_nervous2.json",
+                       "OutputSHA256":  "A82F566F81EF56B2D5E38ED131E3794974969FF7A1BF34F6035FD391378D6BFA",
+                       "SelectedGeneration":  {
+                                                  "Record":  "root/eye_mask_nervous2.json",
+                                                  "EntryIndex":  1,
+                                                  "Source":  "generated/exec-3872a979-2778-497b-a71e-02f09ad4828d.png",
+                                                  "SHA256":  "A82F566F81EF56B2D5E38ED131E3794974969FF7A1BF34F6035FD391378D6BFA"
+                                              },
+                       "RecordedAttempts":  1
+                   },
+                   {
+                       "Name":  "fist_north_star",
+                       "Output":  "BepInEx/plugins/ZhaoHuoNatural/Portraits/fist_north_star.png",
+                       "Record":  "prompts-group-action-junior.json",
+                       "OutputSHA256":  "F96BBBAA4D3DD57C6A0CCF212E661A410127089F2367C0E16F1A129DAFBDF31D",
+                       "SelectedGeneration":  {
+                                                  "Record":  "prompts-group-action-junior.json",
+                                                  "EntryIndex":  1,
+                                                  "Source":  "generated/exec-d5944d2e-fc3b-450f-9528-5c095fd7084f.png",
+                                                  "SHA256":  "F96BBBAA4D3DD57C6A0CCF212E661A410127089F2367C0E16F1A129DAFBDF31D"
+                                              },
+                       "RecordedAttempts":  1
+                   },
+                   {
+                       "Name":  "gloomy2",
+                       "Output":  "BepInEx/plugins/ZhaoHuoNatural/Portraits/gloomy2.png",
+                       "Record":  "root/gloomy2.json",
+                       "OutputSHA256":  "C94F713CBCDC2B720890D7650FA39D8DD1F1F931C4ADDB77C977857E4EA7FF46",
+                       "SelectedGeneration":  {
+                                                  "Record":  "root/gloomy2.json",
+                                                  "EntryIndex":  1,
+                                                  "Source":  "generated/exec-c17f9307-e121-4059-a3a6-304d00e1aa8d.png",
+                                                  "SHA256":  "C94F713CBCDC2B720890D7650FA39D8DD1F1F931C4ADDB77C977857E4EA7FF46"
+                                              },
+                       "RecordedAttempts":  1
+                   },
+                   {
+                       "Name":  "god_thunder",
+                       "Output":  "BepInEx/plugins/ZhaoHuoNatural/Portraits/god_thunder.png",
+                       "Record":  "prompts-group-action-junior.json",
+                       "OutputSHA256":  "7EF16E98358D60EA9DEA0C4024598B562A8F71712E8F872096F655C9AD249F80",
+                       "SelectedGeneration":  {
+                                                  "Record":  "prompts-group-action-junior.json",
+                                                  "EntryIndex":  2,
+                                                  "Source":  "generated/exec-ac4ccf52-f743-4067-b137-939d1970f687.png",
+                                                  "SHA256":  "7EF16E98358D60EA9DEA0C4024598B562A8F71712E8F872096F655C9AD249F80"
+                                              },
+                       "RecordedAttempts":  1
+                   },
+                   {
+                       "Name":  "head",
+                       "Output":  "BepInEx/plugins/ZhaoHuoNatural/Portraits/head.png",
+                       "Record":  "root/head.json",
+                       "OutputSHA256":  "B4C0B7409241234C2DB26B5CF8835F7F3A4370772B6C669C17230F8E0BA30F35",
+                       "SelectedGeneration":  {
+                                                  "Record":  "root/head.json",
+                                                  "EntryIndex":  1,
+                                                  "Source":  "generated/exec-8fb27e9f-3522-4888-8480-3dcc6d14c6da.png",
+                                                  "SHA256":  "B4C0B7409241234C2DB26B5CF8835F7F3A4370772B6C669C17230F8E0BA30F35"
+                                              },
+                       "RecordedAttempts":  1
+                   },
+                   {
+                       "Name":  "hero_landing",
+                       "Output":  "BepInEx/plugins/ZhaoHuoNatural/Portraits/hero_landing.png",
+                       "Record":  "prompts-group-action-junior.json",
+                       "OutputSHA256":  "CD0150D0AE0F16EDD20ECFF075C5187F769379D35DEE7E863C83A655944062CF",
+                       "SelectedGeneration":  {
+                                                  "Record":  "prompts-group-action-junior.json",
+                                                  "EntryIndex":  3,
+                                                  "Source":  "generated/exec-45f110fd-8cd1-49c9-88e5-f1a12f558b42.png",
+                                                  "SHA256":  "CD0150D0AE0F16EDD20ECFF075C5187F769379D35DEE7E863C83A655944062CF"
+                                              },
+                       "RecordedAttempts":  1
+                   },
+                   {
+                       "Name":  "hurt_fist",
+                       "Output":  "BepInEx/plugins/ZhaoHuoNatural/Portraits/hurt_fist.png",
+                       "Record":  "prompts-group-action-junior.json",
+                       "OutputSHA256":  "EE7B8D7CDC8C49C462A9A5DA7211E5FFFDBA5AD5CA05E5750B95F1BE037B7DC5",
+                       "SelectedGeneration":  {
+                                                  "Record":  "prompts-group-action-junior.json",
+                                                  "EntryIndex":  14,
+                                                  "Source":  "generated/exec-c4e84796-02f1-4c0b-a317-de2880d068aa.png",
+                                                  "SHA256":  "EE7B8D7CDC8C49C462A9A5DA7211E5FFFDBA5AD5CA05E5750B95F1BE037B7DC5"
+                                              },
+                       "RecordedAttempts":  1
+                   },
+                   {
+                       "Name":  "hurt",
+                       "Output":  "BepInEx/plugins/ZhaoHuoNatural/Portraits/hurt.png",
+                       "Record":  "prompts-group-action-junior.json",
+                       "OutputSHA256":  "06DC8D7D53D10A1AEF2B67225C2C1AD8F997C5A9F8A64BBA47F850FE370E8CD8",
+                       "SelectedGeneration":  {
+                                                  "Record":  "prompts-group-action-junior.json",
+                                                  "EntryIndex":  12,
+                                                  "Source":  "generated/exec-f4a3e61a-206f-42c2-b656-318ef9d0291e.png",
+                                                  "SHA256":  "06DC8D7D53D10A1AEF2B67225C2C1AD8F997C5A9F8A64BBA47F850FE370E8CD8"
+                                              },
+                       "RecordedAttempts":  1
+                   },
+                   {
+                       "Name":  "hurt2",
+                       "Output":  "BepInEx/plugins/ZhaoHuoNatural/Portraits/hurt2.png",
+                       "Record":  "prompts-group-action-junior.json",
+                       "OutputSHA256":  "E5D22D10438275E6B86DFC367989154CCD1F3B323D0C2EC9492EE8CF3A09E2E4",
+                       "SelectedGeneration":  {
+                                                  "Record":  "prompts-group-action-junior.json",
+                                                  "EntryIndex":  13,
+                                                  "Source":  "generated/exec-b6007203-419f-4729-adc8-6f243f548f55.png",
+                                                  "SHA256":  "E5D22D10438275E6B86DFC367989154CCD1F3B323D0C2EC9492EE8CF3A09E2E4"
+                                              },
+                       "RecordedAttempts":  1
+                   },
+                   {
+                       "Name":  "laugh1",
+                       "Output":  "BepInEx/plugins/ZhaoHuoNatural/Portraits/laugh1.png",
+                       "Record":  "prompts-group-basic-junior.json",
+                       "OutputSHA256":  "7FE144EC5A45732C2D1271224ACAC326D541FDD2DC9AC28B9AC1F422C2F7591B",
+                       "SelectedGeneration":  {
+                                                  "Record":  "prompts-group-basic-junior.json",
+                                                  "EntryIndex":  4,
+                                                  "Source":  "generated/exec-68483069-37ab-4c6e-81cd-d737f48374ab.png",
+                                                  "SHA256":  "7FE144EC5A45732C2D1271224ACAC326D541FDD2DC9AC28B9AC1F422C2F7591B"
+                                              },
+                       "RecordedAttempts":  1
+                   },
+                   {
+                       "Name":  "laugh2",
+                       "Output":  "BepInEx/plugins/ZhaoHuoNatural/Portraits/laugh2.png",
+                       "Record":  "prompts-group-basic-junior.json",
+                       "OutputSHA256":  "D939A441540A1E5F58B76A54EAD504C2F5E3757BC290626A192ABFF729AB6E28",
+                       "SelectedGeneration":  {
+                                                  "Record":  "prompts-group-basic-junior.json",
+                                                  "EntryIndex":  5,
+                                                  "Source":  "generated/exec-468f26aa-b200-4a54-9e44-e4618d376593.png",
+                                                  "SHA256":  "D939A441540A1E5F58B76A54EAD504C2F5E3757BC290626A192ABFF729AB6E28"
+                                              },
+                       "RecordedAttempts":  1
+                   },
+                   {
+                       "Name":  "mask",
+                       "Output":  "BepInEx/plugins/ZhaoHuoNatural/Portraits/mask.png",
+                       "Record":  "root/mask.json",
+                       "OutputSHA256":  "306EA9D74B1976E119B7239E80785D27D408BD4CB1499A1166952C017E83AECA",
+                       "SelectedGeneration":  {
+                                                  "Record":  "root/mask.json",
+                                                  "EntryIndex":  1,
+                                                  "Source":  "generated/exec-ee3267b3-3acf-4413-80f3-4992dcc71f7f.png",
+                                                  "SHA256":  "306EA9D74B1976E119B7239E80785D27D408BD4CB1499A1166952C017E83AECA"
+                                              },
+                       "RecordedAttempts":  1
+                   },
+                   {
+                       "Name":  "mud",
+                       "Output":  "BepInEx/plugins/ZhaoHuoNatural/Portraits/mud.png",
+                       "Record":  "root/mud.json",
+                       "OutputSHA256":  "705131C91B663ECF38F48B04611F56D9CA0206047B15B22B4A895DBA91423E42",
+                       "SelectedGeneration":  {
+                                                  "Record":  "root/mud.json",
+                                                  "EntryIndex":  1,
+                                                  "Source":  "generated/exec-cf889229-f836-49b1-b29c-8e69faa52574.png",
+                                                  "SHA256":  "705131C91B663ECF38F48B04611F56D9CA0206047B15B22B4A895DBA91423E42"
+                                              },
+                       "RecordedAttempts":  1
+                   },
+                   {
+                       "Name":  "nervous1",
+                       "Output":  "BepInEx/plugins/ZhaoHuoNatural/Portraits/nervous1.png",
+                       "Record":  "prompts-group-basic-junior.json",
+                       "OutputSHA256":  "BC01A4F750A2A403DC73BA16FF9AF021A22AD10085DC099B6D242012D252D695",
+                       "SelectedGeneration":  {
+                                                  "Record":  "prompts-group-basic-junior.json",
+                                                  "EntryIndex":  17,
+                                                  "Source":  "generated/exec-6cbe5440-5667-4fc3-9b11-0f2665c70e80.png",
+                                                  "SHA256":  "BC01A4F750A2A403DC73BA16FF9AF021A22AD10085DC099B6D242012D252D695"
+                                              },
+                       "RecordedAttempts":  2
+                   },
+                   {
+                       "Name":  "nervous2",
+                       "Output":  "BepInEx/plugins/ZhaoHuoNatural/Portraits/nervous2.png",
+                       "Record":  "prompts-group-basic-junior.json",
+                       "OutputSHA256":  "CAABEEDC96B54E2873A43A77D4C3F0B77573A568AFC2EE59F880DB65EC585583",
+                       "SelectedGeneration":  {
+                                                  "Record":  "prompts-group-basic-junior.json",
+                                                  "EntryIndex":  7,
+                                                  "Source":  "generated/exec-aed6b197-443c-47a1-8bc4-567294fae4e8.png",
+                                                  "SHA256":  "CAABEEDC96B54E2873A43A77D4C3F0B77573A568AFC2EE59F880DB65EC585583"
+                                              },
+                       "RecordedAttempts":  1
+                   },
+                   {
+                       "Name":  "nervous3",
+                       "Output":  "BepInEx/plugins/ZhaoHuoNatural/Portraits/nervous3.png",
+                       "Record":  "prompts-group-basic-junior.json",
+                       "OutputSHA256":  "9220F1DE0BD090508103F46B815F6BE519A3C857EE998BCC7EADE4D0407BB26F",
+                       "SelectedGeneration":  {
+                                                  "Record":  "prompts-group-basic-junior.json",
+                                                  "EntryIndex":  8,
+                                                  "Source":  "generated/exec-c4ec902c-f9f9-4260-9096-1b859bca6758.png",
+                                                  "SHA256":  "9220F1DE0BD090508103F46B815F6BE519A3C857EE998BCC7EADE4D0407BB26F"
+                                              },
+                       "RecordedAttempts":  1
+                   },
+                   {
+                       "Name":  "normal",
+                       "Output":  "BepInEx/plugins/ZhaoHuoNatural/Portraits/normal.png",
+                       "Record":  "junior-master-v1-prompt.txt",
+                       "OutputSHA256":  "2B49A49A28FF3EBF1C40D937E2623B83F3A8F30F835D1F9BFD54E77D85096AD4",
+                       "SelectedGeneration":  {
+                                                  "Record":  "junior-master-v1-prompt.txt",
+                                                  "EntryIndex":  1,
+                                                  "Source":  "references/junior-master-v1.png",
+                                                  "SHA256":  "2B49A49A28FF3EBF1C40D937E2623B83F3A8F30F835D1F9BFD54E77D85096AD4"
+                                              },
+                       "RecordedAttempts":  1
+                   },
+                   {
+                       "Name":  "oraora",
+                       "Output":  "BepInEx/plugins/ZhaoHuoNatural/Portraits/oraora.png",
+                       "Record":  "prompts-group-action-junior.json",
+                       "OutputSHA256":  "3E3189DA18EDB7EFB7192C395E8F8393865194B5FB02E9EB1C87D89F6A61ADC9",
+                       "SelectedGeneration":  {
+                                                  "Record":  "prompts-group-action-junior.json",
+                                                  "EntryIndex":  4,
+                                                  "Source":  "generated/exec-8cb7cdc1-2adb-4fc7-8176-4fe5b231a668.png",
+                                                  "SHA256":  "3E3189DA18EDB7EFB7192C395E8F8393865194B5FB02E9EB1C87D89F6A61ADC9"
+                                              },
+                       "RecordedAttempts":  1
+                   },
+                   {
+                       "Name":  "revel",
+                       "Output":  "BepInEx/plugins/ZhaoHuoNatural/Portraits/revel.png",
+                       "Record":  "root/revel.json",
+                       "OutputSHA256":  "F606E76A2300D72DE23FC0F9C4CB3488B25D3AE9152CEAAD08687D049A5ED34B",
+                       "SelectedGeneration":  {
+                                                  "Record":  "root/revel.json",
+                                                  "EntryIndex":  1,
+                                                  "Source":  "generated/exec-82ef77b0-6f28-41f4-a244-b23a7678261f.png",
+                                                  "SHA256":  "F606E76A2300D72DE23FC0F9C4CB3488B25D3AE9152CEAAD08687D049A5ED34B"
+                                              },
+                       "RecordedAttempts":  1
+                   },
+                   {
+                       "Name":  "sad1",
+                       "Output":  "BepInEx/plugins/ZhaoHuoNatural/Portraits/sad1.png",
+                       "Record":  "prompts-group-basic-junior.json",
+                       "OutputSHA256":  "CF865E305B0D611094009393E05DCC4DF20A5E5B20A96DD2260AC16AECC8CA07",
+                       "SelectedGeneration":  {
+                                                  "Record":  "prompts-group-basic-junior.json",
+                                                  "EntryIndex":  9,
+                                                  "Source":  "generated/exec-1f01ddcb-016f-4215-bf73-3e066868e8a5.png",
+                                                  "SHA256":  "CF865E305B0D611094009393E05DCC4DF20A5E5B20A96DD2260AC16AECC8CA07"
+                                              },
+                       "RecordedAttempts":  1
+                   },
+                   {
+                       "Name":  "shake",
+                       "Output":  "BepInEx/plugins/ZhaoHuoNatural/Portraits/shake.png",
+                       "Record":  "prompts-group-action-junior.json",
+                       "OutputSHA256":  "CF4E166DB8D4374A0D6059F62D20BEB3B1FE2185ED0E5B7A3A63E0F76E1FD9C5",
+                       "SelectedGeneration":  {
+                                                  "Record":  "prompts-group-action-junior.json",
+                                                  "EntryIndex":  5,
+                                                  "Source":  "generated/exec-dd4bc580-808b-4f54-b8bc-335723a3bf04.png",
+                                                  "SHA256":  "CF4E166DB8D4374A0D6059F62D20BEB3B1FE2185ED0E5B7A3A63E0F76E1FD9C5"
+                                              },
+                       "RecordedAttempts":  1
+                   },
+                   {
+                       "Name":  "shake2",
+                       "Output":  "BepInEx/plugins/ZhaoHuoNatural/Portraits/shake2.png",
+                       "Record":  "prompts-group-action-junior.json",
+                       "OutputSHA256":  "AB7B6B9FD346BA6E53159163C22BF0844DB117C7F3E13F0B6854037772D5CC32",
+                       "SelectedGeneration":  {
+                                                  "Record":  "prompts-group-action-junior.json",
+                                                  "EntryIndex":  6,
+                                                  "Source":  "generated/exec-fe088d3b-757c-473d-8377-13023b88ec5e.png",
+                                                  "SHA256":  "AB7B6B9FD346BA6E53159163C22BF0844DB117C7F3E13F0B6854037772D5CC32"
+                                              },
+                       "RecordedAttempts":  1
+                   },
+                   {
+                       "Name":  "shock",
+                       "Output":  "BepInEx/plugins/ZhaoHuoNatural/Portraits/shock.png",
+                       "Record":  "prompts-group-basic-junior.json",
+                       "OutputSHA256":  "CE43998455EEB2D62D2777C42EC718AC43088FACB96F2B5295CBE1B9E01A14A2",
+                       "SelectedGeneration":  {
+                                                  "Record":  "prompts-group-basic-junior.json",
+                                                  "EntryIndex":  10,
+                                                  "Source":  "generated/exec-dc8bbb5c-2593-47c8-8754-bdd954e04510.png",
+                                                  "SHA256":  "CE43998455EEB2D62D2777C42EC718AC43088FACB96F2B5295CBE1B9E01A14A2"
+                                              },
+                       "RecordedAttempts":  1
+                   },
+                   {
+                       "Name":  "soul",
+                       "Output":  "BepInEx/plugins/ZhaoHuoNatural/Portraits/soul.png",
+                       "Record":  "root/soul.json",
+                       "OutputSHA256":  "2CAAD118F2B2A0763935E02F1449AB96186D64D1DA6900353C8EDFDBAA5E7DB1",
+                       "SelectedGeneration":  {
+                                                  "Record":  "root/soul.json",
+                                                  "EntryIndex":  1,
+                                                  "Source":  "generated/exec-038c5491-ff10-42ef-98a7-9ddf2cddcb05.png",
+                                                  "SHA256":  "2CAAD118F2B2A0763935E02F1449AB96186D64D1DA6900353C8EDFDBAA5E7DB1"
+                                              },
+                       "RecordedAttempts":  1
+                   },
+                   {
+                       "Name":  "special1",
+                       "Output":  "BepInEx/plugins/ZhaoHuoNatural/Portraits/special1.png",
+                       "Record":  "root/special1.json",
+                       "OutputSHA256":  "834D45D2C37DDF6E5C5B79BDFD0E5E852F86804D0B3619B909F458190E8C273F",
+                       "SelectedGeneration":  {
+                                                  "Record":  "root/special1.json",
+                                                  "EntryIndex":  1,
+                                                  "Source":  "generated/exec-c945be78-1197-40a2-900f-f3f3e5540cac.png",
+                                                  "SHA256":  "834D45D2C37DDF6E5C5B79BDFD0E5E852F86804D0B3619B909F458190E8C273F"
+                                              },
+                       "RecordedAttempts":  1
+                   },
+                   {
+                       "Name":  "stupid",
+                       "Output":  "BepInEx/plugins/ZhaoHuoNatural/Portraits/stupid.png",
+                       "Record":  "root/stupid.json",
+                       "OutputSHA256":  "A1EAA98B165FFAF0DEEFCC04725080A90F5CC60DED22718C2D2A799EBF457001",
+                       "SelectedGeneration":  {
+                                                  "Record":  "root/stupid.json",
+                                                  "EntryIndex":  1,
+                                                  "Source":  "generated/exec-e45aaf6d-46df-4957-a9e6-b2a2d3b5a2a1.png",
+                                                  "SHA256":  "A1EAA98B165FFAF0DEEFCC04725080A90F5CC60DED22718C2D2A799EBF457001"
+                                              },
+                       "RecordedAttempts":  1
+                   },
+                   {
+                       "Name":  "suck1",
+                       "Output":  "BepInEx/plugins/ZhaoHuoNatural/Portraits/suck1.png",
+                       "Record":  "root/suck1.json",
+                       "OutputSHA256":  "7332B4D62B955E5EA33B1309FEF8C5F32C5003E8DF2393BD3271DD8256F9BCF0",
+                       "SelectedGeneration":  {
+                                                  "Record":  "root/suck1.json",
+                                                  "EntryIndex":  1,
+                                                  "Source":  "generated/exec-0faf54cf-c8fb-409b-a04f-c8819ef306f3.png",
+                                                  "SHA256":  "7332B4D62B955E5EA33B1309FEF8C5F32C5003E8DF2393BD3271DD8256F9BCF0"
+                                              },
+                       "RecordedAttempts":  1
+                   },
+                   {
+                       "Name":  "suck3",
+                       "Output":  "BepInEx/plugins/ZhaoHuoNatural/Portraits/suck3.png",
+                       "Record":  "root/suck3.json",
+                       "OutputSHA256":  "67B9B0C87E7173D3F1EEF97EA3F0A68CB4BC10585E9489AC19306E72774D03E4",
+                       "SelectedGeneration":  {
+                                                  "Record":  "root/suck3.json",
+                                                  "EntryIndex":  1,
+                                                  "Source":  "generated/exec-9df2a966-93db-4839-be7c-8e55fe44a689.png",
+                                                  "SHA256":  "67B9B0C87E7173D3F1EEF97EA3F0A68CB4BC10585E9489AC19306E72774D03E4"
+                                              },
+                       "RecordedAttempts":  1
+                   },
+                   {
+                       "Name":  "suck4",
+                       "Output":  "BepInEx/plugins/ZhaoHuoNatural/Portraits/suck4.png",
+                       "Record":  "root/suck4.json",
+                       "OutputSHA256":  "8F68BBBAEFB86299A2CB4856B4D31833DE4B20D6920A20AADF8120C9C2A0EB8C",
+                       "SelectedGeneration":  {
+                                                  "Record":  "root/suck4.json",
+                                                  "EntryIndex":  1,
+                                                  "Source":  "generated/exec-8e792613-9892-44c7-b1c2-8304d35fa367.png",
+                                                  "SHA256":  "8F68BBBAEFB86299A2CB4856B4D31833DE4B20D6920A20AADF8120C9C2A0EB8C"
+                                              },
+                       "RecordedAttempts":  1
+                   }
+               ],
+    "SourceRecords":  [
+                          {
+                              "Path":  "junior-master-v1-prompt.txt",
+                              "SHA256":  "9D72A4D5CFBE11B41D62B5351ACC0C9A89FD7A9886F0619FCDC0B81521D79682"
+                          },
+                          {
+                              "Path":  "junior-variant-common-prompt.txt",
+                              "SHA256":  "CA4C1F38AA8BCE3EF6E8E301DBCDE09970ABDDDD74751CCACC48FD2864E103AE"
+                          },
+                          {
+                              "Path":  "prompts-root-junior/caught.json",
+                              "SHA256":  "0F847DA94104CD4BB7DF6EB11A0E69EBD7378D5BE49503F287FE6EA28CE51AA5"
+                          },
+                          {
+                              "Path":  "prompts-root-junior/caught-result.json",
+                              "SHA256":  "42F0295DD36D4242061EA8800FE5F508360FB87E902EDE52DA7F658F8D56B226"
+                          },
+                          {
+                              "Path":  "prompts-root-junior/determined.json",
+                              "SHA256":  "0B08E63D516CC729C17547B9BDF53B391DDF3012F5BAD1A7A6B6DAC476A6C5F6"
+                          },
+                          {
+                              "Path":  "prompts-root-junior/determined-result.json",
+                              "SHA256":  "1BBA5AD48594B232DBA7308E696D194D350CA93CB3E0EC984771915014570927"
+                          },
+                          {
+                              "Path":  "prompts-root-junior/doubt.json",
+                              "SHA256":  "386B04B820BE11D56499BFA208C932E8DCA1EBE3952F39B43524C75A51AFB3B8"
+                          },
+                          {
+                              "Path":  "prompts-root-junior/doubt-result.json",
+                              "SHA256":  "66FC58101DFE52E3D9A68FE972DC669FAB0D7EA456DB6AD51B87CBC2E61DC27F"
+                          },
+                          {
+                              "Path":  "prompts-root-junior/eye_mask_nervous1.json",
+                              "SHA256":  "F1452E480C5D736F790F9743DD90ACB6C00D1CCFA183C0D358137BD63C06FFFE"
+                          },
+                          {
+                              "Path":  "prompts-root-junior/eye_mask_nervous1-result.json",
+                              "SHA256":  "8F05B06663AE0ECFDF67633C62B9F2CDC5779D8C8C6CB60991AC591F6A2221A2"
+                          },
+                          {
+                              "Path":  "prompts-root-junior/eye_mask_nervous2.json",
+                              "SHA256":  "4DCEC354AB704A55F3BD82B1EB3558BE3152E4041D31774592ACEF13C199F543"
+                          },
+                          {
+                              "Path":  "prompts-root-junior/eye_mask_nervous2-result.json",
+                              "SHA256":  "528945AEC183870999E3E679A4044B4C37C646104050BF0070EAC08D51B1A22B"
+                          },
+                          {
+                              "Path":  "prompts-root-junior/gloomy2.json",
+                              "SHA256":  "4F97F1E76ED28FE6505A27505D93CA220DC1471680805263459017C1823A9980"
+                          },
+                          {
+                              "Path":  "prompts-root-junior/gloomy2-result.json",
+                              "SHA256":  "EF300A52808D6D8A5A056972D81A5AB827A5AE8E62D1558FF4F4C1545A027C53"
+                          },
+                          {
+                              "Path":  "prompts-root-junior/head.json",
+                              "SHA256":  "9A2DC61B0FDCC06A4773997C60D504A0D2A3EF0E34836E731C8A015BFDB653CD"
+                          },
+                          {
+                              "Path":  "prompts-root-junior/head-result.json",
+                              "SHA256":  "D9E894DB27BC3CBAF7DB98A81CAA8645442BEEC603D2F9B54E87DFBC9670A9D7"
+                          },
+                          {
+                              "Path":  "prompts-root-junior/mask.json",
+                              "SHA256":  "886E608091DDCFAE915A68C5EE8E7A24AE908AFA3DC687E528805F07C1D47767"
+                          },
+                          {
+                              "Path":  "prompts-root-junior/mask-result.json",
+                              "SHA256":  "DBF8F339C74E26339A8460469D93CA88709B42DF726FB9B1AFE91EF933BB328E"
+                          },
+                          {
+                              "Path":  "prompts-root-junior/mud.json",
+                              "SHA256":  "D39A0B2A9A1BF05BC54E7B3E824EC15A1EC27B15659D6C69A07EDFF905CFAD88"
+                          },
+                          {
+                              "Path":  "prompts-root-junior/mud-result.json",
+                              "SHA256":  "8DD636ADCEA0E11BEE0FE0AB62AE7419B11C95BC1D4084B622A798E5081FB65E"
+                          },
+                          {
+                              "Path":  "prompts-root-junior/revel.json",
+                              "SHA256":  "04A9E5067FA8A141DD448D2A17ACBD1B424698DA0F44D4F652B4B6AE214042A8"
+                          },
+                          {
+                              "Path":  "prompts-root-junior/revel-result.json",
+                              "SHA256":  "1087CD8F1F2A6D7A2282B1C9C42FB1BC19F3D9E495C8D6C08A2CF5A0594B1C4D"
+                          },
+                          {
+                              "Path":  "prompts-root-junior/soul.json",
+                              "SHA256":  "04F1AA443F8491F4C62B94232610257FDDF87EE837C6B39A46B68A70CEA35908"
+                          },
+                          {
+                              "Path":  "prompts-root-junior/soul-result.json",
+                              "SHA256":  "038D74694CDE57EDAF5D1A60B6DD8017D73216EBA62501691D64DE3EC54F2154"
+                          },
+                          {
+                              "Path":  "prompts-root-junior/special1.json",
+                              "SHA256":  "630EA33F05637D04F39E4450714DCFDF05B5D08770753C3505E904B4C3677C5F"
+                          },
+                          {
+                              "Path":  "prompts-root-junior/special1-result.json",
+                              "SHA256":  "A8D0AE302FA5D41F813A38E4DD27E02966D5DC652121A940B0FD2B04D0B17F70"
+                          },
+                          {
+                              "Path":  "prompts-root-junior/stupid.json",
+                              "SHA256":  "3A938EE1883D33D05B5EA3F8C2A751F00E508074647C342BBEDB96D219BF6101"
+                          },
+                          {
+                              "Path":  "prompts-root-junior/stupid-result.json",
+                              "SHA256":  "709CE3F49F463DFF5F55BE8AA022E848CAA3CC1CA51F7803D5F2572CD9D635E8"
+                          },
+                          {
+                              "Path":  "prompts-root-junior/suck1.json",
+                              "SHA256":  "FF8315FB338753FC588C648FC7796AD41CB290A515EEDE0B2DB12FB704AD9027"
+                          },
+                          {
+                              "Path":  "prompts-root-junior/suck1-result.json",
+                              "SHA256":  "F166E52C692927EF26CDF40B2806BA92CBDF982A74256854A946DDCC764D4A59"
+                          },
+                          {
+                              "Path":  "prompts-root-junior/suck3.json",
+                              "SHA256":  "66119FB0A52EF55F772656298D14D4F573994EE0B398F86BAC5973C60DAD3D8D"
+                          },
+                          {
+                              "Path":  "prompts-root-junior/suck3-result.json",
+                              "SHA256":  "6256C584CB84FEE49D4B55A2333AEFCA50A98CD2EB03D32EBC3BFA906EE91B45"
+                          },
+                          {
+                              "Path":  "prompts-root-junior/suck4.json",
+                              "SHA256":  "1F092FDCBAC84B941ABEBBF3AFA3245D8A0A33112FC10B92518E9A1AC2EE4C44"
+                          },
+                          {
+                              "Path":  "prompts-root-junior/suck4-result.json",
+                              "SHA256":  "D299B88AA624C612E369FB0D2B9475A58ABF34A91AFBD3FC08BFDC3E9498613B"
+                          },
+                          {
+                              "Path":  "prompts-group-basic-junior.json",
+                              "SHA256":  "48E3ABF53E765EEAA6D5D203615F31293C3BC6920B8274ED5C5FB7962301ADCD"
+                          },
+                          {
+                              "Path":  "prompts-group-action-junior.json",
+                              "SHA256":  "59E6DA346E4A48BDBF64655AE5FEE073D2E5A9FD200232572B1D313F0DE23879"
+                          }
+                      ]
+}

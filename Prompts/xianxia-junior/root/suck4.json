@@ -1,0 +1,11 @@
+{
+    "name":  "suck4",
+    "rawPrompt":  "undefinedA deliberate comic facial distortion: chin elongated downward into a noticeable but neat pointed shape, smug toothy narrow smile, knowingly sidelong eyes. Preserve this long-chin gag from target, yet base all OTHER face/hair features on image1 and use the small natural skull/head size. Arms down. This expression intentionally has a longer chin than the ordinary master.",
+    "cleanPrompt":  "A deliberate comic facial distortion: chin elongated downward into a noticeable but neat pointed shape, smug toothy narrow smile, knowingly sidelong eyes. Preserve this long-chin gag from target, yet base all OTHER face/hair features on image1 and use the small natural skull/head size. Arms down. This expression intentionally has a longer chin than the ordinary master.",
+    "promptNormalizationNote":  "The actual request contained an ineffective leading undefined prefix. Only that prefix is removed for display; no missing common instructions have been added. rawPrompt preserves the actual request.",
+    "references":  [
+                       "references/junior-master-v1.png",
+                       "references/previous-handsome-v1.1.0/suck4.png"
+                   ],
+    "status":  "REQUESTED"
+}

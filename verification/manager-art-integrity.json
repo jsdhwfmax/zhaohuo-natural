@@ -1,0 +1,1197 @@
+{
+  "Passed": true,
+  "Scope": "Independent Python SHA-256, PNG decoding and nonempty transparent RGBA verification of unchanged 141 bundled portraits and the three shared runtime files. This does not replace game runtime testing.",
+  "Variants": [
+    {
+      "Id": "natural",
+      "Passed": true,
+      "Portraits": 47,
+      "PayloadFiles": 50,
+      "PayloadFingerprint": "1179319D7CEE4F7D19A7FF00D8A23E1D7474A8871F601343666DF4E6624E5E66",
+      "Files": [
+        {
+          "RelativePath": "BepInEx/plugins/ZhaoHuoNatural/Portraits/angry1.png",
+          "Sha256": "71ED266F309D032A32DC658FE4CCF6A0F21272134EAD8F9A7315ADB608E36823",
+          "Width": 990,
+          "Height": 1589,
+          "AlphaMin": 0,
+          "AlphaMax": 255
+        },
+        {
+          "RelativePath": "BepInEx/plugins/ZhaoHuoNatural/Portraits/angry2.png",
+          "Sha256": "6743E6FFC9D2D996DA9F3E52C72DD1BD02B9E7A8C5C2D38ACEB76401A82E4456",
+          "Width": 990,
+          "Height": 1589,
+          "AlphaMin": 0,
+          "AlphaMax": 254
+        },
+        {
+          "RelativePath": "BepInEx/plugins/ZhaoHuoNatural/Portraits/angry3.png",
+          "Sha256": "AD128150608AF1B0360AF0B02F937931A1C64A4B50C2D18E4514FD2F3BA5BC0F",
+          "Width": 990,
+          "Height": 1589,
+          "AlphaMin": 0,
+          "AlphaMax": 254
+        },
+        {
+          "RelativePath": "BepInEx/plugins/ZhaoHuoNatural/Portraits/blood.png",
+          "Sha256": "410A4463F06B56264138681A6BA7EED23BBE2C84D590F9D9C592DFF7842BB96E",
+          "Width": 990,
+          "Height": 1588,
+          "AlphaMin": 0,
+          "AlphaMax": 255
+        },
+        {
+          "RelativePath": "BepInEx/plugins/ZhaoHuoNatural/Portraits/blood_laugh1.png",
+          "Sha256": "66B47A05F1A151B1EF9A285DA75BE34F7A229E0EA0900E82C50EFC45A19C5F4E",
+          "Width": 990,
+          "Height": 1589,
+          "AlphaMin": 0,
+          "AlphaMax": 255
+        },
+        {
+          "RelativePath": "BepInEx/plugins/ZhaoHuoNatural/Portraits/blood_nervous1.png",
+          "Sha256": "D81BAF66C13A456C0CC2753B96745DFA18EFC1C1B58AF58A4E78F22555069648",
+          "Width": 990,
+          "Height": 1589,
+          "AlphaMin": 0,
+          "AlphaMax": 255
+        },
+        {
+          "RelativePath": "BepInEx/plugins/ZhaoHuoNatural/Portraits/blood_no_weapon.png",
+          "Sha256": "EAE91A8A63BA0E223C7F8E53F0F840B125AF45171AB04531C444F3CB41EAD2D2",
+          "Width": 991,
+          "Height": 1587,
+          "AlphaMin": 0,
+          "AlphaMax": 255
+        },
+        {
+          "RelativePath": "BepInEx/plugins/ZhaoHuoNatural/Portraits/blood_no_weapon_laugh1.png",
+          "Sha256": "12D412867BBEA241C6CE8BD833B7138293FCC9E96E15EE89E7B3592E6514423A",
+          "Width": 990,
+          "Height": 1589,
+          "AlphaMin": 0,
+          "AlphaMax": 255
+        },
+        {
+          "RelativePath": "BepInEx/plugins/ZhaoHuoNatural/Portraits/caught.png",
+          "Sha256": "06B809757BA53BD72CD7548FBC35B26DB68A0154C960835C67C380252AB4DDF6",
+          "Width": 991,
+          "Height": 1588,
+          "AlphaMin": 0,
+          "AlphaMax": 255
+        },
+        {
+          "RelativePath": "BepInEx/plugins/ZhaoHuoNatural/Portraits/close_eye.png",
+          "Sha256": "F125846F5255FE07F44173C549DFA97C2A329AEB75526C3D5001D85B352141C1",
+          "Width": 990,
+          "Height": 1588,
+          "AlphaMin": 0,
+          "AlphaMax": 255
+        },
+        {
+          "RelativePath": "BepInEx/plugins/ZhaoHuoNatural/Portraits/close_eye_laugh.png",
+          "Sha256": "E016DF47ACB266F053E14CC554BFF277B8488F3FFA5BD98BDE1CE1430B55AA5A",
+          "Width": 990,
+          "Height": 1589,
+          "AlphaMin": 0,
+          "AlphaMax": 255
+        },
+        {
+          "RelativePath": "BepInEx/plugins/ZhaoHuoNatural/Portraits/close_eye_nervous.png",
+          "Sha256": "148F40A72E36022E8DAFD8E96BB4A167168164CD6E7C8587AE791C9612D5FC83",
+          "Width": 990,
+          "Height": 1589,
+          "AlphaMin": 0,
+          "AlphaMax": 255
+        },
+        {
+          "RelativePath": "BepInEx/plugins/ZhaoHuoNatural/Portraits/close_eye_nervous2.png",
+          "Sha256": "0850ABE76B0F816FF3BD96C7656C29B9A8A3D33CF557DC3645E0BDF732CF4DCB",
+          "Width": 990,
+          "Height": 1589,
+          "AlphaMin": 0,
+          "AlphaMax": 255
+        },
+        {
+          "RelativePath": "BepInEx/plugins/ZhaoHuoNatural/Portraits/close_eye_powder.png",
+          "Sha256": "557062F5D8F70AF0727E59FF84F8B90BE29E6CF94ABABCACAAC8F19F1B863C55",
+          "Width": 990,
+          "Height": 1588,
+          "AlphaMin": 0,
+          "AlphaMax": 255
+        },
+        {
+          "RelativePath": "BepInEx/plugins/ZhaoHuoNatural/Portraits/determined.png",
+          "Sha256": "F764E80866CF6B412DB7B128102C189AB8B90018256F12E0C0C264B2F4792334",
+          "Width": 991,
+          "Height": 1587,
+          "AlphaMin": 0,
+          "AlphaMax": 255
+        },
+        {
+          "RelativePath": "BepInEx/plugins/ZhaoHuoNatural/Portraits/die.png",
+          "Sha256": "F85A4873B548E76E725FDF106CF2C4FCA7B9AF73D67DD4051E384B601B8B7E45",
+          "Width": 991,
+          "Height": 1587,
+          "AlphaMin": 0,
+          "AlphaMax": 255
+        },
+        {
+          "RelativePath": "BepInEx/plugins/ZhaoHuoNatural/Portraits/doubt.png",
+          "Sha256": "885F501C28DD22B1D747E168367C0D2A0D472D8C2817703F0233C954B1EFF56F",
+          "Width": 990,
+          "Height": 1589,
+          "AlphaMin": 0,
+          "AlphaMax": 255
+        },
+        {
+          "RelativePath": "BepInEx/plugins/ZhaoHuoNatural/Portraits/eye_mask_nervous1.png",
+          "Sha256": "9855FD620390EDB73077FCE38608B171E73B74033B47AB3F8920D17E22886CE3",
+          "Width": 990,
+          "Height": 1589,
+          "AlphaMin": 0,
+          "AlphaMax": 255
+        },
+        {
+          "RelativePath": "BepInEx/plugins/ZhaoHuoNatural/Portraits/eye_mask_nervous2.png",
+          "Sha256": "5DC291EC0CB10DB9B95E7158ABE8563808CD0848A1691C72950553D2DDCCD4B4",
+          "Width": 990,
+          "Height": 1589,
+          "AlphaMin": 0,
+          "AlphaMax": 255
+        },
+        {
+          "RelativePath": "BepInEx/plugins/ZhaoHuoNatural/Portraits/fist_north_star.png",
+          "Sha256": "17484291D8C3AF868189C168277039DE9E80FFD39C44063150A00CDAA6DAFF7D",
+          "Width": 1054,
+          "Height": 1492,
+          "AlphaMin": 0,
+          "AlphaMax": 255
+        },
+        {
+          "RelativePath": "BepInEx/plugins/ZhaoHuoNatural/Portraits/gloomy2.png",
+          "Sha256": "52DA58588D8AB583BD3AC05D7E8099F839AD46B0FAA28AA4F8DD71848BC15A48",
+          "Width": 991,
+          "Height": 1587,
+          "AlphaMin": 0,
+          "AlphaMax": 255
+        },
+        {
+          "RelativePath": "BepInEx/plugins/ZhaoHuoNatural/Portraits/god_thunder.png",
+          "Sha256": "AB5E0632EC0BF542CCF5B74A12B3968B8967CC564ED315E144DFF5F9B940BE8E",
+          "Width": 1105,
+          "Height": 1424,
+          "AlphaMin": 0,
+          "AlphaMax": 255
+        },
+        {
+          "RelativePath": "BepInEx/plugins/ZhaoHuoNatural/Portraits/head.png",
+          "Sha256": "18FE6959F46D9B2E4037B71DBA696F77EAC8ACD996ABB40A5287B2259EE0309B",
+          "Width": 991,
+          "Height": 1587,
+          "AlphaMin": 0,
+          "AlphaMax": 255
+        },
+        {
+          "RelativePath": "BepInEx/plugins/ZhaoHuoNatural/Portraits/hero_landing.png",
+          "Sha256": "326D81529CDF811B7C92EAB233C7341D7D2FEB98C11C3763C5B9C8C2733A7D58",
+          "Width": 1054,
+          "Height": 1493,
+          "AlphaMin": 0,
+          "AlphaMax": 255
+        },
+        {
+          "RelativePath": "BepInEx/plugins/ZhaoHuoNatural/Portraits/hurt.png",
+          "Sha256": "CEBBB70B32AF444CF978811F5BB41CD552BA6C9B08CCD9A4ECA98BD59FAD903B",
+          "Width": 991,
+          "Height": 1587,
+          "AlphaMin": 0,
+          "AlphaMax": 255
+        },
+        {
+          "RelativePath": "BepInEx/plugins/ZhaoHuoNatural/Portraits/hurt2.png",
+          "Sha256": "3902A0113E194995E7AD204FE028264F83B6E6A7C4574270CB9FBFD5FF77C360",
+          "Width": 990,
+          "Height": 1589,
+          "AlphaMin": 0,
+          "AlphaMax": 255
+        },
+        {
+          "RelativePath": "BepInEx/plugins/ZhaoHuoNatural/Portraits/hurt_fist.png",
+          "Sha256": "FB9293D16D291D6F3F7074A4633B786EA7216855B0C25845543643C74404A1B2",
+          "Width": 1163,
+          "Height": 1353,
+          "AlphaMin": 0,
+          "AlphaMax": 255
+        },
+        {
+          "RelativePath": "BepInEx/plugins/ZhaoHuoNatural/Portraits/laugh1.png",
+          "Sha256": "7491AA49E86551424FB7A8D3EB0A4CD5DE9E1FB316A2C2B3BD4FF253B7850FEF",
+          "Width": 990,
+          "Height": 1589,
+          "AlphaMin": 0,
+          "AlphaMax": 255
+        },
+        {
+          "RelativePath": "BepInEx/plugins/ZhaoHuoNatural/Portraits/laugh2.png",
+          "Sha256": "784FD32B12380BBD6A5C652D35D2A34CC1ECAF1511D193DC2C03171B8C7B22D3",
+          "Width": 990,
+          "Height": 1589,
+          "AlphaMin": 0,
+          "AlphaMax": 255
+        },
+        {
+          "RelativePath": "BepInEx/plugins/ZhaoHuoNatural/Portraits/mask.png",
+          "Sha256": "B2E6B814D5D82B7843FE9142030578C36D4A0B56D746B04B4CED6BE5BBB6AB76",
+          "Width": 990,
+          "Height": 1589,
+          "AlphaMin": 0,
+          "AlphaMax": 255
+        },
+        {
+          "RelativePath": "BepInEx/plugins/ZhaoHuoNatural/Portraits/mud.png",
+          "Sha256": "D428346E57623E5F64CC83CFCACCB12E516D645A62A8C00E4B4C039672A2C212",
+          "Width": 991,
+          "Height": 1587,
+          "AlphaMin": 0,
+          "AlphaMax": 255
+        },
+        {
+          "RelativePath": "BepInEx/plugins/ZhaoHuoNatural/Portraits/nervous1.png",
+          "Sha256": "4294B3C6893EADD686B92F66540922A49286DA736EE230BAFFA15B98E5106362",
+          "Width": 990,
+          "Height": 1589,
+          "AlphaMin": 0,
+          "AlphaMax": 255
+        },
+        {
+          "RelativePath": "BepInEx/plugins/ZhaoHuoNatural/Portraits/nervous2.png",
+          "Sha256": "D74A6C41515426522FAEAB0F30872BFFF259B321D5044E6A180A5335237761DA",
+          "Width": 990,
+          "Height": 1589,
+          "AlphaMin": 0,
+          "AlphaMax": 255
+        },
+        {
+          "RelativePath": "BepInEx/plugins/ZhaoHuoNatural/Portraits/nervous3.png",
+          "Sha256": "593171CBAEC06CEBC0FF6548CA46366CD95B2F7C714AFE5F59D7A6CC187C1D9D",
+          "Width": 990,
+          "Height": 1589,
+          "AlphaMin": 0,
+          "AlphaMax": 255
+        },
+        {
+          "RelativePath": "BepInEx/plugins/ZhaoHuoNatural/Portraits/normal.png",
+          "Sha256": "641270658EF35691FE7E1EFC564DB70629A4AD8C20F2449C3B0097053B3358D4",
+          "Width": 943,
+          "Height": 1667,
+          "AlphaMin": 0,
+          "AlphaMax": 255
+        },
+        {
+          "RelativePath": "BepInEx/plugins/ZhaoHuoNatural/Portraits/oraora.png",
+          "Sha256": "4A87F77D0D7067689E035E2FAA01F98E5EEF8A05EC3F3C962711E1C569D1A703",
+          "Width": 990,
+          "Height": 1589,
+          "AlphaMin": 0,
+          "AlphaMax": 255
+        },
+        {
+          "RelativePath": "BepInEx/plugins/ZhaoHuoNatural/Portraits/revel.png",
+          "Sha256": "8360DA7E2C5F46BACAB07DEF0E83DFB46115DE5AD9CE39D9D69EF9486799D940",
+          "Width": 990,
+          "Height": 1589,
+          "AlphaMin": 0,
+          "AlphaMax": 255
+        },
+        {
+          "RelativePath": "BepInEx/plugins/ZhaoHuoNatural/Portraits/sad1.png",
+          "Sha256": "B6D0D73F58AB79E2ABB98776E419360D5936B952B3219106F95286E1E9C2E643",
+          "Width": 990,
+          "Height": 1589,
+          "AlphaMin": 0,
+          "AlphaMax": 255
+        },
+        {
+          "RelativePath": "BepInEx/plugins/ZhaoHuoNatural/Portraits/shake.png",
+          "Sha256": "26785F7F528B0698A9CA0074B8836813ED399E1F6101BB7DAEB25F96B7AA97F3",
+          "Width": 989,
+          "Height": 1589,
+          "AlphaMin": 0,
+          "AlphaMax": 255
+        },
+        {
+          "RelativePath": "BepInEx/plugins/ZhaoHuoNatural/Portraits/shake2.png",
+          "Sha256": "52C02F0AD68067C6196BE2BE4C106649E9BFB2776E185D34D2429C86D3882313",
+          "Width": 990,
+          "Height": 1588,
+          "AlphaMin": 0,
+          "AlphaMax": 255
+        },
+        {
+          "RelativePath": "BepInEx/plugins/ZhaoHuoNatural/Portraits/shock.png",
+          "Sha256": "CB619807925E449AB6A218C2EEDCB1C2C4AC9A732C1C3CF1B7C6627B5C660E46",
+          "Width": 990,
+          "Height": 1589,
+          "AlphaMin": 0,
+          "AlphaMax": 255
+        },
+        {
+          "RelativePath": "BepInEx/plugins/ZhaoHuoNatural/Portraits/soul.png",
+          "Sha256": "580C1BE9FAD931A0FD6F78648BFF78CE42E7B0412B9B51E1DE5F64B5F3DE4492",
+          "Width": 991,
+          "Height": 1588,
+          "AlphaMin": 0,
+          "AlphaMax": 255
+        },
+        {
+          "RelativePath": "BepInEx/plugins/ZhaoHuoNatural/Portraits/special1.png",
+          "Sha256": "805E81BD85A33ACA2848ECCFFB3D769D2FDCDC4E4194D795ACD63470DB8EB197",
+          "Width": 990,
+          "Height": 1589,
+          "AlphaMin": 0,
+          "AlphaMax": 255
+        },
+        {
+          "RelativePath": "BepInEx/plugins/ZhaoHuoNatural/Portraits/stupid.png",
+          "Sha256": "73873C0300ECF8712E8430CFC4E594ACED213229EA817D04D2565A66E5F54B2F",
+          "Width": 990,
+          "Height": 1589,
+          "AlphaMin": 0,
+          "AlphaMax": 255
+        },
+        {
+          "RelativePath": "BepInEx/plugins/ZhaoHuoNatural/Portraits/suck1.png",
+          "Sha256": "E988A9014DE910FA63B9CD535E121F198A24E83AAA9F78168DA97FBEA968E35E",
+          "Width": 990,
+          "Height": 1589,
+          "AlphaMin": 0,
+          "AlphaMax": 255
+        },
+        {
+          "RelativePath": "BepInEx/plugins/ZhaoHuoNatural/Portraits/suck3.png",
+          "Sha256": "BF7A0673934F5E00F9931E837D2AEE3029F96C3AB1042A2815E8780B42680AC9",
+          "Width": 990,
+          "Height": 1589,
+          "AlphaMin": 0,
+          "AlphaMax": 255
+        },
+        {
+          "RelativePath": "BepInEx/plugins/ZhaoHuoNatural/Portraits/suck4.png",
+          "Sha256": "68EF6C8D547973EEDCEC0D8A1D1556D92E4675512C791AAE713B7A9A7D54246F",
+          "Width": 990,
+          "Height": 1589,
+          "AlphaMin": 0,
+          "AlphaMax": 255
+        },
+        {
+          "RelativePath": "BepInEx/plugins/ZhaoHuoNatural/ZhaoHuoNatural.dll",
+          "Sha256": "66F6D545562FDEDF2F5E0CAA1AA8609629A42556C5779DF1C45B61F93EA00095"
+        },
+        {
+          "RelativePath": "BepInEx/plugins/ZhaoHuoNatural/portrait-map.txt",
+          "Sha256": "844B9A7F73CB2B16DC2F911B18418ADDD4446E9D522D4F7448EFEDD4A614614C"
+        },
+        {
+          "RelativePath": "BepInEx/plugins/ZhaoHuoNatural/portrait-layout.tsv",
+          "Sha256": "DCE2CDF380008740BC6151F979251F119880605A0C370DB0C0533C088FED011A"
+        }
+      ]
+    },
+    {
+      "Id": "handsome",
+      "Passed": true,
+      "Portraits": 47,
+      "PayloadFiles": 50,
+      "PayloadFingerprint": "E38B63E6DECA2C3837AA659D19CA8AA48FBD4D748FFEB257D6DFEE6016832A8E",
+      "Files": [
+        {
+          "RelativePath": "BepInEx/plugins/ZhaoHuoNatural/Portraits/angry1.png",
+          "Sha256": "330428D10A46973277AE45A592B915A111F54C33C60DABA7F07D88957C99B44B",
+          "Width": 990,
+          "Height": 1589,
+          "AlphaMin": 0,
+          "AlphaMax": 255
+        },
+        {
+          "RelativePath": "BepInEx/plugins/ZhaoHuoNatural/Portraits/angry2.png",
+          "Sha256": "C1BBAF6FFF189ECBFD9AF9DA7BA3F06BAB49437419B28A5B309E51C365942BFB",
+          "Width": 990,
+          "Height": 1589,
+          "AlphaMin": 0,
+          "AlphaMax": 255
+        },
+        {
+          "RelativePath": "BepInEx/plugins/ZhaoHuoNatural/Portraits/angry3.png",
+          "Sha256": "BBD28C3735B0F646BFF8EBC0BAE5730C415083C4EAE87EDEF2C1E66C19AD2FF4",
+          "Width": 990,
+          "Height": 1589,
+          "AlphaMin": 0,
+          "AlphaMax": 255
+        },
+        {
+          "RelativePath": "BepInEx/plugins/ZhaoHuoNatural/Portraits/blood.png",
+          "Sha256": "0B32AAC44C7589B2C9A4D46593821BFAA4596B31057B174768877B70D04FF51E",
+          "Width": 990,
+          "Height": 1588,
+          "AlphaMin": 0,
+          "AlphaMax": 255
+        },
+        {
+          "RelativePath": "BepInEx/plugins/ZhaoHuoNatural/Portraits/blood_laugh1.png",
+          "Sha256": "C8DA3C32C4AFF2A9AA903586FF5C54BA8EA3B302718B7F86B16CB68D76C7E40B",
+          "Width": 990,
+          "Height": 1589,
+          "AlphaMin": 0,
+          "AlphaMax": 255
+        },
+        {
+          "RelativePath": "BepInEx/plugins/ZhaoHuoNatural/Portraits/blood_nervous1.png",
+          "Sha256": "DB451E803A6E921E2653A16FEAB946B646C2938DC0523A90728038671CEDB64C",
+          "Width": 990,
+          "Height": 1589,
+          "AlphaMin": 0,
+          "AlphaMax": 255
+        },
+        {
+          "RelativePath": "BepInEx/plugins/ZhaoHuoNatural/Portraits/blood_no_weapon.png",
+          "Sha256": "943F2B74930E3B99ECDCCB6F84D09F653E185499299A8A8DE3C7FC8CAECD5350",
+          "Width": 992,
+          "Height": 1586,
+          "AlphaMin": 0,
+          "AlphaMax": 255
+        },
+        {
+          "RelativePath": "BepInEx/plugins/ZhaoHuoNatural/Portraits/blood_no_weapon_laugh1.png",
+          "Sha256": "E0048B11CAE5000C1C8A26519DA7348D6604BB2B00BFEDC026DBBCB4375D2B9E",
+          "Width": 990,
+          "Height": 1589,
+          "AlphaMin": 0,
+          "AlphaMax": 255
+        },
+        {
+          "RelativePath": "BepInEx/plugins/ZhaoHuoNatural/Portraits/caught.png",
+          "Sha256": "AD1C6BA02ACB3F199A13A2CA6257561CFCBDE9AB31424BD785E379FD3CEFED18",
+          "Width": 991,
+          "Height": 1587,
+          "AlphaMin": 0,
+          "AlphaMax": 255
+        },
+        {
+          "RelativePath": "BepInEx/plugins/ZhaoHuoNatural/Portraits/close_eye.png",
+          "Sha256": "1080FECDF10CD1B919EB39F4F1D904ACC9743B21EDB18FA83728A985555922CE",
+          "Width": 990,
+          "Height": 1589,
+          "AlphaMin": 0,
+          "AlphaMax": 255
+        },
+        {
+          "RelativePath": "BepInEx/plugins/ZhaoHuoNatural/Portraits/close_eye_laugh.png",
+          "Sha256": "5D4D6275819FDBD1C8E769E1B39251859DC5D5A2E34AFAE3022434B68CFD01F5",
+          "Width": 990,
+          "Height": 1589,
+          "AlphaMin": 0,
+          "AlphaMax": 255
+        },
+        {
+          "RelativePath": "BepInEx/plugins/ZhaoHuoNatural/Portraits/close_eye_nervous.png",
+          "Sha256": "30B4AE42556B93FD5B7E82FB92CA29E656F825D42738F4CD14D7F0FEC35260BF",
+          "Width": 990,
+          "Height": 1589,
+          "AlphaMin": 0,
+          "AlphaMax": 255
+        },
+        {
+          "RelativePath": "BepInEx/plugins/ZhaoHuoNatural/Portraits/close_eye_nervous2.png",
+          "Sha256": "452C75944CA865E3B58B9FFFFCFBEED959398CC90E7AF12D9D96C9749693A21A",
+          "Width": 990,
+          "Height": 1589,
+          "AlphaMin": 0,
+          "AlphaMax": 255
+        },
+        {
+          "RelativePath": "BepInEx/plugins/ZhaoHuoNatural/Portraits/close_eye_powder.png",
+          "Sha256": "D27581F83657E5C5D6D7EE8423A0639CA63FA8E2959306DE0913C50DC4DA7344",
+          "Width": 990,
+          "Height": 1589,
+          "AlphaMin": 0,
+          "AlphaMax": 255
+        },
+        {
+          "RelativePath": "BepInEx/plugins/ZhaoHuoNatural/Portraits/determined.png",
+          "Sha256": "282EB6B12204374F5A62F1691AD6E0BAFE6E6D254B62E5EFEF1F2D4C7057C8E8",
+          "Width": 991,
+          "Height": 1587,
+          "AlphaMin": 0,
+          "AlphaMax": 255
+        },
+        {
+          "RelativePath": "BepInEx/plugins/ZhaoHuoNatural/Portraits/die.png",
+          "Sha256": "C46266A6B7DDAE7518080E47B1066E0C43E82BE827275DEC681B6322D8033D09",
+          "Width": 991,
+          "Height": 1587,
+          "AlphaMin": 0,
+          "AlphaMax": 255
+        },
+        {
+          "RelativePath": "BepInEx/plugins/ZhaoHuoNatural/Portraits/doubt.png",
+          "Sha256": "2E2A4712FA9CFAD7C125C764FBA912B5F3931051FDBAF11950BEF1EDE373F386",
+          "Width": 990,
+          "Height": 1589,
+          "AlphaMin": 0,
+          "AlphaMax": 255
+        },
+        {
+          "RelativePath": "BepInEx/plugins/ZhaoHuoNatural/Portraits/eye_mask_nervous1.png",
+          "Sha256": "08801156CAF68BF08529796F09CF76739C8B4F2B4054DC9445526852426173D1",
+          "Width": 990,
+          "Height": 1589,
+          "AlphaMin": 0,
+          "AlphaMax": 255
+        },
+        {
+          "RelativePath": "BepInEx/plugins/ZhaoHuoNatural/Portraits/eye_mask_nervous2.png",
+          "Sha256": "4E214982BBDF1D4E01F7BD8D3108CE20EBCA2C0AF98180DF741B7FD202FA9351",
+          "Width": 990,
+          "Height": 1589,
+          "AlphaMin": 0,
+          "AlphaMax": 255
+        },
+        {
+          "RelativePath": "BepInEx/plugins/ZhaoHuoNatural/Portraits/fist_north_star.png",
+          "Sha256": "9A2B1B646ED239AE61B5035954E10526E032F9A8A0D8E5D5D3D3B74C424C42EB",
+          "Width": 1054,
+          "Height": 1492,
+          "AlphaMin": 0,
+          "AlphaMax": 255
+        },
+        {
+          "RelativePath": "BepInEx/plugins/ZhaoHuoNatural/Portraits/gloomy2.png",
+          "Sha256": "31AAE568795323351C39FAE763699256934ACCF534F3185A77ADC069A883D646",
+          "Width": 991,
+          "Height": 1587,
+          "AlphaMin": 0,
+          "AlphaMax": 255
+        },
+        {
+          "RelativePath": "BepInEx/plugins/ZhaoHuoNatural/Portraits/god_thunder.png",
+          "Sha256": "DD5F3335966B65F3D07F02FDF9547F9EFE4F4F73E687846C456A5EB6174E10CA",
+          "Width": 1105,
+          "Height": 1424,
+          "AlphaMin": 0,
+          "AlphaMax": 255
+        },
+        {
+          "RelativePath": "BepInEx/plugins/ZhaoHuoNatural/Portraits/head.png",
+          "Sha256": "D64645DDDFE4FE1B3C347EA3DFC8C0C4EA5460E1B15DB17D8B8B1C5E8C21F0AD",
+          "Width": 992,
+          "Height": 1586,
+          "AlphaMin": 0,
+          "AlphaMax": 255
+        },
+        {
+          "RelativePath": "BepInEx/plugins/ZhaoHuoNatural/Portraits/hero_landing.png",
+          "Sha256": "ECC6C6CFC0E694C2951FE226A965307081827C160A1FC93699A5C9B692EE615D",
+          "Width": 1054,
+          "Height": 1493,
+          "AlphaMin": 0,
+          "AlphaMax": 255
+        },
+        {
+          "RelativePath": "BepInEx/plugins/ZhaoHuoNatural/Portraits/hurt.png",
+          "Sha256": "EB95B9C014554369DFAD60AA95C5A153569617BFE9C51646EE86A4F028ECD346",
+          "Width": 992,
+          "Height": 1586,
+          "AlphaMin": 0,
+          "AlphaMax": 255
+        },
+        {
+          "RelativePath": "BepInEx/plugins/ZhaoHuoNatural/Portraits/hurt2.png",
+          "Sha256": "728534AE552A979C6BA112FE76B06BBFA963AA33DA6D049FFC1A05E262E3DE91",
+          "Width": 990,
+          "Height": 1589,
+          "AlphaMin": 0,
+          "AlphaMax": 255
+        },
+        {
+          "RelativePath": "BepInEx/plugins/ZhaoHuoNatural/Portraits/hurt_fist.png",
+          "Sha256": "19257A65B19EF2A8D0346ECBCC70F56A89C9A41A0FFD6413F1BA98916301A8AE",
+          "Width": 1163,
+          "Height": 1353,
+          "AlphaMin": 0,
+          "AlphaMax": 255
+        },
+        {
+          "RelativePath": "BepInEx/plugins/ZhaoHuoNatural/Portraits/laugh1.png",
+          "Sha256": "8010EF73124C51F7674F18DD65EA9C93C463A5AC28781A901E17D91CA1A1A648",
+          "Width": 990,
+          "Height": 1589,
+          "AlphaMin": 0,
+          "AlphaMax": 255
+        },
+        {
+          "RelativePath": "BepInEx/plugins/ZhaoHuoNatural/Portraits/laugh2.png",
+          "Sha256": "D84982F755BEDDD78E0760044F5A9EC5947F20001DBD24A23F209A6068CD8DA9",
+          "Width": 990,
+          "Height": 1589,
+          "AlphaMin": 0,
+          "AlphaMax": 255
+        },
+        {
+          "RelativePath": "BepInEx/plugins/ZhaoHuoNatural/Portraits/mask.png",
+          "Sha256": "5A91C9691CC9DECADF94DC7C11CFB7CF28397DBAE7D824874342F1BBF0583746",
+          "Width": 990,
+          "Height": 1589,
+          "AlphaMin": 0,
+          "AlphaMax": 255
+        },
+        {
+          "RelativePath": "BepInEx/plugins/ZhaoHuoNatural/Portraits/mud.png",
+          "Sha256": "D4564F9E571F266CACCC090375FF291AB4FBB472477860817B6BA06F5B59546E",
+          "Width": 992,
+          "Height": 1585,
+          "AlphaMin": 0,
+          "AlphaMax": 255
+        },
+        {
+          "RelativePath": "BepInEx/plugins/ZhaoHuoNatural/Portraits/nervous1.png",
+          "Sha256": "4CB6B5B61ECA3350E04EAE036D990ADD412D5C4986FA2A2B3EE8A4AD58A59E2F",
+          "Width": 990,
+          "Height": 1589,
+          "AlphaMin": 0,
+          "AlphaMax": 255
+        },
+        {
+          "RelativePath": "BepInEx/plugins/ZhaoHuoNatural/Portraits/nervous2.png",
+          "Sha256": "97937B60803E60CC5B8B2DD9769DC1E4BFA87C28960C16FDFE50F264FA8A6072",
+          "Width": 990,
+          "Height": 1589,
+          "AlphaMin": 0,
+          "AlphaMax": 255
+        },
+        {
+          "RelativePath": "BepInEx/plugins/ZhaoHuoNatural/Portraits/nervous3.png",
+          "Sha256": "61E4F3A8487778EC6F4F006D5C060BA2D012FB843B5444CC044BA35D2F9D770A",
+          "Width": 990,
+          "Height": 1589,
+          "AlphaMin": 0,
+          "AlphaMax": 255
+        },
+        {
+          "RelativePath": "BepInEx/plugins/ZhaoHuoNatural/Portraits/normal.png",
+          "Sha256": "9905FCF467B96C43BA84C1A97071FE52B16D3F4F83AAFA47C9D0E423FF3CE534",
+          "Width": 943,
+          "Height": 1667,
+          "AlphaMin": 0,
+          "AlphaMax": 255
+        },
+        {
+          "RelativePath": "BepInEx/plugins/ZhaoHuoNatural/Portraits/oraora.png",
+          "Sha256": "04F570A72EB8326FB29528B1BB67E2301B29EA3E40BA22A0906D4BE14F59E3D8",
+          "Width": 990,
+          "Height": 1589,
+          "AlphaMin": 0,
+          "AlphaMax": 255
+        },
+        {
+          "RelativePath": "BepInEx/plugins/ZhaoHuoNatural/Portraits/revel.png",
+          "Sha256": "0685CA176FF6696F9FA846F46D6EC0D6E43FBC5892BB2D3B23683C2414C1C4EF",
+          "Width": 990,
+          "Height": 1589,
+          "AlphaMin": 0,
+          "AlphaMax": 255
+        },
+        {
+          "RelativePath": "BepInEx/plugins/ZhaoHuoNatural/Portraits/sad1.png",
+          "Sha256": "914964C3F4F26B0D6F19B5A3E0EEEDD17D42B5452D48534D9F4E6D074D964984",
+          "Width": 990,
+          "Height": 1589,
+          "AlphaMin": 0,
+          "AlphaMax": 255
+        },
+        {
+          "RelativePath": "BepInEx/plugins/ZhaoHuoNatural/Portraits/shake.png",
+          "Sha256": "E5F61689FF41198FF5573DADEC76B18EF2E50F5D2B5F126F96DF4BCC44060759",
+          "Width": 989,
+          "Height": 1589,
+          "AlphaMin": 0,
+          "AlphaMax": 255
+        },
+        {
+          "RelativePath": "BepInEx/plugins/ZhaoHuoNatural/Portraits/shake2.png",
+          "Sha256": "F2F682FBD6D630A0384C52D48AA83ABD034F495B4A2B67112ACECD0DDD88780E",
+          "Width": 991,
+          "Height": 1587,
+          "AlphaMin": 0,
+          "AlphaMax": 255
+        },
+        {
+          "RelativePath": "BepInEx/plugins/ZhaoHuoNatural/Portraits/shock.png",
+          "Sha256": "F6DEBC3927CCC5FEF9108FD4DD015BA659E21FC91262B15F102FD98E800F4002",
+          "Width": 990,
+          "Height": 1589,
+          "AlphaMin": 0,
+          "AlphaMax": 255
+        },
+        {
+          "RelativePath": "BepInEx/plugins/ZhaoHuoNatural/Portraits/soul.png",
+          "Sha256": "A89ECDC07564A2DDBCA9BCCD3FC59FE37A84B7D2CA491F4542525B2F852BF469",
+          "Width": 991,
+          "Height": 1588,
+          "AlphaMin": 0,
+          "AlphaMax": 254
+        },
+        {
+          "RelativePath": "BepInEx/plugins/ZhaoHuoNatural/Portraits/special1.png",
+          "Sha256": "F8442EDAE88AC6FFD1786254D233A840B2F6A101837DE67DC0A5F64C1B40A111",
+          "Width": 990,
+          "Height": 1589,
+          "AlphaMin": 0,
+          "AlphaMax": 255
+        },
+        {
+          "RelativePath": "BepInEx/plugins/ZhaoHuoNatural/Portraits/stupid.png",
+          "Sha256": "98AB4DC3DC762C8101D93B76CFD261C08A6D72E634D4FF7B5418CD1F25E55DEE",
+          "Width": 990,
+          "Height": 1589,
+          "AlphaMin": 0,
+          "AlphaMax": 255
+        },
+        {
+          "RelativePath": "BepInEx/plugins/ZhaoHuoNatural/Portraits/suck1.png",
+          "Sha256": "9B9256384A4133ACDA70B4D2EC69C3C24D417BD31A00BC47D9BDCB82A5308C5F",
+          "Width": 990,
+          "Height": 1589,
+          "AlphaMin": 0,
+          "AlphaMax": 255
+        },
+        {
+          "RelativePath": "BepInEx/plugins/ZhaoHuoNatural/Portraits/suck3.png",
+          "Sha256": "B858B95901235262CA2278AE93D6EC7989E648507E2D9AC7ADFD83AC5853D579",
+          "Width": 990,
+          "Height": 1589,
+          "AlphaMin": 0,
+          "AlphaMax": 255
+        },
+        {
+          "RelativePath": "BepInEx/plugins/ZhaoHuoNatural/Portraits/suck4.png",
+          "Sha256": "28AB78D1AD61CE22C154A083F6E3E086BEFDC93EBA1AD1B1A10868E81C7D2A2F",
+          "Width": 990,
+          "Height": 1589,
+          "AlphaMin": 0,
+          "AlphaMax": 255
+        },
+        {
+          "RelativePath": "BepInEx/plugins/ZhaoHuoNatural/ZhaoHuoNatural.dll",
+          "Sha256": "66F6D545562FDEDF2F5E0CAA1AA8609629A42556C5779DF1C45B61F93EA00095"
+        },
+        {
+          "RelativePath": "BepInEx/plugins/ZhaoHuoNatural/portrait-map.txt",
+          "Sha256": "844B9A7F73CB2B16DC2F911B18418ADDD4446E9D522D4F7448EFEDD4A614614C"
+        },
+        {
+          "RelativePath": "BepInEx/plugins/ZhaoHuoNatural/portrait-layout.tsv",
+          "Sha256": "DCE2CDF380008740BC6151F979251F119880605A0C370DB0C0533C088FED011A"
+        }
+      ]
+    },
+    {
+      "Id": "xianxia",
+      "Passed": true,
+      "Portraits": 47,
+      "PayloadFiles": 50,
+      "PayloadFingerprint": "12BC83F70EF4C99BBD49A13ABBA4A1867998B6DD794873EFAE47B065870A9802",
+      "Files": [
+        {
+          "RelativePath": "BepInEx/plugins/ZhaoHuoNatural/Portraits/angry1.png",
+          "Sha256": "BFBED916437B08F0CA3A2C7811D3EBADD28F0A343DE3E378A45BD7F20C4D408F",
+          "Width": 990,
+          "Height": 1589,
+          "AlphaMin": 0,
+          "AlphaMax": 255
+        },
+        {
+          "RelativePath": "BepInEx/plugins/ZhaoHuoNatural/Portraits/angry2.png",
+          "Sha256": "B933F8DB6AD62CD886F28F92EE09BA6F9012EDA4A068A5408DC3F9D17937FD5C",
+          "Width": 990,
+          "Height": 1589,
+          "AlphaMin": 0,
+          "AlphaMax": 255
+        },
+        {
+          "RelativePath": "BepInEx/plugins/ZhaoHuoNatural/Portraits/angry3.png",
+          "Sha256": "1523A469F11F29BE3989346E71123CE79E7DC9F6DD45FAFD98D1F79529DBD087",
+          "Width": 990,
+          "Height": 1589,
+          "AlphaMin": 0,
+          "AlphaMax": 255
+        },
+        {
+          "RelativePath": "BepInEx/plugins/ZhaoHuoNatural/Portraits/blood.png",
+          "Sha256": "F1BCE8B2023D4B7651EADEC31CE81AA2938C2F47B4398BFB9F76FDB2C5DDC383",
+          "Width": 990,
+          "Height": 1588,
+          "AlphaMin": 0,
+          "AlphaMax": 255
+        },
+        {
+          "RelativePath": "BepInEx/plugins/ZhaoHuoNatural/Portraits/blood_laugh1.png",
+          "Sha256": "77B82707C78CD9DA664EB2E05EF80D4C7F94E1A5B0A33E3B6EF9D57A40175B0B",
+          "Width": 990,
+          "Height": 1589,
+          "AlphaMin": 0,
+          "AlphaMax": 255
+        },
+        {
+          "RelativePath": "BepInEx/plugins/ZhaoHuoNatural/Portraits/blood_nervous1.png",
+          "Sha256": "4309D08A2875B269E200924E6DAEC5A1F8EC7CDEC5D49A731E6048017850D55E",
+          "Width": 991,
+          "Height": 1587,
+          "AlphaMin": 0,
+          "AlphaMax": 255
+        },
+        {
+          "RelativePath": "BepInEx/plugins/ZhaoHuoNatural/Portraits/blood_no_weapon.png",
+          "Sha256": "EE3DEB98C593B3A2AB33F4C8B329F30EB4135F300475842FC42473CE1BE3FF7A",
+          "Width": 992,
+          "Height": 1585,
+          "AlphaMin": 0,
+          "AlphaMax": 255
+        },
+        {
+          "RelativePath": "BepInEx/plugins/ZhaoHuoNatural/Portraits/blood_no_weapon_laugh1.png",
+          "Sha256": "C3A94F02B3EE2856A49BE8F7AA59F12CD508B83FDC9E63AA4CCB84FD168FA782",
+          "Width": 990,
+          "Height": 1589,
+          "AlphaMin": 0,
+          "AlphaMax": 255
+        },
+        {
+          "RelativePath": "BepInEx/plugins/ZhaoHuoNatural/Portraits/caught.png",
+          "Sha256": "2B1688A30D5F38AA1B29DCD401254DF58D8034B1FF6F92429841D04B29343FA7",
+          "Width": 991,
+          "Height": 1587,
+          "AlphaMin": 0,
+          "AlphaMax": 255
+        },
+        {
+          "RelativePath": "BepInEx/plugins/ZhaoHuoNatural/Portraits/close_eye.png",
+          "Sha256": "3D8E93A573C88AF174E4C314B6E47E54E4D749BB3456A80CBC428DBBF1331E96",
+          "Width": 990,
+          "Height": 1589,
+          "AlphaMin": 0,
+          "AlphaMax": 255
+        },
+        {
+          "RelativePath": "BepInEx/plugins/ZhaoHuoNatural/Portraits/close_eye_laugh.png",
+          "Sha256": "2753D4C3C11D554EFEBC23B9A2E2FE6C3C3D044E2E36C521D4DE98EC0AF4B7E4",
+          "Width": 990,
+          "Height": 1589,
+          "AlphaMin": 0,
+          "AlphaMax": 255
+        },
+        {
+          "RelativePath": "BepInEx/plugins/ZhaoHuoNatural/Portraits/close_eye_nervous.png",
+          "Sha256": "BCC6FEEA86643A3CF56AFF9205658261FF2B89E811843E72775DA0045FF843FC",
+          "Width": 989,
+          "Height": 1591,
+          "AlphaMin": 0,
+          "AlphaMax": 255
+        },
+        {
+          "RelativePath": "BepInEx/plugins/ZhaoHuoNatural/Portraits/close_eye_nervous2.png",
+          "Sha256": "E8C00F2DDD9ECD5FE63B2A21982A81919C86D0706538E25CF7C3DEC4AD7C3C2F",
+          "Width": 990,
+          "Height": 1589,
+          "AlphaMin": 0,
+          "AlphaMax": 255
+        },
+        {
+          "RelativePath": "BepInEx/plugins/ZhaoHuoNatural/Portraits/close_eye_powder.png",
+          "Sha256": "0C805B07E6C83F174BD4ED277F3DD0B7851789520F3F6544A096BDAF89D1337B",
+          "Width": 990,
+          "Height": 1588,
+          "AlphaMin": 0,
+          "AlphaMax": 255
+        },
+        {
+          "RelativePath": "BepInEx/plugins/ZhaoHuoNatural/Portraits/determined.png",
+          "Sha256": "053A7019BD09345CEFC923A870097FC2A15DCA6BB09DAE6ECFDFC99ACC82AA84",
+          "Width": 992,
+          "Height": 1586,
+          "AlphaMin": 0,
+          "AlphaMax": 255
+        },
+        {
+          "RelativePath": "BepInEx/plugins/ZhaoHuoNatural/Portraits/die.png",
+          "Sha256": "97A42811C3916F7AB790351C5CA5A23A197F58F6FF061F663AEAE4F54BCAC741",
+          "Width": 991,
+          "Height": 1587,
+          "AlphaMin": 0,
+          "AlphaMax": 255
+        },
+        {
+          "RelativePath": "BepInEx/plugins/ZhaoHuoNatural/Portraits/doubt.png",
+          "Sha256": "AE7C223B9CFA2AA85D47BB7FE42273975637DBE57402BC4C95DE2515B7B8F928",
+          "Width": 990,
+          "Height": 1589,
+          "AlphaMin": 0,
+          "AlphaMax": 255
+        },
+        {
+          "RelativePath": "BepInEx/plugins/ZhaoHuoNatural/Portraits/eye_mask_nervous1.png",
+          "Sha256": "AC3307F4E11FD0CBC557E0DDE5099C6A21CEFB229C35DE5B7F758C37367470D8",
+          "Width": 990,
+          "Height": 1588,
+          "AlphaMin": 0,
+          "AlphaMax": 255
+        },
+        {
+          "RelativePath": "BepInEx/plugins/ZhaoHuoNatural/Portraits/eye_mask_nervous2.png",
+          "Sha256": "A82F566F81EF56B2D5E38ED131E3794974969FF7A1BF34F6035FD391378D6BFA",
+          "Width": 943,
+          "Height": 1667,
+          "AlphaMin": 0,
+          "AlphaMax": 255
+        },
+        {
+          "RelativePath": "BepInEx/plugins/ZhaoHuoNatural/Portraits/fist_north_star.png",
+          "Sha256": "F96BBBAA4D3DD57C6A0CCF212E661A410127089F2367C0E16F1A129DAFBDF31D",
+          "Width": 1055,
+          "Height": 1491,
+          "AlphaMin": 0,
+          "AlphaMax": 255
+        },
+        {
+          "RelativePath": "BepInEx/plugins/ZhaoHuoNatural/Portraits/gloomy2.png",
+          "Sha256": "C94F713CBCDC2B720890D7650FA39D8DD1F1F931C4ADDB77C977857E4EA7FF46",
+          "Width": 991,
+          "Height": 1587,
+          "AlphaMin": 0,
+          "AlphaMax": 255
+        },
+        {
+          "RelativePath": "BepInEx/plugins/ZhaoHuoNatural/Portraits/god_thunder.png",
+          "Sha256": "7EF16E98358D60EA9DEA0C4024598B562A8F71712E8F872096F655C9AD249F80",
+          "Width": 1105,
+          "Height": 1424,
+          "AlphaMin": 0,
+          "AlphaMax": 255
+        },
+        {
+          "RelativePath": "BepInEx/plugins/ZhaoHuoNatural/Portraits/head.png",
+          "Sha256": "B4C0B7409241234C2DB26B5CF8835F7F3A4370772B6C669C17230F8E0BA30F35",
+          "Width": 992,
+          "Height": 1585,
+          "AlphaMin": 0,
+          "AlphaMax": 255
+        },
+        {
+          "RelativePath": "BepInEx/plugins/ZhaoHuoNatural/Portraits/hero_landing.png",
+          "Sha256": "CD0150D0AE0F16EDD20ECFF075C5187F769379D35DEE7E863C83A655944062CF",
+          "Width": 1054,
+          "Height": 1493,
+          "AlphaMin": 0,
+          "AlphaMax": 255
+        },
+        {
+          "RelativePath": "BepInEx/plugins/ZhaoHuoNatural/Portraits/hurt.png",
+          "Sha256": "06DC8D7D53D10A1AEF2B67225C2C1AD8F997C5A9F8A64BBA47F850FE370E8CD8",
+          "Width": 992,
+          "Height": 1585,
+          "AlphaMin": 0,
+          "AlphaMax": 255
+        },
+        {
+          "RelativePath": "BepInEx/plugins/ZhaoHuoNatural/Portraits/hurt2.png",
+          "Sha256": "E5D22D10438275E6B86DFC367989154CCD1F3B323D0C2EC9492EE8CF3A09E2E4",
+          "Width": 989,
+          "Height": 1590,
+          "AlphaMin": 0,
+          "AlphaMax": 255
+        },
+        {
+          "RelativePath": "BepInEx/plugins/ZhaoHuoNatural/Portraits/hurt_fist.png",
+          "Sha256": "EE7B8D7CDC8C49C462A9A5DA7211E5FFFDBA5AD5CA05E5750B95F1BE037B7DC5",
+          "Width": 1374,
+          "Height": 1145,
+          "AlphaMin": 0,
+          "AlphaMax": 255
+        },
+        {
+          "RelativePath": "BepInEx/plugins/ZhaoHuoNatural/Portraits/laugh1.png",
+          "Sha256": "7FE144EC5A45732C2D1271224ACAC326D541FDD2DC9AC28B9AC1F422C2F7591B",
+          "Width": 990,
+          "Height": 1589,
+          "AlphaMin": 0,
+          "AlphaMax": 255
+        },
+        {
+          "RelativePath": "BepInEx/plugins/ZhaoHuoNatural/Portraits/laugh2.png",
+          "Sha256": "D939A441540A1E5F58B76A54EAD504C2F5E3757BC290626A192ABFF729AB6E28",
+          "Width": 990,
+          "Height": 1589,
+          "AlphaMin": 0,
+          "AlphaMax": 255
+        },
+        {
+          "RelativePath": "BepInEx/plugins/ZhaoHuoNatural/Portraits/mask.png",
+          "Sha256": "306EA9D74B1976E119B7239E80785D27D408BD4CB1499A1166952C017E83AECA",
+          "Width": 943,
+          "Height": 1667,
+          "AlphaMin": 0,
+          "AlphaMax": 255
+        },
+        {
+          "RelativePath": "BepInEx/plugins/ZhaoHuoNatural/Portraits/mud.png",
+          "Sha256": "705131C91B663ECF38F48B04611F56D9CA0206047B15B22B4A895DBA91423E42",
+          "Width": 992,
+          "Height": 1586,
+          "AlphaMin": 0,
+          "AlphaMax": 255
+        },
+        {
+          "RelativePath": "BepInEx/plugins/ZhaoHuoNatural/Portraits/nervous1.png",
+          "Sha256": "BC01A4F750A2A403DC73BA16FF9AF021A22AD10085DC099B6D242012D252D695",
+          "Width": 990,
+          "Height": 1589,
+          "AlphaMin": 0,
+          "AlphaMax": 255
+        },
+        {
+          "RelativePath": "BepInEx/plugins/ZhaoHuoNatural/Portraits/nervous2.png",
+          "Sha256": "CAABEEDC96B54E2873A43A77D4C3F0B77573A568AFC2EE59F880DB65EC585583",
+          "Width": 990,
+          "Height": 1589,
+          "AlphaMin": 0,
+          "AlphaMax": 255
+        },
+        {
+          "RelativePath": "BepInEx/plugins/ZhaoHuoNatural/Portraits/nervous3.png",
+          "Sha256": "9220F1DE0BD090508103F46B815F6BE519A3C857EE998BCC7EADE4D0407BB26F",
+          "Width": 990,
+          "Height": 1589,
+          "AlphaMin": 0,
+          "AlphaMax": 255
+        },
+        {
+          "RelativePath": "BepInEx/plugins/ZhaoHuoNatural/Portraits/normal.png",
+          "Sha256": "2B49A49A28FF3EBF1C40D937E2623B83F3A8F30F835D1F9BFD54E77D85096AD4",
+          "Width": 943,
+          "Height": 1667,
+          "AlphaMin": 0,
+          "AlphaMax": 255
+        },
+        {
+          "RelativePath": "BepInEx/plugins/ZhaoHuoNatural/Portraits/oraora.png",
+          "Sha256": "3E3189DA18EDB7EFB7192C395E8F8393865194B5FB02E9EB1C87D89F6A61ADC9",
+          "Width": 990,
+          "Height": 1589,
+          "AlphaMin": 0,
+          "AlphaMax": 255
+        },
+        {
+          "RelativePath": "BepInEx/plugins/ZhaoHuoNatural/Portraits/revel.png",
+          "Sha256": "F606E76A2300D72DE23FC0F9C4CB3488B25D3AE9152CEAAD08687D049A5ED34B",
+          "Width": 990,
+          "Height": 1589,
+          "AlphaMin": 0,
+          "AlphaMax": 255
+        },
+        {
+          "RelativePath": "BepInEx/plugins/ZhaoHuoNatural/Portraits/sad1.png",
+          "Sha256": "CF865E305B0D611094009393E05DCC4DF20A5E5B20A96DD2260AC16AECC8CA07",
+          "Width": 990,
+          "Height": 1589,
+          "AlphaMin": 0,
+          "AlphaMax": 255
+        },
+        {
+          "RelativePath": "BepInEx/plugins/ZhaoHuoNatural/Portraits/shake.png",
+          "Sha256": "CF4E166DB8D4374A0D6059F62D20BEB3B1FE2185ED0E5B7A3A63E0F76E1FD9C5",
+          "Width": 990,
+          "Height": 1589,
+          "AlphaMin": 0,
+          "AlphaMax": 255
+        },
+        {
+          "RelativePath": "BepInEx/plugins/ZhaoHuoNatural/Portraits/shake2.png",
+          "Sha256": "AB7B6B9FD346BA6E53159163C22BF0844DB117C7F3E13F0B6854037772D5CC32",
+          "Width": 991,
+          "Height": 1587,
+          "AlphaMin": 0,
+          "AlphaMax": 255
+        },
+        {
+          "RelativePath": "BepInEx/plugins/ZhaoHuoNatural/Portraits/shock.png",
+          "Sha256": "CE43998455EEB2D62D2777C42EC718AC43088FACB96F2B5295CBE1B9E01A14A2",
+          "Width": 990,
+          "Height": 1589,
+          "AlphaMin": 0,
+          "AlphaMax": 255
+        },
+        {
+          "RelativePath": "BepInEx/plugins/ZhaoHuoNatural/Portraits/soul.png",
+          "Sha256": "2CAAD118F2B2A0763935E02F1449AB96186D64D1DA6900353C8EDFDBAA5E7DB1",
+          "Width": 943,
+          "Height": 1667,
+          "AlphaMin": 0,
+          "AlphaMax": 254
+        },
+        {
+          "RelativePath": "BepInEx/plugins/ZhaoHuoNatural/Portraits/special1.png",
+          "Sha256": "834D45D2C37DDF6E5C5B79BDFD0E5E852F86804D0B3619B909F458190E8C273F",
+          "Width": 990,
+          "Height": 1588,
+          "AlphaMin": 0,
+          "AlphaMax": 255
+        },
+        {
+          "RelativePath": "BepInEx/plugins/ZhaoHuoNatural/Portraits/stupid.png",
+          "Sha256": "A1EAA98B165FFAF0DEEFCC04725080A90F5CC60DED22718C2D2A799EBF457001",
+          "Width": 990,
+          "Height": 1589,
+          "AlphaMin": 0,
+          "AlphaMax": 255
+        },
+        {
+          "RelativePath": "BepInEx/plugins/ZhaoHuoNatural/Portraits/suck1.png",
+          "Sha256": "7332B4D62B955E5EA33B1309FEF8C5F32C5003E8DF2393BD3271DD8256F9BCF0",
+          "Width": 990,
+          "Height": 1589,
+          "AlphaMin": 0,
+          "AlphaMax": 255
+        },
+        {
+          "RelativePath": "BepInEx/plugins/ZhaoHuoNatural/Portraits/suck3.png",
+          "Sha256": "67B9B0C87E7173D3F1EEF97EA3F0A68CB4BC10585E9489AC19306E72774D03E4",
+          "Width": 990,
+          "Height": 1589,
+          "AlphaMin": 0,
+          "AlphaMax": 255
+        },
+        {
+          "RelativePath": "BepInEx/plugins/ZhaoHuoNatural/Portraits/suck4.png",
+          "Sha256": "8F68BBBAEFB86299A2CB4856B4D31833DE4B20D6920A20AADF8120C9C2A0EB8C",
+          "Width": 943,
+          "Height": 1667,
+          "AlphaMin": 0,
+          "AlphaMax": 255
+        },
+        {
+          "RelativePath": "BepInEx/plugins/ZhaoHuoNatural/ZhaoHuoNatural.dll",
+          "Sha256": "66F6D545562FDEDF2F5E0CAA1AA8609629A42556C5779DF1C45B61F93EA00095"
+        },
+        {
+          "RelativePath": "BepInEx/plugins/ZhaoHuoNatural/portrait-map.txt",
+          "Sha256": "844B9A7F73CB2B16DC2F911B18418ADDD4446E9D522D4F7448EFEDD4A614614C"
+        },
+        {
+          "RelativePath": "BepInEx/plugins/ZhaoHuoNatural/portrait-layout.tsv",
+          "Sha256": "DCE2CDF380008740BC6151F979251F119880605A0C370DB0C0533C088FED011A"
+        }
+      ]
+    }
+  ]
+}

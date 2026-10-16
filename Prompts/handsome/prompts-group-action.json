@@ -1,0 +1,287 @@
+[
+  {
+    "name": "fist_north_star",
+    "prompt": "Use case: precise-object-edit. Transparent game character portrait for Legend of Mortal. Image 1 is the EDIT TARGET: preserve its complete composition, pose, exact hands, head angle, hairstyle and ponytail, blue clothing, brown bracers, injuries, blood, props, motion/special effects, and framing. Image 2 is the APPROVED HANDSOME FACE IDENTITY reference only. Change ONLY the face anatomy in image 1 to be the same handsome Chinese man in his twenties as image 2: elongated masculine face, clearly defined jawline, straight refined nose, narrower dark eyes, thick sharp sword-shaped brows. The emotion and pose must come from image 1, not the neutral smile of image 2. Retain rough irregular black ink contours, colored-pencil/dry-brush/gouache grain, muted colors and the hand-painted rustic wuxia game style. No smooth beauty filter, photorealism, 3D, modern glossy anime, or idol makeup. One complete visible character silhouette, no additional cropping, no other people. True transparent alpha background, no black/white painted backdrop, no checkerboard, no text or watermark. Required target emotion and pose: Triumphant martial pose: right arm held straight high above the head on viewer-left with closed fist, left arm lowered. Eyes gently closed, determined arched brows and a restrained confident grin. Keep the entire raised arm and fist, ponytail, proportions and target framing.",
+    "generator": "built-in image_gen",
+    "transparent_background": true,
+    "edit_target": "reference/natural/fist_north_star.png",
+    "identity_reference": "BepInEx/plugins/ZhaoHuoNatural/Portraits/normal.png",
+    "source_output": "generated-source/exec-f9b475ee-301b-47ae-839e-9d0a406412b2.png",
+    "output": "BepInEx/plugins/ZhaoHuoNatural/Portraits/fist_north_star.png",
+    "visual_review": "Approved: identity, pose, effects, costume and transparent silhouette checked.",
+    "png_validation": {
+      "width": 1054,
+      "height": 1492,
+      "pixel_format": "Format32bppArgb",
+      "top_left_alpha": 0,
+      "top_right_alpha": 0,
+      "sha256": "9A2B1B646ED239AE61B5035954E10526E032F9A8A0D8E5D5D3D3B74C424C42EB"
+    }
+  },
+  {
+    "name": "god_thunder",
+    "prompt": "Use case: precise-object-edit. Transparent game character portrait for Legend of Mortal. Image 1 is the EDIT TARGET: preserve its complete composition, pose, exact hands, head angle, hairstyle and ponytail, blue clothing, brown bracers, injuries, blood, props, motion/special effects, and framing. Image 2 is the APPROVED HANDSOME FACE IDENTITY reference only. Change ONLY the face anatomy in image 1 to be the same handsome Chinese man in his twenties as image 2: elongated masculine face, clearly defined jawline, straight refined nose, narrower dark eyes, thick sharp sword-shaped brows. The emotion and pose must come from image 1, not the neutral smile of image 2. Retain rough irregular black ink contours, colored-pencil/dry-brush/gouache grain, muted colors and the hand-painted rustic wuxia game style. No smooth beauty filter, photorealism, 3D, modern glossy anime, or idol makeup. One complete visible character silhouette, no additional cropping, no other people. True transparent alpha background, no black/white painted backdrop, no checkerboard, no text or watermark. Required target emotion and pose: Wounded warrior standing with ornate gold-guard sword held down toward viewer-left bottom edge. Preserve exact sword silhouette and position, bloodstained robe, cuts and sweat on face and hands; brave strained focused expression with furrowed brows. Retain asymmetric canvas layout and sword crop. No lightning or new effects.",
+    "generator": "built-in image_gen",
+    "transparent_background": true,
+    "edit_target": "reference/natural/god_thunder.png",
+    "identity_reference": "BepInEx/plugins/ZhaoHuoNatural/Portraits/normal.png",
+    "source_output": "generated-source/exec-c6fa6317-2f23-4565-9220-68a85979b734.png",
+    "output": "BepInEx/plugins/ZhaoHuoNatural/Portraits/god_thunder.png",
+    "visual_review": "Approved: identity, pose, effects, costume and transparent silhouette checked.",
+    "png_validation": {
+      "width": 1105,
+      "height": 1424,
+      "pixel_format": "Format32bppArgb",
+      "top_left_alpha": 0,
+      "top_right_alpha": 0,
+      "sha256": "DD5F3335966B65F3D07F02FDF9547F9EFE4F4F73E687846C456A5EB6174E10CA"
+    }
+  },
+  {
+    "name": "hero_landing",
+    "prompt": "Use case: precise-object-edit. Transparent game character portrait for Legend of Mortal. Image 1 is the EDIT TARGET: preserve its complete composition, pose, exact hands, head angle, hairstyle and ponytail, blue clothing, brown bracers, injuries, blood, props, motion/special effects, and framing. Image 2 is the APPROVED HANDSOME FACE IDENTITY reference only. Change ONLY the face anatomy in image 1 to be the same handsome Chinese man in his twenties as image 2: elongated masculine face, clearly defined jawline, straight refined nose, narrower dark eyes, thick sharp sword-shaped brows. The emotion and pose must come from image 1, not the neutral smile of image 2. Retain rough irregular black ink contours, colored-pencil/dry-brush/gouache grain, muted colors and the hand-painted rustic wuxia game style. No smooth beauty filter, photorealism, 3D, modern glossy anime, or idol makeup. One complete visible character silhouette, no additional cropping, no other people. True transparent alpha background, no black/white painted backdrop, no checkerboard, no text or watermark. Required target emotion and pose: Heroic martial landing: kneel low, right fist touching ground on viewer-left, bent knee and tall black boot forward on viewer-right, left arm straight behind with open hand, ponytail curving upward. Keep full hand, boot, body silhouette and motion accents. Intense frowning battle-ready face, not a casual smile.",
+    "generator": "built-in image_gen",
+    "transparent_background": true,
+    "edit_target": "reference/natural/hero_landing.png",
+    "identity_reference": "BepInEx/plugins/ZhaoHuoNatural/Portraits/normal.png",
+    "source_output": "generated-source/exec-06487a53-92a6-4fc2-ad38-569891d623ed.png",
+    "output": "BepInEx/plugins/ZhaoHuoNatural/Portraits/hero_landing.png",
+    "visual_review": "Approved: identity, pose, effects, costume and transparent silhouette checked.",
+    "png_validation": {
+      "width": 1054,
+      "height": 1493,
+      "pixel_format": "Format32bppArgb",
+      "top_left_alpha": 0,
+      "top_right_alpha": 0,
+      "sha256": "ECC6C6CFC0E694C2951FE226A965307081827C160A1FC93699A5C9B692EE615D"
+    }
+  },
+  {
+    "name": "oraora",
+    "prompt": "Use case: precise-object-edit. Transparent game character portrait for Legend of Mortal. Image 1 is the EDIT TARGET: preserve its complete composition, pose, exact hands, head angle, hairstyle and ponytail, blue clothing, brown bracers, injuries, blood, props, motion/special effects, and framing. Image 2 is the APPROVED HANDSOME FACE IDENTITY reference only. Change ONLY the face anatomy in image 1 to be the same handsome Chinese man in his twenties as image 2: elongated masculine face, clearly defined jawline, straight refined nose, narrower dark eyes, thick sharp sword-shaped brows. The emotion and pose must come from image 1, not the neutral smile of image 2. Retain rough irregular black ink contours, colored-pencil/dry-brush/gouache grain, muted colors and the hand-painted rustic wuxia game style. No smooth beauty filter, photorealism, 3D, modern glossy anime, or idol makeup. One complete visible character silhouette, no additional cropping, no other people. True transparent alpha background, no black/white painted backdrop, no checkerboard, no text or watermark. Required target emotion and pose: Keep this rapid-impact animation frame: ONE body with multiple semitransparent overlapping head afterimages shaking left and right, mouths open and dazed, rolled unfocused eyes, sideways head/torso motion blur and scattered saliva flecks. Repaint ALL visible face afterimages into the same handsome reference identity. Keep the exact overlap and motion, do not turn this into a still or single sharp head.",
+    "generator": "built-in image_gen",
+    "transparent_background": true,
+    "edit_target": "reference/natural/oraora.png",
+    "identity_reference": "BepInEx/plugins/ZhaoHuoNatural/Portraits/normal.png",
+    "source_output": "generated-source/exec-dda5be3d-cee8-4ff2-95a6-b50dec2d1255.png",
+    "output": "BepInEx/plugins/ZhaoHuoNatural/Portraits/oraora.png",
+    "visual_review": "Approved: handsome identity retained through motion afterimages/shock expression; target effects and palette preserved.",
+    "png_validation": {
+      "width": 990,
+      "height": 1589,
+      "pixel_format": "Format32bppArgb",
+      "top_left_alpha": 0,
+      "top_right_alpha": 0,
+      "sha256": "04F570A72EB8326FB29528B1BB67E2301B29EA3E40BA22A0906D4BE14F59E3D8"
+    }
+  },
+  {
+    "name": "shake",
+    "prompt": "Use case: precise-object-edit. Transparent game character portrait for Legend of Mortal. Image 1 is the EDIT TARGET: preserve its complete composition, pose, exact hands, head angle, hairstyle and ponytail, blue clothing, brown bracers, injuries, blood, props, motion/special effects, and framing. Image 2 is the APPROVED HANDSOME FACE IDENTITY reference only. Change ONLY the face anatomy in image 1 to be the same handsome Chinese man in his twenties as image 2: elongated masculine face, clearly defined jawline, straight refined nose, narrower dark eyes, thick sharp sword-shaped brows. The emotion and pose must come from image 1, not the neutral smile of image 2. Retain rough irregular black ink contours, colored-pencil/dry-brush/gouache grain, muted colors and the hand-painted rustic wuxia game style. No smooth beauty filter, photorealism, 3D, modern glossy anime, or idol makeup. One complete visible character silhouette, no additional cropping, no other people. True transparent alpha background, no black/white painted backdrop, no checkerboard, no text or watermark. Required target emotion and pose: Comedic trembling shock: rolled unfocused white eyes, cheek sweat bead, mouth open in a strained gasp, rigid body and tense clawed lowered hands. Keep translucent doubled contour echoes at left of head, shoulder and arms, with original shaking outline and blur. Never smile or remove double exposure.",
+    "generator": "built-in image_gen",
+    "transparent_background": true,
+    "edit_target": "reference/natural/shake.png",
+    "identity_reference": "BepInEx/plugins/ZhaoHuoNatural/Portraits/normal.png",
+    "source_output": "generated-source/exec-6a92be82-3e21-4aba-a0ef-85bfbda4cbfe.png",
+    "output": "BepInEx/plugins/ZhaoHuoNatural/Portraits/shake.png",
+    "visual_review": "Approved: handsome identity retained through motion afterimages/shock expression; target effects and palette preserved.",
+    "png_validation": {
+      "width": 989,
+      "height": 1589,
+      "pixel_format": "Format32bppArgb",
+      "top_left_alpha": 0,
+      "top_right_alpha": 0,
+      "sha256": "E5F61689FF41198FF5573DADEC76B18EF2E50F5D2B5F126F96DF4BCC44060759"
+    }
+  },
+  {
+    "name": "shake2",
+    "prompt": "Use case: precise-object-edit. Transparent game character portrait for Legend of Mortal. Image 1 is the EDIT TARGET: preserve its complete composition, pose, exact hands, head angle, hairstyle and ponytail, blue clothing, brown bracers, injuries, blood, props, motion/special effects, and framing. Image 2 is the APPROVED HANDSOME FACE IDENTITY reference only. Change ONLY the face anatomy in image 1 to be the same handsome Chinese man in his twenties as image 2: elongated masculine face, clearly defined jawline, straight refined nose, narrower dark eyes, thick sharp sword-shaped brows. The emotion and pose must come from image 1, not the neutral smile of image 2. Retain rough irregular black ink contours, colored-pencil/dry-brush/gouache grain, muted colors and the hand-painted rustic wuxia game style. No smooth beauty filter, photorealism, 3D, modern glossy anime, or idol makeup. One complete visible character silhouette, no additional cropping, no other people. True transparent alpha background, no black/white painted backdrop, no checkerboard, no text or watermark. Required target emotion and pose: CRITICAL: This is an INVERTED-COLOR shocked trembling frame. Keep dark blue negative face/skin, near-white hair and brows, white ink lines, pale cream negative robe, cyan arm guards, rolled glowing white eyes, tense partly open mouth and sweat. Preserve exact rigid pose, lowered tense hands and doubled trembling outline. Use reference FACIAL ANATOMY only and recolor it to the target inverted palette. Never restore warm skin, black outlines, dark hair, blue robe or brown guards for this one special image.",
+    "generator": "built-in image_gen",
+    "transparent_background": true,
+    "edit_target": "reference/natural/shake2.png",
+    "identity_reference": "BepInEx/plugins/ZhaoHuoNatural/Portraits/normal.png",
+    "source_output": "generated-source/exec-2ddffe29-6a99-4877-8604-53006766a512.png",
+    "output": "BepInEx/plugins/ZhaoHuoNatural/Portraits/shake2.png",
+    "visual_review": "Approved: handsome identity retained through motion afterimages/shock expression; target effects and palette preserved.",
+    "png_validation": {
+      "width": 991,
+      "height": 1587,
+      "pixel_format": "Format32bppArgb",
+      "top_left_alpha": 0,
+      "top_right_alpha": 0,
+      "sha256": "F2F682FBD6D630A0384C52D48AA83ABD034F495B4A2B67112ACECD0DDD88780E"
+    }
+  },
+  {
+    "name": "blood",
+    "prompt": "Use case: precise-object-edit. Transparent game character portrait for Legend of Mortal. Image 1 is the EDIT TARGET: preserve its complete composition, pose, exact hands, head angle, hairstyle and ponytail, blue clothing, brown bracers, injuries, blood, props, motion/special effects, and framing. Image 2 is the APPROVED HANDSOME FACE IDENTITY reference only. Change ONLY the face anatomy in image 1 to be the same handsome Chinese man in his twenties as image 2: elongated masculine face, clearly defined jawline, straight refined nose, narrower dark eyes, thick sharp sword-shaped brows. The emotion and pose must come from image 1, not the neutral smile of image 2. Retain rough irregular black ink contours, colored-pencil/dry-brush/gouache grain, muted colors and the hand-painted rustic wuxia game style. No smooth beauty filter, photorealism, 3D, modern glossy anime, or idol makeup. One complete visible character silhouette, no additional cropping, no other people. True transparent alpha background, no black/white painted backdrop, no checkerboard, no text or watermark. Required target emotion and state: Wounded but resilient, strained calm neutral expression. Keep small cuts and blood trails on forehead and cheek, sweat, exact bloodstained blue robe, fingers, and the broad sword in the lowered hand at viewer-right. Maintain exact target pose, sword angle/crop and every injury, with no extra gore.",
+    "generator": "built-in image_gen",
+    "transparent_background": true,
+    "edit_target": "reference/natural/blood.png",
+    "identity_reference": "BepInEx/plugins/ZhaoHuoNatural/Portraits/normal.png",
+    "source_output": "generated-source/exec-0315f9b5-d4a9-45fe-80c9-87d4363b3255.png",
+    "output": "BepInEx/plugins/ZhaoHuoNatural/Portraits/blood.png",
+    "visual_review": "Approved: identity, distinct calm/smile/anxiety, original blood/weapon/breath effects and silhouette checked.",
+    "png_validation": {
+      "width": 990,
+      "height": 1588,
+      "pixel_format": "Format32bppArgb",
+      "top_left_alpha": 0,
+      "top_right_alpha": 0,
+      "sha256": "0B32AAC44C7589B2C9A4D46593821BFAA4596B31057B174768877B70D04FF51E"
+    }
+  },
+  {
+    "name": "blood_laugh1",
+    "prompt": "Use case: precise-object-edit. Transparent game character portrait for Legend of Mortal. Image 1 is the EDIT TARGET: preserve its complete composition, pose, exact hands, head angle, hairstyle and ponytail, blue clothing, brown bracers, injuries, blood, props, motion/special effects, and framing. Image 2 is the APPROVED HANDSOME FACE IDENTITY reference only. Change ONLY the face anatomy in image 1 to be the same handsome Chinese man in his twenties as image 2: elongated masculine face, clearly defined jawline, straight refined nose, narrower dark eyes, thick sharp sword-shaped brows. The emotion and pose must come from image 1, not the neutral smile of image 2. Retain rough irregular black ink contours, colored-pencil/dry-brush/gouache grain, muted colors and the hand-painted rustic wuxia game style. No smooth beauty filter, photorealism, 3D, modern glossy anime, or idol makeup. One complete visible character silhouette, no additional cropping, no other people. True transparent alpha background, no black/white painted backdrop, no checkerboard, no text or watermark. Required target emotion and state: A brave friendly teeth-showing smile despite light wounds; preserve the smile shape and lively expression, exact cuts/blood smears on face, bloodstained blue robe and fingers, broad sword held low at viewer-right, pose and original sword crop. No additional injury.",
+    "generator": "built-in image_gen",
+    "transparent_background": true,
+    "edit_target": "reference/natural/blood_laugh1.png",
+    "identity_reference": "BepInEx/plugins/ZhaoHuoNatural/Portraits/normal.png",
+    "source_output": "generated-source/exec-e8dab3d4-e538-4404-833a-18aeb2233620.png",
+    "output": "BepInEx/plugins/ZhaoHuoNatural/Portraits/blood_laugh1.png",
+    "visual_review": "Approved: identity, distinct calm/smile/anxiety, original blood/weapon/breath effects and silhouette checked.",
+    "png_validation": {
+      "width": 990,
+      "height": 1589,
+      "pixel_format": "Format32bppArgb",
+      "top_left_alpha": 0,
+      "top_right_alpha": 0,
+      "sha256": "C8DA3C32C4AFF2A9AA903586FF5C54BA8EA3B302718B7F86B16CB68D76C7E40B"
+    }
+  },
+  {
+    "name": "blood_nervous1",
+    "prompt": "Use case: precise-object-edit. Transparent game character portrait for Legend of Mortal. Image 1 is the EDIT TARGET: preserve its complete composition, pose, exact hands, head angle, hairstyle and ponytail, blue clothing, brown bracers, injuries, blood, props, motion/special effects, and framing. Image 2 is the APPROVED HANDSOME FACE IDENTITY reference only. Change ONLY the face anatomy in image 1 to be the same handsome Chinese man in his twenties as image 2: elongated masculine face, clearly defined jawline, straight refined nose, narrower dark eyes, thick sharp sword-shaped brows. The emotion and pose must come from image 1, not the neutral smile of image 2. Retain rough irregular black ink contours, colored-pencil/dry-brush/gouache grain, muted colors and the hand-painted rustic wuxia game style. No smooth beauty filter, photorealism, 3D, modern glossy anime, or idol makeup. One complete visible character silhouette, no additional cropping, no other people. True transparent alpha background, no black/white painted backdrop, no checkerboard, no text or watermark. Required target emotion and state: An anxious forced teeth-showing smile, raised worried brows, sweat drops and a small blood trickle from lower lip; preserve the small white breath puff to the viewer-left of his face. Hands lowered WITHOUT any weapon. Keep target pose, outfit, blood placement and all effects, no new injuries.",
+    "generator": "built-in image_gen",
+    "transparent_background": true,
+    "edit_target": "reference/natural/blood_nervous1.png",
+    "identity_reference": "BepInEx/plugins/ZhaoHuoNatural/Portraits/normal.png",
+    "source_output": "generated-source/exec-b514fc5b-a8dc-4181-b039-fb068ebff86b.png",
+    "output": "BepInEx/plugins/ZhaoHuoNatural/Portraits/blood_nervous1.png",
+    "visual_review": "Approved: identity, distinct calm/smile/anxiety, original blood/weapon/breath effects and silhouette checked.",
+    "png_validation": {
+      "width": 990,
+      "height": 1589,
+      "pixel_format": "Format32bppArgb",
+      "top_left_alpha": 0,
+      "top_right_alpha": 0,
+      "sha256": "DB451E803A6E921E2653A16FEAB946B646C2938DC0523A90728038671CEDB64C"
+    }
+  },
+  {
+    "name": "blood_no_weapon",
+    "prompt": "Use case: precise-object-edit. Transparent game character portrait for Legend of Mortal. Image 1 is the EDIT TARGET: preserve its complete composition, pose, exact hands, head angle, hairstyle and ponytail, blue clothing, brown bracers, injuries, blood, props, motion/special effects, and framing. Image 2 is the APPROVED HANDSOME FACE IDENTITY reference only. Change ONLY the face anatomy in image 1 to be the same handsome Chinese man in his twenties as image 2: elongated masculine face, clearly defined jawline, straight refined nose, narrower dark eyes, thick sharp sword-shaped brows. The emotion and pose must come from image 1, not the neutral smile of image 2. Retain rough irregular black ink contours, colored-pencil/dry-brush/gouache grain, muted colors and the hand-painted rustic wuxia game style. No smooth beauty filter, photorealism, 3D, modern glossy anime, or idol makeup. One complete visible character silhouette, no additional cropping, no other people. True transparent alpha background, no black/white painted backdrop, no checkerboard, no text or watermark. Required target emotion and state: Wounded and exhausted yet composed, restrained neutral mouth. Preserve exact cuts, forehead/cheek/lip blood trails, sweat, stained blue robe and fingers. Hands lowered without ANY weapon, no sword added. Keep original pose and mild weary look; no extra injury.",
+    "generator": "built-in image_gen",
+    "transparent_background": true,
+    "edit_target": "reference/natural/blood_no_weapon.png",
+    "identity_reference": "BepInEx/plugins/ZhaoHuoNatural/Portraits/normal.png",
+    "source_output": "generated-source/exec-a5a23fd3-e1a3-4608-bc37-a72e9f857639.png",
+    "output": "BepInEx/plugins/ZhaoHuoNatural/Portraits/blood_no_weapon.png",
+    "visual_review": "Approved: handsome anatomy, required emotion, original injuries, unarmed hands, torn costume where applicable.",
+    "png_validation": {
+      "width": 992,
+      "height": 1586,
+      "pixel_format": "Format32bppArgb",
+      "top_left_alpha": 0,
+      "top_right_alpha": 0,
+      "sha256": "943F2B74930E3B99ECDCCB6F84D09F653E185499299A8A8DE3C7FC8CAECD5350"
+    }
+  },
+  {
+    "name": "blood_no_weapon_laugh1",
+    "prompt": "Use case: precise-object-edit. Transparent game character portrait for Legend of Mortal. Image 1 is the EDIT TARGET: preserve its complete composition, pose, exact hands, head angle, hairstyle and ponytail, blue clothing, brown bracers, injuries, blood, props, motion/special effects, and framing. Image 2 is the APPROVED HANDSOME FACE IDENTITY reference only. Change ONLY the face anatomy in image 1 to be the same handsome Chinese man in his twenties as image 2: elongated masculine face, clearly defined jawline, straight refined nose, narrower dark eyes, thick sharp sword-shaped brows. The emotion and pose must come from image 1, not the neutral smile of image 2. Retain rough irregular black ink contours, colored-pencil/dry-brush/gouache grain, muted colors and the hand-painted rustic wuxia game style. No smooth beauty filter, photorealism, 3D, modern glossy anime, or idol makeup. One complete visible character silhouette, no additional cropping, no other people. True transparent alpha background, no black/white painted backdrop, no checkerboard, no text or watermark. Required target emotion and state: A brave warm teeth-showing smile despite light wounds. Preserve smile shape, bloodstained robe and fingers, cuts and blood trails on face in the same places. Both hands lowered; no weapon. Keep target posture and exact body silhouette.",
+    "generator": "built-in image_gen",
+    "transparent_background": true,
+    "edit_target": "reference/natural/blood_no_weapon_laugh1.png",
+    "identity_reference": "BepInEx/plugins/ZhaoHuoNatural/Portraits/normal.png",
+    "source_output": "generated-source/exec-bb97c757-daf5-417b-a32e-660b03c873e5.png",
+    "output": "BepInEx/plugins/ZhaoHuoNatural/Portraits/blood_no_weapon_laugh1.png",
+    "visual_review": "Approved: handsome anatomy, required emotion, original injuries, unarmed hands, torn costume where applicable.",
+    "png_validation": {
+      "width": 990,
+      "height": 1589,
+      "pixel_format": "Format32bppArgb",
+      "top_left_alpha": 0,
+      "top_right_alpha": 0,
+      "sha256": "E0048B11CAE5000C1C8A26519DA7348D6604BB2B00BFEDC026DBBCB4375D2B9E"
+    }
+  },
+  {
+    "name": "hurt",
+    "prompt": "Use case: precise-object-edit. Transparent game character portrait for Legend of Mortal. Image 1 is the EDIT TARGET: preserve its complete composition, pose, exact hands, head angle, hairstyle and ponytail, blue clothing, brown bracers, injuries, blood, props, motion/special effects, and framing. Image 2 is the APPROVED HANDSOME FACE IDENTITY reference only. Change ONLY the face anatomy in image 1 to be the same handsome Chinese man in his twenties as image 2: elongated masculine face, clearly defined jawline, straight refined nose, narrower dark eyes, thick sharp sword-shaped brows. The emotion and pose must come from image 1, not the neutral smile of image 2. Retain rough irregular black ink contours, colored-pencil/dry-brush/gouache grain, muted colors and the hand-painted rustic wuxia game style. No smooth beauty filter, photorealism, 3D, modern glossy anime, or idol makeup. One complete visible character silhouette, no additional cropping, no other people. True transparent alpha background, no black/white painted backdrop, no checkerboard, no text or watermark. Required target emotion and state: Comedically badly battered and dazed: keep swollen purple left eye shut, weary right eye, open pained mouth, bruised lips, forehead blood trickles and all scratches; small projectile stuck at top-left of hair. Preserve torn blue robe exposing the shoulder, tattered sleeves, blood marks, lowered hands and exact original injury level. Facial proportions underneath injuries match the handsome reference. Do NOT heal/remove injuries, smile, add wounds or intensify gore.",
+    "generator": "built-in image_gen",
+    "transparent_background": true,
+    "edit_target": "reference/natural/hurt.png",
+    "identity_reference": "BepInEx/plugins/ZhaoHuoNatural/Portraits/normal.png",
+    "source_output": "generated-source/exec-3a83c2ae-f208-43ba-8689-03fbd4f60cea.png",
+    "output": "BepInEx/plugins/ZhaoHuoNatural/Portraits/hurt.png",
+    "visual_review": "Approved: handsome anatomy, required emotion, original injuries, unarmed hands, torn costume where applicable.",
+    "png_validation": {
+      "width": 992,
+      "height": 1586,
+      "pixel_format": "Format32bppArgb",
+      "top_left_alpha": 0,
+      "top_right_alpha": 0,
+      "sha256": "EB95B9C014554369DFAD60AA95C5A153569617BFE9C51646EE86A4F028ECD346"
+    }
+  },
+  {
+    "name": "hurt2",
+    "prompt": "Use case: precise-object-edit. Transparent game character portrait for Legend of Mortal. Image 1 is the EDIT TARGET: preserve its complete composition, pose, exact hands, head angle, hairstyle and ponytail, blue clothing, brown bracers, injuries, blood, props, motion/special effects, and framing. Image 2 is the APPROVED HANDSOME FACE IDENTITY reference only. Change ONLY the face anatomy in image 1 to be the same handsome Chinese man in his twenties as image 2: elongated masculine face, clearly defined jawline, straight refined nose, narrower dark eyes, thick sharp sword-shaped brows. The emotion and pose must come from image 1, not the neutral smile of image 2. Retain rough irregular black ink contours, colored-pencil/dry-brush/gouache grain, muted colors and the hand-painted rustic wuxia game style. No smooth beauty filter, photorealism, 3D, modern glossy anime, or idol makeup. One complete visible character silhouette, no additional cropping, no other people. True transparent alpha background, no black/white painted backdrop, no checkerboard, no text or watermark. Required target emotion and state: Exhausted and badly worn down: head tilted forward, red tired half-lidded eyes, sagging brows, mouth slightly open gasping, a white sigh puff beside viewer-left cheek, sweat, exact blood trickles and dirt on face/clothes. Keep slumped shoulders, lowered hands and scratched bloodstained blue robe. Match handsome anatomy beneath fatigue; do not smile, heal or add injuries.",
+    "generator": "built-in image_gen",
+    "transparent_background": true,
+    "edit_target": "reference/natural/hurt2.png",
+    "identity_reference": "BepInEx/plugins/ZhaoHuoNatural/Portraits/normal.png",
+    "source_output": "generated-source/exec-90ea5898-d074-495b-b675-f03540793b7b.png",
+    "output": "BepInEx/plugins/ZhaoHuoNatural/Portraits/hurt2.png",
+    "visual_review": "Approved: same handsome identity under fatigue/tearful punch/defeated closed eyes; original pose, tears, blood and sigh effects preserved.",
+    "png_validation": {
+      "width": 990,
+      "height": 1589,
+      "pixel_format": "Format32bppArgb",
+      "top_left_alpha": 0,
+      "top_right_alpha": 0,
+      "sha256": "728534AE552A979C6BA112FE76B06BBFA963AA33DA6D049FFC1A05E262E3DE91"
+    }
+  },
+  {
+    "name": "hurt_fist",
+    "prompt": "Use case: precise-object-edit. Transparent game character portrait for Legend of Mortal. Image 1 is the EDIT TARGET: preserve its complete composition, pose, exact hands, head angle, hairstyle and ponytail, blue clothing, brown bracers, injuries, blood, props, motion/special effects, and framing. Image 2 is the APPROVED HANDSOME FACE IDENTITY reference only. Change ONLY the face anatomy in image 1 to be the same handsome Chinese man in his twenties as image 2: elongated masculine face, clearly defined jawline, straight refined nose, narrower dark eyes, thick sharp sword-shaped brows. The emotion and pose must come from image 1, not the neutral smile of image 2. Retain rough irregular black ink contours, colored-pencil/dry-brush/gouache grain, muted colors and the hand-painted rustic wuxia game style. No smooth beauty filter, photorealism, 3D, modern glossy anime, or idol makeup. One complete visible character silhouette, no additional cropping, no other people. True transparent alpha background, no black/white painted backdrop, no checkerboard, no text or watermark. Required target emotion and state: Exhausted and tearful while throwing a desperate punch: right arm fully extended horizontally toward viewer-left with closed fist, other arm down, bowed head, worn-out eyes streaming tears, mouth open with clenched teeth. Preserve white sigh puff beside cheek, every target blood mark, sweat, scratch and tattered stained robe. Whole extended arm and fist must remain visible, with asymmetric wide framing. Keep this precise action, not a neutral standing portrait.",
+    "generator": "built-in image_gen",
+    "transparent_background": true,
+    "edit_target": "reference/natural/hurt_fist.png",
+    "identity_reference": "BepInEx/plugins/ZhaoHuoNatural/Portraits/normal.png",
+    "source_output": "generated-source/exec-211c7b67-f1be-4bad-b7eb-94ffb2e2a9d8.png",
+    "output": "BepInEx/plugins/ZhaoHuoNatural/Portraits/hurt_fist.png",
+    "visual_review": "Approved: same handsome identity under fatigue/tearful punch/defeated closed eyes; original pose, tears, blood and sigh effects preserved.",
+    "png_validation": {
+      "width": 1163,
+      "height": 1353,
+      "pixel_format": "Format32bppArgb",
+      "top_left_alpha": 0,
+      "top_right_alpha": 0,
+      "sha256": "19257A65B19EF2A8D0346ECBCC70F56A89C9A41A0FFD6413F1BA98916301A8AE"
+    }
+  },
+  {
+    "name": "die",
+    "prompt": "Use case: precise-object-edit. Transparent game character portrait for Legend of Mortal. Image 1 is the EDIT TARGET: preserve its complete composition, pose, exact hands, head angle, hairstyle and ponytail, blue clothing, brown bracers, injuries, blood, props, motion/special effects, and framing. Image 2 is the APPROVED HANDSOME FACE IDENTITY reference only. Change ONLY the face anatomy in image 1 to be the same handsome Chinese man in his twenties as image 2: elongated masculine face, clearly defined jawline, straight refined nose, narrower dark eyes, thick sharp sword-shaped brows. The emotion and pose must come from image 1, not the neutral smile of image 2. Retain rough irregular black ink contours, colored-pencil/dry-brush/gouache grain, muted colors and the hand-painted rustic wuxia game style. No smooth beauty filter, photorealism, 3D, modern glossy anime, or idol makeup. One complete visible character silhouette, no additional cropping, no other people. True transparent alpha background, no black/white painted backdrop, no checkerboard, no text or watermark. Required target emotion and state: Defeated exhausted portrait: eyelids completely closed, head bowed/downcast, slack mouth slightly parted, both arms hanging lifelessly, pale face with exact modest blood trickles and scratches. Preserve thin curled white sigh effect beside face, bowed shoulder posture and stained robe. Never smile or open eyes. No new injury or additional gore; handsome identity remains recognizable beneath this defeated expression.",
+    "generator": "built-in image_gen",
+    "transparent_background": true,
+    "edit_target": "reference/natural/die.png",
+    "identity_reference": "BepInEx/plugins/ZhaoHuoNatural/Portraits/normal.png",
+    "source_output": "generated-source/exec-5e180607-556a-4f42-9fe8-6bfe7c2929a9.png",
+    "output": "BepInEx/plugins/ZhaoHuoNatural/Portraits/die.png",
+    "visual_review": "Approved: same handsome identity under fatigue/tearful punch/defeated closed eyes; original pose, tears, blood and sigh effects preserved.",
+    "png_validation": {
+      "width": 991,
+      "height": 1587,
+      "pixel_format": "Format32bppArgb",
+      "top_left_alpha": 0,
+      "top_right_alpha": 0,
+      "sha256": "C46266A6B7DDAE7518080E47B1066E0C43E82BE827275DEC681B6322D8033D09"
+    }
+  }
+]

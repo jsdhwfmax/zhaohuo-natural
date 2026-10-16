@@ -1,0 +1,126 @@
+﻿{
+  "Passed": true,
+  "Variant": "xianxia",
+  "DisplayName": "赵活修仙小师弟版",
+  "PayloadFingerprint": "12BC83F70EF4C99BBD49A13ABBA4A1867998B6DD794873EFAE47B065870A9802",
+  "GameBuild": "25957922",
+  "GameVersion": "release_1.0.6000.2",
+  "Unity": "2020.3.49f1",
+  "Resources": 50,
+  "Replaced": 47,
+  "OriginalFallback": 3,
+  "AvatarPanelBranches": 2,
+  "AvatarPanelReplaced": 2,
+  "NormalSetupPath": true,
+  "AsyncAndSync": true,
+  "UiSpriteMatch": true,
+  "RepeatLoadCache": true,
+  "NonProtagonistUnchanged": true,
+  "VisualReview": "All seven portrait sheets and both avatar panels reviewed by the parent task; no material head/body proportion, transparency, placement or clipped-edge issue found.",
+  "Scope": "Isolated real StoryCharacterController and PlayerAvatarPanel fixtures with actual Addressables and game-created UI Images. No story/save simulation; not a full-game or all-routes completion test.",
+  "EvidenceDirectory": "xianxia/runtime-build25957922",
+  "SourceDiagnostic": "20261016-120804",
+  "PathNormalization": "Local game-root paths in distributed TSV/text reports are replaced by Game\\",
+  "EvidenceFiles": [
+    {
+      "file": "avatar-panel-0.png",
+      "sha256": "EEE88A1BFCB97BE856B9A685EB0854E550FB643E96DBF39416F3B6F49302590A",
+      "IncludedInPublicPackage": false,
+      "Distribution": "local-only reviewed screenshot; original evidence SHA retained"
+    },
+    {
+      "file": "avatar-panel-1.png",
+      "sha256": "EEE88A1BFCB97BE856B9A685EB0854E550FB643E96DBF39416F3B6F49302590A",
+      "IncludedInPublicPackage": false,
+      "Distribution": "local-only reviewed screenshot; original evidence SHA retained"
+    },
+    {
+      "file": "PASS.txt",
+      "sha256": "947BAC4DD38BA54B5F08EC4AAF40E02D17EC4F0115A56B50CCBCEDD9AA83EAC1",
+      "IncludedInPublicPackage": true,
+      "Distribution": "included"
+    },
+    {
+      "file": "portraits-01.png",
+      "sha256": "297D7A3CA567C058C60385A210D10C95F4BD4991CFE09C6265FBAEA984B6AB5B",
+      "IncludedInPublicPackage": false,
+      "Distribution": "local-only reviewed screenshot; original evidence SHA retained"
+    },
+    {
+      "file": "portraits-02.png",
+      "sha256": "EBB2AF4D3D3481F374BEB922E17B9D0DC9ABD2065A8C384694D137F7FF3CF1B5",
+      "IncludedInPublicPackage": false,
+      "Distribution": "local-only reviewed screenshot; original evidence SHA retained"
+    },
+    {
+      "file": "portraits-03.png",
+      "sha256": "3FF695B02279C82550937C117DF79C8633B3917667372A39C3D0C1F145BFCACC",
+      "IncludedInPublicPackage": false,
+      "Distribution": "local-only reviewed screenshot; original evidence SHA retained"
+    },
+    {
+      "file": "portraits-04.png",
+      "sha256": "FA294C62BC0ECFE8878CE0E1AF90E76CEE77B9C74B6659CBC030C553897E8CD8",
+      "IncludedInPublicPackage": false,
+      "Distribution": "local-only reviewed screenshot; original evidence SHA retained"
+    },
+    {
+      "file": "portraits-05.png",
+      "sha256": "F63DFFFB45638849FC7A6CC381874D243AB9291FB7F9C0AB180D9053EAC0D336",
+      "IncludedInPublicPackage": false,
+      "Distribution": "local-only reviewed screenshot; original evidence SHA retained"
+    },
+    {
+      "file": "portraits-06.png",
+      "sha256": "F438DEE8C52576F0167EF61EC7E67197CA295D34129320C39955176AE08E30E1",
+      "IncludedInPublicPackage": false,
+      "Distribution": "local-only reviewed screenshot; original evidence SHA retained"
+    },
+    {
+      "file": "portraits-07.png",
+      "sha256": "CD76F71342BFDCFD6F7D29AA33A48F2D9D4F68DC4EF52030EE0C11E943A851D6",
+      "IncludedInPublicPackage": false,
+      "Distribution": "local-only reviewed screenshot; original evidence SHA retained"
+    },
+    {
+      "file": "portraits.tsv",
+      "sha256": "B3E7459DB6F59CE8A9E1134BBDBE110EEDACD789A9CD7C3D0EBFC1759EFC9014",
+      "IncludedInPublicPackage": true,
+      "Distribution": "included"
+    },
+    {
+      "file": "progress.txt",
+      "sha256": "F42FC9B658D67C610E85FC321502A3737E676C49756EC7DADEB122CFF8297590",
+      "IncludedInPublicPackage": true,
+      "Distribution": "included"
+    },
+    {
+      "file": "run-scope.txt",
+      "sha256": "E0E9C849BDE35C812F6A01B890D9F62938380C2A998C38033F542D619C578206",
+      "IncludedInPublicPackage": true,
+      "Distribution": "included"
+    },
+    {
+      "file": "selftest-log.txt",
+      "sha256": "08D461BAF165F419F883C7A744807464E5D9E45BBEF4F6623CD4E8642007C5F3",
+      "IncludedInPublicPackage": true,
+      "Distribution": "included"
+    }
+  ],
+  "NormalSteamStartup": {
+    "Passed": true,
+    "ObservedSeconds": 90.4,
+    "Responding": true,
+    "StillRunning": true,
+    "SelftestArgumentPresent": false,
+    "PluginReady": true,
+    "PluginErrorLines": 0,
+    "Scope": "Normal Steam startup and 90-second process responsiveness; no savegame or story route loaded by this test",
+    "Evidence": "xianxia/normal-steam-startup.json",
+    "EvidenceSHA256": "44CA12B03638D412317B16D679355168F6408A95EEF6C648036EB5DC24CDD12C",
+    "Log": "xianxia/normal-steam-startup.txt",
+    "LogSHA256": "98810D4B3E7177758ECB6CDB42BD58E7AE736825A5E9406A6072AEFA32549911"
+  },
+  "OriginalFrozenReportSHA256": "5AE42FDD04589186B779F1D5AD3972C95DC1B59704AFC29E9B41496764125EC7",
+  "ScreenshotDistribution": "Original screenshot hashes are retained for traceability. Screenshots containing game UI or original fallback art were reviewed locally and are excluded from the public repository and package; PASS/TSV/text reports remain included."
+}

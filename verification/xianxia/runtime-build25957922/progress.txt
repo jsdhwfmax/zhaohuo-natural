@@ -1,0 +1,12 @@
+2026-10-16T12:08:04.9070707+11:00 waiting for game startup (5 seconds)
+2026-10-16T12:08:20.9961004+11:00 initializing Addressables
+2026-10-16T12:08:23.7285931+11:00 located 50 current protagonist resources
+2026-10-16T12:08:25.3802772+11:00 normal game Setup completed
+2026-10-16T12:08:26.5946306+11:00 rendered page 1
+2026-10-16T12:08:27.9210534+11:00 rendered page 2
+2026-10-16T12:08:29.2992792+11:00 rendered page 3
+2026-10-16T12:08:30.5933185+11:00 rendered page 4
+2026-10-16T12:08:31.8661496+11:00 rendered page 5
+2026-10-16T12:08:33.0989688+11:00 rendered page 6
+2026-10-16T12:08:33.6910928+11:00 rendered page 7
+2026-10-16T12:08:33.6942751+11:00 testing real PlayerAvatarPanel.OnEnable, both talent branches

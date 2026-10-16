@@ -1,0 +1,32 @@
+{
+  "SchemaVersion": 1,
+  "PackageVersion": "1.3.0",
+  "DefaultVariantId": "natural",
+  "FingerprintAlgorithm": "SHA256-normalized-path-hash-lines-ordinal-v1",
+  "Variants": [
+    {
+      "Id": "natural",
+      "DisplayName": "赵活自然版",
+      "Description": "保留草根气质，面容自然耐看。",
+      "PreviewPath": "BepInEx/plugins/ZhaoHuoNatural/Portraits/normal.png",
+      "PortraitPath": "BepInEx/plugins/ZhaoHuoNatural/Portraits",
+      "PayloadFingerprint": "1179319D7CEE4F7D19A7FF00D8A23E1D7474A8871F601343666DF4E6624E5E66"
+    },
+    {
+      "Id": "handsome",
+      "DisplayName": "赵活帅气版",
+      "Description": "五官更俊朗，保留原版衣装和江湖气质。",
+      "PreviewPath": "Variants/handsome/Portraits/normal.png",
+      "PortraitPath": "Variants/handsome/Portraits",
+      "PayloadFingerprint": "E38B63E6DECA2C3837AA659D19CA8AA48FBD4D748FFEB257D6DFEE6016832A8E"
+    },
+    {
+      "Id": "xianxia",
+      "DisplayName": "赵活修仙小师弟版",
+      "Description": "清俊年轻的小师弟形象，自然小头比例与灰靛蓝新衣装。",
+      "PreviewPath": "Variants/xianxia/Portraits/normal.png",
+      "PortraitPath": "Variants/xianxia/Portraits",
+      "PayloadFingerprint": "12BC83F70EF4C99BBD49A13ABBA4A1867998B6DD794873EFAE47B065870A9802"
+    }
+  ]
+}

@@ -1,0 +1,87 @@
+{
+  "Passed": true,
+  "DateUtc": "2026-10-16T02:17:10.604839+00:00",
+  "PowerShell": "5.1.26100.9711",
+  "ExecutionMode": "CopiedActualInstallation",
+  "ValidationKind": "CopiedActualInstallation",
+  "Scope": "CopiedActualInstallation: isolated copy of the current installation state and actual game binaries; three switches and final no-op used the unchanged production manager backend. No in-place original-game switch, game launch, rendering, story or savegame test was performed.",
+  "SteamBuild": "25957922",
+  "GameVersion": "release_1.0.6000.2",
+  "GamePathRedacted": "<isolated-copy>/steamapps/common/LegendOfMortal",
+  "SourceCopiedFilesCount": 221,
+  "SourceBytesCopied": 266833148,
+  "OriginalSourceUnmodified": true,
+  "OriginalSourceHashesVerifiedBeforeAfter": 221,
+  "OriginalDirectoryNeverPassedToWriteApi": true,
+  "OriginalManifestUnchanged": true,
+  "SourceGameWasRunningAtSnapshot": true,
+  "DataMinimization": "Only required real binaries, owned payload, BepInEx core/config, installation state/backups and managed disabled legacy plugin were copied. No Diagnostics images, saves, account data or unrelated plugins. A minimal AppState containing only appid/buildid was generated.",
+  "ManifestAdjustment": "Only copied ActiveManifest.GamePath was redirected; original InstallationId and BackupRelativePath were retained and historical backups were not edited.",
+  "Steps": [
+    {
+      "From": "xianxia",
+      "To": "natural",
+      "ChangedPortraits": 47,
+      "CheckOnlyDidNotWrite": true,
+      "InstalledFingerprint": "1179319D7CEE4F7D19A7FF00D8A23E1D7474A8871F601343666DF4E6624E5E66",
+      "PreservedInitialInstallation": true,
+      "OwnedFilesVerified": 51,
+      "OwnershipAndLegacyMetadataPreserved": true,
+      "CompatibilityMode": "VerifiedFingerprint"
+    },
+    {
+      "From": "natural",
+      "To": "handsome",
+      "ChangedPortraits": 47,
+      "CheckOnlyDidNotWrite": true,
+      "InstalledFingerprint": "E38B63E6DECA2C3837AA659D19CA8AA48FBD4D748FFEB257D6DFEE6016832A8E",
+      "PreservedInitialInstallation": true,
+      "OwnedFilesVerified": 51,
+      "OwnershipAndLegacyMetadataPreserved": true,
+      "CompatibilityMode": "VerifiedFingerprint"
+    },
+    {
+      "From": "handsome",
+      "To": "xianxia",
+      "ChangedPortraits": 47,
+      "CheckOnlyDidNotWrite": true,
+      "InstalledFingerprint": "12BC83F70EF4C99BBD49A13ABBA4A1867998B6DD794873EFAE47B065870A9802",
+      "PreservedInitialInstallation": true,
+      "OwnedFilesVerified": 51,
+      "OwnershipAndLegacyMetadataPreserved": true,
+      "CompatibilityMode": "VerifiedFingerprint"
+    }
+  ],
+  "FinalVariantId": "xianxia",
+  "FinalFingerprint": "12BC83F70EF4C99BBD49A13ABBA4A1867998B6DD794873EFAE47B065870A9802",
+  "InitialInstallationPreserved": true,
+  "OriginalBackupsPreserved": true,
+  "OriginalBackupFilesVerified": 100,
+  "ProtectedExistingFiles": 173,
+  "SharedPluginAndGameFilesUnchanged": true,
+  "CopiedLegacyPluginUnchanged": true,
+  "OwnedFilesVerified": 51,
+  "RepeatedFinalSelectionNoOp": true,
+  "FinalNoOpFilesBeforeAfterIdentical": 368,
+  "ReportGenerationRecovery": "The switch sequence, preservation assertions and original-source before/after hash assertions completed before a PowerShell 5.1 list serialization error while creating the report. This JSON was reconstructed from persisted switch journals and manifest snapshots, verified against current copied/source files, and supplemented by a separate final no-op check. The switches were not repeated.",
+  "Limitations": "The isolated copy is not a complete runnable game. Omitted unrelated plugin files are outside the preservation assertions. This report is not an in-place real-game switch or gameplay test.",
+  "CodeHashAlgorithm": "SHA256-UTF8-noBOM-LF-v1",
+  "CodeHashes": [
+    {
+      "Path": "installer/ZhaoHuoInstaller.psm1",
+      "Sha256": "E0EEC72EEDF4971D209B7FEF250FC9F854BA1F6A0BAB1AC89980BAF98B932600"
+    },
+    {
+      "Path": "installer/VariantSupport.ps1",
+      "Sha256": "F5920D9E720071295DAD657A33D277A2AFAAD320916AAD6160FBA2ADE08F60A5"
+    },
+    {
+      "Path": "installer/AppearanceManager.ps1",
+      "Sha256": "EE3C592D6506DF47F10E912BD118FE55ED4637C1D610816B1324F32C83737567"
+    },
+    {
+      "Path": "VariantCatalog.json",
+      "Sha256": "63E728E35C5222C474057D932A9C5EB3153FDC46B88855C1FE229B236C618445"
+    }
+  ]
+}

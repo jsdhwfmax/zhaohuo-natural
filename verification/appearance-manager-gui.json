@@ -1,0 +1,98 @@
+{
+  "status": "passed",
+  "Version": "1.3.0",
+  "CodeHashAlgorithm": "SHA256-UTF8-noBOM-LF-v1",
+  "CodeHashes": [
+    {
+      "Path": "installer/Gui.ps1",
+      "Sha256": "75F6EEE45633C03AE730E36990C8004DC18555E62055A2853D74E48F1E5F0FD2"
+    },
+    {
+      "Path": "Install.ps1",
+      "Sha256": "D5D8AD67856248C0B2901F8517B5F2C590D4B9CCE3167FFA41D81BED64C87691"
+    },
+    {
+      "Path": "Install.cmd",
+      "Sha256": "FD89369BB49ED6B568B201AF28E97A132756A62397C2FA3CBB7729E71E988DD7"
+    },
+    {
+      "Path": "Uninstall.cmd",
+      "Sha256": "065A76633E761ECC82D2239E3467BFE158D4D152379F456055892BF2663D2083"
+    },
+    {
+      "Path": "打开美化管理器.cmd",
+      "Sha256": "9100CB0C83609BEFB7B75F6AC05C62A66F687BECEC8217415990E557ED7BB9E4"
+    }
+  ],
+  "Scope": "WinForms rendering and button-event tests with an isolated mock backend; CLI forwarding tested in isolated fixture processes. This is not a real game switch test.",
+  "PowerShell": "5.1.26100.9711",
+  "UiAssertionCount": 16,
+  "CliAssertionCount": 7,
+  "DistinctAssertionCount": 23,
+  "UiAssertions": [
+    "Select natural without writes",
+    "Apply natural dispatch and installed state",
+    "Check natural dispatch",
+    "Select handsome without writes",
+    "Apply handsome dispatch and installed state",
+    "Check handsome dispatch",
+    "Select xianxia without writes",
+    "Apply xianxia dispatch and installed state",
+    "Check xianxia dispatch",
+    "Busy state prevents duplicate dispatch and selection",
+    "Failure is visible and controls recover",
+    "Uninstall dispatch clears installed state",
+    "Empty path blocks dispatch",
+    "Key controls and all three cards stay inside their containers",
+    "Main layout does not overflow client width",
+    "Pixel fonts avoid double DPI scaling and fit key controls"
+  ],
+  "CliAssertions": [
+    "CLI natural CheckOnly and space-containing GamePath forwarded",
+    "CLI handsome CheckOnly and space-containing GamePath forwarded",
+    "CLI xianxia CheckOnly and space-containing GamePath forwarded",
+    "CLI defaults to natural and forwards install mode",
+    "CLI unique Steam candidate is forwarded",
+    "Invalid VariantId fails before dispatch with nonzero exit",
+    "Backend rejection propagates a nonzero process exit"
+  ],
+  "LayoutChecks": [
+    {
+      "LogicalClientSize": "1040x830",
+      "UiScale": 1,
+      "Rendered": true,
+      "VisuallyReviewed": true,
+      "Screenshot": "docs/preview/manager.png"
+    },
+    {
+      "LogicalClientSize": "900x700",
+      "UiScale": 1,
+      "Rendered": true,
+      "VisuallyReviewed": true
+    },
+    {
+      "LogicalClientSize": "900x700",
+      "UiScale": 1.25,
+      "Rendered": true,
+      "VisuallyReviewed": true,
+      "NativeSystemDpi": 120
+    },
+    {
+      "LogicalClientSize": "900x700",
+      "UiScale": 1.5,
+      "Rendered": true,
+      "VisuallyReviewed": true,
+      "UiAssertionsPassed": 16,
+      "Note": "150% UI scale rendered on a 120-DPI desktop; all fonts use explicit pixel units to avoid applying system DPI twice."
+    }
+  ],
+  "StartupCheck": "A normal visible launch produced the expected window title, remained responsive and emitted no stderr. Desktop automation did not expose this PowerShell-hosted Form, so no real desktop button click is claimed.",
+  "GameWrites": "None during preview, UI mock tests or CLI stub tests. Real backend installation/switch validation is recorded separately.",
+  "ReproduceUi": "powershell.exe -NoProfile -ExecutionPolicy Bypass -STA -File installer/Gui.ps1 -UiTestReport <output.json> -PreviewSize Compact -PreviewScale 1.5",
+  "ReproducePreview": "powershell.exe -NoProfile -ExecutionPolicy Bypass -STA -File installer/Gui.ps1 -PreviewPath <output.png> -PreviewInstalledVariant xianxia",
+  "Encoding": {
+    "Gui.ps1": "UTF-8 BOM",
+    "Install.ps1": "UTF-8 BOM",
+    "ChineseEntryPoint": "ASCII contents with CRLF; Chinese filename only"
+  }
+}

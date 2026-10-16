@@ -1,0 +1,79 @@
+[Message: Preloader] BepInEx 6.0.0-be.692 - Mortal
+[Message: Preloader] Built from commit 851521cc126e4f9d841d2d9bfe857558f0395939
+[Info   :   BepInEx] System platform: Windows 10 64-bit
+[Info   :   BepInEx] Process bitness: 64-bit (x64)
+[Info   : Preloader] Running under Unity 2020.3.49f1
+[Info   : Preloader] CLR runtime version: 4.0.30319.17020
+[Info   : Preloader] Supports SRE: False
+[Message: Preloader] Preloader started
+[Info   :AssemblyPatcher] Loaded 1 patcher type from [BepInEx.Unity.Mono.Preloader 6.0.0.0]
+[Info   : Preloader] 1 patcher plugin loaded
+[Info   : Preloader] 143 assemblies discovered
+[Message:AssemblyPatcher] Executing 1 patch(es)
+[Message: Preloader] Preloader finished
+[Message:   BepInEx] Chainloader initialized
+[Info   :   BepInEx] 1 plugin to load
+[Info   :   BepInEx] Loading [Zhao Huo Natural Portrait 1.0.0]
+[Info   :Zhao Huo Natural Portrait] Ready. Game=release_1.0.6000.2, Unity=2020.3.49f1; coroutine + synchronous portrait hooks installed; PNG files=47
+[Info   :Zhao Huo Natural Portrait] SELFTEST waiting for game startup (5 seconds)
+[Message:   BepInEx] Chainloader startup complete
+[Info   :Zhao Huo Natural Portrait] SELFTEST initializing Addressables
+[Info   :Zhao Huo Natural Portrait] SELFTEST located 50 current protagonist resources
+[Info   :Zhao Huo Natural Portrait] REPLACED 唐門_主角/normal -> normal.png [1060x1700]
+[Info   :Zhao Huo Natural Portrait] SELFTEST normal game Setup completed
+[Info   :Zhao Huo Natural Portrait] REPLACED 唐門_主角/angry1 -> angry1.png [1060x1700]
+[Info   :Zhao Huo Natural Portrait] REPLACED 唐門_主角/angry2 -> angry2.png [1060x1700]
+[Info   :Zhao Huo Natural Portrait] REPLACED 唐門_主角/angry3 -> angry3.png [1060x1700]
+[Info   :Zhao Huo Natural Portrait] REPLACED 唐門_主角/blood -> blood.png [1060x1700]
+[Info   :Zhao Huo Natural Portrait] REPLACED 唐門_主角/blood_laugh1 -> blood_laugh1.png [1060x1700]
+[Info   :Zhao Huo Natural Portrait] REPLACED 唐門_主角/blood_nervous1 -> blood_nervous1.png [1060x1700]
+[Info   :Zhao Huo Natural Portrait] SELFTEST rendered page 1
+[Info   :Zhao Huo Natural Portrait] REPLACED 唐門_主角/blood_no_weapon -> blood_no_weapon.png [1060x1700]
+[Info   :Zhao Huo Natural Portrait] REPLACED 唐門_主角/blood_no_weapon_laugh1 -> blood_no_weapon_laugh1.png [1060x1700]
+[Info   :Zhao Huo Natural Portrait] REPLACED 唐門_主角/caught -> caught.png [1060x1700]
+[Info   :Zhao Huo Natural Portrait] REPLACED 唐門_主角/close_eye -> close_eye.png [1060x1700]
+[Info   :Zhao Huo Natural Portrait] REPLACED 唐門_主角/close_eye_laugh -> close_eye_laugh.png [1060x1700]
+[Info   :Zhao Huo Natural Portrait] REPLACED 唐門_主角/close_eye_nervous -> close_eye_nervous.png [1060x1700]
+[Info   :Zhao Huo Natural Portrait] REPLACED 唐門_主角/close_eye_nervous2 -> close_eye_nervous2.png [1060x1700]
+[Info   :Zhao Huo Natural Portrait] REPLACED 唐門_主角/close_eye_powder -> close_eye_powder.png [1060x1700]
+[Info   :Zhao Huo Natural Portrait] SELFTEST rendered page 2
+[Info   :Zhao Huo Natural Portrait] REPLACED 唐門_主角/determined -> determined.png [1060x1700]
+[Info   :Zhao Huo Natural Portrait] REPLACED 唐門_主角/die -> die.png [1060x1700]
+[Info   :Zhao Huo Natural Portrait] REPLACED 唐門_主角/doubt -> doubt.png [1060x1700]
+[Info   :Zhao Huo Natural Portrait] REPLACED 唐門_主角/eye_mask_nervous1 -> eye_mask_nervous1.png [1060x1700]
+[Info   :Zhao Huo Natural Portrait] REPLACED 唐門_主角/eye_mask_nervous2 -> eye_mask_nervous2.png [1060x1700]
+[Info   :Zhao Huo Natural Portrait] REPLACED 唐門_主角/fist_north_star -> fist_north_star.png [1200x1700]
+[Info   :Zhao Huo Natural Portrait] REPLACED 唐門_主角/gloomy2 -> gloomy2.png [1060x1700]
+[Info   :Zhao Huo Natural Portrait] REPLACED 唐門_主角/god_thunder -> god_thunder.png [1320x1700]
+[Info   :Zhao Huo Natural Portrait] SELFTEST rendered page 3
+[Info   :Zhao Huo Natural Portrait] REPLACED 唐門_主角/head -> head.png [1060x1700]
+[Info   :Zhao Huo Natural Portrait] REPLACED 唐門_主角/hero_landing -> hero_landing.png [1200x1700]
+[Info   :Zhao Huo Natural Portrait] REPLACED 唐門_主角/hurt -> hurt.png [1060x1700]
+[Info   :Zhao Huo Natural Portrait] REPLACED 唐門_主角/hurt_fist -> hurt_fist.png [1460x1700]
+[Info   :Zhao Huo Natural Portrait] REPLACED 唐門_主角/hurt2 -> hurt2.png [1060x1700]
+[Info   :Zhao Huo Natural Portrait] REPLACED 唐門_主角/laugh1 -> laugh1.png [1060x1700]
+[Info   :Zhao Huo Natural Portrait] REPLACED 唐門_主角/laugh2 -> laugh2.png [1060x1700]
+[Info   :Zhao Huo Natural Portrait] REPLACED 唐門_主角/mask -> mask.png [1060x1700]
+[Info   :Zhao Huo Natural Portrait] SELFTEST rendered page 4
+[Info   :Zhao Huo Natural Portrait] REPLACED 唐門_主角/mud -> mud.png [1060x1700]
+[Info   :Zhao Huo Natural Portrait] REPLACED 唐門_主角/nervous1 -> nervous1.png [1060x1700]
+[Info   :Zhao Huo Natural Portrait] REPLACED 唐門_主角/nervous2 -> nervous2.png [1060x1700]
+[Info   :Zhao Huo Natural Portrait] REPLACED 唐門_主角/nervous3 -> nervous3.png [1060x1700]
+[Info   :Zhao Huo Natural Portrait] REPLACED 唐門_主角/oraora -> oraora.png [1060x1700]
+[Info   :Zhao Huo Natural Portrait] REPLACED 唐門_主角/revel -> revel.png [1060x1700]
+[Info   :Zhao Huo Natural Portrait] REPLACED 唐門_主角/sad1 -> sad1.png [1060x1700]
+[Info   :Zhao Huo Natural Portrait] SELFTEST rendered page 5
+[Info   :Zhao Huo Natural Portrait] REPLACED 唐門_主角/shake -> shake.png [1060x1700]
+[Info   :Zhao Huo Natural Portrait] REPLACED 唐門_主角/shake2 -> shake2.png [1060x1700]
+[Info   :Zhao Huo Natural Portrait] REPLACED 唐門_主角/shock -> shock.png [1060x1700]
+[Info   :Zhao Huo Natural Portrait] REPLACED 唐門_主角/soul -> soul.png [1060x1700]
+[Info   :Zhao Huo Natural Portrait] REPLACED 唐門_主角/special1 -> special1.png [1060x1700]
+[Info   :Zhao Huo Natural Portrait] REPLACED 唐門_主角/stupid -> stupid.png [1060x1700]
+[Info   :Zhao Huo Natural Portrait] REPLACED 唐門_主角/suck1 -> suck1.png [1060x1700]
+[Info   :Zhao Huo Natural Portrait] SELFTEST rendered page 6
+[Info   :Zhao Huo Natural Portrait] REPLACED 唐門_主角/suck3 -> suck3.png [1060x1700]
+[Info   :Zhao Huo Natural Portrait] REPLACED 唐門_主角/suck4 -> suck4.png [1060x1700]
+[Info   :Zhao Huo Natural Portrait] SELFTEST rendered page 7
+[Info   :Zhao Huo Natural Portrait] SELFTEST testing real PlayerAvatarPanel.OnEnable, both talent branches
+[Info   :Zhao Huo Natural Portrait] REPLACED Avatar/normal -> normal.png [1060x1700]
+[Info   :Zhao Huo Natural Portrait] SELFTEST PASS: resources=50, replaced=47, fallback=3; reports=Game\BepInEx\plugins\ZhaoHuoNatural\Diagnostics\20261016-120804

@@ -1,0 +1,548 @@
+[
+    {
+        "name":  "angry1",
+        "prompt":  "Use case: precise-object-edit. Transparent dialogue sprite for 活侠传 / Legend of Mortal.\nImage 1 is the target POSE, EXPRESSION, story effects and composition reference only. Image 2 is the USER-APPROVED JUNIOR DISCIPLE (小师弟) master: copy its exact beautiful face identity, hair, body/head proportions and NEW COSTUME.\nCRITICAL: The user rejected large heads. Match image2\u0027s SMALLER NATURAL HEAD RELATIVE TO BODY AND SHOULDERS, including less bulky hair. Do not copy the larger head proportions of image1. Adjust the pose naturally while maintaining the master head/shoulder balance. In an upright portrait the skull-crown-to-chin length is about one third of crown-to-waist distance. Keep expressive faces readable, but never enlarge the head simply to emphasize emotion.\nSame exceptionally handsome youthful adult East Asian male junior disciple: refined small narrow oval face, clean gently tapered jaw, clear dark phoenix eyes with youthful soft brows, slim straight refined nose, delicate naturally colored lips, pale natural skin, simple tied high dark ponytail with soft face-framing strands. Youthful and modest, not stern mature commander, not child/chibi, no huge round anime eyes, makeup or photo-real pasted face.\nNEW CLOTHES exactly from image2: humble matte gray-indigo blue martial robe, dark indigo cloth-edged crossover lapels, ivory inner collar, broad dark indigo cloth waist sash with simple side knot and short cloth ends, brown wrapped forearm guards. Update entire old costume. No old purple-red gauntlets, luxury ornament, crown, armor, shining silk or magical ribbons. For injury scenes preserve tears and stains on the new outfit. Special target disguise/ghost/inverted colors override this normal palette.\nPreserve target EXPRESSION and meaning of action with the new identity; do not paste master\u0027s neutral smile onto every face. Preserve distinctive props, sweat, blood, comedy effects, hand gestures, head angle and action energy as appropriate. Same coarse ink contours, opaque watercolor and colored-pencil texture throughout; face delicately painted but integrated into the game\u0027s rough hand-drawn style. No 3D or glossy anime.\nOne figure only, transparent alpha background, entire head/hair/hands/action effects inside canvas with clear top and side margins; original lower robe crop may remain. No paper, black/white/checkerboard backdrop, text, labels, panels or watermark.\nTarget-specific state: Mild displeasure, furrowed brows, stern closed mouth and tense hands down. Youthful junior disciple mildly annoyed, not a mature harsh warrior; no aura. Keep master\u0027s small head and compact hair volume.",
+        "references":  [
+                           "references/previous-handsome-v1.1.0/angry1.png",
+                           "references/junior-master-v1.png"
+                       ],
+        "transparent_background":  true,
+        "source":  "generated/exec-41493491-e3ce-4e44-8306-7c459953b444.png",
+        "output":  "BepInEx/plugins/ZhaoHuoNatural/Portraits/angry1.png",
+        "saved":  true,
+        "check":  "Reviewed junior identity, smaller head, new costume and target emotion; final alpha margin check pending.",
+        "selected":  false,
+        "output_size":  [
+                            990,
+                            1589
+                        ],
+        "mode":  "RGBA",
+        "alpha_extrema":  [
+                              0,
+                              255
+                          ],
+        "alpha_bbox_gt16":  [
+                                180,
+                                328,
+                                893,
+                                1589
+                            ],
+        "sha256":  "c629dba9526ce8f6b662de5eef1787c8a4030916b0123baf51f9488c50982944",
+        "status":  "SUPERSEDED_RETAINED_SOURCE"
+    },
+    {
+        "name":  "angry2",
+        "prompt":  "Use case: precise-object-edit. Transparent dialogue sprite for 活侠传 / Legend of Mortal.\nImage 1 is the target POSE, EXPRESSION, story effects and composition reference only. Image 2 is the USER-APPROVED JUNIOR DISCIPLE (小师弟) master: copy its exact beautiful face identity, hair, body/head proportions and NEW COSTUME.\nCRITICAL: The user rejected large heads. Match image2\u0027s SMALLER NATURAL HEAD RELATIVE TO BODY AND SHOULDERS, including less bulky hair. Do not copy the larger head proportions of image1. Adjust the pose naturally while maintaining the master head/shoulder balance. In an upright portrait the skull-crown-to-chin length is about one third of crown-to-waist distance. Keep expressive faces readable, but never enlarge the head simply to emphasize emotion.\nSame exceptionally handsome youthful adult East Asian male junior disciple: refined small narrow oval face, clean gently tapered jaw, clear dark phoenix eyes with youthful soft brows, slim straight refined nose, delicate naturally colored lips, pale natural skin, simple tied high dark ponytail with soft face-framing strands. Youthful and modest, not stern mature commander, not child/chibi, no huge round anime eyes, makeup or photo-real pasted face.\nNEW CLOTHES exactly from image2: humble matte gray-indigo blue martial robe, dark indigo cloth-edged crossover lapels, ivory inner collar, broad dark indigo cloth waist sash with simple side knot and short cloth ends, brown wrapped forearm guards. Update entire old costume. No old purple-red gauntlets, luxury ornament, crown, armor, shining silk or magical ribbons. For injury scenes preserve tears and stains on the new outfit. Special target disguise/ghost/inverted colors override this normal palette.\nPreserve target EXPRESSION and meaning of action with the new identity; do not paste master\u0027s neutral smile onto every face. Preserve distinctive props, sweat, blood, comedy effects, hand gestures, head angle and action energy as appropriate. Same coarse ink contours, opaque watercolor and colored-pencil texture throughout; face delicately painted but integrated into the game\u0027s rough hand-drawn style. No 3D or glossy anime.\nOne figure only, transparent alpha background, entire head/hair/hands/action effects inside canvas with clear top and side margins; original lower robe crop may remain. No paper, black/white/checkerboard backdrop, text, labels, panels or watermark.\nTarget-specific state: Comically furious: deeply furrowed brow, tense nose wrinkles, bared clenched teeth, red glinting eyes and both clenched fists. Preserve RED anger halo and white sharp glints, but keep all effect edges inside canvas with at least 5% side margins. The narrow youthful face remains master\u0027s SMALL size relative to torso, even with a fierce expression.",
+        "references":  [
+                           "references/previous-handsome-v1.1.0/angry2.png",
+                           "references/junior-master-v1.png"
+                       ],
+        "transparent_background":  true,
+        "source":  "generated/exec-fbb32197-49c5-47c5-842e-5a882f95e55f.png",
+        "output":  "BepInEx/plugins/ZhaoHuoNatural/Portraits/angry2.png",
+        "saved":  true,
+        "check":  "Reviewed junior identity, smaller head, new costume and target emotion. Alpha margin check passed.",
+        "selected":  true,
+        "output_size":  [
+                            990,
+                            1589
+                        ],
+        "mode":  "RGBA",
+        "alpha_extrema":  [
+                              0,
+                              255
+                          ],
+        "alpha_bbox_gt16":  [
+                                40,
+                                140,
+                                979,
+                                1589
+                            ],
+        "sha256":  "b933f8db6ad62cd886f28f92ee09ba6f9012eda4a068a5408dc3f9d17937fd5c",
+        "status":  "FINAL_REVIEWED",
+        "alpha_margin_check":  "PASS: transparent top/left/right margins; only lower robe crop reaches bottom."
+    },
+    {
+        "name":  "angry3",
+        "prompt":  "Use case: precise-object-edit. Transparent dialogue sprite for 活侠传 / Legend of Mortal.\nImage 1 is the target POSE, EXPRESSION, story effects and composition reference only. Image 2 is the USER-APPROVED JUNIOR DISCIPLE (小师弟) master: copy its exact beautiful face identity, hair, body/head proportions and NEW COSTUME.\nCRITICAL: The user rejected large heads. Match image2\u0027s SMALLER NATURAL HEAD RELATIVE TO BODY AND SHOULDERS, including less bulky hair. Do not copy the larger head proportions of image1. Adjust the pose naturally while maintaining the master head/shoulder balance. In an upright portrait the skull-crown-to-chin length is about one third of crown-to-waist distance. Keep expressive faces readable, but never enlarge the head simply to emphasize emotion.\nSame exceptionally handsome youthful adult East Asian male junior disciple: refined small narrow oval face, clean gently tapered jaw, clear dark phoenix eyes with youthful soft brows, slim straight refined nose, delicate naturally colored lips, pale natural skin, simple tied high dark ponytail with soft face-framing strands. Youthful and modest, not stern mature commander, not child/chibi, no huge round anime eyes, makeup or photo-real pasted face.\nNEW CLOTHES exactly from image2: humble matte gray-indigo blue martial robe, dark indigo cloth-edged crossover lapels, ivory inner collar, broad dark indigo cloth waist sash with simple side knot and short cloth ends, brown wrapped forearm guards. Update entire old costume. No old purple-red gauntlets, luxury ornament, crown, armor, shining silk or magical ribbons. For injury scenes preserve tears and stains on the new outfit. Special target disguise/ghost/inverted colors override this normal palette.\nPreserve target EXPRESSION and meaning of action with the new identity; do not paste master\u0027s neutral smile onto every face. Preserve distinctive props, sweat, blood, comedy effects, hand gestures, head angle and action energy as appropriate. Same coarse ink contours, opaque watercolor and colored-pencil texture throughout; face delicately painted but integrated into the game\u0027s rough hand-drawn style. No 3D or glossy anime.\nOne figure only, transparent alpha background, entire head/hair/hands/action effects inside canvas with clear top and side margins; original lower robe crop may remain. No paper, black/white/checkerboard backdrop, text, labels, panels or watermark.\nTarget-specific state: Intense angry glare with natural dark pupils, knit brows, tense partly open mouth showing teeth, both fists down and RED aura. Keep every aura edge inside 5% transparent side margins. Maintain small natural head and shoulders balance of Image 2, not Image 1.",
+        "references":  [
+                           "references/previous-handsome-v1.1.0/angry3.png",
+                           "references/junior-master-v1.png"
+                       ],
+        "transparent_background":  true,
+        "source":  "generated/exec-52d4a4a1-c7ee-4023-93c3-82bec16a1ff9.png",
+        "output":  "BepInEx/plugins/ZhaoHuoNatural/Portraits/angry3.png",
+        "saved":  true,
+        "check":  "Reviewed junior identity, smaller head, new costume and target emotion. Alpha margin check passed.",
+        "selected":  true,
+        "output_size":  [
+                            990,
+                            1589
+                        ],
+        "mode":  "RGBA",
+        "alpha_extrema":  [
+                              0,
+                              255
+                          ],
+        "alpha_bbox_gt16":  [
+                                44,
+                                113,
+                                978,
+                                1589
+                            ],
+        "sha256":  "1523a469f11f29be3989346e71123ce79e7dc9f6dd45fafd98d1f79529dbd087",
+        "status":  "FINAL_REVIEWED",
+        "alpha_margin_check":  "PASS: transparent top/left/right margins; only lower robe crop reaches bottom."
+    },
+    {
+        "name":  "laugh1",
+        "prompt":  "Use case: precise-object-edit. Transparent dialogue sprite for 活侠传 / Legend of Mortal.\nImage 1 is the target POSE, EXPRESSION, story effects and composition reference only. Image 2 is the USER-APPROVED JUNIOR DISCIPLE (小师弟) master: copy its exact beautiful face identity, hair, body/head proportions and NEW COSTUME.\nCRITICAL: The user rejected large heads. Match image2\u0027s SMALLER NATURAL HEAD RELATIVE TO BODY AND SHOULDERS, including less bulky hair. Do not copy the larger head proportions of image1. Adjust the pose naturally while maintaining the master head/shoulder balance. In an upright portrait the skull-crown-to-chin length is about one third of crown-to-waist distance. Keep expressive faces readable, but never enlarge the head simply to emphasize emotion.\nSame exceptionally handsome youthful adult East Asian male junior disciple: refined small narrow oval face, clean gently tapered jaw, clear dark phoenix eyes with youthful soft brows, slim straight refined nose, delicate naturally colored lips, pale natural skin, simple tied high dark ponytail with soft face-framing strands. Youthful and modest, not stern mature commander, not child/chibi, no huge round anime eyes, makeup or photo-real pasted face.\nNEW CLOTHES exactly from image2: humble matte gray-indigo blue martial robe, dark indigo cloth-edged crossover lapels, ivory inner collar, broad dark indigo cloth waist sash with simple side knot and short cloth ends, brown wrapped forearm guards. Update entire old costume. No old purple-red gauntlets, luxury ornament, crown, armor, shining silk or magical ribbons. For injury scenes preserve tears and stains on the new outfit. Special target disguise/ghost/inverted colors override this normal palette.\nPreserve target EXPRESSION and meaning of action with the new identity; do not paste master\u0027s neutral smile onto every face. Preserve distinctive props, sweat, blood, comedy effects, hand gestures, head angle and action energy as appropriate. Same coarse ink contours, opaque watercolor and colored-pencil texture throughout; face delicately painted but integrated into the game\u0027s rough hand-drawn style. No 3D or glossy anime.\nOne figure only, transparent alpha background, entire head/hair/hands/action effects inside canvas with clear top and side margins; original lower robe crop may remain. No paper, black/white/checkerboard backdrop, text, labels, panels or watermark.\nTarget-specific state: Warm friendly open-mouth smile with a little visible upper teeth, happy gently narrowed eyes, relaxed arms down. Clearly smiling rather than neutral closed-mouth. Keep the approved master SMALL head relative to broad shoulders and crown-to-waist distance, about one third, and all of the new humble indigo robe and brown wraps.",
+        "references":  [
+                           "references/previous-handsome-v1.1.0/laugh1.png",
+                           "references/junior-master-v1.png"
+                       ],
+        "transparent_background":  true,
+        "source":  "generated/exec-68483069-37ab-4c6e-81cd-d737f48374ab.png",
+        "output":  "BepInEx/plugins/ZhaoHuoNatural/Portraits/laugh1.png",
+        "saved":  true,
+        "check":  "Reviewed junior identity, smaller head, new costume and target emotion. Alpha margin check passed.",
+        "selected":  true,
+        "output_size":  [
+                            990,
+                            1589
+                        ],
+        "mode":  "RGBA",
+        "alpha_extrema":  [
+                              0,
+                              255
+                          ],
+        "alpha_bbox_gt16":  [
+                                145,
+                                197,
+                                944,
+                                1589
+                            ],
+        "sha256":  "7fe144ec5a45732c2d1271224acac326d541fdd2dc9ac28b9ac1f422c2f7591b",
+        "status":  "FINAL_REVIEWED",
+        "alpha_margin_check":  "PASS: transparent top/left/right margins; only lower robe crop reaches bottom."
+    },
+    {
+        "name":  "laugh2",
+        "prompt":  "Use case: precise-object-edit. Transparent dialogue sprite for 活侠传 / Legend of Mortal.\nImage 1 is the target POSE, EXPRESSION, story effects and composition reference only. Image 2 is the USER-APPROVED JUNIOR DISCIPLE (小师弟) master: copy its exact beautiful face identity, hair, body/head proportions and NEW COSTUME.\nCRITICAL: The user rejected large heads. Match image2\u0027s SMALLER NATURAL HEAD RELATIVE TO BODY AND SHOULDERS, including less bulky hair. Do not copy the larger head proportions of image1. Adjust the pose naturally while maintaining the master head/shoulder balance. In an upright portrait the skull-crown-to-chin length is about one third of crown-to-waist distance. Keep expressive faces readable, but never enlarge the head simply to emphasize emotion.\nSame exceptionally handsome youthful adult East Asian male junior disciple: refined small narrow oval face, clean gently tapered jaw, clear dark phoenix eyes with youthful soft brows, slim straight refined nose, delicate naturally colored lips, pale natural skin, simple tied high dark ponytail with soft face-framing strands. Youthful and modest, not stern mature commander, not child/chibi, no huge round anime eyes, makeup or photo-real pasted face.\nNEW CLOTHES exactly from image2: humble matte gray-indigo blue martial robe, dark indigo cloth-edged crossover lapels, ivory inner collar, broad dark indigo cloth waist sash with simple side knot and short cloth ends, brown wrapped forearm guards. Update entire old costume. No old purple-red gauntlets, luxury ornament, crown, armor, shining silk or magical ribbons. For injury scenes preserve tears and stains on the new outfit. Special target disguise/ghost/inverted colors override this normal palette.\nPreserve target EXPRESSION and meaning of action with the new identity; do not paste master\u0027s neutral smile onto every face. Preserve distinctive props, sweat, blood, comedy effects, hand gestures, head angle and action energy as appropriate. Same coarse ink contours, opaque watercolor and colored-pencil texture throughout; face delicately painted but integrated into the game\u0027s rough hand-drawn style. No 3D or glossy anime.\nOne figure only, transparent alpha background, entire head/hair/hands/action effects inside canvas with clear top and side margins; original lower robe crop may remain. No paper, black/white/checkerboard backdrop, text, labels, panels or watermark.\nTarget-specific state: Wholehearted laughter: eyes squeezed shut, mouth opened wide in laughter. Keep the viewer-left raised playful gesturing hand with curved fingers and the other lowered hand from image1; preserve natural finger anatomy. Full hand and sleeve with transparent margins. Keep the small youthful master head-to-shoulder proportions, not the large head of image1.",
+        "references":  [
+                           "references/previous-handsome-v1.1.0/laugh2.png",
+                           "references/junior-master-v1.png"
+                       ],
+        "transparent_background":  true,
+        "source":  "generated/exec-468f26aa-b200-4a54-9e44-e4618d376593.png",
+        "output":  "BepInEx/plugins/ZhaoHuoNatural/Portraits/laugh2.png",
+        "saved":  true,
+        "check":  "Reviewed junior identity, smaller head, new costume and target emotion. Alpha margin check passed.",
+        "selected":  true,
+        "output_size":  [
+                            990,
+                            1589
+                        ],
+        "mode":  "RGBA",
+        "alpha_extrema":  [
+                              0,
+                              255
+                          ],
+        "alpha_bbox_gt16":  [
+                                28,
+                                176,
+                                975,
+                                1589
+                            ],
+        "sha256":  "d939a441540a1e5f58b76a54ead504c2f5e3757bc290626a192abff729ab6e28",
+        "status":  "FINAL_REVIEWED",
+        "alpha_margin_check":  "PASS: transparent top/left/right margins; only lower robe crop reaches bottom."
+    },
+    {
+        "name":  "nervous1",
+        "prompt":  "Use case: precise-object-edit. Transparent dialogue sprite for 活侠传 / Legend of Mortal.\nImage 1 is the target POSE, EXPRESSION, story effects and composition reference only. Image 2 is the USER-APPROVED JUNIOR DISCIPLE (小师弟) master: copy its exact beautiful face identity, hair, body/head proportions and NEW COSTUME.\nCRITICAL: The user rejected large heads. Match image2\u0027s SMALLER NATURAL HEAD RELATIVE TO BODY AND SHOULDERS, including less bulky hair. Do not copy the larger head proportions of image1. Adjust the pose naturally while maintaining the master head/shoulder balance. In an upright portrait the skull-crown-to-chin length is about one third of crown-to-waist distance. Keep expressive faces readable, but never enlarge the head simply to emphasize emotion.\nSame exceptionally handsome youthful adult East Asian male junior disciple: refined small narrow oval face, clean gently tapered jaw, clear dark phoenix eyes with youthful soft brows, slim straight refined nose, delicate naturally colored lips, pale natural skin, simple tied high dark ponytail with soft face-framing strands. Youthful and modest, not stern mature commander, not child/chibi, no huge round anime eyes, makeup or photo-real pasted face.\nNEW CLOTHES exactly from image2: humble matte gray-indigo blue martial robe, dark indigo cloth-edged crossover lapels, ivory inner collar, broad dark indigo cloth waist sash with simple side knot and short cloth ends, brown wrapped forearm guards. Update entire old costume. No old purple-red gauntlets, luxury ornament, crown, armor, shining silk or magical ribbons. For injury scenes preserve tears and stains on the new outfit. Special target disguise/ghost/inverted colors override this normal palette.\nPreserve target EXPRESSION and meaning of action with the new identity; do not paste master\u0027s neutral smile onto every face. Preserve distinctive props, sweat, blood, comedy effects, hand gestures, head angle and action energy as appropriate. Same coarse ink contours, opaque watercolor and colored-pencil texture throughout; face delicately painted but integrated into the game\u0027s rough hand-drawn style. No 3D or glossy anime.\nOne figure only, transparent alpha background, entire head/hair/hands/action effects inside canvas with clear top and side margins; original lower robe crop may remain. No paper, black/white/checkerboard backdrop, text, labels, panels or watermark.\nTarget-specific state: Worried surprise: widened eyes, worried lifted brows, slightly open mouth, one visible cheek sweat drop. Preserve the target\u0027s asymmetric arms and fingers. No confident smile. Keep a refined small youthful face and the approved small-head crown-to-waist ratio, rather than enlarging the head for the emotion.",
+        "references":  [
+                           "references/previous-handsome-v1.1.0/nervous1.png",
+                           "references/junior-master-v1.png"
+                       ],
+        "transparent_background":  true,
+        "source":  "generated/exec-f471de3c-cbea-4b24-b625-70cccab59164.png",
+        "output":  "BepInEx/plugins/ZhaoHuoNatural/Portraits/nervous1.png",
+        "saved":  true,
+        "check":  "Draft: identity/proportion correct; lower fingers need extra bottom room.",
+        "selected":  false,
+        "output_size":  [
+                            990,
+                            1589
+                        ],
+        "mode":  "RGBA",
+        "alpha_extrema":  [
+                              0,
+                              255
+                          ],
+        "alpha_bbox_gt16":  [
+                                60,
+                                154,
+                                967,
+                                1589
+                            ],
+        "sha256":  "406bbf54e6cafe37bb78a371bbaa0295e80359f7d787814b8679b5ec37cf8f9a",
+        "status":  "SUPERSEDED_RETAINED_SOURCE"
+    },
+    {
+        "name":  "nervous2",
+        "prompt":  "Use case: precise-object-edit. Transparent dialogue sprite for 活侠传 / Legend of Mortal.\nImage 1 is the target POSE, EXPRESSION, story effects and composition reference only. Image 2 is the USER-APPROVED JUNIOR DISCIPLE (小师弟) master: copy its exact beautiful face identity, hair, body/head proportions and NEW COSTUME.\nCRITICAL: The user rejected large heads. Match image2\u0027s SMALLER NATURAL HEAD RELATIVE TO BODY AND SHOULDERS, including less bulky hair. Do not copy the larger head proportions of image1. Adjust the pose naturally while maintaining the master head/shoulder balance. In an upright portrait the skull-crown-to-chin length is about one third of crown-to-waist distance. Keep expressive faces readable, but never enlarge the head simply to emphasize emotion.\nSame exceptionally handsome youthful adult East Asian male junior disciple: refined small narrow oval face, clean gently tapered jaw, clear dark phoenix eyes with youthful soft brows, slim straight refined nose, delicate naturally colored lips, pale natural skin, simple tied high dark ponytail with soft face-framing strands. Youthful and modest, not stern mature commander, not child/chibi, no huge round anime eyes, makeup or photo-real pasted face.\nNEW CLOTHES exactly from image2: humble matte gray-indigo blue martial robe, dark indigo cloth-edged crossover lapels, ivory inner collar, broad dark indigo cloth waist sash with simple side knot and short cloth ends, brown wrapped forearm guards. Update entire old costume. No old purple-red gauntlets, luxury ornament, crown, armor, shining silk or magical ribbons. For injury scenes preserve tears and stains on the new outfit. Special target disguise/ghost/inverted colors override this normal palette.\nPreserve target EXPRESSION and meaning of action with the new identity; do not paste master\u0027s neutral smile onto every face. Preserve distinctive props, sweat, blood, comedy effects, hand gestures, head angle and action energy as appropriate. Same coarse ink contours, opaque watercolor and colored-pencil texture throughout; face delicately painted but integrated into the game\u0027s rough hand-drawn style. No 3D or glossy anime.\nOne figure only, transparent alpha background, entire head/hair/hands/action effects inside canvas with clear top and side margins; original lower robe crop may remain. No paper, black/white/checkerboard backdrop, text, labels, panels or watermark.\nTarget-specific state: Panic: eyes wide and anxious, open mouth nervously biting the raised fingers. Preserve hand-over-mouth occlusion, fingers naturally bent against lips, visible sweat drops and vertical stress hatching on the forehead. Keep the other lowered hand entirely inside the canvas. The face stays small, youthful and recognizable, with the same small head and less bulky hair of the master; do not enlarge the head to show panic. New indigo robe and brown cloth forearm wraps.",
+        "references":  [
+                           "references/previous-handsome-v1.1.0/nervous2.png",
+                           "references/junior-master-v1.png"
+                       ],
+        "transparent_background":  true,
+        "source":  "generated/exec-aed6b197-443c-47a1-8bc4-567294fae4e8.png",
+        "output":  "BepInEx/plugins/ZhaoHuoNatural/Portraits/nervous2.png",
+        "saved":  true,
+        "check":  "Reviewed junior identity, smaller head/shoulders, full new costume, correct hand occlusion and target emotion. Alpha margin check passed.",
+        "selected":  true,
+        "output_size":  [
+                            990,
+                            1589
+                        ],
+        "mode":  "RGBA",
+        "alpha_extrema":  [
+                              0,
+                              255
+                          ],
+        "alpha_bbox_gt16":  [
+                                143,
+                                196,
+                                945,
+                                1589
+                            ],
+        "sha256":  "caabeedc96b54e2873a43a77d4c3f0b77573a568afc2ee59f880db65ec585583",
+        "status":  "FINAL_REVIEWED",
+        "alpha_margin_check":  "PASS: transparent top/left/right margins; only lower robe crop reaches bottom."
+    },
+    {
+        "name":  "nervous3",
+        "prompt":  "Use case: precise-object-edit. Transparent dialogue sprite for 活侠传 / Legend of Mortal.\nImage 1 is the target POSE, EXPRESSION, story effects and composition reference only. Image 2 is the USER-APPROVED JUNIOR DISCIPLE (小师弟) master: copy its exact beautiful face identity, hair, body/head proportions and NEW COSTUME.\nCRITICAL: The user rejected large heads. Match image2\u0027s SMALLER NATURAL HEAD RELATIVE TO BODY AND SHOULDERS, including less bulky hair. Do not copy the larger head proportions of image1. Adjust the pose naturally while maintaining the master head/shoulder balance. In an upright portrait the skull-crown-to-chin length is about one third of crown-to-waist distance. Keep expressive faces readable, but never enlarge the head simply to emphasize emotion.\nSame exceptionally handsome youthful adult East Asian male junior disciple: refined small narrow oval face, clean gently tapered jaw, clear dark phoenix eyes with youthful soft brows, slim straight refined nose, delicate naturally colored lips, pale natural skin, simple tied high dark ponytail with soft face-framing strands. Youthful and modest, not stern mature commander, not child/chibi, no huge round anime eyes, makeup or photo-real pasted face.\nNEW CLOTHES exactly from image2: humble matte gray-indigo blue martial robe, dark indigo cloth-edged crossover lapels, ivory inner collar, broad dark indigo cloth waist sash with simple side knot and short cloth ends, brown wrapped forearm guards. Update entire old costume. No old purple-red gauntlets, luxury ornament, crown, armor, shining silk or magical ribbons. For injury scenes preserve tears and stains on the new outfit. Special target disguise/ghost/inverted colors override this normal palette.\nPreserve target EXPRESSION and meaning of action with the new identity; do not paste master\u0027s neutral smile onto every face. Preserve distinctive props, sweat, blood, comedy effects, hand gestures, head angle and action energy as appropriate. Same coarse ink contours, opaque watercolor and colored-pencil texture throughout; face delicately painted but integrated into the game\u0027s rough hand-drawn style. No 3D or glossy anime.\nOne figure only, transparent alpha background, entire head/hair/hands/action effects inside canvas with clear top and side margins; original lower robe crop may remain. No paper, black/white/checkerboard backdrop, text, labels, panels or watermark.\nTarget-specific state: Sheepish embarrassment: one index finger scratching/touching his cheek, awkward uncertain slightly parted smile, worried soft eyebrows, one cheek sweat bead. Keep the raised forearm and the other lowered hand. Not a confident grin. Copy exact small youthful head/shoulder proportions from the junior master, all the new indigo robe and brown cloth wraps, without old red-purple guards.",
+        "references":  [
+                           "references/previous-handsome-v1.1.0/nervous3.png",
+                           "references/junior-master-v1.png"
+                       ],
+        "transparent_background":  true,
+        "source":  "generated/exec-c4ec902c-f9f9-4260-9096-1b859bca6758.png",
+        "output":  "BepInEx/plugins/ZhaoHuoNatural/Portraits/nervous3.png",
+        "saved":  true,
+        "check":  "Reviewed junior identity, smaller head/shoulders, full new costume, correct hand occlusion and target emotion. Alpha margin check passed.",
+        "selected":  true,
+        "output_size":  [
+                            990,
+                            1589
+                        ],
+        "mode":  "RGBA",
+        "alpha_extrema":  [
+                              0,
+                              255
+                          ],
+        "alpha_bbox_gt16":  [
+                                110,
+                                162,
+                                925,
+                                1589
+                            ],
+        "sha256":  "9220f1de0bd090508103f46b815f6be519a3c857ee998bcc7eade4d0407bb26f",
+        "status":  "FINAL_REVIEWED",
+        "alpha_margin_check":  "PASS: transparent top/left/right margins; only lower robe crop reaches bottom."
+    },
+    {
+        "name":  "sad1",
+        "prompt":  "Use case: precise-object-edit. Transparent dialogue sprite for 活侠传 / Legend of Mortal.\nImage 1 is the target POSE, EXPRESSION, story effects and composition reference only. Image 2 is the USER-APPROVED JUNIOR DISCIPLE (小师弟) master: copy its exact beautiful face identity, hair, body/head proportions and NEW COSTUME.\nCRITICAL: The user rejected large heads. Match image2\u0027s SMALLER NATURAL HEAD RELATIVE TO BODY AND SHOULDERS, including less bulky hair. Do not copy the larger head proportions of image1. Adjust the pose naturally while maintaining the master head/shoulder balance. In an upright portrait the skull-crown-to-chin length is about one third of crown-to-waist distance. Keep expressive faces readable, but never enlarge the head simply to emphasize emotion.\nSame exceptionally handsome youthful adult East Asian male junior disciple: refined small narrow oval face, clean gently tapered jaw, clear dark phoenix eyes with youthful soft brows, slim straight refined nose, delicate naturally colored lips, pale natural skin, simple tied high dark ponytail with soft face-framing strands. Youthful and modest, not stern mature commander, not child/chibi, no huge round anime eyes, makeup or photo-real pasted face.\nNEW CLOTHES exactly from image2: humble matte gray-indigo blue martial robe, dark indigo cloth-edged crossover lapels, ivory inner collar, broad dark indigo cloth waist sash with simple side knot and short cloth ends, brown wrapped forearm guards. Update entire old costume. No old purple-red gauntlets, luxury ornament, crown, armor, shining silk or magical ribbons. For injury scenes preserve tears and stains on the new outfit. Special target disguise/ghost/inverted colors override this normal palette.\nPreserve target EXPRESSION and meaning of action with the new identity; do not paste master\u0027s neutral smile onto every face. Preserve distinctive props, sweat, blood, comedy effects, hand gestures, head angle and action energy as appropriate. Same coarse ink contours, opaque watercolor and colored-pencil texture throughout; face delicately painted but integrated into the game\u0027s rough hand-drawn style. No 3D or glossy anime.\nOne figure only, transparent alpha background, entire head/hair/hands/action effects inside canvas with clear top and side margins; original lower robe crop may remain. No paper, black/white/checkerboard backdrop, text, labels, panels or watermark.\nTarget-specific state: Dejected facepalm: head lowered, one spread hand covers the eyes and upper face, visible unhappy slightly open mouth below. Preserve correct hand-over-face occlusion, five believable fingers; no eyes painted over fingers. Keep the other lowered hand fully visible. Keep the ENTIRE raised elbow and sleeve, wrist, fingers and hair fully inside the canvas with generous clear side margins. This is a sad/frustrated comic facepalm, not a smile. Match the small juvenile-adult head/shoulder balance of the junior master and all its new humble clothes.",
+        "references":  [
+                           "references/previous-handsome-v1.1.0/sad1.png",
+                           "references/junior-master-v1.png"
+                       ],
+        "transparent_background":  true,
+        "source":  "generated/exec-1f01ddcb-016f-4215-bf73-3e066868e8a5.png",
+        "output":  "BepInEx/plugins/ZhaoHuoNatural/Portraits/sad1.png",
+        "saved":  true,
+        "check":  "Reviewed junior identity, smaller head/shoulders, full new costume, correct hand occlusion and target emotion. Alpha margin check passed.",
+        "selected":  true,
+        "output_size":  [
+                            990,
+                            1589
+                        ],
+        "mode":  "RGBA",
+        "alpha_extrema":  [
+                              0,
+                              255
+                          ],
+        "alpha_bbox_gt16":  [
+                                138,
+                                264,
+                                915,
+                                1589
+                            ],
+        "sha256":  "cf865e305b0d611094009393e05dcc4df20a5e5b20a96dd2260ac16aecc8ca07",
+        "status":  "FINAL_REVIEWED",
+        "alpha_margin_check":  "PASS: transparent top/left/right margins; only lower robe crop reaches bottom."
+    },
+    {
+        "name":  "shock",
+        "prompt":  "Use case: precise-object-edit. Transparent dialogue sprite for 活侠传 / Legend of Mortal.\nImage 1 is the target POSE, EXPRESSION, story effects and composition reference only. Image 2 is the USER-APPROVED JUNIOR DISCIPLE (小师弟) master: copy its exact beautiful face identity, hair, body/head proportions and NEW COSTUME.\nCRITICAL: The user rejected large heads. Match image2\u0027s SMALLER NATURAL HEAD RELATIVE TO BODY AND SHOULDERS, including less bulky hair. Do not copy the larger head proportions of image1. Adjust the pose naturally while maintaining the master head/shoulder balance. In an upright portrait the skull-crown-to-chin length is about one third of crown-to-waist distance. Keep expressive faces readable, but never enlarge the head simply to emphasize emotion.\nSame exceptionally handsome youthful adult East Asian male junior disciple: refined small narrow oval face, clean gently tapered jaw, clear dark phoenix eyes with youthful soft brows, slim straight refined nose, delicate naturally colored lips, pale natural skin, simple tied high dark ponytail with soft face-framing strands. Youthful and modest, not stern mature commander, not child/chibi, no huge round anime eyes, makeup or photo-real pasted face.\nNEW CLOTHES exactly from image2: humble matte gray-indigo blue martial robe, dark indigo cloth-edged crossover lapels, ivory inner collar, broad dark indigo cloth waist sash with simple side knot and short cloth ends, brown wrapped forearm guards. Update entire old costume. No old purple-red gauntlets, luxury ornament, crown, armor, shining silk or magical ribbons. For injury scenes preserve tears and stains on the new outfit. Special target disguise/ghost/inverted colors override this normal palette.\nPreserve target EXPRESSION and meaning of action with the new identity; do not paste master\u0027s neutral smile onto every face. Preserve distinctive props, sweat, blood, comedy effects, hand gestures, head angle and action energy as appropriate. Same coarse ink contours, opaque watercolor and colored-pencil texture throughout; face delicately painted but integrated into the game\u0027s rough hand-drawn style. No 3D or glossy anime.\nOne figure only, transparent alpha background, entire head/hair/hands/action effects inside canvas with clear top and side margins; original lower robe crop may remain. No paper, black/white/checkerboard backdrop, text, labels, panels or watermark.\nTarget-specific state: Comic terrified shock: wide eyes with tiny startled pupils, huge open screaming mouth, sweat beads. Ponytail springs upward with vertical stress streaks around head and shoulders as in image1. Keep both hands completely visible, body recoiling. Skull and face must stay SMALL relative to shoulders and torso exactly as junior master, do NOT enlarge the face to show shock. The upward ponytail is a special motion effect, not skull height. Leave ample transparent margin above the very highest hair/vertical streak and at both sides; show every fingertip. Do not crop any of the raised hair.",
+        "references":  [
+                           "references/previous-handsome-v1.1.0/shock.png",
+                           "references/junior-master-v1.png"
+                       ],
+        "transparent_background":  true,
+        "source":  "generated/exec-dc8bbb5c-2593-47c8-8754-bdd954e04510.png",
+        "output":  "BepInEx/plugins/ZhaoHuoNatural/Portraits/shock.png",
+        "saved":  true,
+        "check":  "Reviewed junior identity, smaller head/shoulders, new costume, hand anatomy and expression/effects. Alpha margin check passed.",
+        "selected":  true,
+        "output_size":  [
+                            990,
+                            1589
+                        ],
+        "mode":  "RGBA",
+        "alpha_extrema":  [
+                              0,
+                              255
+                          ],
+        "alpha_bbox_gt16":  [
+                                124,
+                                43,
+                                883,
+                                1589
+                            ],
+        "sha256":  "ce43998455eeb2d62d2777c42ec718ac43088facb96f2b5295cbe1b9e01a14a2",
+        "status":  "FINAL_REVIEWED",
+        "alpha_margin_check":  "PASS: transparent top/left/right margins; only lower robe crop reaches bottom."
+    },
+    {
+        "name":  "close_eye",
+        "prompt":  "Use case: precise-object-edit. Transparent dialogue sprite for 活侠传 / Legend of Mortal.\nImage 1 is the target POSE, EXPRESSION, story effects and composition reference only. Image 2 is the USER-APPROVED JUNIOR DISCIPLE (小师弟) master: copy its exact beautiful face identity, hair, body/head proportions and NEW COSTUME.\nCRITICAL: The user rejected large heads. Match image2\u0027s SMALLER NATURAL HEAD RELATIVE TO BODY AND SHOULDERS, including less bulky hair. Do not copy the larger head proportions of image1. Adjust the pose naturally while maintaining the master head/shoulder balance. In an upright portrait the skull-crown-to-chin length is about one third of crown-to-waist distance. Keep expressive faces readable, but never enlarge the head simply to emphasize emotion.\nSame exceptionally handsome youthful adult East Asian male junior disciple: refined small narrow oval face, clean gently tapered jaw, clear dark phoenix eyes with youthful soft brows, slim straight refined nose, delicate naturally colored lips, pale natural skin, simple tied high dark ponytail with soft face-framing strands. Youthful and modest, not stern mature commander, not child/chibi, no huge round anime eyes, makeup or photo-real pasted face.\nNEW CLOTHES exactly from image2: humble matte gray-indigo blue martial robe, dark indigo cloth-edged crossover lapels, ivory inner collar, broad dark indigo cloth waist sash with simple side knot and short cloth ends, brown wrapped forearm guards. Update entire old costume. No old purple-red gauntlets, luxury ornament, crown, armor, shining silk or magical ribbons. For injury scenes preserve tears and stains on the new outfit. Special target disguise/ghost/inverted colors override this normal palette.\nPreserve target EXPRESSION and meaning of action with the new identity; do not paste master\u0027s neutral smile onto every face. Preserve distinctive props, sweat, blood, comedy effects, hand gestures, head angle and action energy as appropriate. Same coarse ink contours, opaque watercolor and colored-pencil texture throughout; face delicately painted but integrated into the game\u0027s rough hand-drawn style. No 3D or glossy anime.\nOne figure only, transparent alpha background, entire head/hair/hands/action effects inside canvas with clear top and side margins; original lower robe crop may remain. No paper, black/white/checkerboard backdrop, text, labels, panels or watermark.\nTarget-specific state: Calm contemplation: both eyes fully closed, peaceful closed lips without smile, both hands clasped naturally in front of the waist. Keep hand clasp anatomy and lowered shoulders. Use exact small youthful adult face and small head-to-body proportions of the junior master, new gray-indigo outfit and brown cloth wraps. No sweat or aura for this calm state.",
+        "references":  [
+                           "references/previous-handsome-v1.1.0/close_eye.png",
+                           "references/junior-master-v1.png"
+                       ],
+        "transparent_background":  true,
+        "source":  "generated/exec-9ced82e3-4398-4b0e-aade-ad6ccd848f78.png",
+        "output":  "BepInEx/plugins/ZhaoHuoNatural/Portraits/close_eye.png",
+        "saved":  true,
+        "check":  "Reviewed junior identity, smaller head/shoulders, new costume, hand anatomy and expression/effects. Alpha margin check passed.",
+        "selected":  true,
+        "output_size":  [
+                            990,
+                            1589
+                        ],
+        "mode":  "RGBA",
+        "alpha_extrema":  [
+                              0,
+                              255
+                          ],
+        "alpha_bbox_gt16":  [
+                                148,
+                                204,
+                                905,
+                                1589
+                            ],
+        "sha256":  "3d8e93a573c88af174e4c314b6e47e54e4d749bb3456a80cbc428dbbf1331e96",
+        "status":  "FINAL_REVIEWED",
+        "alpha_margin_check":  "PASS: transparent top/left/right margins; only lower robe crop reaches bottom."
+    },
+    {
+        "name":  "close_eye_nervous",
+        "prompt":  "Use case: precise-object-edit. Transparent dialogue sprite for 活侠传 / Legend of Mortal.\nImage 1 is the target POSE, EXPRESSION, story effects and composition reference only. Image 2 is the USER-APPROVED JUNIOR DISCIPLE (小师弟) master: copy its exact beautiful face identity, hair, body/head proportions and NEW COSTUME.\nCRITICAL: The user rejected large heads. Match image2\u0027s SMALLER NATURAL HEAD RELATIVE TO BODY AND SHOULDERS, including less bulky hair. Do not copy the larger head proportions of image1. Adjust the pose naturally while maintaining the master head/shoulder balance. In an upright portrait the skull-crown-to-chin length is about one third of crown-to-waist distance. Keep expressive faces readable, but never enlarge the head simply to emphasize emotion.\nSame exceptionally handsome youthful adult East Asian male junior disciple: refined small narrow oval face, clean gently tapered jaw, clear dark phoenix eyes with youthful soft brows, slim straight refined nose, delicate naturally colored lips, pale natural skin, simple tied high dark ponytail with soft face-framing strands. Youthful and modest, not stern mature commander, not child/chibi, no huge round anime eyes, makeup or photo-real pasted face.\nNEW CLOTHES exactly from image2: humble matte gray-indigo blue martial robe, dark indigo cloth-edged crossover lapels, ivory inner collar, broad dark indigo cloth waist sash with simple side knot and short cloth ends, brown wrapped forearm guards. Update entire old costume. No old purple-red gauntlets, luxury ornament, crown, armor, shining silk or magical ribbons. For injury scenes preserve tears and stains on the new outfit. Special target disguise/ghost/inverted colors override this normal palette.\nPreserve target EXPRESSION and meaning of action with the new identity; do not paste master\u0027s neutral smile onto every face. Preserve distinctive props, sweat, blood, comedy effects, hand gestures, head angle and action energy as appropriate. Same coarse ink contours, opaque watercolor and colored-pencil texture throughout; face delicately painted but integrated into the game\u0027s rough hand-drawn style. No 3D or glossy anime.\nOne figure only, transparent alpha background, entire head/hair/hands/action effects inside canvas with clear top and side margins; original lower robe crop may remain. No paper, black/white/checkerboard backdrop, text, labels, panels or watermark.\nTarget-specific state: Nervous strained concentration: eyes squeezed shut, worried furrowed brows, tense parted mouth showing clenched teeth, many forehead/cheek sweat beads. Both hands clasped in front of waist. Retain the large white comic steam puffs behind/around head and shoulders, including all top and side puffs with transparent spaces between them and ample margin around their outer contours. Not laughing and not peaceful. Keep face/head SMALL relative to body, exact junior identity and new clothes; do not copy the enlarged head of image1.",
+        "references":  [
+                           "references/previous-handsome-v1.1.0/close_eye_nervous.png",
+                           "references/junior-master-v1.png"
+                       ],
+        "transparent_background":  true,
+        "source":  "generated/exec-208a8d1a-013e-4e12-b2a1-32c1a95ef458.png",
+        "output":  "BepInEx/plugins/ZhaoHuoNatural/Portraits/close_eye_nervous.png",
+        "saved":  true,
+        "check":  "Reviewed junior identity, smaller head/shoulders, new costume, hand anatomy and expression/effects. Alpha margin check passed.",
+        "selected":  true,
+        "output_size":  [
+                            989,
+                            1591
+                        ],
+        "mode":  "RGBA",
+        "alpha_extrema":  [
+                              0,
+                              255
+                          ],
+        "alpha_bbox_gt16":  [
+                                106,
+                                28,
+                                929,
+                                1591
+                            ],
+        "sha256":  "bcc6feea86643a3cf56aff9205658261ff2b89e811843e72775da0045ff843fc",
+        "status":  "FINAL_REVIEWED",
+        "alpha_margin_check":  "PASS: transparent top/left/right margins; only lower robe crop reaches bottom."
+    },
+    {
+        "name":  "close_eye_laugh",
+        "prompt":  "Use case: precise-object-edit. Transparent dialogue sprite for 活侠传 / Legend of Mortal.\nImage 1 is the target POSE, EXPRESSION, story effects and composition reference only. Image 2 is the USER-APPROVED JUNIOR DISCIPLE (小师弟) master: copy its exact beautiful face identity, hair, body/head proportions and NEW COSTUME.\nCRITICAL: The user rejected large heads. Match image2\u0027s SMALLER NATURAL HEAD RELATIVE TO BODY AND SHOULDERS, including less bulky hair. Do not copy the larger head proportions of image1. Adjust the pose naturally while maintaining the master head/shoulder balance. In an upright portrait the skull-crown-to-chin length is about one third of crown-to-waist distance. Keep expressive faces readable, but never enlarge the head simply to emphasize emotion.\nSame exceptionally handsome youthful adult East Asian male junior disciple: refined small narrow oval face, clean gently tapered jaw, clear dark phoenix eyes with youthful soft brows, slim straight refined nose, delicate naturally colored lips, pale natural skin, simple tied high dark ponytail with soft face-framing strands. Youthful and modest, not stern mature commander, not child/chibi, no huge round anime eyes, makeup or photo-real pasted face.\nNEW CLOTHES exactly from image2: humble matte gray-indigo blue martial robe, dark indigo cloth-edged crossover lapels, ivory inner collar, broad dark indigo cloth waist sash with simple side knot and short cloth ends, brown wrapped forearm guards. Update entire old costume. No old purple-red gauntlets, luxury ornament, crown, armor, shining silk or magical ribbons. For injury scenes preserve tears and stains on the new outfit. Special target disguise/ghost/inverted colors override this normal palette.\nPreserve target EXPRESSION and meaning of action with the new identity; do not paste master\u0027s neutral smile onto every face. Preserve distinctive props, sweat, blood, comedy effects, hand gestures, head angle and action energy as appropriate. Same coarse ink contours, opaque watercolor and colored-pencil texture throughout; face delicately painted but integrated into the game\u0027s rough hand-drawn style. No 3D or glossy anime.\nOne figure only, transparent alpha background, entire head/hair/hands/action effects inside canvas with clear top and side margins; original lower robe crop may remain. No paper, black/white/checkerboard backdrop, text, labels, panels or watermark.\nTarget-specific state: Relaxed amused small laugh: both eyes fully closed, warm smiling mouth slightly open showing a little upper teeth, both arms hanging down. Keep the junior master\u0027s small youthful face and head-to-shoulder ratio; image1 head is too large, do NOT copy that scale. Frame a bit wider than image1 so BOTH DOWNWARD HANDS AND ALL FINGERTIPS are entirely visible with 50 pixels clear room BELOW THE HANDS before the lower crop. Only lower robe may be cut. Same new indigo costume and brown wraps.",
+        "references":  [
+                           "references/previous-handsome-v1.1.0/close_eye_laugh.png",
+                           "references/junior-master-v1.png"
+                       ],
+        "transparent_background":  true,
+        "source":  "generated/exec-7d13539f-0a75-43a8-bd9c-36bbcdde7e0a.png",
+        "output":  "BepInEx/plugins/ZhaoHuoNatural/Portraits/close_eye_laugh.png",
+        "saved":  true,
+        "check":  "Reviewed junior identity, smaller head/shoulders, new costume, full hands and expression/effects. Alpha margin check passed.",
+        "selected":  true,
+        "output_size":  [
+                            990,
+                            1589
+                        ],
+        "mode":  "RGBA",
+        "alpha_extrema":  [
+                              0,
+                              255
+                          ],
+        "alpha_bbox_gt16":  [
+                                113,
+                                98,
+                                925,
+                                1589
+                            ],
+        "sha256":  "2753d4c3c11d554efebc23b9a2e2fe6c3c3d044e2e36c521d4de98ec0af4b7e4",
+        "status":  "FINAL_REVIEWED",
+        "alpha_margin_check":  "PASS: transparent top/left/right margins; only lower robe crop reaches bottom."
+    },
+    {
+        "name":  "close_eye_nervous2",
+        "prompt":  "Use case: precise-object-edit. Transparent dialogue sprite for 活侠传 / Legend of Mortal.\nImage 1 is the target POSE, EXPRESSION, story effects and composition reference only. Image 2 is the USER-APPROVED JUNIOR DISCIPLE (小师弟) master: copy its exact beautiful face identity, hair, body/head proportions and NEW COSTUME.\nCRITICAL: The user rejected large heads. Match image2\u0027s SMALLER NATURAL HEAD RELATIVE TO BODY AND SHOULDERS, including less bulky hair. Do not copy the larger head proportions of image1. Adjust the pose naturally while maintaining the master head/shoulder balance. In an upright portrait the skull-crown-to-chin length is about one third of crown-to-waist distance. Keep expressive faces readable, but never enlarge the head simply to emphasize emotion.\nSame exceptionally handsome youthful adult East Asian male junior disciple: refined small narrow oval face, clean gently tapered jaw, clear dark phoenix eyes with youthful soft brows, slim straight refined nose, delicate naturally colored lips, pale natural skin, simple tied high dark ponytail with soft face-framing strands. Youthful and modest, not stern mature commander, not child/chibi, no huge round anime eyes, makeup or photo-real pasted face.\nNEW CLOTHES exactly from image2: humble matte gray-indigo blue martial robe, dark indigo cloth-edged crossover lapels, ivory inner collar, broad dark indigo cloth waist sash with simple side knot and short cloth ends, brown wrapped forearm guards. Update entire old costume. No old purple-red gauntlets, luxury ornament, crown, armor, shining silk or magical ribbons. For injury scenes preserve tears and stains on the new outfit. Special target disguise/ghost/inverted colors override this normal palette.\nPreserve target EXPRESSION and meaning of action with the new identity; do not paste master\u0027s neutral smile onto every face. Preserve distinctive props, sweat, blood, comedy effects, hand gestures, head angle and action energy as appropriate. Same coarse ink contours, opaque watercolor and colored-pencil texture throughout; face delicately painted but integrated into the game\u0027s rough hand-drawn style. No 3D or glossy anime.\nOne figure only, transparent alpha background, entire head/hair/hands/action effects inside canvas with clear top and side margins; original lower robe crop may remain. No paper, black/white/checkerboard backdrop, text, labels, panels or watermark.\nTarget-specific state: Embarrassed awkward strained smile while tightly closing both eyes: soft worried brows, tense smile with visible teeth, sweat on forehead cheeks and neck. Both hands clasped at waist. Preserve the comic white curled steam/worry puffs with BLACK ink outer contours around the head and shoulders, all puffs fully visible with generous top/side margins and transparent gaps. Emotion is awkward strained smiling, different from a relaxed laugh or a pained grimace. Keep exact small youthful junior head and all new clothes.",
+        "references":  [
+                           "references/previous-handsome-v1.1.0/close_eye_nervous2.png",
+                           "references/junior-master-v1.png"
+                       ],
+        "transparent_background":  true,
+        "source":  "generated/exec-d199e834-099e-49c2-8394-5100e1b1b949.png",
+        "output":  "BepInEx/plugins/ZhaoHuoNatural/Portraits/close_eye_nervous2.png",
+        "saved":  true,
+        "check":  "Reviewed junior identity, smaller head/shoulders, new costume, full hands and expression/effects. Alpha margin check passed.",
+        "selected":  true,
+        "output_size":  [
+                            990,
+                            1589
+                        ],
+        "mode":  "RGBA",
+        "alpha_extrema":  [
+                              0,
+                              255
+                          ],
+        "alpha_bbox_gt16":  [
+                                137,
+                                28,
+                                943,
+                                1589
+                            ],
+        "sha256":  "e8c00f2ddd9ecd5fe63b2a21982a81919c86d0706538e25cf7c3dec4ad7c3c2f",
+        "status":  "FINAL_REVIEWED",
+        "alpha_margin_check":  "PASS: transparent top/left/right margins; only lower robe crop reaches bottom."
+    },
+    {
+        "name":  "close_eye_powder",
+        "prompt":  "Use case: precise-object-edit. Transparent dialogue sprite for 活侠传 / Legend of Mortal.\nImage 1 is the target POSE, EXPRESSION, story effects and composition reference only. Image 2 is the USER-APPROVED JUNIOR DISCIPLE (小师弟) master: copy its exact beautiful face identity, hair, body/head proportions and NEW COSTUME.\nCRITICAL: The user rejected large heads. Match image2\u0027s SMALLER NATURAL HEAD RELATIVE TO BODY AND SHOULDERS, including less bulky hair. Do not copy the larger head proportions of image1. Adjust the pose naturally while maintaining the master head/shoulder balance. In an upright portrait the skull-crown-to-chin length is about one third of crown-to-waist distance. Keep expressive faces readable, but never enlarge the head simply to emphasize emotion.\nSame exceptionally handsome youthful adult East Asian male junior disciple: refined small narrow oval face, clean gently tapered jaw, clear dark phoenix eyes with youthful soft brows, slim straight refined nose, delicate naturally colored lips, pale natural skin, simple tied high dark ponytail with soft face-framing strands. Youthful and modest, not stern mature commander, not child/chibi, no huge round anime eyes, makeup or photo-real pasted face.\nNEW CLOTHES exactly from image2: humble matte gray-indigo blue martial robe, dark indigo cloth-edged crossover lapels, ivory inner collar, broad dark indigo cloth waist sash with simple side knot and short cloth ends, brown wrapped forearm guards. Update entire old costume. No old purple-red gauntlets, luxury ornament, crown, armor, shining silk or magical ribbons. For injury scenes preserve tears and stains on the new outfit. Special target disguise/ghost/inverted colors override this normal palette.\nPreserve target EXPRESSION and meaning of action with the new identity; do not paste master\u0027s neutral smile onto every face. Preserve distinctive props, sweat, blood, comedy effects, hand gestures, head angle and action energy as appropriate. Same coarse ink contours, opaque watercolor and colored-pencil texture throughout; face delicately painted but integrated into the game\u0027s rough hand-drawn style. No 3D or glossy anime.\nOne figure only, transparent alpha background, entire head/hair/hands/action effects inside canvas with clear top and side margins; original lower robe crop may remain. No paper, black/white/checkerboard backdrop, text, labels, panels or watermark.\nTarget-specific state: White-powder gag: eyes tightly closed/squinting, obvious white powder scattered across BOTH eyelids, brows, upper cheeks and forehead, cheek sweat bead, tense parted mouth showing a little teeth. Both arms down. Preserve these white powder marks as a visible plot effect rather than cosmetics; no white background. Keep small youthful face/head proportions from the junior master, not the enlarged closeup head of image1. Frame wider enough so both hands and every fingertip are fully visible with room below them; only the robe lower edge may be cropped. New indigo robe and brown wraps.",
+        "references":  [
+                           "references/previous-handsome-v1.1.0/close_eye_powder.png",
+                           "references/junior-master-v1.png"
+                       ],
+        "transparent_background":  true,
+        "source":  "generated/exec-cd451d26-6d30-4aae-81a0-af65f80bede1.png",
+        "output":  "BepInEx/plugins/ZhaoHuoNatural/Portraits/close_eye_powder.png",
+        "saved":  true,
+        "check":  "Reviewed junior identity, smaller head/shoulders, new costume, full hands and expression/effects. Alpha margin check passed.",
+        "selected":  true,
+        "output_size":  [
+                            990,
+                            1588
+                        ],
+        "mode":  "RGBA",
+        "alpha_extrema":  [
+                              0,
+                              255
+                          ],
+        "alpha_bbox_gt16":  [
+                                119,
+                                81,
+                                938,
+                                1588
+                            ],
+        "sha256":  "0c805b07e6c83f174bd4ed277f3dd0b7851789520f3f6544a096bdaf89d1337b",
+        "status":  "FINAL_REVIEWED",
+        "alpha_margin_check":  "PASS: transparent top/left/right margins; only lower robe crop reaches bottom."
+    },
+    {
+        "name":  "angry1",
+        "prompt":  "Use case: precise-object-edit. Transparent dialogue sprite for 活侠传 / Legend of Mortal.\nImage 1 is the target POSE, EXPRESSION, story effects and composition reference only. Image 2 is the USER-APPROVED JUNIOR DISCIPLE (小师弟) master: copy its exact beautiful face identity, hair, body/head proportions and NEW COSTUME.\nCRITICAL: The user rejected large heads. Match image2\u0027s SMALLER NATURAL HEAD RELATIVE TO BODY AND SHOULDERS, including less bulky hair. Do not copy the larger head proportions of image1. Adjust the pose naturally while maintaining the master head/shoulder balance. In an upright portrait the skull-crown-to-chin length is about one third of crown-to-waist distance. Keep expressive faces readable, but never enlarge the head simply to emphasize emotion.\nSame exceptionally handsome youthful adult East Asian male junior disciple: refined small narrow oval face, clean gently tapered jaw, clear dark phoenix eyes with youthful soft brows, slim straight refined nose, delicate naturally colored lips, pale natural skin, simple tied high dark ponytail with soft face-framing strands. Youthful and modest, not stern mature commander, not child/chibi, no huge round anime eyes, makeup or photo-real pasted face.\nNEW CLOTHES exactly from image2: humble matte gray-indigo blue martial robe, dark indigo cloth-edged crossover lapels, ivory inner collar, broad dark indigo cloth waist sash with simple side knot and short cloth ends, brown wrapped forearm guards. Update entire old costume. No old purple-red gauntlets, luxury ornament, crown, armor, shining silk or magical ribbons. For injury scenes preserve tears and stains on the new outfit. Special target disguise/ghost/inverted colors override this normal palette.\nPreserve target EXPRESSION and meaning of action with the new identity; do not paste master\u0027s neutral smile onto every face. Preserve distinctive props, sweat, blood, comedy effects, hand gestures, head angle and action energy as appropriate. Same coarse ink contours, opaque watercolor and colored-pencil texture throughout; face delicately painted but integrated into the game\u0027s rough hand-drawn style. No 3D or glossy anime.\nOne figure only, transparent alpha background, entire head/hair/hands/action effects inside canvas with clear top and side margins; original lower robe crop may remain. No paper, black/white/checkerboard backdrop, text, labels, panels or watermark.\nTarget-specific state: This is a localized expression correction to image1, which already has the correct junior identity, small head, clothes and pose. KEEP ALL its proportions, hair, robe, pose and full hands exactly. Change ONLY eyebrows/eyes/mouth to a CLEAR restrained angry scowl: sharply knit lowered brows toward the nose, narrowed focused eyes, lips firmly pressed with corners turned down. No trace of smile or amused expression. Subtle brow tension, not a mature rugged commander. No red aura, no sweat, no glowing eyes. Do not enlarge the head or face. Match image2\u0027s youthful character identity.",
+        "references":  [
+                           "BepInEx/plugins/ZhaoHuoNatural/Portraits/angry1.png",
+                           "references/junior-master-v1.png"
+                       ],
+        "transparent_background":  true,
+        "source":  "generated/exec-a0931bc0-93ff-4de6-a9dd-5de040cc8f9d.png",
+        "output":  "BepInEx/plugins/ZhaoHuoNatural/Portraits/angry1.png",
+        "attempt":  "review-correction",
+        "selected":  true,
+        "saved":  true,
+        "check":  "Reviewed: clear restrained scowl with no smile; youthful identity, small head, full hands and new costume retained.",
+        "reference_source_at_generation":  "generated/exec-41493491-e3ce-4e44-8306-7c459953b444.png",
+        "output_size":  [
+                            990,
+                            1589
+                        ],
+        "mode":  "RGBA",
+        "alpha_extrema":  [
+                              0,
+                              255
+                          ],
+        "alpha_bbox_gt16":  [
+                                180,
+                                323,
+                                901,
+                                1589
+                            ],
+        "sha256":  "bfbed916437b08f0ca3a2c7811d3ebadd28f0a343de3e378a45bd7f20c4d408f",
+        "status":  "FINAL_REVIEWED",
+        "alpha_margin_check":  "PASS: transparent top/left/right margins; only lower robe crop reaches bottom."
+    },
+    {
+        "name":  "nervous1",
+        "prompt":  "Use case: precise-object-edit. Transparent dialogue sprite for 活侠传 / Legend of Mortal.\nImage 1 is the target POSE, EXPRESSION, story effects and composition reference only. Image 2 is the USER-APPROVED JUNIOR DISCIPLE (小师弟) master: copy its exact beautiful face identity, hair, body/head proportions and NEW COSTUME.\nCRITICAL: The user rejected large heads. Match image2\u0027s SMALLER NATURAL HEAD RELATIVE TO BODY AND SHOULDERS, including less bulky hair. Do not copy the larger head proportions of image1. Adjust the pose naturally while maintaining the master head/shoulder balance. In an upright portrait the skull-crown-to-chin length is about one third of crown-to-waist distance. Keep expressive faces readable, but never enlarge the head simply to emphasize emotion.\nSame exceptionally handsome youthful adult East Asian male junior disciple: refined small narrow oval face, clean gently tapered jaw, clear dark phoenix eyes with youthful soft brows, slim straight refined nose, delicate naturally colored lips, pale natural skin, simple tied high dark ponytail with soft face-framing strands. Youthful and modest, not stern mature commander, not child/chibi, no huge round anime eyes, makeup or photo-real pasted face.\nNEW CLOTHES exactly from image2: humble matte gray-indigo blue martial robe, dark indigo cloth-edged crossover lapels, ivory inner collar, broad dark indigo cloth waist sash with simple side knot and short cloth ends, brown wrapped forearm guards. Update entire old costume. No old purple-red gauntlets, luxury ornament, crown, armor, shining silk or magical ribbons. For injury scenes preserve tears and stains on the new outfit. Special target disguise/ghost/inverted colors override this normal palette.\nPreserve target EXPRESSION and meaning of action with the new identity; do not paste master\u0027s neutral smile onto every face. Preserve distinctive props, sweat, blood, comedy effects, hand gestures, head angle and action energy as appropriate. Same coarse ink contours, opaque watercolor and colored-pencil texture throughout; face delicately painted but integrated into the game\u0027s rough hand-drawn style. No 3D or glossy anime.\nOne figure only, transparent alpha background, entire head/hair/hands/action effects inside canvas with clear top and side margins; original lower robe crop may remain. No paper, black/white/checkerboard backdrop, text, labels, panels or watermark.\nTarget-specific state: This is a framing/hand-completion correction to image1, already the correct junior disciple with correct SMALL HEAD, face, expression, clothes and pose. Keep all visual details, the worried surprised eyes, slightly open mouth and cheek sweat. The viewer-right lower hand currently has fingertips cut off by the bottom edge: expand/reframe the composition to show BOTH HANDS COMPLETELY, all fingertips naturally, with at least 60 pixels of transparent room below the lowest fingertip. Only the lower robe may remain cropped at the canvas bottom. If necessary show the same figure slightly smaller in the canvas but DO NOT alter its internal head-to-shoulder-to-waist proportions. Maintain plenty of top and side transparent margins. Do not add/remove fingers or change identity, hairstyle, costume, emotion or arm poses.",
+        "references":  [
+                           "BepInEx/plugins/ZhaoHuoNatural/Portraits/nervous1.png",
+                           "references/junior-master-v1.png"
+                       ],
+        "transparent_background":  true,
+        "source":  "generated/exec-6cbe5440-5667-4fc3-9b11-0f2665c70e80.png",
+        "output":  "BepInEx/plugins/ZhaoHuoNatural/Portraits/nervous1.png",
+        "attempt":  "review-correction",
+        "selected":  true,
+        "saved":  true,
+        "check":  "Reviewed: both lowered hands and fingertips now entirely visible; worried expression, sweat, identity and small head proportions retained.",
+        "reference_source_at_generation":  "generated/exec-f471de3c-cbea-4b24-b625-70cccab59164.png",
+        "output_size":  [
+                            990,
+                            1589
+                        ],
+        "mode":  "RGBA",
+        "alpha_extrema":  [
+                              0,
+                              255
+                          ],
+        "alpha_bbox_gt16":  [
+                                127,
+                                219,
+                                907,
+                                1589
+                            ],
+        "sha256":  "bc01a4f750a2a403dc73ba16ff9af021a22ad10085dc099b6d242012d252d695",
+        "status":  "FINAL_REVIEWED",
+        "alpha_margin_check":  "PASS: transparent top/left/right margins; only lower robe crop reaches bottom."
+    }
+]

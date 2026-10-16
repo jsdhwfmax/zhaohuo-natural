@@ -312,7 +312,7 @@ function Read-ZHState([object]$Paths) {
     $manifest = Get-Content -LiteralPath $Paths.Manifest -Raw -Encoding UTF8 | ConvertFrom-Json
     if ($manifest.SchemaVersion -notin @(1, 2, 3) -or $manifest.PackageId -ne 'ZhaoHuoNatural' -or
         $manifest.GamePath -ne $Paths.Game -or $manifest.InstallationId -notmatch '^\d{8}-\d{6}-[0-9a-f]{8}$' -or
-        $manifest.Status -notin @('installed', 'installing', 'uninstalling') -or
+        $manifest.Status -notin @('installed', 'installing', 'uninstalling', 'switching') -or
         $manifest.BackupRelativePath -ne ('Backups\' + $manifest.InstallationId)) {
         throw '安装记录无效、被移动或属于其他目录。请保留备份，勿手工删除记录后重装。'
     }
@@ -348,28 +348,20 @@ function Assert-ZHRecord([object]$Record, [object]$Paths, [string]$BackupRoot) {
 }
 function Get-ZhaoHuoInstallPlan {
     [CmdletBinding()]
-    param([Parameter(Mandatory=$true)][string]$GamePath, [Parameter(Mandatory=$true)][string]$PackageRoot)
+    param([Parameter(Mandatory=$true)][string]$GamePath, [Parameter(Mandatory=$true)][string]$PackageRoot, [string]$VariantId)
     $package = Get-ZHCanonical $PackageRoot
+    $variant = Read-ZHVariant $package $VariantId
     $validation = Get-ZHGameValidation -GamePath $GamePath -PackageRoot $package
     $paths = $validation.Paths
+    if (Test-Path -LiteralPath (Get-ZHSwitchPath $paths)) { throw '存在未完成的外观切换，请使用当前外观包的安装或卸载入口恢复，勿使用旧版安装器。' }
     if ($package -eq $paths.Game -or $package.StartsWith($paths.Game.TrimEnd('\') + '\', [StringComparison]::OrdinalIgnoreCase)) {
         throw '请将原安装包 ZIP 重新完整解压到游戏目录之外的独立文件夹（例如桌面），再运行 Install.cmd。不要直接解压到游戏目录。若此前误解压，安装器会检查并备份与发布包完全一致的本插件文件；不会删除其他模组。'
     }
-    $payload = Get-ZHChild $package $script:PluginRelative
-    foreach ($name in @('ZhaoHuoNatural.dll', 'portrait-map.txt', 'portrait-layout.tsv')) {
-        if (-not (Test-Path -LiteralPath (Get-ZHChild $payload $name) -PathType Leaf)) { throw "美化包未完整解压，缺少 $name。" }
-    }
-    $payloadFiles = @(Get-ZHFiles $payload | Sort-Object FullName)
-    if (@($payloadFiles | Where-Object { $_.Extension -eq '.png' }).Count -ne $script:PortraitNames.Count) { throw '美化包必须包含完整的 47 张立绘，请重新完整解压发布包。' }
-    foreach ($name in $script:PortraitNames) {
-        if (-not (Test-Path -LiteralPath (Get-ZHChild $payload ('Portraits\' + $name + '.png')) -PathType Leaf)) { throw "美化包缺少必要立绘：$name.png。请重新完整解压发布包。" }
-    }
-    $actions = @()
-    foreach ($file in $payloadFiles) {
-        $relative = $file.FullName.Substring($payload.Length + 1)
-        $actions += [pscustomobject]@{ RelativePath = ($script:PluginRelative + '\' + $relative); Source = $file.FullName; Sha256 = (Get-ZHHash $file.FullName); Category = 'Plugin' }
-    }
+    $actions = @(Get-ZHVariantPayload $package $variant)
+    $payloadFileCount = $actions.Count
     $loaderSource = Get-ZHChild $package 'Loader\winhttp.dll'
+    $payloadFingerprint = Get-ZHPayloadFingerprint @($actions)
+    if ($variant.PayloadFingerprint -and $variant.PayloadFingerprint -ne $payloadFingerprint) { throw '外观包文件与外观目录校验值不一致，请重新完整解压安装包。' }
     Assert-ZHNoLink $loaderSource
     if (-not (Test-Path -LiteralPath $loaderSource -PathType Leaf) -or (Get-ZHHash $loaderSource) -ne $script:LoaderHash -or (Get-ZHMachine $loaderSource) -ne 0x8664) { throw '包内官方 x64 Doorstop 4.3.0 加载器缺失或校验失败。' }
     $actions += [pscustomobject]@{ RelativePath = 'winhttp.dll'; Source = $loaderSource; Sha256 = $script:LoaderHash; Category = 'Loader' }
@@ -391,21 +383,32 @@ function Get-ZhaoHuoInstallPlan {
         }
         $pluginRecords = @($owned | Where-Object { $_.Category -eq 'Plugin' })
         if ($pluginRecords.Count -ne @($actions | Where-Object { $_.Category -eq 'Plugin' }).Count) { throw '包内版本与已安装版本不同，请先卸载再安装。' }
+        if ($variant.PSObject.Properties['ManagerCatalog']) {
+            $null = Get-ZHKnownVariant $existing $pluginRecords (@($variant) + @($variant.SwitchFrom))
+            Assert-ZHPluginInventory $paths $pluginRecords
+        }
+        $different = @()
         foreach ($action in $actions) {
-            if (@($owned | Where-Object { $_.RelativePath -eq $action.RelativePath -and $_.InstalledSha256 -eq $action.Sha256 }).Count -ne 1) { throw '包内版本与已安装版本不同，请先卸载再安装。' }
+            if (@($owned | Where-Object { $_.RelativePath -eq $action.RelativePath -and $_.InstalledSha256 -eq $action.Sha256 }).Count -ne 1) { $different += $action }
         }
         if ($existing.Legacy.DisabledByThisInstall -and ((Test-Path -LiteralPath $paths.Legacy) -or -not (Test-Path -LiteralPath $paths.Disabled -PathType Leaf) -or (Get-ZHHash $paths.Disabled) -ne $existing.Legacy.Sha256)) { throw '旧 MortalBeauty 插件的状态发生改变，请先卸载再重新安装。' }
-        return [pscustomobject]@{ AlreadyInstalled = $true; Paths = $paths; Environment = 'AlreadyInstalled'; Validation = $validation; Actions = @(); Manifest = $existing }
+        if ($different.Count -gt 0) {
+            $sourceVariant=Assert-ZHSwitchSource -PlanVariant $variant -Manifest $existing -Records $pluginRecords -Actions @($actions | Where-Object Category -eq 'Plugin') -Paths $paths
+            if (@($different | Where-Object { $_.Category -ne 'Plugin' -or $_.RelativePath -notmatch '\\Portraits\\[^\\]+\.png$' }).Count -gt 0) { throw '切换涉及加载器或非立绘文件，请先卸载再安装。' }
+            return [pscustomobject]@{ AlreadyInstalled=$false; SwitchRequired=$true; Paths=$paths; Environment='VariantSwitch'; Validation=$validation; Actions=$different; Manifest=$existing; ManifestSha256=(Get-ZHHash $paths.Manifest); Variant=$variant; PayloadFingerprint=$payloadFingerprint; SourceVariant=$sourceVariant }
+        }
+        return [pscustomobject]@{ AlreadyInstalled = $true; SwitchRequired=$false; Paths = $paths; Environment = 'AlreadyInstalled'; Validation = $validation; Actions = @(); Manifest = $existing; Variant=$variant; PayloadFingerprint=$payloadFingerprint }
     }
     $adoptUntracked = $false
     if (Test-Path -LiteralPath $paths.Plugin) {
+        if ($variant.Id -ne 'natural') { throw '游戏中存在未登记的立绘目录。本外观包不会接管手工误解压文件；请先保留并归档该目录到 BepInEx\plugins 之外，再从游戏外安装。' }
         # A release ZIP extracted into the game creates the portrait directory
         # without an install record. Adopt only an exact copy of this payload,
         # backing every pre-existing file up through the ordinary transaction.
         $identical = Test-Path -LiteralPath $paths.Plugin -PathType Container
         $untrackedFiles = @()
         if ($identical) { $untrackedFiles = @(Get-ZHFiles $paths.Plugin) }
-        if ($payloadFiles.Count -ne ($script:PortraitNames.Count + 3) -or $untrackedFiles.Count -ne $payloadFiles.Count) { $identical = $false }
+        if ($payloadFileCount -ne ($script:PortraitNames.Count + 3) -or $untrackedFiles.Count -ne $payloadFileCount) { $identical = $false }
         $expectedFiles = @{}
         foreach ($action in $actions | Where-Object { $_.Category -eq 'Plugin' }) { $expectedFiles[$action.RelativePath] = $action.Sha256 }
         foreach ($file in $untrackedFiles) {
@@ -430,12 +433,17 @@ function Get-ZhaoHuoInstallPlan {
         if (Test-Path -LiteralPath $destination -PathType Container) { throw "目标文件被目录占用：$destination" }
         if ($action.Category -ne 'Loader' -and -not ($adoptUntracked -and $action.Category -eq 'Plugin') -and (Test-Path -LiteralPath $destination)) { throw "安装目标已有文件，未盲目覆盖：$destination" }
     }
-    [pscustomobject]@{ AlreadyInstalled = $false; Paths = $paths; Environment = $environment; Validation = $validation; Actions = $actions; LegacyPresent = $legacyPresent; AdoptedUntrackedPayload = $adoptUntracked }
+    [pscustomobject]@{ AlreadyInstalled = $false; SwitchRequired=$false; Paths = $paths; Environment = $environment; Validation = $validation; Actions = $actions; LegacyPresent = $legacyPresent; AdoptedUntrackedPayload = $adoptUntracked; Variant=$variant; PayloadFingerprint=$payloadFingerprint }
 }
-function Install-ZhaoHuo {
+function Invoke-ZHInstallCore {
     [CmdletBinding()]
-    param([Parameter(Mandatory=$true)][string]$GamePath, [Parameter(Mandatory=$true)][string]$PackageRoot, [switch]$CheckOnly, [scriptblock]$Log)
-    $plan = Get-ZhaoHuoInstallPlan -GamePath $GamePath -PackageRoot $PackageRoot
+    param([Parameter(Mandatory=$true)][string]$GamePath, [Parameter(Mandatory=$true)][string]$PackageRoot, [switch]$CheckOnly, [scriptblock]$Log, [string]$VariantId)
+    $recoveryPaths = Get-ZHLocations $GamePath
+    if (Test-Path -LiteralPath (Get-ZHSwitchPath $recoveryPaths)) {
+        $null = Restore-ZHSwitch -Paths $recoveryPaths -CheckOnly:$CheckOnly -Log $Log
+        if ($CheckOnly) { return [pscustomobject]@{ RecoveryRequired=$true } }
+    }
+    $plan = Get-ZhaoHuoInstallPlan -GamePath $GamePath -PackageRoot $PackageRoot -VariantId $VariantId
     if ($plan.Validation.CompatibilityMode -eq 'OfflineCompatibilityProbe') {
         $detected = if ($plan.Validation.DetectedBuild) { $plan.Validation.DetectedBuild } else { '未知' }
         Write-ZHLog $Log "Steam build $detected 的离线兼容检测通过，允许继续安装或检查。该构建尚未经本项目实机验证；关键立绘接口与资源通过检测不代表所有剧情已验证。" 'Warning'
@@ -443,6 +451,12 @@ function Install-ZhaoHuo {
         Write-ZHLog $Log "64 位游戏与四个程序集 SHA-256 校验通过，匹配已验证 Steam build $($plan.Validation.MatchedBuildId)。"
     }
     if ($plan.AlreadyInstalled) { Write-ZHLog $Log '已经安装同一份美化包，文件校验通过，无需重复覆盖。'; return $plan }
+    if ($plan.SwitchRequired) {
+        $sourceLabel=if ($plan.SourceVariant.PSObject.Properties['DisplayName']) { $plan.SourceVariant.DisplayName } else { $plan.SourceVariant.Id }
+        Write-ZHLog $Log "检测到完整受管$sourceLabel，将备份并替换 $($plan.Actions.Count) 张不同立绘为$($plan.Variant.DisplayName)，保留最初卸载备份。"
+        if ($CheckOnly) { Write-ZHLog $Log '切换检查通过，未修改任何游戏文件。'; return $plan }
+        return (Invoke-ZHVariantSwitch -Plan $plan -Log $Log)
+    }
     if ($plan.Environment -eq 'CleanGame') { Write-ZHLog $Log '识别为纯净游戏：将添加离线官方 BepInEx 6 运行库、配置和 x64 加载器。' }
     else { Write-ZHLog $Log '识别为已有 BepInEx 6：保留现有核心和已有配置，只安装本包并处理兼容加载器。' }
     if ($plan.AdoptedUntrackedPayload) {
@@ -482,6 +496,7 @@ function Install-ZhaoHuo {
         SchemaVersion = 3; PackageId = 'ZhaoHuoNatural'; InstallationId = $id; Status = 'installing'; GamePath = $paths.Game
         InstalledAtUtc = [DateTime]::UtcNow.ToString('o'); GameAssemblySha256 = $plan.Validation.Hashes; SteamBuildId = $plan.Validation.BuildId
         MatchedBuildId = $plan.Validation.MatchedBuildId
+        VariantId=$plan.Variant.Id; VariantDisplayName=$plan.Variant.DisplayName; PayloadFingerprint=$plan.PayloadFingerprint
         CompatibilityMode = $plan.Validation.CompatibilityMode; DetectedBuild = $plan.Validation.DetectedBuild
         CompatibilityEvidence = $(if ($plan.Validation.Probe) { [pscustomobject]@{ BaselineBuildIds = @($plan.Validation.Probe.BaselineBuildIds); Checks = @($plan.Validation.Probe.Checks) } } else { $null })
         AdoptedUntrackedPayload = $plan.AdoptedUntrackedPayload
@@ -514,12 +529,16 @@ function Install-ZhaoHuo {
         throw $failure
     }
 }
-function Uninstall-ZhaoHuo {
+function Invoke-ZHUninstallCore {
     [CmdletBinding()]
     param([Parameter(Mandatory=$true)][string]$GamePath, [switch]$CheckOnly, [scriptblock]$Log)
     $paths = Get-ZHLocations $GamePath
     foreach ($path in @($paths.Game, $paths.Plugin, $paths.State, $paths.Manifest, $paths.Legacy, $paths.Disabled)) { Assert-ZHNoLink $path }
     Assert-ZHStopped $paths.Game
+    if (Test-Path -LiteralPath (Get-ZHSwitchPath $paths)) {
+        $null = Restore-ZHSwitch -Paths $paths -CheckOnly:$CheckOnly -Log $Log
+        if ($CheckOnly) { return }
+    }
     $manifest = Read-ZHState $paths
     if (-not $manifest) { Write-ZHLog $Log '没有找到活动安装记录，未改动任何文件。'; return }
     $backupRoot = Get-ZHChild $paths.State $manifest.BackupRelativePath
@@ -641,4 +660,6 @@ function Get-ZhaoHuoSteamCandidates {
     }
     return @($found.Keys | Sort-Object)
 }
-Export-ModuleMember -Function Get-ZhaoHuoSteamCandidates, Get-ZhaoHuoInstallPlan, Install-ZhaoHuo, Uninstall-ZhaoHuo
+. (Join-Path $PSScriptRoot 'VariantSupport.ps1')
+. (Join-Path $PSScriptRoot 'AppearanceManager.ps1')
+Export-ModuleMember -Function Get-ZhaoHuoSteamCandidates, Get-ZhaoHuoInstallPlan, Install-ZhaoHuo, Uninstall-ZhaoHuo, Get-ZhaoHuoVariants, Get-ZhaoHuoInstalledVariant

@@ -1,0 +1,185 @@
+{
+  "tool": "built-in image_gen",
+  "identityMasterSource": "generated-source/exec-96de3d83-cbe9-4bd4-8dcc-93cec39b0069.png",
+  "basePrompt": "Use case: precise-object-edit\nAsset type: One production dialogue character sprite for the Chinese wuxia PC game 活侠传 / Legend of Mortal, Zhao Huo, new HANDSOME optional variant.\nImage 1 is the original game's sprite: reference for identity cues, clothing, proportions, rough painted rendering. Image 2 is the existing natural-beautification sprite and is the EDIT TARGET for pose, clothing and exact complete silhouette.\nPrimary request: Make this visibly a handsome, charismatic young Chinese martial artist, distinctly more handsome and more masculine than image 2. Redesign ONLY the face: longer well-proportioned face, defined but believable jaw and cheekbones, straight elegant nose, confident slightly narrow dark almond eyes, strong straight sword-like eyebrows, restrained warm half-smile. Clean-shaven, age early/mid twenties, lightly sun-tanned skin. Handsome heroic wuxia illustrated-book protagonist, believable and grounded, not delicate or feminine and not a glossy celebrity photo. Keep subtle facial asymmetry and expressive brush strokes so he belongs with the game's other portraits.\nInvariants: Keep the existing distinct dark tied ponytail and swept forelock, hair volume, head angle, ear position, height and body proportions. Preserve the muted worn blue-grey cross-collar cloth robe, inner off-white collar, sash, plum-brown wrist guards, folds, both hands, standing pose and lower crop from image 2. No fancy costume, ornaments, new weapons, jewelry or scenery. Preserve rough black dry-brush contours, colored-pencil grain, opaque watercolor texture, slightly uneven lines, muted earthy palette, flat illustrated lighting and the original game's hand-painted aesthetic. Facial beauty must use the SAME coarse painted style as the robe. No smooth anime rendering, porcelain skin, makeup, eyeliner, 3D, photographic skin or airbrushed gradients.\nComposition: EXACTLY ONE isolated character, full supplied silhouette including ponytail and both hands to the original lower crop, tightly framed vertical sprite with small transparent margin. Same canvas aspect ratio as image 2. Real transparent alpha background. No text, labels, grid, border, watermark or ground shadow.",
+  "normalFinal": {
+    "prompt": "Use case: precise-object-edit. EDIT this finished handsome Zhao Huo transparent game sprite. Keep his handsome facial features, expression, hairstyle, colors, costume, hands, coarse dry-brush outlines and watercolor-pencil texture exactly unchanged. The ONLY change is framing: scale the whole existing character down uniformly so he occupies only 85% of the canvas width, centered horizontally; leave ample fully TRANSPARENT empty side margins, at least 50px above the entire ponytail top tip. Show all right sleeve edge and hair. Keep same portrait canvas aspect ratio, bottom hem continues to the bottom edge as a game dialogue sprite. No redrawing face, no brighter saturation, no glow, no background, no extra elements. True transparent alpha.",
+    "source": "generated-source/exec-df9d3c16-d784-4d8a-9018-3b5e16302780.png"
+  },
+  "variants": [
+    {
+      "name": "doubt",
+      "prompt": "Use case: precise-object-edit. One transparent dialogue sprite for 活侠传 / Legend of Mortal HANDSOME variant.\nImage 1 is the EDIT TARGET for the complete pose, expression, costume, effects and composition. Image 2 is the NEW HANDSOME facial IDENTITY only. Change only the target face to be unmistakably the SAME handsome young adult Chinese man as image 2: longer well-proportioned face, defined believable jaw and cheekbones, straight elegant nose, slightly narrow almond dark eyes, strong sword-like brows, masculine early/mid-twenties. Preserve the specific target emotion; do not copy the neutral smile from image 2.\nStrictly preserve image 1's silhouette, head angle, body proportions, pose, hands, hairstyle, ponytail, rough worn garments, sash and bracers, injury/effect details, framing and exact lower crop. Match the original's rough black dry-brush outlines, colored-pencil grain, opaque watercolor texture, slightly uneven handmade linework and muted earthy palette. The face must match this coarse painted game art style. No smooth modern anime, 3D, photorealism, plastic skin, makeup, extra objects or costume redesign.\nOnly one complete isolated sprite. Same canvas aspect ratio and composition as image 1. TRUE transparent alpha background, no black or paper background, no checkerboard, no text, watermark, border, grid or labels.\nSpecific expression/state to preserve: Questioning and skeptical, brows drawn together, eyes glancing sideways, OPEN mouth mid-question and a single cheek sweat drop. Raised right arm on viewer left with one index finger upright beside head; other arm down.",
+      "references": [
+        "reference/natural/doubt.png",
+        "BepInEx/plugins/ZhaoHuoNatural/Portraits/normal.png"
+      ],
+      "source": "generated-source/exec-1d7d70e2-602b-4ca4-8dc8-745a733edd48.png",
+      "output": "BepInEx/plugins/ZhaoHuoNatural/Portraits/doubt.png"
+    },
+    {
+      "name": "revel",
+      "prompt": "Use case: precise-object-edit. One transparent dialogue sprite for 活侠传 / Legend of Mortal HANDSOME variant.\nImage 1 is the EDIT TARGET for the complete pose, expression, costume, effects and composition. Image 2 is the NEW HANDSOME facial IDENTITY only. Change only the target face to be unmistakably the SAME handsome young adult Chinese man as image 2: longer well-proportioned face, defined believable jaw and cheekbones, straight elegant nose, slightly narrow almond dark eyes, strong sword-like brows, masculine early/mid-twenties. Preserve the specific target emotion; do not copy the neutral smile from image 2.\nStrictly preserve image 1's silhouette, head angle, body proportions, pose, hands, hairstyle, ponytail, rough worn garments, sash and bracers, injury/effect details, framing and exact lower crop. Match the original's rough black dry-brush outlines, colored-pencil grain, opaque watercolor texture, slightly uneven handmade linework and muted earthy palette. The face must match this coarse painted game art style. No smooth modern anime, 3D, photorealism, plastic skin, makeup, extra objects or costume redesign.\nOnly one complete isolated sprite. Same canvas aspect ratio and composition as image 1. TRUE transparent alpha background, no black or paper background, no checkerboard, no text, watermark, border, grid or labels.\nSpecific expression/state to preserve: Comically infatuated dreamy/dazed delight: PINK GLOWING EYES, flushed rosy cheeks, white puffs beside cheeks and neck. Raised right index finger brushing under nose, smiling, other arm down. Preserve all these comic effects on handsome face.",
+      "references": [
+        "reference/natural/revel.png",
+        "BepInEx/plugins/ZhaoHuoNatural/Portraits/normal.png"
+      ],
+      "source": "generated-source/exec-f56e57d0-e26c-437d-9323-320602d1f722.png",
+      "output": "BepInEx/plugins/ZhaoHuoNatural/Portraits/revel.png"
+    },
+    {
+      "name": "determined",
+      "prompt": "Use case: precise-object-edit. One transparent dialogue sprite for 活侠传 / Legend of Mortal HANDSOME variant.\nImage 1 is the EDIT TARGET for the complete pose, expression, costume, effects and composition. Image 2 is the NEW HANDSOME facial IDENTITY only. Change only the target face to be unmistakably the SAME handsome young adult Chinese man as image 2: longer well-proportioned face, defined believable jaw and cheekbones, straight elegant nose, slightly narrow almond dark eyes, strong sword-like brows, masculine early/mid-twenties. Preserve the specific target emotion; do not copy the neutral smile from image 2.\nStrictly preserve image 1's silhouette, head angle, body proportions, pose, hands, hairstyle, ponytail, rough worn garments, sash and bracers, injury/effect details, framing and exact lower crop. Match the original's rough black dry-brush outlines, colored-pencil grain, opaque watercolor texture, slightly uneven handmade linework and muted earthy palette. The face must match this coarse painted game art style. No smooth modern anime, 3D, photorealism, plastic skin, makeup, extra objects or costume redesign.\nOnly one complete isolated sprite. Same canvas aspect ratio and composition as image 1. TRUE transparent alpha background, no black or paper background, no checkerboard, no text, watermark, border, grid or labels.\nSpecific expression/state to preserve: Confident combat-ready focused eyes and strong brows, restrained assured smile. Raised right fist on viewer left and other hand gripping the bracer; wind-swept lower blue robe. KEEP the RED brushstroke halo behind whole figure and the same transparent margins.",
+      "references": [
+        "reference/natural/determined.png",
+        "BepInEx/plugins/ZhaoHuoNatural/Portraits/normal.png"
+      ],
+      "source": "generated-source/exec-bde119d7-1397-4d84-9e7a-b368032da0bd.png",
+      "output": "BepInEx/plugins/ZhaoHuoNatural/Portraits/determined.png"
+    },
+    {
+      "name": "suck1",
+      "prompt": "Use case: precise-object-edit. One transparent dialogue sprite for 活侠传 / Legend of Mortal HANDSOME variant.\nImage 1 is the EDIT TARGET for the complete pose, expression, costume, effects and composition. Image 2 is the NEW HANDSOME facial IDENTITY only. Change only the target face to be unmistakably the SAME handsome young adult Chinese man as image 2: longer well-proportioned face, defined believable jaw and cheekbones, straight elegant nose, slightly narrow almond dark eyes, strong sword-like brows, masculine early/mid-twenties. Preserve the specific target emotion; do not copy the neutral smile from image 2.\nStrictly preserve image 1's silhouette, head angle, body proportions, pose, hands, hairstyle, ponytail, rough worn garments, sash and bracers, injury/effect details, framing and exact lower crop. Match the original's rough black dry-brush outlines, colored-pencil grain, opaque watercolor texture, slightly uneven handmade linework and muted earthy palette. The face must match this coarse painted game art style. No smooth modern anime, 3D, photorealism, plastic skin, makeup, extra objects or costume redesign.\nOnly one complete isolated sprite. Same canvas aspect ratio and composition as image 1. TRUE transparent alpha background, no black or paper background, no checkerboard, no text, watermark, border, grid or labels.\nSpecific expression/state to preserve: Mischievous schemer with torso forward, sly half-lidded eyes, raised brows, broad OPEN impish grin, BOTH bent arms raised, curled pretend-claw hands. Preserve crouch and ALL fingers exactly.",
+      "references": [
+        "reference/natural/suck1.png",
+        "BepInEx/plugins/ZhaoHuoNatural/Portraits/normal.png"
+      ],
+      "source": "generated-source/exec-2edddec3-90a5-45e4-94ac-19b44054108c.png",
+      "output": "BepInEx/plugins/ZhaoHuoNatural/Portraits/suck1.png"
+    },
+    {
+      "name": "stupid",
+      "prompt": "Use case: precise-object-edit. One transparent dialogue sprite for 活侠传 / Legend of Mortal HANDSOME variant.\nImage 1 is the EDIT TARGET for the complete pose, expression, costume, effects and composition. Image 2 is the NEW HANDSOME facial IDENTITY only. Change only the target face to be unmistakably the SAME handsome young adult Chinese man as image 2: longer well-proportioned face, defined believable jaw and cheekbones, straight elegant nose, slightly narrow almond dark eyes, strong sword-like brows, masculine early/mid-twenties. Preserve the specific target emotion; do not copy the neutral smile from image 2.\nStrictly preserve image 1's silhouette, head angle, body proportions, pose, hands, hairstyle, ponytail, rough worn garments, sash and bracers, injury/effect details, framing and exact lower crop. Match the original's rough black dry-brush outlines, colored-pencil grain, opaque watercolor texture, slightly uneven handmade linework and muted earthy palette. The face must match this coarse painted game art style. No smooth modern anime, 3D, photorealism, plastic skin, makeup, extra objects or costume redesign.\nOnly one complete isolated sprite. Same canvas aspect ratio and composition as image 1. TRUE transparent alpha background, no black or paper background, no checkerboard, no text, watermark, border, grid or labels.\nSpecific expression/state to preserve: Goofy dazed blank stare, unfocused eyes looking upwards sideways, open slack mouth, TWO white drool trails from mouth. Arms down. Keep recognizable handsome identity under comedy.",
+      "references": [
+        "reference/natural/stupid.png",
+        "BepInEx/plugins/ZhaoHuoNatural/Portraits/normal.png"
+      ],
+      "source": "generated-source/exec-4794665d-d8d0-4dce-8741-2d69ba55c2db.png",
+      "output": "BepInEx/plugins/ZhaoHuoNatural/Portraits/stupid.png"
+    },
+    {
+      "name": "suck3",
+      "prompt": "Use case: precise-object-edit. One transparent dialogue sprite for 活侠传 / Legend of Mortal HANDSOME variant.\nImage 1 is the EDIT TARGET for the complete pose, expression, costume, effects and composition. Image 2 is the NEW HANDSOME facial IDENTITY only. Change only the target face to be unmistakably the SAME handsome young adult Chinese man as image 2: longer well-proportioned face, defined believable jaw and cheekbones, straight elegant nose, slightly narrow almond dark eyes, strong sword-like brows, masculine early/mid-twenties. Preserve the specific target emotion; do not copy the neutral smile from image 2.\nStrictly preserve image 1's silhouette, head angle, body proportions, pose, hands, hairstyle, ponytail, rough worn garments, sash and bracers, injury/effect details, framing and exact lower crop. Match the original's rough black dry-brush outlines, colored-pencil grain, opaque watercolor texture, slightly uneven handmade linework and muted earthy palette. The face must match this coarse painted game art style. No smooth modern anime, 3D, photorealism, plastic skin, makeup, extra objects or costume redesign.\nOnly one complete isolated sprite. Same canvas aspect ratio and composition as image 1. TRUE transparent alpha background, no black or paper background, no checkerboard, no text, watermark, border, grid or labels.\nSpecific expression/state to preserve: Theatrical villain COMEDY: torso forward, one raised hand holds short broad silver dagger with brown-red handle beside mouth, other hand curled as pretend claw. Wide OPEN grin and tongue toward flat blade, glowing WHITE eyes, strong dark upper-face shadow. Preserve the prop and all effects; no injury or extra blood.",
+      "references": [
+        "reference/natural/suck3.png",
+        "BepInEx/plugins/ZhaoHuoNatural/Portraits/normal.png"
+      ],
+      "source": "generated-source/exec-21eda446-7dd2-4a3d-90f9-3b37bd52d6b1.png",
+      "output": "BepInEx/plugins/ZhaoHuoNatural/Portraits/suck3.png"
+    },
+    {
+      "name": "special1",
+      "prompt": "Use case: precise-object-edit. One transparent dialogue sprite for 活侠传 / Legend of Mortal HANDSOME variant.\nImage 1 is the EDIT TARGET for the complete pose, expression, costume, effects and composition. Image 2 is the NEW HANDSOME facial IDENTITY only. Change only the target face to be unmistakably the SAME handsome young adult Chinese man as image 2: longer well-proportioned face, defined believable jaw and cheekbones, straight elegant nose, slightly narrow almond dark eyes, strong sword-like brows, masculine early/mid-twenties. Preserve the specific target emotion; do not copy the neutral smile from image 2.\nStrictly preserve image 1's silhouette, head angle, body proportions, pose, hands, hairstyle, ponytail, rough worn garments, sash and bracers, injury/effect details, framing and exact lower crop. Match the original's rough black dry-brush outlines, colored-pencil grain, opaque watercolor texture, slightly uneven handmade linework and muted earthy palette. The face must match this coarse painted game art style. No smooth modern anime, 3D, photorealism, plastic skin, makeup, extra objects or costume redesign.\nOnly one complete isolated sprite. Same canvas aspect ratio and composition as image 1. TRUE transparent alpha background, no black or paper background, no checkerboard, no text, watermark, border, grid or labels.\nSpecific expression/state to preserve: Comic disguise, blue outer cloth pulled OVER top of head and both sides like a hood, forehead bangs remain. Bent forward, slightly awkward toothy grin, both fists at sides. KEEP blue cloth hood silhouette; do not replace hood with exposed normal ponytail.",
+      "references": [
+        "reference/natural/special1.png",
+        "BepInEx/plugins/ZhaoHuoNatural/Portraits/normal.png"
+      ],
+      "source": "generated-source/exec-87e91ed3-9442-433e-b2a8-799f514a3e01.png",
+      "output": "BepInEx/plugins/ZhaoHuoNatural/Portraits/special1.png"
+    },
+    {
+      "name": "suck4",
+      "prompt": "Use case: precise-object-edit. One transparent dialogue sprite for 活侠传 / Legend of Mortal HANDSOME variant.\nImage 1 is the EDIT TARGET for the complete pose, expression, costume, effects and composition. Image 2 is the NEW HANDSOME facial IDENTITY only. Change only the target face to be unmistakably the SAME handsome young adult Chinese man as image 2: longer well-proportioned face, defined believable jaw and cheekbones, straight elegant nose, slightly narrow almond dark eyes, strong sword-like brows, masculine early/mid-twenties. Preserve the specific target emotion; do not copy the neutral smile from image 2.\nStrictly preserve image 1's silhouette, head angle, body proportions, pose, hands, hairstyle, ponytail, rough worn garments, sash and bracers, injury/effect details, framing and exact lower crop. Match the original's rough black dry-brush outlines, colored-pencil grain, opaque watercolor texture, slightly uneven handmade linework and muted earthy palette. The face must match this coarse painted game art style. No smooth modern anime, 3D, photorealism, plastic skin, makeup, extra objects or costume redesign.\nOnly one complete isolated sprite. Same canvas aspect ratio and composition as image 1. TRUE transparent alpha background, no black or paper background, no checkerboard, no text, watermark, border, grid or labels.\nSpecific expression/state to preserve: Comic smug expression with the intentionally EXAGGERATED ELONGATED POINTED CHIN gag from image1. Apply handsome eyes/nose/cheekbones but preserve the distinct long chin joke and small smug toothy smile, standing arms-down blue robe. This should remain a unique comic deformation, not a normal neutral face.",
+      "references": [
+        "reference/natural/suck4.png",
+        "BepInEx/plugins/ZhaoHuoNatural/Portraits/normal.png"
+      ],
+      "source": "generated-source/exec-0f8bf8e5-eeba-4418-a849-111bd969d70b.png",
+      "output": "BepInEx/plugins/ZhaoHuoNatural/Portraits/suck4.png"
+    },
+    {
+      "name": "eye_mask_nervous1",
+      "prompt": "Use case: precise-object-edit. One transparent dialogue sprite for 活侠传 / Legend of Mortal HANDSOME variant.\nImage 1 is the EDIT TARGET for the complete pose, expression, costume, effects and composition. Image 2 is the NEW HANDSOME facial IDENTITY only. Change only the target face to be unmistakably the SAME handsome young adult Chinese man as image 2: longer well-proportioned face, defined believable jaw and cheekbones, straight elegant nose, slightly narrow almond dark eyes, strong sword-like brows, masculine early/mid-twenties. Preserve the specific target emotion; do not copy the neutral smile from image 2.\nStrictly preserve image 1's silhouette, head angle, body proportions, pose, hands, hairstyle, ponytail, rough worn garments, sash and bracers, injury/effect details, framing and exact lower crop. Match the original's rough black dry-brush outlines, colored-pencil grain, opaque watercolor texture, slightly uneven handmade linework and muted earthy palette. The face must match this coarse painted game art style. No smooth modern anime, 3D, photorealism, plastic skin, makeup, extra objects or costume redesign.\nOnly one complete isolated sprite. Same canvas aspect ratio and composition as image 1. TRUE transparent alpha background, no black or paper background, no checkerboard, no text, watermark, border, grid or labels.\nSpecific expression/state to preserve: BLINDFOLDED: cloth band covers both eyes completely, trailing cloth behind head. Nervous OPEN mouth showing teeth, one cheek sweatdrop, hands down but slightly curled. Keep band position and thickness, don't add visible eyes.",
+      "references": [
+        "reference/natural/eye_mask_nervous1.png",
+        "BepInEx/plugins/ZhaoHuoNatural/Portraits/normal.png"
+      ],
+      "source": "generated-source/exec-eaf2e444-87f1-4934-9384-801282d7a99f.png",
+      "output": "BepInEx/plugins/ZhaoHuoNatural/Portraits/eye_mask_nervous1.png"
+    },
+    {
+      "name": "eye_mask_nervous2",
+      "prompt": "Use case: precise-object-edit. One transparent dialogue sprite for 活侠传 / Legend of Mortal HANDSOME variant.\nImage 1 is the EDIT TARGET for the complete pose, expression, costume, effects and composition. Image 2 is the NEW HANDSOME facial IDENTITY only. Change only the target face to be unmistakably the SAME handsome young adult Chinese man as image 2: longer well-proportioned face, defined believable jaw and cheekbones, straight elegant nose, slightly narrow almond dark eyes, strong sword-like brows, masculine early/mid-twenties. Preserve the specific target emotion; do not copy the neutral smile from image 2.\nStrictly preserve image 1's silhouette, head angle, body proportions, pose, hands, hairstyle, ponytail, rough worn garments, sash and bracers, injury/effect details, framing and exact lower crop. Match the original's rough black dry-brush outlines, colored-pencil grain, opaque watercolor texture, slightly uneven handmade linework and muted earthy palette. The face must match this coarse painted game art style. No smooth modern anime, 3D, photorealism, plastic skin, makeup, extra objects or costume redesign.\nOnly one complete isolated sprite. Same canvas aspect ratio and composition as image 1. TRUE transparent alpha background, no black or paper background, no checkerboard, no text, watermark, border, grid or labels.\nSpecific expression/state to preserve: Very panicked BLINDFOLDED: cloth band fully covers both eyes. Deep brow folds and vertical stress lines above band; lots of sweat. Raised right hand on viewer left with fingers at OPEN mouth in nail-biting gesture, other hand down tense. Preserve all band, sweat, pose and comic expression.",
+      "references": [
+        "reference/natural/eye_mask_nervous2.png",
+        "BepInEx/plugins/ZhaoHuoNatural/Portraits/normal.png"
+      ],
+      "source": "generated-source/exec-cd8b6b0b-e358-412b-be18-0b82fbb4c95e.png",
+      "output": "BepInEx/plugins/ZhaoHuoNatural/Portraits/eye_mask_nervous2.png"
+    },
+    {
+      "name": "mask",
+      "prompt": "Use case: precise-object-edit. One transparent dialogue sprite for 活侠传 / Legend of Mortal HANDSOME variant.\nImage 1 is the EDIT TARGET for the complete pose, expression, costume, effects and composition. Image 2 is the NEW HANDSOME facial IDENTITY only. Change only the target face to be unmistakably the SAME handsome young adult Chinese man as image 2: longer well-proportioned face, defined believable jaw and cheekbones, straight elegant nose, slightly narrow almond dark eyes, strong sword-like brows, masculine early/mid-twenties. Preserve the specific target emotion; do not copy the neutral smile from image 2.\nStrictly preserve image 1's silhouette, head angle, body proportions, pose, hands, hairstyle, ponytail, rough worn garments, sash and bracers, injury/effect details, framing and exact lower crop. Match the original's rough black dry-brush outlines, colored-pencil grain, opaque watercolor texture, slightly uneven handmade linework and muted earthy palette. The face must match this coarse painted game art style. No smooth modern anime, 3D, photorealism, plastic skin, makeup, extra objects or costume redesign.\nOnly one complete isolated sprite. Same canvas aspect ratio and composition as image 1. TRUE transparent alpha background, no black or paper background, no checkerboard, no text, watermark, border, grid or labels.\nSpecific expression/state to preserve: Black-clad masked disguise. KEEP CHARCOAL BLACK robe and charcoal cloth face covering nose and mouth, muted burgundy bracers. Only eyes and brow are visibly beautified to the handsome identity. Narrow confident eyes, strong brows. Absolutely NO blue robe, NO exposed mouth or nose, NO removing mask.",
+      "references": [
+        "reference/natural/mask.png",
+        "BepInEx/plugins/ZhaoHuoNatural/Portraits/normal.png"
+      ],
+      "source": "generated-source/exec-2fadf114-af48-4598-8c0d-7e1e216b0149.png",
+      "output": "BepInEx/plugins/ZhaoHuoNatural/Portraits/mask.png"
+    },
+    {
+      "name": "caught",
+      "prompt": "Use case: precise-object-edit. One transparent dialogue sprite for 活侠传 / Legend of Mortal HANDSOME variant.\nImage 1 is the EDIT TARGET for the complete pose, expression, costume, effects and composition. Image 2 is the NEW HANDSOME facial IDENTITY only. Change only the target face to be unmistakably the SAME handsome young adult Chinese man as image 2: longer well-proportioned face, defined believable jaw and cheekbones, straight elegant nose, slightly narrow almond dark eyes, strong sword-like brows, masculine early/mid-twenties. Preserve the specific target emotion; do not copy the neutral smile from image 2.\nStrictly preserve image 1's silhouette, head angle, body proportions, pose, hands, hairstyle, ponytail, rough worn garments, sash and bracers, injury/effect details, framing and exact lower crop. Match the original's rough black dry-brush outlines, colored-pencil grain, opaque watercolor texture, slightly uneven handmade linework and muted earthy palette. The face must match this coarse painted game art style. No smooth modern anime, 3D, photorealism, plastic skin, makeup, extra objects or costume redesign.\nOnly one complete isolated sprite. Same canvas aspect ratio and composition as image 1. TRUE transparent alpha background, no black or paper background, no checkerboard, no text, watermark, border, grid or labels.\nSpecific expression/state to preserve: Comic electrocution: yellow lightning around whole body, ponytail standing straight UP, startled WIDE OPEN mouth and blank white rolled-up eyes. Sweat, vertical forehead stress lines. Tense straight arms, clawed fingers. Preserve original lightning and erect hair silhouette, do not beautify away comedy.",
+      "references": [
+        "reference/natural/caught.png",
+        "BepInEx/plugins/ZhaoHuoNatural/Portraits/normal.png"
+      ],
+      "source": "generated-source/exec-87ee2ee8-6019-41d4-834e-bb80f7b8577f.png",
+      "output": "BepInEx/plugins/ZhaoHuoNatural/Portraits/caught.png"
+    },
+    {
+      "name": "head",
+      "prompt": "Use case: precise-object-edit. One transparent dialogue sprite for 活侠传 / Legend of Mortal HANDSOME variant.\nImage 1 is the EDIT TARGET for the complete pose, expression, costume, effects and composition. Image 2 is the NEW HANDSOME facial IDENTITY only. Change only the target face to be unmistakably the SAME handsome young adult Chinese man as image 2: longer well-proportioned face, defined believable jaw and cheekbones, straight elegant nose, slightly narrow almond dark eyes, strong sword-like brows, masculine early/mid-twenties. Preserve the specific target emotion; do not copy the neutral smile from image 2.\nStrictly preserve image 1's silhouette, head angle, body proportions, pose, hands, hairstyle, ponytail, rough worn garments, sash and bracers, injury/effect details, framing and exact lower crop. Match the original's rough black dry-brush outlines, colored-pencil grain, opaque watercolor texture, slightly uneven handmade linework and muted earthy palette. The face must match this coarse painted game art style. No smooth modern anime, 3D, photorealism, plastic skin, makeup, extra objects or costume redesign.\nOnly one complete isolated sprite. Same canvas aspect ratio and composition as image 1. TRUE transparent alpha background, no black or paper background, no checkerboard, no text, watermark, border, grid or labels.\nSpecific expression/state to preserve: Comic impact scene: head twisted to viewer RIGHT with strong sideways motion streaks; disheveled ponytail swept LEFT. Startled open mouth; existing small stylized red spit/blood to right, not increased. Preserve speed lines and target head direction, NOT neutral straight head. Arms down, same blue robe.",
+      "references": [
+        "reference/natural/head.png",
+        "BepInEx/plugins/ZhaoHuoNatural/Portraits/normal.png"
+      ],
+      "source": "generated-source/exec-01ba9115-4ace-4e44-9b29-6ce979d57b6c.png",
+      "output": "BepInEx/plugins/ZhaoHuoNatural/Portraits/head.png"
+    },
+    {
+      "name": "mud",
+      "prompt": "Use case: precise-object-edit. One transparent dialogue sprite for 活侠传 / Legend of Mortal HANDSOME variant.\nImage 1 is the EDIT TARGET for the complete pose, expression, costume, effects and composition. Image 2 is the NEW HANDSOME facial IDENTITY only. Change only the target face to be unmistakably the SAME handsome young adult Chinese man as image 2: longer well-proportioned face, defined believable jaw and cheekbones, straight elegant nose, slightly narrow almond dark eyes, strong sword-like brows, masculine early/mid-twenties. Preserve the specific target emotion; do not copy the neutral smile from image 2.\nStrictly preserve image 1's silhouette, head angle, body proportions, pose, hands, hairstyle, ponytail, rough worn garments, sash and bracers, injury/effect details, framing and exact lower crop. Match the original's rough black dry-brush outlines, colored-pencil grain, opaque watercolor texture, slightly uneven handmade linework and muted earthy palette. The face must match this coarse painted game art style. No smooth modern anime, 3D, photorealism, plastic skin, makeup, extra objects or costume redesign.\nOnly one complete isolated sprite. Same canvas aspect ratio and composition as image 1. TRUE transparent alpha background, no black or paper background, no checkerboard, no text, watermark, border, grid or labels.\nSpecific expression/state to preserve: Comic mud-covered state. Ponytail sticks UP, brown mud splashes behind and over head and shoulder, and PIXELATED MOSAIC obscures most of the FACE as in target. Keep mosaic gag intact, only change underlying visible face contours to handsome identity. Limp arms, blue robe. Do not remove mud or reveal clear normal face.",
+      "references": [
+        "reference/natural/mud.png",
+        "BepInEx/plugins/ZhaoHuoNatural/Portraits/normal.png"
+      ],
+      "source": "generated-source/exec-482bc9a9-db8e-41ed-ae1e-1d798a97ad1b.png",
+      "output": "BepInEx/plugins/ZhaoHuoNatural/Portraits/mud.png"
+    },
+    {
+      "name": "gloomy2",
+      "prompt": "Use case: precise-object-edit. One transparent dialogue sprite for 活侠传 / Legend of Mortal HANDSOME variant.\nImage 1 is the EDIT TARGET for the complete pose, expression, costume, effects and composition. Image 2 is the NEW HANDSOME facial IDENTITY only. Change only the target face to be unmistakably the SAME handsome young adult Chinese man as image 2: longer well-proportioned face, defined believable jaw and cheekbones, straight elegant nose, slightly narrow almond dark eyes, strong sword-like brows, masculine early/mid-twenties. Preserve the specific target emotion; do not copy the neutral smile from image 2.\nStrictly preserve image 1's silhouette, head angle, body proportions, pose, hands, hairstyle, ponytail, rough worn garments, sash and bracers, injury/effect details, framing and exact lower crop. Match the original's rough black dry-brush outlines, colored-pencil grain, opaque watercolor texture, slightly uneven handmade linework and muted earthy palette. The face must match this coarse painted game art style. No smooth modern anime, 3D, photorealism, plastic skin, makeup, extra objects or costume redesign.\nOnly one complete isolated sprite. Same canvas aspect ratio and composition as image 1. TRUE transparent alpha background, no black or paper background, no checkerboard, no text, watermark, border, grid or labels.\nSpecific expression/state to preserve: Theatrical sly pose with one raised hand's fingers spread alongside cheek and other forearm across waist with fingers visible. Three-quarter body, half-lidded eyes glancing upward and crooked knowing smirk. KEEP cool violet shadow on forehead and dark blue painted shadow behind shoulder. Sly, not friendly.",
+      "references": [
+        "reference/natural/gloomy2.png",
+        "BepInEx/plugins/ZhaoHuoNatural/Portraits/normal.png"
+      ],
+      "source": "generated-source/exec-c032761d-f509-4b5a-8f22-c568a89d4031.png",
+      "output": "BepInEx/plugins/ZhaoHuoNatural/Portraits/gloomy2.png"
+    },
+    {
+      "name": "soul",
+      "prompt": "Use case: precise-object-edit. One transparent dialogue sprite for 活侠传 / Legend of Mortal HANDSOME variant.\nImage 1 is the EDIT TARGET for the complete pose, expression, costume, effects and composition. Image 2 is the NEW HANDSOME facial IDENTITY only. Change only the target face to be unmistakably the SAME handsome young adult Chinese man as image 2: longer well-proportioned face, defined believable jaw and cheekbones, straight elegant nose, slightly narrow almond dark eyes, strong sword-like brows, masculine early/mid-twenties. Preserve the specific target emotion; do not copy the neutral smile from image 2.\nStrictly preserve image 1's silhouette, head angle, body proportions, pose, hands, hairstyle, ponytail, rough worn garments, sash and bracers, injury/effect details, framing and exact lower crop. Match the original's rough black dry-brush outlines, colored-pencil grain, opaque watercolor texture, slightly uneven handmade linework and muted earthy palette. The face must match this coarse painted game art style. No smooth modern anime, 3D, photorealism, plastic skin, makeup, extra objects or costume redesign.\nOnly one complete isolated sprite. Same canvas aspect ratio and composition as image 1. TRUE transparent alpha background, no black or paper background, no checkerboard, no text, watermark, border, grid or labels.\nSpecific expression/state to preserve: GHOST spectral form: pale CYAN-BLUE skin, monochrome COOL BLUE robe and hair, turquoise rim glow around entire silhouette/hair, glowing blank cyan-white eyes. Preserve translucent ghost feeling. Restrained closed-mouth faint smile, arms down. Handsome identity only in contour/structure; absolutely NO warm skin tones or ordinary brown eyes.",
+      "references": [
+        "reference/natural/soul.png",
+        "BepInEx/plugins/ZhaoHuoNatural/Portraits/normal.png"
+      ],
+      "source": "generated-source/exec-5c877eda-f7b9-4d6d-9968-d8ae0dbd8e49.png",
+      "output": "BepInEx/plugins/ZhaoHuoNatural/Portraits/soul.png"
+    },
+    {
+      "name": "mud",
+      "revision": "edge-margin",
+      "prompt": "Use case: precise-object-edit. Fix only outer framing of this finished transparent game portrait, preserving identity, rough painted style and every detail. Keep the mosaic covering the face, mud splashes, handsome jaw, clothing, pose and colors EXACTLY. Correct framing ONLY: the very top tip of the upright ponytail is now too close to/cut by the upper edge. Show the COMPLETE hair tip and all mud splashes, leave at least 35 pixels clear transparent margin above and at sides. Keep bottom robe crop. TRUE transparent background, no backdrop or new elements. Same tall aspect ratio.",
+      "source": "generated-source/exec-81f4b0f1-a20f-44ef-92bb-1f3309ce3fdd.png",
+      "output": "BepInEx/plugins/ZhaoHuoNatural/Portraits/mud.png"
+    },
+    {
+      "name": "soul",
+      "revision": "edge-margin",
+      "prompt": "Use case: precise-object-edit. Fix only outer framing of this finished transparent game portrait, preserving identity, rough painted style and every detail. Keep the handsome spectral face, cyan color, glowing eyes, turquoise rim glow, pose and costume EXACTLY. Correct framing ONLY: right sleeve and rim glow currently approach the right image edge. Show COMPLETE right sleeve outline and ALL glow without cropping; leave at least 35 pixels clear transparent margin on left/right and above. Keep bottom robe crop. TRUE transparent background, no backdrop or new elements. Same tall aspect ratio.",
+      "source": "generated-source/exec-ad9bd18e-d725-4fb2-8e1d-0f6cb3368159.png",
+      "output": "BepInEx/plugins/ZhaoHuoNatural/Portraits/soul.png"
+    }
+  ]
+}

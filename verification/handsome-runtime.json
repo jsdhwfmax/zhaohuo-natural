@@ -1,0 +1,108 @@
+﻿{
+  "Passed": true,
+  "Variant": "handsome",
+  "PayloadFingerprint": "E38B63E6DECA2C3837AA659D19CA8AA48FBD4D748FFEB257D6DFEE6016832A8E",
+  "GameBuild": "25957922",
+  "GameVersion": "release_1.0.6000.2",
+  "Unity": "2020.3.49f1",
+  "Resources": 50,
+  "Replaced": 47,
+  "OriginalFallback": 3,
+  "AvatarPanelBranches": 2,
+  "AvatarPanelReplaced": 2,
+  "NormalSetupPath": true,
+  "AsyncAndSync": true,
+  "UiSpriteMatch": true,
+  "RepeatLoadCache": true,
+  "NonProtagonistUnchanged": true,
+  "VisualReview": "All seven portrait sheets and both avatar panels reviewed by the parent task; no material transparency, placement or silhouette issue found",
+  "Scope": "Isolated real StoryCharacterController and PlayerAvatarPanel fixtures with actual Addressables and game-created UI Images. No story/save simulation; not a full-game or all-routes completion test.",
+  "EvidenceDirectory": "handsome/runtime-build25957922",
+  "PathNormalization": "Local game-root paths in the distributed TSV and text log are replaced by Game\\",
+  "EvidenceFiles": [
+    {
+      "file": "avatar-panel-0.png",
+      "sha256": "4A128BADE6B3BA622BA3C48C220DC519E3260B1C627805976C63B19D00EDEB95",
+      "IncludedInPublicPackage": false,
+      "Distribution": "local-only reviewed screenshot; original evidence SHA retained"
+    },
+    {
+      "file": "avatar-panel-1.png",
+      "sha256": "4A128BADE6B3BA622BA3C48C220DC519E3260B1C627805976C63B19D00EDEB95",
+      "IncludedInPublicPackage": false,
+      "Distribution": "local-only reviewed screenshot; original evidence SHA retained"
+    },
+    {
+      "file": "PASS.txt",
+      "sha256": "F6AA517C5A800139C42D28A0C33E1CB6675896E6B9B0CC2DB4BECA586DF4ED4D",
+      "IncludedInPublicPackage": true,
+      "Distribution": "included"
+    },
+    {
+      "file": "portraits-01.png",
+      "sha256": "836F15BB260DEF3AC2705EBAC1E85A13A350352C6A9161C36092F18DABE27E78",
+      "IncludedInPublicPackage": false,
+      "Distribution": "local-only reviewed screenshot; original evidence SHA retained"
+    },
+    {
+      "file": "portraits-02.png",
+      "sha256": "F0F49FF01027AC2272F356A60FDC069AF2EA5F461CECA90337FDBC5C18266715",
+      "IncludedInPublicPackage": false,
+      "Distribution": "local-only reviewed screenshot; original evidence SHA retained"
+    },
+    {
+      "file": "portraits-03.png",
+      "sha256": "F04E59A46E73459345521E211907D03900BB3BE8E908BBC3F5C323BE98EC57FC",
+      "IncludedInPublicPackage": false,
+      "Distribution": "local-only reviewed screenshot; original evidence SHA retained"
+    },
+    {
+      "file": "portraits-04.png",
+      "sha256": "F57964BAC3B1B32BC83C9B62A20AA0A3D710CFCF5A1AD220AB6338732633F71C",
+      "IncludedInPublicPackage": false,
+      "Distribution": "local-only reviewed screenshot; original evidence SHA retained"
+    },
+    {
+      "file": "portraits-05.png",
+      "sha256": "FA44B5387C5B281B1615E8ACADD88A05454AC5210FD39A98267D1CB636B56998",
+      "IncludedInPublicPackage": false,
+      "Distribution": "local-only reviewed screenshot; original evidence SHA retained"
+    },
+    {
+      "file": "portraits-06.png",
+      "sha256": "B0D707B59AD36B3E23EA3E39D802EC9775A2D52F9D4E5A5E0CC29C50B4A58BD9",
+      "IncludedInPublicPackage": false,
+      "Distribution": "local-only reviewed screenshot; original evidence SHA retained"
+    },
+    {
+      "file": "portraits-07.png",
+      "sha256": "6394CC3F069104B163E7B5E17DA2130E30D271CAC99BA7048A909138FBA34BCB",
+      "IncludedInPublicPackage": false,
+      "Distribution": "local-only reviewed screenshot; original evidence SHA retained"
+    },
+    {
+      "file": "portraits.tsv",
+      "sha256": "B3E7459DB6F59CE8A9E1134BBDBE110EEDACD789A9CD7C3D0EBFC1759EFC9014",
+      "IncludedInPublicPackage": true,
+      "Distribution": "included"
+    },
+    {
+      "file": "selftest-log.txt",
+      "sha256": "B315C4FCCCC271D4AD2A534ED1C528FDDF3F0C72C115607171FDE0FE27446FE4",
+      "IncludedInPublicPackage": true,
+      "Distribution": "included"
+    }
+  ],
+  "NormalSteamStartup": {
+    "Passed": true,
+    "ObservedSeconds": 116,
+    "Responding": true,
+    "SelftestArgumentPresent": false,
+    "PluginReady": true,
+    "PluginErrorLines": 0,
+    "Evidence": "handsome/normal-steam-startup.json",
+    "Log": "handsome/normal-steam-startup.txt"
+  },
+  "OriginalFrozenReportSHA256": "52A6D11411B2F56DB8D3459753CFF74ECB06FB4FC1AF302E4263D85267463780",
+  "ScreenshotDistribution": "Original screenshot hashes are retained for traceability. Screenshots containing game UI or original fallback art were reviewed locally and are excluded from the public repository and package; PASS/TSV/text reports remain included."
+}

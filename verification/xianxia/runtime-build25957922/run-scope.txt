@@ -1,0 +1,3 @@
+Game=release_1.0.6000.2
+Unity=2020.3.49f1
+This test uses isolated StoryCharacterController fixtures with real Addressables resources and game-created Unity UI Images. It does not load or save gameplay.

@@ -1,0 +1,11 @@
+{
+    "name":  "caught",
+    "rawPrompt":  "undefinedComically electrocuted/startled: YELLOW LIGHTNING arcs around arms and shoulders, ponytail sticks up vertically, blank white shocked eyes, wide open yelling mouth, many sweat drops and vertical gray stress lines, tensed shoulders and curled claw-like hands low beside body. Same young handsome junior disciple and new robe, head itself stays SMALL like image1; hair pointing upward is an intentional action effect. Keep lightning and raised ponytail completely inside canvas with transparent margin.",
+    "cleanPrompt":  "Comically electrocuted/startled: YELLOW LIGHTNING arcs around arms and shoulders, ponytail sticks up vertically, blank white shocked eyes, wide open yelling mouth, many sweat drops and vertical gray stress lines, tensed shoulders and curled claw-like hands low beside body. Same young handsome junior disciple and new robe, head itself stays SMALL like image1; hair pointing upward is an intentional action effect. Keep lightning and raised ponytail completely inside canvas with transparent margin.",
+    "promptNormalizationNote":  "The actual request contained an ineffective leading undefined prefix. Only that prefix is removed for display; no missing common instructions have been added. rawPrompt preserves the actual request.",
+    "references":  [
+                       "references/junior-master-v1.png",
+                       "references/previous-handsome-v1.1.0/caught.png"
+                   ],
+    "status":  "REQUESTED"
+}

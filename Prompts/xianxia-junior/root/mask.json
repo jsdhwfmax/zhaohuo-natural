@@ -1,0 +1,11 @@
+{
+    "name":  "mask",
+    "rawPrompt":  "undefinedNinja-like simple disguise: BLACK CHARCOAL CLOTH over nose, mouth and chin. Visible youthful dark eyes and upper face match image1. Entire outfit is matte CHARCOAL BLACK / gray, including robe, dark wrapped cloth sash and bracers, pale inner collar. Black costume OVERRIDES normal blue palette, while keeping image1 lapel cut, cloth sash knot and simple wrapped guards. Arms relaxed down. No armor or fancy ornaments.",
+    "cleanPrompt":  "Ninja-like simple disguise: BLACK CHARCOAL CLOTH over nose, mouth and chin. Visible youthful dark eyes and upper face match image1. Entire outfit is matte CHARCOAL BLACK / gray, including robe, dark wrapped cloth sash and bracers, pale inner collar. Black costume OVERRIDES normal blue palette, while keeping image1 lapel cut, cloth sash knot and simple wrapped guards. Arms relaxed down. No armor or fancy ornaments.",
+    "promptNormalizationNote":  "The actual request contained an ineffective leading undefined prefix. Only that prefix is removed for display; no missing common instructions have been added. rawPrompt preserves the actual request.",
+    "references":  [
+                       "references/junior-master-v1.png",
+                       "references/previous-handsome-v1.1.0/mask.png"
+                   ],
+    "status":  "REQUESTED"
+}

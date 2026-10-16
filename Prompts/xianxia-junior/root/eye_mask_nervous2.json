@@ -1,0 +1,11 @@
+{
+    "name":  "eye_mask_nervous2",
+    "rawPrompt":  "undefinedWhite/off-white cloth blindfold fully covering both eyes, tied behind his head. Comically very anxious: furrowed brow with several vertical stress lines above blindfold, many sweat drops on cheeks and neck, mouth wide open while raised hand bites its fingernails; the other hand tense near the waist. Preserve EXACT mouth-hand anxious gag. Face remains young and the head is image1\u0027s smaller natural scale; do not copy target\u0027s large head.",
+    "cleanPrompt":  "White/off-white cloth blindfold fully covering both eyes, tied behind his head. Comically very anxious: furrowed brow with several vertical stress lines above blindfold, many sweat drops on cheeks and neck, mouth wide open while raised hand bites its fingernails; the other hand tense near the waist. Preserve EXACT mouth-hand anxious gag. Face remains young and the head is image1\u0027s smaller natural scale; do not copy target\u0027s large head.",
+    "promptNormalizationNote":  "The actual request contained an ineffective leading undefined prefix. Only that prefix is removed for display; no missing common instructions have been added. rawPrompt preserves the actual request.",
+    "references":  [
+                       "references/junior-master-v1.png",
+                       "references/previous-handsome-v1.1.0/eye_mask_nervous2.png"
+                   ],
+    "status":  "REQUESTED"
+}

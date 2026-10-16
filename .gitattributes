@@ -11,5 +11,8 @@
 Dependencies/** -text
 Loader/** -text
 BepInEx/** -text
+# Frozen prompt/evidence records contain exact byte SHA-256 references.
+Prompts/** -text
+verification/** -text
 # The offline probe pins the exact baseline bytes, including line endings.
 installer/compatibility-baseline.json -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol

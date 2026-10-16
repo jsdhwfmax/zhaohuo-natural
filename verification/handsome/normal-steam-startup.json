@@ -1,0 +1,13 @@
+{
+  "ObservedAt": "2026-10-16T11:14:15.6598483+11:00",
+  "Pid": 26936,
+  "StartedAt": "2026-10-16T11:12:19.5928136+11:00",
+  "ObservedSeconds": 116.0,
+  "Responding": true,
+  "CommandLine": "Mortal.exe",
+  "SelftestArgumentPresent": false,
+  "PluginReady": true,
+  "PluginErrorLines": [],
+  "Scope": "Normal Steam startup and process/log health only; not a complete story-route playthrough.",
+  "PathNormalization": "Absolute executable path omitted; command had no self-test arguments"
+}

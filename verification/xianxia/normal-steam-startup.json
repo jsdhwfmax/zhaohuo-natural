@@ -1,0 +1,127 @@
+{
+  "Passed": true,
+  "ObservedSeconds": 90.4,
+  "ProcessId": 44752,
+  "Responding": true,
+  "StillRunning": true,
+  "SelftestArgumentPresent": false,
+  "PluginReady": true,
+  "PluginErrorLines": 0,
+  "Scope": "Normal Steam startup and 90-second process responsiveness; no savegame or story route loaded by this test",
+  "Observations": [
+    {
+      "utc": "2026-10-16T01:18:19.4645978Z",
+      "elapsedSeconds": 0.0,
+      "running": true,
+      "responding": true
+    },
+    {
+      "utc": "2026-10-16T01:18:24.5420247Z",
+      "elapsedSeconds": 5.1,
+      "running": true,
+      "responding": true
+    },
+    {
+      "utc": "2026-10-16T01:18:29.5611189Z",
+      "elapsedSeconds": 10.1,
+      "running": true,
+      "responding": true
+    },
+    {
+      "utc": "2026-10-16T01:18:34.5766126Z",
+      "elapsedSeconds": 15.1,
+      "running": true,
+      "responding": true
+    },
+    {
+      "utc": "2026-10-16T01:18:39.5951210Z",
+      "elapsedSeconds": 20.1,
+      "running": true,
+      "responding": true
+    },
+    {
+      "utc": "2026-10-16T01:18:44.6159083Z",
+      "elapsedSeconds": 25.2,
+      "running": true,
+      "responding": true
+    },
+    {
+      "utc": "2026-10-16T01:18:49.6273382Z",
+      "elapsedSeconds": 30.2,
+      "running": true,
+      "responding": true
+    },
+    {
+      "utc": "2026-10-16T01:18:54.6515713Z",
+      "elapsedSeconds": 35.2,
+      "running": true,
+      "responding": true
+    },
+    {
+      "utc": "2026-10-16T01:18:59.6705533Z",
+      "elapsedSeconds": 40.2,
+      "running": true,
+      "responding": true
+    },
+    {
+      "utc": "2026-10-16T01:19:04.6827336Z",
+      "elapsedSeconds": 45.2,
+      "running": true,
+      "responding": true
+    },
+    {
+      "utc": "2026-10-16T01:19:09.7016594Z",
+      "elapsedSeconds": 50.2,
+      "running": true,
+      "responding": true
+    },
+    {
+      "utc": "2026-10-16T01:19:14.7309898Z",
+      "elapsedSeconds": 55.3,
+      "running": true,
+      "responding": true
+    },
+    {
+      "utc": "2026-10-16T01:19:19.7438899Z",
+      "elapsedSeconds": 60.3,
+      "running": true,
+      "responding": true
+    },
+    {
+      "utc": "2026-10-16T01:19:24.7627998Z",
+      "elapsedSeconds": 65.3,
+      "running": true,
+      "responding": true
+    },
+    {
+      "utc": "2026-10-16T01:19:29.7810183Z",
+      "elapsedSeconds": 70.3,
+      "running": true,
+      "responding": true
+    },
+    {
+      "utc": "2026-10-16T01:19:34.7961950Z",
+      "elapsedSeconds": 75.3,
+      "running": true,
+      "responding": true
+    },
+    {
+      "utc": "2026-10-16T01:19:39.8155652Z",
+      "elapsedSeconds": 80.4,
+      "running": true,
+      "responding": true
+    },
+    {
+      "utc": "2026-10-16T01:19:44.8239941Z",
+      "elapsedSeconds": 85.4,
+      "running": true,
+      "responding": true
+    },
+    {
+      "utc": "2026-10-16T01:19:49.8456813Z",
+      "elapsedSeconds": 90.4,
+      "running": true,
+      "responding": true
+    }
+  ]
+}
