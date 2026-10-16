@@ -1,0 +1,41 @@
+{
+  "SchemaVersion": 1,
+  "CharacterId": "yu-xiaomei",
+  "VariantId": "refined",
+  "Name": "laugh2.png",
+  "GenerationMethod": "builtin imagegen",
+  "PixelPostProcessing": false,
+  "Prompt": "Use case: precise-object-edit. Make ONE transparent dialogue portrait sprite for 活侠传 / Legend of Mortal. Image 1 is the ORIGINAL TARGET expression/gesture/props reference; Image 2 is the newly approved beauty redesign and SAME CHARACTER identity/style/costume reference. Repaint Image 1 using the precise face, hair, age, proportions and costume rendering of Image 2. Crucially reproduce Image 1's expression, eye direction, mouth, hands, pose, original props and all meaningful sweat/tears/blood/comic marks; do NOT simply repeat the calm pose or smile from Image 2. Match the original restrained hand-drawn wuxia game style: rough black sketch contours, dry-brush edges, visible matte watercolor and colored-pencil grain, not glossy modern anime. Preserve character's age and modest costume/body proportions; no sexualization or additional exposed skin. Grey/color streaks outside the character in Image 1 are raw texture export artifacts, do not reproduce them. Exactly one complete isolated character, TRUE transparent background, natural-sized head, whole hair/hands/side silhouette fitted within at least 5% transparent side margins; only the same lower skirt crop at bottom is allowed. No new props, background, text, watermark, frame, checkerboard, 3D or photorealism. Character: Yu Xiaomei 虞小梅; same youthful age appearance as both references, dark high ponytail with red/gold knot ornament, white red-trimmed robe, brown waist sash/bracers, coral-red skirt. No body enhancement. Target expression: laugh2. In-game labels: 大笑. Joyful open-mouth hearty laugh, BOTH eyes squeezed shut, tiny tears at eyes. One hand raised near shoulder with loosely curled fingers, the opposite hand resting across upper abdomen. Preserve exact two-hand pose; no added feather or weapon. Complete elbows inside canvas.",
+  "References": [
+    {
+      "LogicalName": "local-game-reference/laugh2.png",
+      "Kind": "original-game-reference-not-distributed"
+    },
+    {
+      "LogicalName": "generated-design/yu-xiaomei/refined/normal.png",
+      "Kind": "generated-design-reference"
+    }
+  ],
+  "OriginalGameCanonicalPath": "assets/__project/images/characters/girl5_小梅/laugh2.png",
+  "OriginalGameReferenceDistributed": false,
+  "GeneratedSourceBasename": "exec-1cb49d42-17f9-4c94-8e85-504757bd4bee.png",
+  "OutputSHA256": "9D1753963BF1761F3B853B36F0153253FD00EAF97229A0800D36913CB584B3F1",
+  "SourceRecordBasename": "yu-xiaomei-refined-laugh2.json",
+  "SourceRecordSHA256": "E955E7ED9D054CA435C9172B37E6C2EBAC93801D9C985EF095A116F79789D274",
+  "RawGeneratedCopyVerified": true,
+  "VisualReview": "passed before integration; runtime acceptance is separate",
+  "ImageMetadata": {
+    "Width": 990,
+    "Height": 1589,
+    "Mode": "RGBA",
+    "AlphaMin": 0,
+    "AlphaMax": 255,
+    "AlphaBoundsGt16": [
+      53,
+      20,
+      981,
+      1589
+    ],
+    "Bytes": 1918257
+  }
+}

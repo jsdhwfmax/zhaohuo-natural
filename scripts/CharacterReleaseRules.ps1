@@ -1,0 +1,29 @@
+#requires -Version 5.1
+# Frozen release inventories, separate from editable catalog readiness and hashes.
+$releaseVersion='2.1.0'
+$releaseRoleIds=@('player','tang-buyi','xiahou-lan','tang-moling','long-xiang','yu-xiaomei','tang-zheng')
+$releasePortraitCount=400;$releaseCustomCount=13;$releaseChoiceCount=20
+$releaseCounts=@{
+    'player/natural'=47;'player/handsome'=47;'player/xianxia'=47
+    'player/white'=47;'player/black'=47;'player/veteran'=47
+    'tang-buyi/refined'=15;'xiahou-lan/refined'=15
+    'tang-buyi/female'=15;'tang-moling/refined'=15;'long-xiang/refined'=21;'yu-xiaomei/refined'=25;'tang-zheng/female'=12
+}
+$releaseFallbacks=@{
+    player=@();'tang-buyi'=@('hand');'xiahou-lan'=@('white');'tang-moling'=@('one_hand')
+    'long-xiang'=@('black');'yu-xiaomei'=@('black','special5','special5_2');'tang-zheng'=@()
+}
+$frozenV20Fingerprints=@{
+    'player/natural'='7E3062599926AC9266A7F5CCA3C9B073E5B66FBBA3205B8FED7A8DA3B21E2A71'
+    'player/handsome'='63434840DC201BA14765C38AE8996674A07CF64E76518A7E3A85D55F59443D05'
+    'player/xianxia'='E8EB408F31283581605425055AD742753C3E76D7C2D78065473117CB19794DBA'
+    'player/white'='D73A135D523F3D71894AC0B2BC8C560FD1D55279C06203506177F9205537D804'
+    'player/black'='283C31F74579B8E13AFD2803AA23121110E2D2F84F5900E0608E87C2F4E59824'
+    'player/veteran'='56F870EC73F6D5A83A192B54FAFDE4A8E020BAD55C9056E99C2A117A3E11347D'
+    'tang-buyi/refined'='C0F88BDF7A033C08519910BA44F8FF2643B6325C1B6EB985E391139D89038C68'
+    'xiahou-lan/refined'='DDA8E47B85FAD60AB97B6A3FD9617062A4D08F84F5D1F81D84E9F1625E0DF282'
+}
+$releasePromptGroups=@(
+    [pscustomobject]@{Path='Prompts/multichar/index.json';Count=171;Variants=@('player/white','player/black','player/veteran','tang-buyi/refined','xiahou-lan/refined')},
+    [pscustomobject]@{Path='Prompts/expansion-v2.1/index.json';Count=88;Variants=@('tang-buyi/female','tang-moling/refined','long-xiang/refined','yu-xiaomei/refined','tang-zheng/female')}
+)

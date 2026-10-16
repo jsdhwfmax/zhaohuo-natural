@@ -1,0 +1,45 @@
+{
+  "SchemaVersion": 1,
+  "CharacterId": "tang-zheng",
+  "VariantId": "female",
+  "Name": "hurt.png",
+  "GenerationMethod": "builtin imagegen",
+  "PixelPostProcessing": false,
+  "Prompt": "Use case: identity-preserve. Asset: transparent dialogue portrait for Legend of Mortal, one character only. Image 1 is the ORIGINAL POSE/EXPRESSION reference, NOT the desired gender or face. Image 2 is the APPROVED FEMALE MASTER: its mature adult woman's exact face, body proportions, very full bust, flowing hairstyle, accessories and blue Tangmen clothing design have highest priority. Completely redraw Image 1 as this same adult woman from Image 2. Keep the original emotion, head direction, gesture, hand positions, props and any sweat/blood/comic effects. Do NOT copy Image 2's neutral smile into every expression. Retain the master female identity and voluptuous fully clothed silhouette, never revert to the original male jaw/body. Keep clothes opaque and properly closed, no nudity. Preserve the game's rough ink-pencil contours and textured watercolor/gouache fabric, not glossy 3D, photo skin, modern anime or chibi. Image 1's colored hidden alpha RGB streaks are NOT a background and must not be drawn. True alpha transparent background. Frame one complete usable portrait with all hair, hands, sleeves and props safely inside side/top edges with ~4% transparent margins, bottom robe may naturally cut at bottom. Keep natural small head-to-body proportion. No text, labels, panels, duplicates or watermark. SPECIFIC EMOTION: Injured/poisoned but defiant: blue-grey forehead cast, strained eyes, furrowed veins, sweat on brow/cheek/neck and a thin blood trickle from mouth to chin plus tiny collar stain. No gore. Keep both props. Leave complete bamboo cylinder with transparent space on the right.",
+  "References": [
+    {
+      "LogicalName": "local-game-reference/hurt.png",
+      "Kind": "original-game-reference-not-distributed",
+      "RecordedSHA256": "20341EEE88181BB24FF590003A47ED2E0B1E6C91106168739F781E387C76724D",
+      "Role": "original pose/emotion edit target"
+    },
+    {
+      "LogicalName": "generated-design/tang-zheng/female/normal.png",
+      "Kind": "generated-design-reference",
+      "RecordedSHA256": "6C09B7759E4F13F026CC70A8ADA691493CF4A4880C5F4D7A1C7EB425441EC8E4",
+      "Role": "approved female identity/body/costume master"
+    }
+  ],
+  "OriginalGameCanonicalPath": "assets/__project/images/characters/brother2/hurt.png",
+  "OriginalGameReferenceDistributed": false,
+  "GeneratedSourceBasename": "exec-3de7312e-127a-4986-8119-92d676db384f.png",
+  "OutputSHA256": "8822338FBBF3F9609706C1146DEE3E18887860D3A29FF0C80E617C5270018FBF",
+  "SourceRecordBasename": "tang-zheng-female-hurt.json",
+  "SourceRecordSHA256": "F6319B3838CBFADDFD87C3639E4F8325E04F25CA8D2EE0BC43C30E6D699FF6C7",
+  "RawGeneratedCopyVerified": true,
+  "VisualReview": "passed before integration; runtime acceptance is separate",
+  "ImageMetadata": {
+    "Width": 1049,
+    "Height": 1500,
+    "Mode": "RGBA",
+    "AlphaMin": 0,
+    "AlphaMax": 255,
+    "AlphaBoundsGt16": [
+      49,
+      35,
+      1046,
+      1500
+    ],
+    "Bytes": 2087952
+  }
+}

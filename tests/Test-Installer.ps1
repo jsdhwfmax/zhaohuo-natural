@@ -1,9 +1,11 @@
 ﻿#requires -Version 5.1
 [CmdletBinding()]
-param()
+param([string]$OutputPath)
 $ErrorActionPreference = 'Stop'
 Set-StrictMode -Version 2.0
 $repo = Split-Path -Parent $PSScriptRoot
+if(-not $OutputPath){$OutputPath=Join-Path $PSScriptRoot 'results-summary.json'}
+[IO.Directory]::CreateDirectory([IO.Path]::GetDirectoryName([IO.Path]::GetFullPath($OutputPath)))|Out-Null
 $module = Import-Module (Join-Path $repo 'installer\ZhaoHuoInstaller.psm1') -Force -PassThru
 $work = Join-Path $PSScriptRoot ('.work\run-' + [Guid]::NewGuid().ToString('N'))
 $package = Join-Path $work 'Offline Package'
@@ -386,10 +388,10 @@ try {
     Assert-True ($discovered.Count -eq 2 -and $discovered -contains (Join-Path $steamB 'steamapps\common\LegendOfMortal')) 'Steam library discovery handles multiple libraries and spaces'
 
     $summary = [ordered]@{ status='passed'; powershell=$PSVersionTable.PSVersion.ToString(); assertionCount=$script:Assertions.Count; durationSeconds=[Math]::Round(([DateTime]::UtcNow-$start).TotalSeconds,2); scope='Installer integration with synthetic game fixtures, official bundled runtime and stubbed offline-probe results; metadata probe tested separately; no real game installation or execution'; checks=@($script:Assertions) }
-    [IO.File]::WriteAllText((Join-Path $PSScriptRoot 'results-summary.json'),($summary | ConvertTo-Json -Depth 6),(New-Object Text.UTF8Encoding($false)))
+    [IO.File]::WriteAllText($OutputPath,($summary | ConvertTo-Json -Depth 6),(New-Object Text.UTF8Encoding($false)))
     Write-Host "ALL $($script:Assertions.Count) ASSERTIONS PASSED. No real game files were modified."
 } catch {
     $summary = [ordered]@{ status='failed'; powershell=$PSVersionTable.PSVersion.ToString(); passedBeforeFailure=$script:Assertions.Count; error=$_.Exception.Message }
-    [IO.File]::WriteAllText((Join-Path $PSScriptRoot 'results-summary.json'),($summary | ConvertTo-Json -Depth 4),(New-Object Text.UTF8Encoding($false)))
+    [IO.File]::WriteAllText($OutputPath,($summary | ConvertTo-Json -Depth 4),(New-Object Text.UTF8Encoding($false)))
     throw
 }

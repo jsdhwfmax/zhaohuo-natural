@@ -1,0 +1,41 @@
+{
+  "SchemaVersion": 1,
+  "CharacterId": "yu-xiaomei",
+  "VariantId": "refined",
+  "Name": "angry1.png",
+  "GenerationMethod": "builtin imagegen",
+  "PixelPostProcessing": false,
+  "Prompt": "Edit image 1 only to fix the clipped hand at the right canvas edge. Image 2 is identity reference. KEEP EXACTLY image 1's facial expression, face, costume, original arm pose, props, drawing style and all details. Zoom OUT so the ENTIRE figure is 20 percent smaller within this transparent canvas; add at least 80 pixels of clear transparent space beyond BOTH hands and hair. Reconstruct the missing right-hand fingertips naturally. Do not merely extend a cropped hand up to the edge again. All hair/hands/sleeves must end before the border. Keep same relative head/body proportions and the same lower-skirt crop at bottom. One character, TRUE TRANSPARENCY, no text, no background, no shadow/glow. Face expression must remain angry1.",
+  "References": [
+    {
+      "LogicalName": "reference-1/exec-1bc5df57-a4a6-4876-8cab-660bb3ee34f4.png",
+      "Kind": "local-reference-not-distributed"
+    },
+    {
+      "LogicalName": "generated-design/yu-xiaomei/refined/normal.png",
+      "Kind": "generated-design-reference"
+    }
+  ],
+  "OriginalGameCanonicalPath": "assets/__project/images/characters/girl5_小梅/angry1.png",
+  "OriginalGameReferenceDistributed": false,
+  "GeneratedSourceBasename": "exec-2929fa95-5c8f-4904-9ab7-53ced86ac986.png",
+  "OutputSHA256": "87B668C968F92134B45A2BCF9A58455B34086A87CE49702C65D9A103B395BB12",
+  "SourceRecordBasename": "yu-xiaomei-refined-angry1.json",
+  "SourceRecordSHA256": "5C44C018BA76DCDF374A0EFD9376413A3A5DEE85396E3D435A9D2656DFEAF450",
+  "RawGeneratedCopyVerified": true,
+  "VisualReview": "passed before integration; runtime acceptance is separate",
+  "ImageMetadata": {
+    "Width": 990,
+    "Height": 1589,
+    "Mode": "RGBA",
+    "AlphaMin": 0,
+    "AlphaMax": 255,
+    "AlphaBoundsGt16": [
+      82,
+      199,
+      963,
+      1492
+    ],
+    "Bytes": 1361333
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "SchemaVersion": 1,
+  "CharacterId": "yu-xiaomei",
+  "VariantId": "refined",
+  "Name": "scary_shock.png",
+  "GenerationMethod": "builtin imagegen",
+  "PixelPostProcessing": false,
+  "Prompt": "Use case: precise-object-edit. Make ONE transparent dialogue portrait sprite for 活侠传 / Legend of Mortal. Image 1 is the ORIGINAL TARGET expression/gesture/props reference; Image 2 is the newly approved beauty redesign and SAME CHARACTER identity/style/costume reference. Repaint Image 1 using the precise face, hair, age, proportions and costume rendering of Image 2. Crucially reproduce Image 1's expression, eye direction, mouth, hands, pose, original props and all meaningful sweat/tears/blood/comic marks; do NOT simply repeat the calm pose or smile from Image 2. Match the original restrained hand-drawn wuxia game style: rough black sketch contours, dry-brush edges, visible matte watercolor and colored-pencil grain, not glossy modern anime. Preserve character's age and modest costume/body proportions; no sexualization or additional exposed skin. Grey/color streaks outside the character in Image 1 are raw texture export artifacts, do not reproduce them. Exactly one complete isolated character, TRUE transparent background, natural-sized head, whole hair/hands/side silhouette fitted within at least 5% transparent side margins; only the same lower skirt crop at bottom is allowed. No new props, background, text, watermark, frame, checkerboard, 3D or photorealism. Character: Yu Xiaomei 虞小梅; same youthful age appearance as both references, dark high ponytail with red/gold knot ornament unless target explicitly uses loose hair, white red-trimmed robe, brown waist sash/bracers, coral-red skirt. No body enhancement. Target expression: scary_shock. In-game labels: 特殊11. Comical severe shock: eyes completely obscured beneath fringe with long vertical stress lines, LARGE BLACK ROUND OPEN MOUTH, multiple cheek sweat drops. One fist pulled up to chest, opposite lowered hand holds ONE tan oval wooden theatre mask by its top. Preserve sparse white wisps around shoulders/sleeves. Complete mask inside canvas; avoid replacing the comedic hidden eyes with normal eyes.",
+  "References": [
+    {
+      "LogicalName": "local-game-reference/scary_shock.png",
+      "Kind": "original-game-reference-not-distributed"
+    },
+    {
+      "LogicalName": "generated-design/yu-xiaomei/refined/normal.png",
+      "Kind": "generated-design-reference"
+    }
+  ],
+  "OriginalGameCanonicalPath": "assets/__project/images/characters/girl5_小梅/scary_shock.png",
+  "OriginalGameReferenceDistributed": false,
+  "GeneratedSourceBasename": "exec-69415fa4-2967-40c4-a724-834b0b774bd7.png",
+  "OutputSHA256": "C0DB59E52E2A2E7B42E179FCB6B80AAAC0173A1ABF749F4A78BDECBA7D5DE34F",
+  "SourceRecordBasename": "yu-xiaomei-refined-scary_shock.json",
+  "SourceRecordSHA256": "A2EB940B7BBBC1DBBFD998EC68E5C766EAF32A7AC03B7D5804F4A74DA283E68E",
+  "RawGeneratedCopyVerified": true,
+  "VisualReview": "passed before integration; runtime acceptance is separate",
+  "ImageMetadata": {
+    "Width": 990,
+    "Height": 1589,
+    "Mode": "RGBA",
+    "AlphaMin": 0,
+    "AlphaMax": 255,
+    "AlphaBoundsGt16": [
+      50,
+      61,
+      990,
+      1589
+    ],
+    "Bytes": 1874188
+  }
+}

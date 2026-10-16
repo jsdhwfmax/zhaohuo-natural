@@ -1,0 +1,41 @@
+{
+  "SchemaVersion": 1,
+  "CharacterId": "long-xiang",
+  "VariantId": "refined",
+  "Name": "drumstick.png",
+  "GenerationMethod": "builtin imagegen",
+  "PixelPostProcessing": false,
+  "Prompt": "Use case: precise-object-edit. Make ONE transparent dialogue portrait sprite for 活侠传 / Legend of Mortal. Image 1 is the ORIGINAL TARGET expression/gesture/props reference; Image 2 is the newly approved beauty redesign and SAME CHARACTER identity/style/costume reference. Repaint Image 1 using the precise face, hair, age, proportions and costume rendering of Image 2. Crucially reproduce Image 1's expression, eye direction, mouth, hands, pose, original props and all meaningful sweat/tears/blood/comic marks; do NOT simply repeat the calm pose or smile from Image 2. Match the original restrained hand-drawn wuxia game style: rough black sketch contours, dry-brush edges, visible matte watercolor and colored-pencil grain, not glossy modern anime. Preserve character's age and modest costume/body proportions; no sexualization or additional exposed skin. Grey/color streaks outside the character in Image 1 are raw texture export artifacts, do not reproduce them. Exactly one complete isolated character, TRUE transparent background, natural-sized head, whole hair/hands/side silhouette fitted within at least 5% transparent side margins; only the same lower skirt crop at bottom is allowed. No new props, background, text, watermark, frame, checkerboard, 3D or photorealism. Character: long-xiang. Target file: drumstick. In-game expression labels: 特殊1.  Happily chewing roasted chicken drumstick held near mouth in raised left hand, cheeks slightly puffed, sparkling eyes, small white sparkles around head; other hand on sword. Preserve the real golden-brown drumstick, not a musical stick.",
+  "References": [
+    {
+      "LogicalName": "local-game-reference/drumstick.png",
+      "Kind": "original-game-reference-not-distributed"
+    },
+    {
+      "LogicalName": "generated-design/long-xiang/refined/normal.png",
+      "Kind": "generated-design-reference"
+    }
+  ],
+  "OriginalGameCanonicalPath": "assets/__project/images/characters/girl4_龍湘/drumstick.png",
+  "OriginalGameReferenceDistributed": false,
+  "GeneratedSourceBasename": "exec-565823a2-6dab-41b3-86cb-b47a49ef046b.png",
+  "OutputSHA256": "54D0E7A870A38E5CE69706952C6FD9E6F9D1DFF3F11F6AA7A6F70E30775969E1",
+  "SourceRecordBasename": "long-xiang-refined-drumstick.json",
+  "SourceRecordSHA256": "977D7B3C0836E2FDB8A76AE4253C28DD7E0806C27FB777FBE12688230C51D1D8",
+  "RawGeneratedCopyVerified": true,
+  "VisualReview": "passed before integration; runtime acceptance is separate",
+  "ImageMetadata": {
+    "Width": 962,
+    "Height": 1635,
+    "Mode": "RGBA",
+    "AlphaMin": 0,
+    "AlphaMax": 255,
+    "AlphaBoundsGt16": [
+      0,
+      80,
+      962,
+      1635
+    ],
+    "Bytes": 2033152
+  }
+}

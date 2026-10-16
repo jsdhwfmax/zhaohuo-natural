@@ -1,0 +1,45 @@
+{
+  "SchemaVersion": 1,
+  "CharacterId": "tang-buyi",
+  "VariantId": "female",
+  "Name": "hurt.png",
+  "GenerationMethod": "builtin imagegen",
+  "PixelPostProcessing": false,
+  "Prompt": "Use case: identity-preserve. Asset: transparent dialogue portrait for Legend of Mortal, one character only. Image 1 is the ORIGINAL POSE/EXPRESSION reference, NOT the desired gender or face. Image 2 is the APPROVED FEMALE MASTER: its mature adult woman's exact face, body proportions, very full bust, flowing hairstyle, accessories and blue Tangmen clothing design have highest priority. Completely redraw Image 1 as this same adult woman from Image 2. Keep the original emotion, head direction, gesture, hand positions, props and any sweat/blood/comic effects. Do NOT copy Image 2's neutral smile into every expression. Retain the master female identity and voluptuous fully clothed silhouette, never revert to the original male jaw/body. Keep clothes opaque and properly closed, no nudity. Preserve the game's rough ink-pencil contours and textured watercolor/gouache fabric, not glossy 3D, photo skin, modern anime or chibi. Image 1's colored hidden alpha RGB streaks are NOT a background and must not be drawn. True alpha transparent background. Frame one complete usable portrait with all hair, hands, sleeves and props safely inside side/top edges with ~4% transparent margins, bottom robe may naturally cut at bottom. Keep natural small head-to-body proportion. No text, labels, panels, duplicates or watermark. SPECIFIC EMOTION: Injured but bravely smiling: half-open weary eyes, multiple sweat drops on forehead/cheek, small thin blood trail from lip down chin. Preserve rear open hand and coins (unlike special1).",
+  "References": [
+    {
+      "LogicalName": "local-game-reference/hurt.png",
+      "Kind": "original-game-reference-not-distributed",
+      "RecordedSHA256": "3BE29940D459A4952714DF814DC1E1143EF5A9D52D38B1B627388BA1CB80936D",
+      "Role": "original pose/emotion edit target"
+    },
+    {
+      "LogicalName": "generated-design/tang-buyi/female/normal.png",
+      "Kind": "generated-design-reference",
+      "RecordedSHA256": "FE491C8DDADB3A46607DFFF137A7F6DB79F0E55851E22F82789FA0BAC15FF0ED",
+      "Role": "approved female identity/body/costume master"
+    }
+  ],
+  "OriginalGameCanonicalPath": "assets/__project/images/characters/brother1/hurt.png",
+  "OriginalGameReferenceDistributed": false,
+  "GeneratedSourceBasename": "exec-e65f2f8a-33c4-48c5-8f64-8541e9153413.png",
+  "OutputSHA256": "0E29199CBDFF70059094706A9CD97E5FF741B92462E2F4CA0160B9F83FFF9E00",
+  "SourceRecordBasename": "tang-buyi-female-hurt.json",
+  "SourceRecordSHA256": "770767379B6354993470FC9FAD8D142B81AA1FA4776BB1240942A313A9439147",
+  "RawGeneratedCopyVerified": true,
+  "VisualReview": "passed before integration; runtime acceptance is separate",
+  "ImageMetadata": {
+    "Width": 1096,
+    "Height": 1435,
+    "Mode": "RGBA",
+    "AlphaMin": 0,
+    "AlphaMax": 255,
+    "AlphaBoundsGt16": [
+      3,
+      81,
+      1088,
+      1435
+    ],
+    "Bytes": 2067795
+  }
+}

@@ -1,7 +1,7 @@
 ﻿#requires -Version 5.1
 # Static inspection only. Never load a game assembly into the CLR.
 $script:ZHCecilHash = '7AE470288FFF4A402899C254D0A76CEFEF55877F5C54F96E83C797CC5BB6E2F6'
-$script:ZHCompatibilityBaselineHash = '65BFA00035E19D1FDA63D8C0C37AF6BFB606830E8DDC40424D452C769F1195FF'
+$script:ZHCompatibilityBaselineHash = '7BA8D1175F4A9C603B61E81FAF4F42DA5A9A79D14D2EEA3A12C72B04CF6F2A26'
 function Get-ZHCPHash([string]$Path) { (Get-FileHash -LiteralPath $Path -Algorithm SHA256).Hash }
 function Get-ZHCPChild([string]$Root, [string]$Relative) {
     if ([string]::IsNullOrWhiteSpace($Relative) -or [IO.Path]::IsPathRooted($Relative) -or $Relative.Contains(':') -or @($Relative -split '[\\/]' | Where-Object {$_ -in @('','..','.')}).Count) { throw '兼容性检查遇到不安全的相对路径。' }

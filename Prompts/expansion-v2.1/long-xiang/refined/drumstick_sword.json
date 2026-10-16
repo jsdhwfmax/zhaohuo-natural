@@ -1,0 +1,41 @@
+{
+  "SchemaVersion": 1,
+  "CharacterId": "long-xiang",
+  "VariantId": "refined",
+  "Name": "drumstick_sword.png",
+  "GenerationMethod": "builtin imagegen",
+  "PixelPostProcessing": false,
+  "Prompt": "Use case: precise-object-edit. Make ONE transparent dialogue portrait sprite for 活侠传 / Legend of Mortal. Image 1 is the ORIGINAL TARGET expression/gesture/props reference; Image 2 is the newly approved beauty redesign and SAME CHARACTER identity/style/costume reference. Repaint Image 1 using the precise face, hair, age, proportions and costume rendering of Image 2. Crucially reproduce Image 1's expression, eye direction, mouth, hands, pose, original props and all meaningful sweat/tears/blood/comic marks; do NOT simply repeat the calm pose or smile from Image 2. Match the original restrained hand-drawn wuxia game style: rough black sketch contours, dry-brush edges, visible matte watercolor and colored-pencil grain, not glossy modern anime. Preserve character's age and modest costume/body proportions; no sexualization or additional exposed skin. Grey/color streaks outside the character in Image 1 are raw texture export artifacts, do not reproduce them. Exactly one complete isolated character, TRUE transparent background, natural-sized head, whole hair/hands/side silhouette fitted within at least 5% transparent side margins; only the same lower skirt crop at bottom is allowed. No new props, background, text, watermark, frame, checkerboard, 3D or photorealism. Character: long-xiang. Target file: drumstick_sword. In-game expression labels: 特殊3.  Despite filename there is NO metal sword in this portrait: both hands grasp a large partly eaten golden-brown roasted chicken leg LOW in front of waist as in original. Mouth wide open in shocked protest, tearful eyes, deep cheek blush, small white agitation strokes around shoulders. Keep actual original prop and posture.",
+  "References": [
+    {
+      "LogicalName": "local-game-reference/drumstick_sword.png",
+      "Kind": "original-game-reference-not-distributed"
+    },
+    {
+      "LogicalName": "generated-design/long-xiang/refined/normal.png",
+      "Kind": "generated-design-reference"
+    }
+  ],
+  "OriginalGameCanonicalPath": "assets/__project/images/characters/girl4_龍湘/drumstick_sword.png",
+  "OriginalGameReferenceDistributed": false,
+  "GeneratedSourceBasename": "exec-d0381aa1-3218-411f-9412-7cf02ae37933.png",
+  "OutputSHA256": "8C0A2A4C5E54DE328A98CFD7D616D1B303F3F43D97146573AA36FF22EEC0530C",
+  "SourceRecordBasename": "long-xiang-refined-drumstick_sword.json",
+  "SourceRecordSHA256": "380322CC600523E5735A2FC5731DB375AABC7FA26B7F0233203827186F1893C5",
+  "RawGeneratedCopyVerified": true,
+  "VisualReview": "passed before integration; runtime acceptance is separate",
+  "ImageMetadata": {
+    "Width": 962,
+    "Height": 1635,
+    "Mode": "RGBA",
+    "AlphaMin": 0,
+    "AlphaMax": 255,
+    "AlphaBoundsGt16": [
+      4,
+      15,
+      962,
+      1635
+    ],
+    "Bytes": 2027460
+  }
+}

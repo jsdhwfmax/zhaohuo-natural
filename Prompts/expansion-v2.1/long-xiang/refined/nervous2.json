@@ -1,0 +1,41 @@
+{
+  "SchemaVersion": 1,
+  "CharacterId": "long-xiang",
+  "VariantId": "refined",
+  "Name": "nervous2.png",
+  "GenerationMethod": "builtin imagegen",
+  "PixelPostProcessing": false,
+  "Prompt": "Use case: precise-object-edit. Make ONE transparent dialogue portrait sprite for 活侠传 / Legend of Mortal. Image 1 is the ORIGINAL TARGET expression/gesture/props reference; Image 2 is the newly approved beauty redesign and SAME CHARACTER identity/style/costume reference. Repaint Image 1 using the precise face, hair, age, proportions and costume rendering of Image 2. Crucially reproduce Image 1's expression, eye direction, mouth, hands, pose, original props and all meaningful sweat/tears/blood/comic marks; do NOT simply repeat the calm pose or smile from Image 2. Match the original restrained hand-drawn wuxia game style: rough black sketch contours, dry-brush edges, visible matte watercolor and colored-pencil grain, not glossy modern anime. Preserve character's age and modest costume/body proportions; no sexualization or additional exposed skin. Grey/color streaks outside the character in Image 1 are raw texture export artifacts, do not reproduce them. Exactly one complete isolated character, TRUE transparent background, natural-sized head, whole hair/hands/side silhouette fitted within at least 5% transparent side margins; only the same lower skirt crop at bottom is allowed. No new props, background, text, watermark, frame, checkerboard, 3D or photorealism. Character: long-xiang. Target file: nervous2. In-game expression labels: 大汗/驚嚇.  Panic expression tiny pupils, several visible sweat drops, open mouth, BOTH hands fists raised at chest, white shoulder agitation strokes, sword stays at waist.",
+  "References": [
+    {
+      "LogicalName": "local-game-reference/nervous2.png",
+      "Kind": "original-game-reference-not-distributed"
+    },
+    {
+      "LogicalName": "generated-design/long-xiang/refined/normal.png",
+      "Kind": "generated-design-reference"
+    }
+  ],
+  "OriginalGameCanonicalPath": "assets/__project/images/characters/girl4_龍湘/nervous2.png",
+  "OriginalGameReferenceDistributed": false,
+  "GeneratedSourceBasename": "exec-4c403f82-717c-4329-9dd8-b24e039e8936.png",
+  "OutputSHA256": "6D4E8C296827DDE49231B07DBC0403A17558F087299634F3C500A729F6FB278C",
+  "SourceRecordBasename": "long-xiang-refined-nervous2.json",
+  "SourceRecordSHA256": "83FF43FD1934EC5E8C6B18568210ACB82090F7F7885609EAB446BB895F872A2B",
+  "RawGeneratedCopyVerified": true,
+  "VisualReview": "passed before integration; runtime acceptance is separate",
+  "ImageMetadata": {
+    "Width": 962,
+    "Height": 1634,
+    "Mode": "RGBA",
+    "AlphaMin": 0,
+    "AlphaMax": 255,
+    "AlphaBoundsGt16": [
+      0,
+      84,
+      962,
+      1634
+    ],
+    "Bytes": 2078557
+  }
+}

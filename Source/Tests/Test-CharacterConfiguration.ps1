@@ -38,10 +38,33 @@ Check 'UTF8 BOM character and JSON whitespace accepted' ([ZhaoHuoNatural.Configu
 $reordered='{"Characters":[{"Enabled":true,"Id":"xiahou-lan"},{"Enabled":false,"Id":"player"},{"Enabled":true,"Id":"tang-buyi"}],"SchemaVersion":1}'
 Check 'Property and role order independent' ([ZhaoHuoNatural.ConfigurationJsonProbe]::Read($reordered)-ceq 'tang-buyi,xiahou-lan')
 Check 'JSON Unicode escapes accepted' ([ZhaoHuoNatural.ConfigurationJsonProbe]::Read($valid.Replace('SchemaVersion','\u0053chemaVersion').Replace('player','\u0070layer'))-ceq($ids-join ','))
+$expandedIds=@('player','tang-buyi','xiahou-lan','tang-moling','long-xiang','yu-xiaomei','tang-zheng')
+$expandedValid=[ordered]@{SchemaVersion=2;Characters=@($expandedIds|ForEach-Object{[ordered]@{Id=$_;Enabled=$true}})}|ConvertTo-Json -Depth 4 -Compress
+for($mask=0;$mask-lt 128;$mask++){
+ $entries=@(for($index=0;$index-lt 7;$index++){[ordered]@{Id=$expandedIds[$index];Enabled=[bool]($mask-band(1-shl$index))}})
+ $json=[ordered]@{SchemaVersion=2;Characters=$entries}|ConvertTo-Json -Depth 4
+ $expected=(@($entries|Where-Object Enabled|ForEach-Object Id|Sort-Object)-join ',')
+ Check ('Schema 2 independent switch combination '+$mask) ([ZhaoHuoNatural.ConfigurationJsonProbe]::Read($json)-ceq $expected)
+}
+$reverse=@($expandedIds);[array]::Reverse($reverse)
+$expandedReordered=[ordered]@{Characters=@($reverse|ForEach-Object{[ordered]@{Enabled=$true;Id=$_}});SchemaVersion=2}|ConvertTo-Json -Depth 4 -Compress
+Check 'Schema 2 property and role order independent' ([ZhaoHuoNatural.ConfigurationJsonProbe]::Read($expandedReordered)-ceq(@($expandedIds|Sort-Object)-join ','))
+Check 'Legacy schema does not enable any new role' ([ZhaoHuoNatural.ConfigurationJsonProbe]::Read($valid)-ceq 'player,tang-buyi,xiahou-lan')
+foreach($omitted in $expandedIds){
+ $incomplete=[ordered]@{SchemaVersion=2;Characters=@($expandedIds|Where-Object{$_-cne$omitted}|ForEach-Object{[ordered]@{Id=$_;Enabled=$true}})}|ConvertTo-Json -Depth 4 -Compress
+ Reject ('Schema 2 missing '+$omitted) $incomplete
+}
+Reject 'Schema 1 rejects seven-role configuration' ($expandedValid.Replace('"SchemaVersion":2','"SchemaVersion":1'))
+Reject 'Schema 2 rejects three-role configuration' ($valid.Replace('"SchemaVersion":1','"SchemaVersion":2'))
+Reject 'Schema 2 rejects duplicate character' ($expandedValid.Replace('yu-xiaomei','long-xiang'))
+Reject 'Schema 2 rejects unknown character' ($expandedValid.Replace('yu-xiaomei','unknown'))
+Reject 'Schema 2 rejects eighth entry' ($expandedValid.Replace(']}',',{"Id":"player","Enabled":false}]}'))
+Reject 'Schema 2 rejects decimal version' ($expandedValid.Replace('"SchemaVersion":2','"SchemaVersion":2.0'))
+Reject 'Schema 2 rejects concatenated version' ($expandedValid.Replace('"SchemaVersion":2','"SchemaVersion":21'))
 $bad=@(
  @('Empty document',''),@('Null document','null'),@('Array root','[]'),@('Empty root','{}'),
  @('Missing schema',$valid.Replace('"SchemaVersion":1,','')),
- @('Unknown schema',$valid.Replace('"SchemaVersion":1','"SchemaVersion":2')),
+ @('Unknown schema',$valid.Replace('"SchemaVersion":1','"SchemaVersion":3')),
  @('String schema',$valid.Replace('"SchemaVersion":1','"SchemaVersion":"1"')),
  @('Floating schema',$valid.Replace('"SchemaVersion":1','"SchemaVersion":1.0')),
  @('Leading zero schema',$valid.Replace('"SchemaVersion":1','"SchemaVersion":01')),

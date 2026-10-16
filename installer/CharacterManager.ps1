@@ -38,7 +38,7 @@ function Get-PortraitApplyPlan {
         $legacyHash=if($legacyPresent){Get-ZHHash $paths.Legacy}else{$null}
         $after=[pscustomobject][ordered]@{
             SchemaVersion=4;PackageId='ZhaoHuoNatural';InstallationId=$id;Status='installed';GamePath=$paths.Game
-            InstalledAtUtc=[DateTime]::UtcNow.ToString('o');BackupRelativePath=('Backups\'+$id);RuntimeProtocol=1
+            InstalledAtUtc=[DateTime]::UtcNow.ToString('o');BackupRelativePath=('Backups\'+$id);RuntimeProtocol=2
             Environment=$environment;AdoptedUntrackedPayload=$false;OwnedFiles=@();CreatedDirectories=@()
             Characters=@(foreach($cid in $script:CharacterIds){[pscustomobject]@{Id=$cid;SelectedVariantId='original';InstalledPayload=$null}})
             Legacy=[pscustomobject]@{WasPresent=$legacyPresent;DisabledByThisInstall=$legacyPresent;Sha256=$legacyHash;Stage='applied'}
@@ -65,7 +65,7 @@ function Get-PortraitApplyPlan {
         if(-not(Test-Path -LiteralPath $source -PathType Leaf)-or(Get-ZHHash $source)-ne $shared.Sha256){throw ('共享运行组件校验失败：'+$shared.Name)}
         $actions+=New-ZHCharacterAction $relative $source $shared.Sha256 'SharedPlugin' $null
     }
-    $beforeCharacters=Copy-ZHObject @($after.Characters)
+    $beforeCharacters=if($manifest -and $manifest.SchemaVersion-eq 4){Copy-ZHObject @($manifest.Characters)}else{Copy-ZHObject @($after.Characters)}
     $selected=@($after.Characters|Where-Object Id -eq $CharacterId)[0]
     $selected.SelectedVariantId=$VariantId
     if($variant.Kind-eq 'custom'){
@@ -122,7 +122,7 @@ function Get-PortraitApplyPlan {
         while($directory -and $directory-ne $paths.Game){if(-not(Test-Path -LiteralPath $directory)){$created[$directory.Substring($paths.Game.Length+1)]=$true};$directory=[IO.Path]::GetDirectoryName($directory)}
     }
     $after.CreatedDirectories=@($created.Keys)
-    $migration=($null-ne $manifest -and $manifest.SchemaVersion-eq 3)
+    $migration=($null-ne $manifest -and ($manifest.SchemaVersion-eq 3 -or $manifest.RuntimeProtocol-ne $catalog.RuntimeProtocol))
     [pscustomobject]@{Paths=$paths;Catalog=$catalog;Manifest=$manifest;ManifestSha256=$manifestHash;BeforeCharacters=@($beforeCharacters);After=$after;Actions=@($legacyActions)+@($changes);Validation=$validation;Environment=$environment;CharacterId=$CharacterId;VariantId=$VariantId;RequiresMigration=$migration;NoOp=($manifest-and-not $migration-and $changes.Count-eq 0)}
 }
 function Set-PortraitAppearance {

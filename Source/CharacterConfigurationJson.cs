@@ -40,7 +40,10 @@ namespace ZhaoHuoNatural
                 string key = String(); Expect(':');
                 if (key == "SchemaVersion" && !schema)
                 {
-                    Expect('1'); result.SchemaVersion = 1; schema = true;
+                    if (Take('1')) result.SchemaVersion = 1;
+                    else if (Take('2')) result.SchemaVersion = 2;
+                    else throw Invalid("Unsupported configuration schema");
+                    schema = true;
                 }
                 else if (key == "Characters" && !characters)
                 {

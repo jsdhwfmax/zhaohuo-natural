@@ -1,0 +1,41 @@
+{
+  "SchemaVersion": 1,
+  "CharacterId": "long-xiang",
+  "VariantId": "refined",
+  "Name": "sad2.png",
+  "GenerationMethod": "builtin imagegen",
+  "PixelPostProcessing": false,
+  "Prompt": "Use case: precise-object-edit. Make ONE transparent dialogue portrait sprite for 活侠传 / Legend of Mortal. Image 1 is the ORIGINAL TARGET expression/gesture/props reference; Image 2 is the newly approved beauty redesign and SAME CHARACTER identity/style/costume reference. Repaint Image 1 using the precise face, hair, age, proportions and costume rendering of Image 2. Crucially reproduce Image 1's expression, eye direction, mouth, hands, pose, original props and all meaningful sweat/tears/blood/comic marks; do NOT simply repeat the calm pose or smile from Image 2. Match the original restrained hand-drawn wuxia game style: rough black sketch contours, dry-brush edges, visible matte watercolor and colored-pencil grain, not glossy modern anime. Preserve character's age and modest costume/body proportions; no sexualization or additional exposed skin. Grey/color streaks outside the character in Image 1 are raw texture export artifacts, do not reproduce them. Exactly one complete isolated character, TRUE transparent background, natural-sized head, whole hair/hands/side silhouette fitted within at least 5% transparent side margins; only the same lower skirt crop at bottom is allowed. No new props, background, text, watermark, frame, checkerboard, 3D or photorealism. Character: long-xiang. Target file: sad2. In-game expression labels: 泣.  Quiet crying, wet eyes open, thick tears down both cheeks onto collar, red nose and cheeks, worried brows and closed trembling mouth. Default hand on sword, other arm down.",
+  "References": [
+    {
+      "LogicalName": "local-game-reference/sad2.png",
+      "Kind": "original-game-reference-not-distributed"
+    },
+    {
+      "LogicalName": "generated-design/long-xiang/refined/normal.png",
+      "Kind": "generated-design-reference"
+    }
+  ],
+  "OriginalGameCanonicalPath": "assets/__project/images/characters/girl4_龍湘/sad2.png",
+  "OriginalGameReferenceDistributed": false,
+  "GeneratedSourceBasename": "exec-18ca95cd-4329-4b06-9331-73eb1a041029.png",
+  "OutputSHA256": "CA93E4599E4EC22AB1F2EF102E621C76BF6722EA8BC8456A0B45F0E0B74513DC",
+  "SourceRecordBasename": "long-xiang-refined-sad2.json",
+  "SourceRecordSHA256": "67D18BB8D8A88A2C558A9994FB62EAEDC7B6E654FD332ECDADBB5DD901C780D4",
+  "RawGeneratedCopyVerified": true,
+  "VisualReview": "passed before integration; runtime acceptance is separate",
+  "ImageMetadata": {
+    "Width": 962,
+    "Height": 1635,
+    "Mode": "RGBA",
+    "AlphaMin": 0,
+    "AlphaMax": 255,
+    "AlphaBoundsGt16": [
+      0,
+      73,
+      962,
+      1635
+    ],
+    "Bytes": 2053102
+  }
+}

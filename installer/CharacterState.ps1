@@ -3,7 +3,7 @@ function Copy-ZHObject([object]$Value) { $Value|ConvertTo-Json -Depth 20|Convert
 function Set-ZHProperty([object]$Object,[string]$Name,[object]$Value) { $Object|Add-Member NoteProperty $Name $Value -Force }
 function Get-ZHRecordCharacter([string]$Path) {
     if($Path.StartsWith($script:PluginRelative+'\Portraits\',[StringComparison]::OrdinalIgnoreCase)){return 'player'}
-    foreach($id in @('tang-buyi','xiahou-lan')){if($Path.StartsWith((Get-ZHCharacterFolder $id)+'\',[StringComparison]::OrdinalIgnoreCase)){return $id}}
+    foreach($id in @($script:CharacterIds|Where-Object{$_-ne 'player'})){if($Path.StartsWith((Get-ZHCharacterFolder $id)+'\',[StringComparison]::OrdinalIgnoreCase)){return $id}}
     return $null
 }
 function Assert-ZHManagedTarget([string]$Path) {
@@ -24,7 +24,7 @@ function Get-ZHSelectionText([object[]]$Characters) {
         if($state.Count-ne 1){throw '安装记录缺少或重复角色。'}
         [ordered]@{Id=$id;Enabled=($state[0].SelectedVariantId-ne 'original')}
     })
-    [ordered]@{SchemaVersion=1;Characters=$items}|ConvertTo-Json -Depth 5
+    [ordered]@{SchemaVersion=2;Characters=$items}|ConvertTo-Json -Depth 5
 }
 function Assert-ZHInstalledFiles([object]$Paths,[object]$Manifest) {
     if($Manifest.Status-ne 'installed'){throw '安装事务尚未完成，请先使用恢复入口。'}
@@ -69,7 +69,7 @@ function ConvertTo-ZHCharacterState([object]$Paths,[object]$Manifest,[object]$Ca
             }
             [pscustomobject]@{Id=$id;SelectedVariantId=$selected;InstalledPayload=$payload}
         })
-        Set-ZHProperty $result 'Characters' $characters;Set-ZHProperty $result 'RuntimeProtocol' 1
+        Set-ZHProperty $result 'Characters' $characters;Set-ZHProperty $result 'RuntimeProtocol' 2
         foreach($record in $result.OwnedFiles){
             Set-ZHProperty $record 'InstalledPresent' $true
             $id=Get-ZHRecordCharacter $record.RelativePath;Set-ZHProperty $record 'CharacterId' $id
@@ -79,10 +79,13 @@ function ConvertTo-ZHCharacterState([object]$Paths,[object]$Manifest,[object]$Ca
         Set-ZHProperty $result 'LegacyPayloadFingerprint' $known.PayloadFingerprint
         foreach($name in @('VariantId','VariantDisplayName','PayloadFingerprint')){$result.PSObject.Properties.Remove($name)}
     }else{$result=Copy-ZHObject $Manifest}
-    if($result.RuntimeProtocol-ne 1 -or @($result.Characters).Count-ne 3){throw '多角色安装记录协议无效。'}
+    # Validate the complete historical shape before extending it. Missing members
+    # of protocol 2 are corruption, never an invitation to silently reset choices.
+    $expectedIds=if($result.RuntimeProtocol-eq 1){$script:LegacyCharacterIds}elseif($result.RuntimeProtocol-eq 2){$script:CharacterIds}else{throw '多角色安装记录协议无效。'}
+    if(@($result.Characters).Count-ne @($expectedIds).Count){throw '多角色安装记录协议无效。'}
     $seen=@{}
     foreach($character in $result.Characters){
-        if($character.Id-notin $script:CharacterIds -or $seen.ContainsKey($character.Id)){throw '安装记录含未知或重复角色。'};$seen[$character.Id]=$true
+        if($character.Id-notin $expectedIds -or $seen.ContainsKey($character.Id)){throw '安装记录含未知或重复角色。'};$seen[$character.Id]=$true
         $definition=@($Catalog.Characters|Where-Object Id -eq $character.Id)[0]
         if(@($definition.Variants|Where-Object Id -eq $character.SelectedVariantId).Count-ne 1){throw '安装记录的角色外观不在此包内。'}
         $images=@($result.OwnedFiles|Where-Object{$_.CharacterId-eq $character.Id -and $_.RelativePath-match '\\Portraits\\[^\\]+\.png$' -and $_.InstalledPresent})
@@ -93,15 +96,20 @@ function ConvertTo-ZHCharacterState([object]$Paths,[object]$Manifest,[object]$Ca
         if($variant.Count-ne 1 -or $variant[0].Kind-ne 'custom' -or $fingerprint-ne $variant[0].AssetFingerprint -or $fingerprint-ne $character.InstalledPayload.AssetFingerprint -or ($character.SelectedVariantId-ne 'original' -and $character.SelectedVariantId-ne $character.InstalledPayload.VariantId)){throw '角色文件的完整指纹或启用状态不匹配，未自动接管。'}
     }
     if($Manifest.SchemaVersion-eq 4){
+        if(@($records|Where-Object{$_.CharacterId -and $_.CharacterId-notin $expectedIds}).Count){throw '安装记录协议与受管角色文件不一致。'}
         $configRelative=$script:PluginRelative+'\characters.json'
         if(@($records|Where-Object{$_.RelativePath-eq $configRelative -and $_.InstalledPresent}).Count-ne 1){throw '多角色安装缺少受管选择配置。'}
         $config=Get-Content -LiteralPath (Get-ZHChild $Paths.Game $configRelative) -Raw -Encoding UTF8|ConvertFrom-Json
-        if($config.SchemaVersion-ne 1 -or @($config.Characters).Count-ne 3){throw '运行时角色开关无效。'};$configIds=@{}
+        if($config.SchemaVersion-ne $result.RuntimeProtocol -or @($config.Characters).Count-ne @($expectedIds).Count){throw '运行时角色开关无效。'};$configIds=@{}
         foreach($entry in $config.Characters){
-            if($entry.Id-notin $script:CharacterIds -or $configIds.ContainsKey($entry.Id) -or $entry.Enabled-isnot [bool]){throw '运行时角色开关未知或重复。'};$configIds[$entry.Id]=$true
+            if($entry.Id-notin $expectedIds -or $configIds.ContainsKey($entry.Id) -or $entry.Enabled-isnot [bool]){throw '运行时角色开关未知或重复。'};$configIds[$entry.Id]=$true
             $state=@($result.Characters|Where-Object Id -eq $entry.Id)[0]
             if($entry.Enabled-ne ($state.SelectedVariantId-ne 'original')){throw '运行时角色开关与安装记录不同。'}
         }
+    }
+    if($result.RuntimeProtocol-eq 1){
+        foreach($id in $script:CharacterIds){if($id-notin $script:LegacyCharacterIds){$result.Characters+=@([pscustomobject]@{Id=$id;SelectedVariantId='original';InstalledPayload=$null})}}
+        $result.RuntimeProtocol=2
     }
     return $result
 }
@@ -126,7 +134,7 @@ function Get-PortraitManagerState {
             if($manifest.SchemaVersion-notin @(3,4)){$result.Status='LegacyUnsupported';throw '早期私人记录请先使用卸载入口恢复，不能自动迁移。'}
             if($manifest.Status-ne 'installed'){$result.Status='RecoveryRequired';throw '安装事务尚未完成，请先恢复。'}
             $result.Status='Modified';$state=ConvertTo-ZHCharacterState $paths $manifest $catalog
-            $result.Status='Installed';$result.RequiresMigration=($manifest.SchemaVersion-eq 3);$result.CanApply=$catalog.PackageReady;$result.Message='已核验各角色当前外观。'
+            $result.Status='Installed';$result.RequiresMigration=($manifest.SchemaVersion-eq 3 -or $manifest.RuntimeProtocol-ne $catalog.RuntimeProtocol);$result.CanApply=$catalog.PackageReady;$result.Message='已核验各角色当前外观。'
         }
     }catch{$result.Message=$_.Exception.Message;$result.CanApply=$false}
     $result.Characters=@(foreach($definition in $catalog.Characters){

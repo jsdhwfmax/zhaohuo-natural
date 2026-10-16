@@ -1,0 +1,41 @@
+{
+  "SchemaVersion": 1,
+  "CharacterId": "yu-xiaomei",
+  "VariantId": "refined",
+  "Name": "shy4.png",
+  "GenerationMethod": "builtin imagegen",
+  "PixelPostProcessing": false,
+  "Prompt": "Use case: precise-object-edit. Make ONE transparent dialogue portrait sprite for 活侠传 / Legend of Mortal. Image 1 is the ORIGINAL TARGET expression/gesture/props reference; Image 2 is the newly approved beauty redesign and SAME CHARACTER identity/style/costume reference. Repaint Image 1 using the precise face, hair, age, proportions and costume rendering of Image 2. Crucially reproduce Image 1's expression, eye direction, mouth, hands, pose, original props and all meaningful sweat/tears/blood/comic marks; do NOT simply repeat the calm pose or smile from Image 2. Match the original restrained hand-drawn wuxia game style: rough black sketch contours, dry-brush edges, visible matte watercolor and colored-pencil grain, not glossy modern anime. Preserve character's age and modest costume/body proportions; no sexualization or additional exposed skin. Grey/color streaks outside the character in Image 1 are raw texture export artifacts, do not reproduce them. Exactly one complete isolated character, TRUE transparent background, natural-sized head, whole hair/hands/side silhouette fitted within at least 5% transparent side margins; only the same lower skirt crop at bottom is allowed. No new props, background, text, watermark, frame, checkerboard, 3D or photorealism. Character: Yu Xiaomei 虞小梅; same youthful age appearance as both references, dark high ponytail with red/gold knot ornament unless target explicitly uses loose hair, white red-trimmed robe, brown waist sash/bracers, coral-red skirt. No body enhancement. Target expression: shy4. In-game labels: 特殊4/陶醉. Innocent goofy daydreaming comic expression: dreamy open eyes with small pink FLOWER-SHAPED pupil highlights, flushed cheeks, a tiny tongue peeking at the mouth corner like a silly cartoon grin. Both hands tucked behind back. Preserve ponytail, original posture, fully modest clothes/body; no sexualized pose or treatment.",
+  "References": [
+    {
+      "LogicalName": "local-game-reference/shy4.png",
+      "Kind": "original-game-reference-not-distributed"
+    },
+    {
+      "LogicalName": "generated-design/yu-xiaomei/refined/normal.png",
+      "Kind": "generated-design-reference"
+    }
+  ],
+  "OriginalGameCanonicalPath": "assets/__project/images/characters/girl5_小梅/shy4.png",
+  "OriginalGameReferenceDistributed": false,
+  "GeneratedSourceBasename": "exec-df3d8a15-1994-449f-b965-e179012905eb.png",
+  "OutputSHA256": "EC846EED8E6FF216B833DE5CEFD4A1FC90B2024252BDE855A08B60EBA05E8F06",
+  "SourceRecordBasename": "yu-xiaomei-refined-shy4.json",
+  "SourceRecordSHA256": "A95BA5F4AEBBD8DC8BA3FD21853A11D38BF043114B47FB1C88BFCE901A35DD10",
+  "RawGeneratedCopyVerified": true,
+  "VisualReview": "passed before integration; runtime acceptance is separate",
+  "ImageMetadata": {
+    "Width": 990,
+    "Height": 1589,
+    "Mode": "RGBA",
+    "AlphaMin": 0,
+    "AlphaMax": 255,
+    "AlphaBoundsGt16": [
+      51,
+      10,
+      972,
+      1589
+    ],
+    "Bytes": 1916871
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "SchemaVersion": 1,
+  "CharacterId": "tang-buyi",
+  "VariantId": "female",
+  "Name": "nervous1.png",
+  "GenerationMethod": "builtin imagegen",
+  "PixelPostProcessing": false,
+  "Prompt": "Use case: identity-preserve. Asset: transparent dialogue portrait for Legend of Mortal, one character only. Image 1 is the ORIGINAL POSE/EXPRESSION reference, NOT the desired gender or face. Image 2 is the APPROVED FEMALE MASTER: its mature adult woman's exact face, body proportions, very full bust, flowing hairstyle, accessories and blue Tangmen clothing design have highest priority. Completely redraw Image 1 as this same adult woman from Image 2. Keep the original emotion, head direction, gesture, hand positions, props and any sweat/blood/comic effects. Do NOT copy Image 2's neutral smile into every expression. Retain the master female identity and voluptuous fully clothed silhouette, never revert to the original male jaw/body. Keep clothes opaque and properly closed, no nudity. Preserve the game's rough ink-pencil contours and textured watercolor/gouache fabric, not glossy 3D, photo skin, modern anime or chibi. Image 1's colored hidden alpha RGB streaks are NOT a background and must not be drawn. True alpha transparent background. Frame one complete usable portrait with all hair, hands, sleeves and props safely inside side/top edges with ~4% transparent margins, bottom robe may naturally cut at bottom. Keep natural small head-to-body proportion. No text, labels, panels, duplicates or watermark. SPECIFIC EMOTION: Worried uncertain look, slightly open oval mouth and clear large sweat drop on cheek, brows anxious; not smiling. IMPORTANT framing: expand the canvas on both sides rather than crop; preserve complete sweeping sleeve tip on right, all fingers on left and top hair.",
+  "References": [
+    {
+      "LogicalName": "local-game-reference/nervous1.png",
+      "Kind": "original-game-reference-not-distributed",
+      "RecordedSHA256": "121DCD81ABAD0D8BD2A93E2ECD8AB329A44674B6938081F5DAB49E78C707254D",
+      "Role": "original pose/emotion edit target"
+    },
+    {
+      "LogicalName": "generated-design/tang-buyi/female/normal.png",
+      "Kind": "generated-design-reference",
+      "RecordedSHA256": "FE491C8DDADB3A46607DFFF137A7F6DB79F0E55851E22F82789FA0BAC15FF0ED",
+      "Role": "approved female identity/body/costume master"
+    }
+  ],
+  "OriginalGameCanonicalPath": "assets/__project/images/characters/brother1/nervous1.png",
+  "OriginalGameReferenceDistributed": false,
+  "GeneratedSourceBasename": "exec-e8930208-b49e-4214-8f29-b7c177d4ad58.png",
+  "OutputSHA256": "471D10822C0D273B16E1B92A81A55C88DD34E34A15B6028BB1972F18155382C8",
+  "SourceRecordBasename": "tang-buyi-female-nervous1.json",
+  "SourceRecordSHA256": "7C08CD1F03EBB558A0165C4B3D282B64F4ABD6BB9E137922FEF283F581DD6FA6",
+  "RawGeneratedCopyVerified": true,
+  "VisualReview": "passed before integration; runtime acceptance is separate",
+  "ImageMetadata": {
+    "Width": 1096,
+    "Height": 1435,
+    "Mode": "RGBA",
+    "AlphaMin": 0,
+    "AlphaMax": 255,
+    "AlphaBoundsGt16": [
+      0,
+      96,
+      1091,
+      1435
+    ],
+    "Bytes": 2106849
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "SchemaVersion": 1,
+  "CharacterId": "yu-xiaomei",
+  "VariantId": "refined",
+  "Name": "nervous1.png",
+  "GenerationMethod": "builtin imagegen",
+  "PixelPostProcessing": false,
+  "Prompt": "Use case: precise-object-edit. Make ONE transparent dialogue portrait sprite for 活侠传 / Legend of Mortal. Image 1 is the ORIGINAL TARGET expression/gesture/props reference; Image 2 is the newly approved beauty redesign and SAME CHARACTER identity/style/costume reference. Repaint Image 1 using the precise face, hair, age, proportions and costume rendering of Image 2. Crucially reproduce Image 1's expression, eye direction, mouth, hands, pose, original props and all meaningful sweat/tears/blood/comic marks; do NOT simply repeat the calm pose or smile from Image 2. Match the original restrained hand-drawn wuxia game style: rough black sketch contours, dry-brush edges, visible matte watercolor and colored-pencil grain, not glossy modern anime. Preserve character's age and modest costume/body proportions; no sexualization or additional exposed skin. Grey/color streaks outside the character in Image 1 are raw texture export artifacts, do not reproduce them. Exactly one complete isolated character, TRUE transparent background, natural-sized head, whole hair/hands/side silhouette fitted within at least 5% transparent side margins; only the same lower skirt crop at bottom is allowed. No new props, background, text, watermark, frame, checkerboard, 3D or photorealism. Character: Yu Xiaomei 虞小梅; same youthful age appearance as both references, dark high ponytail with red/gold knot ornament, white red-trimmed robe, brown waist sash/bracers, coral-red skirt. No body enhancement. Target expression: nervous1. In-game labels: 汗. Uneasy expression: open wary eyes, small tense closed frown, one clear sweat drop on cheek. Her hand on image-right holds/twirls a lock of hair beside the collar, the other arm remains behind her body. Preserve hand-at-hair gesture, no new prop.",
+  "References": [
+    {
+      "LogicalName": "local-game-reference/nervous1.png",
+      "Kind": "original-game-reference-not-distributed"
+    },
+    {
+      "LogicalName": "generated-design/yu-xiaomei/refined/normal.png",
+      "Kind": "generated-design-reference"
+    }
+  ],
+  "OriginalGameCanonicalPath": "assets/__project/images/characters/girl5_小梅/nervous1.png",
+  "OriginalGameReferenceDistributed": false,
+  "GeneratedSourceBasename": "exec-2f097d40-8439-4b41-ab48-e13519e2144d.png",
+  "OutputSHA256": "948CEF898956CB6F145E72EC8051D12420FCB4857A81DC75C1282D0717D59DE0",
+  "SourceRecordBasename": "yu-xiaomei-refined-nervous1.json",
+  "SourceRecordSHA256": "A420EA369CD7E7F0D11553D054495CA565BCBE678D530E55347F58251B69D0FB",
+  "RawGeneratedCopyVerified": true,
+  "VisualReview": "passed before integration; runtime acceptance is separate",
+  "ImageMetadata": {
+    "Width": 990,
+    "Height": 1589,
+    "Mode": "RGBA",
+    "AlphaMin": 0,
+    "AlphaMax": 255,
+    "AlphaBoundsGt16": [
+      40,
+      11,
+      985,
+      1589
+    ],
+    "Bytes": 1844409
+  }
+}

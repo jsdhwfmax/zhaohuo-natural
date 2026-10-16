@@ -1,6 +1,6 @@
 #requires -Version 5.1
 [CmdletBinding()]
-param()
+param([string]$OutputPath)
 $ErrorActionPreference='Stop';Set-StrictMode -Version 2.0
 $repo=Split-Path -Parent $PSScriptRoot
 $module=Import-Module (Join-Path $repo 'installer\ZhaoHuoInstaller.psm1') -Force -PassThru
@@ -28,7 +28,7 @@ foreach($character in $catalog.Characters){
     Write-Text (Join-Path $package $character.LayoutSourcePath) $layout;$character.LayoutSha256=Hash (Join-Path $package $character.LayoutSourcePath)
     foreach($variant in $character.Variants){
         if($variant.Kind-eq 'original'){continue}
-        $fallback=if($character.Id-eq 'tang-buyi'){@('hand')}elseif($character.Id-eq 'xiahou-lan'){@('white')}else{@()}
+        $fallback=@($variant.OriginalFallback)
         $files=@(foreach($name in $names){if($name-in $fallback){continue};$file=Join-Path $package ($variant.SourcePath+'/'+$name+'.png');Write-Text $file ('INERT SHARED-UPDATE FIXTURE PNG '+$character.Id+'/'+$variant.Id+'/'+$name);[pscustomobject]@{Name=($name+'.png');Sha256=(Hash $file)}})
         $variant.Files=$files;$variant.OriginalFallback=@($fallback);$variant.AssetFingerprint=& $module {param($Id,$Files) Get-ZHCharacterFingerprint $Id $Files} $character.Id $files;$variant.Ready=$true
     }
@@ -78,5 +78,6 @@ Assert (-not(Test-Path -LiteralPath (Join-Path $game $plugin))-and(Get-Content -
 function CodeHash([string]$Path){$text=[IO.File]::ReadAllText($Path).TrimStart([char]0xFEFF).Replace("`r`n","`n").Replace("`r","`n");& $module {param($Text) Get-ZHTextHash $Text} $text}
 $code=@('installer/ZhaoHuoInstaller.psm1','installer/AppearanceManager.ps1','installer/VariantSupport.ps1','installer/CharacterCatalog.ps1','installer/CharacterState.ps1','installer/CharacterManager.ps1','installer/CharacterTransactions.ps1','tests/Test-CharacterManager.ps1','tests/Test-CharacterSharedUpdate.ps1')
 $summary=[ordered]@{Passed=$true;AssertionCount=$checks.Count;PowerShell=$PSVersionTable.PSVersion.ToString();DurationSeconds=[Math]::Round(([DateTime]::UtcNow-$start).TotalSeconds,2);ActualGameRun=$false;RealGameFilesModified=$false;ProductionTargetDllSha256=$productionTargetDll;CodeHashAlgorithm='SHA256-UTF8-noBOM-LF-v1';CodeHashes=@($code|ForEach-Object{[pscustomobject]@{Path=$_;Sha256=(CodeHash (Join-Path $repo $_))}});Checks=$checks.ToArray();Scope='Synthetic inert schema4 game, DLL and PNG fixtures plus official offline BepInEx runtime; same-selection shared DLL update, commit-failure rollback, interrupted recovery, no-op and uninstall. Production installer code is unchanged; fixture-only accepted hashes are set only in this isolated PowerShell process. No game assembly or real game installation is executed.'}
-Save-Json (Join-Path $PSScriptRoot 'character-shared-update-results.json') $summary
+if(-not $OutputPath){$OutputPath=Join-Path $PSScriptRoot 'character-shared-update-results.json'}
+Save-Json $OutputPath $summary
 Write-Host ('ALL '+$checks.Count+' SHARED DLL UPDATE ASSERTIONS PASSED')

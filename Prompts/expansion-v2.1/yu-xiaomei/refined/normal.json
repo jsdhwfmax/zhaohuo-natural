@@ -1,0 +1,37 @@
+{
+  "SchemaVersion": 1,
+  "CharacterId": "yu-xiaomei",
+  "VariantId": "refined",
+  "Name": "normal.png",
+  "GenerationMethod": "builtin imagegen",
+  "PixelPostProcessing": false,
+  "Prompt": "Use case: precise-object-edit. Asset: ONE transparent dialogue portrait sprite for 活侠传 / Legend of Mortal. Image 1 gives the game's handmade ink/watercolor style, pose and main costume colors; any gray color stripes outside the character are export artifacts and MUST NOT be rendered. True transparent alpha background. Rough uneven black sketch lines, dry brush contours, matte watercolor/pencil grain and restrained cel-like shading on face and clothes. Single character at the reference camera angle with natural head-to-body proportion; whole head, both hands and all side costume elements fully fit inside at least 5 percent transparent left/right margins, upper-thigh/bottom garment crop allowed. Tall portrait. No backdrop, text, labels, frame, watermark, glossy 3D, photorealism or smooth plastic rendering. Refine the SAME Yu Xiaomei 虞小梅 into a more delicately beautiful lively Chinese wuxia heroine, retaining the original age appearance, youthful energetic and clever personality, open friendly neutral-speaking mouth, bright reddish-brown expressive eyes. Graceful natural face, small straight nose, nuanced lips and brows, lightly warm cheeks, original naturally proportioned body. Preserve dark brown-black long hair in a high ponytail, full uneven bangs and red/gold knot ornament, white opaque outer garment with short shoulder cape, red-trimmed crossing collar, long opaque white sleeves, dark brown broad waist sash and bracers, coral-red skirt. Preserve both lowered hands and original stance. Keep character age and modest covered costume identical, no body enhancement, sexualization, makeup, new jewelry or props.",
+  "References": [
+    {
+      "LogicalName": "local-game-reference/normal.png",
+      "Kind": "original-game-reference-not-distributed"
+    }
+  ],
+  "OriginalGameCanonicalPath": "assets/__project/images/characters/girl5_小梅/normal.png",
+  "OriginalGameReferenceDistributed": false,
+  "GeneratedSourceBasename": "exec-5c4f2d9f-a404-4166-b28e-bfc6ca07a745.png",
+  "OutputSHA256": "7612E4A1AB5C08162F7365702DF44886149E26128BE6C0BACBB7F23663854BB4",
+  "SourceRecordBasename": "yu-xiaomei-refined-normal.json",
+  "SourceRecordSHA256": "DC27F7DD78C4888B44FC8967F212D64377232AF6D201586EE4EDAAAE8F07CCE1",
+  "RawGeneratedCopyVerified": true,
+  "VisualReview": "passed before integration; runtime acceptance is separate",
+  "ImageMetadata": {
+    "Width": 990,
+    "Height": 1589,
+    "Mode": "RGBA",
+    "AlphaMin": 0,
+    "AlphaMax": 255,
+    "AlphaBoundsGt16": [
+      31,
+      13,
+      975,
+      1589
+    ],
+    "Bytes": 1885536
+  }
+}

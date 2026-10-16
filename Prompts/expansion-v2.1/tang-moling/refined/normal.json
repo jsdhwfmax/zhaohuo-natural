@@ -1,0 +1,37 @@
+{
+  "SchemaVersion": 1,
+  "CharacterId": "tang-moling",
+  "VariantId": "refined",
+  "Name": "normal.png",
+  "GenerationMethod": "builtin imagegen",
+  "PixelPostProcessing": false,
+  "Prompt": "Use case: precise-object-edit. Edit only the canvas composition of this transparent game portrait: preserve exactly the same character face, hair, costume, expression, pose, original age and handmade ink/watercolor drawing. The right hand near lower-right edge is cut by the canvas: render the entire hand and wrist bracelet fully visible with clear transparent breathing room to the right (minimum 5 percent), and leave transparent margin around both shoulders and sleeves. Keep the lower skirt cropped at bottom like a dialogue portrait. Keep head-to-body proportions identical; do not enlarge or change the character. Taller portrait canvas, slightly wider to fit full silhouette. TRUE transparent alpha background, no checkerboard, text, frame, scenery or extra details.",
+  "References": [
+    {
+      "LogicalName": "generated-design/tang-moling/refined/normal.png",
+      "Kind": "generated-design-reference"
+    }
+  ],
+  "OriginalGameCanonicalPath": "assets/__project/images/characters/sister/normal.png",
+  "OriginalGameReferenceDistributed": false,
+  "GeneratedSourceBasename": "exec-939eef65-9d42-45f2-ab13-7e85233cd7b0.png",
+  "OutputSHA256": "32413712D09C78985CBEE5FD1CA22C36740CE9841E1FFD5DD5C97735055A7DF8",
+  "SourceRecordBasename": "tang-moling-refined-normal-margin-v2.json",
+  "SourceRecordSHA256": "4C9504DFCBBE3C584F8274421E7E3CEA73811A43BCE2F299513D6773A6618DB0",
+  "RawGeneratedCopyVerified": true,
+  "VisualReview": "passed before integration; runtime acceptance is separate",
+  "ImageMetadata": {
+    "Width": 816,
+    "Height": 1927,
+    "Mode": "RGBA",
+    "AlphaMin": 0,
+    "AlphaMax": 255,
+    "AlphaBoundsGt16": [
+      19,
+      331,
+      816,
+      1927
+    ],
+    "Bytes": 1905073
+  }
+}

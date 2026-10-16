@@ -160,10 +160,11 @@ namespace ZhaoHuoNatural
         {
             if (!configurationValid) throw new InvalidOperationException("Invalid character configuration cannot pass diagnostics.");
             characterDiagnosticRows.Add("character\tidentity\texpression\tload_path\tstatus\twidth\theight\tui_sprite_match");
-            foreach (string role in new[] { "tang-buyi", "xiahou-lan" })
+            foreach (CharacterPolicy.RoleBinding binding in CharacterPolicy.Bindings.Where(x => x.Id != "player"))
             {
-                string gameId = role == "tang-buyi" ? "brother1" : "girl6";
-                string objectName = role == "tang-buyi" ? "唐門_大師兄" : "崆峒_小蘭";
+                string role = binding.Id;
+                string gameId = binding.Identities[0].Id;
+                string objectName = binding.Identities[0].Name;
                 var locations = new Dictionary<string, string>(StringComparer.Ordinal);
                 foreach (var locator in Addressables.ResourceLocators)
                     foreach (object key in locator.Keys)
@@ -176,24 +177,26 @@ namespace ZhaoHuoNatural
                             if (expression != null && !locations.ContainsKey(expression)) locations.Add(expression, key.ToString());
                         }
                     }
-                if (locations.Count != 16) throw new InvalidOperationException("Expected 16 verified base resources for " + role + "; found " + locations.Count);
-                yield return VerifyCharacterFixture(role, gameId, objectName, locations, false);
-                string[] aliasIds = role == "tang-buyi" ? new[] { "brother1_2", "brother1_0" } : new[] { "girl6_1" };
-                string[] aliasNames = role == "tang-buyi" ? new[] { "唐門_大師兄2", "唐門_大師兄_隱" } : new[] { "崆峒_小蘭_早" };
-                for (int i = 0; i < aliasIds.Length; i++)
-                    yield return VerifyCharacterFixture(role, aliasIds[i], aliasNames[i], new Dictionary<string, string> { { "normal", locations["normal"] } }, false);
+                if (locations.Count != binding.BaseResourceCount) throw new InvalidOperationException("Expected " + binding.BaseResourceCount + " verified base resources for " + role + "; found " + locations.Count);
+                yield return VerifyCharacterFixture(role, gameId, objectName, locations, false, true);
+                foreach (CharacterPolicy.IdentityBinding alias in binding.Identities.Skip(1))
+                {
+                    KeyValuePair<string, string> sample = locations.OrderBy(x => x.Key == "normal" ? "" : x.Key, StringComparer.Ordinal)
+                        .FirstOrDefault(x => CharacterPolicy.ExpressionForIdentityAsset(alias.Id, alias.Name, CanonicalAsset(x.Value)) == x.Key);
+                    if (sample.Key == null) throw new InvalidOperationException("Alias diagnostics require a verified shared resource: " + role + "/" + alias.Id);
+                    yield return VerifyCharacterFixture(role, alias.Id, alias.Name, new Dictionary<string, string> { { sample.Key, sample.Value } }, false);
+                }
                 // Same named sprite, correct adult asset, but unapproved identity.
                 // This must remain original even though the base asset is loaded.
-                string rejectedId = role == "tang-buyi" ? "brother1_young" : "girl6_3";
-                string rejectedName = role == "tang-buyi" ? "唐門_大師兄_少年" : "崆峒_小蘭_幼年";
-                yield return VerifyCharacterFixture(role, rejectedId, rejectedName, new Dictionary<string, string> { { "normal", locations["normal"] } }, true);
+                foreach (CharacterPolicy.IdentityBinding rejected in binding.RejectedIdentities)
+                    yield return VerifyCharacterFixture(role, rejected.Id, rejected.Name, new Dictionary<string, string> { { "normal", locations["normal"] } }, true);
                 yield return VerifyCharacterFixture(role, "__scope_probe", objectName, new Dictionary<string, string> { { "normal", locations["normal"] } }, true);
             }
             File.WriteAllLines(Path.Combine(diagnosticDir, "characters.tsv"), characterDiagnosticRows.ToArray(), Encoding.UTF8);
             File.WriteAllLines(Path.Combine(diagnosticDir, "characters-summary.txt"), characterDiagnosticSummary.ToArray(), Encoding.UTF8);
         }
 
-        private IEnumerator VerifyCharacterFixture(string role, string gameId, string objectName, Dictionary<string, string> locations, bool mustRemainOriginal)
+        private IEnumerator VerifyCharacterFixture(string role, string gameId, string objectName, Dictionary<string, string> locations, bool mustRemainOriginal, bool testBulk = false)
         {
             Stage("character fixture " + role + "/" + gameId);
             GameObject go = null, canvasObject = null;
@@ -262,7 +265,7 @@ namespace ZhaoHuoNatural
                     if (controller.GetPortrait(controller.GetPortraitName(expression)) != before) throw new InvalidOperationException("Character cache changed on repeat load.");
                 }
                 characterDiagnosticSummary.Add(role + "/" + gameId + " resources=" + locations.Count + " replaced=" + replaced + " fallback=" + (locations.Count - replaced) + " scope=" + (mustRemainOriginal ? "negative" : "approved") + " PASS");
-                if (locations.Count == 16 && !mustRemainOriginal)
+                if (testBulk && !mustRemainOriginal)
                 {
                     // Bulk loading creates no UI Images in the original method. Test
                     // its returned portrait list on a fresh controller separately.

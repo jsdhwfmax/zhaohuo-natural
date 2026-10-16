@@ -1,26 +1,53 @@
 # 插件源码与构建
 
-插件源码由 `Plugin.cs`、`CharacterPolicy.cs`、`CharacterConfigurationJson.cs` 和 `CharacterSupport.cs` 组成。直接安装 Release 美化包不需要编译器。
+插件源码包括 `Plugin.cs`、`CharacterPolicy.cs`、`CharacterConfigurationJson.cs` 和 `CharacterSupport.cs`。安装正式 Release 包不需要编译器。v2.1 的最终发行状态见 [README](../README.md)；离线测试通过不能代替新 DLL 的实际游戏验收。
 
-v2.0.0 保持原插件 GUID 和安装目录，增加三角色独立配置。`characters.json` 只选择 player、tang-buyi、xiahou-lan 是否启用；真实游戏 ID、对象名和资产范围固定在 `CharacterPolicy.cs`，不会由外观配置扩展。缺配置沿用旧 player-only；存在但无效的配置会禁用全部自定义替换并记录错误。NPC 图片和布局按角色目录隔离；缺图回退原画。
+## 七角色配置
 
-配置使用纯托管的受限 JSON 解析器，不依赖 Unity 原生序列化。字段必须完整、类型正确且不能重复；未知字段或角色、尾随内容和过大输入均会被拒绝。`Tests/Test-CharacterConfiguration.ps1` 覆盖安装器输出、八种角色开关组合和非法输入；可通过 `-InstalledConfiguration` 只读核对实际安装配置。[52 项解析回归记录](../verification/character-configuration-parser.json) 不等同于游戏内验收。
+v2.1 保持原插件 GUID `local.zhaohuo.naturalportrait` 和安装目录，用共享 DLL 处理七位角色。新安装器写入 `characters.json` 的 `SchemaVersion: 2`，必须完整包含：
 
-重新构建需要 .NET SDK、已购买并安装的受支持游戏，以及 BepInEx 6.0.0-be.692 Mono 核心。先将游戏路径保存到变量，再运行：
+`player`、`tang-buyi`、`xiahou-lan`、`tang-moling`、`long-xiang`、`yu-xiaomei`、`tang-zheng`。
 
-```powershell
+每项仅含 `Id` 和布尔值 `Enabled`。外观款式由安装器选择并复制到活动目录；运行时配置不扩展身份或资源白名单。
+
+新 DLL 仍支持 `SchemaVersion: 1` 且恰好包含旧三角色的配置，其余四位保持关闭。缺配置沿用旧 player-only 行为；配置存在但格式、字段、角色数量或类型无效时，禁用全部自定义替换并记录错误。Schema 1/2 不能混写，也不能用部分新角色列表代替完整配置。
+
+安装记录继续使用 Schema 4，运行协议从 1 升至 2。升级先验证原记录、原配置和所有受管文件，再在同一可回滚事务中更新 DLL 与配置。旧角色选择、首次安装编号和最初备份保留，新角色默认关闭，随后应用用户指定角色的选择。早期私人 Schema 1/2 安装记录不等同于运行配置版本，不自动迁移。
+
+## 目录与匹配
+
+赵活继续使用平铺 `Portraits`、`portrait-map.txt` 和 `portrait-layout.tsv`。NPC 使用 `Characters/<stable-id>/Portraits` 及同角色的 `portrait-layout.tsv`。没有跨角色的同名表情回退。
+
+真实游戏 ID、对象名、允许的 Addressables 路径及原画回退名单固定在 `CharacterPolicy.cs`。角色配置不能扩大这些范围。运行时核对加载 handle 与实际 Sprite 来源；来源不明、缺图或 NPC 缺合法布局时保留原画。
+
+唐布衣 `hand`、夏侯兰 `white`、唐默铃 `one_hand`、龙湘 `black`、虞小梅 `black/special5/special5_2` 被明确保留原画，即使目录里误放同名 PNG 也不替换。虞小梅资源 `norseblood` 保留游戏的原始拼写。师兄女版只选择不同图片，不改变游戏逻辑或人物称呼。
+
+## 构建与测试
+
+重新构建需要 .NET SDK、已购买并安装的受支持游戏，以及随包提供的 BepInEx 6.0.0-be.692 Mono 核心：
+
+~~~powershell
 $gamePath = Read-Host '请输入 Steam 游戏目录（包含 Mortal.exe 的文件夹）'
 powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\Source\build.ps1 -GamePath $gamePath
-```
+~~~
 
-默认输出到仓库 `BepInEx/plugins/ZhaoHuoNatural`。编译仅引用本机游戏库，仓库不分发游戏程序集。官方 BepInEx 依赖与对应来源位于 `Dependencies`。
+默认输出到仓库 `BepInEx/plugins/ZhaoHuoNatural`。编译仅引用本机游戏库，仓库不分发游戏程序集。官方依赖与来源位于 `Dependencies`。
 
-发布脚本会根据实际文件生成完整校验清单，并记录离线探针与基线文件的 SHA-256。修改和重编译插件后应重新建立相符基线并验证；旧包升级必须由安装器在验证现有载荷后执行事务迁移，不能手动覆盖 DLL。开发构建的符号文件不随玩家版分发。
+配置使用纯托管受限 JSON 解析器，不依赖 Unity 原生序列化。当前 PS5.1 配置解析套件通过 195 项，包含旧三角色、新七角色开关组合以及非法输入；可选 `-InstalledConfiguration` 只读样本检查会增加一项。身份与资源策略套件通过 1968 项，包括 110 项禁止替换或允许替换的判定；元数据检查解析 23 个游戏成员引用。以上均为离线证据。
 
-v1.0.2 更新安装器并附带离线兼容检查工具与基线，插件版本仍为 `1.0.0`，美术与映射未变。公开 v1.0.0、v1.0.1 已正常安装且文件完整时，可直接用 v1.0.2 完整包检查或安装，返回已安装而不改写原安装记录。检查工具属于外部安装包，不会通过插件在每次启动游戏时运行。打包入口为[仓库中的 Build-Release.ps1](https://github.com/jsdhwfmax/zhaohuo-natural/blob/main/scripts/Build-Release.ps1)。
+~~~powershell
+.\Source\Tests\Test-CharacterConfiguration.ps1 -ReportPath .\parser-result.json
+.\Source\Tests\Test-CharacterPolicy.ps1 -EvidenceRoot .\policy-results
+~~~
 
-离线检查使用随包提供的 Mono.Cecil 静态读取程序集和固定基线，不执行游戏程序集，不联网获取游戏文件。它只判断是否满足保守兼容条件，不修改 IL、不生成补丁，也不将未知构建标记为已实机测试。源码与文件边界见[适配说明](适配说明.md)。
+`Source/Tests/Test-RuntimeMetadata.ps1` 需要 `-GamePath`、`-NewPlugin` 和 `-ReportPath`，使用固定 Mono.Cecil 读取元数据，不执行游戏程序集。
 
-插件在本机读取 PNG、创建纹理并替换白名单角色的剧情 Sprite，没有网络接口、游戏数值修改或存档写入。玩家属性头像等独立面板仍只处理赵活，NPC 小头像和关系面板未扩展。诊断参数 `--zhaohuo-portrait-selftest --zhaohuo-selftest-exit` 会建立独立测试组件并输出截图与报告；v2 增加 NPC、精确身份负例、批量加载和缓存验证。普通 Steam 启动不会运行诊断。新 DLL 的实机结论须以对应版本的新报告为准，历史 v1.x 报告不替代新运行时验证。
+修改或重编译插件后，需要重新绑定 Catalog、安装器固定哈希、离线基线及相应测试，不能只覆盖 DLL 或借用旧报告。发布脚本核验实际文件、图片与提示词绑定、代码版本及验收证据，生成完整校验清单；`PackageReady=false` 时拒绝发行输出。开发构建的符号文件不随玩家版分发。
 
-适配逻辑与测试边界见 [适配说明](适配说明.md)。
+## 运行与验证边界
+
+插件只在本机读取 PNG、创建纹理并替换白名单角色的 Sprite，没有网络接口、游戏数值修改或存档写入。赵活属性头像继续使用现有专用钩子，NPC 小头像与关系面板未扩展。
+
+诊断参数 `--zhaohuo-portrait-selftest --zhaohuo-selftest-exit` 会建立独立测试组件，调用真实资源和 UI 链路并输出报告。普通 Steam 启动不会运行诊断。新 DLL 的实际结论必须绑定对应 DLL、Catalog 和已运行的外观组合；未改美术的历史证据不能冒充本版逐套实机通过。
+
+离线兼容检查使用随包固定 Mono.Cecil 和基线，静态读取程序集与资源，不修改 IL、不获取游戏文件，也不把未知构建标记为已实机验证。检查是外部管理器主动执行的功能，不会每次启动游戏自动执行。具体范围见[适配说明](适配说明.md)。

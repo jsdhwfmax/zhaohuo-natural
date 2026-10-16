@@ -1,0 +1,37 @@
+{
+  "SchemaVersion": 1,
+  "CharacterId": "long-xiang",
+  "VariantId": "refined",
+  "Name": "normal.png",
+  "GenerationMethod": "builtin imagegen",
+  "PixelPostProcessing": false,
+  "Prompt": "Use case: precise-object-edit. Asset: ONE production transparent dialogue portrait sprite for 活侠传 / Legend of Mortal. Image 1 is the original game pose, costume, prop and drawing-style reference. Match the original handmade Chinese wuxia game painting: coarse uneven black ink and sketch contours, dry-brush edges, restrained matte watercolor and colored-pencil grain in the face and cloth, economical cel-like shading, warm natural skin; not photorealistic, not smooth glossy modern anime or 3D. Preserve original camera angle and portrait lower-body crop; whole head, hands and side costume silhouette must fit with transparent margins (at least 3 percent on left/right/top). Exactly ONE character, no comparison sheet. TRUE transparent alpha background including above the head, no checkerboard, backdrop, text, watermark or frame. Keep original expression readable and head-to-body proportion natural. Return a tall portrait sprite. 龙湘 / 龍湘. Refine this same Chinese swordswoman into a strikingly beautiful, fresh clear-eyed and spirited young adult woman. Keep the same innocent earnest neutral-speaking expression, gray-teal almond eyes, small red three-stroke forehead marking, charcoal long hair half tied high with the same blue twig-shaped hairpin. Preserve white fully opaque martial robe with muted teal collar, teal waist belt with diamond trim, teal forearm guards, original visible sword and red knot/tassel, identical upright three-quarter stance with right hand resting on sword hilt and left arm lowered. Refine facial balance and the nose/lips into natural elegant anatomy; naturally proportioned head. Keep practical warrior body and covered clothing, no added cleavage, makeup, headdress, jewellery or new props.",
+  "References": [
+    {
+      "LogicalName": "local-game-reference/normal.png",
+      "Kind": "original-game-reference-not-distributed"
+    }
+  ],
+  "OriginalGameCanonicalPath": "assets/__project/images/characters/girl4_龍湘/normal.png",
+  "OriginalGameReferenceDistributed": false,
+  "GeneratedSourceBasename": "exec-8f227b99-b863-4750-a996-863c1f22026c.png",
+  "OutputSHA256": "B1C1DD9293D92C14E07B894B408791D7FB7465D20D39A34400B2AFC26C386291",
+  "SourceRecordBasename": "long-xiang-refined-normal.json",
+  "SourceRecordSHA256": "9D1A2D58A177D6CCC0E63E8C52A44171FE2615EFF0186D08DECB82130B5791CE",
+  "RawGeneratedCopyVerified": true,
+  "VisualReview": "passed before integration; runtime acceptance is separate",
+  "ImageMetadata": {
+    "Width": 962,
+    "Height": 1635,
+    "Mode": "RGBA",
+    "AlphaMin": 0,
+    "AlphaMax": 255,
+    "AlphaBoundsGt16": [
+      4,
+      70,
+      962,
+      1635
+    ],
+    "Bytes": 2139249
+  }
+}

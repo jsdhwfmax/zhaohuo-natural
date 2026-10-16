@@ -1,0 +1,41 @@
+{
+  "SchemaVersion": 1,
+  "CharacterId": "tang-moling",
+  "VariantId": "refined",
+  "Name": "proud.png",
+  "GenerationMethod": "builtin imagegen",
+  "PixelPostProcessing": false,
+  "Prompt": "Use case: precise-object-edit. Make ONE transparent dialogue portrait sprite for 活侠传 / Legend of Mortal. Image 1 is the ORIGINAL TARGET expression/gesture/props reference; Image 2 is the newly approved beauty redesign and SAME CHARACTER identity/style/costume reference. Repaint Image 1 using the precise face, hair, age, proportions and costume rendering of Image 2. Crucially reproduce Image 1's expression, eye direction, mouth, hands, pose, original props and all meaningful sweat/tears/blood/comic marks; do NOT simply repeat the calm pose or smile from Image 2. Match the original restrained hand-drawn wuxia game style: rough black sketch contours, dry-brush edges, visible matte watercolor and colored-pencil grain, not glossy modern anime. Preserve character's age and modest costume/body proportions; no sexualization or additional exposed skin. Grey/color streaks outside the character in Image 1 are raw texture export artifacts, do not reproduce them. Exactly one complete isolated character, TRUE transparent background, natural-sized head, whole hair/hands/side silhouette fitted within at least 5% transparent side margins; only the same lower skirt crop at bottom is allowed. No new props, background, text, watermark, frame, checkerboard, 3D or photorealism. Character: tang-moling. Target file: proud. In-game expression labels: 得意.  Smug proud side-smile, raised brow, hand raised with index/thumb making a confident V supporting chin, other arm behind waist. Preserve exact gesture.",
+  "References": [
+    {
+      "LogicalName": "local-game-reference/proud.png",
+      "Kind": "original-game-reference-not-distributed"
+    },
+    {
+      "LogicalName": "generated-design/tang-moling/refined/normal.png",
+      "Kind": "generated-design-reference"
+    }
+  ],
+  "OriginalGameCanonicalPath": "assets/__project/images/characters/sister/proud.png",
+  "OriginalGameReferenceDistributed": false,
+  "GeneratedSourceBasename": "exec-5ec24df1-31ac-426d-9bdb-5441833b44c8.png",
+  "OutputSHA256": "3DBAD6291A2312E1DE39DE6D9719DBF3A2EB6C4DA3504089E692DF71B8ACF14B",
+  "SourceRecordBasename": "tang-moling-refined-proud.json",
+  "SourceRecordSHA256": "296744686FFFA81E3E87CA4F98F99A950672B2BCD6B571A7DCB95FD6DE5446CA",
+  "RawGeneratedCopyVerified": true,
+  "VisualReview": "passed before integration; runtime acceptance is separate",
+  "ImageMetadata": {
+    "Width": 971,
+    "Height": 1619,
+    "Mode": "RGBA",
+    "AlphaMin": 0,
+    "AlphaMax": 255,
+    "AlphaBoundsGt16": [
+      139,
+      90,
+      968,
+      1619
+    ],
+    "Bytes": 1776066
+  }
+}

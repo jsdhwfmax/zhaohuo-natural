@@ -1,0 +1,45 @@
+{
+  "SchemaVersion": 1,
+  "CharacterId": "tang-zheng",
+  "VariantId": "female",
+  "Name": "gloomy2.png",
+  "GenerationMethod": "builtin imagegen",
+  "PixelPostProcessing": false,
+  "Prompt": "Use case: identity-preserve. Asset: transparent dialogue portrait for Legend of Mortal, one character only. Image 1 is the ORIGINAL POSE/EXPRESSION reference, NOT the desired gender or face. Image 2 is the APPROVED FEMALE MASTER: its mature adult woman's exact face, body proportions, very full bust, flowing hairstyle, accessories and blue Tangmen clothing design have highest priority. Completely redraw Image 1 as this same adult woman from Image 2. Keep the original emotion, head direction, gesture, hand positions, props and any sweat/blood/comic effects. Do NOT copy Image 2's neutral smile into every expression. Retain the master female identity and voluptuous fully clothed silhouette, never revert to the original male jaw/body. Keep clothes opaque and properly closed, no nudity. Preserve the game's rough ink-pencil contours and textured watercolor/gouache fabric, not glossy 3D, photo skin, modern anime or chibi. Image 1's colored hidden alpha RGB streaks are NOT a background and must not be drawn. True alpha transparent background. Frame one complete usable portrait with all hair, hands, sleeves and props safely inside side/top edges with ~4% transparent margins, bottom robe may naturally cut at bottom. Keep natural small head-to-body proportion. No text, labels, panels, duplicates or watermark. SPECIFIC EMOTION: Same sinister purple-grey angular facial shadow as image1 but with a clearly malicious CLOSED-lip crooked smile, cold side-eyed gaze. No solid backdrop. Both props and the complete rightmost bamboo cylinder rim must be fully inside transparent canvas. Keep mature full-figured feminine body of image2.",
+  "References": [
+    {
+      "LogicalName": "local-game-reference/gloomy2.png",
+      "Kind": "original-game-reference-not-distributed",
+      "RecordedSHA256": "69D0BDDCEC2B0E5F0D450B02D048EADF6505788D455BF2B3CF790F9EA6A65161",
+      "Role": "original pose/emotion edit target"
+    },
+    {
+      "LogicalName": "generated-design/tang-zheng/female/normal.png",
+      "Kind": "generated-design-reference",
+      "RecordedSHA256": "6C09B7759E4F13F026CC70A8ADA691493CF4A4880C5F4D7A1C7EB425441EC8E4",
+      "Role": "approved female identity/body/costume master"
+    }
+  ],
+  "OriginalGameCanonicalPath": "assets/__project/images/characters/brother2/gloomy2.png",
+  "OriginalGameReferenceDistributed": false,
+  "GeneratedSourceBasename": "exec-e5d1e19a-8b8e-48c4-aa63-c2390b5fe5e3.png",
+  "OutputSHA256": "2272AC02C855DB1C29296D930BA14AFDC8AD146EEA0157DE9E694051646A5395",
+  "SourceRecordBasename": "tang-zheng-female-gloomy2.json",
+  "SourceRecordSHA256": "34B6E6A29BE30C157E5A6742D3CD4F47665352D2AAACC70F187123FC03170BDA",
+  "RawGeneratedCopyVerified": true,
+  "VisualReview": "passed before integration; runtime acceptance is separate",
+  "ImageMetadata": {
+    "Width": 1049,
+    "Height": 1500,
+    "Mode": "RGBA",
+    "AlphaMin": 0,
+    "AlphaMax": 255,
+    "AlphaBoundsGt16": [
+      36,
+      48,
+      1047,
+      1500
+    ],
+    "Bytes": 2144774
+  }
+}

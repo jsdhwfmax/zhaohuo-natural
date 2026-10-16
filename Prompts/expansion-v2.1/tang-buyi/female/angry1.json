@@ -1,0 +1,45 @@
+{
+  "SchemaVersion": 1,
+  "CharacterId": "tang-buyi",
+  "VariantId": "female",
+  "Name": "angry1.png",
+  "GenerationMethod": "builtin imagegen",
+  "PixelPostProcessing": false,
+  "Prompt": "Use case: identity-preserve. Asset: transparent dialogue portrait for Legend of Mortal, one character only. Image 1 is the ORIGINAL POSE/EXPRESSION reference, NOT the desired gender or face. Image 2 is the APPROVED FEMALE MASTER: its mature adult woman's exact face, body proportions, very full bust, flowing hairstyle, accessories and blue Tangmen clothing design have highest priority. Completely redraw Image 1 as this same adult woman from Image 2. Keep the original emotion, head direction, gesture, hand positions, props and any sweat/blood/comic effects. Do NOT copy Image 2's neutral smile into every expression. Retain the master female identity and voluptuous fully clothed silhouette, never revert to the original male jaw/body. Keep clothes opaque and properly closed, no nudity. Preserve the game's rough ink-pencil contours and textured watercolor/gouache fabric, not glossy 3D, photo skin, modern anime or chibi. Image 1's colored hidden alpha RGB streaks are NOT a background and must not be drawn. True alpha transparent background. Frame one complete usable portrait with all hair, hands, sleeves and props safely inside side/top edges with ~4% transparent margins, bottom robe may naturally cut at bottom. Keep natural small head-to-body proportion. No text, labels, panels, duplicates or watermark. SPECIFIC EMOTION: Angry but controlled, sharply furrowed brows and tightly closed downturned mouth. No smile. Keep sweeping sleeve and open martial hand.",
+  "References": [
+    {
+      "LogicalName": "local-game-reference/angry1.png",
+      "Kind": "original-game-reference-not-distributed",
+      "RecordedSHA256": "AA0B8EB8C55057D7B0BDD8A06A203105316C07AC6DEF80939F36E99B5159D5CF",
+      "Role": "original pose/emotion edit target"
+    },
+    {
+      "LogicalName": "generated-design/tang-buyi/female/normal.png",
+      "Kind": "generated-design-reference",
+      "RecordedSHA256": "FE491C8DDADB3A46607DFFF137A7F6DB79F0E55851E22F82789FA0BAC15FF0ED",
+      "Role": "approved female identity/body/costume master"
+    }
+  ],
+  "OriginalGameCanonicalPath": "assets/__project/images/characters/brother1/angry1.png",
+  "OriginalGameReferenceDistributed": false,
+  "GeneratedSourceBasename": "exec-00ff7c53-c593-4c14-8d18-f087bfd6f73e.png",
+  "OutputSHA256": "0772C7E3DF9CEF9EE83521C46B853F382408A11092EF4CB194C70B7393DA361D",
+  "SourceRecordBasename": "tang-buyi-female-angry1.json",
+  "SourceRecordSHA256": "DDDF8494487132C3E1239F8E647556EA46F12FA656DE1D7D4DB194CA3B730825",
+  "RawGeneratedCopyVerified": true,
+  "VisualReview": "passed before integration; runtime acceptance is separate",
+  "ImageMetadata": {
+    "Width": 1096,
+    "Height": 1435,
+    "Mode": "RGBA",
+    "AlphaMin": 0,
+    "AlphaMax": 255,
+    "AlphaBoundsGt16": [
+      0,
+      82,
+      1092,
+      1435
+    ],
+    "Bytes": 2075961
+  }
+}

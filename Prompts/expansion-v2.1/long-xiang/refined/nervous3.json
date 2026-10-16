@@ -1,0 +1,41 @@
+{
+  "SchemaVersion": 1,
+  "CharacterId": "long-xiang",
+  "VariantId": "refined",
+  "Name": "nervous3.png",
+  "GenerationMethod": "builtin imagegen",
+  "PixelPostProcessing": false,
+  "Prompt": "Use case: precise-object-edit. Make ONE transparent dialogue portrait sprite for 活侠传 / Legend of Mortal. Image 1 is the ORIGINAL TARGET expression/gesture/props reference; Image 2 is the newly approved beauty redesign and SAME CHARACTER identity/style/costume reference. Repaint Image 1 using the precise face, hair, age, proportions and costume rendering of Image 2. Crucially reproduce Image 1's expression, eye direction, mouth, hands, pose, original props and all meaningful sweat/tears/blood/comic marks; do NOT simply repeat the calm pose or smile from Image 2. Match the original restrained hand-drawn wuxia game style: rough black sketch contours, dry-brush edges, visible matte watercolor and colored-pencil grain, not glossy modern anime. Preserve character's age and modest costume/body proportions; no sexualization or additional exposed skin. Grey/color streaks outside the character in Image 1 are raw texture export artifacts, do not reproduce them. Exactly one complete isolated character, TRUE transparent background, natural-sized head, whole hair/hands/side silhouette fitted within at least 5% transparent side margins; only the same lower skirt crop at bottom is allowed. No new props, background, text, watermark, frame, checkerboard, 3D or photorealism. Character: long-xiang. Target file: nervous3. In-game expression labels: 汗笑.  Embarrassed awkward smile, one cheek sweat drop, one hand fist at chest and other hand resting on sword at waist.",
+  "References": [
+    {
+      "LogicalName": "local-game-reference/nervous3.png",
+      "Kind": "original-game-reference-not-distributed"
+    },
+    {
+      "LogicalName": "generated-design/long-xiang/refined/normal.png",
+      "Kind": "generated-design-reference"
+    }
+  ],
+  "OriginalGameCanonicalPath": "assets/__project/images/characters/girl4_龍湘/nervous3.png",
+  "OriginalGameReferenceDistributed": false,
+  "GeneratedSourceBasename": "exec-1f157cb4-091d-4083-8eab-8bbd64451335.png",
+  "OutputSHA256": "3832A85167CE814477D12E50B172556B635B9AE321A4FECCAE3F0FA1948E494C",
+  "SourceRecordBasename": "long-xiang-refined-nervous3.json",
+  "SourceRecordSHA256": "D1485AF8C0F11A97DAE0B5CC71A33FBA1E70BA760CA395AA14ED9D18B0C47272",
+  "RawGeneratedCopyVerified": true,
+  "VisualReview": "passed before integration; runtime acceptance is separate",
+  "ImageMetadata": {
+    "Width": 962,
+    "Height": 1635,
+    "Mode": "RGBA",
+    "AlphaMin": 0,
+    "AlphaMax": 255,
+    "AlphaBoundsGt16": [
+      0,
+      72,
+      962,
+      1635
+    ],
+    "Bytes": 2054390
+  }
+}

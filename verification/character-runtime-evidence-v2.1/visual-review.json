@@ -1,0 +1,345 @@
+{
+  "Passed": true,
+  "RuntimeVersion": "2.1.0",
+  "MainMenuReviewed": true,
+  "ReviewedVariants": [
+    {
+      "CharacterId": "player",
+      "VariantId": "xianxia"
+    },
+    {
+      "CharacterId": "long-xiang",
+      "VariantId": "refined"
+    },
+    {
+      "CharacterId": "tang-buyi",
+      "VariantId": "female"
+    },
+    {
+      "CharacterId": "tang-zheng",
+      "VariantId": "female"
+    },
+    {
+      "CharacterId": "xiahou-lan",
+      "VariantId": "refined"
+    },
+    {
+      "CharacterId": "tang-moling",
+      "VariantId": "refined"
+    },
+    {
+      "CharacterId": "yu-xiaomei",
+      "VariantId": "refined"
+    },
+    {
+      "CharacterId": "tang-buyi",
+      "VariantId": "refined"
+    }
+  ],
+  "Screenshots": [
+    {
+      "Path": "all-on/diagnostics/portraits-01.png",
+      "Sha256": "297D7A3CA567C058C60385A210D10C95F4BD4991CFE09C6265FBAEA984B6AB5B",
+      "Passed": true,
+      "Conclusion": "Consistent xianxia identity and scale; anger effects and blood/weapon states visible. Back is the intentional original fallback."
+    },
+    {
+      "Path": "all-on/diagnostics/portraits-02.png",
+      "Sha256": "EBB2AF4D3D3481F374BEB922E17B9D0DC9ABD2065A8C384694D137F7FF3CF1B5",
+      "Passed": true,
+      "Conclusion": "Caught pose and yellow electric effect fit; closed-eye and comic smoke states remain distinct. No opaque background rectangle."
+    },
+    {
+      "Path": "all-on/diagnostics/portraits-03.png",
+      "Sha256": "3FF695B02279C82550937C117DF79C8633B3917667372A39C3D0C1F145BFCACC",
+      "Passed": true,
+      "Conclusion": "Determined, dying, pointing, blindfold and raised-arm poses are complete within source framing. Red aura, gloomy shadow and sword remain visible."
+    },
+    {
+      "Path": "all-on/diagnostics/portraits-04.png",
+      "Sha256": "FA294C62BC0ECFE8878CE0E1AF90E76CEE77B9C74B6659CBC030C553897E8CD8",
+      "Passed": true,
+      "Conclusion": "Landing crouch, injury, laughter and black mask preserve distinct poses. Hands and visible side silhouettes fit the rendered slots."
+    },
+    {
+      "Path": "all-on/diagnostics/portraits-05.png",
+      "Sha256": "F63DFFFB45638849FC7A6CC381874D243AB9291FB7F9C0AB180D9053EAC0D336",
+      "Passed": true,
+      "Conclusion": "Mud, nervous, motion-double, revel and sad expressions remain readable; shadow_left is the intended original silhouette."
+    },
+    {
+      "Path": "all-on/diagnostics/portraits-06.png",
+      "Sha256": "F438DEE8C52576F0167EF61EC7E67197CA295D34129320C39955176AE08E30E1",
+      "Passed": true,
+      "Conclusion": "Shock, inverted comic state, blue soul effect, hood and grasping pose are visible. shadow_right is the intended original silhouette."
+    },
+    {
+      "Path": "all-on/diagnostics/portraits-07.png",
+      "Sha256": "CD76F71342BFDCFD6F7D29AA33A48F2D9D4F68DC4EF52030EE0C11E943A851D6",
+      "Passed": true,
+      "Conclusion": "The final knife and calm expressions display correctly. Blank cells are the expected remainder of the 50-resource set."
+    },
+    {
+      "Path": "all-on/diagnostics/avatar-panel-0.png",
+      "Sha256": "EEE88A1BFCB97BE856B9A685EB0854E550FB643E96DBF39416F3B6F49302590A",
+      "Passed": true,
+      "Conclusion": "Actual first avatar branch displays the xianxia normal portrait at an appropriate scale with transparent edges."
+    },
+    {
+      "Path": "all-on/diagnostics/avatar-panel-1.png",
+      "Sha256": "EEE88A1BFCB97BE856B9A685EB0854E550FB643E96DBF39416F3B6F49302590A",
+      "Passed": true,
+      "Conclusion": "Actual second avatar branch displays the same intended xianxia portrait without opaque background or unintended top/side crop."
+    },
+    {
+      "Path": "all-on/diagnostics/character-long-xiang-girl4-1.png",
+      "Sha256": "977571D16B4923ED5CD41BC78DDC426BA3CF37F6CFA529342ACCDE82D15ACF85",
+      "Passed": true,
+      "Conclusion": "Long Xiang identity and white/teal outfit remain consistent. Angry3/4 have visible blue qi, shadowed eyes and swords. Black is the intended original silhouette."
+    },
+    {
+      "Path": "all-on/diagnostics/character-long-xiang-girl4-2.png",
+      "Sha256": "AD081BBF930C303DE180E58DEFC02B6E7058D98714F499DBD20EB9DDFEC72BCA",
+      "Passed": true,
+      "Conclusion": "Chicken props, hurt2 blood and qi, laughter and nervous hands remain visible. Distinct original poses are preserved without a rectangle or unexpected side crop."
+    },
+    {
+      "Path": "all-on/diagnostics/character-long-xiang-girl4-3.png",
+      "Sha256": "FDD7DC58B0B6FF93ED88CAF8560F2023ED8A7C5F43FC88DC71B2A37A6DA83C48",
+      "Passed": true,
+      "Conclusion": "Remaining nervous, sad, shy and sword poses are recognizable, consistent in identity and well fitted to the diagnostic slots. Blank cells are intentional."
+    },
+    {
+      "Path": "all-on/diagnostics/character-tang-buyi-brother1-1.png",
+      "Sha256": "229193CB91AD8A1F3BAE0260A3FAA4EEFDF5D55C6E21EFB1859D29313CC1B7CA",
+      "Passed": true,
+      "ExpressionsViewed": [
+        "normal",
+        "angry1",
+        "angry2",
+        "angry3",
+        "hand",
+        "hat",
+        "hurt",
+        "laugh1"
+      ],
+      "Conclusion": "Female identity, head/body scale and clothing stay consistent across the seven replacement slots. Red anger contours are visibly present with complete top/side shapes. Straw hat intentionally covers the eyes. The separate original hand fallback remains distinct and has not been replaced by a full female portrait. No opaque rectangle or obvious missing side silhouette is visible.",
+      "Limitations": "The flat lower cutoff and fingertips meeting that lower edge follow the approved dialogue-portrait composition; this contact sheet does not prove every story camera/crop. Fine finger anatomy is judged only at this rendered scale."
+    },
+    {
+      "Path": "all-on/diagnostics/character-tang-buyi-brother1-2.png",
+      "Sha256": "D176C9E9ACC982FB7833B56065783DB407881DDF8C1B6AC1DEA0DDFBCC3A0439",
+      "Passed": true,
+      "ExpressionsViewed": [
+        "laugh2",
+        "nervous1",
+        "nervous2",
+        "nervous3",
+        "serious",
+        "shock",
+        "special1",
+        "suck"
+      ],
+      "Conclusion": "Laughing, nervous, serious, shocked, closed-eye and grimacing expressions remain distinguishable. Female face/hair/outfit are consistent and the raised/extended hands follow the intended gestures. The body occupies comparable UI slots without an oversized head, cross-role art or rectangular background.",
+      "Limitations": "Bottom-edge portrait crop is retained. No animation, live dialogue transition, save or story scene was inspected by this review."
+    },
+    {
+      "Path": "all-on/diagnostics/character-tang-zheng-brother2-1.png",
+      "Sha256": "A118CB12BF09158F3AAF4C29E7EE3034B989B86344CA405AE3B951120BA8B2DA",
+      "Passed": true,
+      "ExpressionsViewed": [
+        "normal",
+        "angry1",
+        "angry2",
+        "close_eye",
+        "close_eye_nervous",
+        "gloomy1",
+        "gloomy2",
+        "hurt"
+      ],
+      "Conclusion": "Cold female identity and blue-green costume remain stable. Topknot, small gourd, supporting hands and right-side bamboo bundle are visible, including the previously corrected normal prop margin. Closed-eye, anger, shaded-face and injury expressions are visible. No evident top/side clipping or opaque texture background is present.",
+      "Limitations": "Skirt ends at the intended shared lower baseline. These rendered pages cannot establish pixel-perfect anatomy or all narrative framing."
+    },
+    {
+      "Path": "all-on/diagnostics/character-tang-zheng-brother2-2.png",
+      "Sha256": "65A194C120379888182CB9F824BD2FA675D68F0157CB3D0CF8D8A2BB91A99847",
+      "Passed": true,
+      "ExpressionsViewed": [
+        "laugh1",
+        "laugh2",
+        "nervous1",
+        "nervous2"
+      ],
+      "Conclusion": "The four remaining expressions fit their slots at consistent scale; stronger nervous2 comic face marks remain readable. Gourd, bamboo bundle and hands retain their positions with clear side margins. Blank lower slots are the expected remainder of a 12-resource set, not missing pictures.",
+      "Limitations": "Only the four populated entries were visually assessed; no claim of extra expressions or story coverage."
+    },
+    {
+      "Path": "all-on/diagnostics/character-xiahou-lan-girl6-1.png",
+      "Sha256": "4CDA3395BA0922FA28AC82862FD6FDC5CFCC69DFF3E55631FC7FFDF93E8392F7",
+      "Passed": true,
+      "ExpressionsViewed": [
+        "normal",
+        "angry",
+        "angry2",
+        "block",
+        "blood",
+        "cry",
+        "droopy",
+        "gloomy"
+      ],
+      "Conclusion": "The existing Xiahou Lan identity is isolated from both female Tang redesigns. Umbrella silhouette and blue costume fit consistently; block intentionally conceals the face behind the umbrella. Angry2 retains its colored brush aura, blood retains stains, and tear/tired/shaded-face expressions remain distinct. No rectangular transparency failure or unexpected side/top crop is visible.",
+      "Limitations": "This is a visual check of current-DLL rendering of unchanged artwork, not a new redraw review or full-route playthrough."
+    },
+    {
+      "Path": "all-on/diagnostics/character-xiahou-lan-girl6-2.png",
+      "Sha256": "27FAE62516F6152B5FA82FEF9CE505D31749B76D6B299428FC22C5D093D79ED1",
+      "Passed": true,
+      "ExpressionsViewed": [
+        "gloomy2",
+        "laugh1",
+        "love",
+        "nervous",
+        "nervous2",
+        "shy2",
+        "squint",
+        "white"
+      ],
+      "Conclusion": "Love and shy2 correctly use their distinct raised-hand/no-umbrella poses instead of copying normal; visible bubbles and special marks remain. Other facial expressions retain the same character. The white slot is the intentional original white-silhouette fallback. Side shapes and upper edges are visible against the diagnostic background.",
+      "Limitations": "Different special-pose framing is expected from the corresponding source layouts. The white fallback is intentional and is not counted as a replacement."
+    },
+    {
+      "Path": "all-on/diagnostics/character-tang-moling-sister1-1.png",
+      "Passed": true,
+      "VisibleStates": [
+        "normal",
+        "angry1",
+        "close_eye",
+        "close_eye_laugh",
+        "gamer",
+        "laugh1",
+        "laugh3",
+        "nervous1"
+      ],
+      "Conclusion": "脸部身份、发型和头身比例一致；手部动作与表情可辨，轮廓透明区域没有白底矩形或明显脏边。人物在各格内定位正常。",
+      "Limitations": "仅审阅该 1920×1080 隔离真实加载 UI 截图的可见效果；未重新执行游戏逻辑，未覆盖所有剧情背景、转场或分辨率，也不是逐像素 alpha 审计。",
+      "Sha256": "02EB3374846CDBA0A4134E73081CB462B1D26B0C51B136277A371387264008A9"
+    },
+    {
+      "Path": "all-on/diagnostics/character-tang-moling-sister1-2.png",
+      "Passed": true,
+      "VisibleStates": [
+        "nervous2",
+        "one_hand",
+        "proud",
+        "sad2",
+        "shy",
+        "special1",
+        "special2",
+        "special3"
+      ],
+      "Conclusion": "特殊表情、花瓣与蓝衣造型均完整可辨，头脸尺寸协调；one_hand 是刻意保留的原画单手部件，非角色丢失。其余人物轮廓无明显截断或透明底异常。",
+      "Limitations": "仅审阅该 1920×1080 隔离真实加载 UI 截图的可见效果；未重新执行游戏逻辑，未覆盖所有剧情背景、转场或分辨率，也不是逐像素 alpha 审计。",
+      "Sha256": "C3C535CDD0F5D229771EB4CA220AD6EBA594293F9DD2577CAF3624684ACDD970"
+    },
+    {
+      "Path": "all-on/diagnostics/character-yu-xiaomei-girl5-1.png",
+      "Passed": true,
+      "VisibleStates": [
+        "normal",
+        "angry1",
+        "angry2",
+        "angry3",
+        "backstage",
+        "black",
+        "gloomy2",
+        "hurt"
+      ],
+      "Conclusion": "普通及愤怒状态脸部和头身协调，红眼、匕首与受伤效果可辨；backstage 低姿态尺寸符合该动作；black 显示预期原画剪影。没有明显透明矩形或主体意外截边。",
+      "Limitations": "仅审阅该 1920×1080 隔离真实加载 UI 截图的可见效果；未重新执行游戏逻辑，未覆盖所有剧情背景、转场或分辨率，也不是逐像素 alpha 审计。",
+      "Sha256": "B02086613CD7D8E30238A7483571A8DB32080ACD615A6FD04F6B6C2FD6FE4BEA"
+    },
+    {
+      "Path": "all-on/diagnostics/character-yu-xiaomei-girl5-2.png",
+      "Passed": true,
+      "VisibleStates": [
+        "kick",
+        "laugh1",
+        "laugh2",
+        "laugh3",
+        "nervous1",
+        "nervous2",
+        "nervous3",
+        "norseblood"
+      ],
+      "Conclusion": "kick 的横向踢腿、双臂、发梢与裙摆均容纳在单元内，动作头身比例正常；其余笑、紧张、鼻血表情和小道具清晰，未见明显错位或透明脏边。",
+      "Limitations": "仅审阅该 1920×1080 隔离真实加载 UI 截图的可见效果；未重新执行游戏逻辑，未覆盖所有剧情背景、转场或分辨率，也不是逐像素 alpha 审计。",
+      "Sha256": "0D4929B772E02F2A6393E7BD2CA59EF9DF355433A4A39D30A00D8C99489F7F95"
+    },
+    {
+      "Path": "all-on/diagnostics/character-yu-xiaomei-girl5-3.png",
+      "Passed": true,
+      "VisibleStates": [
+        "proud",
+        "sad1",
+        "scary",
+        "scary_laugh",
+        "scary_shock",
+        "shy1",
+        "shy2",
+        "shy3"
+      ],
+      "Conclusion": "惊吓系列的遮眼、阴影、张口与手持道具属于刻意表现，未被误判为缺脸；害羞及披发变化保持角色身份。主体轮廓和服装边缘未见明显异常。",
+      "Limitations": "仅审阅该 1920×1080 隔离真实加载 UI 截图的可见效果；未重新执行游戏逻辑，未覆盖所有剧情背景、转场或分辨率，也不是逐像素 alpha 审计。",
+      "Sha256": "B625AF5C56986277B2E8A09037E894FE64908B05D80407DDBFE636109E7E77FB"
+    },
+    {
+      "Path": "all-on/diagnostics/character-yu-xiaomei-girl5-4.png",
+      "Passed": true,
+      "VisibleStates": [
+        "shy4",
+        "special5",
+        "special5_2",
+        "special6"
+      ],
+      "Conclusion": "shy4 与 special6 自定义脸部及姿态正常。special5/special5_2 保留含原版赵活的双人合绘，人物、道具和相对位置完整，是预期整图回退。",
+      "Limitations": "仅审阅该 1920×1080 隔离真实加载 UI 截图的可见效果；未重新执行游戏逻辑，未覆盖所有剧情背景、转场或分辨率，也不是逐像素 alpha 审计。",
+      "Sha256": "FC1672D72377F71ABB667FA340AD3AD3CA11433E97A880FC24EAE13767607783"
+    },
+    {
+      "Path": "brother-refined/diagnostics/character-tang-buyi-brother1-1.png",
+      "Sha256": "1C5B6B61BD7B7016C2D7F6A4ECFB0C5BF59DEDDC1006F9D30184CF3663583EEA",
+      "Purpose": "Variant review",
+      "Passed": true,
+      "Notes": "已直接查看 normal、angry1、angry2、angry3、hand、hat、hurt、laugh1。精修男性身份一致，怒容、喊叫、笑容及伤态可区分；发型、帽子、衣袖和可见手部完整。angry2/3 的红色气焰是保留的剧情特效；hand 正确保留原版单臂。深色背景上未见不透明矩形底、导出彩条或明显头顶及侧缘裁切。下摆平切符合原立绘构图。"
+    },
+    {
+      "Path": "brother-refined/diagnostics/character-tang-buyi-brother1-2.png",
+      "Sha256": "A269D0C506D3419C686CD1902E5826C9963A88A52A0969F995C0E0824E6745D5",
+      "Purpose": "Variant review",
+      "Passed": true,
+      "Notes": "已直接查看 laugh2、nervous1、nervous2、nervous3、serious、shock、special1、suck。笑、紧张、严肃、惊讶和痛苦神态有区别，同一男性脸型、长发与蓝衣保持一致；special1 的手部遮挡符合姿势。未见明显缩放错位、头部裁切、侧缘断裂或不透明背景。下摆平切符合原画范围。"
+    },
+    {
+      "Path": "original/diagnostics/character-tang-buyi-brother1-1.png",
+      "Sha256": "4E7CF4373ACAED68F91955E406C39E5DA4014B96BC87DEE0C8489EB53247FE90",
+      "Purpose": "Supplementary original-mode comparison only",
+      "Passed": true,
+      "Notes": "正常、怒容、帽子、受伤、笑容及单臂显示原作形象，脸型与精修页有明确区别，支持关闭该角色替换后恢复原版。原作怒气效果和原有下摆裁切仍在；未见缺图或矩形底。此页不增加 ReviewedVariants。"
+    },
+    {
+      "Path": "original/diagnostics/character-tang-zheng-brother2-1.png",
+      "Sha256": "DB778D7614DD82950D6C1D5231E68C2BBDF731833EC238B1B5C8487DD9101649",
+      "Purpose": "Supplementary original-mode comparison only",
+      "Passed": true,
+      "Notes": "已查看 normal、angry1、angry2、close_eye、close_eye_nervous、gloomy1、gloomy2、hurt。显示原版男性唐铮，未显示女版重绘；头饰、举起的小葫芦及下方卷状道具可见。闭眼、阴沉及受伤状态清楚，未见缺图、矩形底或头部裁切。本页仅补充原版回退对照，不代表女版审阅。"
+    },
+    {
+      "Path": "normal/main-menu.jpg",
+      "Sha256": "143201548A9868E38B948F23C80CF37A729D6D32576FB02C0F4C15196A2037B9",
+      "Passed": true,
+      "Conclusion": "Observed actual Mortal normal main menu with title artwork, four menu entries and visible release_1.0.6000.2 version. No error dialog or loading overlay. No save or story opened."
+    }
+  ],
+  "Scope": "Actual-game isolated portrait/character rendering plus normal main menu. Seven roles and eight listed custom variants were visually reviewed. Original comparison pages are supplementary, not additional custom coverage. This is not a full-story playthrough and does not claim that the other five unchanged player styles were rerun with this DLL.",
+  "IssuesRequiringRepair": []
+}

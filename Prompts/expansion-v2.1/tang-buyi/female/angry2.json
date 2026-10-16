@@ -1,0 +1,39 @@
+{
+  "SchemaVersion": 1,
+  "CharacterId": "tang-buyi",
+  "VariantId": "female",
+  "Name": "angry2.png",
+  "GenerationMethod": "builtin imagegen",
+  "PixelPostProcessing": false,
+  "Prompt": "Use case: precise-object-edit. This is an already approved mature adult female wuxia portrait. Change ONLY framing: REDUCE the entire existing figure to 85% of its current relative canvas size, keeping the bottom robe at the bottom. Make the whole portrait and its RED AURA fit comfortably with at least 6% fully transparent blank space along the LEFT and RIGHT sides, and enough space above hair. In particular the red aura around the right blue sweeping sleeve is currently clipped by the edge; complete that outer aura edge and sleeve and show a transparent gap before canvas boundary. Preserve exactly her face/body, opaque blue robe, original angry expression, hands/coins, hair and rough pencil watercolor style. DO NOT change her emotion or redesign. No background/text/checkerboard; true alpha. The ONLY intentional crop is bottom robe; preferably keep left fingertips just inside bottom. Mouth stays CLOSED, no smile.",
+  "References": [
+    {
+      "LogicalName": "generated-design/tang-buyi/female/angry2-before-margin.png",
+      "Kind": "generated-design-reference",
+      "RecordedSHA256": "4275CBE82C8026CD3FA8CCBB7ABE1572089F096435B81E1FF22BED94A85EDA90",
+      "Role": "previous generated expression, framing edit target"
+    }
+  ],
+  "OriginalGameCanonicalPath": "assets/__project/images/characters/brother1/angry2.png",
+  "OriginalGameReferenceDistributed": false,
+  "GeneratedSourceBasename": "exec-a79f9031-23e9-4e12-bda6-e15715b0bb19.png",
+  "OutputSHA256": "F5C8B7B59904E68A184D17C8BFCF2E10FFD778BF58B57F43C1B5AA46FAADBA2C",
+  "SourceRecordBasename": "tang-buyi-female-angry2-margin-v2.json",
+  "SourceRecordSHA256": "6FC7CE7FB27264DB8AE1D8E015AFD572A69DE3F16A8E5DEA85D667B590F7C6A1",
+  "RawGeneratedCopyVerified": true,
+  "VisualReview": "passed before integration; runtime acceptance is separate",
+  "ImageMetadata": {
+    "Width": 1096,
+    "Height": 1435,
+    "Mode": "RGBA",
+    "AlphaMin": 0,
+    "AlphaMax": 255,
+    "AlphaBoundsGt16": [
+      33,
+      98,
+      1083,
+      1435
+    ],
+    "Bytes": 2165801
+  }
+}

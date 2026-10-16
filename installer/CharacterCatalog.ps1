@@ -1,9 +1,10 @@
 ﻿#requires -Version 5.1
 # Data-only package validation. No game assembly is loaded or executed.
-$script:CharacterIds=@('player','tang-buyi','xiahou-lan')
-$script:CharacterNames=@{player='赵活';'tang-buyi'='唐布衣（大师兄）';'xiahou-lan'='夏侯兰'}
+$script:LegacyCharacterIds=@('player','tang-buyi','xiahou-lan')
+$script:CharacterIds=@('player','tang-buyi','xiahou-lan','tang-moling','long-xiang','yu-xiaomei','tang-zheng')
+$script:CharacterNames=@{player='赵活';'tang-buyi'='唐布衣（大师兄）';'xiahou-lan'='夏侯兰';'tang-moling'='唐默铃';'long-xiang'='龙湘';'yu-xiaomei'='虞小梅';'tang-zheng'='唐铮'}
 $script:CharacterSharedHashes=@{
-    'ZhaoHuoNatural.dll'='592A56EDD630F40AAA5A551746183F86F7D941D7ACEAABC105D6D473A7BE9AA8'
+    'ZhaoHuoNatural.dll'='AEEE02AC56DCDCB1E683D6356AC28FE19E61AF861D5663ACFFD1B83984F06957'
     'portrait-map.txt'='844B9A7F73CB2B16DC2F911B18418ADDD4446E9D522D4F7448EFEDD4A614614C'
     'portrait-layout.tsv'='DCE2CDF380008740BC6151F979251F119880605A0C370DB0C0533C088FED011A'
 }
@@ -11,6 +12,10 @@ $script:CharacterAssets=@{
     player=$script:PortraitNames
     'tang-buyi'=@('angry1','angry2','angry3','hand','hat','hurt','laugh1','laugh2','nervous1','nervous2','nervous3','normal','serious','shock','special1','suck')
     'xiahou-lan'=@('angry','angry2','block','blood','cry','droopy','gloomy','gloomy2','laugh1','love','nervous','nervous2','normal','shy2','squint','white')
+    'tang-moling'=@('angry1','close_eye','close_eye_laugh','gamer','laugh1','laugh3','nervous1','nervous2','normal','one_hand','proud','sad2','shy','special1','special2','special3')
+    'long-xiang'=@('angry1','angry3','angry4','black','close_eyes','diffident','doubt','drumstick','drumstick_sword','hurt','hurt2','laugh1','laugh2','nervous1','nervous2','nervous3','normal','sad','sad2','shy','shy2','sword')
+    'yu-xiaomei'=@('angry1','angry2','angry3','backstage','black','gloomy2','hurt','kick','laugh1','laugh2','laugh3','nervous1','nervous2','nervous3','normal','norseblood','proud','sad1','scary','scary_laugh','scary_shock','shy1','shy2','shy3','shy4','special5','special5_2','special6')
+    'tang-zheng'=@('angry1','angry2','close_eye','close_eye_nervous','gloomy1','gloomy2','hurt','laugh1','laugh2','nervous1','nervous2','normal')
 }
 function Get-ZHTextHash([string]$Text) {
     $sha=[Security.Cryptography.SHA256]::Create()
@@ -35,7 +40,7 @@ function Test-ZHMultiPackage([string]$PackageRoot) {
 function Read-ZHCharacterCatalog([string]$PackageRoot) {
     $root=Get-ZHCanonical $PackageRoot;$path=Get-ZHChild $root 'VariantCatalog.json';Assert-ZHNoLink $path
     $catalog=Get-Content -LiteralPath $path -Raw -Encoding UTF8|ConvertFrom-Json
-    if($catalog.SchemaVersion-ne 2 -or $catalog.PackageVersion-ne '2.0.0' -or $catalog.RuntimeProtocol-ne 1 -or $catalog.PackageReady-isnot [bool] -or $catalog.DefaultCharacterId-ne 'player' -or $catalog.FingerprintAlgorithm-ne 'SHA256-character-path-hash-lines-ordinal-v1' -or @($catalog.Characters).Count-ne $script:CharacterIds.Count){throw '多角色目录协议无效，请重新完整解压正式安装包。'}
+    if($catalog.SchemaVersion-ne 2 -or $catalog.PackageVersion-ne '2.1.0' -or $catalog.RuntimeProtocol-ne 2 -or $catalog.PackageReady-isnot [bool] -or $catalog.DefaultCharacterId-ne 'player' -or $catalog.FingerprintAlgorithm-ne 'SHA256-character-path-hash-lines-ordinal-v1' -or @($catalog.Characters).Count-ne $script:CharacterIds.Count){throw '多角色目录协议无效，请重新完整解压正式安装包。'}
     $ids=@{};$sources=@{}
     foreach($character in @($catalog.Characters)){
         if($character.Id-notin $script:CharacterIds -or $ids.ContainsKey($character.Id) -or $character.RuntimeBindingId-ne $character.Id -or [string]::IsNullOrWhiteSpace($character.DisplayName)){throw '角色目录包含未知、重复或不匹配的身份。'}

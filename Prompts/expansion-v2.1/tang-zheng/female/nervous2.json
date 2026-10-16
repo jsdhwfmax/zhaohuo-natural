@@ -1,0 +1,45 @@
+{
+  "SchemaVersion": 1,
+  "CharacterId": "tang-zheng",
+  "VariantId": "female",
+  "Name": "nervous2.png",
+  "GenerationMethod": "builtin imagegen",
+  "PixelPostProcessing": false,
+  "Prompt": "Use case: identity-preserve. Asset: transparent dialogue portrait for Legend of Mortal, one character only. Image 1 is the ORIGINAL POSE/EXPRESSION reference, NOT the desired gender or face. Image 2 is the APPROVED FEMALE MASTER: its mature adult woman's exact face, body proportions, very full bust, flowing hairstyle, accessories and blue Tangmen clothing design have highest priority. Completely redraw Image 1 as this same adult woman from Image 2. Keep the original emotion, head direction, gesture, hand positions, props and any sweat/blood/comic effects. Do NOT copy Image 2's neutral smile into every expression. Retain the master female identity and voluptuous fully clothed silhouette, never revert to the original male jaw/body. Keep clothes opaque and properly closed, no nudity. Preserve the game's rough ink-pencil contours and textured watercolor/gouache fabric, not glossy 3D, photo skin, modern anime or chibi. Image 1's colored hidden alpha RGB streaks are NOT a background and must not be drawn. True alpha transparent background. Frame one complete usable portrait with all hair, hands, sleeves and props safely inside side/top edges with ~4% transparent margins, bottom robe may naturally cut at bottom. Keep natural small head-to-body proportion. No text, labels, panels, duplicates or watermark. SPECIFIC EMOTION: Extreme panicked strained reaction: wide eye with small pupil, lifted tense brows, open grimacing mouth/teeth, many sweat drops on forehead/face/neck, vertical brow stress shading. The gourd in raised hand has visible thin crack lines as original. Preserve both props and female master identity. Add side transparency so bamboo cylinder is complete.",
+  "References": [
+    {
+      "LogicalName": "local-game-reference/nervous2.png",
+      "Kind": "original-game-reference-not-distributed",
+      "RecordedSHA256": "E274E19B3CA7828F67A577C5A394017E2EC42E0176BAC91B669C8900575F6630",
+      "Role": "original pose/emotion edit target"
+    },
+    {
+      "LogicalName": "generated-design/tang-zheng/female/normal.png",
+      "Kind": "generated-design-reference",
+      "RecordedSHA256": "6C09B7759E4F13F026CC70A8ADA691493CF4A4880C5F4D7A1C7EB425441EC8E4",
+      "Role": "approved female identity/body/costume master"
+    }
+  ],
+  "OriginalGameCanonicalPath": "assets/__project/images/characters/brother2/nervous2.png",
+  "OriginalGameReferenceDistributed": false,
+  "GeneratedSourceBasename": "exec-63e80054-7007-42ea-8885-72087db40feb.png",
+  "OutputSHA256": "8182FDBAD4FCB8C619D2397A0B2B63FA8A51BAD05711ED99CBE0AB7605E9E981",
+  "SourceRecordBasename": "tang-zheng-female-nervous2.json",
+  "SourceRecordSHA256": "D75F1B2039A6AC1A9554CC886DC9D0CD49438E4F376E5A086AE03946FB48836D",
+  "RawGeneratedCopyVerified": true,
+  "VisualReview": "passed before integration; runtime acceptance is separate",
+  "ImageMetadata": {
+    "Width": 1049,
+    "Height": 1500,
+    "Mode": "RGBA",
+    "AlphaMin": 0,
+    "AlphaMax": 255,
+    "AlphaBoundsGt16": [
+      41,
+      46,
+      1048,
+      1500
+    ],
+    "Bytes": 2085594
+  }
+}

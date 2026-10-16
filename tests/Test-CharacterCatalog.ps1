@@ -34,18 +34,18 @@ function Read-Json([string]$Relative){Get-Content -LiteralPath (Track $Relative)
 function Assert([bool]$Passed,[string]$Name){if(-not $Passed){throw ('FAIL: '+$Name)};$checks.Add($Name);Write-Host ('PASS: '+$Name)}
 function Entries([object]$Hashes){if($Hashes-is [Array]){@($Hashes)}else{@($Hashes.PSObject.Properties|ForEach-Object{[pscustomobject]@{Path=$_.Name;Sha256=$_.Value}})}}
 $backend=@('installer/ZhaoHuoInstaller.psm1','installer/AppearanceManager.ps1','installer/VariantSupport.ps1','installer/CharacterCatalog.ps1','installer/CharacterState.ps1','installer/CharacterManager.ps1','installer/CharacterTransactions.ps1','VariantCatalog.json','Install.ps1')
-$bound=@($backend)+@('tests/Test-CharacterCatalog.ps1')
+$bound=@($backend)+@('tests/Test-CharacterCatalog.ps1','scripts/CharacterReleaseRules.ps1')
 foreach($path in $bound){$null=Track $path}
+. (Resolve-Input 'scripts/CharacterReleaseRules.ps1')
 $module=Import-Module (Resolve-Input 'installer/ZhaoHuoInstaller.psm1') -Force -PassThru
 & $module {param($Root,$Output) Assert-ZHNoLink $Root;Assert-ZHNoLink $Output} $root $output
 $catalog=& $module {param($Root) Read-ZHCharacterCatalog $Root} $root
 Assert ($catalog.PackageReady-is [bool]-and $catalog.PackageReady) 'Final production catalog is ready and passes the strict schema/runtime pins'
 $display=Get-PortraitCharacters -PackageRoot $root
 $options=@($display.Characters|ForEach-Object{$_.Variants})
-Assert (@($display.Characters).Count-eq 3-and $options.Count-eq 11-and @($options|Where-Object{-not $_.Available-or-not $_.Ready}).Count-eq 0) 'All 11 choices are available under the three independent roles'
-Assert (@($options|Where-Object Kind -eq 'original').Count-eq 3) 'Each role exposes one original option without bundled original game images'
-$expected=@{'player/natural'=47;'player/handsome'=47;'player/xianxia'=47;'player/white'=47;'player/black'=47;'player/veteran'=47;'tang-buyi/refined'=15;'xiahou-lan/refined'=15}
-$legacy=@{natural='7E3062599926AC9266A7F5CCA3C9B073E5B66FBBA3205B8FED7A8DA3B21E2A71';handsome='63434840DC201BA14765C38AE8996674A07CF64E76518A7E3A85D55F59443D05';xianxia='E8EB408F31283581605425055AD742753C3E76D7C2D78065473117CB19794DBA'}
+Assert (@($display.Characters).Count-eq $releaseRoleIds.Count-and $options.Count-eq $releaseChoiceCount-and @($options|Where-Object{-not $_.Available-or-not $_.Ready}).Count-eq 0) 'All 20 choices are available under the seven independent roles'
+Assert (@($options|Where-Object Kind -eq 'original').Count-eq $releaseRoleIds.Count) 'Each role exposes one original option without bundled original game images'
+$expected=$releaseCounts
 $variants=@{};$sourceLists=@{};$count=0
 foreach($character in $catalog.Characters){
     Assert ((Hash (Track $character.LayoutSourcePath))-eq $character.LayoutSha256) ('Frozen role layout: '+$character.Id)
@@ -57,17 +57,17 @@ foreach($character in $catalog.Characters){
         Assert ($actions.Count-eq ($expected[$key]+$(if($character.Id-eq 'player'){0}else{1}))) ('Actual source hashes, isolated targets and layout geometry: '+$key)
         $files=@{};foreach($file in $variant.Files){$relative=$variant.SourcePath+'/'+$file.Name;$null=Track $relative;$files[$file.Name]=$file.Sha256}
         $sourceLists[$variant.SourcePath]=@($files.Keys);$variants[$key]=[pscustomobject]@{Definition=$variant;Files=$files};$count+=$files.Count
-        if($character.Id-eq 'player'-and $legacy.ContainsKey($variant.Id)){Assert ($variant.AssetFingerprint-eq $legacy[$variant.Id]) ('Previously released 47 PNGs are unchanged: '+$variant.Id)}
+        if($frozenV20Fingerprints.ContainsKey($key)){Assert ($variant.AssetFingerprint-eq $frozenV20Fingerprints[$key]) ('Previously released v2.0 PNGs are unchanged: '+$key)}
         if($character.Id-ne 'player'){
-            $fallback=if($character.Id-eq 'tang-buyi'){'hand'}else{'white'}
-            Assert (@($variant.OriginalFallback).Count-eq 1-and $variant.OriginalFallback[0]-eq $fallback-and-not $files.ContainsKey($fallback+'.png')) ('Intentional original-only resource retained: '+$character.Id+'/'+$fallback)
+            $fallback=@($releaseFallbacks[$character.Id]);$actualFallback=@($variant.OriginalFallback)
+            Assert ($actualFallback.Count-eq $fallback.Count-and @($actualFallback|Where-Object{$_-notin $fallback}).Count-eq 0-and @($fallback|Where-Object{$files.ContainsKey($_+'.png')}).Count-eq 0) ('Intentional original-art fallback: '+$key)
         }
     }
 }
-Assert ($variants.Count-eq 8-and $count-eq 312) 'Exactly eight custom variants and 312 declared PNGs'
+Assert ($variants.Count-eq $releaseCustomCount-and $count-eq $releasePortraitCount) 'Exactly thirteen custom variants and 400 declared PNGs'
 foreach($entry in $catalog.SharedFiles){Assert ((Hash (Track ('BepInEx/plugins/ZhaoHuoNatural/'+$entry.Name)))-eq $entry.Sha256) ('Verified shared component: '+$entry.Name)}
 $artPath='verification/character-art-integrity.json';$art=Read-Json $artPath;$artSeen=@{}
-Assert ($art.Passed-is [bool]-and $art.Passed-and $art.PortraitCount-eq 312-and @($art.Variants).Count-eq 8) 'Decoded artwork evidence covers all final PNGs'
+Assert ($art.Passed-is [bool]-and $art.Passed-and $art.PortraitCount-eq $releasePortraitCount-and @($art.Variants).Count-eq $releaseCustomCount) 'Decoded artwork evidence covers all final PNGs'
 foreach($item in $art.Variants){
     $key=$item.CharacterId+'/'+$item.Id
     if(-not $variants.ContainsKey($key)-or $artSeen.ContainsKey($key)){throw 'Unexpected/duplicate artwork evidence variant.'};$artSeen[$key]=$true
@@ -77,16 +77,20 @@ foreach($item in $art.Variants){
         if($seen.ContainsKey($file.Name)-or-not $v.Files.ContainsKey($file.Name)-or $file.Sha256-ne $v.Files[$file.Name]-or $file.Width-le 0-or $file.Height-le 0-or $file.AlphaMin-ne 0-or $file.AlphaMax-le 0-or $file.AlphaMax-gt 255){throw ('Artwork file evidence differs: '+$key+'/'+$file.Name)};$seen[$file.Name]=$true
     }
 }
-Assert ($artSeen.Count-eq 8) 'Decoded dimensions/alpha evidence binds the actual 312 file hashes'
-$promptPath='Prompts/multichar/index.json';$prompts=Read-Json $promptPath;$promptSeen=@{}
-if($prompts.Complete-isnot [bool]-or-not $prompts.Complete-or $prompts.GenerationMethod-ne 'builtin imagegen'-or @($prompts.Assets).Count-ne 171){throw 'Final prompt index is incomplete.'}
-foreach($asset in $prompts.Assets){
-    $key=$asset.CharacterId+'/'+$asset.VariantId;$name=[IO.Path]::GetFileNameWithoutExtension([string]$asset.Name)+'.png';$id=$key+'/'+$name
-    if(-not $variants.ContainsKey($key)-or $key-in @('player/natural','player/handsome','player/xianxia')-or $promptSeen.ContainsKey($id)-or-not $variants[$key].Files.ContainsKey($name)-or $asset.OutputSHA256-ne $variants[$key].Files[$name]){throw ('Prompt output binding differs: '+$id)}
-    if(-not ([string]$asset.RecordPath).StartsWith('Prompts/',[StringComparison]::Ordinal)){throw 'Prompt source must be within Prompts.'}
-    $null=Track $asset.RecordPath;$promptSeen[$id]=$true
+Assert ($artSeen.Count-eq $releaseCustomCount) 'Decoded dimensions/alpha evidence binds all 400 file hashes'
+$promptSeen=@{};$promptEvidence=@()
+foreach($group in $releasePromptGroups){
+    $promptPath=$group.Path;$prompts=Read-Json $promptPath
+    if($prompts.Complete-isnot [bool]-or-not $prompts.Complete-or $prompts.GenerationMethod-ne 'builtin imagegen'-or @($prompts.Assets).Count-ne $group.Count){throw ('Final prompt index is incomplete: '+$promptPath)}
+    foreach($asset in $prompts.Assets){
+        $key=$asset.CharacterId+'/'+$asset.VariantId;$name=[IO.Path]::GetFileNameWithoutExtension([string]$asset.Name)+'.png';$id=$key+'/'+$name
+        if(-not $variants.ContainsKey($key)-or $key-notin $group.Variants-or $promptSeen.ContainsKey($id)-or-not $variants[$key].Files.ContainsKey($name)-or $asset.OutputSHA256-ne $variants[$key].Files[$name]){throw ('Prompt output binding differs: '+$id)}
+        if(-not ([string]$asset.RecordPath).StartsWith('Prompts/',[StringComparison]::Ordinal)){throw 'Prompt source must be within Prompts.'}
+        $null=Track $asset.RecordPath;$promptSeen[$id]=$true
+    }
+    $promptEvidence+=@([pscustomobject]@{Path=$promptPath;Sha256=$inputs[$promptPath];AssetCount=$group.Count})
 }
-Assert ($promptSeen.Count-eq 171) 'All 171 new final images are bound to included prompt records'
+Assert ($promptSeen.Count-eq 259) 'The historical 171 and new 88 generated images are bound to included prompt records'
 $reused=@()
 foreach($path in @('verification/character-manager-tests.json','verification/character-manager-regression.json')){
     $report=Read-Json $path;$entries=@(Entries $report.CodeHashes);$seen=@{};$oldCatalog=$null;$unchanged=0
@@ -109,11 +113,11 @@ Assert $true 'All checked package inputs and exact portrait inventories remain u
 $result=[ordered]@{
     Passed=$true;DateUtc=[DateTime]::UtcNow.ToString('o');PowerShell=$PSVersionTable.PSVersion.ToString();DurationSeconds=[Math]::Round(([DateTime]::UtcNow-$started).TotalSeconds,2)
     DataOnlyAcceptance=$true;SourceSuitesRerun=$false;ActualGameRun=$false;PackageReady=$true;ReadOnlyPackageUnchanged=$true
-    CatalogSha256=$inputs['VariantCatalog.json'];CatalogCodeSha256=(CodeHash (Resolve-Input 'VariantCatalog.json'));PortraitCount=312;CustomVariantCount=8;CharacterCount=3
+    CatalogSha256=$inputs['VariantCatalog.json'];CatalogCodeSha256=(CodeHash (Resolve-Input 'VariantCatalog.json'));PortraitCount=$releasePortraitCount;CustomVariantCount=$releaseCustomCount;CharacterCount=$releaseRoleIds.Count
     AssertionCount=$checks.Count;Checks=$checks.ToArray();ReusedReports=$reused
-    ArtworkEvidence=[pscustomobject]@{Path=$artPath;Sha256=$inputs[$artPath]};PromptEvidence=[pscustomobject]@{Path=$promptPath;Sha256=$inputs[$promptPath]}
+    ArtworkEvidence=[pscustomobject]@{Path=$artPath;Sha256=$inputs[$artPath]};PromptEvidence=$promptEvidence
     CodeHashAlgorithm='SHA256-UTF8-noBOM-LF-v1';CodeHashes=@($bound|ForEach-Object{[pscustomobject]@{Path=$_;Sha256=(CodeHash (Resolve-Input $_))}})
-    Scope='Read-only final production-data/API acceptance: real 312 PNG bytes, exact eight inventories/fingerprints, role layout validation, readiness/availability, shared pins, old 141 preservation and new 171 prompt bindings. Existing decoded-pixel evidence is checked against file hashes, not rerun here. Original 64/74 synthetic suites are reused only for unchanged source; their historical Catalog hashes remain intact. No game files, installation or game execution are accessed.'
+    Scope='Read-only final production-data/API acceptance: real 400 PNG bytes, exact thirteen inventories/fingerprints, seven role layouts, readiness, shared pins, old 312 preservation and historical 171 plus new 88 prompt bindings. Decoded-pixel evidence is checked against file hashes, not rerun here. Original 64/74 synthetic suites are reused only for unchanged source; their historical Catalog hashes remain intact. No game files, installation or game execution are accessed.'
 }
 $parent=[IO.Path]::GetDirectoryName($output);[IO.Directory]::CreateDirectory($parent)|Out-Null
 [IO.File]::WriteAllText($output,($result|ConvertTo-Json -Depth 14),(New-Object Text.UTF8Encoding($false)))

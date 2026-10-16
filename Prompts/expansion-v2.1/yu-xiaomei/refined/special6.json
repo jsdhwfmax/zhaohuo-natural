@@ -1,0 +1,41 @@
+{
+  "SchemaVersion": 1,
+  "CharacterId": "yu-xiaomei",
+  "VariantId": "refined",
+  "Name": "special6.png",
+  "GenerationMethod": "builtin imagegen",
+  "PixelPostProcessing": false,
+  "Prompt": "Edit image 1 only to fix the clipped hand at the right canvas edge. Image 2 is identity reference. KEEP EXACTLY image 1's facial expression, face, costume, original arm pose, props, drawing style and all details. Zoom OUT so the ENTIRE figure is 20 percent smaller within this transparent canvas; add clear transparent space beyond BOTH hands and hair. Reconstruct missing right-hand fingertips naturally. Do not merely extend a cropped hand up to the edge again. All hair/hands/sleeves must end before the border. Keep same relative head/body proportions and the same lower-skirt crop at bottom. One character, TRUE TRANSPARENCY, no text, no background, no shadow/glow. Facial expression remains exactly special6: Very specific heated comical indignation: intense wide upturned eyes with tiny pupils, heavily RED shaded face/forehead, puffed tense cheeks and tiny puckered O-shaped mouth. One arm lowered, opposite arm held low outward with open hand. Keep the red shading ON THE FACE only, no red external background or aura. Every hand completely inside canvas.",
+  "References": [
+    {
+      "LogicalName": "reference-1/exec-ab5e4e64-8f60-49f3-95cf-84c11837e085.png",
+      "Kind": "local-reference-not-distributed"
+    },
+    {
+      "LogicalName": "generated-design/yu-xiaomei/refined/normal.png",
+      "Kind": "generated-design-reference"
+    }
+  ],
+  "OriginalGameCanonicalPath": "assets/__project/images/characters/girl5_小梅/special6.png",
+  "OriginalGameReferenceDistributed": false,
+  "GeneratedSourceBasename": "exec-19be7014-46ee-468a-92e2-7022914a4ec9.png",
+  "OutputSHA256": "424DA6B56FF189D9ED9F89AE933D0CFEE0D6C6F0CECE825346F57341E783C3B2",
+  "SourceRecordBasename": "yu-xiaomei-refined-special6.json",
+  "SourceRecordSHA256": "10B14CC16AF545B6DF7A99A41C4B2B6AE2E5935AC4E53FD83FF36F0784CE9426",
+  "RawGeneratedCopyVerified": true,
+  "VisualReview": "passed before integration; runtime acceptance is separate",
+  "ImageMetadata": {
+    "Width": 990,
+    "Height": 1589,
+    "Mode": "RGBA",
+    "AlphaMin": 0,
+    "AlphaMax": 255,
+    "AlphaBoundsGt16": [
+      46,
+      156,
+      981,
+      1531
+    ],
+    "Bytes": 1489862
+  }
+}

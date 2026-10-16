@@ -1,0 +1,37 @@
+{
+  "SchemaVersion": 1,
+  "CharacterId": "tang-buyi",
+  "VariantId": "female",
+  "Name": "normal.png",
+  "GenerationMethod": "builtin imagegen",
+  "PixelPostProcessing": false,
+  "Prompt": "Use case: precise-object-edit. Asset: ONE transparent dialogue portrait sprite for 活侠传 / Legend of Mortal. Image 1 gives the game's handmade ink/watercolor style, pose and main costume colors; any gray color stripes outside the character are export artifacts and MUST NOT be rendered. True transparent alpha background. Rough uneven black sketch lines, dry brush contours, matte watercolor/pencil grain and restrained cel-like shading on face and clothes. Single character at the reference camera angle with natural head-to-body proportion; whole head, both hands and all side costume elements fully fit inside at least 5 percent transparent left/right margins, upper-thigh/bottom garment crop allowed. Tall portrait. No backdrop, text, labels, frame, watermark, glossy 3D, photorealism or smooth plastic rendering. Create an optional FEMALE Tang Buyi 唐布衣 / 大师兄 redesign: a clearly ADULT gorgeous Chinese woman around age 28 with a very voluptuous curvy figure and a prominently very large full bust, naturally supported and fully covered by an opaque tailored martial-arts robe. This is an ordinary nonsexual game dialogue character portrait. Visibly feminine graceful waist and shoulders, confident upright athletic bearing. A newly designed mature feminine face is encouraged: captivating long almond eyes with natural lashes, warmly arched brows, elegant nose, full softly colored lips, playful self-assured smile, charismatic lively big-sister personality. Keep flowing long dark plum-black hair in a loose low ponytail with golden tie and asymmetric side bangs. Adapt the recognizable dusty blue Tang-sect robe with gold frog clasps, plum leather bracer, metal details, waist tie and flowing panel into a flattering fitted cross-collar female warrior outfit. Keep shoulders and chest covered by opaque fabric, no exposed breasts or sheer areas. Preserve original leaning/twisting action, hands and the small gold objects. Strong mature female appearance is MORE important than resembling the original male face. Entire hands and side silhouette visible with margins. No childlike face, no chibi, no masculine face.",
+  "References": [
+    {
+      "LogicalName": "local-game-reference/normal.png",
+      "Kind": "original-game-reference-not-distributed"
+    }
+  ],
+  "OriginalGameCanonicalPath": "assets/__project/images/characters/brother1/normal.png",
+  "OriginalGameReferenceDistributed": false,
+  "GeneratedSourceBasename": "exec-4085d0ee-eef1-4528-ab69-79e9be46b0f8.png",
+  "OutputSHA256": "FE491C8DDADB3A46607DFFF137A7F6DB79F0E55851E22F82789FA0BAC15FF0ED",
+  "SourceRecordBasename": "tang-buyi-female-normal-curvy-v3.json",
+  "SourceRecordSHA256": "DAD1B59C6A23AAC70521D7B5DC60FB9C7FACC954BC2CB1A1D2DB4A9533BD4332",
+  "RawGeneratedCopyVerified": true,
+  "VisualReview": "passed before integration; runtime acceptance is separate",
+  "ImageMetadata": {
+    "Width": 1096,
+    "Height": 1435,
+    "Mode": "RGBA",
+    "AlphaMin": 0,
+    "AlphaMax": 255,
+    "AlphaBoundsGt16": [
+      3,
+      86,
+      1091,
+      1435
+    ],
+    "Bytes": 2016263
+  }
+}

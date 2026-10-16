@@ -1,28 +1,24 @@
 {
     "Passed":  true,
-    "TestCount":  52,
-    "PassedCount":  52,
+    "TestCount":  195,
+    "PassedCount":  195,
     "PowerShellVersion":  "5.1.26100.9711",
     "ActualGameRun":  false,
     "Scope":  "Production managed JSON parser compiled unchanged with character policy; real installed JSON read only when supplied. No Unity/game assembly executed or game file modified.",
-    "ActualConfiguration":  {
-                                "ReadOnly":  true,
-                                "SHA256":  "3515E875368A8B0B92E9B1D35BD36FF51CD5CD5AA466619F736B1ED99F93B24C",
-                                "EnabledRoles":  "player,tang-buyi,xiahou-lan"
-                            },
+    "ActualConfiguration":  null,
     "CodeHashAlgorithm":  "SHA256-UTF8-noBOM-LF-v1",
     "CodeHashes":  [
                        {
                            "Path":  "Source/CharacterPolicy.cs",
-                           "Sha256":  "0189569831D6CFE71039433E4387092B5AAA16D9BE10866A7EC76B4255906D61"
+                           "Sha256":  "81B8B8E33ED03C87A7717A58F128C2FDB6CB3311818A9EC954D714A5C3801F91"
                        },
                        {
                            "Path":  "Source/CharacterConfigurationJson.cs",
-                           "Sha256":  "6E490DE6093F23A7A439FC0A89C53C2A99C0C53A4D3C96F19A3E121F4791A1ED"
+                           "Sha256":  "1A5B1FE77F5D9E6AB0347489CFAC34361C11240A932FA9C8F29E5D7ED806FDD1"
                        },
                        {
                            "Path":  "Source/CharacterSupport.cs",
-                           "Sha256":  "93300B5AB8A0B235557DA33F188B7B5E419CCAA1EB7C23CF96950FEE3B9364FB"
+                           "Sha256":  "E07A91A0681DD3CE1BF0975E8743F4E7DACF8E0D42F513AD82678687919F6189"
                        },
                        {
                            "Path":  "Source/build.ps1",
@@ -30,7 +26,7 @@
                        },
                        {
                            "Path":  "Source/Tests/Test-CharacterConfiguration.ps1",
-                           "Sha256":  "6FE77C736C4E377A1D3D8252DB6DB6ABE56CEAFBD40FF86D2D129137A073F593"
+                           "Sha256":  "53E8076F3F6E31EDB54E83E6E7A785563A9FCA30EBB78552C52FF2C8B3711476"
                        }
                    ],
     "Tests":  [
@@ -80,6 +76,582 @@
                   },
                   {
                       "Name":  "JSON Unicode escapes accepted",
+                      "Passed":  true
+                  },
+                  {
+                      "Name":  "Schema 2 independent switch combination 0",
+                      "Passed":  true
+                  },
+                  {
+                      "Name":  "Schema 2 independent switch combination 1",
+                      "Passed":  true
+                  },
+                  {
+                      "Name":  "Schema 2 independent switch combination 2",
+                      "Passed":  true
+                  },
+                  {
+                      "Name":  "Schema 2 independent switch combination 3",
+                      "Passed":  true
+                  },
+                  {
+                      "Name":  "Schema 2 independent switch combination 4",
+                      "Passed":  true
+                  },
+                  {
+                      "Name":  "Schema 2 independent switch combination 5",
+                      "Passed":  true
+                  },
+                  {
+                      "Name":  "Schema 2 independent switch combination 6",
+                      "Passed":  true
+                  },
+                  {
+                      "Name":  "Schema 2 independent switch combination 7",
+                      "Passed":  true
+                  },
+                  {
+                      "Name":  "Schema 2 independent switch combination 8",
+                      "Passed":  true
+                  },
+                  {
+                      "Name":  "Schema 2 independent switch combination 9",
+                      "Passed":  true
+                  },
+                  {
+                      "Name":  "Schema 2 independent switch combination 10",
+                      "Passed":  true
+                  },
+                  {
+                      "Name":  "Schema 2 independent switch combination 11",
+                      "Passed":  true
+                  },
+                  {
+                      "Name":  "Schema 2 independent switch combination 12",
+                      "Passed":  true
+                  },
+                  {
+                      "Name":  "Schema 2 independent switch combination 13",
+                      "Passed":  true
+                  },
+                  {
+                      "Name":  "Schema 2 independent switch combination 14",
+                      "Passed":  true
+                  },
+                  {
+                      "Name":  "Schema 2 independent switch combination 15",
+                      "Passed":  true
+                  },
+                  {
+                      "Name":  "Schema 2 independent switch combination 16",
+                      "Passed":  true
+                  },
+                  {
+                      "Name":  "Schema 2 independent switch combination 17",
+                      "Passed":  true
+                  },
+                  {
+                      "Name":  "Schema 2 independent switch combination 18",
+                      "Passed":  true
+                  },
+                  {
+                      "Name":  "Schema 2 independent switch combination 19",
+                      "Passed":  true
+                  },
+                  {
+                      "Name":  "Schema 2 independent switch combination 20",
+                      "Passed":  true
+                  },
+                  {
+                      "Name":  "Schema 2 independent switch combination 21",
+                      "Passed":  true
+                  },
+                  {
+                      "Name":  "Schema 2 independent switch combination 22",
+                      "Passed":  true
+                  },
+                  {
+                      "Name":  "Schema 2 independent switch combination 23",
+                      "Passed":  true
+                  },
+                  {
+                      "Name":  "Schema 2 independent switch combination 24",
+                      "Passed":  true
+                  },
+                  {
+                      "Name":  "Schema 2 independent switch combination 25",
+                      "Passed":  true
+                  },
+                  {
+                      "Name":  "Schema 2 independent switch combination 26",
+                      "Passed":  true
+                  },
+                  {
+                      "Name":  "Schema 2 independent switch combination 27",
+                      "Passed":  true
+                  },
+                  {
+                      "Name":  "Schema 2 independent switch combination 28",
+                      "Passed":  true
+                  },
+                  {
+                      "Name":  "Schema 2 independent switch combination 29",
+                      "Passed":  true
+                  },
+                  {
+                      "Name":  "Schema 2 independent switch combination 30",
+                      "Passed":  true
+                  },
+                  {
+                      "Name":  "Schema 2 independent switch combination 31",
+                      "Passed":  true
+                  },
+                  {
+                      "Name":  "Schema 2 independent switch combination 32",
+                      "Passed":  true
+                  },
+                  {
+                      "Name":  "Schema 2 independent switch combination 33",
+                      "Passed":  true
+                  },
+                  {
+                      "Name":  "Schema 2 independent switch combination 34",
+                      "Passed":  true
+                  },
+                  {
+                      "Name":  "Schema 2 independent switch combination 35",
+                      "Passed":  true
+                  },
+                  {
+                      "Name":  "Schema 2 independent switch combination 36",
+                      "Passed":  true
+                  },
+                  {
+                      "Name":  "Schema 2 independent switch combination 37",
+                      "Passed":  true
+                  },
+                  {
+                      "Name":  "Schema 2 independent switch combination 38",
+                      "Passed":  true
+                  },
+                  {
+                      "Name":  "Schema 2 independent switch combination 39",
+                      "Passed":  true
+                  },
+                  {
+                      "Name":  "Schema 2 independent switch combination 40",
+                      "Passed":  true
+                  },
+                  {
+                      "Name":  "Schema 2 independent switch combination 41",
+                      "Passed":  true
+                  },
+                  {
+                      "Name":  "Schema 2 independent switch combination 42",
+                      "Passed":  true
+                  },
+                  {
+                      "Name":  "Schema 2 independent switch combination 43",
+                      "Passed":  true
+                  },
+                  {
+                      "Name":  "Schema 2 independent switch combination 44",
+                      "Passed":  true
+                  },
+                  {
+                      "Name":  "Schema 2 independent switch combination 45",
+                      "Passed":  true
+                  },
+                  {
+                      "Name":  "Schema 2 independent switch combination 46",
+                      "Passed":  true
+                  },
+                  {
+                      "Name":  "Schema 2 independent switch combination 47",
+                      "Passed":  true
+                  },
+                  {
+                      "Name":  "Schema 2 independent switch combination 48",
+                      "Passed":  true
+                  },
+                  {
+                      "Name":  "Schema 2 independent switch combination 49",
+                      "Passed":  true
+                  },
+                  {
+                      "Name":  "Schema 2 independent switch combination 50",
+                      "Passed":  true
+                  },
+                  {
+                      "Name":  "Schema 2 independent switch combination 51",
+                      "Passed":  true
+                  },
+                  {
+                      "Name":  "Schema 2 independent switch combination 52",
+                      "Passed":  true
+                  },
+                  {
+                      "Name":  "Schema 2 independent switch combination 53",
+                      "Passed":  true
+                  },
+                  {
+                      "Name":  "Schema 2 independent switch combination 54",
+                      "Passed":  true
+                  },
+                  {
+                      "Name":  "Schema 2 independent switch combination 55",
+                      "Passed":  true
+                  },
+                  {
+                      "Name":  "Schema 2 independent switch combination 56",
+                      "Passed":  true
+                  },
+                  {
+                      "Name":  "Schema 2 independent switch combination 57",
+                      "Passed":  true
+                  },
+                  {
+                      "Name":  "Schema 2 independent switch combination 58",
+                      "Passed":  true
+                  },
+                  {
+                      "Name":  "Schema 2 independent switch combination 59",
+                      "Passed":  true
+                  },
+                  {
+                      "Name":  "Schema 2 independent switch combination 60",
+                      "Passed":  true
+                  },
+                  {
+                      "Name":  "Schema 2 independent switch combination 61",
+                      "Passed":  true
+                  },
+                  {
+                      "Name":  "Schema 2 independent switch combination 62",
+                      "Passed":  true
+                  },
+                  {
+                      "Name":  "Schema 2 independent switch combination 63",
+                      "Passed":  true
+                  },
+                  {
+                      "Name":  "Schema 2 independent switch combination 64",
+                      "Passed":  true
+                  },
+                  {
+                      "Name":  "Schema 2 independent switch combination 65",
+                      "Passed":  true
+                  },
+                  {
+                      "Name":  "Schema 2 independent switch combination 66",
+                      "Passed":  true
+                  },
+                  {
+                      "Name":  "Schema 2 independent switch combination 67",
+                      "Passed":  true
+                  },
+                  {
+                      "Name":  "Schema 2 independent switch combination 68",
+                      "Passed":  true
+                  },
+                  {
+                      "Name":  "Schema 2 independent switch combination 69",
+                      "Passed":  true
+                  },
+                  {
+                      "Name":  "Schema 2 independent switch combination 70",
+                      "Passed":  true
+                  },
+                  {
+                      "Name":  "Schema 2 independent switch combination 71",
+                      "Passed":  true
+                  },
+                  {
+                      "Name":  "Schema 2 independent switch combination 72",
+                      "Passed":  true
+                  },
+                  {
+                      "Name":  "Schema 2 independent switch combination 73",
+                      "Passed":  true
+                  },
+                  {
+                      "Name":  "Schema 2 independent switch combination 74",
+                      "Passed":  true
+                  },
+                  {
+                      "Name":  "Schema 2 independent switch combination 75",
+                      "Passed":  true
+                  },
+                  {
+                      "Name":  "Schema 2 independent switch combination 76",
+                      "Passed":  true
+                  },
+                  {
+                      "Name":  "Schema 2 independent switch combination 77",
+                      "Passed":  true
+                  },
+                  {
+                      "Name":  "Schema 2 independent switch combination 78",
+                      "Passed":  true
+                  },
+                  {
+                      "Name":  "Schema 2 independent switch combination 79",
+                      "Passed":  true
+                  },
+                  {
+                      "Name":  "Schema 2 independent switch combination 80",
+                      "Passed":  true
+                  },
+                  {
+                      "Name":  "Schema 2 independent switch combination 81",
+                      "Passed":  true
+                  },
+                  {
+                      "Name":  "Schema 2 independent switch combination 82",
+                      "Passed":  true
+                  },
+                  {
+                      "Name":  "Schema 2 independent switch combination 83",
+                      "Passed":  true
+                  },
+                  {
+                      "Name":  "Schema 2 independent switch combination 84",
+                      "Passed":  true
+                  },
+                  {
+                      "Name":  "Schema 2 independent switch combination 85",
+                      "Passed":  true
+                  },
+                  {
+                      "Name":  "Schema 2 independent switch combination 86",
+                      "Passed":  true
+                  },
+                  {
+                      "Name":  "Schema 2 independent switch combination 87",
+                      "Passed":  true
+                  },
+                  {
+                      "Name":  "Schema 2 independent switch combination 88",
+                      "Passed":  true
+                  },
+                  {
+                      "Name":  "Schema 2 independent switch combination 89",
+                      "Passed":  true
+                  },
+                  {
+                      "Name":  "Schema 2 independent switch combination 90",
+                      "Passed":  true
+                  },
+                  {
+                      "Name":  "Schema 2 independent switch combination 91",
+                      "Passed":  true
+                  },
+                  {
+                      "Name":  "Schema 2 independent switch combination 92",
+                      "Passed":  true
+                  },
+                  {
+                      "Name":  "Schema 2 independent switch combination 93",
+                      "Passed":  true
+                  },
+                  {
+                      "Name":  "Schema 2 independent switch combination 94",
+                      "Passed":  true
+                  },
+                  {
+                      "Name":  "Schema 2 independent switch combination 95",
+                      "Passed":  true
+                  },
+                  {
+                      "Name":  "Schema 2 independent switch combination 96",
+                      "Passed":  true
+                  },
+                  {
+                      "Name":  "Schema 2 independent switch combination 97",
+                      "Passed":  true
+                  },
+                  {
+                      "Name":  "Schema 2 independent switch combination 98",
+                      "Passed":  true
+                  },
+                  {
+                      "Name":  "Schema 2 independent switch combination 99",
+                      "Passed":  true
+                  },
+                  {
+                      "Name":  "Schema 2 independent switch combination 100",
+                      "Passed":  true
+                  },
+                  {
+                      "Name":  "Schema 2 independent switch combination 101",
+                      "Passed":  true
+                  },
+                  {
+                      "Name":  "Schema 2 independent switch combination 102",
+                      "Passed":  true
+                  },
+                  {
+                      "Name":  "Schema 2 independent switch combination 103",
+                      "Passed":  true
+                  },
+                  {
+                      "Name":  "Schema 2 independent switch combination 104",
+                      "Passed":  true
+                  },
+                  {
+                      "Name":  "Schema 2 independent switch combination 105",
+                      "Passed":  true
+                  },
+                  {
+                      "Name":  "Schema 2 independent switch combination 106",
+                      "Passed":  true
+                  },
+                  {
+                      "Name":  "Schema 2 independent switch combination 107",
+                      "Passed":  true
+                  },
+                  {
+                      "Name":  "Schema 2 independent switch combination 108",
+                      "Passed":  true
+                  },
+                  {
+                      "Name":  "Schema 2 independent switch combination 109",
+                      "Passed":  true
+                  },
+                  {
+                      "Name":  "Schema 2 independent switch combination 110",
+                      "Passed":  true
+                  },
+                  {
+                      "Name":  "Schema 2 independent switch combination 111",
+                      "Passed":  true
+                  },
+                  {
+                      "Name":  "Schema 2 independent switch combination 112",
+                      "Passed":  true
+                  },
+                  {
+                      "Name":  "Schema 2 independent switch combination 113",
+                      "Passed":  true
+                  },
+                  {
+                      "Name":  "Schema 2 independent switch combination 114",
+                      "Passed":  true
+                  },
+                  {
+                      "Name":  "Schema 2 independent switch combination 115",
+                      "Passed":  true
+                  },
+                  {
+                      "Name":  "Schema 2 independent switch combination 116",
+                      "Passed":  true
+                  },
+                  {
+                      "Name":  "Schema 2 independent switch combination 117",
+                      "Passed":  true
+                  },
+                  {
+                      "Name":  "Schema 2 independent switch combination 118",
+                      "Passed":  true
+                  },
+                  {
+                      "Name":  "Schema 2 independent switch combination 119",
+                      "Passed":  true
+                  },
+                  {
+                      "Name":  "Schema 2 independent switch combination 120",
+                      "Passed":  true
+                  },
+                  {
+                      "Name":  "Schema 2 independent switch combination 121",
+                      "Passed":  true
+                  },
+                  {
+                      "Name":  "Schema 2 independent switch combination 122",
+                      "Passed":  true
+                  },
+                  {
+                      "Name":  "Schema 2 independent switch combination 123",
+                      "Passed":  true
+                  },
+                  {
+                      "Name":  "Schema 2 independent switch combination 124",
+                      "Passed":  true
+                  },
+                  {
+                      "Name":  "Schema 2 independent switch combination 125",
+                      "Passed":  true
+                  },
+                  {
+                      "Name":  "Schema 2 independent switch combination 126",
+                      "Passed":  true
+                  },
+                  {
+                      "Name":  "Schema 2 independent switch combination 127",
+                      "Passed":  true
+                  },
+                  {
+                      "Name":  "Schema 2 property and role order independent",
+                      "Passed":  true
+                  },
+                  {
+                      "Name":  "Legacy schema does not enable any new role",
+                      "Passed":  true
+                  },
+                  {
+                      "Name":  "Schema 2 missing player",
+                      "Passed":  true
+                  },
+                  {
+                      "Name":  "Schema 2 missing tang-buyi",
+                      "Passed":  true
+                  },
+                  {
+                      "Name":  "Schema 2 missing xiahou-lan",
+                      "Passed":  true
+                  },
+                  {
+                      "Name":  "Schema 2 missing tang-moling",
+                      "Passed":  true
+                  },
+                  {
+                      "Name":  "Schema 2 missing long-xiang",
+                      "Passed":  true
+                  },
+                  {
+                      "Name":  "Schema 2 missing yu-xiaomei",
+                      "Passed":  true
+                  },
+                  {
+                      "Name":  "Schema 2 missing tang-zheng",
+                      "Passed":  true
+                  },
+                  {
+                      "Name":  "Schema 1 rejects seven-role configuration",
+                      "Passed":  true
+                  },
+                  {
+                      "Name":  "Schema 2 rejects three-role configuration",
+                      "Passed":  true
+                  },
+                  {
+                      "Name":  "Schema 2 rejects duplicate character",
+                      "Passed":  true
+                  },
+                  {
+                      "Name":  "Schema 2 rejects unknown character",
+                      "Passed":  true
+                  },
+                  {
+                      "Name":  "Schema 2 rejects eighth entry",
+                      "Passed":  true
+                  },
+                  {
+                      "Name":  "Schema 2 rejects decimal version",
+                      "Passed":  true
+                  },
+                  {
+                      "Name":  "Schema 2 rejects concatenated version",
                       "Passed":  true
                   },
                   {
@@ -236,10 +808,6 @@
                   },
                   {
                       "Name":  "Oversized input",
-                      "Passed":  true
-                  },
-                  {
-                      "Name":  "Actual installed JSON parsed through production parser",
                       "Passed":  true
                   }
               ]

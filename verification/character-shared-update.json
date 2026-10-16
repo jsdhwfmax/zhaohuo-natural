@@ -2,10 +2,10 @@
     "Passed":  true,
     "AssertionCount":  13,
     "PowerShell":  "5.1.26100.9711",
-    "DurationSeconds":  134.55,
+    "DurationSeconds":  126.32,
     "ActualGameRun":  false,
     "RealGameFilesModified":  false,
-    "ProductionTargetDllSha256":  "592A56EDD630F40AAA5A551746183F86F7D941D7ACEAABC105D6D473A7BE9AA8",
+    "ProductionTargetDllSha256":  "AEEE02AC56DCDCB1E683D6356AC28FE19E61AF861D5663ACFFD1B83984F06957",
     "CodeHashAlgorithm":  "SHA256-UTF8-noBOM-LF-v1",
     "CodeHashes":  [
                        {
@@ -22,15 +22,15 @@
                        },
                        {
                            "Path":  "installer/CharacterCatalog.ps1",
-                           "Sha256":  "4DCDE56EADCCA98CB7674C894CB56956D6E6ECC84781F6A6A04F8C1B960E2EB4"
+                           "Sha256":  "4D4C671A3FA58C7B42F88E60DD6509B86E9C4A820F2FB19BBE2601A4E6A54566"
                        },
                        {
                            "Path":  "installer/CharacterState.ps1",
-                           "Sha256":  "BD1786E11E01FA02E255B48BBCA41F8EA521DA66EA03FE5D55BDC63B28CEFB0D"
+                           "Sha256":  "74707F347AFCD20A699CF177FA7A30DBDE5DB53AF58CE34FFFBBC25E7CFCEC12"
                        },
                        {
                            "Path":  "installer/CharacterManager.ps1",
-                           "Sha256":  "269C20C399A304B86479886F87CEDCFDCDD8E0CBFF7E606F776E542251EF6F8B"
+                           "Sha256":  "F62691721CFD9758CB1C4D5049E47C67968364E49BCF5B44C9AEF8B3A21D7079"
                        },
                        {
                            "Path":  "installer/CharacterTransactions.ps1",
@@ -38,11 +38,11 @@
                        },
                        {
                            "Path":  "tests/Test-CharacterManager.ps1",
-                           "Sha256":  "AF907C81FCE729FE45647CED781F241C485308DA2FF02C9C91BE3A7A4EABC22B"
+                           "Sha256":  "D191B3ADE06F6F6D4E364791343DA065C1A5644BC67678B9E641AE7E2FCCBDF3"
                        },
                        {
                            "Path":  "tests/Test-CharacterSharedUpdate.ps1",
-                           "Sha256":  "47BB59BDC7B815A220BB282F007D4F27A62F658824147BBA1C708291EC8BB095"
+                           "Sha256":  "5A381D2D6758AA76BA1E46511143BE684ECB75E937FE5E60B58E426E4FB6F0B5"
                        }
                    ],
     "Checks":  [

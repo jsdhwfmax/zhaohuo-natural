@@ -21,7 +21,7 @@ using Object = UnityEngine.Object;
 
 namespace ZhaoHuoNatural
 {
-    [BepInPlugin("local.zhaohuo.naturalportrait", "Zhao Huo Character Portraits", "2.0.0")]
+    [BepInPlugin("local.zhaohuo.naturalportrait", "Zhao Huo Character Portraits", "2.1.0")]
     public sealed partial class Plugin : BaseUnityPlugin
     {
         internal static Plugin Instance;

@@ -1,0 +1,41 @@
+{
+  "SchemaVersion": 1,
+  "CharacterId": "yu-xiaomei",
+  "VariantId": "refined",
+  "Name": "shy3.png",
+  "GenerationMethod": "builtin imagegen",
+  "PixelPostProcessing": false,
+  "Prompt": "Use case: precise-object-edit. Make ONE transparent dialogue portrait sprite for 活侠传 / Legend of Mortal. Image 1 is the ORIGINAL TARGET expression/gesture/props reference; Image 2 is the newly approved beauty redesign and SAME CHARACTER identity/style/costume reference. Repaint Image 1 using the precise face, hair, age, proportions and costume rendering of Image 2. Crucially reproduce Image 1's expression, eye direction, mouth, hands, pose, original props and all meaningful sweat/tears/blood/comic marks; do NOT simply repeat the calm pose or smile from Image 2. Match the original restrained hand-drawn wuxia game style: rough black sketch contours, dry-brush edges, visible matte watercolor and colored-pencil grain, not glossy modern anime. Preserve character's age and modest costume/body proportions; no sexualization or additional exposed skin. Grey/color streaks outside the character in Image 1 are raw texture export artifacts, do not reproduce them. Exactly one complete isolated character, TRUE transparent background, natural-sized head, whole hair/hands/side silhouette fitted within at least 5% transparent side margins; only the same lower skirt crop at bottom is allowed. No new props, background, text, watermark, frame, checkerboard, 3D or photorealism. Character: Yu Xiaomei 虞小梅; same youthful age appearance as both references, dark high ponytail with red/gold knot ornament unless target explicitly uses loose hair, white red-trimmed robe, brown waist sash/bracers, coral-red skirt. No body enhancement. Target expression: shy3. In-game labels: 特殊3. IMPORTANT HAIR EXCEPTION: same character face but her ponytail is UNTIED, long dark hair hanging loose down both sides and behind shoulders, with NO hair ornament, NO ponytail as in Image 1. Shy sideward gaze, heavy cheek blush, small wobbly smile and one sweat drop. BOTH hands hidden behind back. Preserve modest costume and youthful age, innocent bashful expression.",
+  "References": [
+    {
+      "LogicalName": "local-game-reference/shy3.png",
+      "Kind": "original-game-reference-not-distributed"
+    },
+    {
+      "LogicalName": "generated-design/yu-xiaomei/refined/normal.png",
+      "Kind": "generated-design-reference"
+    }
+  ],
+  "OriginalGameCanonicalPath": "assets/__project/images/characters/girl5_小梅/shy3.png",
+  "OriginalGameReferenceDistributed": false,
+  "GeneratedSourceBasename": "exec-898bd4ef-9823-4bb5-90d7-b899f586eb7f.png",
+  "OutputSHA256": "7D445223D55CFDE9A39A4678C2A11DD6C6C3911A5F34712DE552142F57192749",
+  "SourceRecordBasename": "yu-xiaomei-refined-shy3.json",
+  "SourceRecordSHA256": "553B35ECD178ED940B6C71E4785E1F3E0DED4E0284A3389B46357F5BA3193CCB",
+  "RawGeneratedCopyVerified": true,
+  "VisualReview": "passed before integration; runtime acceptance is separate",
+  "ImageMetadata": {
+    "Width": 962,
+    "Height": 1635,
+    "Mode": "RGBA",
+    "AlphaMin": 0,
+    "AlphaMax": 255,
+    "AlphaBoundsGt16": [
+      30,
+      75,
+      956,
+      1635
+    ],
+    "Bytes": 1778298
+  }
+}

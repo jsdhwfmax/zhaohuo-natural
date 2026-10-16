@@ -1,0 +1,41 @@
+{
+  "SchemaVersion": 1,
+  "CharacterId": "long-xiang",
+  "VariantId": "refined",
+  "Name": "hurt2.png",
+  "GenerationMethod": "builtin imagegen",
+  "PixelPostProcessing": false,
+  "Prompt": "Edit Image 1 with targeted corrections, preserving this same refined Long Xiang face, age, modest full robe, body proportions, ink outlines, grainy muted watercolor game sprite style and pose. Image 2 is the ORIGINAL game expression and EFFECT reference. Restore a clearly VISIBLE opaque/partly opaque muted blue watercolor brush-stroke qi aura BEHIND the body, like Image 2. The aura is part of the sprite, keep it visibly colored; ONLY outside the organic brush silhouette should be fully transparent. Do not make a rectangular background or erase the aura as background. Restore heavy fierce shadow across eyes and tiny bright white pupils as Image2. Preserve the same small injury scratches/blood stains on face and robe, no new injuries. Keep single sword, red scabbard and hand behind back. Ensure full hair bun/head with at least 6% top margin and full side contours of hair, aura, weapons with at least 4% side margin; scale the composition down to fit instead of clipping. Lower skirt may end at bottom like original game sprite. One portrait only, transparent PNG, no writing or watermark.",
+  "References": [
+    {
+      "LogicalName": "generated-design/long-xiang/refined/hurt2.png",
+      "Kind": "generated-design-reference"
+    },
+    {
+      "LogicalName": "local-game-reference/hurt2.png",
+      "Kind": "original-game-reference-not-distributed"
+    }
+  ],
+  "OriginalGameCanonicalPath": "assets/__project/images/characters/girl4_龍湘/hurt2.png",
+  "OriginalGameReferenceDistributed": false,
+  "GeneratedSourceBasename": "exec-8f74e6d1-495d-414b-bebf-166d98c8fb3d.png",
+  "OutputSHA256": "CA43F7EE6C172F4751227415A693B135714AEF7EA14136FB49D291E826D6C45B",
+  "SourceRecordBasename": "long-xiang-refined-hurt2-repair-v2.json",
+  "SourceRecordSHA256": "0A52516602739354691F86D729412E0D05D484A337C580DF44ABC4EE0B81DE21",
+  "RawGeneratedCopyVerified": true,
+  "VisualReview": "passed before integration; runtime acceptance is separate",
+  "ImageMetadata": {
+    "Width": 1114,
+    "Height": 1412,
+    "Mode": "RGBA",
+    "AlphaMin": 0,
+    "AlphaMax": 255,
+    "AlphaBoundsGt16": [
+      10,
+      113,
+      1114,
+      1412
+    ],
+    "Bytes": 2286966
+  }
+}

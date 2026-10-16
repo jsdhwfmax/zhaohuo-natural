@@ -1,0 +1,41 @@
+{
+  "SchemaVersion": 1,
+  "CharacterId": "yu-xiaomei",
+  "VariantId": "refined",
+  "Name": "scary_laugh.png",
+  "GenerationMethod": "builtin imagegen",
+  "PixelPostProcessing": false,
+  "Prompt": "Use case: precise-object-edit. Make ONE transparent dialogue portrait sprite for 活侠传 / Legend of Mortal. Image 1 is the ORIGINAL TARGET expression/gesture/props reference; Image 2 is the newly approved beauty redesign and SAME CHARACTER identity/style/costume reference. Repaint Image 1 using the precise face, hair, age, proportions and costume rendering of Image 2. Crucially reproduce Image 1's expression, eye direction, mouth, hands, pose, original props and all meaningful sweat/tears/blood/comic marks; do NOT simply repeat the calm pose or smile from Image 2. Match the original restrained hand-drawn wuxia game style: rough black sketch contours, dry-brush edges, visible matte watercolor and colored-pencil grain, not glossy modern anime. Preserve character's age and modest costume/body proportions; no sexualization or additional exposed skin. Grey/color streaks outside the character in Image 1 are raw texture export artifacts, do not reproduce them. Exactly one complete isolated character, TRUE transparent background, natural-sized head, whole hair/hands/side silhouette fitted within at least 5% transparent side margins; only the same lower skirt crop at bottom is allowed. No new props, background, text, watermark, frame, checkerboard, 3D or photorealism. Character: Yu Xiaomei 虞小梅; same youthful age appearance as both references, dark high ponytail with red/gold knot ornament, white red-trimmed robe, brown waist sash/bracers, coral-red skirt. No body enhancement. Target expression: scary_laugh. In-game labels: 特殊10. Embarrassed cheerful eyes-closed laugh with small open mouth and one clear cheek sweat drop. BOTH hands lowered at sides each dangle ONE tan oval wooden theatrical MASK, exactly TWO masks with eye/mouth holes total. Sparse WHITE wisps around shoulders and sleeves. Both masks and hands fully visible with generous side margin, no standing calm substitution.",
+  "References": [
+    {
+      "LogicalName": "local-game-reference/scary_laugh.png",
+      "Kind": "original-game-reference-not-distributed"
+    },
+    {
+      "LogicalName": "generated-design/yu-xiaomei/refined/normal.png",
+      "Kind": "generated-design-reference"
+    }
+  ],
+  "OriginalGameCanonicalPath": "assets/__project/images/characters/girl5_小梅/scary_laugh.png",
+  "OriginalGameReferenceDistributed": false,
+  "GeneratedSourceBasename": "exec-a70bb92f-1595-4952-9856-31a46f78c39f.png",
+  "OutputSHA256": "40FC4D064DE16ECC4E1550970D7B07BF2984D25D64E39D54ADBC5D663AC6F663",
+  "SourceRecordBasename": "yu-xiaomei-refined-scary_laugh.json",
+  "SourceRecordSHA256": "5A16D8948EAC74CEB88F91E0EC209317C6BE125C31E477B9B50AA57AE497F88D",
+  "RawGeneratedCopyVerified": true,
+  "VisualReview": "passed before integration; runtime acceptance is separate",
+  "ImageMetadata": {
+    "Width": 990,
+    "Height": 1589,
+    "Mode": "RGBA",
+    "AlphaMin": 0,
+    "AlphaMax": 255,
+    "AlphaBoundsGt16": [
+      33,
+      64,
+      987,
+      1589
+    ],
+    "Bytes": 1911255
+  }
+}

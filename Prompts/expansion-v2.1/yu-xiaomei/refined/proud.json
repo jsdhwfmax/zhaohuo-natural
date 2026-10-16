@@ -1,0 +1,41 @@
+{
+  "SchemaVersion": 1,
+  "CharacterId": "yu-xiaomei",
+  "VariantId": "refined",
+  "Name": "proud.png",
+  "GenerationMethod": "builtin imagegen",
+  "PixelPostProcessing": false,
+  "Prompt": "Use case: precise-object-edit. Make ONE transparent dialogue portrait sprite for 活侠传 / Legend of Mortal. Image 1 is the ORIGINAL TARGET expression/gesture/props reference; Image 2 is the newly approved beauty redesign and SAME CHARACTER identity/style/costume reference. Repaint Image 1 using the precise face, hair, age, proportions and costume rendering of Image 2. Crucially reproduce Image 1's expression, eye direction, mouth, hands, pose, original props and all meaningful sweat/tears/blood/comic marks; do NOT simply repeat the calm pose or smile from Image 2. Match the original restrained hand-drawn wuxia game style: rough black sketch contours, dry-brush edges, visible matte watercolor and colored-pencil grain, not glossy modern anime. Preserve character's age and modest costume/body proportions; no sexualization or additional exposed skin. Grey/color streaks outside the character in Image 1 are raw texture export artifacts, do not reproduce them. Exactly one complete isolated character, TRUE transparent background, natural-sized head, whole hair/hands/side silhouette fitted within at least 5% transparent side margins; only the same lower skirt crop at bottom is allowed. No new props, background, text, watermark, frame, checkerboard, 3D or photorealism. Character: Yu Xiaomei 虞小梅; same youthful age appearance as both references, dark high ponytail with red/gold knot ornament, white red-trimmed robe, brown waist sash/bracers, coral-red skirt. No body enhancement. Target expression: proud. In-game labels: 特殊5/得意. Smug confident eyes closed, eyebrows self-assured, asymmetric small closed smile, small WHITE comic breath puff near mouth. One arm bent with palm turned upward beside shoulder, opposite hand hangs at side. Match exact palm-up shrug pose and complete all fingers; no new prop.",
+  "References": [
+    {
+      "LogicalName": "local-game-reference/proud.png",
+      "Kind": "original-game-reference-not-distributed"
+    },
+    {
+      "LogicalName": "generated-design/yu-xiaomei/refined/normal.png",
+      "Kind": "generated-design-reference"
+    }
+  ],
+  "OriginalGameCanonicalPath": "assets/__project/images/characters/girl5_小梅/proud.png",
+  "OriginalGameReferenceDistributed": false,
+  "GeneratedSourceBasename": "exec-c5bacfcf-0af1-4ed4-9f2f-e70bd6d85127.png",
+  "OutputSHA256": "EE3E6EAC141604039F6740934D11A16D078C0AD946609044828DA95132364823",
+  "SourceRecordBasename": "yu-xiaomei-refined-proud.json",
+  "SourceRecordSHA256": "7C749922D67241AB1312A1EB8BCCF8BE0BD91BE81F3D9B25E9B27F00A4C7F891",
+  "RawGeneratedCopyVerified": true,
+  "VisualReview": "passed before integration; runtime acceptance is separate",
+  "ImageMetadata": {
+    "Width": 990,
+    "Height": 1589,
+    "Mode": "RGBA",
+    "AlphaMin": 0,
+    "AlphaMax": 255,
+    "AlphaBoundsGt16": [
+      17,
+      42,
+      980,
+      1589
+    ],
+    "Bytes": 1762600
+  }
+}

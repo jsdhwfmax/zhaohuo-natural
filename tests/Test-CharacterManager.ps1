@@ -1,8 +1,11 @@
 ﻿#requires -Version 5.1
 [CmdletBinding()]
-param()
+param([string]$OutputPath)
 $ErrorActionPreference='Stop';Set-StrictMode -Version 2.0
 $repo=Split-Path -Parent $PSScriptRoot
+function Test-CodeHash([string]$Path){$text=[IO.File]::ReadAllText($Path).TrimStart([char]0xFEFF).Replace("`r`n","`n").Replace("`r","`n");$sha=[Security.Cryptography.SHA256]::Create();try{([BitConverter]::ToString($sha.ComputeHash([Text.Encoding]::UTF8.GetBytes($text)))).Replace('-','')}finally{$sha.Dispose()}}
+$codeHashes=[ordered]@{}
+foreach($file in @('installer/ZhaoHuoInstaller.psm1','installer/AppearanceManager.ps1','installer/VariantSupport.ps1','installer/CharacterCatalog.ps1','installer/CharacterState.ps1','installer/CharacterManager.ps1','installer/CharacterTransactions.ps1','Install.ps1','VariantCatalog.json','tests/Test-CharacterManager.ps1')){$codeHashes[$file]=Test-CodeHash (Join-Path $repo $file)}
 $module=Import-Module (Join-Path $repo 'installer\ZhaoHuoInstaller.psm1') -Force -PassThru
 $prod=Get-PortraitCharacters -PackageRoot $repo
 $work=Join-Path $PSScriptRoot ('.work\characters-'+[Guid]::NewGuid().ToString('N'))
@@ -95,7 +98,7 @@ Export-ModuleMember -Function Get-ZhaoHuoSteamCandidates,Install-ZhaoHuo
         Write-Text (Join-Path $package $character.LayoutSourcePath) $layout;$character.LayoutSha256=Hash (Join-Path $package $character.LayoutSourcePath)
         foreach($v in $character.Variants){
             if($v.Kind-eq 'original'){continue}
-            $fallback=if($character.Id-eq 'tang-buyi'){@('hand')}elseif($character.Id-eq 'xiahou-lan'){@('white')}else{@()}
+            $fallback=@($v.OriginalFallback)
             $files=@(foreach($name in $names){if($name-in $fallback){continue};$file=Join-Path $package ($v.SourcePath+'/'+$name+'.png');Write-Text $file ('INERT DUMMY PNG FOR TRANSACTION TEST ONLY '+$character.Id+'/'+$v.Id+'/'+$name);[pscustomobject]@{Name=($name+'.png');Sha256=(Hash $file)}})
             $v.Files=$files;$v.OriginalFallback=@($fallback);$v.AssetFingerprint=& $module {param($Id,$Files) Get-ZHCharacterFingerprint $Id $Files} $character.Id $files;$v.Ready=$true
         }
@@ -113,7 +116,7 @@ Export-ModuleMember -Function Get-ZhaoHuoSteamCandidates,Install-ZhaoHuo
     $catalog.Characters[1].Variants+=@($mini)
     $catalog.PackageReady=$true;Save-Json (Join-Path $package 'VariantCatalog.json') $catalog
     $view=Get-PortraitCharacters -PackageRoot $package
-    Assert ($view.Characters.Count-eq 3-and $view.Characters[0].Variants.Count-eq 7) 'Dynamic catalog exposes three independent character groups and six player styles'
+    Assert ($view.Characters.Count-eq 7-and $view.Characters[0].Variants.Count-eq 7) 'Dynamic catalog exposes seven independent character groups and six player styles'
     Assert (($prod.PackageReady-and @($prod.Characters.Variants|Where-Object{-not $_.Ready}).Count-eq 0)-or(-not $prod.PackageReady-and @($prod.Characters.Variants|Where-Object Available).Count-eq 0)) 'Production catalog exposes availability only when its global readiness permits it'
     $clean=New-Game 'clean'
     $catalog.PackageReady=$false;Save-Json (Join-Path $package 'VariantCatalog.json') $catalog
@@ -230,12 +233,9 @@ Export-ModuleMember -Function Get-ZhaoHuoSteamCandidates,Install-ZhaoHuo
     $private=New-Game 'private-schema';$legacy=Legacy-Package 'natural';$null=Install-ZhaoHuo -GamePath $private -PackageRoot $legacy -Log $quiet
     $state=State $private;$state.SchemaVersion=2;Save-Json (StatePath $private) $state
     Reject {Apply $private 'player' 'natural'} '*私人*' 'Insufficiently evidenced private schema2 is not auto-migrated'
-    $codeHashes=[ordered]@{}
-    foreach($file in @('installer/ZhaoHuoInstaller.psm1','installer/AppearanceManager.ps1','installer/VariantSupport.ps1','installer/CharacterCatalog.ps1','installer/CharacterState.ps1','installer/CharacterManager.ps1','installer/CharacterTransactions.ps1','Install.ps1','VariantCatalog.json','tests/Test-CharacterManager.ps1')){
-        $text=[IO.File]::ReadAllText((Join-Path $repo $file)).Replace("`r`n","`n").Replace("`r","`n")
-        $codeHashes[$file]=& $module {param($Text) Get-ZHTextHash $Text} $text
-    }
+    foreach($file in $codeHashes.Keys){if($file-ne 'VariantCatalog.json'-and (Test-CodeHash (Join-Path $repo $file))-ne $codeHashes[$file]){throw ('Tested source changed during the suite: '+$file)}}
     $summary=[ordered]@{status='passed';powershell=$PSVersionTable.PSVersion.ToString();assertionCount=$checks.Count;durationSeconds=[Math]::Round(([DateTime]::UtcNow-$start).TotalSeconds,2);scope='Synthetic inert game/PNG fixtures and official offline loader; no real game writes or game assembly execution. Production readiness was not modified; dummy fixtures are not distributable.';ProductionReadyAtTest=$prod.PackageReady;CodeHashAlgorithm='SHA256-UTF8-noBOM-LF-v1';CodeHashes=$codeHashes;checks=@($checks)}
-    Save-Json (Join-Path $PSScriptRoot 'character-manager-results.json') $summary
+    if(-not $OutputPath){$OutputPath=Join-Path $PSScriptRoot 'character-manager-results.json'}
+    Save-Json $OutputPath $summary
     Write-Host ('ALL '+$checks.Count+' CHARACTER ASSERTIONS PASSED')
 }catch{Write-Host $_.ScriptStackTrace;throw}

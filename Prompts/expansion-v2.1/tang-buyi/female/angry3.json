@@ -1,0 +1,39 @@
+{
+  "SchemaVersion": 1,
+  "CharacterId": "tang-buyi",
+  "VariantId": "female",
+  "Name": "angry3.png",
+  "GenerationMethod": "builtin imagegen",
+  "PixelPostProcessing": false,
+  "Prompt": "Use case: precise-object-edit. This is an already approved mature adult female wuxia portrait. Change ONLY framing: REDUCE the entire existing figure to 85% of its current relative canvas size, keeping the bottom robe at the bottom. Make the whole portrait and its RED AURA fit comfortably with at least 6% fully transparent blank space along the LEFT and RIGHT sides, and enough space above hair. In particular the red aura around the right blue sweeping sleeve is currently clipped by the edge; complete that outer aura edge and sleeve and show a transparent gap before canvas boundary. Preserve exactly her face/body, opaque blue robe, original angry expression, hands/coins, hair and rough pencil watercolor style. DO NOT change her emotion or redesign. No background/text/checkerboard; true alpha. The ONLY intentional crop is bottom robe; preferably keep left fingertips just inside bottom. Mouth stays OPEN in fierce battle grin, with teeth.",
+  "References": [
+    {
+      "LogicalName": "generated-design/tang-buyi/female/angry3-before-margin.png",
+      "Kind": "generated-design-reference",
+      "RecordedSHA256": "D9557D838933C735EF2078F3DA37ED2D702D3DBA02C221D528E3FF8335770249",
+      "Role": "previous generated expression, framing edit target"
+    }
+  ],
+  "OriginalGameCanonicalPath": "assets/__project/images/characters/brother1/angry3.png",
+  "OriginalGameReferenceDistributed": false,
+  "GeneratedSourceBasename": "exec-13625884-4878-4a6c-a111-2ec63df8ee31.png",
+  "OutputSHA256": "537FE0ADDF1336D6A2F54DA70AB425193ABF7ECF80A94D39EDAF39F16C1EF5A1",
+  "SourceRecordBasename": "tang-buyi-female-angry3-margin-v2.json",
+  "SourceRecordSHA256": "BEEB7BA427852247FB2C7DA8A9FCC320614D8841AE2D130B3BE05849145A7A62",
+  "RawGeneratedCopyVerified": true,
+  "VisualReview": "passed before integration; runtime acceptance is separate",
+  "ImageMetadata": {
+    "Width": 1096,
+    "Height": 1435,
+    "Mode": "RGBA",
+    "AlphaMin": 0,
+    "AlphaMax": 255,
+    "AlphaBoundsGt16": [
+      35,
+      130,
+      1047,
+      1377
+    ],
+    "Bytes": 1907483
+  }
+}

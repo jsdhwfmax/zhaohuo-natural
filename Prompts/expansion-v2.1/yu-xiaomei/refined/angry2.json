@@ -1,0 +1,41 @@
+{
+  "SchemaVersion": 1,
+  "CharacterId": "yu-xiaomei",
+  "VariantId": "refined",
+  "Name": "angry2.png",
+  "GenerationMethod": "builtin imagegen",
+  "PixelPostProcessing": false,
+  "Prompt": "Edit image 1 only to fix the clipped hand at the right canvas edge. Image 2 is identity reference. KEEP EXACTLY image 1's facial expression, face, costume, original arm pose, props, drawing style and all details. Zoom OUT so the ENTIRE figure is 20 percent smaller within this transparent canvas; add at least 80 pixels of clear transparent space beyond BOTH hands and hair. Reconstruct the missing right-hand fingertips naturally. Do not merely extend a cropped hand up to the edge again. All hair/hands/sleeves must end before the border. Keep same relative head/body proportions and the same lower-skirt crop at bottom. One character, TRUE TRANSPARENCY, no text, no background, no shadow/glow. Face expression must remain angry2.",
+  "References": [
+    {
+      "LogicalName": "reference-1/exec-732d0d00-baa3-40aa-84c0-e8e471805aee.png",
+      "Kind": "local-reference-not-distributed"
+    },
+    {
+      "LogicalName": "generated-design/yu-xiaomei/refined/normal.png",
+      "Kind": "generated-design-reference"
+    }
+  ],
+  "OriginalGameCanonicalPath": "assets/__project/images/characters/girl5_小梅/angry2.png",
+  "OriginalGameReferenceDistributed": false,
+  "GeneratedSourceBasename": "exec-90386391-75fc-4b7c-8d9b-0dab4a3ea89b.png",
+  "OutputSHA256": "5A13BE175EFE00442937CDD74CA09906336A1BC9FEE0ECABCB65A5EC9F9AF31B",
+  "SourceRecordBasename": "yu-xiaomei-refined-angry2.json",
+  "SourceRecordSHA256": "D252ABDC312830DA4F7CEFA498F1EBFD82196684A8BD2376B8493A9845648BFF",
+  "RawGeneratedCopyVerified": true,
+  "VisualReview": "passed before integration; runtime acceptance is separate",
+  "ImageMetadata": {
+    "Width": 990,
+    "Height": 1589,
+    "Mode": "RGBA",
+    "AlphaMin": 0,
+    "AlphaMax": 255,
+    "AlphaBoundsGt16": [
+      89,
+      193,
+      969,
+      1486
+    ],
+    "Bytes": 1310460
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "SchemaVersion": 1,
+  "CharacterId": "yu-xiaomei",
+  "VariantId": "refined",
+  "Name": "angry3.png",
+  "GenerationMethod": "builtin imagegen",
+  "PixelPostProcessing": false,
+  "Prompt": "Use case: precise-object-edit. Make ONE transparent dialogue portrait sprite for 活侠传 / Legend of Mortal. Image 1 is the ORIGINAL TARGET expression/gesture/props reference; Image 2 is the newly approved beauty redesign and SAME CHARACTER identity/style/costume reference. Repaint Image 1 using the precise face, hair, age, proportions and costume rendering of Image 2. Crucially reproduce Image 1's expression, eye direction, mouth, hands, pose, original props and all meaningful sweat/tears/blood/comic marks; do NOT simply repeat the calm pose or smile from Image 2. Match the original restrained hand-drawn wuxia game style: rough black sketch contours, dry-brush edges, visible matte watercolor and colored-pencil grain, not glossy modern anime. Preserve character's age and modest costume/body proportions; no sexualization or additional exposed skin. Grey/color streaks outside the character in Image 1 are raw texture export artifacts, do not reproduce them. Exactly one complete isolated character, TRUE transparent background, natural-sized head, whole hair/hands/side silhouette fitted within at least 5% transparent side margins; only the same lower skirt crop at bottom is allowed. No new props, background, text, watermark, frame, checkerboard, 3D or photorealism. Character: Yu Xiaomei 虞小梅; same youthful age appearance as both references, dark high ponytail with red/gold knot ornament, white red-trimmed robe, brown waist sash/bracers, coral-red skirt. No body enhancement. Target expression: angry3. In-game labels: 爆發. Comically dangerous manic grin with exposed upper teeth, wide luminous red spiral pupils, slight face shadow, loose hair strands. Keep short curved dagger gripped DOWNWARD at lower-left, the opposite clenched hand and original white wisps near the shoulders. Do not move the blade near her face.",
+  "References": [
+    {
+      "LogicalName": "local-game-reference/angry3.png",
+      "Kind": "original-game-reference-not-distributed"
+    },
+    {
+      "LogicalName": "generated-design/yu-xiaomei/refined/normal.png",
+      "Kind": "generated-design-reference"
+    }
+  ],
+  "OriginalGameCanonicalPath": "assets/__project/images/characters/girl5_小梅/angry3.png",
+  "OriginalGameReferenceDistributed": false,
+  "GeneratedSourceBasename": "exec-01a40ba6-5cfb-4211-96cf-589f36f00a8b.png",
+  "OutputSHA256": "117484EDF0572E1E9FCDE019CBE8962C8C553BB436C2450BC9F5097A15208CEA",
+  "SourceRecordBasename": "yu-xiaomei-refined-angry3.json",
+  "SourceRecordSHA256": "683D8D26BBBD8AFA19564C92967B2DCDCDB24087FCBCDB2E7D823FB906A23522",
+  "RawGeneratedCopyVerified": true,
+  "VisualReview": "passed before integration; runtime acceptance is separate",
+  "ImageMetadata": {
+    "Width": 990,
+    "Height": 1589,
+    "Mode": "RGBA",
+    "AlphaMin": 0,
+    "AlphaMax": 255,
+    "AlphaBoundsGt16": [
+      10,
+      115,
+      990,
+      1589
+    ],
+    "Bytes": 1889149
+  }
+}

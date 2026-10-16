@@ -1,0 +1,41 @@
+{
+  "SchemaVersion": 1,
+  "CharacterId": "yu-xiaomei",
+  "VariantId": "refined",
+  "Name": "gloomy2.png",
+  "GenerationMethod": "builtin imagegen",
+  "PixelPostProcessing": false,
+  "Prompt": "Edit image 1 only to fix the clipped hand at the right canvas edge. Image 2 is identity reference. KEEP EXACTLY image 1's facial expression, face, costume, original arm pose, props, drawing style and all details. Zoom OUT so the ENTIRE figure is 20 percent smaller within this transparent canvas; add at least 80 pixels of clear transparent space beyond BOTH hands and hair. Reconstruct the missing right-hand fingertips naturally. Do not merely extend a cropped hand up to the edge again. All hair/hands/sleeves must end before the border. Keep same relative head/body proportions and the same lower-skirt crop at bottom. One character, TRUE TRANSPARENCY, no text, no background, no shadow/glow. Face expression must remain gloomy2.",
+  "References": [
+    {
+      "LogicalName": "reference-1/exec-7e0033fb-23db-47dd-8cac-c14547b2adfc.png",
+      "Kind": "local-reference-not-distributed"
+    },
+    {
+      "LogicalName": "generated-design/yu-xiaomei/refined/normal.png",
+      "Kind": "generated-design-reference"
+    }
+  ],
+  "OriginalGameCanonicalPath": "assets/__project/images/characters/girl5_小梅/gloomy2.png",
+  "OriginalGameReferenceDistributed": false,
+  "GeneratedSourceBasename": "exec-2e6432ef-1af2-4983-b92c-e1955864618d.png",
+  "OutputSHA256": "FA070EAA3C4E244FA552651E9BEFA4BD1DC758AD42BD2AB48C943003829000FF",
+  "SourceRecordBasename": "yu-xiaomei-refined-gloomy2.json",
+  "SourceRecordSHA256": "07F782386809E68CD98A97DF5F7E427EF7CF1A3894C4944341816529EDA92AB1",
+  "RawGeneratedCopyVerified": true,
+  "VisualReview": "passed before integration; runtime acceptance is separate",
+  "ImageMetadata": {
+    "Width": 990,
+    "Height": 1589,
+    "Mode": "RGBA",
+    "AlphaMin": 0,
+    "AlphaMax": 255,
+    "AlphaBoundsGt16": [
+      84,
+      210,
+      989,
+      1512
+    ],
+    "Bytes": 1302129
+  }
+}

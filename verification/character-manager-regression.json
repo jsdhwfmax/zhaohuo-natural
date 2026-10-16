@@ -2,7 +2,7 @@
   "status": "passed",
   "powershell": "5.1.26100.9711",
   "assertionCount": 74,
-  "durationSeconds": 268.89,
+  "durationSeconds": 244.54,
   "scope": "Installer integration with synthetic game fixtures, official bundled runtime and stubbed offline-probe results; metadata probe tested separately; no real game installation or execution",
   "checks": [
     "First verified four-assembly group remains supported",
@@ -96,15 +96,15 @@
     },
     {
       "Path": "installer/CharacterCatalog.ps1",
-      "Sha256": "4DCDE56EADCCA98CB7674C894CB56956D6E6ECC84781F6A6A04F8C1B960E2EB4"
+      "Sha256": "4D4C671A3FA58C7B42F88E60DD6509B86E9C4A820F2FB19BBE2601A4E6A54566"
     },
     {
       "Path": "installer/CharacterState.ps1",
-      "Sha256": "BD1786E11E01FA02E255B48BBCA41F8EA521DA66EA03FE5D55BDC63B28CEFB0D"
+      "Sha256": "74707F347AFCD20A699CF177FA7A30DBDE5DB53AF58CE34FFFBBC25E7CFCEC12"
     },
     {
       "Path": "installer/CharacterManager.ps1",
-      "Sha256": "269C20C399A304B86479886F87CEDCFDCDD8E0CBFF7E606F776E542251EF6F8B"
+      "Sha256": "F62691721CFD9758CB1C4D5049E47C67968364E49BCF5B44C9AEF8B3A21D7079"
     },
     {
       "Path": "installer/CharacterTransactions.ps1",
@@ -112,14 +112,13 @@
     },
     {
       "Path": "VariantCatalog.json",
-      "Sha256": "F0A919D81AB269B8D854241042A5794EDEBAD79DAE00BA4A70B43F6DF97FF9F5"
+      "Sha256": "3EB0642B6A03834E6EC7EC2133F813AE619C2C5B6A6D1FC188586239D63FE4EF"
     },
     {
       "Path": "tests/Test-Installer.ps1",
-      "Sha256": "ECF05ED96CB585856B864916C2CEC5CF7D7928D806785519F2900DA951E861B4"
+      "Sha256": "81AED43FE304B791CAA4F8FCFA1313052902C0A89CFE8A3E9B4664D4C3CFA0BA"
     }
   ],
   "ActualGameRun": false,
-  "FinalArtAcceptance": false,
-  "CatalogBindingScope": "Current production Catalog snapshot at completion; the legacy synthetic suite does not validate actual production artwork. Final Catalog changes require independent final-data acceptance."
+  "FinalArtAcceptance": false
 }

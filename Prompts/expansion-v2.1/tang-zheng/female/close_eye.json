@@ -1,0 +1,45 @@
+{
+  "SchemaVersion": 1,
+  "CharacterId": "tang-zheng",
+  "VariantId": "female",
+  "Name": "close_eye.png",
+  "GenerationMethod": "builtin imagegen",
+  "PixelPostProcessing": false,
+  "Prompt": "Use case: identity-preserve. Asset: transparent dialogue portrait for Legend of Mortal, one character only. Image 1 is the ORIGINAL POSE/EXPRESSION reference, NOT the desired gender or face. Image 2 is the APPROVED FEMALE MASTER: its mature adult woman's exact face, body proportions, very full bust, flowing hairstyle, accessories and blue Tangmen clothing design have highest priority. Completely redraw Image 1 as this same adult woman from Image 2. Keep the original emotion, head direction, gesture, hand positions, props and any sweat/blood/comic effects. Do NOT copy Image 2's neutral smile into every expression. Retain the master female identity and voluptuous fully clothed silhouette, never revert to the original male jaw/body. Keep clothes opaque and properly closed, no nudity. Preserve the game's rough ink-pencil contours and textured watercolor/gouache fabric, not glossy 3D, photo skin, modern anime or chibi. Image 1's colored hidden alpha RGB streaks are NOT a background and must not be drawn. True alpha transparent background. Frame one complete usable portrait with all hair, hands, sleeves and props safely inside side/top edges with ~4% transparent margins, bottom robe may naturally cut at bottom. Keep natural small head-to-body proportion. No text, labels, panels, duplicates or watermark. SPECIFIC EMOTION: Eyes peacefully CLOSED, calm slightly wry closed mouth, no sweat. Head slightly bowed as original. Both props and the complete rightmost bamboo cylinder rim must be fully inside transparent canvas. Keep mature full-figured feminine body of image2.",
+  "References": [
+    {
+      "LogicalName": "local-game-reference/close_eye.png",
+      "Kind": "original-game-reference-not-distributed",
+      "RecordedSHA256": "10175848EE3FDB2723951A9B3083CD3EDA0150A0CF6A20549EA001AC1CD38A23",
+      "Role": "original pose/emotion edit target"
+    },
+    {
+      "LogicalName": "generated-design/tang-zheng/female/normal.png",
+      "Kind": "generated-design-reference",
+      "RecordedSHA256": "6C09B7759E4F13F026CC70A8ADA691493CF4A4880C5F4D7A1C7EB425441EC8E4",
+      "Role": "approved female identity/body/costume master"
+    }
+  ],
+  "OriginalGameCanonicalPath": "assets/__project/images/characters/brother2/close_eye.png",
+  "OriginalGameReferenceDistributed": false,
+  "GeneratedSourceBasename": "exec-3cea683d-e621-430d-ac43-b6d535a7bd6a.png",
+  "OutputSHA256": "FE6688E3EEE2352A768E24C5B6E56C402F04519E786C6DDD3230E6EA3BB69D59",
+  "SourceRecordBasename": "tang-zheng-female-close_eye.json",
+  "SourceRecordSHA256": "580870C24496D008E39610B67997B50083EF38BF8DC7218EA200DBE7421BD656",
+  "RawGeneratedCopyVerified": true,
+  "VisualReview": "passed before integration; runtime acceptance is separate",
+  "ImageMetadata": {
+    "Width": 1049,
+    "Height": 1500,
+    "Mode": "RGBA",
+    "AlphaMin": 0,
+    "AlphaMax": 255,
+    "AlphaBoundsGt16": [
+      50,
+      64,
+      1035,
+      1500
+    ],
+    "Bytes": 1991026
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "SchemaVersion": 1,
+  "CharacterId": "long-xiang",
+  "VariantId": "refined",
+  "Name": "angry3.png",
+  "GenerationMethod": "builtin imagegen",
+  "PixelPostProcessing": false,
+  "Prompt": "Edit Image 1 with targeted corrections, preserving this same refined Long Xiang face, age, modest full robe, body proportions, ink outlines, grainy muted watercolor game sprite style and pose. Image 2 is the ORIGINAL game expression and EFFECT reference. Restore a clearly VISIBLE opaque/partly opaque muted blue watercolor brush-stroke qi aura BEHIND the body, like Image 2. The aura is part of the sprite, keep it visibly colored; ONLY outside the organic brush silhouette should be fully transparent. Do not make a rectangular background or erase the aura as background. Retain the currently correct shadowed fierce eyes with tiny pale pupils, single sword and red scabbard. Ensure full hair bun/head with at least 6% top margin and full side contours of hair, aura, weapons with at least 4% side margin; scale the composition down to fit instead of clipping. Lower skirt may end at bottom like original game sprite. One portrait only, transparent PNG, no writing or watermark.",
+  "References": [
+    {
+      "LogicalName": "generated-design/long-xiang/refined/angry3.png",
+      "Kind": "generated-design-reference"
+    },
+    {
+      "LogicalName": "local-game-reference/angry3.png",
+      "Kind": "original-game-reference-not-distributed"
+    }
+  ],
+  "OriginalGameCanonicalPath": "assets/__project/images/characters/girl4_龍湘/angry3.png",
+  "OriginalGameReferenceDistributed": false,
+  "GeneratedSourceBasename": "exec-e93a9b67-d535-42eb-9374-994e63872a0e.png",
+  "OutputSHA256": "7A3C1D987C1E07D1D22EBFBCD5C9DC89EBE48D1DB76425AA8F8A321264C124D1",
+  "SourceRecordBasename": "long-xiang-refined-angry3-repair-v2.json",
+  "SourceRecordSHA256": "EA0CE0ADDD667EEC4AAB2FA1025373FFC98D668DB23E53A78B6F77055881FDA7",
+  "RawGeneratedCopyVerified": true,
+  "VisualReview": "passed before integration; runtime acceptance is separate",
+  "ImageMetadata": {
+    "Width": 985,
+    "Height": 1597,
+    "Mode": "RGBA",
+    "AlphaMin": 0,
+    "AlphaMax": 255,
+    "AlphaBoundsGt16": [
+      10,
+      149,
+      976,
+      1597
+    ],
+    "Bytes": 2446217
+  }
+}

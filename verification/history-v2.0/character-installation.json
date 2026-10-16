@@ -1,0 +1,272 @@
+{
+    "Passed":  true,
+    "StartedUtc":  "2026-10-16T05:06:27.8220588Z",
+    "DateUtc":  "2026-10-16T05:19:15.7292376Z",
+    "PackageVersion":  "2.0.0",
+    "ExecutionMode":  "ActualInstallation",
+    "InitialSchema":  4,
+    "FinalSchema":  4,
+    "InitialInstallationPreserved":  true,
+    "OriginalBackupsPreserved":  true,
+    "OtherPluginsPreserved":  true,
+    "OriginalBackupFiles":  642,
+    "ProtectedFiles":  775,
+    "OtherPluginFiles":  87,
+    "CandidateUnmodified":  true,
+    "CandidateCatalogSha256":  "FF7B00499A7354564D2F5BC4AD59F90A7C4FE48451CA68E16D1774313B9BBC3D",
+    "RepeatedFinalSelectionNoOp":  true,
+    "Preflight":  [
+                      {
+                          "CharacterId":  "player",
+                          "VariantId":  "original",
+                          "ChangedFiles":  2,
+                          "RequiresMigration":  false
+                      },
+                      {
+                          "CharacterId":  "player",
+                          "VariantId":  "natural",
+                          "ChangedFiles":  48,
+                          "RequiresMigration":  false
+                      },
+                      {
+                          "CharacterId":  "player",
+                          "VariantId":  "handsome",
+                          "ChangedFiles":  48,
+                          "RequiresMigration":  false
+                      },
+                      {
+                          "CharacterId":  "player",
+                          "VariantId":  "xianxia",
+                          "ChangedFiles":  48,
+                          "RequiresMigration":  false
+                      },
+                      {
+                          "CharacterId":  "player",
+                          "VariantId":  "white",
+                          "ChangedFiles":  1,
+                          "RequiresMigration":  false
+                      },
+                      {
+                          "CharacterId":  "player",
+                          "VariantId":  "black",
+                          "ChangedFiles":  48,
+                          "RequiresMigration":  false
+                      },
+                      {
+                          "CharacterId":  "player",
+                          "VariantId":  "veteran",
+                          "ChangedFiles":  48,
+                          "RequiresMigration":  false
+                      },
+                      {
+                          "CharacterId":  "tang-buyi",
+                          "VariantId":  "original",
+                          "ChangedFiles":  2,
+                          "RequiresMigration":  false
+                      },
+                      {
+                          "CharacterId":  "tang-buyi",
+                          "VariantId":  "refined",
+                          "ChangedFiles":  1,
+                          "RequiresMigration":  false
+                      },
+                      {
+                          "CharacterId":  "xiahou-lan",
+                          "VariantId":  "original",
+                          "ChangedFiles":  2,
+                          "RequiresMigration":  false
+                      },
+                      {
+                          "CharacterId":  "xiahou-lan",
+                          "VariantId":  "refined",
+                          "ChangedFiles":  1,
+                          "RequiresMigration":  false
+                      }
+                  ],
+    "Steps":  [
+                  {
+                      "CharacterId":  "player",
+                      "VariantId":  "white",
+                      "Status":  "Applied",
+                      "ChangedFiles":  1,
+                      "CheckOnlyDidNotWrite":  true,
+                      "CheckOnlyScope":  "All BepInEx files plus root loader/config, SHA256 and file inventory",
+                      "OtherCharactersUnchanged":  true
+                  },
+                  {
+                      "CharacterId":  "tang-buyi",
+                      "VariantId":  "refined",
+                      "Status":  "NoOp",
+                      "ChangedFiles":  0,
+                      "CheckOnlyDidNotWrite":  true,
+                      "CheckOnlyScope":  "All BepInEx files plus root loader/config, SHA256 and file inventory",
+                      "OtherCharactersUnchanged":  true
+                  },
+                  {
+                      "CharacterId":  "xiahou-lan",
+                      "VariantId":  "refined",
+                      "Status":  "NoOp",
+                      "ChangedFiles":  0,
+                      "CheckOnlyDidNotWrite":  true,
+                      "CheckOnlyScope":  "All BepInEx files plus root loader/config, SHA256 and file inventory",
+                      "OtherCharactersUnchanged":  true
+                  },
+                  {
+                      "CharacterId":  "player",
+                      "VariantId":  "white",
+                      "Status":  "NoOp",
+                      "ChangedFiles":  0,
+                      "CheckOnlyDidNotWrite":  true,
+                      "CheckOnlyScope":  "All BepInEx files plus root loader/config, SHA256 and file inventory",
+                      "OtherCharactersUnchanged":  true
+                  },
+                  {
+                      "CharacterId":  "player",
+                      "VariantId":  "black",
+                      "Status":  "Applied",
+                      "ChangedFiles":  47,
+                      "CheckOnlyDidNotWrite":  true,
+                      "CheckOnlyScope":  "All BepInEx files plus root loader/config, SHA256 and file inventory",
+                      "OtherCharactersUnchanged":  true
+                  },
+                  {
+                      "CharacterId":  "player",
+                      "VariantId":  "veteran",
+                      "Status":  "Applied",
+                      "ChangedFiles":  47,
+                      "CheckOnlyDidNotWrite":  true,
+                      "CheckOnlyScope":  "All BepInEx files plus root loader/config, SHA256 and file inventory",
+                      "OtherCharactersUnchanged":  true
+                  },
+                  {
+                      "CharacterId":  "player",
+                      "VariantId":  "natural",
+                      "Status":  "Applied",
+                      "ChangedFiles":  47,
+                      "CheckOnlyDidNotWrite":  true,
+                      "CheckOnlyScope":  "All BepInEx files plus root loader/config, SHA256 and file inventory",
+                      "OtherCharactersUnchanged":  true
+                  },
+                  {
+                      "CharacterId":  "player",
+                      "VariantId":  "handsome",
+                      "Status":  "Applied",
+                      "ChangedFiles":  47,
+                      "CheckOnlyDidNotWrite":  true,
+                      "CheckOnlyScope":  "All BepInEx files plus root loader/config, SHA256 and file inventory",
+                      "OtherCharactersUnchanged":  true
+                  },
+                  {
+                      "CharacterId":  "player",
+                      "VariantId":  "xianxia",
+                      "Status":  "Applied",
+                      "ChangedFiles":  47,
+                      "CheckOnlyDidNotWrite":  true,
+                      "CheckOnlyScope":  "All BepInEx files plus root loader/config, SHA256 and file inventory",
+                      "OtherCharactersUnchanged":  true
+                  },
+                  {
+                      "CharacterId":  "tang-buyi",
+                      "VariantId":  "original",
+                      "Status":  "Applied",
+                      "ChangedFiles":  1,
+                      "CheckOnlyDidNotWrite":  true,
+                      "CheckOnlyScope":  "All BepInEx files plus root loader/config, SHA256 and file inventory",
+                      "OtherCharactersUnchanged":  true
+                  },
+                  {
+                      "CharacterId":  "tang-buyi",
+                      "VariantId":  "refined",
+                      "Status":  "Applied",
+                      "ChangedFiles":  1,
+                      "CheckOnlyDidNotWrite":  true,
+                      "CheckOnlyScope":  "All BepInEx files plus root loader/config, SHA256 and file inventory",
+                      "OtherCharactersUnchanged":  true
+                  },
+                  {
+                      "CharacterId":  "xiahou-lan",
+                      "VariantId":  "original",
+                      "Status":  "Applied",
+                      "ChangedFiles":  1,
+                      "CheckOnlyDidNotWrite":  true,
+                      "CheckOnlyScope":  "All BepInEx files plus root loader/config, SHA256 and file inventory",
+                      "OtherCharactersUnchanged":  true
+                  },
+                  {
+                      "CharacterId":  "xiahou-lan",
+                      "VariantId":  "refined",
+                      "Status":  "Applied",
+                      "ChangedFiles":  1,
+                      "CheckOnlyDidNotWrite":  true,
+                      "CheckOnlyScope":  "All BepInEx files plus root loader/config, SHA256 and file inventory",
+                      "OtherCharactersUnchanged":  true
+                  },
+                  {
+                      "CharacterId":  "player",
+                      "VariantId":  "original",
+                      "Status":  "Applied",
+                      "ChangedFiles":  1,
+                      "CheckOnlyDidNotWrite":  true,
+                      "CheckOnlyScope":  "All BepInEx files plus root loader/config, SHA256 and file inventory",
+                      "OtherCharactersUnchanged":  true
+                  },
+                  {
+                      "CharacterId":  "player",
+                      "VariantId":  "xianxia",
+                      "Status":  "Applied",
+                      "ChangedFiles":  1,
+                      "CheckOnlyDidNotWrite":  true,
+                      "CheckOnlyScope":  "All BepInEx files plus root loader/config, SHA256 and file inventory",
+                      "OtherCharactersUnchanged":  true
+                  }
+              ],
+    "FinalSelections":  {
+                            "xiahou-lan":  "refined",
+                            "player":  "xianxia",
+                            "tang-buyi":  "refined"
+                        },
+    "Scope":  "Actual existing Steam installation: schema3/4 upgrade, all six player variants, independent NPC selections and original toggles. Initial backup file bytes and installation identity are retained; existing core, loader, selected original game binaries, and other plugin inventory are unchanged. CheckOnly/no-op compare all BepInEx file hashes plus root loader/config. Candidate files are unchanged. No save/story test or real total uninstall; isolated installer tests cover uninstall and interruption recovery.",
+    "CodeHashAlgorithm":  "SHA256-UTF8-noBOM-LF-v1",
+    "CodeHashes":  [
+                       {
+                           "Path":  "installer/ZhaoHuoInstaller.psm1",
+                           "Sha256":  "DF5A5070DD2E5D5ECFCB41D6444A459B994714D9F60565FA08C1DEB2F6445BC9"
+                       },
+                       {
+                           "Path":  "installer/VariantSupport.ps1",
+                           "Sha256":  "E12665D920A4E9582EC88BCB92C679AA04AC558F61DC47E3960A9F4C99FAE89A"
+                       },
+                       {
+                           "Path":  "installer/AppearanceManager.ps1",
+                           "Sha256":  "68AC32DCF799A12AA05BA749F7BBB2B8B2C34A06F529EF4D57611A3CE12F78E7"
+                       },
+                       {
+                           "Path":  "installer/CharacterCatalog.ps1",
+                           "Sha256":  "4DCDE56EADCCA98CB7674C894CB56956D6E6ECC84781F6A6A04F8C1B960E2EB4"
+                       },
+                       {
+                           "Path":  "installer/CharacterState.ps1",
+                           "Sha256":  "BD1786E11E01FA02E255B48BBCA41F8EA521DA66EA03FE5D55BDC63B28CEFB0D"
+                       },
+                       {
+                           "Path":  "installer/CharacterManager.ps1",
+                           "Sha256":  "269C20C399A304B86479886F87CEDCFDCDD8E0CBFF7E606F776E542251EF6F8B"
+                       },
+                       {
+                           "Path":  "installer/CharacterTransactions.ps1",
+                           "Sha256":  "193E73AFB67C163BA365B4B331AE27EAC9C80A8E047F787C86BC7DADFB120A80"
+                       },
+                       {
+                           "Path":  "VariantCatalog.json",
+                           "Sha256":  "DA14443B614F2DA2275AFA95C3509E0B8D1F179507F46B49A2C34D14913F46C7"
+                       },
+                       {
+                           "Path":  "Install.ps1",
+                           "Sha256":  "88E5E4CB6B4AB5B4A854F7741B27A24426D46C3B864F8512C38E475F14E7D77B"
+                       },
+                       {
+                           "Path":  "Uninstall.ps1",
+                           "Sha256":  "74D6C5BB2931B764287B5123F643A5A547390E4AB50ABB3A776D82B2E204177E"
+                       }
+                   ]
+}

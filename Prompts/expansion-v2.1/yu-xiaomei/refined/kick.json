@@ -1,0 +1,41 @@
+{
+  "SchemaVersion": 1,
+  "CharacterId": "yu-xiaomei",
+  "VariantId": "refined",
+  "Name": "kick.png",
+  "GenerationMethod": "builtin imagegen",
+  "PixelPostProcessing": false,
+  "Prompt": "Use case: precise-object-edit. Make ONE transparent dialogue portrait sprite for 活侠传 / Legend of Mortal. Image 1 is the ORIGINAL TARGET expression/gesture/props reference; Image 2 is the newly approved beauty redesign and SAME CHARACTER identity/style/costume reference. Repaint Image 1 using the precise face, hair, age, proportions and costume rendering of Image 2. Crucially reproduce Image 1's expression, eye direction, mouth, hands, pose, original props and all meaningful sweat/tears/blood/comic marks; do NOT simply repeat the calm pose or smile from Image 2. Match the original restrained hand-drawn wuxia game style: rough black sketch contours, dry-brush edges, visible matte watercolor and colored-pencil grain, not glossy modern anime. Preserve character's age and modest costume/body proportions; no sexualization or additional exposed skin. Grey/color streaks outside the character in Image 1 are raw texture export artifacts, do not reproduce them. Exactly one complete isolated character, TRUE transparent background, natural-sized head, whole hair/hands/side silhouette fitted within at least 5% transparent side margins; only the same lower skirt crop at bottom is allowed. No new props, background, text, watermark, frame, checkerboard, 3D or photorealism. Character: Yu Xiaomei 虞小梅; same youthful age appearance as both references, dark high ponytail with red/gold knot ornament, white red-trimmed robe, brown waist sash/bracers, coral-red skirt. No body enhancement. Target expression: kick. In-game labels: 特殊12. LANDSCAPE COMPOSITION, full-body dynamic airborne side kick like Image 1: one booted leg extended horizontally far to image-left, the other folded underneath, torso leaning to image-right, leftward open palm extended and opposite fist by her shoulder. Ponytail and red skirt flying outward. Alert eyes, small open mouth. Keep BOTH boots, every fingertip, ponytail and skirt fully inside canvas with generous transparent margin. White trousers under opaque skirt; no exposure. Do not turn this into a standing portrait.",
+  "References": [
+    {
+      "LogicalName": "local-game-reference/kick.png",
+      "Kind": "original-game-reference-not-distributed"
+    },
+    {
+      "LogicalName": "generated-design/yu-xiaomei/refined/normal.png",
+      "Kind": "generated-design-reference"
+    }
+  ],
+  "OriginalGameCanonicalPath": "assets/__project/images/characters/girl5_小梅/kick.png",
+  "OriginalGameReferenceDistributed": false,
+  "GeneratedSourceBasename": "exec-d76e95ac-98f9-43fe-8b4f-38ae7efd3ccb.png",
+  "OutputSHA256": "13C088DEF50887573C209CDD2AE23814B2D0008F8F11F400A6CFA512BDBE9E69",
+  "SourceRecordBasename": "yu-xiaomei-refined-kick.json",
+  "SourceRecordSHA256": "326612B2C9EA120C409CA292FD8B77A04034288AE97DFD48631642C1250BC694",
+  "RawGeneratedCopyVerified": true,
+  "VisualReview": "passed before integration; runtime acceptance is separate",
+  "ImageMetadata": {
+    "Width": 1400,
+    "Height": 1123,
+    "Mode": "RGBA",
+    "AlphaMin": 0,
+    "AlphaMax": 255,
+    "AlphaBoundsGt16": [
+      20,
+      50,
+      1386,
+      1089
+    ],
+    "Bytes": 1659466
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "SchemaVersion": 1,
+  "CharacterId": "yu-xiaomei",
+  "VariantId": "refined",
+  "Name": "norseblood.png",
+  "GenerationMethod": "builtin imagegen",
+  "PixelPostProcessing": false,
+  "Prompt": "Use case: precise-object-edit. Make ONE transparent dialogue portrait sprite for 活侠传 / Legend of Mortal. Image 1 is the ORIGINAL TARGET expression/gesture/props reference; Image 2 is the newly approved beauty redesign and SAME CHARACTER identity/style/costume reference. Repaint Image 1 using the precise face, hair, age, proportions and costume rendering of Image 2. Crucially reproduce Image 1's expression, eye direction, mouth, hands, pose, original props and all meaningful sweat/tears/blood/comic marks; do NOT simply repeat the calm pose or smile from Image 2. Match the original restrained hand-drawn wuxia game style: rough black sketch contours, dry-brush edges, visible matte watercolor and colored-pencil grain, not glossy modern anime. Preserve character's age and modest costume/body proportions; no sexualization or additional exposed skin. Grey/color streaks outside the character in Image 1 are raw texture export artifacts, do not reproduce them. Exactly one complete isolated character, TRUE transparent background, natural-sized head, whole hair/hands/side silhouette fitted within at least 5% transparent side margins; only the same lower skirt crop at bottom is allowed. No new props, background, text, watermark, frame, checkerboard, 3D or photorealism. Character: Yu Xiaomei 虞小梅; same youthful age appearance as both references, dark high ponytail with red/gold knot ornament, white red-trimmed robe, brown waist sash/bracers, coral-red skirt. No body enhancement. Target expression: norseblood. In-game labels: 特殊13. Comically stunned straight face, eyes open looking forward, restrained closed small mouth, mild rosy face. Preserve original ONE THIN NON-GRAPHIC NOSEBLEED line from nostril toward chin with a couple tiny drops. Normal low/outward hands and original scabbard. No new injury or gore. Keep all side fingers visible.",
+  "References": [
+    {
+      "LogicalName": "local-game-reference/norseblood.png",
+      "Kind": "original-game-reference-not-distributed"
+    },
+    {
+      "LogicalName": "generated-design/yu-xiaomei/refined/normal.png",
+      "Kind": "generated-design-reference"
+    }
+  ],
+  "OriginalGameCanonicalPath": "assets/__project/images/characters/girl5_小梅/norseblood.png",
+  "OriginalGameReferenceDistributed": false,
+  "GeneratedSourceBasename": "exec-2af4ac52-aca4-4642-9b8d-78ad3578a560.png",
+  "OutputSHA256": "D30F5E2EB7A651F751ADDA4B1F088ACC8C9BE9FCD966F9B2ADECF9743FB00B38",
+  "SourceRecordBasename": "yu-xiaomei-refined-norseblood.json",
+  "SourceRecordSHA256": "FA4E3654787F0E5172A58590D8ADC69E119F01903D7BC5B21F476156F6B454DC",
+  "RawGeneratedCopyVerified": true,
+  "VisualReview": "passed before integration; runtime acceptance is separate",
+  "ImageMetadata": {
+    "Width": 990,
+    "Height": 1589,
+    "Mode": "RGBA",
+    "AlphaMin": 0,
+    "AlphaMax": 255,
+    "AlphaBoundsGt16": [
+      32,
+      21,
+      979,
+      1589
+    ],
+    "Bytes": 1856715
+  }
+}

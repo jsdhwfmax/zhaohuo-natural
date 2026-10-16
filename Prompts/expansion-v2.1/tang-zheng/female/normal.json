@@ -1,0 +1,39 @@
+{
+  "SchemaVersion": 1,
+  "CharacterId": "tang-zheng",
+  "VariantId": "female",
+  "Name": "normal.png",
+  "GenerationMethod": "builtin imagegen",
+  "PixelPostProcessing": false,
+  "Prompt": "Use case: precise-object-edit. Edit this approved adult female wuxia game portrait only to fix framing. Preserve her beautiful mature cold face, very full bust under opaque robes, all proportions, hair, gold/jade crown, colors, rough pencil-and-watercolor brushwork, pose and both hands with gourd and bamboo cylinder exactly. Add approximately 5% empty TRANSPARENT margin to left and right, slightly zooming the complete figure out if necessary, especially so the rightmost bamboo cylinder and hair are not clipped. Finish any tiny clipped rim at the right edge naturally. Do not redesign the woman, do not change expression or chest or outfit. Single complete portrait, no text, true alpha transparent background; no black backdrop or checkerboard painted into image. Bottom robe may continue naturally off bottom as reference.",
+  "References": [
+    {
+      "LogicalName": "generated-design/tang-zheng/female/normal-before-margin.png",
+      "Kind": "generated-design-reference",
+      "RecordedSHA256": "B5B5B7DE64AC25B5B3BDB4FF6E0EC21598D59FECBD5EB5FC1D050D86CAD3077D",
+      "Role": "approved female identity/body/costume master"
+    }
+  ],
+  "OriginalGameCanonicalPath": "assets/__project/images/characters/brother2/normal.png",
+  "OriginalGameReferenceDistributed": false,
+  "GeneratedSourceBasename": "exec-b775a902-248b-49cf-96be-650fc08c29a3.png",
+  "OutputSHA256": "6C09B7759E4F13F026CC70A8ADA691493CF4A4880C5F4D7A1C7EB425441EC8E4",
+  "SourceRecordBasename": "tang-zheng-female-normal-margin-v2.json",
+  "SourceRecordSHA256": "3DC0E3A571C10528E7693F7BBDB9D82E0F9865FA1E81ECFA7D43F3B83D822FBE",
+  "RawGeneratedCopyVerified": true,
+  "VisualReview": "passed before integration; runtime acceptance is separate",
+  "ImageMetadata": {
+    "Width": 1049,
+    "Height": 1500,
+    "Mode": "RGBA",
+    "AlphaMin": 0,
+    "AlphaMax": 255,
+    "AlphaBoundsGt16": [
+      51,
+      36,
+      1028,
+      1500
+    ],
+    "Bytes": 1999038
+  }
+}

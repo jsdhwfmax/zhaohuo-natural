@@ -1,0 +1,631 @@
+{
+  "SchemaVersion": 1,
+  "Scope": "Inspected identity and resource metadata only; no original images or game binaries. Adult alias allowlist is explicit; shared resources do not imply approval of juvenile identities.",
+  "Roles": [
+    {
+      "Id": "tang-buyi",
+      "SourceCatalogSha256": "962003368F904B7636CFA40A75C6EF2990C572FFEF7586FCAD9D586F5CB4ADAD",
+      "BaseAssets": [
+        "assets/__project/images/characters/brother1/angry1.png",
+        "assets/__project/images/characters/brother1/angry2.png",
+        "assets/__project/images/characters/brother1/angry3.png",
+        "assets/__project/images/characters/brother1/hand.png",
+        "assets/__project/images/characters/brother1/hat.png",
+        "assets/__project/images/characters/brother1/hurt.png",
+        "assets/__project/images/characters/brother1/laugh1.png",
+        "assets/__project/images/characters/brother1/laugh2.png",
+        "assets/__project/images/characters/brother1/nervous1.png",
+        "assets/__project/images/characters/brother1/nervous2.png",
+        "assets/__project/images/characters/brother1/nervous3.png",
+        "assets/__project/images/characters/brother1/normal.png",
+        "assets/__project/images/characters/brother1/serious.png",
+        "assets/__project/images/characters/brother1/shock.png",
+        "assets/__project/images/characters/brother1/special1.png",
+        "assets/__project/images/characters/brother1/suck.png"
+      ],
+      "AllowedIdentities": [
+        {
+          "Id": "brother1",
+          "Name": "唐門_大師兄",
+          "Assets": [
+            "assets/__project/images/characters/brother1/angry1.png",
+            "assets/__project/images/characters/brother1/angry2.png",
+            "assets/__project/images/characters/brother1/angry3.png",
+            "assets/__project/images/characters/brother1/hand.png",
+            "assets/__project/images/characters/brother1/hat.png",
+            "assets/__project/images/characters/brother1/hurt.png",
+            "assets/__project/images/characters/brother1/laugh1.png",
+            "assets/__project/images/characters/brother1/laugh2.png",
+            "assets/__project/images/characters/brother1/nervous1.png",
+            "assets/__project/images/characters/brother1/nervous2.png",
+            "assets/__project/images/characters/brother1/nervous3.png",
+            "assets/__project/images/characters/brother1/normal.png",
+            "assets/__project/images/characters/brother1/serious.png",
+            "assets/__project/images/characters/brother1/shock.png",
+            "assets/__project/images/characters/brother1/special1.png",
+            "assets/__project/images/characters/brother1/suck.png"
+          ]
+        },
+        {
+          "Id": "brother1_2",
+          "Name": "唐門_大師兄2",
+          "Assets": [
+            "assets/__project/images/characters/brother1/angry1.png",
+            "assets/__project/images/characters/brother1/angry2.png",
+            "assets/__project/images/characters/brother1/angry3.png",
+            "assets/__project/images/characters/brother1/hand.png",
+            "assets/__project/images/characters/brother1/hat.png",
+            "assets/__project/images/characters/brother1/hurt.png",
+            "assets/__project/images/characters/brother1/laugh1.png",
+            "assets/__project/images/characters/brother1/laugh2.png",
+            "assets/__project/images/characters/brother1/nervous1.png",
+            "assets/__project/images/characters/brother1/nervous2.png",
+            "assets/__project/images/characters/brother1/nervous3.png",
+            "assets/__project/images/characters/brother1/normal.png",
+            "assets/__project/images/characters/brother1/serious.png",
+            "assets/__project/images/characters/brother1/shock.png",
+            "assets/__project/images/characters/brother1/special1.png",
+            "assets/__project/images/characters/brother1/suck.png"
+          ]
+        },
+        {
+          "Id": "brother1_0",
+          "Name": "唐門_大師兄_隱",
+          "Assets": [
+            "assets/__project/images/characters/brother1/angry1.png",
+            "assets/__project/images/characters/brother1/angry2.png",
+            "assets/__project/images/characters/brother1/angry3.png",
+            "assets/__project/images/characters/brother1/hand.png",
+            "assets/__project/images/characters/brother1/hat.png",
+            "assets/__project/images/characters/brother1/hurt.png",
+            "assets/__project/images/characters/brother1/laugh1.png",
+            "assets/__project/images/characters/brother1/laugh2.png",
+            "assets/__project/images/characters/brother1/nervous1.png",
+            "assets/__project/images/characters/brother1/nervous2.png",
+            "assets/__project/images/characters/brother1/nervous3.png",
+            "assets/__project/images/characters/brother1/normal.png",
+            "assets/__project/images/characters/brother1/serious.png",
+            "assets/__project/images/characters/brother1/shock.png",
+            "assets/__project/images/characters/brother1/special1.png",
+            "assets/__project/images/characters/brother1/suck.png"
+          ]
+        }
+      ],
+      "RejectedIdentities": [
+        {
+          "Id": "brother1_young",
+          "Name": "唐門_大師兄_少年",
+          "Assets": [
+            "assets/__project/images/characters/brother1/normal.png"
+          ]
+        },
+        {
+          "Id": "brother1_1",
+          "Name": "唐門_大師兄_蒙面",
+          "Assets": [
+            "assets/__project/images/characters/mask1/normal.png"
+          ]
+        },
+        {
+          "Id": "brother1_upper",
+          "Name": "唐門_大師兄上",
+          "Assets": [
+            "assets/__project/images/characters/brother1/body_upper.png"
+          ]
+        },
+        {
+          "Id": "brother1_lower",
+          "Name": "唐門_大師兄下",
+          "Assets": [
+            "assets/__project/images/characters/brother1/body_lower.png"
+          ]
+        }
+      ],
+      "OriginalOnlyExpressions": [
+        "hand"
+      ]
+    },
+    {
+      "Id": "xiahou-lan",
+      "SourceCatalogSha256": "D14C5A0EDF7C3EF3FD852875B878A5EA2FE547F063E210DAB2A1F0617556E4EF",
+      "BaseAssets": [
+        "assets/__project/images/characters/girl6_小蘭/angry.png",
+        "assets/__project/images/characters/girl6_小蘭/angry2.png",
+        "assets/__project/images/characters/girl6_小蘭/block.png",
+        "assets/__project/images/characters/girl6_小蘭/blood.png",
+        "assets/__project/images/characters/girl6_小蘭/cry.png",
+        "assets/__project/images/characters/girl6_小蘭/droopy.png",
+        "assets/__project/images/characters/girl6_小蘭/gloomy.png",
+        "assets/__project/images/characters/girl6_小蘭/gloomy2.png",
+        "assets/__project/images/characters/girl6_小蘭/laugh1.png",
+        "assets/__project/images/characters/girl6_小蘭/love.png",
+        "assets/__project/images/characters/girl6_小蘭/nervous.png",
+        "assets/__project/images/characters/girl6_小蘭/nervous2.png",
+        "assets/__project/images/characters/girl6_小蘭/normal.png",
+        "assets/__project/images/characters/girl6_小蘭/shy2.png",
+        "assets/__project/images/characters/girl6_小蘭/squint.png",
+        "assets/__project/images/characters/girl6_小蘭/white.png"
+      ],
+      "AllowedIdentities": [
+        {
+          "Id": "girl6",
+          "Name": "崆峒_小蘭",
+          "Assets": [
+            "assets/__project/images/characters/girl6_小蘭/angry.png",
+            "assets/__project/images/characters/girl6_小蘭/angry2.png",
+            "assets/__project/images/characters/girl6_小蘭/block.png",
+            "assets/__project/images/characters/girl6_小蘭/blood.png",
+            "assets/__project/images/characters/girl6_小蘭/cry.png",
+            "assets/__project/images/characters/girl6_小蘭/droopy.png",
+            "assets/__project/images/characters/girl6_小蘭/gloomy.png",
+            "assets/__project/images/characters/girl6_小蘭/gloomy2.png",
+            "assets/__project/images/characters/girl6_小蘭/laugh1.png",
+            "assets/__project/images/characters/girl6_小蘭/love.png",
+            "assets/__project/images/characters/girl6_小蘭/nervous.png",
+            "assets/__project/images/characters/girl6_小蘭/nervous2.png",
+            "assets/__project/images/characters/girl6_小蘭/normal.png",
+            "assets/__project/images/characters/girl6_小蘭/shy2.png",
+            "assets/__project/images/characters/girl6_小蘭/squint.png",
+            "assets/__project/images/characters/girl6_小蘭/white.png"
+          ]
+        },
+        {
+          "Id": "girl6_1",
+          "Name": "崆峒_小蘭_早",
+          "Assets": [
+            "assets/__project/images/characters/girl6_小蘭/angry.png",
+            "assets/__project/images/characters/girl6_小蘭/angry2.png",
+            "assets/__project/images/characters/girl6_小蘭/block.png",
+            "assets/__project/images/characters/girl6_小蘭/blood.png",
+            "assets/__project/images/characters/girl6_小蘭/cry.png",
+            "assets/__project/images/characters/girl6_小蘭/gloomy.png",
+            "assets/__project/images/characters/girl6_小蘭/gloomy2.png",
+            "assets/__project/images/characters/girl6_小蘭/laugh1.png",
+            "assets/__project/images/characters/girl6_小蘭/love.png",
+            "assets/__project/images/characters/girl6_小蘭/nervous.png",
+            "assets/__project/images/characters/girl6_小蘭/nervous2.png",
+            "assets/__project/images/characters/girl6_小蘭/normal.png",
+            "assets/__project/images/characters/girl6_小蘭/shy2.png"
+          ]
+        }
+      ],
+      "RejectedIdentities": [
+        {
+          "Id": "girl6_3",
+          "Name": "崆峒_小蘭_幼年",
+          "Assets": [
+            "assets/__project/images/characters/girl6_小蘭_幼年/angry1.png",
+            "assets/__project/images/characters/girl6_小蘭_幼年/laugh1.png",
+            "assets/__project/images/characters/girl6_小蘭_幼年/normal.png"
+          ]
+        },
+        {
+          "Id": "girl6_2",
+          "Name": "崆峒_小蘭_魂",
+          "Assets": [
+            "assets/__project/images/characters/girl6_小蘭/soul.png"
+          ]
+        }
+      ],
+      "OriginalOnlyExpressions": [
+        "white"
+      ]
+    },
+    {
+      "Id": "tang-moling",
+      "SourceCatalogSha256": "4EDDE80B337D5B73018923725446075A30184C529F0834F0E202A6C9B24376F0",
+      "BaseAssets": [
+        "assets/__project/images/characters/sister/angry1.png",
+        "assets/__project/images/characters/sister/close_eye_laugh.png",
+        "assets/__project/images/characters/sister/close_eye.png",
+        "assets/__project/images/characters/sister/gamer.png",
+        "assets/__project/images/characters/sister/laugh1.png",
+        "assets/__project/images/characters/sister/laugh3.png",
+        "assets/__project/images/characters/sister/nervous1.png",
+        "assets/__project/images/characters/sister/nervous2.png",
+        "assets/__project/images/characters/sister/normal.png",
+        "assets/__project/images/characters/sister/one_hand.png",
+        "assets/__project/images/characters/sister/proud.png",
+        "assets/__project/images/characters/sister/sad2.png",
+        "assets/__project/images/characters/sister/shy.png",
+        "assets/__project/images/characters/sister/special1.png",
+        "assets/__project/images/characters/sister/special2.png",
+        "assets/__project/images/characters/sister/special3.png"
+      ],
+      "AllowedIdentities": [
+        {
+          "Id": "sister1",
+          "Name": "唐門_小師妹",
+          "Assets": [
+            "assets/__project/images/characters/sister/angry1.png",
+            "assets/__project/images/characters/sister/close_eye_laugh.png",
+            "assets/__project/images/characters/sister/close_eye.png",
+            "assets/__project/images/characters/sister/gamer.png",
+            "assets/__project/images/characters/sister/laugh1.png",
+            "assets/__project/images/characters/sister/laugh3.png",
+            "assets/__project/images/characters/sister/nervous1.png",
+            "assets/__project/images/characters/sister/nervous2.png",
+            "assets/__project/images/characters/sister/normal.png",
+            "assets/__project/images/characters/sister/one_hand.png",
+            "assets/__project/images/characters/sister/proud.png",
+            "assets/__project/images/characters/sister/sad2.png",
+            "assets/__project/images/characters/sister/shy.png",
+            "assets/__project/images/characters/sister/special1.png",
+            "assets/__project/images/characters/sister/special2.png",
+            "assets/__project/images/characters/sister/special3.png"
+          ]
+        }
+      ],
+      "RejectedIdentities": [
+        {
+          "Id": "sister1_look",
+          "Name": "唐門_小師妹瞪",
+          "Assets": [
+            "pic_look_002"
+          ]
+        }
+      ],
+      "OriginalOnlyExpressions": [
+        "one_hand"
+      ]
+    },
+    {
+      "Id": "long-xiang",
+      "SourceCatalogSha256": "867155E33F6378B65C2936F894A27FB75CF7FACA4B42639F706FB6790F9851C5",
+      "BaseAssets": [
+        "assets/__project/images/characters/girl4_龍湘/angry1.png",
+        "assets/__project/images/characters/girl4_龍湘/angry3.png",
+        "assets/__project/images/characters/girl4_龍湘/angry4.png",
+        "assets/__project/images/characters/girl4_龍湘/black.png",
+        "assets/__project/images/characters/girl4_龍湘/close_eyes.png",
+        "assets/__project/images/characters/girl4_龍湘/diffident.png",
+        "assets/__project/images/characters/girl4_龍湘/doubt.png",
+        "assets/__project/images/characters/girl4_龍湘/drumstick_sword.png",
+        "assets/__project/images/characters/girl4_龍湘/drumstick.png",
+        "assets/__project/images/characters/girl4_龍湘/hurt.png",
+        "assets/__project/images/characters/girl4_龍湘/hurt2.png",
+        "assets/__project/images/characters/girl4_龍湘/laugh1.png",
+        "assets/__project/images/characters/girl4_龍湘/laugh2.png",
+        "assets/__project/images/characters/girl4_龍湘/nervous1.png",
+        "assets/__project/images/characters/girl4_龍湘/nervous2.png",
+        "assets/__project/images/characters/girl4_龍湘/nervous3.png",
+        "assets/__project/images/characters/girl4_龍湘/normal.png",
+        "assets/__project/images/characters/girl4_龍湘/sad.png",
+        "assets/__project/images/characters/girl4_龍湘/sad2.png",
+        "assets/__project/images/characters/girl4_龍湘/shy.png",
+        "assets/__project/images/characters/girl4_龍湘/shy2.png",
+        "assets/__project/images/characters/girl4_龍湘/sword.png"
+      ],
+      "AllowedIdentities": [
+        {
+          "Id": "girl4",
+          "Name": "錦香_龍湘",
+          "Assets": [
+            "assets/__project/images/characters/girl4_龍湘/angry1.png",
+            "assets/__project/images/characters/girl4_龍湘/angry3.png",
+            "assets/__project/images/characters/girl4_龍湘/angry4.png",
+            "assets/__project/images/characters/girl4_龍湘/black.png",
+            "assets/__project/images/characters/girl4_龍湘/close_eyes.png",
+            "assets/__project/images/characters/girl4_龍湘/diffident.png",
+            "assets/__project/images/characters/girl4_龍湘/doubt.png",
+            "assets/__project/images/characters/girl4_龍湘/drumstick_sword.png",
+            "assets/__project/images/characters/girl4_龍湘/drumstick.png",
+            "assets/__project/images/characters/girl4_龍湘/hurt.png",
+            "assets/__project/images/characters/girl4_龍湘/hurt2.png",
+            "assets/__project/images/characters/girl4_龍湘/laugh1.png",
+            "assets/__project/images/characters/girl4_龍湘/laugh2.png",
+            "assets/__project/images/characters/girl4_龍湘/nervous1.png",
+            "assets/__project/images/characters/girl4_龍湘/nervous2.png",
+            "assets/__project/images/characters/girl4_龍湘/nervous3.png",
+            "assets/__project/images/characters/girl4_龍湘/normal.png",
+            "assets/__project/images/characters/girl4_龍湘/sad.png",
+            "assets/__project/images/characters/girl4_龍湘/sad2.png",
+            "assets/__project/images/characters/girl4_龍湘/shy.png",
+            "assets/__project/images/characters/girl4_龍湘/shy2.png",
+            "assets/__project/images/characters/girl4_龍湘/sword.png"
+          ]
+        },
+        {
+          "Id": "girl4_1",
+          "Name": "錦香_龍湘_隱",
+          "Assets": [
+            "assets/__project/images/characters/girl4_龍湘/angry1.png",
+            "assets/__project/images/characters/girl4_龍湘/angry3.png",
+            "assets/__project/images/characters/girl4_龍湘/angry4.png",
+            "assets/__project/images/characters/girl4_龍湘/black.png",
+            "assets/__project/images/characters/girl4_龍湘/close_eyes.png",
+            "assets/__project/images/characters/girl4_龍湘/diffident.png",
+            "assets/__project/images/characters/girl4_龍湘/doubt.png",
+            "assets/__project/images/characters/girl4_龍湘/drumstick_sword.png",
+            "assets/__project/images/characters/girl4_龍湘/drumstick.png",
+            "assets/__project/images/characters/girl4_龍湘/hurt.png",
+            "assets/__project/images/characters/girl4_龍湘/hurt2.png",
+            "assets/__project/images/characters/girl4_龍湘/laugh1.png",
+            "assets/__project/images/characters/girl4_龍湘/laugh2.png",
+            "assets/__project/images/characters/girl4_龍湘/nervous1.png",
+            "assets/__project/images/characters/girl4_龍湘/nervous2.png",
+            "assets/__project/images/characters/girl4_龍湘/nervous3.png",
+            "assets/__project/images/characters/girl4_龍湘/normal.png",
+            "assets/__project/images/characters/girl4_龍湘/sad.png",
+            "assets/__project/images/characters/girl4_龍湘/sad2.png",
+            "assets/__project/images/characters/girl4_龍湘/shy.png",
+            "assets/__project/images/characters/girl4_龍湘/shy2.png",
+            "assets/__project/images/characters/girl4_龍湘/sword.png"
+          ]
+        }
+      ],
+      "RejectedIdentities": [
+        {
+          "Id": "girl4_2",
+          "Name": "錦香_龍湘_宮裝",
+          "Assets": [
+            "assets/__project/images/characters/girl4_龍湘_宮裝/normal.png",
+            "assets/__project/images/characters/girl4_龍湘_宮裝/shy.png",
+            "assets/__project/images/characters/girl4_龍湘_宮裝/shy2.png"
+          ]
+        }
+      ],
+      "OriginalOnlyExpressions": [
+        "black"
+      ]
+    },
+    {
+      "Id": "yu-xiaomei",
+      "SourceCatalogSha256": "895388F4FC7734B32C8AD951A1C621FF6924A875E4F46505D6FD0BE26309D9CE",
+      "BaseAssets": [
+        "assets/__project/images/characters/girl5_小梅/angry1.png",
+        "assets/__project/images/characters/girl5_小梅/angry2.png",
+        "assets/__project/images/characters/girl5_小梅/angry3.png",
+        "assets/__project/images/characters/girl5_小梅/backstage.png",
+        "assets/__project/images/characters/girl5_小梅/black.png",
+        "assets/__project/images/characters/girl5_小梅/gloomy2.png",
+        "assets/__project/images/characters/girl5_小梅/hurt.png",
+        "assets/__project/images/characters/girl5_小梅/kick.png",
+        "assets/__project/images/characters/girl5_小梅/laugh1.png",
+        "assets/__project/images/characters/girl5_小梅/laugh2.png",
+        "assets/__project/images/characters/girl5_小梅/laugh3.png",
+        "assets/__project/images/characters/girl5_小梅/nervous1.png",
+        "assets/__project/images/characters/girl5_小梅/nervous2.png",
+        "assets/__project/images/characters/girl5_小梅/nervous3.png",
+        "assets/__project/images/characters/girl5_小梅/normal.png",
+        "assets/__project/images/characters/girl5_小梅/norseblood.png",
+        "assets/__project/images/characters/girl5_小梅/proud.png",
+        "assets/__project/images/characters/girl5_小梅/sad1.png",
+        "assets/__project/images/characters/girl5_小梅/scary_laugh.png",
+        "assets/__project/images/characters/girl5_小梅/scary_shock.png",
+        "assets/__project/images/characters/girl5_小梅/scary.png",
+        "assets/__project/images/characters/girl5_小梅/shy1.png",
+        "assets/__project/images/characters/girl5_小梅/shy2.png",
+        "assets/__project/images/characters/girl5_小梅/shy3.png",
+        "assets/__project/images/characters/girl5_小梅/shy4.png",
+        "assets/__project/images/characters/girl5_小梅/special5_2.png",
+        "assets/__project/images/characters/girl5_小梅/special5.png",
+        "assets/__project/images/characters/girl5_小梅/special6.png"
+      ],
+      "AllowedIdentities": [
+        {
+          "Id": "girl5",
+          "Name": "崆峒_小梅",
+          "Assets": [
+            "assets/__project/images/characters/girl5_小梅/angry1.png",
+            "assets/__project/images/characters/girl5_小梅/angry2.png",
+            "assets/__project/images/characters/girl5_小梅/angry3.png",
+            "assets/__project/images/characters/girl5_小梅/backstage.png",
+            "assets/__project/images/characters/girl5_小梅/black.png",
+            "assets/__project/images/characters/girl5_小梅/gloomy2.png",
+            "assets/__project/images/characters/girl5_小梅/hurt.png",
+            "assets/__project/images/characters/girl5_小梅/kick.png",
+            "assets/__project/images/characters/girl5_小梅/laugh1.png",
+            "assets/__project/images/characters/girl5_小梅/laugh2.png",
+            "assets/__project/images/characters/girl5_小梅/laugh3.png",
+            "assets/__project/images/characters/girl5_小梅/nervous1.png",
+            "assets/__project/images/characters/girl5_小梅/nervous2.png",
+            "assets/__project/images/characters/girl5_小梅/nervous3.png",
+            "assets/__project/images/characters/girl5_小梅/normal.png",
+            "assets/__project/images/characters/girl5_小梅/norseblood.png",
+            "assets/__project/images/characters/girl5_小梅/proud.png",
+            "assets/__project/images/characters/girl5_小梅/sad1.png",
+            "assets/__project/images/characters/girl5_小梅/scary_laugh.png",
+            "assets/__project/images/characters/girl5_小梅/scary_shock.png",
+            "assets/__project/images/characters/girl5_小梅/scary.png",
+            "assets/__project/images/characters/girl5_小梅/shy1.png",
+            "assets/__project/images/characters/girl5_小梅/shy2.png",
+            "assets/__project/images/characters/girl5_小梅/shy3.png",
+            "assets/__project/images/characters/girl5_小梅/shy4.png",
+            "assets/__project/images/characters/girl5_小梅/special5_2.png",
+            "assets/__project/images/characters/girl5_小梅/special5.png",
+            "assets/__project/images/characters/girl5_小梅/special6.png"
+          ]
+        }
+      ],
+      "RejectedIdentities": [
+        {
+          "Id": "girl5_hand",
+          "Name": "崆峒_小小梅手",
+          "Assets": [
+            "pic_big_girl_hand_001",
+            "pic_big_girl_hand_002"
+          ]
+        },
+        {
+          "Id": "girl5_9",
+          "Name": "崆峒_小梅_入魔",
+          "Assets": [
+            "assets/__project/images/characters/girl5_小梅_入魔/caught.png",
+            "assets/__project/images/characters/girl5_小梅_入魔/half.png",
+            "assets/__project/images/characters/girl5_小梅_入魔/kick.png",
+            "assets/__project/images/characters/girl5_小梅_入魔/no_weapon.png",
+            "assets/__project/images/characters/girl5_小梅_入魔/normal.png"
+          ]
+        },
+        {
+          "Id": "girl5_6",
+          "Name": "崆峒_小梅_公子",
+          "Assets": [
+            "assets/__project/images/characters/girl5_小梅/ranger1.png"
+          ]
+        },
+        {
+          "Id": "girl5_10_1",
+          "Name": "崆峒_小梅_分身1",
+          "Assets": [
+            "assets/__project/images/characters/girl5_小梅_幼年/normal.png"
+          ]
+        },
+        {
+          "Id": "girl5_10_2",
+          "Name": "崆峒_小梅_分身2",
+          "Assets": [
+            "assets/__project/images/characters/girl5_小梅_幼年/normal.png"
+          ]
+        },
+        {
+          "Id": "girl5_10_3",
+          "Name": "崆峒_小梅_分身3",
+          "Assets": [
+            "assets/__project/images/characters/girl5_小梅_幼年/normal.png"
+          ]
+        },
+        {
+          "Id": "girl5_10_4",
+          "Name": "崆峒_小梅_分身4",
+          "Assets": [
+            "assets/__project/images/characters/girl5_小梅_幼年/normal.png"
+          ]
+        },
+        {
+          "Id": "girl5_10_5",
+          "Name": "崆峒_小梅_分身5",
+          "Assets": [
+            "assets/__project/images/characters/girl5_小梅_幼年/normal.png"
+          ]
+        },
+        {
+          "Id": "girl5_10_6",
+          "Name": "崆峒_小梅_分身6",
+          "Assets": [
+            "assets/__project/images/characters/girl5_小梅_幼年/normal.png"
+          ]
+        },
+        {
+          "Id": "girl5_7",
+          "Name": "崆峒_小梅_半",
+          "Assets": [
+            "assets/__project/images/characters/girl5_小梅/laugh2_66.png"
+          ]
+        },
+        {
+          "Id": "girl5_2",
+          "Name": "崆峒_小梅_夜行",
+          "Assets": [
+            "assets/__project/images/characters/girl5_小梅_飛賊/laugh2.png",
+            "assets/__project/images/characters/girl5_小梅_飛賊/normal.png"
+          ]
+        },
+        {
+          "Id": "girl5_5",
+          "Name": "崆峒_小梅_大師兄",
+          "Assets": [
+            "assets/__project/images/characters/girl5_小梅/brother1_hurt.png",
+            "assets/__project/images/characters/girl5_小梅/brother1.png"
+          ]
+        },
+        {
+          "Id": "girl5_4",
+          "Name": "崆峒_小梅_幼年",
+          "Assets": [
+            "assets/__project/images/characters/girl5_小梅/angry1.png",
+            "assets/__project/images/characters/girl5_小梅/angry2.png",
+            "assets/__project/images/characters/girl5_小梅/angry3.png",
+            "assets/__project/images/characters/girl5_小梅/black.png",
+            "assets/__project/images/characters/girl5_小梅/hurt.png",
+            "assets/__project/images/characters/girl5_小梅/laugh1.png",
+            "assets/__project/images/characters/girl5_小梅/laugh2.png",
+            "assets/__project/images/characters/girl5_小梅/laugh3.png",
+            "assets/__project/images/characters/girl5_小梅/nervous1.png",
+            "assets/__project/images/characters/girl5_小梅/nervous2.png",
+            "assets/__project/images/characters/girl5_小梅/nervous3.png",
+            "assets/__project/images/characters/girl5_小梅/normal.png",
+            "assets/__project/images/characters/girl5_小梅/sad1.png",
+            "assets/__project/images/characters/girl5_小梅/shy1.png",
+            "assets/__project/images/characters/girl5_小梅/shy2.png",
+            "assets/__project/images/characters/girl5_小梅/shy3.png",
+            "assets/__project/images/characters/girl5_小梅/shy4.png"
+          ]
+        },
+        {
+          "Id": "girl5_8",
+          "Name": "崆峒_小梅_幼年2",
+          "Assets": [
+            "assets/__project/images/characters/girl5_小梅_幼年/hand.png",
+            "assets/__project/images/characters/girl5_小梅_幼年/laugh1.png",
+            "assets/__project/images/characters/girl5_小梅_幼年/normal.png",
+            "assets/__project/images/characters/girl5_小梅_幼年/white.png"
+          ]
+        },
+        {
+          "Id": "girl5_3",
+          "Name": "崆峒_小梅_飛賊",
+          "Assets": [
+            "assets/__project/images/characters/girl5_小梅_飛賊/laugh2.png",
+            "assets/__project/images/characters/girl5_小梅_飛賊/normal.png"
+          ]
+        }
+      ],
+      "OriginalOnlyExpressions": [
+        "black",
+        "special5",
+        "special5_2"
+      ]
+    },
+    {
+      "Id": "tang-zheng",
+      "SourceCatalogSha256": "5DEFB94524D36B2E431722A59AD1D682026F411045608BDC222996C26AE41891",
+      "BaseAssets": [
+        "assets/__project/images/characters/brother2/angry1.png",
+        "assets/__project/images/characters/brother2/angry2.png",
+        "assets/__project/images/characters/brother2/close_eye_nervous.png",
+        "assets/__project/images/characters/brother2/close_eye.png",
+        "assets/__project/images/characters/brother2/gloomy1.png",
+        "assets/__project/images/characters/brother2/gloomy2.png",
+        "assets/__project/images/characters/brother2/hurt.png",
+        "assets/__project/images/characters/brother2/laugh1.png",
+        "assets/__project/images/characters/brother2/laugh2.png",
+        "assets/__project/images/characters/brother2/nervous1.png",
+        "assets/__project/images/characters/brother2/nervous2.png",
+        "assets/__project/images/characters/brother2/normal.png"
+      ],
+      "AllowedIdentities": [
+        {
+          "Id": "brother2",
+          "Name": "唐門_二師兄",
+          "Assets": [
+            "assets/__project/images/characters/brother2/angry1.png",
+            "assets/__project/images/characters/brother2/angry2.png",
+            "assets/__project/images/characters/brother2/close_eye_nervous.png",
+            "assets/__project/images/characters/brother2/close_eye.png",
+            "assets/__project/images/characters/brother2/gloomy1.png",
+            "assets/__project/images/characters/brother2/gloomy2.png",
+            "assets/__project/images/characters/brother2/hurt.png",
+            "assets/__project/images/characters/brother2/laugh1.png",
+            "assets/__project/images/characters/brother2/laugh2.png",
+            "assets/__project/images/characters/brother2/nervous1.png",
+            "assets/__project/images/characters/brother2/nervous2.png",
+            "assets/__project/images/characters/brother2/normal.png"
+          ]
+        }
+      ],
+      "RejectedIdentities": [
+        {
+          "Id": "brother2_young",
+          "Name": "唐門_二師兄_少年",
+          "Assets": [
+            "assets/__project/images/characters/brother2/normal.png"
+          ]
+        }
+      ],
+      "OriginalOnlyExpressions": []
+    }
+  ],
+  "SourceMappingSha256": "F52D5275937DA69929D4007953F9067E0CDEB36B7ACE30D9F3FE751C4613D2F4"
+}

@@ -1,0 +1,41 @@
+{
+  "SchemaVersion": 1,
+  "CharacterId": "tang-moling",
+  "VariantId": "refined",
+  "Name": "shy.png",
+  "GenerationMethod": "builtin imagegen",
+  "PixelPostProcessing": false,
+  "Prompt": "Use case: precise-object-edit. Make ONE transparent dialogue portrait sprite for 活侠传 / Legend of Mortal. Image 1 is the ORIGINAL TARGET expression/gesture/props reference; Image 2 is the newly approved beauty redesign and SAME CHARACTER identity/style/costume reference. Repaint Image 1 using the precise face, hair, age, proportions and costume rendering of Image 2. Crucially reproduce Image 1's expression, eye direction, mouth, hands, pose, original props and all meaningful sweat/tears/blood/comic marks; do NOT simply repeat the calm pose or smile from Image 2. Match the original restrained hand-drawn wuxia game style: rough black sketch contours, dry-brush edges, visible matte watercolor and colored-pencil grain, not glossy modern anime. Preserve character's age and modest costume/body proportions; no sexualization or additional exposed skin. Grey/color streaks outside the character in Image 1 are raw texture export artifacts, do not reproduce them. Exactly one complete isolated character, TRUE transparent background, natural-sized head, whole hair/hands/side silhouette fitted within at least 5% transparent side margins; only the same lower skirt crop at bottom is allowed. No new props, background, text, watermark, frame, checkerboard, 3D or photorealism. Character: tang-moling. Target file: shy. In-game expression labels: 害羞.  Embarrassed shy blush with hatching, eyes looking sideways away, lips slightly parted, both hands held behind back.",
+  "References": [
+    {
+      "LogicalName": "local-game-reference/shy.png",
+      "Kind": "original-game-reference-not-distributed"
+    },
+    {
+      "LogicalName": "generated-design/tang-moling/refined/normal.png",
+      "Kind": "generated-design-reference"
+    }
+  ],
+  "OriginalGameCanonicalPath": "assets/__project/images/characters/sister/shy.png",
+  "OriginalGameReferenceDistributed": false,
+  "GeneratedSourceBasename": "exec-6fea8c59-0f15-481f-b3a9-f35f38f44158.png",
+  "OutputSHA256": "D28E58B274BBCD13E0DF127834FA8A4E995914BB609534B281C25C048E1FD236",
+  "SourceRecordBasename": "tang-moling-refined-shy.json",
+  "SourceRecordSHA256": "60A4FDA68F9A93BB93ADD6A81C41D34CB1F110DEE1E9BFE77013F8D8FDE23AD2",
+  "RawGeneratedCopyVerified": true,
+  "VisualReview": "passed before integration; runtime acceptance is separate",
+  "ImageMetadata": {
+    "Width": 816,
+    "Height": 1927,
+    "Mode": "RGBA",
+    "AlphaMin": 0,
+    "AlphaMax": 255,
+    "AlphaBoundsGt16": [
+      0,
+      274,
+      816,
+      1927
+    ],
+    "Bytes": 1856511
+  }
+}

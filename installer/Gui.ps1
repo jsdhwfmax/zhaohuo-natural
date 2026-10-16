@@ -7,7 +7,7 @@ param(
     [ValidateSet('Default','Compact')][string]$PreviewSize = 'Default',
     [ValidateRange(1,2)][double]$PreviewScale = 1,
     [string]$PreviewInstalledVariant = 'none',
-    [ValidateSet('player','tang-buyi','xiahou-lan')][string]$PreviewCharacterId = 'player',
+    [string]$PreviewCharacterId = 'player',
     [string]$UiTestReport
 )
 $ErrorActionPreference = 'Stop'
@@ -161,7 +161,7 @@ function New-Button([string]$Text, [bool]$Primary = $false) {
 
 
 $form=New-Object Windows.Forms.Form
-$form.Text='活侠传角色美化管理器 · v2.0.0';$form.AutoScaleMode='None';$form.StartPosition='CenterScreen'
+$form.Text='活侠传角色美化管理器';$form.AutoScaleMode='None';$form.StartPosition='CenterScreen'
 $form.Font=New-Object Drawing.Font('Microsoft YaHei UI',[single](10*96/72*$script:UiScale),[Drawing.FontStyle]::Regular,[Drawing.GraphicsUnit]::Pixel)
 $form.BackColor=[Drawing.Color]::FromArgb(241,236,223)
 $width=if($PreviewSize -eq 'Compact'){920}else{1120};$height=if($PreviewSize -eq 'Compact'){720}else{860}
@@ -175,7 +175,7 @@ $header=New-Object Windows.Forms.Panel;$header.Dock='Fill';$header.Margin=New-Ob
 $seal=New-Label "活`n侠" 12 $true;$seal.BackColor=[Drawing.Color]::FromArgb(151,62,44);$seal.ForeColor=[Drawing.Color]::FromArgb(255,246,220);$seal.TextAlign='MiddleCenter';$seal.SetBounds(0,(S 2),(S 40),(S 52))
 $title=New-Label '活侠传角色美化管理器' 21 $true;$title.SetBounds((S 56),0,(S 690),(S 43));$title.Anchor='Top,Left,Right'
 $subtitle=New-Label '逐个角色，选你喜欢的江湖模样。' 10;$subtitle.ForeColor=[Drawing.Color]::FromArgb(104,101,87);$subtitle.SetBounds((S 58),(S 47),(S 660),(S 24));$subtitle.Anchor='Top,Left,Right'
-$version=New-Label 'v2.0.0 · 离线安装' 9;$version.TextAlign='TopRight';$version.ForeColor=[Drawing.Color]::FromArgb(111,107,90);$version.SetBounds((S 858),(S 17),(S 210),(S 24));$version.Anchor='Top,Right'
+$version=New-Label '离线安装' 9;$version.TextAlign='TopRight';$version.ForeColor=[Drawing.Color]::FromArgb(111,107,90);$version.SetBounds((S 858),(S 17),(S 210),(S 24));$version.Anchor='Top,Right'
 $header.Controls.AddRange(@($seal,$title,$subtitle,$version));$layout.Controls.Add($header,0,0)
 $pathPanel=New-Object Windows.Forms.Panel;$pathPanel.Dock='Fill';$pathPanel.Margin=New-Object Windows.Forms.Padding(0);$pathPanel.Size=New-Object Drawing.Size((S 1072),(S 91))
 $pathLabel=New-Label 'Steam 游戏目录' 10 $true;$pathLabel.SetBounds(0,0,(S 300),(S 24))
@@ -358,6 +358,11 @@ function Invoke-UiEventTests {
     Refresh-InstalledState;$before=$script:MockRequests.Count;$script:PathBox.Text='';$script:ApplyButton.PerformClick();Assert-Ui 'empty path stops dispatch' ($script:MockRequests.Count -eq $before -and $script:Status.Text -like '*选择游戏目录*')
     $script:PathBox.Text='D:\SteamLibrary\steamapps\common\LegendOfMortal'
     Assert-Ui 'player seven cards can scroll' ($script:Cards.Count -eq 7 -and $cardGrid.AutoScroll -and $cardGrid.DisplayRectangle.Height -gt $cardGrid.ClientSize.Height)
+    Assert-Ui 'seven roles have vertical navigation and no hidden fixed-role list' ($script:RoleButtons.Count-eq $script:Catalog.Characters.Count-and $script:RoleButtons.Count-eq 7-and $rolePanel.AutoScroll-and $rolePanel.DisplayRectangle.Height-gt $rolePanel.ClientSize.Height)
+    Select-Character 'tang-buyi';Select-Variant 'female';$script:ApplyButton.PerformClick()
+    Assert-Ui 'brother female appearance dispatches under the existing character' ($script:MockRequests[-1].CharacterId-eq 'tang-buyi'-and $script:MockRequests[-1].VariantId-eq 'female')
+    Select-Variant 'refined';$script:ApplyButton.PerformClick()
+    Assert-Ui 'brother refined and female appearances share a single installed selection' ($script:MockInstalled['tang-buyi']-eq 'refined'-and @($script:Cards|Where-Object Installed).Count-eq 1)
     foreach($control in @($title,$subtitle,$version,$script:PathBox,$browse,$script:ApplyButton,$check,$uninstall,$tip)) {Assert-Ui ('control fits '+$control.Text) ($control.Parent.ClientRectangle.Contains($control.Bounds))}
     Assert-Ui 'no horizontal overflow' ($layout.Width -le $form.ClientSize.Width -and $cardGrid.HorizontalScroll.Visible -eq $false -and $rolePanel.HorizontalScroll.Visible -eq $false)
     if($PreviewInstalledVariant -ne 'none'){$script:MockInstalled['player']=$PreviewInstalledVariant}
@@ -370,8 +375,11 @@ function Invoke-UiEventTests {
 }
 
 try {
-    if(-not (Get-Command Get-PortraitCharacters -ErrorAction SilentlyContinue)){throw '管理器组件尚未完整，请使用完整的 v2.0 安装包。'}
+    if(-not (Get-Command Get-PortraitCharacters -ErrorAction SilentlyContinue)){throw '管理器组件尚未完整，请重新解压完整安装包。'}
     $script:Catalog=Get-PortraitCharacters -PackageRoot $script:PackageRoot
+    $form.Text='活侠传角色美化管理器 · v'+$script:Catalog.PackageVersion
+    $version.Text='v'+$script:Catalog.PackageVersion+' · 离线安装'
+    if(@($script:Catalog.Characters|Where-Object Id -CEQ $PreviewCharacterId).Count-ne 1){throw '预览角色不在此安装包目录中。'}
     # Only the isolated event-test backend uses simulated readiness. Real and
     # image-only preview modes always show the catalog's actual availability.
     if($UiTestReport){$script:Catalog=$script:Catalog|ConvertTo-Json -Depth 20|ConvertFrom-Json;foreach($c in $script:Catalog.Characters){foreach($v in $c.Variants){$v.Ready=$true;$v.Available=$true}};$last=$script:Catalog.Characters[0].Variants[-1];$last.Ready=$false;$last.Available=$false;$last.UnavailableReason='测试：素材尚未就绪。'}

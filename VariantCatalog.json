@@ -1,14 +1,14 @@
 {
   "SchemaVersion": 2,
-  "PackageVersion": "2.0.0",
-  "RuntimeProtocol": 1,
+  "PackageVersion": "2.1.0",
+  "RuntimeProtocol": 2,
   "PackageReady": true,
   "DefaultCharacterId": "player",
   "FingerprintAlgorithm": "SHA256-character-path-hash-lines-ordinal-v1",
   "SharedFiles": [
     {
       "Name": "ZhaoHuoNatural.dll",
-      "Sha256": "592A56EDD630F40AAA5A551746183F86F7D941D7ACEAABC105D6D473A7BE9AA8"
+      "Sha256": "AEEE02AC56DCDCB1E683D6356AC28FE19E61AF861D5663ACFFD1B83984F06957"
     },
     {
       "Name": "portrait-map.txt",
@@ -1340,6 +1340,82 @@
           "OriginalFallback": [
             "hand"
           ]
+        },
+        {
+          "Id": "female",
+          "Kind": "custom",
+          "DisplayName": "明艳女侠",
+          "Description": "大师兄女版。仅改变立绘，保留原剧情称呼。",
+          "Ready": true,
+          "SourcePath": "Variants/tang-buyi/female/Portraits",
+          "PreviewPath": "Variants/tang-buyi/female/Portraits/normal.png",
+          "Files": [
+            {
+              "Name": "angry1.png",
+              "Sha256": "0772C7E3DF9CEF9EE83521C46B853F382408A11092EF4CB194C70B7393DA361D"
+            },
+            {
+              "Name": "angry2.png",
+              "Sha256": "F5C8B7B59904E68A184D17C8BFCF2E10FFD778BF58B57F43C1B5AA46FAADBA2C"
+            },
+            {
+              "Name": "angry3.png",
+              "Sha256": "537FE0ADDF1336D6A2F54DA70AB425193ABF7ECF80A94D39EDAF39F16C1EF5A1"
+            },
+            {
+              "Name": "hat.png",
+              "Sha256": "5C76B94FA454BC25443F44CA1F11A4AC3625CDE0390B9E5987FBAC1C131AAE81"
+            },
+            {
+              "Name": "hurt.png",
+              "Sha256": "0E29199CBDFF70059094706A9CD97E5FF741B92462E2F4CA0160B9F83FFF9E00"
+            },
+            {
+              "Name": "laugh1.png",
+              "Sha256": "66CB1BB87A20D25DE1FB1B838B62E56F4884A77872EC250407849828C22018EE"
+            },
+            {
+              "Name": "laugh2.png",
+              "Sha256": "AEB570353E3CDC0D1DFAA69414CDAC640147F921EDA315D27B287EF215B8A3CE"
+            },
+            {
+              "Name": "nervous1.png",
+              "Sha256": "471D10822C0D273B16E1B92A81A55C88DD34E34A15B6028BB1972F18155382C8"
+            },
+            {
+              "Name": "nervous2.png",
+              "Sha256": "F6FA4BC53A6BF0D5BEB6BCFA59CA70AD880F4B11E15ACEFCE3DFF7226441EF15"
+            },
+            {
+              "Name": "nervous3.png",
+              "Sha256": "655C57955A766F5E7DC09742F1AE14627302AFF4B580993E896D1735F0EFE484"
+            },
+            {
+              "Name": "normal.png",
+              "Sha256": "FE491C8DDADB3A46607DFFF137A7F6DB79F0E55851E22F82789FA0BAC15FF0ED"
+            },
+            {
+              "Name": "serious.png",
+              "Sha256": "1F16E7E4DA993CF87E090029CE7DBB67C56416DCF2ED5E8D0BEB291C8E662067"
+            },
+            {
+              "Name": "shock.png",
+              "Sha256": "26A1054533CAF1B0628AD39460C74B2EA403E7DB08DB8E80AAA0BC9865EFAC70"
+            },
+            {
+              "Name": "special1.png",
+              "Sha256": "77D6920632076CB4B02D5E108F5D6BE04AEA86701E8B2F4C16FA0AB24608CD42"
+            },
+            {
+              "Name": "suck.png",
+              "Sha256": "8C99E9DBF1495DFF10DC4AC2818199E85D6D94AE907EAC70435ED6B68B8D7C4A"
+            }
+          ],
+          "OriginalFallback": [
+            "hand"
+          ],
+          "AssetFingerprint": "3DE6E1944779A6DFADEA26A8631CECFD09FE29D750F97A4AEFF39FF82BF003A8",
+          "AssetCount": 15
         }
       ]
     },
@@ -1436,6 +1512,446 @@
           "OriginalFallback": [
             "white"
           ]
+        }
+      ]
+    },
+    {
+      "Id": "tang-moling",
+      "DisplayName": "唐默铃",
+      "RuntimeBindingId": "tang-moling",
+      "LayoutSourcePath": "Characters/tang-moling/portrait-layout.tsv",
+      "LayoutSha256": "1293040F2CC45841439011846D222726E4E41BD903AACB0534A41901E526F420",
+      "Variants": [
+        {
+          "Id": "original",
+          "Kind": "original",
+          "DisplayName": "游戏原版",
+          "Description": "使用游戏原始立绘，关闭当前角色的替换。",
+          "Ready": true,
+          "SourcePath": null,
+          "PreviewPath": null,
+          "Files": [],
+          "OriginalFallback": [],
+          "AssetFingerprint": null
+        },
+        {
+          "Id": "refined",
+          "Kind": "custom",
+          "DisplayName": "唐默铃 · 精修",
+          "Description": "保留角色气质与剧情表情的全套重绘。",
+          "Ready": true,
+          "SourcePath": "Variants/tang-moling/refined/Portraits",
+          "PreviewPath": "Variants/tang-moling/refined/Portraits/normal.png",
+          "Files": [
+            {
+              "Name": "angry1.png",
+              "Sha256": "2458CC1B42BB2D527586445DC1AF7B0B51C0C10B2EDD91587075EAC1400177EC"
+            },
+            {
+              "Name": "close_eye.png",
+              "Sha256": "513F2BBFDE1DCEBAB7ED842599CE1F9BE1D2C9D1B70A62C6C5C37C8BBA2E0F6B"
+            },
+            {
+              "Name": "close_eye_laugh.png",
+              "Sha256": "FA56A9956563BEF44ECF50FD82A21A11914F65560761B585BE7AC1F065B945E0"
+            },
+            {
+              "Name": "gamer.png",
+              "Sha256": "BD8A764E7EE4703F34063D800D572A05E58E5569800CFF92E93FF4AE3DD52146"
+            },
+            {
+              "Name": "laugh1.png",
+              "Sha256": "BBEA68F70A53BA0A3971A962F526554CDBF2C6BAB0DC90D52AE4A4F28A0A2622"
+            },
+            {
+              "Name": "laugh3.png",
+              "Sha256": "ADFD7831DAA60CCD899DAEED08685E5790D2570AA9878C1DE6C037B87D0ABD93"
+            },
+            {
+              "Name": "nervous1.png",
+              "Sha256": "98D2EFD5C2C4104751CF1A7765645403A162FC0ABE887910D79E22DFE22FF8C4"
+            },
+            {
+              "Name": "nervous2.png",
+              "Sha256": "BA97B0F225E0BBCF25571DD13595CD6570AA7A5A74AF29B38F6064EFC8AEC8C7"
+            },
+            {
+              "Name": "normal.png",
+              "Sha256": "32413712D09C78985CBEE5FD1CA22C36740CE9841E1FFD5DD5C97735055A7DF8"
+            },
+            {
+              "Name": "proud.png",
+              "Sha256": "3DBAD6291A2312E1DE39DE6D9719DBF3A2EB6C4DA3504089E692DF71B8ACF14B"
+            },
+            {
+              "Name": "sad2.png",
+              "Sha256": "6CE0A2417425D584CDD577647B951A3754887155BE797018C47265A195E734C4"
+            },
+            {
+              "Name": "shy.png",
+              "Sha256": "D28E58B274BBCD13E0DF127834FA8A4E995914BB609534B281C25C048E1FD236"
+            },
+            {
+              "Name": "special1.png",
+              "Sha256": "A0E9DBF614C56DC1E783499E75C2215AEC66A401071959DAA20FAB4E651CF66D"
+            },
+            {
+              "Name": "special2.png",
+              "Sha256": "CE46906AA3202A14CB0C31C5B4760677C79F06E01E5A76675545E12A526F2695"
+            },
+            {
+              "Name": "special3.png",
+              "Sha256": "B7BEF9493477BCF3B2E91623E77F328AD8B05358170BE6D1E362E760EBD72180"
+            }
+          ],
+          "OriginalFallback": [
+            "one_hand"
+          ],
+          "AssetFingerprint": "14A2135E12355E2573DB89C04E2E70624C9601D00279FAD5F984CD39E8909439",
+          "AssetCount": 15
+        }
+      ]
+    },
+    {
+      "Id": "long-xiang",
+      "DisplayName": "龙湘",
+      "RuntimeBindingId": "long-xiang",
+      "LayoutSourcePath": "Characters/long-xiang/portrait-layout.tsv",
+      "LayoutSha256": "5C5965C6BF1EB23B69477AB235E0FB7DEBD2E44EABA3953C1B3C86677326212B",
+      "Variants": [
+        {
+          "Id": "original",
+          "Kind": "original",
+          "DisplayName": "游戏原版",
+          "Description": "使用游戏原始立绘，关闭当前角色的替换。",
+          "Ready": true,
+          "SourcePath": null,
+          "PreviewPath": null,
+          "Files": [],
+          "OriginalFallback": [],
+          "AssetFingerprint": null
+        },
+        {
+          "Id": "refined",
+          "Kind": "custom",
+          "DisplayName": "龙湘 · 精修",
+          "Description": "保留角色气质与剧情表情的全套重绘。",
+          "Ready": true,
+          "SourcePath": "Variants/long-xiang/refined/Portraits",
+          "PreviewPath": "Variants/long-xiang/refined/Portraits/normal.png",
+          "Files": [
+            {
+              "Name": "angry1.png",
+              "Sha256": "CBC572054E9DCFDC855D98DAAD4148C4623792B12BB348B4700023FC9FEEFE85"
+            },
+            {
+              "Name": "angry3.png",
+              "Sha256": "7A3C1D987C1E07D1D22EBFBCD5C9DC89EBE48D1DB76425AA8F8A321264C124D1"
+            },
+            {
+              "Name": "angry4.png",
+              "Sha256": "CD3358B72680FF70EE35CC27F0C3E2C0EC0D4954CD3CC734882FE9007DD0CE17"
+            },
+            {
+              "Name": "close_eyes.png",
+              "Sha256": "DF9F29A5FEA96AAD8871F9809A0EB5008D3270D0B8066EBFA203CFCEAEB0BFB9"
+            },
+            {
+              "Name": "diffident.png",
+              "Sha256": "429143467DB21E3F2E2ABBA66045967D7CCB0C927C58E9734AC97DE7F0633662"
+            },
+            {
+              "Name": "doubt.png",
+              "Sha256": "9A2441DB8ED23FF482C52544FFFA2BA565B2D9BAF4C0E0F75DC36609A77E9AFB"
+            },
+            {
+              "Name": "drumstick.png",
+              "Sha256": "54D0E7A870A38E5CE69706952C6FD9E6F9D1DFF3F11F6AA7A6F70E30775969E1"
+            },
+            {
+              "Name": "drumstick_sword.png",
+              "Sha256": "8C0A2A4C5E54DE328A98CFD7D616D1B303F3F43D97146573AA36FF22EEC0530C"
+            },
+            {
+              "Name": "hurt.png",
+              "Sha256": "63E09126B180CBA668A4849F9AC8809547498D7041348CDC6F203BD82951EA67"
+            },
+            {
+              "Name": "hurt2.png",
+              "Sha256": "CA43F7EE6C172F4751227415A693B135714AEF7EA14136FB49D291E826D6C45B"
+            },
+            {
+              "Name": "laugh1.png",
+              "Sha256": "39AC774BA58208042790B3DEFE8286CA936B669F0CF5D47CF570DA9D85341841"
+            },
+            {
+              "Name": "laugh2.png",
+              "Sha256": "1DBEBD26ED35EA4318422890041600901D3341A8B096943A6464D5452B5751DF"
+            },
+            {
+              "Name": "nervous1.png",
+              "Sha256": "232829CB1781600B7B5E3B612ABF6B37BEDB9884FB07209F3FD3CADDE7136B3A"
+            },
+            {
+              "Name": "nervous2.png",
+              "Sha256": "6D4E8C296827DDE49231B07DBC0403A17558F087299634F3C500A729F6FB278C"
+            },
+            {
+              "Name": "nervous3.png",
+              "Sha256": "3832A85167CE814477D12E50B172556B635B9AE321A4FECCAE3F0FA1948E494C"
+            },
+            {
+              "Name": "normal.png",
+              "Sha256": "B1C1DD9293D92C14E07B894B408791D7FB7465D20D39A34400B2AFC26C386291"
+            },
+            {
+              "Name": "sad.png",
+              "Sha256": "38C9C86F6BD9925EA7977017F813D96157F818E9F4C888AB5594289993A0618B"
+            },
+            {
+              "Name": "sad2.png",
+              "Sha256": "CA93E4599E4EC22AB1F2EF102E621C76BF6722EA8BC8456A0B45F0E0B74513DC"
+            },
+            {
+              "Name": "shy.png",
+              "Sha256": "D9D3A8339828F7CC155F4D07EED448E1316F40D5973624736A96DDE306F6CF0B"
+            },
+            {
+              "Name": "shy2.png",
+              "Sha256": "00E56468B36EC595922DE490519E468232554C9192E0AAB7815B86D2FEFBF15A"
+            },
+            {
+              "Name": "sword.png",
+              "Sha256": "DD4DF8FB75B5171CDFBC7C937139D85B66DAD4F17C400120CD405AB21D1955E1"
+            }
+          ],
+          "OriginalFallback": [
+            "black"
+          ],
+          "AssetFingerprint": "6C8C80E689B18BF53B08BC7C361C03F1DE4CFDE2079EF4310CD0E0CA075E022E",
+          "AssetCount": 21
+        }
+      ]
+    },
+    {
+      "Id": "yu-xiaomei",
+      "DisplayName": "虞小梅",
+      "RuntimeBindingId": "yu-xiaomei",
+      "LayoutSourcePath": "Characters/yu-xiaomei/portrait-layout.tsv",
+      "LayoutSha256": "185A63E14171F0CEA4947A32A237D4B22B20225F58FA62AE99397813AD6293FA",
+      "Variants": [
+        {
+          "Id": "original",
+          "Kind": "original",
+          "DisplayName": "游戏原版",
+          "Description": "使用游戏原始立绘，关闭当前角色的替换。",
+          "Ready": true,
+          "SourcePath": null,
+          "PreviewPath": null,
+          "Files": [],
+          "OriginalFallback": [],
+          "AssetFingerprint": null
+        },
+        {
+          "Id": "refined",
+          "Kind": "custom",
+          "DisplayName": "虞小梅 · 精修",
+          "Description": "保留角色气质与剧情表情的全套重绘。",
+          "Ready": true,
+          "SourcePath": "Variants/yu-xiaomei/refined/Portraits",
+          "PreviewPath": "Variants/yu-xiaomei/refined/Portraits/normal.png",
+          "Files": [
+            {
+              "Name": "angry1.png",
+              "Sha256": "87B668C968F92134B45A2BCF9A58455B34086A87CE49702C65D9A103B395BB12"
+            },
+            {
+              "Name": "angry2.png",
+              "Sha256": "5A13BE175EFE00442937CDD74CA09906336A1BC9FEE0ECABCB65A5EC9F9AF31B"
+            },
+            {
+              "Name": "angry3.png",
+              "Sha256": "117484EDF0572E1E9FCDE019CBE8962C8C553BB436C2450BC9F5097A15208CEA"
+            },
+            {
+              "Name": "backstage.png",
+              "Sha256": "688832A164CD430BF8E61AD0267471E9D7B4465756D56F96604A6D8F76F08AF8"
+            },
+            {
+              "Name": "gloomy2.png",
+              "Sha256": "FA070EAA3C4E244FA552651E9BEFA4BD1DC758AD42BD2AB48C943003829000FF"
+            },
+            {
+              "Name": "hurt.png",
+              "Sha256": "EE0B11A132C1ABC35B5799436475B2A7360242141ED697E2756F892A33ED1623"
+            },
+            {
+              "Name": "kick.png",
+              "Sha256": "13C088DEF50887573C209CDD2AE23814B2D0008F8F11F400A6CFA512BDBE9E69"
+            },
+            {
+              "Name": "laugh1.png",
+              "Sha256": "E51B05A5A2AF8659F0BA8C726015DFA53CBF2EC4869EC907D6D46AB90BB5445D"
+            },
+            {
+              "Name": "laugh2.png",
+              "Sha256": "9D1753963BF1761F3B853B36F0153253FD00EAF97229A0800D36913CB584B3F1"
+            },
+            {
+              "Name": "laugh3.png",
+              "Sha256": "1615335E35200D1E1061E6B1C5F6977FBB9F6E9E3A73A870EECDE5EF09A3523F"
+            },
+            {
+              "Name": "nervous1.png",
+              "Sha256": "948CEF898956CB6F145E72EC8051D12420FCB4857A81DC75C1282D0717D59DE0"
+            },
+            {
+              "Name": "nervous2.png",
+              "Sha256": "6525108909E0195FF5BA7AF2B7E0BAF4DFFD5E26715D67F166F64AA953D30C78"
+            },
+            {
+              "Name": "nervous3.png",
+              "Sha256": "4D19BFCEDB6DD40E09554D528A926E255C548E92502B80C6E11EDCAA286492FA"
+            },
+            {
+              "Name": "normal.png",
+              "Sha256": "7612E4A1AB5C08162F7365702DF44886149E26128BE6C0BACBB7F23663854BB4"
+            },
+            {
+              "Name": "norseblood.png",
+              "Sha256": "D30F5E2EB7A651F751ADDA4B1F088ACC8C9BE9FCD966F9B2ADECF9743FB00B38"
+            },
+            {
+              "Name": "proud.png",
+              "Sha256": "EE3E6EAC141604039F6740934D11A16D078C0AD946609044828DA95132364823"
+            },
+            {
+              "Name": "sad1.png",
+              "Sha256": "63147D824DF5537E118288EEEE91B4C7C942B1A2CEB0E7B7C54172CE804BF646"
+            },
+            {
+              "Name": "scary.png",
+              "Sha256": "BE2513543F47F58FAFC5FA1146C0C5E6026A3673E093F9175EA32E98DCF03648"
+            },
+            {
+              "Name": "scary_laugh.png",
+              "Sha256": "40FC4D064DE16ECC4E1550970D7B07BF2984D25D64E39D54ADBC5D663AC6F663"
+            },
+            {
+              "Name": "scary_shock.png",
+              "Sha256": "C0DB59E52E2A2E7B42E179FCB6B80AAAC0173A1ABF749F4A78BDECBA7D5DE34F"
+            },
+            {
+              "Name": "shy1.png",
+              "Sha256": "CB5623912AD7539B7130A4ECB44F3595DD7C1D06189C1C017E2D91B336B7C873"
+            },
+            {
+              "Name": "shy2.png",
+              "Sha256": "D832EDCDA0D4A6E3B742DDB501218BD3A2AEF10799828B88B4F601F6E3232A40"
+            },
+            {
+              "Name": "shy3.png",
+              "Sha256": "7D445223D55CFDE9A39A4678C2A11DD6C6C3911A5F34712DE552142F57192749"
+            },
+            {
+              "Name": "shy4.png",
+              "Sha256": "EC846EED8E6FF216B833DE5CEFD4A1FC90B2024252BDE855A08B60EBA05E8F06"
+            },
+            {
+              "Name": "special6.png",
+              "Sha256": "424DA6B56FF189D9ED9F89AE933D0CFEE0D6C6F0CECE825346F57341E783C3B2"
+            }
+          ],
+          "OriginalFallback": [
+            "black",
+            "special5",
+            "special5_2"
+          ],
+          "AssetFingerprint": "FF0EE32DD3B0EE440BAAD042CCC409B31FD40B99DF2B6A63CB3D137973132E8E",
+          "AssetCount": 25
+        }
+      ]
+    },
+    {
+      "Id": "tang-zheng",
+      "DisplayName": "唐铮",
+      "RuntimeBindingId": "tang-zheng",
+      "LayoutSourcePath": "Characters/tang-zheng/portrait-layout.tsv",
+      "LayoutSha256": "3F46EE96A733AE7C92CC8F858C35F01556CC8167DEC75C8E208B0DC3A49E3000",
+      "Variants": [
+        {
+          "Id": "original",
+          "Kind": "original",
+          "DisplayName": "游戏原版",
+          "Description": "使用游戏原始立绘，关闭当前角色的替换。",
+          "Ready": true,
+          "SourcePath": null,
+          "PreviewPath": null,
+          "Files": [],
+          "OriginalFallback": [],
+          "AssetFingerprint": null
+        },
+        {
+          "Id": "female",
+          "Kind": "custom",
+          "DisplayName": "冷艳女侠",
+          "Description": "二师兄女版。仅改变立绘，保留原剧情称呼。",
+          "Ready": true,
+          "SourcePath": "Variants/tang-zheng/female/Portraits",
+          "PreviewPath": "Variants/tang-zheng/female/Portraits/normal.png",
+          "Files": [
+            {
+              "Name": "angry1.png",
+              "Sha256": "182822E16B7A36F61F78545336C0E1FF4F8AA197554A379704CB5CBE7536EFA1"
+            },
+            {
+              "Name": "angry2.png",
+              "Sha256": "F5B3AD78E07E57A36F0DBA4488FD3FDFF870EC4EA918905E5D520809FE241AF7"
+            },
+            {
+              "Name": "close_eye.png",
+              "Sha256": "FE6688E3EEE2352A768E24C5B6E56C402F04519E786C6DDD3230E6EA3BB69D59"
+            },
+            {
+              "Name": "close_eye_nervous.png",
+              "Sha256": "E198E540383A861108760609405447D85CD1692768BE82E9A73566F95D87F00D"
+            },
+            {
+              "Name": "gloomy1.png",
+              "Sha256": "E32B0457A51B709743D0C3511428ADBE9486AD21D3813EA2355B79DE1B849F3D"
+            },
+            {
+              "Name": "gloomy2.png",
+              "Sha256": "2272AC02C855DB1C29296D930BA14AFDC8AD146EEA0157DE9E694051646A5395"
+            },
+            {
+              "Name": "hurt.png",
+              "Sha256": "8822338FBBF3F9609706C1146DEE3E18887860D3A29FF0C80E617C5270018FBF"
+            },
+            {
+              "Name": "laugh1.png",
+              "Sha256": "95F1920D43B946A7D4B809CDCFC361176165FA63437A57CBB79BB041786FB767"
+            },
+            {
+              "Name": "laugh2.png",
+              "Sha256": "3986439D19D98965F62C6F53E254D8AC5F72BB6C72184D058F279EBDA36E0316"
+            },
+            {
+              "Name": "nervous1.png",
+              "Sha256": "9D08901B8F7354C0D3EF27745A834AAABA584D78524B27FA2CEF5A6C7DE4EF5F"
+            },
+            {
+              "Name": "nervous2.png",
+              "Sha256": "8182FDBAD4FCB8C619D2397A0B2B63FA8A51BAD05711ED99CBE0AB7605E9E981"
+            },
+            {
+              "Name": "normal.png",
+              "Sha256": "6C09B7759E4F13F026CC70A8ADA691493CF4A4880C5F4D7A1C7EB425441EC8E4"
+            }
+          ],
+          "OriginalFallback": [],
+          "AssetFingerprint": "311251159B1B6D6D46324D686EC3FDF5314906318A2904203DD24818FEE944ED",
+          "AssetCount": 12
         }
       ]
     }

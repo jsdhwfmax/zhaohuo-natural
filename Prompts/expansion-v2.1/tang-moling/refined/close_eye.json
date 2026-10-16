@@ -1,0 +1,41 @@
+{
+  "SchemaVersion": 1,
+  "CharacterId": "tang-moling",
+  "VariantId": "refined",
+  "Name": "close_eye.png",
+  "GenerationMethod": "builtin imagegen",
+  "PixelPostProcessing": false,
+  "Prompt": "Use case: precise-object-edit. Make ONE transparent dialogue portrait sprite for 活侠传 / Legend of Mortal. Image 1 is the ORIGINAL TARGET expression/gesture/props reference; Image 2 is the newly approved beauty redesign and SAME CHARACTER identity/style/costume reference. Repaint Image 1 using the precise face, hair, age, proportions and costume rendering of Image 2. Crucially reproduce Image 1's expression, eye direction, mouth, hands, pose, original props and all meaningful sweat/tears/blood/comic marks; do NOT simply repeat the calm pose or smile from Image 2. Match the original restrained hand-drawn wuxia game style: rough black sketch contours, dry-brush edges, visible matte watercolor and colored-pencil grain, not glossy modern anime. Preserve character's age and modest costume/body proportions; no sexualization or additional exposed skin. Grey/color streaks outside the character in Image 1 are raw texture export artifacts, do not reproduce them. Exactly one complete isolated character, TRUE transparent background, natural-sized head, whole hair/hands/side silhouette fitted within at least 5% transparent side margins; only the same lower skirt crop at bottom is allowed. No new props, background, text, watermark, frame, checkerboard, 3D or photorealism. Character: tang-moling. Target file: close_eye. In-game expression labels: 特殊3/閉眼.  Eyes fully closed, quiet slightly open speaking mouth, both hands clasped at upper chest.",
+  "References": [
+    {
+      "LogicalName": "local-game-reference/close_eye.png",
+      "Kind": "original-game-reference-not-distributed"
+    },
+    {
+      "LogicalName": "generated-design/tang-moling/refined/normal.png",
+      "Kind": "generated-design-reference"
+    }
+  ],
+  "OriginalGameCanonicalPath": "assets/__project/images/characters/sister/close_eye.png",
+  "OriginalGameReferenceDistributed": false,
+  "GeneratedSourceBasename": "exec-8d9d7b69-6098-4b01-bc41-369721793a18.png",
+  "OutputSHA256": "513F2BBFDE1DCEBAB7ED842599CE1F9BE1D2C9D1B70A62C6C5C37C8BBA2E0F6B",
+  "SourceRecordBasename": "tang-moling-refined-close_eye.json",
+  "SourceRecordSHA256": "87F8C99526883A6B7974AE3CF27BB983CCA8672AB292F589F86F43E563C9B7D9",
+  "RawGeneratedCopyVerified": true,
+  "VisualReview": "passed before integration; runtime acceptance is separate",
+  "ImageMetadata": {
+    "Width": 1024,
+    "Height": 1536,
+    "Mode": "RGBA",
+    "AlphaMin": 0,
+    "AlphaMax": 254,
+    "AlphaBoundsGt16": [
+      145,
+      85,
+      970,
+      1536
+    ],
+    "Bytes": 2174159
+  }
+}
