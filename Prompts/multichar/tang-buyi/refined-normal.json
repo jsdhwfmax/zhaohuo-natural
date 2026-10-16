@@ -1,0 +1,15 @@
+{
+  "Method": "builtin imagegen",
+  "CharacterId": "tang-buyi",
+  "VariantId": "refined",
+  "Name": "normal",
+  "Prompt": "Use case: precise-object-edit. Asset: ONE transparent dialogue portrait for 活侠传 / Legend of Mortal, optional handsome Tang Buyi 唐布衣 / 大师兄 appearance. Image 1 is the original character and exact pose/costume/style reference. Make this same adult Chinese senior disciple more beautifully handsome, charismatic and recognizably masculine, about late twenties: balanced finely structured face, elegant straight nose, bright shrewd almond eyes, well-defined natural jaw, expressive brows, confident mischievous warm half-smile. Keep his lively cocky big-brother personality, dark plum-black long hair with the same side fringe, low ponytail and gold hair tie. Keep the recognizable dusty blue broad-collar Tang-sect robe, gold frog clasps, plum leather bracer and metal details, waist tie, flowing long garment panel, original dramatic leaning/twisting pose and both visible hands with the tiny gold objects, original overall crop and silhouette. Keep naturally proportioned head, no enlarged anime face. Match this game's coarse black sketch contours, dry-brush ink edges, matte watercolor and colored-pencil grain, irregular lineweight, restrained blue/earthy palette. The new face must be painted with the same hand-drawn texture as the costume. This is an enhancement of THIS character, not Zhao Huo and not a new unrelated costume. Preserve all visible body/clothing elements, leave transparent breathing room around hair and clothing sides. Exactly one complete cutout sprite, portrait canvas at the reference aspect ratio, TRUE transparent background. No text, checkerboard, frame, scenery, effects, glossy 3D, photorealism, airbrushed porcelain skin, modern clothes, extra props or extra arms.",
+  "References": [
+    "private-game-reference/Brother1/normal.png"
+  ],
+  "GeneratedSource": "exec-ec868cac-d7e3-436b-849b-c332a1e9e108.png",
+  "SHA256": "49101E9DD75EC2DB20B69E7B99B2D5AC5EC13529C355B8B03327C20EF743B9D2",
+  "Review": "Normal master visually reviewed before expression generation; original generated pixels preserved.",
+  "OutputSHA256": "49101E9DD75EC2DB20B69E7B99B2D5AC5EC13529C355B8B03327C20EF743B9D2",
+  "PublicOutput": "Variants/tang-buyi/refined/Portraits/normal.png"
+}

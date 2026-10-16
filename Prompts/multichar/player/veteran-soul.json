@@ -1,0 +1,37 @@
+{
+  "Variant": "veteran",
+  "Name": "soul",
+  "Revision": "margin-v2",
+  "Method": "builtin imagegen",
+  "Prompt": "Edit this exact transparent game dialogue sprite ONLY to repair framing. Preserve the exact same face identity and age, faint stubble if present, natural small adult head proportion, hairstyle, slight closed smile, blue spectral skin and clothing, glowing pupil-less cyan eyes, all costume folds and wrist wraps, both lowered empty hands and the rough black ink / coloured pencil / watercolor texture. Preserve the entire icy cyan ghost flame aura. Zoom the WHOLE current illustration out by approximately 15 percent, positioning it with a generous 6-8 percent completely transparent margin from LEFT, RIGHT and TOP. Complete any aura edge that was clipped on the RIGHT by the canvas so every cyan flame is visibly surrounded by clear alpha. Do not crop hands, sleeves or hair. Existing lower robe crop may remain. Do not change the pose, emotion, design or colours. One isolated blue ghost sprite, true alpha transparent background, no checkerboard, solid background, extra body parts, scenery, text or watermark.",
+  "References": [
+    "art/player/veteran/soul.png"
+  ],
+  "Output": "art/player/veteran/soul.png",
+  "Review": "Passed visual review: identical spectral identity, costume, slight smile, lowered hands and cyan aura; top and side outline fully inside transparent margins. Lower robe cutoff retained. No pixel editing.",
+  "RepairReason": "Right sleeve ghost aura has insufficient transparent breathing room.",
+  "Dimensions": [
+    943,
+    1667
+  ],
+  "AlphaExtrema": [
+    0,
+    255
+  ],
+  "AlphaBoundsGt16": [
+    93,
+    163,
+    907,
+    1610
+  ],
+  "PixelEditingPerformed": false,
+  "SHA256": "1E697BEAB43B415B57B59A4239E9C07FB1C3AF108DBDD30CE92155FE53CDB36B",
+  "Bytes": 1713159,
+  "GeneratedSource": "exec-fdfb3283-44e6-4eb9-aabc-c8262bc3a6f0.png",
+  "RevisionOutput": "art-revisions/player-veteran-soul-margin-v2.png",
+  "PreviousRecord": "prompts/player/veteran-soul-margin-v1.json",
+  "CharacterId": "player",
+  "VariantId": "veteran",
+  "OutputSHA256": "1E697BEAB43B415B57B59A4239E9C07FB1C3AF108DBDD30CE92155FE53CDB36B",
+  "PublicOutput": "Variants/player/veteran/Portraits/soul.png"
+}

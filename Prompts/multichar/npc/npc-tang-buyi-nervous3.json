@@ -1,0 +1,55 @@
+{
+  "character": "tang-buyi",
+  "variant": "refined",
+  "asset": "nervous3",
+  "prompt": "Use case: identity-preserve. ONE transparent portrait sprite for Legend of Mortal.\nImage 1 is the edit target: preserve its exact pose, expression, gestures, fingers, props, sweat/blood and effects. Image 2 is the approved identity master: match its refined face, hairstyle, costume and hand-painted treatment only; do not paste its neutral expression or pose over Image 1.\nCharacter: adult male Tang Buyi, same angular handsome face, dark ponytail, slate-blue robe, leather wrist guards and gold details as Image 2.\nRequired target emotion and action: Nervous smiling: restrained confident-looking closed-mouth smile with tense inner brows and a cheek sweat drop, as in the target. Keep distinct from worried open-mouth nervous1.\nKeep the original natural head-to-shoulder ratio; never enlarge the face. Rough pencil/ink lines and textured watercolor/gouache, no photographic skin, smooth 3D, modern anime or chibi. Complete all original visible hands and props.\nFRAME THE FIGURE SLIGHTLY SMALLER so the entire silhouette, all hair, sleeves, parasol and aura are surrounded by at least 5% truly transparent empty canvas on the TOP, LEFT AND RIGHT. Do not let any prop touch a side edge. No close-up. Lower robe can end at the bottom edge as originally, but no hands cropped. True RGBA transparent background, no painted background/checkerboard/shadow, no text or watermark.",
+  "input_roles": [
+    {
+      "role": "edit-target-pose-emotion",
+      "logical_name": "original/brother1/brother1/nervous3.png"
+    },
+    {
+      "role": "approved-identity-master",
+      "logical_name": "art/tang-buyi/refined/normal.png"
+    }
+  ],
+  "tool": "builtin image_gen",
+  "status": "accepted",
+  "checks": {
+    "dimensions": [
+      1096,
+      1435
+    ],
+    "mode": "RGBA",
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "alpha_bounds_gt16": [
+      79,
+      337,
+      1071,
+      1435
+    ],
+    "alpha_bounds_nonzero": [
+      73,
+      84,
+      1080,
+      1435
+    ],
+    "edge_alpha_gt16": {
+      "left": false,
+      "top": false,
+      "right": false,
+      "bottom": true
+    },
+    "pixel_edit_performed": false,
+    "visual_review": "Passed: approved identity, target expression, sweat/tears/blush and props preserved; love keeps different upright pose, raised hand, draped robe and no parasol. Natural proportions and complete top/side silhouette."
+  },
+  "generated_source_basename": "exec-865f148b-89c5-4a82-a789-b242e36c41a5.png",
+  "sha256": "6DE3C55ED11E0FF2876DF51366642F359D3FE710A668294CAC3263F3998FC97A",
+  "CharacterId": "tang-buyi",
+  "VariantId": "refined",
+  "OutputSHA256": "6DE3C55ED11E0FF2876DF51366642F359D3FE710A668294CAC3263F3998FC97A",
+  "PublicOutput": "Variants/tang-buyi/refined/Portraits/nervous3.png"
+}

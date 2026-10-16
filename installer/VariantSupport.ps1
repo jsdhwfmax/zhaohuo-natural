@@ -96,6 +96,11 @@ function Read-ZHSwitch([object]$Paths) {
     [pscustomobject]@{ Journal=$journal; JournalPath=$journalPath; Backup=$backup; BeforePath=$beforePath; Before=$before }
 }
 function Restore-ZHSwitch([object]$Paths,[switch]$CheckOnly,[scriptblock]$Log) {
+    $journalPath=Get-ZHSwitchPath $Paths;Assert-ZHNoLink $journalPath
+    if(Test-Path -LiteralPath $journalPath -PathType Leaf){
+        $header=Get-Content -LiteralPath $journalPath -Raw -Encoding UTF8|ConvertFrom-Json
+        if($header.SchemaVersion-eq 2){return (Restore-ZHCharacterTransaction -Paths $Paths -CheckOnly:$CheckOnly -Log $Log)}
+    }
     $pending = Read-ZHSwitch $Paths
     if ($null -eq $pending) { return $false }
     Assert-ZHStopped $Paths.Game

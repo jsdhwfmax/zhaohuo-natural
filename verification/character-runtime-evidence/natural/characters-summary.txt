@@ -1,0 +1,11 @@
+tang-buyi/brother1 resources=16 replaced=15 fallback=1 scope=approved PASS
+tang-buyi/brother1 bulk=16 PASS
+tang-buyi/brother1_2 resources=1 replaced=1 fallback=0 scope=approved PASS
+tang-buyi/brother1_0 resources=1 replaced=1 fallback=0 scope=approved PASS
+tang-buyi/brother1_young resources=1 replaced=0 fallback=1 scope=negative PASS
+tang-buyi/__scope_probe resources=1 replaced=0 fallback=1 scope=negative PASS
+xiahou-lan/girl6 resources=16 replaced=15 fallback=1 scope=approved PASS
+xiahou-lan/girl6 bulk=16 PASS
+xiahou-lan/girl6_1 resources=1 replaced=1 fallback=0 scope=approved PASS
+xiahou-lan/girl6_3 resources=1 replaced=0 fallback=1 scope=negative PASS
+xiahou-lan/__scope_probe resources=1 replaced=0 fallback=1 scope=negative PASS

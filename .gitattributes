@@ -11,8 +11,13 @@
 Dependencies/** -text
 Loader/** -text
 BepInEx/** -text
+Characters/** -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
 # Frozen prompt/evidence records contain exact byte SHA-256 references.
-Prompts/** -text
-verification/** -text
+Prompts/** -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+verification/** -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+# A trailing tab represents the empty replacement column in original-fallback rows.
+verification/character-runtime-evidence/*/portraits.tsv whitespace=-blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+# Release acceptance binds the exact catalog bytes.
+VariantCatalog.json -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
 # The offline probe pins the exact baseline bytes, including line endings.
 installer/compatibility-baseline.json -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol

@@ -1,0 +1,55 @@
+{
+  "character": "tang-buyi",
+  "variant": "refined",
+  "asset": "nervous1",
+  "prompt": "Use case: identity-preserve. ONE transparent portrait sprite for Legend of Mortal.\nImage 1 is the edit target: preserve its exact pose, expression, gestures, fingers, props, sweat/blood and effects. Image 2 is the approved identity master: match its refined face, hairstyle, costume and hand-painted treatment only; do not paste its neutral expression or pose over Image 1.\nCharacter: adult male Tang Buyi, same angular handsome face, dark ponytail, slate-blue robe, leather wrist guards and gold details as Image 2.\nRequired target emotion: Uneasy concern: worried slightly lifted brows, parted tense mouth and one sweat drop on cheek, no smile.\nKeep the original natural head-to-shoulder ratio; never enlarge the face. Rough pencil/ink lines and textured watercolor/gouache, no photographic skin, smooth 3D, modern anime or chibi. Complete all original visible hands and props.\nFRAME THE FIGURE SLIGHTLY SMALLER so the entire silhouette, all hair, sleeves, parasol and aura are surrounded by at least 5% truly transparent empty canvas on the TOP, LEFT AND RIGHT. Do not let any prop touch a side edge. No close-up. Lower robe can end at the bottom edge as originally, but no hands cropped. True RGBA transparent background, no painted background/checkerboard/shadow, no text or watermark.",
+  "input_roles": [
+    {
+      "role": "edit-target-pose-emotion",
+      "logical_name": "original/brother1/brother1/nervous1.png"
+    },
+    {
+      "role": "approved-identity-master",
+      "logical_name": "art/tang-buyi/refined/normal.png"
+    }
+  ],
+  "tool": "builtin image_gen",
+  "status": "accepted",
+  "checks": {
+    "dimensions": [
+      1096,
+      1435
+    ],
+    "mode": "RGBA",
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "alpha_bounds_gt16": [
+      65,
+      240,
+      1083,
+      1435
+    ],
+    "alpha_bounds_nonzero": [
+      0,
+      21,
+      1088,
+      1435
+    ],
+    "edge_alpha_gt16": {
+      "left": false,
+      "top": false,
+      "right": false,
+      "bottom": true
+    },
+    "pixel_edit_performed": false,
+    "visual_review": "Passed: approved identity, original distinct expression/shadow/effects, complete props, natural proportions. Any bottom robe crop follows target composition."
+  },
+  "generated_source_basename": "exec-88fa4098-73eb-43a9-956b-acbca7b14321.png",
+  "sha256": "43C81099EA0E32B84C37A6AB4874A08B600F46605FF88BB0B31DCA683B06EB75",
+  "CharacterId": "tang-buyi",
+  "VariantId": "refined",
+  "OutputSHA256": "43C81099EA0E32B84C37A6AB4874A08B600F46605FF88BB0B31DCA683B06EB75",
+  "PublicOutput": "Variants/tang-buyi/refined/Portraits/nervous1.png"
+}

@@ -1,0 +1,15 @@
+{
+  "Method": "builtin imagegen",
+  "CharacterId": "player",
+  "VariantId": "white",
+  "Name": "normal",
+  "Prompt": "Use case: precise-object-edit. Asset type: production transparent dialogue sprite for Chinese wuxia game 活侠传 / Legend of Mortal. Image 1 is the edit target and stylistic/framing reference: our existing approved young-adult Zhao Huo junior-disciple mod sprite. Create ONE separate new optional appearance. Preserve the exact coarse hand-painted game illustration medium: dry black contour strokes, colored-pencil grain, opaque watercolor brushwork, muted natural cloth colors, lightly uneven human lines. Keep believable adult Chinese facial anatomy, elegantly small head relative to full upper body, tall slender heroic proportions and original three-quarter view. Full complete ponytail/hair, both shoulders, arms, hands and same lower-thigh crop, comfortable transparent margins around all outer edges, no cut-off hair. Portrait canvas. True transparent alpha background. No scene, letters, logos, watermark, frame, grid, sparkle, magic aura, 3D, photographic skin, glossy modern anime, porcelain airbrush, or overdecorated fantasy costume. Do not duplicate the reference; change the outfit and character design as specified, while keeping his identity and grounded martial-world character plausible. New variant WHITE-ROBED YOUNG HERO / 白衣少侠: a stunningly handsome yet warm and approachable young adult martial disciple, age about 22, subtly refined almond-shaped dark eyes, straight nose, natural warm restrained smile. Dark brown-black hair half-up in a practical high ponytail, a few soft side strands, simple narrow navy cloth tie. Ivory/off-white textured cotton cross-collar robe with subdued blue-grey collar edges, slate-blue waist sash and weathered dark-grey narrow cloth wrist wraps. Modest elegant tailoring, opaque layers, slight natural wear and irregular cloth folds, no embroidery or silver armor. Same relaxed standing bearing, one hand resting on waist and the other hanging naturally. This should look like a beautiful white-robed wuxia junior brother painted by the original game's artist, not an immortal emperor.",
+  "References": [
+    "v1.3.0/Variants/xianxia/Portraits/normal.png"
+  ],
+  "GeneratedSource": "exec-dd3affe1-8758-4888-9cec-24afe00ca00a.png",
+  "SHA256": "69323D1BDB36E9D78F18A757779ADE75BDAD45E3D6C5586C222A92D615305448",
+  "Review": "Normal master visually reviewed before expression generation; original generated pixels preserved.",
+  "OutputSHA256": "69323D1BDB36E9D78F18A757779ADE75BDAD45E3D6C5586C222A92D615305448",
+  "PublicOutput": "Variants/player/white/Portraits/normal.png"
+}

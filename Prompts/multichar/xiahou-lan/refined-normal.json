@@ -1,0 +1,15 @@
+{
+  "Method": "builtin imagegen",
+  "CharacterId": "xiahou-lan",
+  "VariantId": "refined",
+  "Name": "normal",
+  "Prompt": "Use case: precise-object-edit. Asset: ONE production transparent dialogue portrait for 活侠传 / Legend of Mortal, Xiahou Lan 夏侯兰. Image 1 is the original character, exact pose/costume/prop/identity reference. Create a clearly more beautiful yet recognizably SAME mature adult Chinese woman, an elegant adult martial-arts master about early thirties. Refine the facial anatomy: poised calm dark almond eyes with clear natural irises, softly arched brows, finely shaped natural nose, subtly defined lips slightly parted in the SAME neutral speaking expression, graceful oval face, mature gentle composure with a hint of aloofness. Keep her dark straight long hair, distinctive straight uneven bangs, blue ribbons, green jade drop earrings and small beauty mark near her mouth. Keep the wide brown oil-paper/bamboo parasol over her shoulder, exact hand gripping its handle, the loose rich-blue and muted-purple opaque robe, inner light-blue collar, fully covered original body shape and relaxed three-quarter pose. Retain the same lower body crop and entire parasol within transparent margins. Do not change her age into a teenager or change her into a different character. Reduce harsh smeared dark eye shadows but preserve hand-painted facial detail. Match the game's hand-drawn wuxia illustration style: rough black pencil/ink contours, visible watercolor and colored-pencil grain, subtly uneven handmade lines, matte cloth folds, not glossy anime. Beauty must come from refined anatomy and expression rather than makeup or altered body. Exactly one isolated character with her original parasol, portrait canvas same reference aspect ratio, TRUE transparent alpha background. No scenery, text, border, watermark, checkerboard, glow, makeup-heavy doll face, porcelain skin, photorealism, 3D, new jewelry, exposed skin, or additional props.",
+  "References": [
+    "private-game-reference/Girl6/normal.png"
+  ],
+  "GeneratedSource": "exec-9d4f7911-0444-4aa0-bc10-32fe479824ac.png",
+  "SHA256": "BC6F18BF72DB3B2022F29567F71C2603AE5D24F114D58C22AF4969C060B71B5E",
+  "Review": "Normal master visually reviewed before expression generation; original generated pixels preserved.",
+  "OutputSHA256": "BC6F18BF72DB3B2022F29567F71C2603AE5D24F114D58C22AF4969C060B71B5E",
+  "PublicOutput": "Variants/xiahou-lan/refined/Portraits/normal.png"
+}

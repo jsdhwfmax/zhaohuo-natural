@@ -1,0 +1,631 @@
+{
+  "Passed": true,
+  "DateUtc": "2026-10-16T05:33:57.463576+00:00",
+  "PlayerVariants": [
+    "white",
+    "black",
+    "veteran"
+  ],
+  "NpcRoles": [
+    "tang-buyi",
+    "xiahou-lan"
+  ],
+  "ReviewedScreenshotCount": 38,
+  "Screenshots": [
+    {
+      "Path": "white/diagnostics/portraits-01.png",
+      "Sha256": "808B47B3713EEAB94085001BE192BB3FEACDD2FCB98B3164F225A7EE477F19B1"
+    },
+    {
+      "Path": "white/diagnostics/portraits-02.png",
+      "Sha256": "963F519DB6417BCFB60EA9EFBA649D4FCC57240E8299882CD5C20210F7DAF474"
+    },
+    {
+      "Path": "white/diagnostics/portraits-03.png",
+      "Sha256": "85371C78C0829B5F018BFBDFE1537F25C1DD9379E0D94286E31ECAEBCD4F7A8B"
+    },
+    {
+      "Path": "white/diagnostics/portraits-04.png",
+      "Sha256": "D89BAF32867192C423389676811F39DDF92BB695A8506D862D6CD2CDDCF78201"
+    },
+    {
+      "Path": "white/diagnostics/portraits-05.png",
+      "Sha256": "A1AAAC97E1CF88710413372BEC5A53F283260977F011214E41BF09BE7A72814D"
+    },
+    {
+      "Path": "white/diagnostics/portraits-06.png",
+      "Sha256": "F2513CD1AF475721168B2849352DC050ACD98D27350C09B78EAB22FCEFA7D315"
+    },
+    {
+      "Path": "white/diagnostics/portraits-07.png",
+      "Sha256": "3DB38DA69CC8162568351469572705616B3FC572362353AFA0DE2F1C81537E69"
+    },
+    {
+      "Path": "white/diagnostics/avatar-panel-0.png",
+      "Sha256": "DEACF600E8EB0BE4C734DADDA98BB468ECC4B33D6412CD8C9D2EA496D6DF82F2"
+    },
+    {
+      "Path": "white/diagnostics/avatar-panel-1.png",
+      "Sha256": "DEACF600E8EB0BE4C734DADDA98BB468ECC4B33D6412CD8C9D2EA496D6DF82F2"
+    },
+    {
+      "Path": "white/diagnostics/character-tang-buyi-brother1-1.png",
+      "Sha256": "1C5B6B61BD7B7016C2D7F6A4ECFB0C5BF59DEDDC1006F9D30184CF3663583EEA"
+    },
+    {
+      "Path": "white/diagnostics/character-tang-buyi-brother1-2.png",
+      "Sha256": "A269D0C506D3419C686CD1902E5826C9963A88A52A0969F995C0E0824E6745D5"
+    },
+    {
+      "Path": "white/diagnostics/character-xiahou-lan-girl6-1.png",
+      "Sha256": "4CDA3395BA0922FA28AC82862FD6FDC5CFCC69DFF3E55631FC7FFDF93E8392F7"
+    },
+    {
+      "Path": "white/diagnostics/character-xiahou-lan-girl6-2.png",
+      "Sha256": "27FAE62516F6152B5FA82FEF9CE505D31749B76D6B299428FC22C5D093D79ED1"
+    },
+    {
+      "Path": "white/diagnostics/character-tang-buyi-brother1_2-1.png",
+      "Sha256": "E0645D41C06E7DEF3E77D284D82D14C93503EBE8252B36EEB38D4F0A626E2163"
+    },
+    {
+      "Path": "white/diagnostics/character-tang-buyi-brother1_0-1.png",
+      "Sha256": "D92702E5864E9C690088B2D00B7C7DBB78AAC8BEA9A63A9E606F40675D4956F7"
+    },
+    {
+      "Path": "white/diagnostics/character-xiahou-lan-girl6_1-1.png",
+      "Sha256": "C8E98E3F075A9B8B5637034E0C984ED4F2F6C83D93BAD9B144F6152405B2DCFF"
+    },
+    {
+      "Path": "white/diagnostics/character-xiahou-lan-girl6_3-1.png",
+      "Sha256": "CA34D10251A743F5FF1B15CAD5DC04FA1ED50DFCF5A656DDEB97CE410741DC4E"
+    },
+    {
+      "Path": "white/diagnostics/character-tang-buyi-brother1_young-1.png",
+      "Sha256": "B88AF4181096993BFCE34E73B5D45DCBB3407372C6D21C43FC8EF0DF074AADDB"
+    },
+    {
+      "Path": "white/diagnostics/character-tang-buyi-__scope_probe-1.png",
+      "Sha256": "0F1773764A79916599EBF66FE0A89A04A25867D4FEBCB391F236A577BA06DAD7"
+    },
+    {
+      "Path": "white/diagnostics/character-xiahou-lan-__scope_probe-1.png",
+      "Sha256": "8533FE2CC9E9AD9FB4C3CB745B1B65415A4ACAAA2FDC72412E6FCE8958083EF1"
+    },
+    {
+      "Path": "black/diagnostics/portraits-01.png",
+      "Sha256": "9C38E536A9CEBE6E34C65F4213F855B15E3D1ACF644ED9886F54C5B6852C7B71"
+    },
+    {
+      "Path": "black/diagnostics/portraits-02.png",
+      "Sha256": "D4B35E5E5F738695E57AC4457C96333CE7F8C374114A92964F32A939466EBB8D"
+    },
+    {
+      "Path": "black/diagnostics/portraits-03.png",
+      "Sha256": "EA09D866B39BC4D8E71869581AB1A0BD36E83D4D3D732262EFEE8A4D3E60243F"
+    },
+    {
+      "Path": "black/diagnostics/portraits-04.png",
+      "Sha256": "4C5DB7F2C207641B45FADB1375137E3ECDFF10C05AD594B7B88769CAFDB35DBD"
+    },
+    {
+      "Path": "black/diagnostics/portraits-05.png",
+      "Sha256": "C90AE2335857C80932F50148832E1135957A5B3E735CAC4DC7D760BFB72DB8D6"
+    },
+    {
+      "Path": "black/diagnostics/portraits-06.png",
+      "Sha256": "ACB4290B25230F0043B587861F9408E23DB3A154A62119E3E1095644164BE8CC"
+    },
+    {
+      "Path": "black/diagnostics/portraits-07.png",
+      "Sha256": "8A9C6484793B5E0E194610FFCFF46A5C42624573ACFC1C5D2BF8620E68C0B26C"
+    },
+    {
+      "Path": "black/diagnostics/avatar-panel-0.png",
+      "Sha256": "FA7C6BCD4D490821E0C906272E8A3188D19DFFEEC3FC2B53BF0B7D38CD1E19A2"
+    },
+    {
+      "Path": "black/diagnostics/avatar-panel-1.png",
+      "Sha256": "FA7C6BCD4D490821E0C906272E8A3188D19DFFEEC3FC2B53BF0B7D38CD1E19A2"
+    },
+    {
+      "Path": "veteran/diagnostics/portraits-01.png",
+      "Sha256": "DCFAF65C50EFCB18FDA49FF8BE5FBBB9F80CEDA183CA836E2A4C4411332CC441"
+    },
+    {
+      "Path": "veteran/diagnostics/portraits-02.png",
+      "Sha256": "9CB4E2622D5A648E51A23BED1B541D844735BFB075E8C578718C17B10A8A06A4"
+    },
+    {
+      "Path": "veteran/diagnostics/portraits-03.png",
+      "Sha256": "A957ABB044046B7BF794448966D7742C9B622351437BA0C55C69D777507E2400"
+    },
+    {
+      "Path": "veteran/diagnostics/portraits-04.png",
+      "Sha256": "3C732B499FD855A4F1CCB56EEC28E23078D967B21532280C00FF9E45DE7DB298"
+    },
+    {
+      "Path": "veteran/diagnostics/portraits-05.png",
+      "Sha256": "9FF16DF847E38EAABFC7DA707973778F52002229145F42C87A60BBD957ECC9D4"
+    },
+    {
+      "Path": "veteran/diagnostics/portraits-06.png",
+      "Sha256": "87326C1FC87A585035DA197653826593934486009F42681733FA3EE4C06E23BC"
+    },
+    {
+      "Path": "veteran/diagnostics/portraits-07.png",
+      "Sha256": "1FA7DD30232EA1D2D6CBBBCE67B6F995A4F4ED8A611C9CE1EFD62F0FF4549B3A"
+    },
+    {
+      "Path": "veteran/diagnostics/avatar-panel-0.png",
+      "Sha256": "E6C5FE8C92DF8C65C21BFA8D29BBD9C96B570D62D0B1100FE5F975F957CEE0F0"
+    },
+    {
+      "Path": "veteran/diagnostics/avatar-panel-1.png",
+      "Sha256": "E6C5FE8C92DF8C65C21BFA8D29BBD9C96B570D62D0B1100FE5F975F957CEE0F0"
+    }
+  ],
+  "Reviews": [
+    {
+      "Record": "visual-white-npc-review.json",
+      "Sha256": "1433E808344253DCB4EEE566A9B448C78A05C33951B58E83985E73996451CB61",
+      "Result": {
+        "SchemaVersion": 1,
+        "Passed": true,
+        "ReviewKind": "ReadOnlyVisualReviewOfLiveUnityDiagnosticRenders",
+        "EvidenceRoot": "runtime-v2-final",
+        "GameVersion": "release_1.0.6000.2",
+        "ViewedImageCount": 20,
+        "Scope": "使用 view_image original 实际查看 white 的 7 张成人立绘分页、2 个属性面板分支、唐布衣与夏侯兰全部基础表情页，以及 3 个成人别名和 4 个身份隔离负例。仅审阅既有图像和日志。",
+        "Conclusion": "所查看的诊断渲染未发现需要修图的阻断问题。人物身份、缩放、位置、透明背景合成、表情、必要武器/道具及原版回退与范围一致。",
+        "BlockingFindings": [],
+        "Checks": [
+          "47 张白衣替换与 3 张成人原版回退在 7 页中显示。",
+          "白衣 normal 在两个属性面板分支中显示一致。",
+          "唐布衣和夏侯兰各 15 张精修图与各 1 张原版回退在完整基础表情页中显示。",
+          "已批准成人别名显示精修形象；未批准/伪造身份负例呈现原始图像，未混用其他角色的 normal。",
+          "头发、手部、伞、闪电和光晕未见非预期缺失；底部服装与 god_thunder 左下剑刃保留原构图裁切。",
+          "诊断深色底上的透明合成边缘干净；未见棋盘格、白色矩形底或可见贴图占位。"
+        ],
+        "Limitations": [
+          "这是实际 Unity 资源链路生成的隔离诊断渲染审阅；没有操作游戏、推进剧情、读写存档或执行安装。",
+          "诊断图在固定深色背景上合成，不能单独证明源 PNG 每个 alpha 值；像素 alpha/原始 PNG 完整性由独立美术校验记录负责。",
+          "本轮仅审阅 white 与两位 NPC 的所列图像；不代表其余赵活五套外观已由本审阅逐图检查。",
+          "角色分页中的立绘有缩放；本结论不等于每张原始大图每个细像素均无瑕疵。",
+          "成人别名各仅抽查 normal；身份负例使用隔离夹具，不能代替幼年、灵魂等分支全量资源检查。",
+          "不代表全剧情、全路线、全部游戏界面或所有第三方模组组合验证。"
+        ],
+        "ViewedImages": [
+          {
+            "Path": "white/diagnostics/portraits-01.png",
+            "ViewedWith": "view_image original",
+            "Result": "passed",
+            "Observation": "常态、怒气与血伤状态均为白衣版；无武器状态未误带武器。blood / blood_laugh1 的低位剑可见；back 保留原版蓝衣，属于既定排除范围。",
+            "SHA256": "808B47B3713EEAB94085001BE192BB3FEACDD2FCB98B3164F225A7EE477F19B1",
+            "Dimensions": [
+              1920,
+              1080
+            ]
+          },
+          {
+            "Path": "white/diagnostics/portraits-02.png",
+            "ViewedWith": "view_image original",
+            "Result": "passed",
+            "Observation": "无武器血伤、触电高发束/闪电与闭眼系列表情、汗气效果正常；头发、手势和特效未出现额外裁切。",
+            "SHA256": "963F519DB6417BCFB60EA9EFBA649D4FCC57240E8299882CD5C20210F7DAF474",
+            "Dimensions": [
+              1920,
+              1080
+            ]
+          },
+          {
+            "Path": "white/diagnostics/portraits-03.png",
+            "ViewedWith": "view_image original",
+            "Result": "passed",
+            "Observation": "坚定、死亡、疑惑、蒙眼、举拳和阴沉状态含义清楚；god_thunder 的剑向左下延伸并在原有构图边界裁切，与参考一致，不是运行时漏图。",
+            "SHA256": "85371C78C0829B5F018BFBDFE1537F25C1DD9379E0D94286E31ECAEBCD4F7A8B",
+            "Dimensions": [
+              1920,
+              1080
+            ]
+          },
+          {
+            "Path": "white/diagnostics/portraits-04.png",
+            "ViewedWith": "view_image original",
+            "Result": "passed",
+            "Observation": "喷血转头、三点落地、负伤出拳及笑脸姿态独立保留；落地手脚完整。mask 使用黑色伪装服和遮面布是特定剧情造型，不是错套黑衣外观。",
+            "SHA256": "D89BAF32867192C423389676811F39DDF92BB695A8506D862D6CD2CDDCF78201",
+            "Dimensions": [
+              1920,
+              1080
+            ]
+          },
+          {
+            "Path": "white/diagnostics/portraits-05.png",
+            "ViewedWith": "view_image original",
+            "Result": "passed",
+            "Observation": "泥污马赛克、紧张手势、甩头双重残影、脸红与掩面均正常；shadow_left 保留原画。未见多余背景色块。",
+            "SHA256": "A1AAAC97E1CF88710413372BEC5A53F283260977F011214E41BF09BE7A72814D",
+            "Dimensions": [
+              1920,
+              1080
+            ]
+          },
+          {
+            "Path": "white/diagnostics/portraits-06.png",
+            "ViewedWith": "view_image original",
+            "Result": "passed",
+            "Observation": "shadow_right 保留原画；颤抖反色、惊吓高发束、蓝色灵魂光晕和披布状态可辨。soul 侧边光晕完整，无额外透明留白造成的明显缩小或偏移。",
+            "SHA256": "F2513CD1AF475721168B2849352DC050ACD98D27350C09B78EAB22FCEFA7D315",
+            "Dimensions": [
+              1920,
+              1080
+            ]
+          },
+          {
+            "Path": "white/diagnostics/portraits-07.png",
+            "ViewedWith": "view_image original",
+            "Result": "passed",
+            "Observation": "suck3 的短刀与抬手、suck4 的神态正常；两幅落位与其他页一致。",
+            "SHA256": "3DB38DA69CC8162568351469572705616B3FC572362353AFA0DE2F1C81537E69",
+            "Dimensions": [
+              1920,
+              1080
+            ]
+          },
+          {
+            "Path": "white/diagnostics/avatar-panel-0.png",
+            "ViewedWith": "view_image original",
+            "Result": "passed",
+            "Observation": "白衣常态的属性面板分支 0 显示完整头发、双手与衣装，缩放和居中正常。",
+            "SHA256": "DEACF600E8EB0BE4C734DADDA98BB468ECC4B33D6412CD8C9D2EA496D6DF82F2",
+            "Dimensions": [
+              1920,
+              1080
+            ]
+          },
+          {
+            "Path": "white/diagnostics/avatar-panel-1.png",
+            "ViewedWith": "view_image original",
+            "Result": "passed",
+            "Observation": "白衣常态的属性面板分支 1 与分支 0 形象一致，未见错位、遮挡或异常背景。",
+            "SHA256": "DEACF600E8EB0BE4C734DADDA98BB468ECC4B33D6412CD8C9D2EA496D6DF82F2",
+            "Dimensions": [
+              1920,
+              1080
+            ]
+          },
+          {
+            "Path": "white/diagnostics/character-tang-buyi-brother1-1.png",
+            "ViewedWith": "view_image original",
+            "Result": "passed",
+            "Observation": "唐布衣精修身份与蓝衣完整，前后手、铜钱、红色怒气与斗笠正常；hand 为保留原画。下端为原有立绘构图裁切，未见新增侧边裁切。",
+            "SHA256": "1C5B6B61BD7B7016C2D7F6A4ECFB0C5BF59DEDDC1006F9D30184CF3663583EEA",
+            "Dimensions": [
+              1920,
+              1080
+            ]
+          },
+          {
+            "Path": "white/diagnostics/character-tang-buyi-brother1-2.png",
+            "ViewedWith": "view_image original",
+            "Result": "passed",
+            "Observation": "笑、紧张、严肃、惊吓、负伤与难受表情独立可辨；special1 闭眼伤态不带后手铜钱，符合参考；未混入赵活或夏侯兰形象。",
+            "SHA256": "A269D0C506D3419C686CD1902E5826C9963A88A52A0969F995C0E0824E6745D5",
+            "Dimensions": [
+              1920,
+              1080
+            ]
+          },
+          {
+            "Path": "white/diagnostics/character-xiahou-lan-girl6-1.png",
+            "ViewedWith": "view_image original",
+            "Result": "passed",
+            "Observation": "夏侯兰精修脸、长发、蓝紫衣装与纸伞一致；block 全遮脸、blood 的血迹和阴影眼、cry 与 droopy 均保留。伞和怒气外缘完整。",
+            "SHA256": "4CDA3395BA0922FA28AC82862FD6FDC5CFCC69DFF3E55631FC7FFDF93E8392F7",
+            "Dimensions": [
+              1920,
+              1080
+            ]
+          },
+          {
+            "Path": "white/diagnostics/character-xiahou-lan-girl6-2.png",
+            "ViewedWith": "view_image original",
+            "Result": "passed",
+            "Observation": "love / shy2 使用独立无伞姿势和抬手，不是常态换脸；阴沉、紧张与眯眼状态独立。white 维持原版白色剪影。",
+            "SHA256": "27FAE62516F6152B5FA82FEF9CE505D31749B76D6B299428FC22C5D093D79ED1",
+            "Dimensions": [
+              1920,
+              1080
+            ]
+          },
+          {
+            "Path": "white/diagnostics/character-tang-buyi-brother1_2-1.png",
+            "ViewedWith": "view_image original",
+            "Result": "passed",
+            "Observation": "已批准成人别名 brother1_2 的 normal 呈现唐布衣精修版，与主身份一致。",
+            "SHA256": "E0645D41C06E7DEF3E77D284D82D14C93503EBE8252B36EEB38D4F0A626E2163",
+            "Dimensions": [
+              1920,
+              1080
+            ]
+          },
+          {
+            "Path": "white/diagnostics/character-tang-buyi-brother1_0-1.png",
+            "ViewedWith": "view_image original",
+            "Result": "passed",
+            "Observation": "已批准成人别名 brother1_0 的 normal 呈现唐布衣精修版，与主身份一致。",
+            "SHA256": "D92702E5864E9C690088B2D00B7C7DBB78AAC8BEA9A63A9E606F40675D4956F7",
+            "Dimensions": [
+              1920,
+              1080
+            ]
+          },
+          {
+            "Path": "white/diagnostics/character-xiahou-lan-girl6_1-1.png",
+            "ViewedWith": "view_image original",
+            "Result": "passed",
+            "Observation": "已批准成人别名 girl6_1 的 normal 呈现夏侯兰精修版，与主身份一致。",
+            "SHA256": "C8E98E3F075A9B8B5637034E0C984ED4F2F6C83D93BAD9B144F6152405B2DCFF",
+            "Dimensions": [
+              1920,
+              1080
+            ]
+          },
+          {
+            "Path": "white/diagnostics/character-xiahou-lan-girl6_3-1.png",
+            "ViewedWith": "view_image original",
+            "Result": "passed",
+            "Observation": "未批准身份 girl6_3 负例保留原始正常立绘外观，未套精修脸；这是身份隔离夹具，不代表已逐张查看真实幼年资源。",
+            "SHA256": "CA34D10251A743F5FF1B15CAD5DC04FA1ED50DFCF5A656DDEB97CE410741DC4E",
+            "Dimensions": [
+              1920,
+              1080
+            ]
+          },
+          {
+            "Path": "white/diagnostics/character-tang-buyi-brother1_young-1.png",
+            "ViewedWith": "view_image original",
+            "Result": "passed",
+            "Observation": "未批准身份 brother1_young 负例保留原始脸形，未套精修脸；这是身份隔离夹具。",
+            "SHA256": "B88AF4181096993BFCE34E73B5D45DCBB3407372C6D21C43FC8EF0DF074AADDB",
+            "Dimensions": [
+              1920,
+              1080
+            ]
+          },
+          {
+            "Path": "white/diagnostics/character-tang-buyi-__scope_probe-1.png",
+            "ViewedWith": "view_image original",
+            "Result": "passed",
+            "Observation": "伪造身份负例保留原始唐布衣图，未触发精修替换。",
+            "SHA256": "0F1773764A79916599EBF66FE0A89A04A25867D4FEBCB391F236A577BA06DAD7",
+            "Dimensions": [
+              1920,
+              1080
+            ]
+          },
+          {
+            "Path": "white/diagnostics/character-xiahou-lan-__scope_probe-1.png",
+            "ViewedWith": "view_image original",
+            "Result": "passed",
+            "Observation": "伪造身份负例保留原始夏侯兰图，未触发精修替换。",
+            "SHA256": "8533FE2CC9E9AD9FB4C3CB745B1B65415A4ACAAA2FDC72412E6FCE8958083EF1",
+            "Dimensions": [
+              1920,
+              1080
+            ]
+          }
+        ],
+        "TextEvidenceRead": [
+          "white/diagnostics/PASS.txt",
+          "white/diagnostics/characters-summary.txt",
+          "white/diagnostics/characters.tsv"
+        ],
+        "SourceImagesModified": false,
+        "GameModified": false,
+        "PublicFilesModified": false,
+        "ReviewTimeUtc": "2026-10-16T05:27:58.8330472Z"
+      }
+    },
+    {
+      "Record": "visual-black-review.json",
+      "Sha256": "9263760ADD8F930142FCD5C3D4551BBD55F3327A316317912A974E4C43A0ABA7",
+      "Result": {
+        "Passed": true,
+        "ReviewKind": "Visual review of actual Unity diagnostic screenshots",
+        "DateUtc": "2026-10-16T05:27:48.627Z",
+        "PlayerVariants": [
+          "black"
+        ],
+        "NpcRoles": [],
+        "ActualGameScreenshots": true,
+        "ReviewedScreenshotCount": 9,
+        "RelativePathBase": "runtime-v2-final",
+        "RuntimeEvidence": {
+          "Path": "black/runtime-run.json",
+          "Sha256": "52301C68585ADBED7F5EB5C9E81D2230B740316EEB5890A68C9EEBF1F09C5D5B",
+          "Passed": true,
+          "PlayerResources": 50,
+          "PlayerReplaced": 47,
+          "AvatarBranches": 2,
+          "AvatarReplaced": 2
+        },
+        "Images": [
+          {
+            "Path": "black/diagnostics/portraits-01.png",
+            "Sha256": "9C38E536A9CEBE6E34C65F4213F855B15E3D1ACF644ED9886F54C5B6852C7B71",
+            "ViewedWith": "view_image original",
+            "Passed": true,
+            "Notes": [
+              "常态与三个愤怒层次可辨，黑袍和酒红束腰一致；红色特效沿人物外轮廓，未见矩形底或新增网格裁切。",
+              "带刀血迹两态可见刀柄/刀身；blood_nervous1保留无刀呼气状态。back显示原版背影，符合声明的回退范围。"
+            ]
+          },
+          {
+            "Path": "black/diagnostics/portraits-02.png",
+            "Sha256": "D4B35E5E5F738695E57AC4457C96333CE7F8C374114A92964F32A939466EBB8D",
+            "ViewedWith": "view_image original",
+            "Passed": true,
+            "Notes": [
+              "带血无武器两态没有多余刀剑；caught的立发与电光完整。",
+              "闭眼、笑、紧张云团与powder特殊眼神可区分；头发、手与云团留在各自显示范围。"
+            ]
+          },
+          {
+            "Path": "black/diagnostics/portraits-03.png",
+            "Sha256": "EA09D866B39BC4D8E71869581AB1A0BD36E83D4D3D732262EFEE8A4D3E60243F",
+            "ViewedWith": "view_image original",
+            "Passed": true,
+            "Notes": [
+              "握拳、虚弱、指疑问、蒙眼和抬拳动作清楚；gloomy2遮脸手势与蓝色背景笔触保留。",
+              "god_thunder的持刀与伤势存在。刀身左侧截断经源PNG对照确认已在源构图中，不是Unity额外裁切。"
+            ]
+          },
+          {
+            "Path": "black/diagnostics/portraits-04.png",
+            "Sha256": "4C5DB7F2C207641B45FADB1375137E3ECDFF10C05AD594B7B88769CAFDB35DBD",
+            "ViewedWith": "view_image original",
+            "Passed": true,
+            "Notes": [
+              "hero_landing为独立蹲落姿势，双手、靴子和发束完整；没有被改成常规站姿。",
+              "受伤、出拳、呼气、笑、面罩状态保持差异。头部飞散血迹、破衣与发顶道具可见，未发现新增遮挡。"
+            ]
+          },
+          {
+            "Path": "black/diagnostics/portraits-05.png",
+            "Sha256": "C90AE2335857C80932F50148832E1135957A5B3E735CAC4DC7D760BFB72DB8D6",
+            "ViewedWith": "view_image original",
+            "Passed": true,
+            "Notes": [
+              "泥污、三种紧张姿态、双脸残影、陶醉与遮脸悲伤可区分。",
+              "oraora双残影没有被当作普通单脸，泥污和速度笔触保持透明外边缘；shadow_left保留原版黑剪影。"
+            ]
+          },
+          {
+            "Path": "black/diagnostics/portraits-06.png",
+            "Sha256": "ACB4290B25230F0043B587861F9408E23DB3A154A62119E3E1095644164BE8CC",
+            "ViewedWith": "view_image original",
+            "Passed": true,
+            "Notes": [
+              "反色shake2、惊吓立发、青蓝魂体、蒙布special1、呆滞与双手作爪均按剧情显示。",
+              "soul青蓝外轮廓连续，未见实色方框；suck1清理后的左上角没有原先杂笔。shadow_right保留原版。"
+            ]
+          },
+          {
+            "Path": "black/diagnostics/portraits-07.png",
+            "Sha256": "8A9C6484793B5E0E194610FFCFF46A5C42624573ACFC1C5D2BF8620E68C0B26C",
+            "ViewedWith": "view_image original",
+            "Passed": true,
+            "Notes": [
+              "最后两项suck3与suck4正确显示；匕首怪笑姿势和长下巴坏笑明显区别。",
+              "只有最后两格有内容，其余留空符合50资源分页；未见缺失人物、矩形底或额外头/手裁切。"
+            ]
+          },
+          {
+            "Path": "black/diagnostics/avatar-panel-0.png",
+            "Sha256": "FA7C6BCD4D490821E0C906272E8A3188D19DFFEEC3FC2B53BF0B7D38CD1E19A2",
+            "ViewedWith": "view_image original",
+            "Passed": true,
+            "Notes": [
+              "属性头像分支0显示黑衣常态；头身比例、发束、袖口与手部清楚，边缘与深色背景自然衔接。",
+              "下摆底部按既定立绘构图截断；没有脸部、头顶或手部异常裁切。"
+            ]
+          },
+          {
+            "Path": "black/diagnostics/avatar-panel-1.png",
+            "Sha256": "FA7C6BCD4D490821E0C906272E8A3188D19DFFEEC3FC2B53BF0B7D38CD1E19A2",
+            "ViewedWith": "view_image original",
+            "Passed": true,
+            "Notes": [
+              "属性头像分支1也显示相同黑衣常态；与分支0截图哈希一致，符合两个分支都映射同一normal的设计。",
+              "未见新增裁切、实色矩形底或原主角脸残留。"
+            ]
+          }
+        ],
+        "SupplementarySourceComparison": {
+          "PathRelativeToArtifactRoot": "public-repo/Variants/player/black/Portraits/god_thunder.png",
+          "Sha256": "837D017C0491596905706B354230EFC81D53111B9DA4C195CA6A412197443015",
+          "ViewedWith": "view_image original",
+          "Note": "god_thunder刀身本就在PNG左边界结束；实机页面保留源构图，没有额外截短。"
+        },
+        "Findings": [],
+        "Limitations": [
+          "检查对象为游戏真实Sprite加载路径产生的诊断UI截图，不代表逐一进入所有剧情界面或完整通关。",
+          "截图中的透明衔接通过视觉检查，没有在本次审阅中修改或重新生成任何PNG。",
+          "本记录不声称审阅NPC页面；NPC由主任务另行审阅。"
+        ]
+      }
+    },
+    {
+      "Record": "visual-veteran-review.json",
+      "Sha256": "2EB66B486105B4B7472581A71D1E3FC8CFE4DA060096A26159B6F09261EBE475",
+      "Result": {
+        "Passed": true,
+        "ReviewedBy": "root",
+        "DateUtc": "2026-10-16T05:26:54.167367+00:00",
+        "PlayerVariants": [
+          "veteran"
+        ],
+        "NpcRoles": [],
+        "Files": [
+          {
+            "Path": "veteran/diagnostics/portraits-01.png",
+            "Sha256": "DCFAF65C50EFCB18FDA49FF8BE5FBBB9F80CEDA183CA836E2A4C4411332CC441"
+          },
+          {
+            "Path": "veteran/diagnostics/portraits-02.png",
+            "Sha256": "9CB4E2622D5A648E51A23BED1B541D844735BFB075E8C578718C17B10A8A06A4"
+          },
+          {
+            "Path": "veteran/diagnostics/portraits-03.png",
+            "Sha256": "A957ABB044046B7BF794448966D7742C9B622351437BA0C55C69D777507E2400"
+          },
+          {
+            "Path": "veteran/diagnostics/portraits-04.png",
+            "Sha256": "3C732B499FD855A4F1CCB56EEC28E23078D967B21532280C00FF9E45DE7DB298"
+          },
+          {
+            "Path": "veteran/diagnostics/portraits-05.png",
+            "Sha256": "9FF16DF847E38EAABFC7DA707973778F52002229145F42C87A60BBD957ECC9D4"
+          },
+          {
+            "Path": "veteran/diagnostics/portraits-06.png",
+            "Sha256": "87326C1FC87A585035DA197653826593934486009F42681733FA3EE4C06E23BC"
+          },
+          {
+            "Path": "veteran/diagnostics/portraits-07.png",
+            "Sha256": "1FA7DD30232EA1D2D6CBBBCE67B6F995A4F4ED8A611C9CE1EFD62F0FF4549B3A"
+          },
+          {
+            "Path": "veteran/diagnostics/avatar-panel-0.png",
+            "Sha256": "E6C5FE8C92DF8C65C21BFA8D29BBD9C96B570D62D0B1100FE5F975F957CEE0F0"
+          },
+          {
+            "Path": "veteran/diagnostics/avatar-panel-1.png",
+            "Sha256": "E6C5FE8C92DF8C65C21BFA8D29BBD9C96B570D62D0B1100FE5F975F957CEE0F0"
+          }
+        ],
+        "Notes": [
+          "Viewed all seven actual Unity portrait pages and both avatar branch images at native screenshot resolution.",
+          "Face/body scale, brown robe, ponytail and adult features remain consistent across expressions; anger aura, injury, blindfold, lightning, landing pose, motion blur and soul effects render distinctly.",
+          "Transparent cutouts have no opaque rectangular background or accidental isolated marks. Both avatar branches show the intended normal portrait.",
+          "Bottom/body or sword edge crops follow the established dialogue portrait framing. Three declared back/shadow resources remain ORIGINAL; they are not treated as replaced art."
+        ],
+        "Scope": "Visual inspection of game-generated diagnostic pages only; no story route, save or game action was driven for this review. Screenshots remain private and are referenced only by relative filename and hash."
+      }
+    }
+  ],
+  "MainMenuReview": {
+    "Passed": true,
+    "ActualWindowReviewed": true,
+    "DateUtc": "2026-10-16T05:32:38.4998200Z",
+    "Tool": "computer-use sky.get_window_state",
+    "WindowTitle": "Mortal",
+    "GameVersionVisible": "release_1.0.6000.2",
+    "Observation": "Normal Steam startup displayed the animated main menu with title artwork and menu options. The game window was activated before the confirming visual observation; no save or story was opened.",
+    "SaveOrStoryOpened": false,
+    "Scope": "Main-menu visual check only; continued responsiveness is covered separately by the normal-startup observation report."
+  },
+  "Scope": "Actual Unity diagnostic screenshots manually inspected for all three new player appearances, both NPC packs and selected aliases/negative fixtures, plus normal Steam main menu. Screenshot pixels remain private; only filenames, hashes and observations are distributed. This is not a full story or save-game playthrough."
+}

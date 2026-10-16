@@ -1,0 +1,51 @@
+{
+  "character": "tang-buyi",
+  "variant": "refined",
+  "asset": "shock",
+  "prompt": "Use case: identity-preserve. ONE transparent portrait sprite for Legend of Mortal.\nImage 1 is the edit target: preserve its exact pose, expression, gestures, fingers, props, sweat/blood and effects. Image 2 is the approved identity master: match its refined face, hairstyle, costume and hand-painted treatment only; do not paste its neutral expression or pose over Image 1.\nCharacter: adult male Tang Buyi, same angular handsome face, dark ponytail, slate-blue robe, leather wrist guards and gold details as Image 2.\nRequired target emotion and action: Startled shock: wide eyes, open gasping mouth, a sweat drop, pale vertical face shading and shivering sketch lines around head and shoulder. Preserve the vibrating/ghosted outline effect and dangling coins of Image 1; don't mistake effect lines for extra limbs.\nKeep the original natural head-to-shoulder ratio; never enlarge the face. Rough pencil/ink lines and textured watercolor/gouache, no photographic skin, smooth 3D, modern anime or chibi. Complete all original visible hands and props.\nFRAME THE FIGURE SLIGHTLY SMALLER so the entire silhouette, all hair, sleeves, parasol and aura are surrounded by at least 5% truly transparent empty canvas on the TOP, LEFT AND RIGHT. Do not let any prop touch a side edge. No close-up. Lower robe can end at the bottom edge as originally, but no hands cropped. True RGBA transparent background, no painted background/checkerboard/shadow, no text or watermark.",
+  "input_roles": [
+    {
+      "role": "edit-target-pose-emotion",
+      "logical_name": "original/brother1/brother1/shock.png"
+    },
+    {
+      "role": "approved-identity-master",
+      "logical_name": "art/tang-buyi/refined/normal.png"
+    }
+  ],
+  "tool": "builtin image_gen",
+  "status": "accepted",
+  "checks": {
+    "dimensions": [
+      1096,
+      1435
+    ],
+    "mode": "RGBA",
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "alpha_bounds_gt16": [
+      59,
+      257,
+      1059,
+      1435
+    ],
+    "alpha_bounds_nonzero": [
+      23,
+      21,
+      1064,
+      1435
+    ],
+    "edge_alpha_gt16": {
+      "left": false,
+      "top": false,
+      "right": false,
+      "bottom": true
+    },
+    "pixel_edit_performed": false,
+    "visual_review": "Passed: target expression/action, hands and effects preserved. Shy pose remains separate from normal; block fully hides face behind circular parasol. Natural proportions, full top/side silhouette."
+  },
+  "generated_source_basename": "exec-0d4aa090-bc16-43e9-b4a2-642ffb2449a1.png",
+  "sha256": "7D4DDCACB047C55D9064DAE3849E7CFAA4C3124DF989B4EB074388BB97FD20A5"
+}

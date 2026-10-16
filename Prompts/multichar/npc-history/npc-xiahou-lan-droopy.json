@@ -1,0 +1,51 @@
+{
+  "character": "xiahou-lan",
+  "variant": "refined",
+  "asset": "droopy",
+  "prompt": "Use case: identity-preserve. ONE transparent portrait sprite for Legend of Mortal.\nImage 1 is the edit target: preserve its exact pose, expression, gestures, fingers, props, sweat/blood and effects. Image 2 is the approved identity master: match its refined face, hairstyle, costume and hand-painted treatment only; do not paste its neutral expression or pose over Image 1.\nCharacter: adult woman Xiahou Lan, same refined face/beauty mark, black hair, jade earrings, blue ribbons and blue-purple fabric as Image 2. Pose, visibility, clothing arrangement and props come only from Image 1.\nRequired target emotion and action: Drooping downcast gaze with both eyelids low and almost shut, quiet subdued/tired expression, neutral-to-slightly-downturned lips. Distinct from sideways squint: gaze DOWN, not side. Keep parasol and hand grip. No smile, blush, sweat, blood or magic glow.\nKeep the original natural head-to-shoulder ratio; never enlarge the face. Rough pencil/ink lines and textured watercolor/gouache, no photographic skin, smooth 3D, modern anime or chibi. Complete all original visible hands and props.\nFRAME THE FIGURE SLIGHTLY SMALLER so the entire silhouette, all hair, sleeves, parasol and aura are surrounded by at least 5% truly transparent empty canvas on the TOP, LEFT AND RIGHT. Do not let any prop touch a side edge. No close-up. Lower robe can end at the bottom edge as originally, but no hands cropped. True RGBA transparent background, no painted background/checkerboard/shadow, no text or watermark.",
+  "input_roles": [
+    {
+      "role": "edit-target-pose-emotion",
+      "logical_name": "original/girl6/girl6_小蘭/droopy.png"
+    },
+    {
+      "role": "approved-identity-master",
+      "logical_name": "art/xiahou-lan/refined/normal.png"
+    }
+  ],
+  "tool": "builtin image_gen",
+  "status": "accepted",
+  "checks": {
+    "dimensions": [
+      989,
+      1591
+    ],
+    "mode": "RGBA",
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "alpha_bounds_gt16": [
+      110,
+      289,
+      981,
+      1591
+    ],
+    "alpha_bounds_nonzero": [
+      108,
+      136,
+      989,
+      1591
+    ],
+    "edge_alpha_gt16": {
+      "left": false,
+      "top": false,
+      "right": false,
+      "bottom": true
+    },
+    "pixel_edit_performed": false,
+    "visual_review": "Passed: approved identity and original pose retained. Hat hides eyes, strained grimace has sweat, downward eyelids and gentle open-eyed smile remain distinct. Complete top/side silhouettes with original lower crop."
+  },
+  "generated_source_basename": "exec-26fb08cc-0891-4936-8a3e-0869d8689e69.png",
+  "sha256": "227FFF23F5A38659634D87872E533620BCCD492E4C972356B792FDA10D9FFE0A"
+}

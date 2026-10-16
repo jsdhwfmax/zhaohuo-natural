@@ -1,0 +1,55 @@
+{
+  "character": "tang-buyi",
+  "variant": "refined",
+  "asset": "angry1",
+  "prompt": "Use case: identity-preserve. Create ONE transparent character portrait sprite for the hand-painted wuxia game Legend of Mortal.\nImage 1 is the EDIT TARGET and the authority for the exact emotion, gesture, body pose, viewing angle, cloth silhouette, props, blood/sweat and special effects. Image 2 is the approved beauty master and the authority ONLY for facial identity, hairstyle, costume design and ink/watercolor treatment; do not copy its neutral expression or pose over the target.\nCharacter: Tang Buyi, adult male: refined handsome angular face, long dark purple-black ponytail with cord tie, slate blue wuxia robe, leather bracers and gold details.\nRequired expression for angry1: Restrained displeasure: lowered tense eyebrows, narrowed eyes, lips closed in a slight downturned frown. No smile and no aura.\nRedraw the target with the same approved attractive face as Image 2 while expressing the target's distinct emotion. Keep natural small head-to-shoulder proportions, never enlarge the face. Preserve the target's hands, fingers, props, pose and all visible costume coverage. Preserve the rough colored-pencil and ink outlines, uneven watercolor/gouache texture and original game style; not a photograph, glossy 3D, airbrushed beauty portrait, chibi or modern anime.\nFraming: one complete original portrait silhouette with comfortable transparent clearance at top and both sides including hair, parasol, sleeves and any aura. The original lower robe may end at the bottom edge; do not crop hands. Keep the whole target composition, no close-up. Genuine RGBA transparent background, no checkerboard, no solid background, no floor shadow. No text, logos or extra characters.",
+  "input_roles": [
+    {
+      "role": "edit-target-pose-emotion",
+      "logical_name": "original/brother1/brother1/angry1.png"
+    },
+    {
+      "role": "approved-identity-master",
+      "logical_name": "art/tang-buyi/refined/normal.png"
+    }
+  ],
+  "tool": "builtin image_gen",
+  "status": "accepted",
+  "checks": {
+    "dimensions": [
+      1096,
+      1435
+    ],
+    "mode": "RGBA",
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "alpha_bounds_gt16": [
+      14,
+      132,
+      1091,
+      1435
+    ],
+    "alpha_bounds_nonzero": [
+      0,
+      35,
+      1096,
+      1435
+    ],
+    "edge_alpha_gt16": {
+      "left": false,
+      "top": false,
+      "right": false,
+      "bottom": true
+    },
+    "pixel_edit_performed": false,
+    "visual_review": "Passed: approved facial identity, target expression and effects, original pose/props, natural head proportions, complete visible edges; bottom robe/hand placement follows original composition."
+  },
+  "generated_source_basename": "exec-e118bc56-573d-41fd-9158-545b1bfbf85a.png",
+  "sha256": "7A2BF339CF998F1D1D2FED502A9331B38EAE3956BDF9AD5809C82A09DFA959D1",
+  "CharacterId": "tang-buyi",
+  "VariantId": "refined",
+  "OutputSHA256": "7A2BF339CF998F1D1D2FED502A9331B38EAE3956BDF9AD5809C82A09DFA959D1",
+  "PublicOutput": "Variants/tang-buyi/refined/Portraits/angry1.png"
+}

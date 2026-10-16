@@ -1,0 +1,37 @@
+{
+  "Variant": "black",
+  "Name": "soul",
+  "Revision": "margin-v2",
+  "Method": "builtin imagegen",
+  "Prompt": "Edit this exact transparent game dialogue sprite ONLY to repair framing. Preserve the exact same face identity and age, faint stubble if present, natural small adult head proportion, hairstyle, slight closed smile, blue spectral skin and clothing, glowing pupil-less cyan eyes, all costume folds and wrist wraps, both lowered empty hands and the rough black ink / coloured pencil / watercolor texture. Preserve the entire icy cyan ghost flame aura. Zoom the WHOLE current illustration out by approximately 15 percent, positioning it with a generous 6-8 percent completely transparent margin from LEFT, RIGHT and TOP. Complete any aura edge that was clipped on the RIGHT by the canvas so every cyan flame is visibly surrounded by clear alpha. Do not crop hands, sleeves or hair. Existing lower robe crop may remain. Do not change the pose, emotion, design or colours. One isolated blue ghost sprite, true alpha transparent background, no checkerboard, solid background, extra body parts, scenery, text or watermark.",
+  "References": [
+    "art/player/black/soul.png"
+  ],
+  "Output": "art/player/black/soul.png",
+  "Review": "Passed visual review: identical spectral identity, costume, slight smile, lowered hands and cyan aura; top and side outline fully inside transparent margins. Lower robe cutoff retained. No pixel editing.",
+  "RepairReason": "Right sleeve ghost aura has insufficient transparent breathing room.",
+  "Dimensions": [
+    943,
+    1667
+  ],
+  "AlphaExtrema": [
+    0,
+    255
+  ],
+  "AlphaBoundsGt16": [
+    123,
+    217,
+    913,
+    1618
+  ],
+  "PixelEditingPerformed": false,
+  "SHA256": "E70B435EB66EBF0457779D08C14669ECB346375B191FADD7C53A528D0FAAB269",
+  "Bytes": 1625928,
+  "GeneratedSource": "exec-253f2a5c-6a3b-4f33-90cd-e51a52c8d050.png",
+  "RevisionOutput": "art-revisions/player-black-soul-margin-v2.png",
+  "PreviousRecord": "prompts/player/black-soul-margin-v1.json",
+  "CharacterId": "player",
+  "VariantId": "black",
+  "OutputSHA256": "E70B435EB66EBF0457779D08C14669ECB346375B191FADD7C53A528D0FAAB269",
+  "PublicOutput": "Variants/player/black/Portraits/soul.png"
+}

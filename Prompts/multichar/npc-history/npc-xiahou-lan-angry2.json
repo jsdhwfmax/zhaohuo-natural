@@ -1,0 +1,52 @@
+{
+  "character": "xiahou-lan",
+  "variant": "refined",
+  "asset": "angry2",
+  "prompt": "Use case: identity-preserve. Create ONE transparent character portrait sprite for the hand-painted wuxia game Legend of Mortal.\nImage 1 is the EDIT TARGET and the authority for the exact emotion, gesture, body pose, viewing angle, cloth silhouette, props, blood/sweat and special effects. Image 2 is the approved beauty master and the authority ONLY for facial identity, hairstyle, costume design and ink/watercolor treatment; do not copy its neutral expression or pose over the target.\nCharacter: Xiahou Lan, adult woman: graceful refined face, long black hair with fringe, small beauty mark by the mouth, jade earrings and blue ribbons, blue-purple robe and tan paper parasol.\nRequired expression for angry2: Threatening anger with a subtle chilling smile: retain the dark shading across the eyes and the original broad blue aura and red patches behind the figure. These effects are part of the sprite, with transparent space outside them.\nRedraw the target with the same approved attractive face as Image 2 while expressing the target's distinct emotion. Keep natural small head-to-shoulder proportions, never enlarge the face. Preserve the target's hands, fingers, props, pose and all visible costume coverage. Preserve the rough colored-pencil and ink outlines, uneven watercolor/gouache texture and original game style; not a photograph, glossy 3D, airbrushed beauty portrait, chibi or modern anime.\nFraming: one complete original portrait silhouette with comfortable transparent clearance at top and both sides including hair, parasol, sleeves and any aura. The original lower robe may end at the bottom edge; do not crop hands. Keep the whole target composition, no close-up. Genuine RGBA transparent background, no checkerboard, no solid background, no floor shadow. No text, logos or extra characters.",
+  "input_roles": [
+    {
+      "role": "edit-target-pose-emotion",
+      "logical_name": "original/girl6/girl6_小蘭/angry2.png"
+    },
+    {
+      "role": "approved-identity-master",
+      "logical_name": "art/xiahou-lan/refined/normal.png"
+    }
+  ],
+  "tool": "builtin image_gen",
+  "status": "superseded-by-margin-v2",
+  "checks": {
+    "dimensions": [
+      989,
+      1591
+    ],
+    "mode": "RGBA",
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "alpha_bounds_gt16": [
+      21,
+      170,
+      989,
+      1591
+    ],
+    "alpha_bounds_nonzero": [
+      0,
+      0,
+      989,
+      1591
+    ],
+    "edge_alpha_gt16": {
+      "left": false,
+      "top": false,
+      "right": true,
+      "bottom": true
+    },
+    "pixel_edit_performed": false,
+    "visual_review": "pending"
+  },
+  "generated_source_basename": "exec-1f84bb1c-e858-4e70-b240-96e4ce1ed28e.png",
+  "sha256": "669C457A343A62390E08A855FCD17230A6FA4D5334630B66785F2B5BC36042FF",
+  "selected_record": "npc-xiahou-lan-angry2-margin-v2.json"
+}

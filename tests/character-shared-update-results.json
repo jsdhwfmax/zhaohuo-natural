@@ -1,0 +1,64 @@
+{
+    "Passed":  true,
+    "AssertionCount":  13,
+    "PowerShell":  "5.1.26100.9711",
+    "DurationSeconds":  134.55,
+    "ActualGameRun":  false,
+    "RealGameFilesModified":  false,
+    "ProductionTargetDllSha256":  "592A56EDD630F40AAA5A551746183F86F7D941D7ACEAABC105D6D473A7BE9AA8",
+    "CodeHashAlgorithm":  "SHA256-UTF8-noBOM-LF-v1",
+    "CodeHashes":  [
+                       {
+                           "Path":  "installer/ZhaoHuoInstaller.psm1",
+                           "Sha256":  "DF5A5070DD2E5D5ECFCB41D6444A459B994714D9F60565FA08C1DEB2F6445BC9"
+                       },
+                       {
+                           "Path":  "installer/AppearanceManager.ps1",
+                           "Sha256":  "68AC32DCF799A12AA05BA749F7BBB2B8B2C34A06F529EF4D57611A3CE12F78E7"
+                       },
+                       {
+                           "Path":  "installer/VariantSupport.ps1",
+                           "Sha256":  "E12665D920A4E9582EC88BCB92C679AA04AC558F61DC47E3960A9F4C99FAE89A"
+                       },
+                       {
+                           "Path":  "installer/CharacterCatalog.ps1",
+                           "Sha256":  "4DCDE56EADCCA98CB7674C894CB56956D6E6ECC84781F6A6A04F8C1B960E2EB4"
+                       },
+                       {
+                           "Path":  "installer/CharacterState.ps1",
+                           "Sha256":  "BD1786E11E01FA02E255B48BBCA41F8EA521DA66EA03FE5D55BDC63B28CEFB0D"
+                       },
+                       {
+                           "Path":  "installer/CharacterManager.ps1",
+                           "Sha256":  "269C20C399A304B86479886F87CEDCFDCDD8E0CBFF7E606F776E542251EF6F8B"
+                       },
+                       {
+                           "Path":  "installer/CharacterTransactions.ps1",
+                           "Sha256":  "193E73AFB67C163BA365B4B331AE27EAC9C80A8E047F787C86BC7DADFB120A80"
+                       },
+                       {
+                           "Path":  "tests/Test-CharacterManager.ps1",
+                           "Sha256":  "AF907C81FCE729FE45647CED781F241C485308DA2FF02C9C91BE3A7A4EABC22B"
+                       },
+                       {
+                           "Path":  "tests/Test-CharacterSharedUpdate.ps1",
+                           "Sha256":  "47BB59BDC7B815A220BB282F007D4F27A62F658824147BBA1C708291EC8BB095"
+                       }
+                   ],
+    "Checks":  [
+                   "Schema4 same-selection update plans exactly one shared DLL write with the old owned hash",
+                   "Shared DLL update check-only leaves every fixture file unchanged",
+                   "Failure is injected after the new DLL write, before final manifest commit",
+                   "Failed shared DLL update restores the exact old schema4 manifest and complete mixed payload",
+                   "Interrupted shared DLL commit retains a recoverable transaction",
+                   "Interrupted update reports recovery required instead of a completed installation",
+                   "Interrupted DLL update check validates recovery without writing",
+                   "Recovery restores the original schema4 DLL, selections and all files",
+                   "Successful schema4 DLL update retains first installation identity and backup root",
+                   "All three selections, character PNGs, layouts, mapping and config remain byte-identical",
+                   "All pre-existing backup files, loader, core and other plugin remain unchanged",
+                   "Repeated patched DLL selection is a complete file no-op",
+                   "Uninstall after shared DLL update restores original legacy plugin and retains unrelated files"
+               ],
+    "Scope":  "Synthetic inert schema4 game, DLL and PNG fixtures plus official offline BepInEx runtime; same-selection shared DLL update, commit-failure rollback, interrupted recovery, no-op and uninstall. Production installer code is unchanged; fixture-only accepted hashes are set only in this isolated PowerShell process. No game assembly or real game installation is executed."
+}

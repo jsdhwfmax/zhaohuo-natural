@@ -1,0 +1,14 @@
+{
+  "Passed": true,
+  "ActualGameRun": true,
+  "DateUtc": "2026-10-16T05:33:22.8516183Z",
+  "ObservedSeconds": 92.3,
+  "Responding": true,
+  "SelftestArgumentPresent": false,
+  "PluginReady": true,
+  "PluginSha256": "592A56EDD630F40AAA5A551746183F86F7D941D7ACEAABC105D6D473A7BE9AA8",
+  "ChainloaderComplete": true,
+  "LogIsFromThisLaunch": true,
+  "PluginErrorLines": 0,
+  "Scope": "Normal registered Steam startup after multi-character installation; observed responsiveness at least 90 seconds. Main menu visual review is separate; no save or story loaded."
+}

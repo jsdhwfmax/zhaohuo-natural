@@ -6,8 +6,8 @@
     "25957922"
   ],
   "Policy": "Unknown builds may pass only unchanged resource/runtime files and unchanged portrait-related Mortal.Core static call surface. This is offline compatibility evidence, not a runtime or full-game guarantee.",
-  "PluginSha256": "66F6D545562FDEDF2F5E0CAA1AA8609629A42556C5779DF1C45B61F93EA00095",
-  "GameMemberReferenceCount": 19,
+  "PluginSha256": "592A56EDD630F40AAA5A551746183F86F7D941D7ACEAABC105D6D473A7BE9AA8",
+  "GameMemberReferenceCount": 23,
   "CoreSeedTypes": [
     "Mortal.Core.PlayerAvatarPanel",
     "Mortal.Core.SocialStatPanel",

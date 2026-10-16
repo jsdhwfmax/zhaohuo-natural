@@ -1,0 +1,51 @@
+{
+  "character": "tang-buyi",
+  "variant": "refined",
+  "asset": "hurt",
+  "prompt": "Use case: identity-preserve. ONE transparent portrait sprite for Legend of Mortal.\nImage 1 is the edit target: preserve its exact pose, expression, gestures, fingers, props, sweat/blood and effects. Image 2 is the approved identity master: match its refined face, hairstyle, costume and hand-painted treatment only; do not paste its neutral expression or pose over Image 1.\nCharacter: adult male Tang Buyi, same angular handsome face, dark ponytail, slate-blue robe, leather wrist guards and gold details as Image 2.\nRequired target emotion and action: Injured but bravely smiling weakly. Open weary eyes, forehead/cheek sweat, a thin trickle of blood from the lower lip. Keep the forward-leaning torso, extended foreground arm, rear coin-tossing fingers and small gold coins.\nKeep the original natural head-to-shoulder ratio; never enlarge the face. Rough pencil/ink lines and textured watercolor/gouache, no photographic skin, smooth 3D, modern anime or chibi. Complete all original visible hands and props.\nFRAME THE FIGURE SLIGHTLY SMALLER so the entire silhouette, all hair, sleeves, parasol and aura are surrounded by at least 5% truly transparent empty canvas on the TOP, LEFT AND RIGHT. Do not let any prop touch a side edge. No close-up. Lower robe can end at the bottom edge as originally, but no hands cropped. True RGBA transparent background, no painted background/checkerboard/shadow, no text or watermark.",
+  "input_roles": [
+    {
+      "role": "edit-target-pose-emotion",
+      "logical_name": "original/brother1/brother1/hurt.png"
+    },
+    {
+      "role": "approved-identity-master",
+      "logical_name": "art/tang-buyi/refined/normal.png"
+    }
+  ],
+  "tool": "builtin image_gen",
+  "status": "accepted",
+  "checks": {
+    "dimensions": [
+      1096,
+      1435
+    ],
+    "mode": "RGBA",
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "alpha_bounds_gt16": [
+      65,
+      248,
+      1060,
+      1435
+    ],
+    "alpha_bounds_nonzero": [
+      0,
+      33,
+      1074,
+      1435
+    ],
+    "edge_alpha_gt16": {
+      "left": false,
+      "top": false,
+      "right": false,
+      "bottom": true
+    },
+    "pixel_edit_performed": false,
+    "visual_review": "Passed: identity consistent, correct expression and original action; hurt/special1 retain distinct open/closed eyes and missing rear hand; blood and sideways squint retained. Hair/props not clipped at top or side; original lower crop retained."
+  },
+  "generated_source_basename": "exec-ee6c2ad3-5e4f-4706-a6cc-f5891a1882f9.png",
+  "sha256": "4EA2859CD31FD8F9675850160DF6961029C0086713C4CD47E33AD635E13CC6AB"
+}

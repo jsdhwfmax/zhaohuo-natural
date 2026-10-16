@@ -1,0 +1,55 @@
+{
+  "character": "xiahou-lan",
+  "variant": "refined",
+  "asset": "nervous2",
+  "prompt": "Use case: identity-preserve. ONE transparent portrait sprite for Legend of Mortal.\nImage 1 is the edit target: preserve its exact pose, expression, gestures, fingers, props, sweat/blood and effects. Image 2 is the approved identity master: match its refined face, hairstyle, costume and hand-painted treatment only; do not paste its neutral expression or pose over Image 1.\nCharacter: adult woman Xiahou Lan, same refined face and beauty mark, black hair, jade earrings, blue ribbons, blue-purple robe and parasol as Image 2.\nRequired target emotion: Very nervous comedic shock: wide eyes with tiny pupils, eyebrows raised, mouth openly gasping, several large sweat drops on the face and neck. Keep the grey forehead shadow. Do not tone this down to neutral beauty.\nKeep the original natural head-to-shoulder ratio; never enlarge the face. Rough pencil/ink lines and textured watercolor/gouache, no photographic skin, smooth 3D, modern anime or chibi. Complete all original visible hands and props.\nFRAME THE FIGURE SLIGHTLY SMALLER so the entire silhouette, all hair, sleeves, parasol and aura are surrounded by at least 5% truly transparent empty canvas on the TOP, LEFT AND RIGHT. Do not let any prop touch a side edge. No close-up. Lower robe can end at the bottom edge as originally, but no hands cropped. True RGBA transparent background, no painted background/checkerboard/shadow, no text or watermark.",
+  "input_roles": [
+    {
+      "role": "edit-target-pose-emotion",
+      "logical_name": "original/girl6/girl6_小蘭/nervous2.png"
+    },
+    {
+      "role": "approved-identity-master",
+      "logical_name": "art/xiahou-lan/refined/normal.png"
+    }
+  ],
+  "tool": "builtin image_gen",
+  "status": "accepted",
+  "checks": {
+    "dimensions": [
+      989,
+      1591
+    ],
+    "mode": "RGBA",
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "alpha_bounds_gt16": [
+      99,
+      236,
+      974,
+      1575
+    ],
+    "alpha_bounds_nonzero": [
+      23,
+      23,
+      976,
+      1577
+    ],
+    "edge_alpha_gt16": {
+      "left": false,
+      "top": false,
+      "right": false,
+      "bottom": false
+    },
+    "pixel_edit_performed": false,
+    "visual_review": "Passed: approved facial identity, target expression and effects, original pose/props, natural head proportions, complete visible edges; bottom robe/hand placement follows original composition."
+  },
+  "generated_source_basename": "exec-142c683e-cae9-4931-9d3e-403a27e46b12.png",
+  "sha256": "AC26D7E668A73962810B6E783EB136C02AFBD3FB9BC816F9CB58CFD4837D594A",
+  "CharacterId": "xiahou-lan",
+  "VariantId": "refined",
+  "OutputSHA256": "AC26D7E668A73962810B6E783EB136C02AFBD3FB9BC816F9CB58CFD4837D594A",
+  "PublicOutput": "Variants/xiahou-lan/refined/Portraits/nervous2.png"
+}

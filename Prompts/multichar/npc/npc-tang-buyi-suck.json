@@ -1,0 +1,55 @@
+{
+  "character": "tang-buyi",
+  "variant": "refined",
+  "asset": "suck",
+  "prompt": "Use case: identity-preserve. ONE transparent portrait sprite for Legend of Mortal.\nImage 1 is the edit target: preserve its exact pose, expression, gestures, fingers, props, sweat/blood and effects. Image 2 is the approved identity master: match its refined face, hairstyle, costume and hand-painted treatment only; do not paste its neutral expression or pose over Image 1.\nCharacter: adult male Tang Buyi, same angular handsome face, dark ponytail, slate-blue robe, leather wrist guards and gold details as Image 2.\nRequired target emotion and action: Very uncomfortable sickened/nauseous grimace: pinched furrowed eyebrows, one eye squinted shut and the other strained, uneven slightly open twisted mouth showing small teeth, vertical stress strokes and MANY sweat droplets across forehead and cheeks. Keep same forward arm, rear coin-tossing hand and robe. No blood, no smile.\nKeep the original natural head-to-shoulder ratio; never enlarge the face. Rough pencil/ink lines and textured watercolor/gouache, no photographic skin, smooth 3D, modern anime or chibi. Complete all original visible hands and props.\nFRAME THE FIGURE SLIGHTLY SMALLER so the entire silhouette, all hair, sleeves, parasol and aura are surrounded by at least 5% truly transparent empty canvas on the TOP, LEFT AND RIGHT. Do not let any prop touch a side edge. No close-up. Lower robe can end at the bottom edge as originally, but no hands cropped. True RGBA transparent background, no painted background/checkerboard/shadow, no text or watermark.",
+  "input_roles": [
+    {
+      "role": "edit-target-pose-emotion",
+      "logical_name": "original/brother1/brother1/suck.png"
+    },
+    {
+      "role": "approved-identity-master",
+      "logical_name": "art/tang-buyi/refined/normal.png"
+    }
+  ],
+  "tool": "builtin image_gen",
+  "status": "accepted",
+  "checks": {
+    "dimensions": [
+      1096,
+      1435
+    ],
+    "mode": "RGBA",
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "alpha_bounds_gt16": [
+      72,
+      310,
+      1063,
+      1435
+    ],
+    "alpha_bounds_nonzero": [
+      0,
+      0,
+      1076,
+      1435
+    ],
+    "edge_alpha_gt16": {
+      "left": false,
+      "top": false,
+      "right": false,
+      "bottom": true
+    },
+    "pixel_edit_performed": false,
+    "visual_review": "Passed: approved identity and original pose retained. Hat hides eyes, strained grimace has sweat, downward eyelids and gentle open-eyed smile remain distinct. Complete top/side silhouettes with original lower crop."
+  },
+  "generated_source_basename": "exec-ec404bcf-8a4f-4ea8-ba19-0a3023f25776.png",
+  "sha256": "28176B51CF3C0E4C75EEC5FD59D60E371D202A7A8D675FC8A3A6AAD39D36A005",
+  "CharacterId": "tang-buyi",
+  "VariantId": "refined",
+  "OutputSHA256": "28176B51CF3C0E4C75EEC5FD59D60E371D202A7A8D675FC8A3A6AAD39D36A005",
+  "PublicOutput": "Variants/tang-buyi/refined/Portraits/suck.png"
+}

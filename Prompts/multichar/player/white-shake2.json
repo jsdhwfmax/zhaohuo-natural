@@ -1,0 +1,29 @@
+{
+  "Variant": "white",
+  "Name": "shake2",
+  "Method": "builtin imagegen",
+  "Prompt": "Use case: precise-object-edit. Asset: ONE production transparent Zhao Huo dialogue sprite for 活侠传 / Legend of Mortal.\nImage 1 is the EDIT TARGET for the exact EXPRESSION, pose, gesture, silhouette, head angle, story/comedy effects and framing. Image 2 is this variant's NORMAL MASTER for the precise face identity, hair, age, head-to-body scale and costume. Preserve image1's specific expression completely; never paste the neutral master smile over it. Preserve eye closures, open/closed mouth, pain, sweat, tears, blood, dirt, blush, trembling, comic eyes, props, weapon/no-weapon state, motion, outline effects and silhouette content exactly as appropriate in image1. Redraw this SAME state using image2's new face and outfit throughout.\nCRITICAL: keep the master's naturally SMALL adult head relative to shoulders/torso and its hair volume; never enlarge it for emotion. Match the master face so this is recognizably one consistent person. Same rough black dry-brush contours, opaque watercolor shading, colored-pencil grain and muted earthy wuxia illustration style. The face must share the costume's painted texture, not glossy makeup or a photoreal pasted face. Keep hands anatomically coherent and all original gesture meanings.\nFor injured states put the original blood/damage on the new clothes. The target's special disguise, face mask/eye mask, mud, glowing comic eye, ghost/ethereal transparency and inverted/white-clothes effect MUST override normal appearance where necessary; preserve their story meaning while keeping visible facial identity. If target is a floating face/head/ghost or extreme action, do not add the normal standing body. No weapons or props unless they are present in the target.\nExactly one whole isolated sprite, same aspect ratio/framing as target, all hair/hands/motion effects within clear top and side transparent margins, original bottom costume crop allowed. TRUE transparent alpha background. No scene, ground shadow, checkerboard, text, labels, watermark, frame, grid, new effects or extra people.\nVariant: WHITE-ROBED YOUNG HERO. Image2 exact refined adult face, approachable soft handsome features, off-white/ivory cotton robe, muted blue-grey collar edges, slate-blue sash, grey wrist wraps. Not blue outer clothing. Preserve master's youthful adult softness without big childish eyes.\nTarget expression file: shake2. Preserve the inverted/negative white-clothes trembling comic effect over this variant; its colors may differ from the neutral master by design. Keep face recognizable with mature stubble for veteran. Exact target is a full-color-negative comic shock: blue-grey dark skin, pure white rolled eyes, pale silver/white hair, bright white contour lines and faint cyan vibrating outline, pale inverted robe, mint wraps, blank terrified open mouth and sweat; arms down with curled tense fingers. This special negative palette OVERRIDES the ordinary white/black/brown wardrobe colors from image2. Adapt costume construction and face anatomy from the master, then apply the same negative treatment everywhere. Veteran stubble must remain visible as pale inverted short hairs, not a clean teenage chin.",
+  "References": [
+    "v1.3.0/Variants/xianxia/Portraits/shake2.png",
+    "art/player/white/normal.png"
+  ],
+  "GeneratedSource": "exec-a4bf9fec-d86d-4659-becf-90fbfb2e4ece.png",
+  "Output": "art/player/white/shake2.png",
+  "SHA256": "91100EDFC1EEEE62D4AD53525035D87FF3AF03189DE78E9C21CBDE43F4334323",
+  "Bytes": 1916337,
+  "Review": "Passed: individually visually reviewed for correct expression/pose, master identity and costume; veteran stubble retained. True alpha and exact source-byte hash checks passed.",
+  "Validation": {
+    "Width": 992,
+    "Height": 1586,
+    "PixelFormat": "Format32bppArgb",
+    "SampledTransparentPixels": 37,
+    "SampledPixelsAlphaAtLeast240": 8,
+    "SampledMaximumAlpha": 253,
+    "ExactGeneratedSourceBytes": true,
+    "VisualReviewPassed": true
+  },
+  "CharacterId": "player",
+  "VariantId": "white",
+  "OutputSHA256": "91100EDFC1EEEE62D4AD53525035D87FF3AF03189DE78E9C21CBDE43F4334323",
+  "PublicOutput": "Variants/player/white/Portraits/shake2.png"
+}

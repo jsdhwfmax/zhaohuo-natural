@@ -12,7 +12,7 @@ $bep = Join-Path $GamePath 'BepInEx\core'
 $refs = @(
     'mscorlib','System','System.Core','netstandard','UnityEngine','UnityEngine.CoreModule',
     'UnityEngine.UI','UnityEngine.UIModule','UnityEngine.ImageConversionModule',
-    'UnityEngine.TextRenderingModule','UnityEngine.ScreenCaptureModule',
+    'UnityEngine.TextRenderingModule','UnityEngine.ScreenCaptureModule','UnityEngine.JSONSerializeModule',
     'Unity.Addressables','Unity.ResourceManager','Mortal.Core','Mortal.Story','Fungus','OBB.Framework'
 )
 $argsFile = Join-Path ([IO.Path]::GetTempPath()) ('zhaohuo-build-' + [Guid]::NewGuid().ToString('N') + '.rsp')
@@ -20,7 +20,7 @@ New-Item -ItemType Directory -Force -Path $OutputPath | Out-Null
 $argsLines = @('/nologo','/target:library','/optimize+','/debug:portable','/deterministic+','/nostdlib+',('/pathmap:"' + $PSScriptRoot + '=/src/ZhaoHuoNatural"'),('/out:"' + (Join-Path $OutputPath 'ZhaoHuoNatural.dll') + '"'))
 foreach ($ref in $refs) { $argsLines += '/reference:"' + (Join-Path $managed ($ref + '.dll')) + '"' }
 foreach ($ref in @('BepInEx.Core','BepInEx.Unity.Mono','0Harmony')) { $argsLines += '/reference:"' + (Join-Path $bep ($ref + '.dll')) + '"' }
-$argsLines += '"' + (Join-Path $PSScriptRoot 'Plugin.cs') + '"'
+foreach ($source in @('Plugin.cs','CharacterPolicy.cs','CharacterConfigurationJson.cs','CharacterSupport.cs')) { $argsLines += '"' + (Join-Path $PSScriptRoot $source) + '"' }
 [System.IO.File]::WriteAllLines($argsFile, $argsLines, [System.Text.UTF8Encoding]::new($false))
 try {
     & dotnet $compiler ('@' + $argsFile)

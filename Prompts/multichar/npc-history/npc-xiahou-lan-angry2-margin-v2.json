@@ -1,0 +1,49 @@
+{
+  "character": "xiahou-lan",
+  "variant": "refined",
+  "asset": "angry2",
+  "revision": "margin-v2",
+  "repair_reason": "parasol/aura reaches right border; add margin",
+  "prompt": "Edit this exact transparent game portrait only to repair framing. Keep the same character identity, face, expression, natural head proportions, hairstyle, all clothing, hands, gestures, props, ink/pencil/watercolor texture, colours and aura exactly as shown. Do not redesign or beautify further. Zoom the entire existing illustration OUT by about 15 percent and place it in a transparent canvas with the same portrait aspect ratio. The whole visible silhouette and full aura must have a generous 6-8 percent transparent gap from the LEFT, RIGHT and TOP borders. Repair the tiny clipped aura/prop tips naturally. The lower robe may remain cropped at bottom as originally; all hands must be complete. The rightmost paper parasol rim and any red/blue aura must be fully visible with TRANSPARENT SPACE to the right; preserve the parasol grip and exact emotion. True alpha transparent background outside art, no checkerboard/solid backdrop/text/watermark. One portrait sprite only.",
+  "input_roles": [
+    {
+      "role": "approved-generated-target-framing-only",
+      "logical_name": "art/xiahou-lan/refined/angry2.png"
+    }
+  ],
+  "tool": "builtin image_gen",
+  "status": "accepted",
+  "checks": {
+    "dimensions": [
+      989,
+      1590
+    ],
+    "mode": "RGBA",
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "alpha_bounds_gt16": [
+      50,
+      212,
+      979,
+      1542
+    ],
+    "alpha_bounds_nonzero": [
+      0,
+      33,
+      988,
+      1566
+    ],
+    "edge_alpha_gt16": {
+      "left": false,
+      "top": false,
+      "right": false,
+      "bottom": false
+    },
+    "pixel_edit_performed": false,
+    "visual_review": "Passed: same identity, expression, pose and effects. Full side silhouette now fits with transparent breathing room; lower costume crop retained. No pixel editing."
+  },
+  "generated_source_basename": "exec-1e65210a-b4e3-40e8-89ed-e16ead7f0213.png",
+  "sha256": "E9313D4F348BFC2C04995B7512588B1F7891C92C53818D02B741FEAE48EC8FCB"
+}

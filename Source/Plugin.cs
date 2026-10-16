@@ -21,8 +21,8 @@ using Object = UnityEngine.Object;
 
 namespace ZhaoHuoNatural
 {
-    [BepInPlugin("local.zhaohuo.naturalportrait", "Zhao Huo Natural Portrait", "1.0.0")]
-    public sealed class Plugin : BaseUnityPlugin
+    [BepInPlugin("local.zhaohuo.naturalportrait", "Zhao Huo Character Portraits", "2.0.0")]
+    public sealed partial class Plugin : BaseUnityPlugin
     {
         internal static Plugin Instance;
         internal string Root;
@@ -41,6 +41,7 @@ namespace ZhaoHuoNatural
         {
             Instance = this;
             Root = Path.GetDirectoryName(Info.Location);
+            LoadCharacterConfiguration();
             LoadMappings();
             LoadLayouts();
             harmony = new Harmony("local.zhaohuo.naturalportrait");
@@ -52,7 +53,7 @@ namespace ZhaoHuoNatural
 
         private void LoadMappings()
         {
-            string file = Path.Combine(Root, "portrait-map.txt");
+            string file = CharacterPolicy.ContainedPath(Root, "portrait-map.txt");
             if (!File.Exists(file)) return;
             foreach (string raw in File.ReadAllLines(file, Encoding.UTF8))
             {
@@ -68,7 +69,14 @@ namespace ZhaoHuoNatural
 
         private void LoadLayouts()
         {
-            string file = Path.Combine(Root, "portrait-layout.tsv");
+            foreach (string role in CharacterPolicy.RoleIds)
+                try { LoadRoleLayouts(role); }
+                catch (Exception error) { Logger.LogWarning("Character layout unavailable: " + role + "; originals retained. " + error.Message); }
+        }
+
+        private void LoadRoleLayouts(string role)
+        {
+            string file = CharacterPolicy.ContainedPath(Root, CharacterPolicy.LayoutPath(role));
             if (!File.Exists(file)) return;
             foreach (string raw in File.ReadAllLines(file, Encoding.UTF8))
             {
@@ -81,7 +89,7 @@ namespace ZhaoHuoNatural
                 for (int i = 0; i < values.Length; i++) if (!int.TryParse(fields[i + 1], out values[i])) valid = false;
                 if (!valid || values[0] <= 0 || values[1] <= 0 || values[2] < 0 || values[3] < 0 || values[4] <= 0 || values[5] <= 0 || values[2] + values[4] > values[0] || values[3] + values[5] > values[1])
                     Logger.LogWarning("Ignored invalid layout: " + fields[0]);
-                else layouts[fields[0]] = values;
+                else layouts[(role == "player" ? "" : role + "/") + fields[0]] = values;
             }
         }
 
@@ -132,7 +140,8 @@ namespace ZhaoHuoNatural
 
         internal static bool IsProtagonist(StoryCharacterData data)
         {
-            return data != null && (data.name.IndexOf("主角", StringComparison.Ordinal) >= 0 || data.Id == "player");
+            try { return data != null && CharacterPolicy.RoleForIdentity(data.Id, data.name) == "player"; }
+            catch { return false; }
         }
 
         private static bool UseSharedPortraits(string character)
@@ -142,29 +151,47 @@ namespace ZhaoHuoNatural
 
         private string ResolveFile(string character, string expression)
         {
-            if (expression.IndexOfAny(Path.GetInvalidFileNameChars()) >= 0 || character.IndexOfAny(Path.GetInvalidFileNameChars()) >= 0) return null;
+            return ResolveRoleFile("player", character, expression);
+        }
+
+        private string ResolveRoleFile(string role, string character, string expression)
+        {
+            if (!enabledRoles.Contains(role) || !CharacterPolicy.AllowsExpression(role, expression)) return null;
+            string portraitRoot = CharacterPolicy.ContainedPath(Root, CharacterPolicy.PortraitDirectory(role));
+            if (role != "player")
+            {
+                if (!layouts.ContainsKey(role + "/" + expression)) return null;
+                string npcFile = CharacterPolicy.ContainedPath(portraitRoot, expression + ".png");
+                return File.Exists(npcFile) ? npcFile : null;
+            }
+            if (character != "Avatar" && !UseSharedPortraits(character)) return null;
             string relative;
             if (!mappings.TryGetValue(character + "/" + expression, out relative))
             {
-                string direct = Path.Combine(Root, "Portraits", character, expression + ".png");
+                string direct = CharacterPolicy.ContainedPath(portraitRoot, character + "/" + expression + ".png");
                 if (File.Exists(direct)) return direct;
                 if (!UseSharedPortraits(character)) return null;
                 if (!mappings.TryGetValue(expression, out relative)) relative = expression + ".png";
             }
-            string portraitRoot = Path.GetFullPath(Path.Combine(Root, "Portraits")) + Path.DirectorySeparatorChar;
-            string full = Path.GetFullPath(Path.Combine(portraitRoot, relative.Replace('/', Path.DirectorySeparatorChar)));
-            return full.StartsWith(portraitRoot, StringComparison.OrdinalIgnoreCase) && File.Exists(full) ? full : null;
+            string full = CharacterPolicy.ContainedPath(portraitRoot, relative);
+            return File.Exists(full) ? full : null;
         }
 
         internal Sprite GetReplacement(string character, Sprite original)
         {
+            return GetRoleReplacement("player", character, original);
+        }
+
+        private Sprite GetRoleReplacement(string role, string character, Sprite original)
+        {
             if (original == null || replacements.Contains(original.GetInstanceID())) return original;
-            string file = ResolveFile(character, original.name);
+            string file = ResolveRoleFile(role, character, original.name);
             if (file == null) return original;
             int[] layout;
-            if (!layouts.TryGetValue(character + "/" + original.name, out layout)) layouts.TryGetValue(original.name, out layout);
+            if (role != "player") layouts.TryGetValue(role + "/" + original.name, out layout);
+            else if (!layouts.TryGetValue(character + "/" + original.name, out layout)) layouts.TryGetValue(original.name, out layout);
             string textureKey = file + (layout == null ? "" : "\n" + string.Join(",", layout.Select(x => x.ToString()).ToArray()));
-            string cacheKey = character + "\n" + original.GetInstanceID() + "\n" + file;
+            string cacheKey = role + "\n" + character + "\n" + original.GetInstanceID() + "\n" + file;
             Sprite replacement;
             if (sprites.TryGetValue(cacheKey, out replacement) && replacement != null) return replacement;
             Texture2D texture;
@@ -185,36 +212,9 @@ namespace ZhaoHuoNatural
             replacement.hideFlags = HideFlags.HideAndDontSave;
             sprites[cacheKey] = replacement;
             replacements.Add(replacement.GetInstanceID());
-            string logKey = character + "/" + original.name;
+            string logKey = role + "/" + character + "/" + original.name;
             if (logged.Add(logKey)) Logger.LogInfo("REPLACED " + logKey + " -> " + Path.GetFileName(file) + " [" + texture.width + "x" + texture.height + "]");
             return replacement;
-        }
-
-        internal void Apply(StoryCharacterController controller)
-        {
-            if (controller == null || !IsProtagonist(controller.Data) || controller.Portraits == null) return;
-            try
-            {
-                for (int i = 0; i < controller.Portraits.Count; i++)
-                {
-                    Sprite original = controller.Portraits[i];
-                    Sprite replacement = GetReplacement(controller.Data.name, original);
-                    if (replacement == original) continue;
-                    controller.Portraits[i] = replacement;
-                    if (controller.State != null && controller.State.allPortraits != null)
-                        foreach (Image image in controller.State.allPortraits)
-                            if (image != null && image.sprite == original) image.sprite = replacement;
-                    if (controller.ProfileSprite == original) controller.ProfileSprite = replacement;
-                }
-            }
-            catch (Exception error) { Logger.LogError("Portrait replacement failed; original remains available. " + error); }
-        }
-
-        internal static IEnumerator AfterLoad(IEnumerator original, StoryCharacterController controller)
-        {
-            try { while (original.MoveNext()) yield return original.Current; }
-            finally { (original as IDisposable)?.Dispose(); }
-            if (Instance != null) Instance.Apply(controller);
         }
 
         internal void ApplyAvatar(PlayerAvatarPanel panel)
@@ -452,7 +452,7 @@ namespace ZhaoHuoNatural
             List<Sprite> heroPortraits = controller.Portraits;
             SetField(controller, typeof(Character), "portraits", new List<Sprite> { untouched });
             controller.Data = npcData;
-            Apply(controller);
+            CompleteLoad(controller, CaptureLoad(controller, firstKey, null));
             if (controller.Portraits[0] != untouched || replacements.Contains(untouched.GetInstanceID())) throw new InvalidOperationException("Non-protagonist scope check failed.");
             controller.Data = data; SetField(controller, typeof(Character), "portraits", heroPortraits);
             Object.Destroy(npcData); Object.Destroy(npcMapping);
@@ -500,6 +500,8 @@ namespace ZhaoHuoNatural
             Object.Destroy(avatarRect.gameObject); Object.Destroy(fixtureTalent);
             if (alternateHandle.IsValid()) Addressables.Release(alternateHandle);
 
+            yield return CharacterDiagnostics();
+
             File.WriteAllLines(Path.Combine(diagnosticDir, "portraits.tsv"), diagnosticRows.ToArray(), Encoding.UTF8);
             string summary = "PASS\nGame=" + Application.version + "\nUnity=" + Application.unityVersion + "\nResources=" + locations.Count + "\nReplaced=" + replacedCount + "\nOriginalFallback=" + fallbackCount + "\nNormalSetupPath=true\nAsyncAndSync=true\nUiSpriteMatch=true\nRepeatLoadCache=true\nNonProtagonistUnchanged=true\nAvatarPanelBranches=2\nAvatarPanelReplaced=" + avatarReplaced + "\nScope=isolated real StoryCharacterController and PlayerAvatarPanel fixtures, actual Addressables, game-created UI Images; no story/save simulation\n";
             File.WriteAllText(Path.Combine(diagnosticDir, "PASS.txt"), summary, Encoding.UTF8);
@@ -513,24 +515,30 @@ namespace ZhaoHuoNatural
     [HarmonyPatch(typeof(StoryCharacterController), "LoadPortrait", new Type[] { typeof(string) })]
     internal static class AsyncPortraitPatch
     {
-        private static void Postfix(StoryCharacterController __instance, ref IEnumerator __result)
+        private static void Postfix(StoryCharacterController __instance, string key, ref IEnumerator __result)
         {
-            if (__result != null && Plugin.IsProtagonist(__instance.Data)) __result = Plugin.AfterLoad(__result, __instance);
+            if (__result != null && Plugin.Instance != null && Plugin.Instance.RoleFor(__instance.Data) != null)
+                __result = Plugin.AfterScopedLoad(__result, __instance, key, null);
         }
     }
 
     [HarmonyPatch(typeof(StoryCharacterController), "LoadPortraitSync", new Type[] { typeof(string) })]
     internal static class SyncPortraitPatch
     {
-        private static void Postfix(StoryCharacterController __instance) { Plugin.Instance?.Apply(__instance); }
+        private static void Prefix(StoryCharacterController __instance, string key, out Plugin.PortraitLoad __state)
+        {
+            __state = Plugin.Instance == null ? null : Plugin.Instance.CaptureLoad(__instance, key, null);
+        }
+        private static void Postfix(StoryCharacterController __instance, Plugin.PortraitLoad __state) { Plugin.Instance?.CompleteLoad(__instance, __state); }
     }
 
     [HarmonyPatch(typeof(StoryCharacterController), "LoadPortraitAssetByAddressable", new Type[] { typeof(StoryCharaterImageItem[]) })]
     internal static class BulkPortraitPatch
     {
-        private static void Postfix(StoryCharacterController __instance, ref IEnumerator __result)
+        private static void Postfix(StoryCharacterController __instance, StoryCharaterImageItem[] list, ref IEnumerator __result)
         {
-            if (__result != null && Plugin.IsProtagonist(__instance.Data)) __result = Plugin.AfterLoad(__result, __instance);
+            if (__result != null && list != null && Plugin.Instance != null && Plugin.Instance.RoleFor(__instance.Data) != null)
+                __result = Plugin.AfterScopedLoad(__result, __instance, null, list);
         }
     }
 

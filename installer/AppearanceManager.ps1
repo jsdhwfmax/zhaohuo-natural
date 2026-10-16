@@ -20,9 +20,15 @@ function Enter-ZHOperation([string]$GamePath) {
 }
 function Install-ZhaoHuo {
     [CmdletBinding()]
-    param([Parameter(Mandatory=$true)][string]$GamePath,[Parameter(Mandatory=$true)][string]$PackageRoot,[switch]$CheckOnly,[scriptblock]$Log,[string]$VariantId)
+    param([Parameter(Mandatory=$true)][string]$GamePath,[Parameter(Mandatory=$true)][string]$PackageRoot,[switch]$CheckOnly,[scriptblock]$Log,[string]$VariantId,[string]$CharacterId='player')
+    if (Test-ZHMultiPackage $PackageRoot) {
+        if ([string]::IsNullOrWhiteSpace($VariantId)) { $VariantId='natural' }
+        return (Set-PortraitAppearance -GamePath $GamePath -PackageRoot $PackageRoot -CheckOnly:$CheckOnly -Log $Log -CharacterId $CharacterId -VariantId $VariantId)
+    }
+    if ($CharacterId -ne 'player') { throw '旧版包不支持其他角色，请使用多角色管理器。' }
+    $arguments=@{}; foreach($key in $PSBoundParameters.Keys){if($key-ne 'CharacterId'){$arguments[$key]=$PSBoundParameters[$key]}}
     $mutex = Enter-ZHOperation $GamePath
-    try { Invoke-ZHInstallCore @PSBoundParameters }
+    try { Invoke-ZHInstallCore @arguments }
     finally { $mutex.ReleaseMutex(); $mutex.Dispose() }
 }
 function Uninstall-ZhaoHuo {

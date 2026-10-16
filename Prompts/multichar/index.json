@@ -1,0 +1,1204 @@
+{
+  "Complete": true,
+  "GenerationMethod": "builtin imagegen",
+  "PixelPostProcessing": false,
+  "Assets": [
+    {
+      "CharacterId": "player",
+      "VariantId": "white",
+      "Name": "angry1.png",
+      "OutputSHA256": "F2DEEA045A08257F434524835F360B8D785FD185054C5283DDC77040F9982431",
+      "RecordPath": "Prompts/multichar/player/white-angry1.json"
+    },
+    {
+      "CharacterId": "player",
+      "VariantId": "white",
+      "Name": "angry2.png",
+      "OutputSHA256": "9F77F4E1D33EB8E4599D1D62C85AAF39ED0D1539AAD76F29EA45827925C056BB",
+      "RecordPath": "Prompts/multichar/player/white-angry2.json"
+    },
+    {
+      "CharacterId": "player",
+      "VariantId": "white",
+      "Name": "angry3.png",
+      "OutputSHA256": "7D47CE0B0A8CCD117DA01876584ED6DFF255911A1DC5C49D010537DCF3B59159",
+      "RecordPath": "Prompts/multichar/player/white-angry3.json"
+    },
+    {
+      "CharacterId": "player",
+      "VariantId": "white",
+      "Name": "blood.png",
+      "OutputSHA256": "16082482969C36A7374D4553D153C464754635849439B56E4BA9DB2E1CBE4707",
+      "RecordPath": "Prompts/multichar/player/white-blood.json"
+    },
+    {
+      "CharacterId": "player",
+      "VariantId": "white",
+      "Name": "blood_laugh1.png",
+      "OutputSHA256": "7E106AC9429135054D2AE6921E9AE1C5E12F48FFE4C318F0D68D762EB4F8C6B2",
+      "RecordPath": "Prompts/multichar/player/white-blood_laugh1.json"
+    },
+    {
+      "CharacterId": "player",
+      "VariantId": "white",
+      "Name": "blood_nervous1.png",
+      "OutputSHA256": "DBFE09A4F6003289769DC2D5DB264011943EE23AA801ED0B15F694D81B6F4224",
+      "RecordPath": "Prompts/multichar/player/white-blood_nervous1.json"
+    },
+    {
+      "CharacterId": "player",
+      "VariantId": "white",
+      "Name": "blood_no_weapon.png",
+      "OutputSHA256": "F45F6DE32D297336C5A846153F447B3A2F9E092552A079A4C80D1106F3B506EC",
+      "RecordPath": "Prompts/multichar/player/white-blood_no_weapon.json"
+    },
+    {
+      "CharacterId": "player",
+      "VariantId": "white",
+      "Name": "blood_no_weapon_laugh1.png",
+      "OutputSHA256": "FDF953D48CAACD48A598D7498B0BDC9989E435C018FDDB4E7CCF74A89CD6F664",
+      "RecordPath": "Prompts/multichar/player/white-blood_no_weapon_laugh1.json"
+    },
+    {
+      "CharacterId": "player",
+      "VariantId": "white",
+      "Name": "caught.png",
+      "OutputSHA256": "BA18EFFCAE4F942165983272FEB0277E886973B802768C0DCD0C63B9F0EC7AD9",
+      "RecordPath": "Prompts/multichar/player/white-caught.json"
+    },
+    {
+      "CharacterId": "player",
+      "VariantId": "white",
+      "Name": "close_eye.png",
+      "OutputSHA256": "AE9A80CD82E7BE7D61E22B4BB2970477493C8B6FD4740B334D0350A5DF0ECD9F",
+      "RecordPath": "Prompts/multichar/player/white-close_eye.json"
+    },
+    {
+      "CharacterId": "player",
+      "VariantId": "white",
+      "Name": "close_eye_laugh.png",
+      "OutputSHA256": "D19591B61F690FC406B816CEF33139E7315944A2ECA3C7455332A3C10C8C1A26",
+      "RecordPath": "Prompts/multichar/player/white-close_eye_laugh.json"
+    },
+    {
+      "CharacterId": "player",
+      "VariantId": "white",
+      "Name": "close_eye_nervous.png",
+      "OutputSHA256": "67BE6E423AA5B16CE84664447381E8085749ECB47376D4C6CA2CB86C709DDA4B",
+      "RecordPath": "Prompts/multichar/player/white-close_eye_nervous.json"
+    },
+    {
+      "CharacterId": "player",
+      "VariantId": "white",
+      "Name": "close_eye_nervous2.png",
+      "OutputSHA256": "C073DE961DE5AD5A0827B49B95FF88A5B031A2A7D22BD6FA0C81FA49FBE936C4",
+      "RecordPath": "Prompts/multichar/player/white-close_eye_nervous2.json"
+    },
+    {
+      "CharacterId": "player",
+      "VariantId": "white",
+      "Name": "close_eye_powder.png",
+      "OutputSHA256": "BF8CC1577B1808C2407748C6841B99014E6B5937A71BAB0C1BD4EBAC3DA90234",
+      "RecordPath": "Prompts/multichar/player/white-close_eye_powder.json"
+    },
+    {
+      "CharacterId": "player",
+      "VariantId": "white",
+      "Name": "determined.png",
+      "OutputSHA256": "CF8CBC3BDE3D3546C9468E3F59A33B34788DBCB86430825B14962DD4F14F2B13",
+      "RecordPath": "Prompts/multichar/player/white-determined.json"
+    },
+    {
+      "CharacterId": "player",
+      "VariantId": "white",
+      "Name": "die.png",
+      "OutputSHA256": "7B6AB103E03ACD039E405347C851E0E741F522964C07DE72B304A92AC964BE59",
+      "RecordPath": "Prompts/multichar/player/white-die.json"
+    },
+    {
+      "CharacterId": "player",
+      "VariantId": "white",
+      "Name": "doubt.png",
+      "OutputSHA256": "5EEDF543962E466E3A462D397BD621732BB35EA3A581BAA4D9470E7FB1B06DDD",
+      "RecordPath": "Prompts/multichar/player/white-doubt.json"
+    },
+    {
+      "CharacterId": "player",
+      "VariantId": "white",
+      "Name": "eye_mask_nervous1.png",
+      "OutputSHA256": "D457D48C2AA5215CABA339AE975E4839A328207A00EEB480C672E2308FEEA9C9",
+      "RecordPath": "Prompts/multichar/player/white-eye_mask_nervous1.json"
+    },
+    {
+      "CharacterId": "player",
+      "VariantId": "white",
+      "Name": "eye_mask_nervous2.png",
+      "OutputSHA256": "4034ADA914856A9167D57AED6E5C8B636329342BD36471F6B7DA258580B04938",
+      "RecordPath": "Prompts/multichar/player/white-eye_mask_nervous2.json"
+    },
+    {
+      "CharacterId": "player",
+      "VariantId": "white",
+      "Name": "fist_north_star.png",
+      "OutputSHA256": "09941E23E17D1A0859EC8B7A01C86E811BE2756B4ED1F5FB4EDD02E1BB51F64E",
+      "RecordPath": "Prompts/multichar/player/white-fist_north_star.json"
+    },
+    {
+      "CharacterId": "player",
+      "VariantId": "white",
+      "Name": "gloomy2.png",
+      "OutputSHA256": "EC99C3C5A473E20D7374D9CED6B4E42738563621EF6FDA3A9A4F3B645B897223",
+      "RecordPath": "Prompts/multichar/player/white-gloomy2.json"
+    },
+    {
+      "CharacterId": "player",
+      "VariantId": "white",
+      "Name": "god_thunder.png",
+      "OutputSHA256": "67D8CEEA64C692ED511E8D284A0508B9C86FB86C1427F56CE5FD531CCFFCCCCE",
+      "RecordPath": "Prompts/multichar/player/white-god_thunder.json"
+    },
+    {
+      "CharacterId": "player",
+      "VariantId": "white",
+      "Name": "head.png",
+      "OutputSHA256": "4019085E6BFC09C7DD23F864214352AB16C29C0BEEE71E58C133A122442B0BF1",
+      "RecordPath": "Prompts/multichar/player/white-head.json"
+    },
+    {
+      "CharacterId": "player",
+      "VariantId": "white",
+      "Name": "hero_landing.png",
+      "OutputSHA256": "F16E476106267BA2A26F8596ED033A9C95299BBE096C62A66215C3AC3078B120",
+      "RecordPath": "Prompts/multichar/player/white-hero_landing.json"
+    },
+    {
+      "CharacterId": "player",
+      "VariantId": "white",
+      "Name": "hurt.png",
+      "OutputSHA256": "7CAA7BF4B09EB7D6ED0776DF37EC65FFCD07AB5FF2AC73F8586F3F307D4AA346",
+      "RecordPath": "Prompts/multichar/player/white-hurt.json"
+    },
+    {
+      "CharacterId": "player",
+      "VariantId": "white",
+      "Name": "hurt2.png",
+      "OutputSHA256": "BA728E2DF1B38CCDD79F13898B95628583F5EAA0CEB1A3B01E6C541419EB34F5",
+      "RecordPath": "Prompts/multichar/player/white-hurt2.json"
+    },
+    {
+      "CharacterId": "player",
+      "VariantId": "white",
+      "Name": "hurt_fist.png",
+      "OutputSHA256": "235057C9644CBA508BA0738ECDC64865DF64EE4DC95705B51398029260E5D9A4",
+      "RecordPath": "Prompts/multichar/player/white-hurt_fist.json"
+    },
+    {
+      "CharacterId": "player",
+      "VariantId": "white",
+      "Name": "laugh1.png",
+      "OutputSHA256": "C1FB7D1AFC8E2F708C73EC547C6DD0962F17EB47206478CFF9B48E673ECF0B09",
+      "RecordPath": "Prompts/multichar/player/white-laugh1.json"
+    },
+    {
+      "CharacterId": "player",
+      "VariantId": "white",
+      "Name": "laugh2.png",
+      "OutputSHA256": "421CFC26D79521D3825614F2A9E82181A29F186D98791F7B8CB4AB85C3EA93C8",
+      "RecordPath": "Prompts/multichar/player/white-laugh2.json"
+    },
+    {
+      "CharacterId": "player",
+      "VariantId": "white",
+      "Name": "mask.png",
+      "OutputSHA256": "FBEDBC4EC109901F43E1CAC0986DC8FFCA0AE44EFE961D567D0C2A47011FB627",
+      "RecordPath": "Prompts/multichar/player/white-mask.json"
+    },
+    {
+      "CharacterId": "player",
+      "VariantId": "white",
+      "Name": "mud.png",
+      "OutputSHA256": "7857C818071164624B2F548F1A14CF55ECFA841443C8D2CF2E1A192858AE9150",
+      "RecordPath": "Prompts/multichar/player/white-mud.json"
+    },
+    {
+      "CharacterId": "player",
+      "VariantId": "white",
+      "Name": "nervous1.png",
+      "OutputSHA256": "167781875096B629DF6E780878623921D734C3B27B9C4A7E751E64D4F3A8B373",
+      "RecordPath": "Prompts/multichar/player/white-nervous1.json"
+    },
+    {
+      "CharacterId": "player",
+      "VariantId": "white",
+      "Name": "nervous2.png",
+      "OutputSHA256": "77F03BE8C35918B85506453586A94099536C67EC4BBFD620D23363BD004F9E68",
+      "RecordPath": "Prompts/multichar/player/white-nervous2.json"
+    },
+    {
+      "CharacterId": "player",
+      "VariantId": "white",
+      "Name": "nervous3.png",
+      "OutputSHA256": "37A9D8814EA09F2988782DDCF582323B59D1E3DFB6370E775FF36B649BC501BB",
+      "RecordPath": "Prompts/multichar/player/white-nervous3.json"
+    },
+    {
+      "CharacterId": "player",
+      "VariantId": "white",
+      "Name": "normal.png",
+      "OutputSHA256": "69323D1BDB36E9D78F18A757779ADE75BDAD45E3D6C5586C222A92D615305448",
+      "RecordPath": "Prompts/multichar/player/white-normal.json"
+    },
+    {
+      "CharacterId": "player",
+      "VariantId": "white",
+      "Name": "oraora.png",
+      "OutputSHA256": "F41B0295398F2BB42FAB7A0E63B47E474D524FBEFAE5735343A894D77EAC5C57",
+      "RecordPath": "Prompts/multichar/player/white-oraora.json"
+    },
+    {
+      "CharacterId": "player",
+      "VariantId": "white",
+      "Name": "revel.png",
+      "OutputSHA256": "B8DA9C0C364AD4B061A8A073C0DA8CD38477CD8686377344F9F5C86BF63A36DE",
+      "RecordPath": "Prompts/multichar/player/white-revel.json"
+    },
+    {
+      "CharacterId": "player",
+      "VariantId": "white",
+      "Name": "sad1.png",
+      "OutputSHA256": "4A44BD74ADA484880B461887A7A079F9AA0D20209C2172A8B82E348192A5760D",
+      "RecordPath": "Prompts/multichar/player/white-sad1.json"
+    },
+    {
+      "CharacterId": "player",
+      "VariantId": "white",
+      "Name": "shake.png",
+      "OutputSHA256": "43A5B45C6B3433EA561A738EA8C3487144FAF254B48B3CE63FCC6787B0FF73D5",
+      "RecordPath": "Prompts/multichar/player/white-shake.json"
+    },
+    {
+      "CharacterId": "player",
+      "VariantId": "white",
+      "Name": "shake2.png",
+      "OutputSHA256": "91100EDFC1EEEE62D4AD53525035D87FF3AF03189DE78E9C21CBDE43F4334323",
+      "RecordPath": "Prompts/multichar/player/white-shake2.json"
+    },
+    {
+      "CharacterId": "player",
+      "VariantId": "white",
+      "Name": "shock.png",
+      "OutputSHA256": "E2CB22D46214189157C0E00061980FEE20D58E5B886DF060B92195A9B769493F",
+      "RecordPath": "Prompts/multichar/player/white-shock.json"
+    },
+    {
+      "CharacterId": "player",
+      "VariantId": "white",
+      "Name": "soul.png",
+      "OutputSHA256": "EBB1CEE4708C661A57052331FB1905ADCFAC1A85899D412766B7007F43597EC7",
+      "RecordPath": "Prompts/multichar/player/white-soul.json"
+    },
+    {
+      "CharacterId": "player",
+      "VariantId": "white",
+      "Name": "special1.png",
+      "OutputSHA256": "7C8F309140BD0B7F682866138FBC301DB858C16242854BE6DB5F3B70161ED20E",
+      "RecordPath": "Prompts/multichar/player/white-special1.json"
+    },
+    {
+      "CharacterId": "player",
+      "VariantId": "white",
+      "Name": "stupid.png",
+      "OutputSHA256": "FC265B01372B2554F61BB7E93641D18EFFABD84F1582A046FD1E988127CF019A",
+      "RecordPath": "Prompts/multichar/player/white-stupid.json"
+    },
+    {
+      "CharacterId": "player",
+      "VariantId": "white",
+      "Name": "suck1.png",
+      "OutputSHA256": "AF4153E05C8D468158AE2A272728AE5D5491B122AF8BBE3E9D72802E259B90A5",
+      "RecordPath": "Prompts/multichar/player/white-suck1.json"
+    },
+    {
+      "CharacterId": "player",
+      "VariantId": "white",
+      "Name": "suck3.png",
+      "OutputSHA256": "A134537FF4901A66E2457703CE9263D1EFB86668A97BCA299AF8938DAD3657AB",
+      "RecordPath": "Prompts/multichar/player/white-suck3.json"
+    },
+    {
+      "CharacterId": "player",
+      "VariantId": "white",
+      "Name": "suck4.png",
+      "OutputSHA256": "90065CEEABB0C4D9098D88245BEE2F25D876DAED4D0E67ED3CD543A87588F925",
+      "RecordPath": "Prompts/multichar/player/white-suck4.json"
+    },
+    {
+      "CharacterId": "player",
+      "VariantId": "black",
+      "Name": "angry1.png",
+      "OutputSHA256": "9B1E86186FF88EAE9AE973EC467C58080CE5E9C4DBCFEEC9FAC6537E28C43808",
+      "RecordPath": "Prompts/multichar/player/black-angry1.json"
+    },
+    {
+      "CharacterId": "player",
+      "VariantId": "black",
+      "Name": "angry2.png",
+      "OutputSHA256": "9F26D4BB8C8E1BE02B6C6280DBD0EA683E5D7A779AA272FC96528A4927AD73C3",
+      "RecordPath": "Prompts/multichar/player/black-angry2.json"
+    },
+    {
+      "CharacterId": "player",
+      "VariantId": "black",
+      "Name": "angry3.png",
+      "OutputSHA256": "41DD30FF9CA3626231CF20EDF437B0AF1F6C09D1E14EADDAEFCA0A90B60359FA",
+      "RecordPath": "Prompts/multichar/player/black-angry3.json"
+    },
+    {
+      "CharacterId": "player",
+      "VariantId": "black",
+      "Name": "blood.png",
+      "OutputSHA256": "F16387F6AF24FC312788187E5C96C3C0E7985A2A59AE85D7E54DA3410DA6D58C",
+      "RecordPath": "Prompts/multichar/player/black-blood.json"
+    },
+    {
+      "CharacterId": "player",
+      "VariantId": "black",
+      "Name": "blood_laugh1.png",
+      "OutputSHA256": "5AE050EF1A1900CDF976A56E0BE1E88A13E3273DDF325AED32BB1B3519A904D7",
+      "RecordPath": "Prompts/multichar/player/black-blood_laugh1.json"
+    },
+    {
+      "CharacterId": "player",
+      "VariantId": "black",
+      "Name": "blood_nervous1.png",
+      "OutputSHA256": "4F11E04E839B043303E844E5C552483640D173E93A53EAE0F575309B7E4B836F",
+      "RecordPath": "Prompts/multichar/player/black-blood_nervous1.json"
+    },
+    {
+      "CharacterId": "player",
+      "VariantId": "black",
+      "Name": "blood_no_weapon.png",
+      "OutputSHA256": "2389D63F73973FDD274B716BBD1B45F9BB56989389F8DE94E423DF1B2E9F4AD7",
+      "RecordPath": "Prompts/multichar/player/black-blood_no_weapon.json"
+    },
+    {
+      "CharacterId": "player",
+      "VariantId": "black",
+      "Name": "blood_no_weapon_laugh1.png",
+      "OutputSHA256": "15520A64D1CB23DBE3BA1FFE19C39A0AC60076303207C57F4948B1D554B906D5",
+      "RecordPath": "Prompts/multichar/player/black-blood_no_weapon_laugh1.json"
+    },
+    {
+      "CharacterId": "player",
+      "VariantId": "black",
+      "Name": "caught.png",
+      "OutputSHA256": "CEBAB80BFF3F7668DE7A10B5C0AA8C5699EADB9F6057E67115383CEFB91E6D58",
+      "RecordPath": "Prompts/multichar/player/black-caught.json"
+    },
+    {
+      "CharacterId": "player",
+      "VariantId": "black",
+      "Name": "close_eye.png",
+      "OutputSHA256": "9A5BA5EAB9A408A8008C2FD1F8E5EC098174D73C69F6925E4CADC9FCF8A7A7B7",
+      "RecordPath": "Prompts/multichar/player/black-close_eye.json"
+    },
+    {
+      "CharacterId": "player",
+      "VariantId": "black",
+      "Name": "close_eye_laugh.png",
+      "OutputSHA256": "FFB1EB6930E39AB6B3CCE8CDDBE32268FC4AB82DECBEDD7B725019EB20AC7671",
+      "RecordPath": "Prompts/multichar/player/black-close_eye_laugh.json"
+    },
+    {
+      "CharacterId": "player",
+      "VariantId": "black",
+      "Name": "close_eye_nervous.png",
+      "OutputSHA256": "4DBD89BB007E5ECF37ACA6CEDF7831C38A5155552AF8DA69CD240ED01565ACC4",
+      "RecordPath": "Prompts/multichar/player/black-close_eye_nervous.json"
+    },
+    {
+      "CharacterId": "player",
+      "VariantId": "black",
+      "Name": "close_eye_nervous2.png",
+      "OutputSHA256": "BB93E713039CFBDD982503CFCCB6F8B4197AF994E5BB9E80D0FCCB5501FA1445",
+      "RecordPath": "Prompts/multichar/player/black-close_eye_nervous2.json"
+    },
+    {
+      "CharacterId": "player",
+      "VariantId": "black",
+      "Name": "close_eye_powder.png",
+      "OutputSHA256": "DE81CB5D98FF56B56274B41730ED75F6FA19C9D36E147C039A55CD324A70FFC4",
+      "RecordPath": "Prompts/multichar/player/black-close_eye_powder.json"
+    },
+    {
+      "CharacterId": "player",
+      "VariantId": "black",
+      "Name": "determined.png",
+      "OutputSHA256": "01CC4C07BEC56A7D258A095AD5986FD0EEEAC058638FBF073A210B2321442B92",
+      "RecordPath": "Prompts/multichar/player/black-determined.json"
+    },
+    {
+      "CharacterId": "player",
+      "VariantId": "black",
+      "Name": "die.png",
+      "OutputSHA256": "A6FC1A5CB38325FA66DE34227878D71D0D9E35342422E1E194C7D28461FC8345",
+      "RecordPath": "Prompts/multichar/player/black-die.json"
+    },
+    {
+      "CharacterId": "player",
+      "VariantId": "black",
+      "Name": "doubt.png",
+      "OutputSHA256": "8F169C170D21B9A79898F99925826F3FBDB8A6DE6516DC86FAA15E51F9A0D0F6",
+      "RecordPath": "Prompts/multichar/player/black-doubt.json"
+    },
+    {
+      "CharacterId": "player",
+      "VariantId": "black",
+      "Name": "eye_mask_nervous1.png",
+      "OutputSHA256": "CF9E032D376A1976BD2C1A476EC1E9AC20852DC43DCA3DEE37387C0546C55763",
+      "RecordPath": "Prompts/multichar/player/black-eye_mask_nervous1.json"
+    },
+    {
+      "CharacterId": "player",
+      "VariantId": "black",
+      "Name": "eye_mask_nervous2.png",
+      "OutputSHA256": "08FC641A9F44A83F5215E378154E9C66CCF97C943B0407BAF9BC52325242F77D",
+      "RecordPath": "Prompts/multichar/player/black-eye_mask_nervous2.json"
+    },
+    {
+      "CharacterId": "player",
+      "VariantId": "black",
+      "Name": "fist_north_star.png",
+      "OutputSHA256": "E2A4C0C33252E27015145F8950208F80E424851E717B7FE73F27730B399F3540",
+      "RecordPath": "Prompts/multichar/player/black-fist_north_star.json"
+    },
+    {
+      "CharacterId": "player",
+      "VariantId": "black",
+      "Name": "gloomy2.png",
+      "OutputSHA256": "9F62550B3F884D1514D51D5420FACAE62624CBA7245B9C5121ED4C01455D762C",
+      "RecordPath": "Prompts/multichar/player/black-gloomy2.json"
+    },
+    {
+      "CharacterId": "player",
+      "VariantId": "black",
+      "Name": "god_thunder.png",
+      "OutputSHA256": "837D017C0491596905706B354230EFC81D53111B9DA4C195CA6A412197443015",
+      "RecordPath": "Prompts/multichar/player/black-god_thunder.json"
+    },
+    {
+      "CharacterId": "player",
+      "VariantId": "black",
+      "Name": "head.png",
+      "OutputSHA256": "7C577550F885180F81AFA4BA666677BBBF65D6A71FE5EE27242D3133283B5B78",
+      "RecordPath": "Prompts/multichar/player/black-head.json"
+    },
+    {
+      "CharacterId": "player",
+      "VariantId": "black",
+      "Name": "hero_landing.png",
+      "OutputSHA256": "42762A0E3C8F36529E2EE439AC5EA10F735C636593D471A7B87FE12BC383B754",
+      "RecordPath": "Prompts/multichar/player/black-hero_landing.json"
+    },
+    {
+      "CharacterId": "player",
+      "VariantId": "black",
+      "Name": "hurt.png",
+      "OutputSHA256": "BC4F7C2959E644F32A8081B1903B85179818D91970D7CB0BBF25177CB7893CFC",
+      "RecordPath": "Prompts/multichar/player/black-hurt.json"
+    },
+    {
+      "CharacterId": "player",
+      "VariantId": "black",
+      "Name": "hurt2.png",
+      "OutputSHA256": "F462264E253C7CA0FF2AF990BCFF898D9ECD48DE080AF2BD0CE59B04D0BEDDCF",
+      "RecordPath": "Prompts/multichar/player/black-hurt2.json"
+    },
+    {
+      "CharacterId": "player",
+      "VariantId": "black",
+      "Name": "hurt_fist.png",
+      "OutputSHA256": "9992EF165FF1AC6E52710FDD5F1AD973B6D0CF4C28FCBA623AC27C5103091CDE",
+      "RecordPath": "Prompts/multichar/player/black-hurt_fist.json"
+    },
+    {
+      "CharacterId": "player",
+      "VariantId": "black",
+      "Name": "laugh1.png",
+      "OutputSHA256": "47DB7830641DC474B84A791B2BBCADA61206B7193A750A41320E2585316D524E",
+      "RecordPath": "Prompts/multichar/player/black-laugh1.json"
+    },
+    {
+      "CharacterId": "player",
+      "VariantId": "black",
+      "Name": "laugh2.png",
+      "OutputSHA256": "4C23946B9F6BFD53CF65A9D9AA01AC95EB4B71AC62ECE39A897D9DC83F36E2CF",
+      "RecordPath": "Prompts/multichar/player/black-laugh2.json"
+    },
+    {
+      "CharacterId": "player",
+      "VariantId": "black",
+      "Name": "mask.png",
+      "OutputSHA256": "141D29DBD891589997845FBC38B158EEA244B76C800C5F9760C0796AFAD8A93E",
+      "RecordPath": "Prompts/multichar/player/black-mask.json"
+    },
+    {
+      "CharacterId": "player",
+      "VariantId": "black",
+      "Name": "mud.png",
+      "OutputSHA256": "CDD12BE1642A4812F2B01C6EA1257719C54332B609A7A7C45C30D9DB2A939A3A",
+      "RecordPath": "Prompts/multichar/player/black-mud.json"
+    },
+    {
+      "CharacterId": "player",
+      "VariantId": "black",
+      "Name": "nervous1.png",
+      "OutputSHA256": "1AA1B76C4FA53217DF7D6FDB616E57DF0FA2B5E932076CADBF122917F126DAC1",
+      "RecordPath": "Prompts/multichar/player/black-nervous1.json"
+    },
+    {
+      "CharacterId": "player",
+      "VariantId": "black",
+      "Name": "nervous2.png",
+      "OutputSHA256": "52425DBF7A361033EF6728911BA790999FD1461C5853D618AE27BD3FB3CAC3CD",
+      "RecordPath": "Prompts/multichar/player/black-nervous2.json"
+    },
+    {
+      "CharacterId": "player",
+      "VariantId": "black",
+      "Name": "nervous3.png",
+      "OutputSHA256": "0224E68DEFCDB958A571795A7846727C583753F83E323B6D1615BB7A78B45EB9",
+      "RecordPath": "Prompts/multichar/player/black-nervous3.json"
+    },
+    {
+      "CharacterId": "player",
+      "VariantId": "black",
+      "Name": "normal.png",
+      "OutputSHA256": "6109C0C7F52ACFB7B5C6942F0A96CE375AB5770F230417C9530BAB178C63608E",
+      "RecordPath": "Prompts/multichar/player/black-normal.json"
+    },
+    {
+      "CharacterId": "player",
+      "VariantId": "black",
+      "Name": "oraora.png",
+      "OutputSHA256": "E550A5CE30F74270EAFC4C0D81527D2C77E99BCAF0FC9C47480A734A1D094D21",
+      "RecordPath": "Prompts/multichar/player/black-oraora.json"
+    },
+    {
+      "CharacterId": "player",
+      "VariantId": "black",
+      "Name": "revel.png",
+      "OutputSHA256": "840E0850F933675377C3ECE7B1E42C27A3B09C7BDC2199390CC86DD0E3AF6915",
+      "RecordPath": "Prompts/multichar/player/black-revel.json"
+    },
+    {
+      "CharacterId": "player",
+      "VariantId": "black",
+      "Name": "sad1.png",
+      "OutputSHA256": "D0138FDBB008F46A3A5DF752163904618139F09459F3A614B671593CF0EDB193",
+      "RecordPath": "Prompts/multichar/player/black-sad1.json"
+    },
+    {
+      "CharacterId": "player",
+      "VariantId": "black",
+      "Name": "shake.png",
+      "OutputSHA256": "724C5D70A9C221C50030E2F59C657870E94F722A769EA2CC9ABC961E64A294A5",
+      "RecordPath": "Prompts/multichar/player/black-shake.json"
+    },
+    {
+      "CharacterId": "player",
+      "VariantId": "black",
+      "Name": "shake2.png",
+      "OutputSHA256": "26866ECAC7A87E4AA915E9B4C7F15AC988B504EFF83A8511F9EA925B5C2EB07D",
+      "RecordPath": "Prompts/multichar/player/black-shake2.json"
+    },
+    {
+      "CharacterId": "player",
+      "VariantId": "black",
+      "Name": "shock.png",
+      "OutputSHA256": "FD29756A597E05771A0D22456B43BC9293C3EF917B2C87A01444678AD0FEF2DD",
+      "RecordPath": "Prompts/multichar/player/black-shock.json"
+    },
+    {
+      "CharacterId": "player",
+      "VariantId": "black",
+      "Name": "soul.png",
+      "OutputSHA256": "E70B435EB66EBF0457779D08C14669ECB346375B191FADD7C53A528D0FAAB269",
+      "RecordPath": "Prompts/multichar/player/black-soul.json"
+    },
+    {
+      "CharacterId": "player",
+      "VariantId": "black",
+      "Name": "special1.png",
+      "OutputSHA256": "784996AE3160A449059DB7F7ABEE29E8AF0A918575A988A7D43BE273DCDB6A8F",
+      "RecordPath": "Prompts/multichar/player/black-special1.json"
+    },
+    {
+      "CharacterId": "player",
+      "VariantId": "black",
+      "Name": "stupid.png",
+      "OutputSHA256": "B03BFAD3C2095C239A55A462D4AA1826605872008262CC0E358A13CF0319DFFC",
+      "RecordPath": "Prompts/multichar/player/black-stupid.json"
+    },
+    {
+      "CharacterId": "player",
+      "VariantId": "black",
+      "Name": "suck1.png",
+      "OutputSHA256": "2BBDA0E0F21B5D59E2F04DC61E5B257DC3A49E4A9EDA682E39F5FDCDFC0355CD",
+      "RecordPath": "Prompts/multichar/player/black-suck1.json"
+    },
+    {
+      "CharacterId": "player",
+      "VariantId": "black",
+      "Name": "suck3.png",
+      "OutputSHA256": "56B019ECC82C546D8035793789D5297D764531AF2660B50A61C2FED1C065D250",
+      "RecordPath": "Prompts/multichar/player/black-suck3.json"
+    },
+    {
+      "CharacterId": "player",
+      "VariantId": "black",
+      "Name": "suck4.png",
+      "OutputSHA256": "1AE2838BE42233935939C93456ED8B72BD7203E5866C001CEE67962426803EB5",
+      "RecordPath": "Prompts/multichar/player/black-suck4.json"
+    },
+    {
+      "CharacterId": "player",
+      "VariantId": "veteran",
+      "Name": "angry1.png",
+      "OutputSHA256": "C451ED13C46A6CE13E1AD7076356F82AEF995B0674E80016BCD67419EBCE65F1",
+      "RecordPath": "Prompts/multichar/player/veteran-angry1.json"
+    },
+    {
+      "CharacterId": "player",
+      "VariantId": "veteran",
+      "Name": "angry2.png",
+      "OutputSHA256": "ACE14B3B97211676D6143300F134A272EBE4733A67867C12CC8F0E363E8B351A",
+      "RecordPath": "Prompts/multichar/player/veteran-angry2.json"
+    },
+    {
+      "CharacterId": "player",
+      "VariantId": "veteran",
+      "Name": "angry3.png",
+      "OutputSHA256": "1F7F9094BF1D25929653168F9F560F47B90E4D7CFD6C34A0A91DC5878344BB37",
+      "RecordPath": "Prompts/multichar/player/veteran-angry3.json"
+    },
+    {
+      "CharacterId": "player",
+      "VariantId": "veteran",
+      "Name": "blood.png",
+      "OutputSHA256": "1237D76F0C0D5DE33FDAB527F6B6E7F1990EF4BBCB458D743192EFD47698F64E",
+      "RecordPath": "Prompts/multichar/player/veteran-blood.json"
+    },
+    {
+      "CharacterId": "player",
+      "VariantId": "veteran",
+      "Name": "blood_laugh1.png",
+      "OutputSHA256": "18B8C4132669DCD8C94047E45CD53B0E3DBFC18A76285134FFDEA857584CB631",
+      "RecordPath": "Prompts/multichar/player/veteran-blood_laugh1.json"
+    },
+    {
+      "CharacterId": "player",
+      "VariantId": "veteran",
+      "Name": "blood_nervous1.png",
+      "OutputSHA256": "A1278CFEC4CCFD3087453AB780B49D0A23835500F7534C3D4AD978E70E8721D6",
+      "RecordPath": "Prompts/multichar/player/veteran-blood_nervous1.json"
+    },
+    {
+      "CharacterId": "player",
+      "VariantId": "veteran",
+      "Name": "blood_no_weapon.png",
+      "OutputSHA256": "7A5CCE5DE34C05C3D49B9768DEF82B32C9801AFE12BF09FB3BB3C933A78F66B1",
+      "RecordPath": "Prompts/multichar/player/veteran-blood_no_weapon.json"
+    },
+    {
+      "CharacterId": "player",
+      "VariantId": "veteran",
+      "Name": "blood_no_weapon_laugh1.png",
+      "OutputSHA256": "53EAFD49CFD77D0F21CC9DF30E9E916F19706F98760945DC123B8523781EF59F",
+      "RecordPath": "Prompts/multichar/player/veteran-blood_no_weapon_laugh1.json"
+    },
+    {
+      "CharacterId": "player",
+      "VariantId": "veteran",
+      "Name": "caught.png",
+      "OutputSHA256": "CBB4E30D380FCC20D0691F149633EA8834D8F180A12FD562A26E80BC91A1AA12",
+      "RecordPath": "Prompts/multichar/player/veteran-caught.json"
+    },
+    {
+      "CharacterId": "player",
+      "VariantId": "veteran",
+      "Name": "close_eye.png",
+      "OutputSHA256": "59C5F4DCB2C305257F8CCFDCF0F4D66FD6D1AF8DEC6938CF3544FB2DE220F423",
+      "RecordPath": "Prompts/multichar/player/veteran-close_eye.json"
+    },
+    {
+      "CharacterId": "player",
+      "VariantId": "veteran",
+      "Name": "close_eye_laugh.png",
+      "OutputSHA256": "7F8FF5BB7DD8D73C9C0ED3B4FDB0737670AA320A0B3DCF01D25C7179E905C666",
+      "RecordPath": "Prompts/multichar/player/veteran-close_eye_laugh.json"
+    },
+    {
+      "CharacterId": "player",
+      "VariantId": "veteran",
+      "Name": "close_eye_nervous.png",
+      "OutputSHA256": "85951F7CA44D60A615E978CD1A474358F29169BA51C2433A788944AE87ACDE10",
+      "RecordPath": "Prompts/multichar/player/veteran-close_eye_nervous.json"
+    },
+    {
+      "CharacterId": "player",
+      "VariantId": "veteran",
+      "Name": "close_eye_nervous2.png",
+      "OutputSHA256": "A875B0B4A145B26EF2647E0A34F7A6585EB123F559A7F1B2720C9CFC5091EA57",
+      "RecordPath": "Prompts/multichar/player/veteran-close_eye_nervous2.json"
+    },
+    {
+      "CharacterId": "player",
+      "VariantId": "veteran",
+      "Name": "close_eye_powder.png",
+      "OutputSHA256": "0C7389FAA80D8F987A7A5D87B661CE3C7FB4723F623E068750427404A504E7D2",
+      "RecordPath": "Prompts/multichar/player/veteran-close_eye_powder.json"
+    },
+    {
+      "CharacterId": "player",
+      "VariantId": "veteran",
+      "Name": "determined.png",
+      "OutputSHA256": "431AD8DE5870A30E5472279CD5D5C15B74EF072D8CB3CE5D6D39F51A0E9C7BCF",
+      "RecordPath": "Prompts/multichar/player/veteran-determined.json"
+    },
+    {
+      "CharacterId": "player",
+      "VariantId": "veteran",
+      "Name": "die.png",
+      "OutputSHA256": "F924F3F53F6D699A064F1B08641FF8F782DE13709CA06EEBE322BC9894476186",
+      "RecordPath": "Prompts/multichar/player/veteran-die.json"
+    },
+    {
+      "CharacterId": "player",
+      "VariantId": "veteran",
+      "Name": "doubt.png",
+      "OutputSHA256": "DACAE943382A222D5DB682A4D1F21ECA976D662298D8667586E0D16061028F24",
+      "RecordPath": "Prompts/multichar/player/veteran-doubt.json"
+    },
+    {
+      "CharacterId": "player",
+      "VariantId": "veteran",
+      "Name": "eye_mask_nervous1.png",
+      "OutputSHA256": "30B78401FA1A7F7D83E0006ECE97E7EACE19CE9DE21D64B16E026E4EF03120FA",
+      "RecordPath": "Prompts/multichar/player/veteran-eye_mask_nervous1.json"
+    },
+    {
+      "CharacterId": "player",
+      "VariantId": "veteran",
+      "Name": "eye_mask_nervous2.png",
+      "OutputSHA256": "991528E6E4976DDEC0746C5E45A99ABE9BC32518D1D2FA7B6ADE27AF86FF6821",
+      "RecordPath": "Prompts/multichar/player/veteran-eye_mask_nervous2.json"
+    },
+    {
+      "CharacterId": "player",
+      "VariantId": "veteran",
+      "Name": "fist_north_star.png",
+      "OutputSHA256": "88E08AB553599EEF74BD73067F076B4CD11BCE37830CD4C73ABBA6A4BD5BBD21",
+      "RecordPath": "Prompts/multichar/player/veteran-fist_north_star.json"
+    },
+    {
+      "CharacterId": "player",
+      "VariantId": "veteran",
+      "Name": "gloomy2.png",
+      "OutputSHA256": "5D186EC70E248E6970B9541D2634816D707D52F2C061A6333C0F06289FF685A0",
+      "RecordPath": "Prompts/multichar/player/veteran-gloomy2.json"
+    },
+    {
+      "CharacterId": "player",
+      "VariantId": "veteran",
+      "Name": "god_thunder.png",
+      "OutputSHA256": "21EFEF88C1A2FCAFFB27D90152A2CFA1F2F03E62017D299C3D4C3A91A13A8682",
+      "RecordPath": "Prompts/multichar/player/veteran-god_thunder.json"
+    },
+    {
+      "CharacterId": "player",
+      "VariantId": "veteran",
+      "Name": "head.png",
+      "OutputSHA256": "C039967D71C0279CE7340228865A3DF642F4AF90703EA6EF476520674D04F4D8",
+      "RecordPath": "Prompts/multichar/player/veteran-head.json"
+    },
+    {
+      "CharacterId": "player",
+      "VariantId": "veteran",
+      "Name": "hero_landing.png",
+      "OutputSHA256": "4B2AF4ADA82E94AE8F8CB3F0B5B27A466041AF912728E6D4FFA42160F36A52BA",
+      "RecordPath": "Prompts/multichar/player/veteran-hero_landing.json"
+    },
+    {
+      "CharacterId": "player",
+      "VariantId": "veteran",
+      "Name": "hurt.png",
+      "OutputSHA256": "2C36E1A0AB1F806234788F2E860AF8ED3FB5FF297903798E324EDC9AB460A738",
+      "RecordPath": "Prompts/multichar/player/veteran-hurt.json"
+    },
+    {
+      "CharacterId": "player",
+      "VariantId": "veteran",
+      "Name": "hurt2.png",
+      "OutputSHA256": "C61ECD25F755D9AB8E5C507B3926B53EBA640942D97BD2767DAC7ABB0D233F71",
+      "RecordPath": "Prompts/multichar/player/veteran-hurt2.json"
+    },
+    {
+      "CharacterId": "player",
+      "VariantId": "veteran",
+      "Name": "hurt_fist.png",
+      "OutputSHA256": "259F6D678A06DE7423C3D9B2AC568F3AF169A491B2080622189AA6FDC5491497",
+      "RecordPath": "Prompts/multichar/player/veteran-hurt_fist.json"
+    },
+    {
+      "CharacterId": "player",
+      "VariantId": "veteran",
+      "Name": "laugh1.png",
+      "OutputSHA256": "29C3EF0A49B6BDBB782148CF930342E6B95D6F8D8BEE634CB524E17631DE243F",
+      "RecordPath": "Prompts/multichar/player/veteran-laugh1.json"
+    },
+    {
+      "CharacterId": "player",
+      "VariantId": "veteran",
+      "Name": "laugh2.png",
+      "OutputSHA256": "61F6282E8CC7B8F73E10439ACE37796C3C001C3732A214AEB5B318BA6F1BC4DA",
+      "RecordPath": "Prompts/multichar/player/veteran-laugh2.json"
+    },
+    {
+      "CharacterId": "player",
+      "VariantId": "veteran",
+      "Name": "mask.png",
+      "OutputSHA256": "43D0AEEA508E8CD149840E93061D21757A03EC0DB27AA4556FF7B42BEC59CCBF",
+      "RecordPath": "Prompts/multichar/player/veteran-mask.json"
+    },
+    {
+      "CharacterId": "player",
+      "VariantId": "veteran",
+      "Name": "mud.png",
+      "OutputSHA256": "2D2B49E1DDE7D537ECE04B23C3ADC289DA003FBF5B4CB3859B7DEC7581D0F6F4",
+      "RecordPath": "Prompts/multichar/player/veteran-mud.json"
+    },
+    {
+      "CharacterId": "player",
+      "VariantId": "veteran",
+      "Name": "nervous1.png",
+      "OutputSHA256": "F726CF77D6DA645155F9E8A516C711EE249F727AC8F0EEF9BBAA0614880755A1",
+      "RecordPath": "Prompts/multichar/player/veteran-nervous1.json"
+    },
+    {
+      "CharacterId": "player",
+      "VariantId": "veteran",
+      "Name": "nervous2.png",
+      "OutputSHA256": "581F8838ACC4C9111BB8F4C98668D1B0D3D6115AF6F8B10A6C52DBEE35D10FDC",
+      "RecordPath": "Prompts/multichar/player/veteran-nervous2.json"
+    },
+    {
+      "CharacterId": "player",
+      "VariantId": "veteran",
+      "Name": "nervous3.png",
+      "OutputSHA256": "C43271B9AFB414B04B01E1F3D7D8A502216A050841CB20D526C1B28F2AEB86FC",
+      "RecordPath": "Prompts/multichar/player/veteran-nervous3.json"
+    },
+    {
+      "CharacterId": "player",
+      "VariantId": "veteran",
+      "Name": "normal.png",
+      "OutputSHA256": "321E7B288FB043957B0FEA3CB6B829DB33352E02C047C39EB92E0FCAFC35FF77",
+      "RecordPath": "Prompts/multichar/player/veteran-normal.json"
+    },
+    {
+      "CharacterId": "player",
+      "VariantId": "veteran",
+      "Name": "oraora.png",
+      "OutputSHA256": "63133EE1332761B82BA8A7F7452039269C3F73E3F2E22618778523F33D9B0B83",
+      "RecordPath": "Prompts/multichar/player/veteran-oraora.json"
+    },
+    {
+      "CharacterId": "player",
+      "VariantId": "veteran",
+      "Name": "revel.png",
+      "OutputSHA256": "7A459B684F0061C7A0F6A930BAEB7776D8E052E70107B720D860FC3803C60F7C",
+      "RecordPath": "Prompts/multichar/player/veteran-revel.json"
+    },
+    {
+      "CharacterId": "player",
+      "VariantId": "veteran",
+      "Name": "sad1.png",
+      "OutputSHA256": "564D8F95D436D7A01E6412885C97E87AD48EACECDB420C790A6FD125E6BAA25A",
+      "RecordPath": "Prompts/multichar/player/veteran-sad1.json"
+    },
+    {
+      "CharacterId": "player",
+      "VariantId": "veteran",
+      "Name": "shake.png",
+      "OutputSHA256": "7BDDD0F25FFECE86073A7AB3D346FCDA4123900260C5D50839CAEB03B5C58CC2",
+      "RecordPath": "Prompts/multichar/player/veteran-shake.json"
+    },
+    {
+      "CharacterId": "player",
+      "VariantId": "veteran",
+      "Name": "shake2.png",
+      "OutputSHA256": "5BE104548457A2B2213B4C34402A4451737A151EAABED3DBC8E1CBA70ABDC363",
+      "RecordPath": "Prompts/multichar/player/veteran-shake2.json"
+    },
+    {
+      "CharacterId": "player",
+      "VariantId": "veteran",
+      "Name": "shock.png",
+      "OutputSHA256": "DF3601B72B9AACE3945F469601062E4476BD9914C05A830DD99DB68FD446D5AA",
+      "RecordPath": "Prompts/multichar/player/veteran-shock.json"
+    },
+    {
+      "CharacterId": "player",
+      "VariantId": "veteran",
+      "Name": "soul.png",
+      "OutputSHA256": "1E697BEAB43B415B57B59A4239E9C07FB1C3AF108DBDD30CE92155FE53CDB36B",
+      "RecordPath": "Prompts/multichar/player/veteran-soul.json"
+    },
+    {
+      "CharacterId": "player",
+      "VariantId": "veteran",
+      "Name": "special1.png",
+      "OutputSHA256": "967E544D3340BE562F26FDE91F1298FBA32A59490D558E77F6E2CC8A13155610",
+      "RecordPath": "Prompts/multichar/player/veteran-special1.json"
+    },
+    {
+      "CharacterId": "player",
+      "VariantId": "veteran",
+      "Name": "stupid.png",
+      "OutputSHA256": "BAD5F91D1314F807F391E639BD78C90C90B1CE66D530C1671F0566A2C0EB03C8",
+      "RecordPath": "Prompts/multichar/player/veteran-stupid.json"
+    },
+    {
+      "CharacterId": "player",
+      "VariantId": "veteran",
+      "Name": "suck1.png",
+      "OutputSHA256": "D88616B664D855C031498D7F24C5D9F440B191B667CBE21FBDF0C70348B8E947",
+      "RecordPath": "Prompts/multichar/player/veteran-suck1.json"
+    },
+    {
+      "CharacterId": "player",
+      "VariantId": "veteran",
+      "Name": "suck3.png",
+      "OutputSHA256": "75DEC3DB225A1E933B6A3BC06A2F609F7922230100CE72B04CE9275E03234096",
+      "RecordPath": "Prompts/multichar/player/veteran-suck3.json"
+    },
+    {
+      "CharacterId": "player",
+      "VariantId": "veteran",
+      "Name": "suck4.png",
+      "OutputSHA256": "2866C6D4131B8C3F6981CB0910FCA74344F405698744811310A5680431EA816B",
+      "RecordPath": "Prompts/multichar/player/veteran-suck4.json"
+    },
+    {
+      "CharacterId": "tang-buyi",
+      "VariantId": "refined",
+      "Name": "angry1.png",
+      "OutputSHA256": "7A2BF339CF998F1D1D2FED502A9331B38EAE3956BDF9AD5809C82A09DFA959D1",
+      "RecordPath": "Prompts/multichar/npc/npc-tang-buyi-angry1.json"
+    },
+    {
+      "CharacterId": "tang-buyi",
+      "VariantId": "refined",
+      "Name": "angry2.png",
+      "OutputSHA256": "7ABBCB7E0A7FD3329AC4C29BF30EA78C8867E87B017EC9E7A1C961E812BA16F9",
+      "RecordPath": "Prompts/multichar/npc/npc-tang-buyi-angry2-margin-v2.json"
+    },
+    {
+      "CharacterId": "tang-buyi",
+      "VariantId": "refined",
+      "Name": "angry3.png",
+      "OutputSHA256": "BB56E8D7610AC8FD41E656713728FAB1FA8A62BC072FBD6386436EEDC469A3AE",
+      "RecordPath": "Prompts/multichar/npc/npc-tang-buyi-angry3.json"
+    },
+    {
+      "CharacterId": "tang-buyi",
+      "VariantId": "refined",
+      "Name": "hat.png",
+      "OutputSHA256": "96468E83F4608B1F32DA1C6CC27523ACE72BF641958527B59921B2D0E239EB64",
+      "RecordPath": "Prompts/multichar/npc/npc-tang-buyi-hat.json"
+    },
+    {
+      "CharacterId": "tang-buyi",
+      "VariantId": "refined",
+      "Name": "hurt.png",
+      "OutputSHA256": "4EA2859CD31FD8F9675850160DF6961029C0086713C4CD47E33AD635E13CC6AB",
+      "RecordPath": "Prompts/multichar/npc/npc-tang-buyi-hurt.json"
+    },
+    {
+      "CharacterId": "tang-buyi",
+      "VariantId": "refined",
+      "Name": "laugh1.png",
+      "OutputSHA256": "BEB06CD4A88F31FC16A3DEB321B497E7B4A031408BCD7F4D59B88F0B8B4242F8",
+      "RecordPath": "Prompts/multichar/npc/npc-tang-buyi-laugh1.json"
+    },
+    {
+      "CharacterId": "tang-buyi",
+      "VariantId": "refined",
+      "Name": "laugh2.png",
+      "OutputSHA256": "03474E89A9CD9927EDD7C9A29418B13231C71A832AB89FF735F1C1E1F8905360",
+      "RecordPath": "Prompts/multichar/npc/npc-tang-buyi-laugh2.json"
+    },
+    {
+      "CharacterId": "tang-buyi",
+      "VariantId": "refined",
+      "Name": "nervous1.png",
+      "OutputSHA256": "43C81099EA0E32B84C37A6AB4874A08B600F46605FF88BB0B31DCA683B06EB75",
+      "RecordPath": "Prompts/multichar/npc/npc-tang-buyi-nervous1.json"
+    },
+    {
+      "CharacterId": "tang-buyi",
+      "VariantId": "refined",
+      "Name": "nervous2.png",
+      "OutputSHA256": "C8D309D9A08A4D289251EA2D8F2542C321AE250B457EC829F2500340C643E04A",
+      "RecordPath": "Prompts/multichar/npc/npc-tang-buyi-nervous2.json"
+    },
+    {
+      "CharacterId": "tang-buyi",
+      "VariantId": "refined",
+      "Name": "nervous3.png",
+      "OutputSHA256": "6DE3C55ED11E0FF2876DF51366642F359D3FE710A668294CAC3263F3998FC97A",
+      "RecordPath": "Prompts/multichar/npc/npc-tang-buyi-nervous3.json"
+    },
+    {
+      "CharacterId": "tang-buyi",
+      "VariantId": "refined",
+      "Name": "normal.png",
+      "OutputSHA256": "49101E9DD75EC2DB20B69E7B99B2D5AC5EC13529C355B8B03327C20EF743B9D2",
+      "RecordPath": "Prompts/multichar/tang-buyi/refined-normal.json"
+    },
+    {
+      "CharacterId": "tang-buyi",
+      "VariantId": "refined",
+      "Name": "serious.png",
+      "OutputSHA256": "24F8FAA3FF360390E7934242A8B28D02A76634C8D7488FA040C0C71AC036581C",
+      "RecordPath": "Prompts/multichar/npc/npc-tang-buyi-serious.json"
+    },
+    {
+      "CharacterId": "tang-buyi",
+      "VariantId": "refined",
+      "Name": "shock.png",
+      "OutputSHA256": "7D4DDCACB047C55D9064DAE3849E7CFAA4C3124DF989B4EB074388BB97FD20A5",
+      "RecordPath": "Prompts/multichar/npc/npc-tang-buyi-shock.json"
+    },
+    {
+      "CharacterId": "tang-buyi",
+      "VariantId": "refined",
+      "Name": "special1.png",
+      "OutputSHA256": "09D987AE6F4B26387164C6B66A2E70CE1254850A5047F00821767368D8F8AA90",
+      "RecordPath": "Prompts/multichar/npc/npc-tang-buyi-special1.json"
+    },
+    {
+      "CharacterId": "tang-buyi",
+      "VariantId": "refined",
+      "Name": "suck.png",
+      "OutputSHA256": "28176B51CF3C0E4C75EEC5FD59D60E371D202A7A8D675FC8A3A6AAD39D36A005",
+      "RecordPath": "Prompts/multichar/npc/npc-tang-buyi-suck.json"
+    },
+    {
+      "CharacterId": "xiahou-lan",
+      "VariantId": "refined",
+      "Name": "angry.png",
+      "OutputSHA256": "34E31DB1FDC323FA0D3E2166D636D201681D855B9219A8975E5C17DE57F0DF79",
+      "RecordPath": "Prompts/multichar/npc/npc-xiahou-lan-angry-margin-v2.json"
+    },
+    {
+      "CharacterId": "xiahou-lan",
+      "VariantId": "refined",
+      "Name": "angry2.png",
+      "OutputSHA256": "E9313D4F348BFC2C04995B7512588B1F7891C92C53818D02B741FEAE48EC8FCB",
+      "RecordPath": "Prompts/multichar/npc/npc-xiahou-lan-angry2-margin-v2.json"
+    },
+    {
+      "CharacterId": "xiahou-lan",
+      "VariantId": "refined",
+      "Name": "block.png",
+      "OutputSHA256": "A50468ED94F9948DE294C7F9ECEE81B65D929652F7967F5F8270EED9DED2ACF4",
+      "RecordPath": "Prompts/multichar/npc/npc-xiahou-lan-block.json"
+    },
+    {
+      "CharacterId": "xiahou-lan",
+      "VariantId": "refined",
+      "Name": "blood.png",
+      "OutputSHA256": "08B55BA2836EC3178540CD4BD6DA95B03C0DA7A66856F854951DDBE9CC3584D1",
+      "RecordPath": "Prompts/multichar/npc/npc-xiahou-lan-blood.json"
+    },
+    {
+      "CharacterId": "xiahou-lan",
+      "VariantId": "refined",
+      "Name": "cry.png",
+      "OutputSHA256": "091D17B06A4A139716AC7433A3488990D208B5A2BD4B11C3F044A59172239C05",
+      "RecordPath": "Prompts/multichar/npc/npc-xiahou-lan-cry.json"
+    },
+    {
+      "CharacterId": "xiahou-lan",
+      "VariantId": "refined",
+      "Name": "droopy.png",
+      "OutputSHA256": "227FFF23F5A38659634D87872E533620BCCD492E4C972356B792FDA10D9FFE0A",
+      "RecordPath": "Prompts/multichar/npc/npc-xiahou-lan-droopy.json"
+    },
+    {
+      "CharacterId": "xiahou-lan",
+      "VariantId": "refined",
+      "Name": "gloomy.png",
+      "OutputSHA256": "ECC2A5DAE21626F4D6ACCD25513F7C4F58A090F2E67486E855E2BB7346E7077A",
+      "RecordPath": "Prompts/multichar/npc/npc-xiahou-lan-gloomy.json"
+    },
+    {
+      "CharacterId": "xiahou-lan",
+      "VariantId": "refined",
+      "Name": "gloomy2.png",
+      "OutputSHA256": "C67046E19E9FFEF3D716B785E75BA02E86533CE3C5752D8E13CC29931AE69C76",
+      "RecordPath": "Prompts/multichar/npc/npc-xiahou-lan-gloomy2.json"
+    },
+    {
+      "CharacterId": "xiahou-lan",
+      "VariantId": "refined",
+      "Name": "laugh1.png",
+      "OutputSHA256": "7C1EDBBD755DA68BDD668DB881C649254C55A4CB4F074D8F338C886AE372A5A6",
+      "RecordPath": "Prompts/multichar/npc/npc-xiahou-lan-laugh1.json"
+    },
+    {
+      "CharacterId": "xiahou-lan",
+      "VariantId": "refined",
+      "Name": "love.png",
+      "OutputSHA256": "88F0B707CE78CF7B801E005FC9CD9EE48CC838A7839DD2CB49D00CE966CB08F4",
+      "RecordPath": "Prompts/multichar/npc/npc-xiahou-lan-love.json"
+    },
+    {
+      "CharacterId": "xiahou-lan",
+      "VariantId": "refined",
+      "Name": "nervous.png",
+      "OutputSHA256": "C68C7C0B402C4E68704825B61820620AFC6C1659152E87517238EB803FB268B7",
+      "RecordPath": "Prompts/multichar/npc/npc-xiahou-lan-nervous.json"
+    },
+    {
+      "CharacterId": "xiahou-lan",
+      "VariantId": "refined",
+      "Name": "nervous2.png",
+      "OutputSHA256": "AC26D7E668A73962810B6E783EB136C02AFBD3FB9BC816F9CB58CFD4837D594A",
+      "RecordPath": "Prompts/multichar/npc/npc-xiahou-lan-nervous2.json"
+    },
+    {
+      "CharacterId": "xiahou-lan",
+      "VariantId": "refined",
+      "Name": "normal.png",
+      "OutputSHA256": "BC6F18BF72DB3B2022F29567F71C2603AE5D24F114D58C22AF4969C060B71B5E",
+      "RecordPath": "Prompts/multichar/xiahou-lan/refined-normal.json"
+    },
+    {
+      "CharacterId": "xiahou-lan",
+      "VariantId": "refined",
+      "Name": "shy2.png",
+      "OutputSHA256": "18324CF345226C4480B78039CECAD102EFDAC6965500AAA3789D85FCE9615966",
+      "RecordPath": "Prompts/multichar/npc/npc-xiahou-lan-shy2.json"
+    },
+    {
+      "CharacterId": "xiahou-lan",
+      "VariantId": "refined",
+      "Name": "squint.png",
+      "OutputSHA256": "A41FBD6F441BDBA23E4D37F49F1EE2638028B1B7C1F07D07CE347AD45CE55C7D",
+      "RecordPath": "Prompts/multichar/npc/npc-xiahou-lan-squint.json"
+    }
+  ]
+}

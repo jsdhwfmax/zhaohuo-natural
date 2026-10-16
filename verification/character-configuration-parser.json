@@ -1,0 +1,246 @@
+{
+    "Passed":  true,
+    "TestCount":  52,
+    "PassedCount":  52,
+    "PowerShellVersion":  "5.1.26100.9711",
+    "ActualGameRun":  false,
+    "Scope":  "Production managed JSON parser compiled unchanged with character policy; real installed JSON read only when supplied. No Unity/game assembly executed or game file modified.",
+    "ActualConfiguration":  {
+                                "ReadOnly":  true,
+                                "SHA256":  "3515E875368A8B0B92E9B1D35BD36FF51CD5CD5AA466619F736B1ED99F93B24C",
+                                "EnabledRoles":  "player,tang-buyi,xiahou-lan"
+                            },
+    "CodeHashAlgorithm":  "SHA256-UTF8-noBOM-LF-v1",
+    "CodeHashes":  [
+                       {
+                           "Path":  "Source/CharacterPolicy.cs",
+                           "Sha256":  "0189569831D6CFE71039433E4387092B5AAA16D9BE10866A7EC76B4255906D61"
+                       },
+                       {
+                           "Path":  "Source/CharacterConfigurationJson.cs",
+                           "Sha256":  "6E490DE6093F23A7A439FC0A89C53C2A99C0C53A4D3C96F19A3E121F4791A1ED"
+                       },
+                       {
+                           "Path":  "Source/CharacterSupport.cs",
+                           "Sha256":  "93300B5AB8A0B235557DA33F188B7B5E419CCAA1EB7C23CF96950FEE3B9364FB"
+                       },
+                       {
+                           "Path":  "Source/build.ps1",
+                           "Sha256":  "FC7C2DD73618339082A3CAC89C4168D729FAF9470596AF2C3AFE6A0840253468"
+                       },
+                       {
+                           "Path":  "Source/Tests/Test-CharacterConfiguration.ps1",
+                           "Sha256":  "6FE77C736C4E377A1D3D8252DB6DB6ABE56CEAFBD40FF86D2D129137A073F593"
+                       }
+                   ],
+    "Tests":  [
+                  {
+                      "Name":  "Installer JSON independent switch combination 0",
+                      "Passed":  true
+                  },
+                  {
+                      "Name":  "Installer JSON independent switch combination 1",
+                      "Passed":  true
+                  },
+                  {
+                      "Name":  "Installer JSON independent switch combination 2",
+                      "Passed":  true
+                  },
+                  {
+                      "Name":  "Installer JSON independent switch combination 3",
+                      "Passed":  true
+                  },
+                  {
+                      "Name":  "Installer JSON independent switch combination 4",
+                      "Passed":  true
+                  },
+                  {
+                      "Name":  "Installer JSON independent switch combination 5",
+                      "Passed":  true
+                  },
+                  {
+                      "Name":  "Installer JSON independent switch combination 6",
+                      "Passed":  true
+                  },
+                  {
+                      "Name":  "Installer JSON independent switch combination 7",
+                      "Passed":  true
+                  },
+                  {
+                      "Name":  "Compact installer schema",
+                      "Passed":  true
+                  },
+                  {
+                      "Name":  "UTF8 BOM character and JSON whitespace accepted",
+                      "Passed":  true
+                  },
+                  {
+                      "Name":  "Property and role order independent",
+                      "Passed":  true
+                  },
+                  {
+                      "Name":  "JSON Unicode escapes accepted",
+                      "Passed":  true
+                  },
+                  {
+                      "Name":  "Empty document",
+                      "Passed":  true
+                  },
+                  {
+                      "Name":  "Null document",
+                      "Passed":  true
+                  },
+                  {
+                      "Name":  "Array root",
+                      "Passed":  true
+                  },
+                  {
+                      "Name":  "Empty root",
+                      "Passed":  true
+                  },
+                  {
+                      "Name":  "Missing schema",
+                      "Passed":  true
+                  },
+                  {
+                      "Name":  "Unknown schema",
+                      "Passed":  true
+                  },
+                  {
+                      "Name":  "String schema",
+                      "Passed":  true
+                  },
+                  {
+                      "Name":  "Floating schema",
+                      "Passed":  true
+                  },
+                  {
+                      "Name":  "Leading zero schema",
+                      "Passed":  true
+                  },
+                  {
+                      "Name":  "Duplicate schema",
+                      "Passed":  true
+                  },
+                  {
+                      "Name":  "Unknown root property",
+                      "Passed":  true
+                  },
+                  {
+                      "Name":  "Missing characters",
+                      "Passed":  true
+                  },
+                  {
+                      "Name":  "Null characters",
+                      "Passed":  true
+                  },
+                  {
+                      "Name":  "Empty characters",
+                      "Passed":  true
+                  },
+                  {
+                      "Name":  "Missing one character",
+                      "Passed":  true
+                  },
+                  {
+                      "Name":  "Fourth entry",
+                      "Passed":  true
+                  },
+                  {
+                      "Name":  "Unknown ID",
+                      "Passed":  true
+                  },
+                  {
+                      "Name":  "Duplicate ID",
+                      "Passed":  true
+                  },
+                  {
+                      "Name":  "Wrong case ID",
+                      "Passed":  true
+                  },
+                  {
+                      "Name":  "Missing enabled",
+                      "Passed":  true
+                  },
+                  {
+                      "Name":  "Duplicate enabled",
+                      "Passed":  true
+                  },
+                  {
+                      "Name":  "String boolean",
+                      "Passed":  true
+                  },
+                  {
+                      "Name":  "Integer boolean",
+                      "Passed":  true
+                  },
+                  {
+                      "Name":  "Null boolean",
+                      "Passed":  true
+                  },
+                  {
+                      "Name":  "Capitalized boolean",
+                      "Passed":  true
+                  },
+                  {
+                      "Name":  "Missing ID",
+                      "Passed":  true
+                  },
+                  {
+                      "Name":  "Duplicate ID field",
+                      "Passed":  true
+                  },
+                  {
+                      "Name":  "Unknown character property",
+                      "Passed":  true
+                  },
+                  {
+                      "Name":  "Extra document",
+                      "Passed":  true
+                  },
+                  {
+                      "Name":  "Trailing comment",
+                      "Passed":  true
+                  },
+                  {
+                      "Name":  "Array trailing comma",
+                      "Passed":  true
+                  },
+                  {
+                      "Name":  "Object trailing comma",
+                      "Passed":  true
+                  },
+                  {
+                      "Name":  "Wrong property case",
+                      "Passed":  true
+                  },
+                  {
+                      "Name":  "Invalid JSON escape",
+                      "Passed":  true
+                  },
+                  {
+                      "Name":  "Invalid unicode escape",
+                      "Passed":  true
+                  },
+                  {
+                      "Name":  "Incomplete unicode escape",
+                      "Passed":  true
+                  },
+                  {
+                      "Name":  "Unescaped control character",
+                      "Passed":  true
+                  },
+                  {
+                      "Name":  "Truncated JSON",
+                      "Passed":  true
+                  },
+                  {
+                      "Name":  "Oversized input",
+                      "Passed":  true
+                  },
+                  {
+                      "Name":  "Actual installed JSON parsed through production parser",
+                      "Passed":  true
+                  }
+              ]
+}

@@ -1,0 +1,15 @@
+{
+  "Method": "builtin imagegen",
+  "CharacterId": "player",
+  "VariantId": "black",
+  "Name": "normal",
+  "Prompt": "Use case: precise-object-edit. Asset type: production transparent dialogue sprite for Chinese wuxia game 活侠传 / Legend of Mortal. Image 1 is the edit target and stylistic/framing reference: our existing approved young-adult Zhao Huo junior-disciple mod sprite. Create ONE separate new optional appearance. Preserve the exact coarse hand-painted game illustration medium: dry black contour strokes, colored-pencil grain, opaque watercolor brushwork, muted natural cloth colors, lightly uneven human lines. Keep believable adult Chinese facial anatomy, elegantly small head relative to full upper body, tall slender heroic proportions and original three-quarter view. Full complete ponytail/hair, both shoulders, arms, hands and same lower-thigh crop, comfortable transparent margins around all outer edges, no cut-off hair. Portrait canvas. True transparent alpha background. No scene, letters, logos, watermark, frame, grid, sparkle, magic aura, 3D, photographic skin, glossy modern anime, porcelain airbrush, or overdecorated fantasy costume. Do not duplicate the reference; change the outfit and character design as specified, while keeping his identity and grounded martial-world character plausible. New variant BLACK-ROBED RESERVED SWORDSMAN / 黑衣冷峻: an extremely handsome adult Chinese man age about 24, slightly narrower calm sharp eyes and strong straight brows, refined masculine nose and jaw, closed mouth with composed serious expression, no angry scowl. Long black hair tied high with plain dark tie, slightly untidy swept fringe. Charcoal-black and ink-blue matte rough-cloth cross-collar martial robe, dark desaturated burgundy sash, worn leather wrist wraps, light smoke-grey inner collar. Dark colors must retain visible painterly folds and outline separation. Grounded Tang-sect disciple clothes, no metal armor, cape, ornaments or weapons. Relaxed but self-possessed stance, one hand resting at sash, other hand naturally low. Keep naturally small head and handsome mature young-adult proportions. Beautiful reserved wuxia male protagonist, not a villain or a glossy fantasy idol.",
+  "References": [
+    "v1.3.0/Variants/xianxia/Portraits/normal.png"
+  ],
+  "GeneratedSource": "exec-85589505-7eef-4f3a-8b21-d2a5f4297e9d.png",
+  "SHA256": "6109C0C7F52ACFB7B5C6942F0A96CE375AB5770F230417C9530BAB178C63608E",
+  "Review": "Normal master visually reviewed before expression generation; original generated pixels preserved.",
+  "OutputSHA256": "6109C0C7F52ACFB7B5C6942F0A96CE375AB5770F230417C9530BAB178C63608E",
+  "PublicOutput": "Variants/player/black/Portraits/normal.png"
+}

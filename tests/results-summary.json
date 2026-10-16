@@ -2,7 +2,7 @@
     "status":  "passed",
     "powershell":  "5.1.26100.9711",
     "assertionCount":  74,
-    "durationSeconds":  244.76,
+    "durationSeconds":  268.89,
     "scope":  "Installer integration with synthetic game fixtures, official bundled runtime and stubbed offline-probe results; metadata probe tested separately; no real game installation or execution",
     "checks":  [
                    "First verified four-assembly group remains supported",

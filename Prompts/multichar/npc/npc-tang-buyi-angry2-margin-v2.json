@@ -1,0 +1,53 @@
+{
+  "character": "tang-buyi",
+  "variant": "refined",
+  "asset": "angry2",
+  "revision": "margin-v2",
+  "repair_reason": "red aura/lower fist touches left canvas; add true transparent breathing room",
+  "prompt": "Edit this exact transparent game portrait only to repair framing. Keep the same character identity, face, expression, natural head proportions, hairstyle, all clothing, hands, gestures, props, ink/pencil/watercolor texture, colours and aura exactly as shown. Do not redesign or beautify further. Zoom the entire existing illustration OUT by about 15 percent and place it in a transparent canvas with the same portrait aspect ratio. The whole visible silhouette and full aura must have a generous 6-8 percent transparent gap from the LEFT, RIGHT and TOP borders. Repair the tiny clipped aura/prop tips naturally. The lower robe may remain cropped at bottom as originally; all hands must be complete. The red anger aura around the fist on the lower-left and the swirling fabric on the right must NOT touch the side edges. Preserve stern closed mouth and copper coin gesture. True alpha transparent background outside art, no checkerboard/solid backdrop/text/watermark. One portrait sprite only.",
+  "input_roles": [
+    {
+      "role": "approved-generated-target-framing-only",
+      "logical_name": "art/tang-buyi/refined/angry2.png"
+    }
+  ],
+  "tool": "builtin image_gen",
+  "status": "accepted",
+  "checks": {
+    "dimensions": [
+      1097,
+      1434
+    ],
+    "mode": "RGBA",
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "alpha_bounds_gt16": [
+      60,
+      135,
+      1064,
+      1350
+    ],
+    "alpha_bounds_nonzero": [
+      0,
+      9,
+      1069,
+      1354
+    ],
+    "edge_alpha_gt16": {
+      "left": false,
+      "top": false,
+      "right": false,
+      "bottom": false
+    },
+    "pixel_edit_performed": false,
+    "visual_review": "Passed: same identity, expression, pose and effects. Full side silhouette now fits with transparent breathing room; lower costume crop retained. No pixel editing."
+  },
+  "generated_source_basename": "exec-02a61fe2-e003-464c-a354-145ad57e3ccf.png",
+  "sha256": "7ABBCB7E0A7FD3329AC4C29BF30EA78C8867E87B017EC9E7A1C961E812BA16F9",
+  "CharacterId": "tang-buyi",
+  "VariantId": "refined",
+  "OutputSHA256": "7ABBCB7E0A7FD3329AC4C29BF30EA78C8867E87B017EC9E7A1C961E812BA16F9",
+  "PublicOutput": "Variants/tang-buyi/refined/Portraits/angry2.png"
+}

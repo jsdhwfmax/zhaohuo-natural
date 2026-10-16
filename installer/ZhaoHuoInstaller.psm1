@@ -310,16 +310,16 @@ function Get-ZHEnvironment([string]$GamePath, [object[]]$Dependencies) {
 function Read-ZHState([object]$Paths) {
     if (-not (Test-Path -LiteralPath $Paths.Manifest -PathType Leaf)) { return $null }
     $manifest = Get-Content -LiteralPath $Paths.Manifest -Raw -Encoding UTF8 | ConvertFrom-Json
-    if ($manifest.SchemaVersion -notin @(1, 2, 3) -or $manifest.PackageId -ne 'ZhaoHuoNatural' -or
+    if ($manifest.SchemaVersion -notin @(1, 2, 3, 4) -or $manifest.PackageId -ne 'ZhaoHuoNatural' -or
         $manifest.GamePath -ne $Paths.Game -or $manifest.InstallationId -notmatch '^\d{8}-\d{6}-[0-9a-f]{8}$' -or
-        $manifest.Status -notin @('installed', 'installing', 'uninstalling', 'switching') -or
+        $manifest.Status -notin @('installed', 'installing', 'uninstalling', 'switching', 'migrating') -or
         $manifest.BackupRelativePath -ne ('Backups\' + $manifest.InstallationId)) {
         throw '安装记录无效、被移动或属于其他目录。请保留备份，勿手工删除记录后重装。'
     }
     return $manifest
 }
 function Get-ZHOwnedRecords([object]$Manifest) {
-    if ($Manifest.SchemaVersion -eq 3) { return @($Manifest.OwnedFiles) }
+    if ($Manifest.SchemaVersion -in @(3, 4)) { return @($Manifest.OwnedFiles) }
     $records = @()
     foreach ($file in @($Manifest.Files)) {
         $records += [pscustomobject]@{ RelativePath = ($script:PluginRelative + '\' + $file.RelativePath); InstalledSha256 = $file.Sha256; WasPresent = $false; OriginalSha256 = $null; BackupRelativePath = $null; Stage = 'applied'; Category = 'Plugin' }
@@ -547,11 +547,15 @@ function Invoke-ZHUninstallCore {
     $seen = @{}
     foreach ($record in $records) {
         Assert-ZHRecord $record $paths $backupRoot
+        if ($manifest.SchemaVersion -eq 4) {
+            Assert-ZHManagedTarget $record.RelativePath
+            if ($record.InstalledPresent -isnot [bool]) { throw '多角色卸载记录的文件状态无效。' }
+        }
         $destination = Get-ZHChild $paths.Game $record.RelativePath
         if ($seen.ContainsKey($destination)) { throw '安装记录中有重复目标。' }
         $seen[$destination] = $true
     }
-    $restoreLegacy = $manifest.Legacy.DisabledByThisInstall -and ($manifest.SchemaVersion -ne 3 -or $manifest.Legacy.Stage -ne 'pending')
+    $restoreLegacy = $manifest.Legacy.DisabledByThisInstall -and ($manifest.SchemaVersion -notin @(3, 4) -or $manifest.Legacy.Stage -ne 'pending')
     $legacyBackup = Get-ZHChild $backupRoot 'MortalBeauty.dll'
     if ($restoreLegacy) {
         Assert-ZHNoLink $legacyBackup
@@ -562,7 +566,7 @@ function Invoke-ZHUninstallCore {
     Assert-ZHNoLink $diagnostics
     if (Test-Path -LiteralPath $diagnostics -PathType Container) { $null = @(Get-ZHFiles $diagnostics) }
     $ownedDirectories = @{}
-    if ($manifest.SchemaVersion -eq 3) {
+    if ($manifest.SchemaVersion -in @(3, 4)) {
         foreach ($relative in @($manifest.CreatedDirectories)) {
             if ($relative -ne 'BepInEx' -and $relative -ne 'BepInEx\core' -and $relative -ne 'BepInEx\plugins' -and $relative -ne $script:PluginRelative -and -not $relative.StartsWith($script:PluginRelative + '\', [StringComparison]::OrdinalIgnoreCase)) { throw "安装记录中的目录不属于本包：$relative" }
             $ownedDirectories[(Get-ZHChild $paths.Game $relative)] = $true
@@ -592,7 +596,7 @@ function Invoke-ZHUninstallCore {
         $destination = Get-ZHChild $paths.Game $record.RelativePath
         if (Test-Path -LiteralPath $destination -PathType Leaf) {
             $currentHash = Get-ZHHash $destination
-            if ($currentHash -ne $record.InstalledSha256 -and (-not $record.WasPresent -or $currentHash -ne $record.OriginalSha256)) {
+            if (($manifest.SchemaVersion -eq 4 -and -not $record.InstalledPresent) -or ($currentHash -ne $record.InstalledSha256 -and (-not $record.WasPresent -or $currentHash -ne $record.OriginalSha256))) {
                 Copy-ZHVerified $destination (Get-ZHChild $preserved $record.RelativePath) $currentHash
                 Write-ZHLog $Log "已保留安装后修改的文件：$($record.RelativePath)"
             }
@@ -662,4 +666,8 @@ function Get-ZhaoHuoSteamCandidates {
 }
 . (Join-Path $PSScriptRoot 'VariantSupport.ps1')
 . (Join-Path $PSScriptRoot 'AppearanceManager.ps1')
-Export-ModuleMember -Function Get-ZhaoHuoSteamCandidates, Get-ZhaoHuoInstallPlan, Install-ZhaoHuo, Uninstall-ZhaoHuo, Get-ZhaoHuoVariants, Get-ZhaoHuoInstalledVariant
+. (Join-Path $PSScriptRoot 'CharacterCatalog.ps1')
+. (Join-Path $PSScriptRoot 'CharacterState.ps1')
+. (Join-Path $PSScriptRoot 'CharacterTransactions.ps1')
+. (Join-Path $PSScriptRoot 'CharacterManager.ps1')
+Export-ModuleMember -Function Get-ZhaoHuoSteamCandidates, Get-ZhaoHuoInstallPlan, Install-ZhaoHuo, Uninstall-ZhaoHuo, Get-ZhaoHuoVariants, Get-ZhaoHuoInstalledVariant, Get-PortraitCharacters, Get-PortraitManagerState, Get-PortraitApplyPlan, Set-PortraitAppearance, Uninstall-PortraitManager

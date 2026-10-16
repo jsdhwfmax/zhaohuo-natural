@@ -1,0 +1,38 @@
+{
+  "Variant": "white",
+  "Name": "suck3",
+  "Method": "builtin imagegen",
+  "Prompt": "Create one transparent game character sprite for 活侠传. Reference 2 is the exact WHITE-ROBED adult hero identity, naturally small head, hairstyle and ivory/grey-blue outfit. Reference 1 supplies only its absurd comic mood and leaning silhouette. Deliberately change the dangerous gesture into a harmless boastful pose: close his mouth in a broad toothy mischievous grin, show blank white comic eyes, keep the free hand curled playfully near chest. His other hand holds the small dagger DOWN AT WAIST LEVEL with blade pointing DOWN and OUTWARD, clearly far from his face and body; blade and mouth are widely separated. No tongue sticking out, no licking, no weapon contact with any part of the body, no injury, no blood, no attack. Keep the rough ink outlines, watercolor and colored-pencil textures, restrained earth tones, readable folds of the master ivory robe with slate sash and grey wraps. The face should be the exact young adult man in reference 2 with the comic facial expression just described. Entire hair and hands inside transparent margins; lower robe may crop at bottom like reference. Only one character, true transparent alpha background, no text/watermark/scene/shadow.",
+  "References": [
+    "v1.3.0/Variants/xianxia/Portraits/suck3.png",
+    "art/player/white/normal.png"
+  ],
+  "GeneratedSource": "exec-27cd1730-6a70-401e-80b6-bfb58c86240c.png",
+  "Output": "art/player/white/suck3.png",
+  "SHA256": "A134537FF4901A66E2457703CE9263D1EFB86668A97BCA299AF8938DAD3657AB",
+  "Bytes": 2138836,
+  "History": [
+    {
+      "Result": "Rejected before image delivery",
+      "Reason": "Image tool output safety moderation: violence/self-harm",
+      "RequestId": "a5de9bbb-2049-4ca0-97de-50573a7a70ef",
+      "Change": "Approved safer revision: dagger lowered to waist, blade away from body; closed toothy grin with no tongue/blade contact.",
+      "OriginalPrompt": "Use case: precise-object-edit. Asset: ONE production transparent Zhao Huo dialogue sprite for 活侠传 / Legend of Mortal.\nImage 1 is the EDIT TARGET for the exact EXPRESSION, pose, gesture, silhouette, head angle, story/comedy effects and framing. Image 2 is this variant's NORMAL MASTER for the precise face identity, hair, age, head-to-body scale and costume. Preserve image1's specific expression completely; never paste the neutral master smile over it. Preserve eye closures, open/closed mouth, pain, sweat, tears, blood, dirt, blush, trembling, comic eyes, props, weapon/no-weapon state, motion, outline effects and silhouette content exactly as appropriate in image1. Redraw this SAME state using image2's new face and outfit throughout.\nCRITICAL: keep the master's naturally SMALL adult head relative to shoulders/torso and its hair volume; never enlarge it for emotion. Match the master face so this is recognizably one consistent person. Same rough black dry-brush contours, opaque watercolor shading, colored-pencil grain and muted earthy wuxia illustration style. The face must share the costume's painted texture, not glossy makeup or a photoreal pasted face. Keep hands anatomically coherent and all original gesture meanings.\nFor injured states put the original blood/damage on the new clothes. The target's special disguise, face mask/eye mask, mud, glowing comic eye, ghost/ethereal transparency and inverted/white-clothes effect MUST override normal appearance where necessary; preserve their story meaning while keeping visible facial identity. If target is a floating face/head/ghost or extreme action, do not add the normal standing body. No weapons or props unless they are present in the target.\nExactly one whole isolated sprite, same aspect ratio/framing as target, all hair/hands/motion effects within clear top and side transparent margins, original bottom costume crop allowed. TRUE transparent alpha background. No scene, ground shadow, checkerboard, text, labels, watermark, frame, grid, new effects or extra people.\nVariant: WHITE-ROBED YOUNG HERO. Image2 exact refined adult face, approachable soft handsome features, off-white/ivory cotton robe, muted blue-grey collar edges, slate-blue sash, grey wrist wraps. Not blue outer clothing. Preserve master's youthful adult softness without big childish eyes.\nTarget expression file: suck3. Preserve this specific exaggerated comic expression, mouth, eyes, gestures and target mood; distinct from suck1 and suck4. Exact target: theatrical sinister comic grin, tongue extended alongside an upright small silver dagger held at chest/face height, blank glowing white eyes with dark shaded eye sockets; free hand curled claw-like at chest. Keep the dagger's handle, blade position and licking gesture exactly as in target, without adding blood or gore. Preserve leaning body pose and silhouette."
+    }
+  ],
+  "Review": "Passed: individually visually reviewed for correct expression/pose, master identity and costume; veteran stubble retained. True alpha and exact source-byte hash checks passed. Approved safer pose: closed toothy grin and dagger lowered far from face.",
+  "Validation": {
+    "Width": 990,
+    "Height": 1589,
+    "PixelFormat": "Format32bppArgb",
+    "SampledTransparentPixels": 38,
+    "SampledPixelsAlphaAtLeast240": 11,
+    "SampledMaximumAlpha": 253,
+    "ExactGeneratedSourceBytes": true,
+    "VisualReviewPassed": true
+  },
+  "CharacterId": "player",
+  "VariantId": "white",
+  "OutputSHA256": "A134537FF4901A66E2457703CE9263D1EFB86668A97BCA299AF8938DAD3657AB",
+  "PublicOutput": "Variants/player/white/Portraits/suck3.png"
+}

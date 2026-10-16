@@ -1,0 +1,34 @@
+{
+  "Variant": "white",
+  "Name": "blood_no_weapon",
+  "Method": "builtin imagegen",
+  "Prompt": "Use case: precise-object-edit. Asset: ONE production transparent Zhao Huo dialogue sprite for 活侠传 / Legend of Mortal.\nImage 1 is the EDIT TARGET for the exact EXPRESSION, pose, gesture, silhouette, head angle, story/comedy effects and framing. Image 2 is this variant's NORMAL MASTER for the precise face identity, hair, age, head-to-body scale and costume. Preserve image1's specific expression completely; never paste the neutral master smile over it. Preserve eye closures, open/closed mouth, pain, sweat, tears, blood, dirt, blush, trembling, comic eyes, props, weapon/no-weapon state, motion, outline effects and silhouette content exactly as appropriate in image1. Redraw this SAME state using image2's new face and outfit throughout.\nCRITICAL: keep the master's naturally SMALL adult head relative to shoulders/torso and its hair volume; never enlarge it for emotion. Match the master face so this is recognizably one consistent person. Same rough black dry-brush contours, opaque watercolor shading, colored-pencil grain and muted earthy wuxia illustration style. The face must share the costume's painted texture, not glossy makeup or a photoreal pasted face. Keep hands anatomically coherent and all original gesture meanings.\nFor injured states put the original blood/damage on the new clothes. The target's special disguise, face mask/eye mask, mud, glowing comic eye, ghost/ethereal transparency and inverted/white-clothes effect MUST override normal appearance where necessary; preserve their story meaning while keeping visible facial identity. If target is a floating face/head/ghost or extreme action, do not add the normal standing body. No weapons or props unless they are present in the target.\nExactly one whole isolated sprite, same aspect ratio/framing as target, all hair/hands/motion effects within clear top and side transparent margins, original bottom costume crop allowed. TRUE transparent alpha background. No scene, ground shadow, checkerboard, text, labels, watermark, frame, grid, new effects or extra people.\nVariant: WHITE-ROBED YOUNG HERO. Image2 exact refined adult face, approachable soft handsome features, off-white/ivory cotton robe, muted blue-grey collar edges, slate-blue sash, grey wrist wraps. Not blue outer clothing. Preserve master's youthful adult softness without big childish eyes.\nTarget expression file: blood_no_weapon. Wounded solemn restrained expression, mouth closed and eyes open. Preserve long blood trickle from forehead past eye and lip, blood on shoulders/sleeves/waist and both hands. BOTH hands lowered and completely EMPTY. No sword, no props, no added smile.",
+  "References": [
+    "v1.3.0/Variants/xianxia/Portraits/blood_no_weapon.png",
+    "art/player/white/normal.png"
+  ],
+  "Output": "art/player/white/blood_no_weapon.png",
+  "Review": "Passed visual review: variant identity/costume/age match masters, target injured expressions distinct; correct blood, breath puff, sweat and empty hands; no meaningful side/top clipping.",
+  "Dimensions": [
+    992,
+    1586
+  ],
+  "AlphaExtrema": [
+    0,
+    255
+  ],
+  "AlphaBoundsGt16": [
+    130,
+    90,
+    949,
+    1586
+  ],
+  "PixelEditingPerformed": false,
+  "SHA256": "F45F6DE32D297336C5A846153F447B3A2F9E092552A079A4C80D1106F3B506EC",
+  "Bytes": 1809012,
+  "GeneratedSource": "exec-2d53a12c-d106-4590-8734-d6e5def94bc5.png",
+  "CharacterId": "player",
+  "VariantId": "white",
+  "OutputSHA256": "F45F6DE32D297336C5A846153F447B3A2F9E092552A079A4C80D1106F3B506EC",
+  "PublicOutput": "Variants/player/white/Portraits/blood_no_weapon.png"
+}

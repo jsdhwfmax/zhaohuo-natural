@@ -1,0 +1,55 @@
+{
+  "character": "tang-buyi",
+  "variant": "refined",
+  "asset": "serious",
+  "prompt": "Use case: identity-preserve. ONE transparent portrait sprite for Legend of Mortal.\nImage 1 is the edit target: preserve its exact pose, expression, gestures, fingers, props, sweat/blood and effects. Image 2 is the approved identity master: match its refined face, hairstyle, costume and hand-painted treatment only; do not paste its neutral expression or pose over Image 1.\nCharacter: adult male Tang Buyi, same angular handsome face, dark ponytail, slate-blue robe, leather wrist guards and gold details as Image 2.\nRequired target emotion and action: Serious resolved expression: firm closed lips, focused narrowed eyes and slightly lowered brows, no grin, sweat, aura or surprise. Keep the target's posture.\nKeep the original natural head-to-shoulder ratio; never enlarge the face. Rough pencil/ink lines and textured watercolor/gouache, no photographic skin, smooth 3D, modern anime or chibi. Complete all original visible hands and props.\nFRAME THE FIGURE SLIGHTLY SMALLER so the entire silhouette, all hair, sleeves, parasol and aura are surrounded by at least 5% truly transparent empty canvas on the TOP, LEFT AND RIGHT. Do not let any prop touch a side edge. No close-up. Lower robe can end at the bottom edge as originally, but no hands cropped. True RGBA transparent background, no painted background/checkerboard/shadow, no text or watermark.",
+  "input_roles": [
+    {
+      "role": "edit-target-pose-emotion",
+      "logical_name": "original/brother1/brother1/serious.png"
+    },
+    {
+      "role": "approved-identity-master",
+      "logical_name": "art/tang-buyi/refined/normal.png"
+    }
+  ],
+  "tool": "builtin image_gen",
+  "status": "accepted",
+  "checks": {
+    "dimensions": [
+      1096,
+      1435
+    ],
+    "mode": "RGBA",
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "alpha_bounds_gt16": [
+      55,
+      245,
+      1069,
+      1435
+    ],
+    "alpha_bounds_nonzero": [
+      0,
+      35,
+      1078,
+      1435
+    ],
+    "edge_alpha_gt16": {
+      "left": false,
+      "top": false,
+      "right": false,
+      "bottom": true
+    },
+    "pixel_edit_performed": false,
+    "visual_review": "Passed: target expression/action, hands and effects preserved. Shy pose remains separate from normal; block fully hides face behind circular parasol. Natural proportions, full top/side silhouette."
+  },
+  "generated_source_basename": "exec-be5249b6-4f74-48e5-9259-6a651bf2d8f4.png",
+  "sha256": "24F8FAA3FF360390E7934242A8B28D02A76634C8D7488FA040C0C71AC036581C",
+  "CharacterId": "tang-buyi",
+  "VariantId": "refined",
+  "OutputSHA256": "24F8FAA3FF360390E7934242A8B28D02A76634C8D7488FA040C0C71AC036581C",
+  "PublicOutput": "Variants/tang-buyi/refined/Portraits/serious.png"
+}
