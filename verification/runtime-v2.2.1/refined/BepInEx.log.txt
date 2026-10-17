@@ -1,0 +1,223 @@
+[Message: Preloader] BepInEx 6.0.0-be.692 - Mortal
+[Message: Preloader] Built from commit 851521cc126e4f9d841d2d9bfe857558f0395939
+[Info   :   BepInEx] System platform: Windows 10 64-bit
+[Info   :   BepInEx] Process bitness: 64-bit (x64)
+[Info   : Preloader] Running under Unity 2020.3.49f1
+[Info   : Preloader] CLR runtime version: 4.0.30319.17020
+[Info   : Preloader] Supports SRE: False
+[Message: Preloader] Preloader started
+[Info   :AssemblyPatcher] Loaded 1 patcher type from [BepInEx.Unity.Mono.Preloader 6.0.0.0]
+[Info   : Preloader] 1 patcher plugin loaded
+[Info   : Preloader] 143 assemblies discovered
+[Message:AssemblyPatcher] Executing 1 patch(es)
+[Message: Preloader] Preloader finished
+[Message:   BepInEx] Chainloader initialized
+[Info   :   BepInEx] 1 plugin to load
+[Info   :   BepInEx] Loading [Zhao Huo Character Portraits 2.1.0]
+[Info   :Zhao Huo Character Portraits] Characters enabled: long-xiang,player,tang-buyi,tang-moling,tang-zheng,xiahou-lan,yu-xiaomei
+[Info   :Zhao Huo Character Portraits] Ready. Game=release_1.0.6000.3, Unity=2020.3.49f1; coroutine + synchronous portrait hooks installed; PNG files=47
+[Info   :Zhao Huo Character Portraits] SELFTEST waiting for game startup (5 seconds)
+[Message:   BepInEx] Chainloader startup complete
+[Info   :Zhao Huo Character Portraits] SELFTEST initializing Addressables
+[Info   :Zhao Huo Character Portraits] SELFTEST located 50 current protagonist resources
+[Info   :Zhao Huo Character Portraits] REPLACED player/唐門_主角/normal -> normal.png [1060x1700]
+[Info   :Zhao Huo Character Portraits] SELFTEST normal game Setup completed
+[Info   :Zhao Huo Character Portraits] REPLACED player/唐門_主角/angry1 -> angry1.png [1060x1700]
+[Info   :Zhao Huo Character Portraits] REPLACED player/唐門_主角/angry2 -> angry2.png [1060x1700]
+[Info   :Zhao Huo Character Portraits] REPLACED player/唐門_主角/angry3 -> angry3.png [1060x1700]
+[Info   :Zhao Huo Character Portraits] REPLACED player/唐門_主角/blood -> blood.png [1060x1700]
+[Info   :Zhao Huo Character Portraits] REPLACED player/唐門_主角/blood_laugh1 -> blood_laugh1.png [1060x1700]
+[Info   :Zhao Huo Character Portraits] REPLACED player/唐門_主角/blood_nervous1 -> blood_nervous1.png [1060x1700]
+[Info   :Zhao Huo Character Portraits] SELFTEST rendered page 1
+[Info   :Zhao Huo Character Portraits] REPLACED player/唐門_主角/blood_no_weapon -> blood_no_weapon.png [1060x1700]
+[Info   :Zhao Huo Character Portraits] REPLACED player/唐門_主角/blood_no_weapon_laugh1 -> blood_no_weapon_laugh1.png [1060x1700]
+[Info   :Zhao Huo Character Portraits] REPLACED player/唐門_主角/caught -> caught.png [1060x1700]
+[Info   :Zhao Huo Character Portraits] REPLACED player/唐門_主角/close_eye -> close_eye.png [1060x1700]
+[Info   :Zhao Huo Character Portraits] REPLACED player/唐門_主角/close_eye_laugh -> close_eye_laugh.png [1060x1700]
+[Info   :Zhao Huo Character Portraits] REPLACED player/唐門_主角/close_eye_nervous -> close_eye_nervous.png [1060x1700]
+[Info   :Zhao Huo Character Portraits] REPLACED player/唐門_主角/close_eye_nervous2 -> close_eye_nervous2.png [1060x1700]
+[Info   :Zhao Huo Character Portraits] REPLACED player/唐門_主角/close_eye_powder -> close_eye_powder.png [1060x1700]
+[Info   :Zhao Huo Character Portraits] SELFTEST rendered page 2
+[Info   :Zhao Huo Character Portraits] REPLACED player/唐門_主角/determined -> determined.png [1060x1700]
+[Info   :Zhao Huo Character Portraits] REPLACED player/唐門_主角/die -> die.png [1060x1700]
+[Info   :Zhao Huo Character Portraits] REPLACED player/唐門_主角/doubt -> doubt.png [1060x1700]
+[Info   :Zhao Huo Character Portraits] REPLACED player/唐門_主角/eye_mask_nervous1 -> eye_mask_nervous1.png [1060x1700]
+[Info   :Zhao Huo Character Portraits] REPLACED player/唐門_主角/eye_mask_nervous2 -> eye_mask_nervous2.png [1060x1700]
+[Info   :Zhao Huo Character Portraits] REPLACED player/唐門_主角/fist_north_star -> fist_north_star.png [1200x1700]
+[Info   :Zhao Huo Character Portraits] REPLACED player/唐門_主角/gloomy2 -> gloomy2.png [1060x1700]
+[Info   :Zhao Huo Character Portraits] REPLACED player/唐門_主角/god_thunder -> god_thunder.png [1320x1700]
+[Info   :Zhao Huo Character Portraits] SELFTEST rendered page 3
+[Info   :Zhao Huo Character Portraits] REPLACED player/唐門_主角/head -> head.png [1060x1700]
+[Info   :Zhao Huo Character Portraits] REPLACED player/唐門_主角/hero_landing -> hero_landing.png [1200x1700]
+[Info   :Zhao Huo Character Portraits] REPLACED player/唐門_主角/hurt -> hurt.png [1060x1700]
+[Info   :Zhao Huo Character Portraits] REPLACED player/唐門_主角/hurt_fist -> hurt_fist.png [1460x1700]
+[Info   :Zhao Huo Character Portraits] REPLACED player/唐門_主角/hurt2 -> hurt2.png [1060x1700]
+[Info   :Zhao Huo Character Portraits] REPLACED player/唐門_主角/laugh1 -> laugh1.png [1060x1700]
+[Info   :Zhao Huo Character Portraits] REPLACED player/唐門_主角/laugh2 -> laugh2.png [1060x1700]
+[Info   :Zhao Huo Character Portraits] REPLACED player/唐門_主角/mask -> mask.png [1060x1700]
+[Info   :Zhao Huo Character Portraits] SELFTEST rendered page 4
+[Info   :Zhao Huo Character Portraits] REPLACED player/唐門_主角/mud -> mud.png [1060x1700]
+[Info   :Zhao Huo Character Portraits] REPLACED player/唐門_主角/nervous1 -> nervous1.png [1060x1700]
+[Info   :Zhao Huo Character Portraits] REPLACED player/唐門_主角/nervous2 -> nervous2.png [1060x1700]
+[Info   :Zhao Huo Character Portraits] REPLACED player/唐門_主角/nervous3 -> nervous3.png [1060x1700]
+[Info   :Zhao Huo Character Portraits] REPLACED player/唐門_主角/oraora -> oraora.png [1060x1700]
+[Info   :Zhao Huo Character Portraits] REPLACED player/唐門_主角/revel -> revel.png [1060x1700]
+[Info   :Zhao Huo Character Portraits] REPLACED player/唐門_主角/sad1 -> sad1.png [1060x1700]
+[Info   :Zhao Huo Character Portraits] SELFTEST rendered page 5
+[Info   :Zhao Huo Character Portraits] REPLACED player/唐門_主角/shake -> shake.png [1060x1700]
+[Info   :Zhao Huo Character Portraits] REPLACED player/唐門_主角/shake2 -> shake2.png [1060x1700]
+[Info   :Zhao Huo Character Portraits] REPLACED player/唐門_主角/shock -> shock.png [1060x1700]
+[Info   :Zhao Huo Character Portraits] REPLACED player/唐門_主角/soul -> soul.png [1060x1700]
+[Info   :Zhao Huo Character Portraits] REPLACED player/唐門_主角/special1 -> special1.png [1060x1700]
+[Info   :Zhao Huo Character Portraits] REPLACED player/唐門_主角/stupid -> stupid.png [1060x1700]
+[Info   :Zhao Huo Character Portraits] REPLACED player/唐門_主角/suck1 -> suck1.png [1060x1700]
+[Info   :Zhao Huo Character Portraits] SELFTEST rendered page 6
+[Info   :Zhao Huo Character Portraits] REPLACED player/唐門_主角/suck3 -> suck3.png [1060x1700]
+[Info   :Zhao Huo Character Portraits] REPLACED player/唐門_主角/suck4 -> suck4.png [1060x1700]
+[Info   :Zhao Huo Character Portraits] SELFTEST rendered page 7
+[Info   :Zhao Huo Character Portraits] SELFTEST testing real PlayerAvatarPanel.OnEnable, both talent branches
+[Info   :Zhao Huo Character Portraits] REPLACED player/Avatar/normal -> normal.png [1060x1700]
+[Info   :Zhao Huo Character Portraits] SELFTEST character fixture tang-buyi/brother1
+[Info   :Zhao Huo Character Portraits] REPLACED tang-buyi/唐門_大師兄/normal -> normal.png [1300x1700]
+[Info   :Zhao Huo Character Portraits] REPLACED tang-buyi/唐門_大師兄/angry1 -> angry1.png [1300x1700]
+[Info   :Zhao Huo Character Portraits] REPLACED tang-buyi/唐門_大師兄/angry2 -> angry2.png [1300x1700]
+[Info   :Zhao Huo Character Portraits] REPLACED tang-buyi/唐門_大師兄/angry3 -> angry3.png [1300x1700]
+[Info   :Zhao Huo Character Portraits] REPLACED tang-buyi/唐門_大師兄/hat -> hat.png [1300x1700]
+[Info   :Zhao Huo Character Portraits] REPLACED tang-buyi/唐門_大師兄/hurt -> hurt.png [1300x1700]
+[Info   :Zhao Huo Character Portraits] REPLACED tang-buyi/唐門_大師兄/laugh1 -> laugh1.png [1300x1700]
+[Info   :Zhao Huo Character Portraits] REPLACED tang-buyi/唐門_大師兄/laugh2 -> laugh2.png [1300x1700]
+[Info   :Zhao Huo Character Portraits] REPLACED tang-buyi/唐門_大師兄/nervous1 -> nervous1.png [1300x1700]
+[Info   :Zhao Huo Character Portraits] REPLACED tang-buyi/唐門_大師兄/nervous2 -> nervous2.png [1300x1700]
+[Info   :Zhao Huo Character Portraits] REPLACED tang-buyi/唐門_大師兄/nervous3 -> nervous3.png [1300x1700]
+[Info   :Zhao Huo Character Portraits] REPLACED tang-buyi/唐門_大師兄/serious -> serious.png [1300x1700]
+[Info   :Zhao Huo Character Portraits] REPLACED tang-buyi/唐門_大師兄/shock -> shock.png [1300x1700]
+[Info   :Zhao Huo Character Portraits] REPLACED tang-buyi/唐門_大師兄/special1 -> special1.png [1300x1700]
+[Info   :Zhao Huo Character Portraits] REPLACED tang-buyi/唐門_大師兄/suck -> suck.png [1300x1700]
+[Info   :Zhao Huo Character Portraits] SELFTEST character fixture tang-buyi/brother1_2
+[Info   :Zhao Huo Character Portraits] REPLACED tang-buyi/唐門_大師兄2/normal -> normal.png [1300x1700]
+[Info   :Zhao Huo Character Portraits] SELFTEST character fixture tang-buyi/brother1_0
+[Info   :Zhao Huo Character Portraits] REPLACED tang-buyi/唐門_大師兄_隱/normal -> normal.png [1300x1700]
+[Info   :Zhao Huo Character Portraits] SELFTEST character fixture tang-buyi/brother1_young
+[Info   :Zhao Huo Character Portraits] SELFTEST character fixture tang-buyi/__scope_probe
+[Info   :Zhao Huo Character Portraits] SELFTEST character fixture xiahou-lan/girl6
+[Info   :Zhao Huo Character Portraits] REPLACED xiahou-lan/崆峒_小蘭/normal -> normal.png [1056x1700]
+[Info   :Zhao Huo Character Portraits] REPLACED xiahou-lan/崆峒_小蘭/angry -> angry.png [1056x1700]
+[Info   :Zhao Huo Character Portraits] REPLACED xiahou-lan/崆峒_小蘭/angry2 -> angry2.png [1056x1700]
+[Info   :Zhao Huo Character Portraits] REPLACED xiahou-lan/崆峒_小蘭/block -> block.png [1163x1700]
+[Info   :Zhao Huo Character Portraits] REPLACED xiahou-lan/崆峒_小蘭/blood -> blood.png [1056x1700]
+[Info   :Zhao Huo Character Portraits] REPLACED xiahou-lan/崆峒_小蘭/cry -> cry.png [1056x1700]
+[Info   :Zhao Huo Character Portraits] REPLACED xiahou-lan/崆峒_小蘭/droopy -> droopy.png [1056x1700]
+[Info   :Zhao Huo Character Portraits] REPLACED xiahou-lan/崆峒_小蘭/gloomy -> gloomy.png [1056x1700]
+[Info   :Zhao Huo Character Portraits] REPLACED xiahou-lan/崆峒_小蘭/gloomy2 -> gloomy2.png [1056x1700]
+[Info   :Zhao Huo Character Portraits] REPLACED xiahou-lan/崆峒_小蘭/laugh1 -> laugh1.png [1056x1700]
+[Info   :Zhao Huo Character Portraits] REPLACED xiahou-lan/崆峒_小蘭/love -> love.png [1060x1700]
+[Info   :Zhao Huo Character Portraits] REPLACED xiahou-lan/崆峒_小蘭/nervous -> nervous.png [1056x1700]
+[Info   :Zhao Huo Character Portraits] REPLACED xiahou-lan/崆峒_小蘭/nervous2 -> nervous2.png [1056x1700]
+[Info   :Zhao Huo Character Portraits] REPLACED xiahou-lan/崆峒_小蘭/shy2 -> shy2.png [1056x1700]
+[Info   :Zhao Huo Character Portraits] REPLACED xiahou-lan/崆峒_小蘭/squint -> squint.png [1056x1700]
+[Info   :Zhao Huo Character Portraits] SELFTEST character fixture xiahou-lan/girl6_1
+[Info   :Zhao Huo Character Portraits] REPLACED xiahou-lan/崆峒_小蘭_早/normal -> normal.png [1056x1700]
+[Info   :Zhao Huo Character Portraits] SELFTEST character fixture xiahou-lan/girl6_3
+[Info   :Zhao Huo Character Portraits] SELFTEST character fixture xiahou-lan/__scope_probe
+[Info   :Zhao Huo Character Portraits] SELFTEST character fixture tang-moling/sister1
+[Info   :Zhao Huo Character Portraits] REPLACED tang-moling/唐門_小師妹/normal -> normal.png [720x1700]
+[Info   :Zhao Huo Character Portraits] REPLACED tang-moling/唐門_小師妹/angry1 -> angry1.png [720x1700]
+[Info   :Zhao Huo Character Portraits] REPLACED tang-moling/唐門_小師妹/close_eye -> close_eye.png [720x1700]
+[Info   :Zhao Huo Character Portraits] REPLACED tang-moling/唐門_小師妹/close_eye_laugh -> close_eye_laugh.png [720x1700]
+[Info   :Zhao Huo Character Portraits] REPLACED tang-moling/唐門_小師妹/gamer -> gamer.png [720x1700]
+[Info   :Zhao Huo Character Portraits] REPLACED tang-moling/唐門_小師妹/laugh1 -> laugh1.png [720x1700]
+[Info   :Zhao Huo Character Portraits] REPLACED tang-moling/唐門_小師妹/laugh3 -> laugh3.png [720x1700]
+[Info   :Zhao Huo Character Portraits] REPLACED tang-moling/唐門_小師妹/nervous1 -> nervous1.png [720x1700]
+[Info   :Zhao Huo Character Portraits] REPLACED tang-moling/唐門_小師妹/nervous2 -> nervous2.png [720x1700]
+[Info   :Zhao Huo Character Portraits] REPLACED tang-moling/唐門_小師妹/proud -> proud.png [720x1700]
+[Info   :Zhao Huo Character Portraits] REPLACED tang-moling/唐門_小師妹/sad2 -> sad2.png [720x1700]
+[Info   :Zhao Huo Character Portraits] REPLACED tang-moling/唐門_小師妹/shy -> shy.png [720x1700]
+[Info   :Zhao Huo Character Portraits] REPLACED tang-moling/唐門_小師妹/special1 -> special1.png [720x1700]
+[Info   :Zhao Huo Character Portraits] REPLACED tang-moling/唐門_小師妹/special2 -> special2.png [720x1700]
+[Info   :Zhao Huo Character Portraits] REPLACED tang-moling/唐門_小師妹/special3 -> special3.png [720x1700]
+[Info   :Zhao Huo Character Portraits] SELFTEST character fixture tang-moling/sister1_look
+[Info   :Zhao Huo Character Portraits] SELFTEST character fixture tang-moling/__scope_probe
+[Info   :Zhao Huo Character Portraits] SELFTEST character fixture long-xiang/girl4
+[Info   :Zhao Huo Character Portraits] REPLACED long-xiang/錦香_龍湘/normal -> normal.png [1000x1700]
+[Info   :Zhao Huo Character Portraits] REPLACED long-xiang/錦香_龍湘/angry1 -> angry1.png [1000x1700]
+[Info   :Zhao Huo Character Portraits] REPLACED long-xiang/錦香_龍湘/angry3 -> angry3.png [1340x1700]
+[Info   :Zhao Huo Character Portraits] REPLACED long-xiang/錦香_龍湘/angry4 -> angry4.png [1340x1700]
+[Info   :Zhao Huo Character Portraits] REPLACED long-xiang/錦香_龍湘/close_eyes -> close_eyes.png [1000x1700]
+[Info   :Zhao Huo Character Portraits] REPLACED long-xiang/錦香_龍湘/diffident -> diffident.png [1000x1700]
+[Info   :Zhao Huo Character Portraits] REPLACED long-xiang/錦香_龍湘/doubt -> doubt.png [1000x1700]
+[Info   :Zhao Huo Character Portraits] REPLACED long-xiang/錦香_龍湘/drumstick -> drumstick.png [1000x1700]
+[Info   :Zhao Huo Character Portraits] REPLACED long-xiang/錦香_龍湘/drumstick_sword -> drumstick_sword.png [1000x1700]
+[Info   :Zhao Huo Character Portraits] REPLACED long-xiang/錦香_龍湘/hurt -> hurt.png [1000x1700]
+[Info   :Zhao Huo Character Portraits] REPLACED long-xiang/錦香_龍湘/hurt2 -> hurt2.png [1340x1700]
+[Info   :Zhao Huo Character Portraits] REPLACED long-xiang/錦香_龍湘/laugh1 -> laugh1.png [1000x1700]
+[Info   :Zhao Huo Character Portraits] REPLACED long-xiang/錦香_龍湘/laugh2 -> laugh2.png [1000x1700]
+[Info   :Zhao Huo Character Portraits] REPLACED long-xiang/錦香_龍湘/nervous1 -> nervous1.png [1000x1700]
+[Info   :Zhao Huo Character Portraits] REPLACED long-xiang/錦香_龍湘/nervous2 -> nervous2.png [1000x1700]
+[Info   :Zhao Huo Character Portraits] REPLACED long-xiang/錦香_龍湘/nervous3 -> nervous3.png [1000x1700]
+[Info   :Zhao Huo Character Portraits] REPLACED long-xiang/錦香_龍湘/sad -> sad.png [1000x1700]
+[Info   :Zhao Huo Character Portraits] REPLACED long-xiang/錦香_龍湘/sad2 -> sad2.png [1000x1700]
+[Info   :Zhao Huo Character Portraits] REPLACED long-xiang/錦香_龍湘/shy -> shy.png [1000x1700]
+[Info   :Zhao Huo Character Portraits] REPLACED long-xiang/錦香_龍湘/shy2 -> shy2.png [1000x1700]
+[Info   :Zhao Huo Character Portraits] REPLACED long-xiang/錦香_龍湘/sword -> sword.png [1600x1700]
+[Info   :Zhao Huo Character Portraits] SELFTEST character fixture long-xiang/girl4_1
+[Info   :Zhao Huo Character Portraits] REPLACED long-xiang/錦香_龍湘_隱/normal -> normal.png [1000x1700]
+[Info   :Zhao Huo Character Portraits] SELFTEST character fixture long-xiang/girl4_2
+[Info   :Zhao Huo Character Portraits] SELFTEST character fixture long-xiang/__scope_probe
+[Info   :Zhao Huo Character Portraits] SELFTEST character fixture yu-xiaomei/girl5
+[Info   :Zhao Huo Character Portraits] REPLACED yu-xiaomei/崆峒_小梅/normal -> normal.png [1060x1700]
+[Info   :Zhao Huo Character Portraits] REPLACED yu-xiaomei/崆峒_小梅/angry1 -> angry1.png [1060x1700]
+[Info   :Zhao Huo Character Portraits] REPLACED yu-xiaomei/崆峒_小梅/angry2 -> angry2.png [1060x1700]
+[Info   :Zhao Huo Character Portraits] REPLACED yu-xiaomei/崆峒_小梅/angry3 -> angry3.png [1060x1700]
+[Info   :Zhao Huo Character Portraits] REPLACED yu-xiaomei/崆峒_小梅/backstage -> backstage.png [1060x1700]
+[Info   :Zhao Huo Character Portraits] REPLACED yu-xiaomei/崆峒_小梅/gloomy2 -> gloomy2.png [1060x1700]
+[Info   :Zhao Huo Character Portraits] REPLACED yu-xiaomei/崆峒_小梅/hurt -> hurt.png [1060x1700]
+[Info   :Zhao Huo Character Portraits] REPLACED yu-xiaomei/崆峒_小梅/kick -> kick.png [2120x1700]
+[Info   :Zhao Huo Character Portraits] REPLACED yu-xiaomei/崆峒_小梅/laugh1 -> laugh1.png [1060x1700]
+[Info   :Zhao Huo Character Portraits] REPLACED yu-xiaomei/崆峒_小梅/laugh2 -> laugh2.png [1060x1700]
+[Info   :Zhao Huo Character Portraits] REPLACED yu-xiaomei/崆峒_小梅/laugh3 -> laugh3.png [1060x1700]
+[Info   :Zhao Huo Character Portraits] REPLACED yu-xiaomei/崆峒_小梅/nervous1 -> nervous1.png [1060x1700]
+[Info   :Zhao Huo Character Portraits] REPLACED yu-xiaomei/崆峒_小梅/nervous2 -> nervous2.png [1060x1700]
+[Info   :Zhao Huo Character Portraits] REPLACED yu-xiaomei/崆峒_小梅/nervous3 -> nervous3.png [1060x1700]
+[Info   :Zhao Huo Character Portraits] REPLACED yu-xiaomei/崆峒_小梅/norseblood -> norseblood.png [1060x1700]
+[Info   :Zhao Huo Character Portraits] REPLACED yu-xiaomei/崆峒_小梅/proud -> proud.png [1060x1700]
+[Info   :Zhao Huo Character Portraits] REPLACED yu-xiaomei/崆峒_小梅/sad1 -> sad1.png [1060x1700]
+[Info   :Zhao Huo Character Portraits] REPLACED yu-xiaomei/崆峒_小梅/scary -> scary.png [1060x1700]
+[Info   :Zhao Huo Character Portraits] REPLACED yu-xiaomei/崆峒_小梅/scary_laugh -> scary_laugh.png [1060x1700]
+[Info   :Zhao Huo Character Portraits] REPLACED yu-xiaomei/崆峒_小梅/scary_shock -> scary_shock.png [1060x1700]
+[Info   :Zhao Huo Character Portraits] REPLACED yu-xiaomei/崆峒_小梅/shy1 -> shy1.png [1059x1700]
+[Info   :Zhao Huo Character Portraits] REPLACED yu-xiaomei/崆峒_小梅/shy2 -> shy2.png [1060x1700]
+[Info   :Zhao Huo Character Portraits] REPLACED yu-xiaomei/崆峒_小梅/shy3 -> shy3.png [1000x1700]
+[Info   :Zhao Huo Character Portraits] REPLACED yu-xiaomei/崆峒_小梅/shy4 -> shy4.png [800x1700]
+[Info   :Zhao Huo Character Portraits] REPLACED yu-xiaomei/崆峒_小梅/special6 -> special6.png [1060x1700]
+[Info   :Zhao Huo Character Portraits] SELFTEST character fixture yu-xiaomei/girl5_hand
+[Info   :Zhao Huo Character Portraits] SELFTEST character fixture yu-xiaomei/girl5_9
+[Info   :Zhao Huo Character Portraits] SELFTEST character fixture yu-xiaomei/girl5_6
+[Info   :Zhao Huo Character Portraits] SELFTEST character fixture yu-xiaomei/girl5_10_1
+[Info   :Zhao Huo Character Portraits] SELFTEST character fixture yu-xiaomei/girl5_10_2
+[Info   :Zhao Huo Character Portraits] SELFTEST character fixture yu-xiaomei/girl5_10_3
+[Info   :Zhao Huo Character Portraits] SELFTEST character fixture yu-xiaomei/girl5_10_4
+[Info   :Zhao Huo Character Portraits] SELFTEST character fixture yu-xiaomei/girl5_10_5
+[Info   :Zhao Huo Character Portraits] SELFTEST character fixture yu-xiaomei/girl5_10_6
+[Info   :Zhao Huo Character Portraits] SELFTEST character fixture yu-xiaomei/girl5_7
+[Info   :Zhao Huo Character Portraits] SELFTEST character fixture yu-xiaomei/girl5_2
+[Info   :Zhao Huo Character Portraits] SELFTEST character fixture yu-xiaomei/girl5_5
+[Info   :Zhao Huo Character Portraits] SELFTEST character fixture yu-xiaomei/girl5_4
+[Info   :Zhao Huo Character Portraits] SELFTEST character fixture yu-xiaomei/girl5_8
+[Info   :Zhao Huo Character Portraits] SELFTEST character fixture yu-xiaomei/girl5_3
+[Info   :Zhao Huo Character Portraits] SELFTEST character fixture yu-xiaomei/__scope_probe
+[Info   :Zhao Huo Character Portraits] SELFTEST character fixture tang-zheng/brother2
+[Info   :Zhao Huo Character Portraits] REPLACED tang-zheng/唐門_二師兄/normal -> normal.png [1188x1700]
+[Info   :Zhao Huo Character Portraits] REPLACED tang-zheng/唐門_二師兄/angry1 -> angry1.png [1188x1700]
+[Info   :Zhao Huo Character Portraits] REPLACED tang-zheng/唐門_二師兄/angry2 -> angry2.png [1188x1700]
+[Info   :Zhao Huo Character Portraits] REPLACED tang-zheng/唐門_二師兄/close_eye -> close_eye.png [1188x1700]
+[Info   :Zhao Huo Character Portraits] REPLACED tang-zheng/唐門_二師兄/close_eye_nervous -> close_eye_nervous.png [1188x1700]
+[Info   :Zhao Huo Character Portraits] REPLACED tang-zheng/唐門_二師兄/gloomy1 -> gloomy1.png [1188x1700]
+[Info   :Zhao Huo Character Portraits] REPLACED tang-zheng/唐門_二師兄/gloomy2 -> gloomy2.png [1188x1700]
+[Info   :Zhao Huo Character Portraits] REPLACED tang-zheng/唐門_二師兄/hurt -> hurt.png [1188x1700]
+[Info   :Zhao Huo Character Portraits] REPLACED tang-zheng/唐門_二師兄/laugh1 -> laugh1.png [1188x1700]
+[Info   :Zhao Huo Character Portraits] REPLACED tang-zheng/唐門_二師兄/laugh2 -> laugh2.png [1188x1700]
+[Info   :Zhao Huo Character Portraits] REPLACED tang-zheng/唐門_二師兄/nervous1 -> nervous1.png [1188x1700]
+[Info   :Zhao Huo Character Portraits] REPLACED tang-zheng/唐門_二師兄/nervous2 -> nervous2.png [1188x1700]
+[Info   :Zhao Huo Character Portraits] SELFTEST character fixture tang-zheng/brother2_young
+[Info   :Zhao Huo Character Portraits] SELFTEST character fixture tang-zheng/__scope_probe
+[Info   :Zhao Huo Character Portraits] SELFTEST PASS: resources=50, replaced=47, fallback=3; reports=<GAME>\BepInEx\plugins\ZhaoHuoNatural\Diagnostics\20261017-154914

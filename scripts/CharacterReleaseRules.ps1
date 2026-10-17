@@ -1,7 +1,9 @@
-#requires -Version 5.1
+﻿#requires -Version 5.1
 # Frozen release inventories, separate from editable catalog readiness and hashes.
-$releaseVersion='2.2.0'
+$releaseVersion='2.2.1'
 $releaseRuntimeVersion='2.1.0'
+$releaseArtworkPatchPath='scripts/artwork-patch-v2.2.1.json'
+$releaseArtworkPatch=Get-Content -LiteralPath (Join-Path $PSScriptRoot 'artwork-patch-v2.2.1.json') -Raw -Encoding UTF8|ConvertFrom-Json
 $releaseGameBuildId='25987745'
 $releaseGameVersion='release_1.0.6000.3'
 $releaseRoleIds=@('player','tang-buyi','xiahou-lan','tang-moling','long-xiang','yu-xiaomei','tang-zheng')
@@ -44,5 +46,36 @@ $frozenV21Fingerprints=@{
 $releasePromptGroups=@(
     [pscustomobject]@{Path='Prompts/hardman/index.json';Count=47;Variants=@('player/hardman')},
     [pscustomobject]@{Path='Prompts/multichar/index.json';Count=171;Variants=@('player/white','player/black','player/veteran','tang-buyi/refined','xiahou-lan/refined')},
-    [pscustomobject]@{Path='Prompts/expansion-v2.1/index.json';Count=88;Variants=@('tang-buyi/female','tang-moling/refined','long-xiang/refined','yu-xiaomei/refined','tang-zheng/female')}
+    [pscustomobject]@{Path='Prompts/expansion-v2.1/index.json';Count=88;Variants=@('tang-buyi/female','tang-moling/refined','long-xiang/refined','yu-xiaomei/refined','tang-zheng/female');HistoricalVariants=@('tang-buyi/female')},
+    [pscustomobject]@{Path='Prompts/hand-fix-v2.2.1/index.json';Count=15;Variants=@('tang-buyi/female')}
 )
+$releaseFrozenFingerprints=@{}
+foreach($key in $frozenV21Fingerprints.Keys){if($key-ne 'tang-buyi/female'){$releaseFrozenFingerprints[$key]=$frozenV21Fingerprints[$key]}}
+$releaseFrozenFingerprints['player/hardman']='0D768B89EF22EFC38EA9CCE994120EFC77FFDD3A762DBD2FB2F1745CEF4A7A5E'
+function Assert-ReleaseArtworkRevision([string]$Key,[object]$Variant){
+    if($Key-ne 'tang-buyi/female'){
+        if(-not $releaseFrozenFingerprints.ContainsKey($Key)-or $Variant.AssetFingerprint-ne $releaseFrozenFingerprints[$Key]){throw ('Previously released v2.2 artwork changed: '+$Key)}
+        return
+    }
+    $patch=$releaseArtworkPatch
+    if($patch.SchemaVersion-ne 1-or $patch.FromPackageVersion-ne '2.2.0'-or $patch.ToPackageVersion-ne $releaseVersion-or $patch.CharacterId-ne 'tang-buyi'-or $patch.VariantId-ne 'female'-or $patch.PortraitCount-ne 15-or $patch.BeforeFingerprint-ne $frozenV21Fingerprints[$Key]-or $patch.AfterFingerprint-notmatch '^[0-9A-F]{64}$'-or $Variant.AssetFingerprint-ne $patch.AfterFingerprint-or $patch.AfterFingerprint-eq $patch.BeforeFingerprint){throw 'Final approved fifteen-portrait patch fingerprint is missing or differs.'}
+    if(@($patch.BeforeFiles).Count-ne 15-or @($Variant.Files).Count-ne 15){throw 'Patch inventory must contain exactly fifteen old and new portraits.'}
+    $lines=[string[]]@($patch.BeforeFiles|ForEach-Object{'tang-buyi/'+([string]$_.Name).ToLowerInvariant()+'='+([string]$_.Sha256).ToUpperInvariant()});[Array]::Sort($lines,[StringComparer]::Ordinal)
+    $sha=[Security.Cryptography.SHA256]::Create();try{$before=([BitConverter]::ToString($sha.ComputeHash([Text.Encoding]::UTF8.GetBytes(($lines-join "`n"))))).Replace('-','')}finally{$sha.Dispose()}
+    if($before-ne $patch.BeforeFingerprint){throw 'Published pre-repair file list differs from its complete fingerprint.'}
+    $seen=@{}
+    foreach($entry in $patch.BeforeFiles){
+        $current=@($Variant.Files|Where-Object Name -eq $entry.Name)
+        if($seen.ContainsKey($entry.Name)-or $entry.Sha256-notmatch '^[0-9A-F]{64}$'-or $current.Count-ne 1-or $current[0].Sha256-eq $entry.Sha256){throw ('Every declared female portrait must be repaired exactly once: '+$entry.Name)}
+        $seen[$entry.Name]=$true
+    }
+}
+function Get-ReleasePromptExpectation([object]$Group,[string]$Key,[string]$Name,[string]$CurrentHash){
+    $historical=$Group.PSObject.Properties['HistoricalVariants']-and $Key-in @($Group.HistoricalVariants)
+    if($historical){
+        $entry=@($releaseArtworkPatch.BeforeFiles|Where-Object Name -eq $Name)
+        if($Key-ne 'tang-buyi/female'-or $entry.Count-ne 1){throw 'Unknown superseded prompt/image identity.'}
+        return [pscustomobject]@{Identity=('historical-v2.1/'+$Key+'/'+$Name);Sha256=$entry[0].Sha256;Historical=$true}
+    }
+    return [pscustomobject]@{Identity=($Key+'/'+$Name);Sha256=$CurrentHash;Historical=$false}
+}

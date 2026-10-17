@@ -1,10 +1,26 @@
 # 验证记录
 
+## v2.2.1：大师兄女版手部修复
+
+本轮管理器版本为 **2.2.1**，运行插件仍为 **2.1.0**。只替换唐布衣“明艳女侠”的 15 张 PNG，其余 432 张图、运行 DLL、布局与兼容规则保持原字节。总量仍为 7 位角色、14 套自定义外观、447 张图。
+
+实际 Steam build `25987745` / `release_1.0.6000.3`（1.0.6.03）完成女版、精修男版、原画三组资源诊断。女版 15 张替换图逐张进行游戏内显示与手部目视核对；独立手部资源继续使用原画。完成后恢复测试前的七位角色选择，普通 Steam 启动持续响应 90.7 秒，无插件错误，随后正常关闭本次测试进程。未加载剧情存档，不代表全剧情、全路线或全部第三方模组组合测试。
+
+| 范围 | 证据 | 结果与边界 |
+| --- | --- | --- |
+| 本次实机与图片绑定 | [运行总报告](runtime-v2.2.1/artwork-runtime.json) | 女版、男版、原画三组通过，绑定最终 Catalog、运行 DLL 和 15 张修复图；包含普通启动与真实安装保护证据 |
+| 手部与显示核对 | [静态目视记录](artwork-patch-v2.2.1-static-review.json)及运行报告引用的游戏内记录 | 15/15 通过；截图在维护者本地保存，公开报告保留哈希，不附带游戏原画/UI截图 |
+| 最终发行目录 | [图片完整性](character-art-integrity.json)、[目录验收](character-catalog-acceptance.json) | 447 图完整，69 项目录检查通过；不代替实际游戏测试 |
+| 旧女版直接升级 | [同款图片升级](character-artwork-patch.json) | 22 项通过；用已发布 v2.2.0 安装器建立隔离安装，覆盖精确旧版识别、失败回滚、中断恢复、外部修改拒绝、重复应用及卸载 |
+| 安装器与界面 | [角色管理](character-manager-tests.json)、[回归](character-manager-regression.json)、[共享组件](character-shared-update.json)、[扩展迁移](character-expansion-tests.json)、[GUI](character-manager-gui.json) | 64 + 74 + 13 + 33 + 154 项；连同升级专项共 360 次断言执行。隔离夹具与界面 mock 的范围在各报告中说明 |
+
+最终 Catalog 的数据验收单独记录，并引用测试时的 Catalog 哈希；没有把历史报告改写成最终图片的实机测试。v2.2.0 被同名新报告替代的文件，原字节归档于 [history-v2.2.0](history-v2.2.0/)。未修改外观可沿用下面的历史证据。
+
 ## v2.2.0：1.0.6.03 适配与赵活硬汉版
 
 本轮管理器版本为 **2.2.0**，运行插件仍为 **2.1.0**。目标游戏为 Steam build `25987745` / `release_1.0.6000.3`（1.0.6.03）。旧 400 张 PNG 与插件 DLL 保持原字节，新增硬汉版 47 张；最终目录为 7 角色、14 套自定义外观、447 张 PNG，另有 7 个独立原版选项。
 
-**本次实机验收已通过。** `all-on`、`brother-refined`、`hardman`、`original` 四组实际游戏资源诊断覆盖 9 套代表外观，以及 7 位角色全部使用原版的模式。无自测参数的普通 Steam 启动观测 92 秒通过，主菜单确认 `release_1.0.6000.3`，随后正常菜单退出。见[本次新构建实机报告](runtime-build25987745/compatibility-runtime.json)和[选择与文件保护记录](runtime-build25987745/installation-preservation.json)。
+**v2.2.0 当轮实机验收已通过。** `all-on`、`brother-refined`、`hardman`、`original` 四组实际游戏资源诊断覆盖 9 套代表外观，以及 7 位角色全部使用原版的模式。无自测参数的普通 Steam 启动观测 92 秒通过，主菜单确认 `release_1.0.6000.3`，随后正常菜单退出。见[本次新构建实机报告](runtime-build25987745/compatibility-runtime.json)和[选择与文件保护记录](runtime-build25987745/installation-preservation.json)。
 
 9 套为赵活小师弟、赵活硬汉、唐布衣精修与女版，以及夏侯兰、唐默铃、龙湘、虞小梅精修和唐铮女版。其余五套赵活外观保持原字节并沿用历史美术与运行证据，本次未在新构建下逐套重测。诊断使用实际 Addressables、立绘加载与 UI 组件，未加载剧情存档，也不是全剧情、全路线游玩测试。以下离线与界面证据各自保留范围，不代替实机结果。
 
@@ -12,11 +28,11 @@
 | --- | --- | --- |
 | 当前游戏构建运行 | [实机总报告](runtime-build25987745/compatibility-runtime.json)：四组诊断、9 套外观、7 角色原版通过；[普通启动](runtime-build25987745/normal-startup.json)：92 秒通过 | 实际 Steam / Unity 组件与主菜单检查，未加载剧情存档；其余五套赵活未在本构建逐套重测 |
 | 真实安装保护 | [选择与文件保护](runtime-build25987745/installation-preservation.json)：通过 | 恢复原有角色选择，首次安装编号与备份、存档、其他插件及游戏文件保持 |
-| 最终素材与目录 | [图片完整性](character-art-integrity.json)：14 套 / 447 图；[最终目录验收](character-catalog-acceptance.json)：68 项通过 | 核对全部实际文件哈希、旧 400 图不变、角色布局、21 个选项及 306 条所需生成记录绑定；不启动游戏 |
-| 角色安装器与回归 | [角色管理](character-manager-tests.json)：64 项；[既有安装回归](character-manager-regression.json)：74 项 | Windows PowerShell 5.1 隔离文件夹夹具，验证事务与保护；未使用真实游戏或存档 |
-| 共享组件与迁移 | [共享组件更新](character-shared-update.json)：13 项；[三角色到七角色迁移](character-expansion-tests.json)：33 项 | 原有选择、首次备份、失败与中断恢复、外部修改拒绝 |
-| v2.1.0 → v2.2.0 | [旧正式版本升级](character-release-upgrade.json)：19 项 | 用真实旧版本安装器建立隔离安装；验证同款零写入、硬汉仅替换赵活 47 图、七角色选择与最初备份保留。不是原地实机安装 |
-| GUI 事件与布局 | [GUI 测试](character-manager-gui.json)：77 个断言 × 2 配置，共 154 次通过 | 真实 WinForms 事件，后端采用 mock；报告保留测试时的 Catalog 快照，不伪称最终素材验收 |
+| 最终素材与目录 | [图片完整性](history-v2.2.0/character-art-integrity.json)：14 套 / 447 图；[最终目录验收](history-v2.2.0/character-catalog-acceptance.json)：68 项通过 | 核对全部实际文件哈希、旧 400 图不变、角色布局、21 个选项及 306 条所需生成记录绑定；不启动游戏 |
+| 角色安装器与回归 | [角色管理](history-v2.2.0/character-manager-tests.json)：64 项；[既有安装回归](history-v2.2.0/character-manager-regression.json)：74 项 | Windows PowerShell 5.1 隔离文件夹夹具，验证事务与保护；未使用真实游戏或存档 |
+| 共享组件与迁移 | [共享组件更新](history-v2.2.0/character-shared-update.json)：13 项；[三角色到七角色迁移](history-v2.2.0/character-expansion-tests.json)：33 项 | 原有选择、首次备份、失败与中断恢复、外部修改拒绝 |
+| v2.1.0 → v2.2.0 | [旧正式版本升级](history-v2.2.0/character-release-upgrade.json)：19 项 | 用真实旧版本安装器建立隔离安装；验证同款零写入、硬汉仅替换赵活 47 图、七角色选择与最初备份保留。不是原地实机安装 |
+| GUI 事件与布局 | [GUI 测试](history-v2.2.0/character-manager-gui.json)：77 个断言 × 2 配置，共 154 次通过 | 真实 WinForms 事件，后端采用 mock；报告保留测试时的 Catalog 快照，不伪称最终素材验收 |
 | 最终硬汉界面 | [真实图预览](character-manager-gui-final-art.json)：默认与 Compact 150% 目视通过 | 实际 ImageLoader / DrawToBitmap 加载最终 PNG；未使用模拟素材就绪状态。“当前使用”标记是预览示例，不读取或修改游戏安装 |
 | 新旧完整兼容规则 | [双基线检查](compatibility-probe-tests-build25987745.json)：23 项通过 | 两套完整基线分别核验，均固定 395 个相关文件、23 个游戏成员引用；只读元数据检查与隔离变异测试，不执行游戏程序集 |
 | 新资源与原画回退 | [资源图核对](game-resources-build25987745/resource-graph.json)、[回退策略](game-resources-build25987745/fallback-policy-tests.json)：11 项通过 | 旧允许映射和 Sprite 内容保持；虞小梅唯一新增 `doubt` 在编译白名单外，继续显示原画 |

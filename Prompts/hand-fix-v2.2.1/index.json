@@ -1,0 +1,117 @@
+{
+  "Complete": true,
+  "GenerationMethod": "builtin imagegen",
+  "PixelPostProcessing": false,
+  "SelectedPortraitCount": 15,
+  "ActualGenerationAttemptCount": 16,
+  "HistoricalSourceRevision": "v2.2.0",
+  "AssetFingerprint": "6C94D6E83A1C983E331074A21872441E5A23D31D4C053E274DD246800E4EFFBE",
+  "Scope": "Fifteen hand-repair edits; angry3 preserves both actual attempts and selects attempt two. Old prompt records remain historical.",
+  "Assets": [
+    {
+      "CharacterId": "tang-buyi",
+      "VariantId": "female",
+      "Name": "angry1.png",
+      "OutputSHA256": "18EBD3290D4D89702EF347DD8F71D1A6FF0A496E6E6DF66F78C0F4C4FD6DF93F",
+      "RecordPath": "Prompts/hand-fix-v2.2.1/angry1.json"
+    },
+    {
+      "CharacterId": "tang-buyi",
+      "VariantId": "female",
+      "Name": "angry2.png",
+      "OutputSHA256": "145848B3C66AF4B37CCC651D916F388FA0B23B1711C566CCEEEE65182DA8320A",
+      "RecordPath": "Prompts/hand-fix-v2.2.1/angry2.json"
+    },
+    {
+      "CharacterId": "tang-buyi",
+      "VariantId": "female",
+      "Name": "angry3.png",
+      "OutputSHA256": "1B75E520A67581102BBCEB7BD7233EFD0B6D81368D01073E548E705C78717FE7",
+      "RecordPath": "Prompts/hand-fix-v2.2.1/angry3.json"
+    },
+    {
+      "CharacterId": "tang-buyi",
+      "VariantId": "female",
+      "Name": "hat.png",
+      "OutputSHA256": "07676F2C9170F1B8F9D13D5392F732697EE91547C0CCE7B8A0EA4CBBF572FDFF",
+      "RecordPath": "Prompts/hand-fix-v2.2.1/hat.json"
+    },
+    {
+      "CharacterId": "tang-buyi",
+      "VariantId": "female",
+      "Name": "hurt.png",
+      "OutputSHA256": "674D72E5550FAFD8C41226571144B512318ADC9D3F574F7C04773848C80FEDEA",
+      "RecordPath": "Prompts/hand-fix-v2.2.1/hurt.json"
+    },
+    {
+      "CharacterId": "tang-buyi",
+      "VariantId": "female",
+      "Name": "laugh1.png",
+      "OutputSHA256": "EED3EFD5A2D36DB029DA9B57B3510EE9CF83AA8BDC8E393660BE7194409D6773",
+      "RecordPath": "Prompts/hand-fix-v2.2.1/laugh1.json"
+    },
+    {
+      "CharacterId": "tang-buyi",
+      "VariantId": "female",
+      "Name": "laugh2.png",
+      "OutputSHA256": "2574871789089DF05F6CB8490D86DD8C66A9BADFD1B59D4ABD69D55AD32BF257",
+      "RecordPath": "Prompts/hand-fix-v2.2.1/laugh2.json"
+    },
+    {
+      "CharacterId": "tang-buyi",
+      "VariantId": "female",
+      "Name": "nervous1.png",
+      "OutputSHA256": "FD37B7836882AFC94FDF26D20762EC824F5A5445AC053E361A2F1D7DDC30DBE4",
+      "RecordPath": "Prompts/hand-fix-v2.2.1/nervous1.json"
+    },
+    {
+      "CharacterId": "tang-buyi",
+      "VariantId": "female",
+      "Name": "nervous2.png",
+      "OutputSHA256": "521D22D28168336C1CA0DFD113A30896DF36467DD2A32BE538220E31BCA3FB33",
+      "RecordPath": "Prompts/hand-fix-v2.2.1/nervous2.json"
+    },
+    {
+      "CharacterId": "tang-buyi",
+      "VariantId": "female",
+      "Name": "nervous3.png",
+      "OutputSHA256": "DD21FD444A11FAE4250E1C0815E7B82B6036021367D8813EEDF25F479EEF726D",
+      "RecordPath": "Prompts/hand-fix-v2.2.1/nervous3.json"
+    },
+    {
+      "CharacterId": "tang-buyi",
+      "VariantId": "female",
+      "Name": "normal.png",
+      "OutputSHA256": "1E5DE6426644CB74365815570FD2E0CE6421CE6369457C8206C3E5AC9C189938",
+      "RecordPath": "Prompts/hand-fix-v2.2.1/normal.json"
+    },
+    {
+      "CharacterId": "tang-buyi",
+      "VariantId": "female",
+      "Name": "serious.png",
+      "OutputSHA256": "86FE4AAB5A22197A687C641127B286813D32A52EFC043FEF4C3CF1282B819FFC",
+      "RecordPath": "Prompts/hand-fix-v2.2.1/serious.json"
+    },
+    {
+      "CharacterId": "tang-buyi",
+      "VariantId": "female",
+      "Name": "shock.png",
+      "OutputSHA256": "12B348BD1AC99FD781470DD938CF04471FB02024503585C1B6CBC71AC133B5CA",
+      "RecordPath": "Prompts/hand-fix-v2.2.1/shock.json"
+    },
+    {
+      "CharacterId": "tang-buyi",
+      "VariantId": "female",
+      "Name": "special1.png",
+      "OutputSHA256": "891C26CC943C88D042EC8486B3742A057247EA69085CA33825790839A9EB383F",
+      "RecordPath": "Prompts/hand-fix-v2.2.1/special1.json"
+    },
+    {
+      "CharacterId": "tang-buyi",
+      "VariantId": "female",
+      "Name": "suck.png",
+      "OutputSHA256": "DD55C871FE1A953FB131FC4D0BA10A4C068170650C5ED1353CF729FAF74BB099",
+      "RecordPath": "Prompts/hand-fix-v2.2.1/suck.json"
+    }
+  ]
+}

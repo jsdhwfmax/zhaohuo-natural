@@ -16,7 +16,7 @@ foreach($character in $catalog.Characters){
         if(-not $counts.ContainsKey($key)-or $variantFiles.ContainsKey($key)-or @($variant.Files).Count-ne $counts[$key]){throw ('Unexpected variant or count: '+$key)}
         $fallback=@($releaseFallbacks[$character.Id]);$actualFallback=@($variant.OriginalFallback)
         if($actualFallback.Count-ne $fallback.Count-or @($actualFallback|Where-Object{$_-notin $fallback}).Count){throw ('Intentional original-art fallback differs: '+$key)}
-        if($frozenV21Fingerprints.ContainsKey($key)-and $variant.AssetFingerprint-ne $frozenV21Fingerprints[$key]){throw ('Previously released v2.1 artwork changed: '+$key)}
+        Assert-ReleaseArtworkRevision $key $variant
         $null=@(& $installer {param($Root,$Character,$Variant) Get-ZHCharacterAssetActions $Root $Character $Variant} $repo $character $variant)
         $map=@{};foreach($file in $variant.Files){$map[$file.Name]=$file.Sha256};$variantFiles[$key]=$map;$portraitTotal+=$map.Count
         $variants+=[ordered]@{CharacterId=$character.Id;Id=$variant.Id;DisplayName=$variant.DisplayName;SourcePath=$variant.SourcePath;PreviewPath=$variant.PreviewPath;PortraitCount=$map.Count;AssetFingerprint=$variant.AssetFingerprint;OriginalFallback=@($variant.OriginalFallback)}
@@ -41,14 +41,17 @@ foreach($entry in $art.Variants){
     if($definition.Count-ne 1-or $seenArt.ContainsKey($key)-or $entry.SourcePath-ne $definition[0].SourcePath-or $entry.AssetFingerprint-ne $definition[0].AssetFingerprint-or $entry.PortraitCount-ne $definition[0].PortraitCount-or @($entry.Files).Count-ne $entry.PortraitCount){throw ('Artwork identity/count differs: '+$key)};$seenArt[$key]=$true;$seenFiles=@{}
     foreach($file in $entry.Files){if($seenFiles.ContainsKey($file.Name)-or-not $variantFiles[$key].ContainsKey($file.Name)-or $file.Sha256-ne $variantFiles[$key][$file.Name]-or $file.Width-le 0-or $file.Height-le 0-or $file.AlphaMin-ne 0-or $file.AlphaMax-le 0-or $file.AlphaMax-gt 255){throw ('Decoded PNG evidence differs: '+$key+'/'+$file.Name)};$seenFiles[$file.Name]=$true}
 }
-$managerArtValidation=[ordered]@{Path=$artPath;Sha256=(Hash (Resolve-PackageFile $artPath));PortraitCount=$releasePortraitCount;CustomVariants=$releaseCustomCount;PreservedV21Portraits=400}
+$managerArtValidation=[ordered]@{Path=$artPath;Sha256=(Hash (Resolve-PackageFile $artPath));PortraitCount=$releasePortraitCount;CustomVariants=$releaseCustomCount;PreservedV21Portraits=385;PreservedV22Portraits=432;RepairedPortraits=15}
+$artworkPatchValidation=[ordered]@{Path=$releaseArtworkPatchPath;Sha256=(Hash (Resolve-PackageFile $releaseArtworkPatchPath));CharacterId='tang-buyi';VariantId='female';BeforeFingerprint=$releaseArtworkPatch.BeforeFingerprint;AfterFingerprint=$releaseArtworkPatch.AfterFingerprint;ChangedPortraits=15;UnchangedPortraits=432}
 $promptValidation=@();$seenPrompts=@{}
 foreach($group in $releasePromptGroups){
     $promptPath=$group.Path;$prompts=Read-Json $promptPath;Require-True $prompts.Complete 'image provenance'
     if($prompts.GenerationMethod-ne 'builtin imagegen'-or @($prompts.Assets).Count-ne $group.Count){throw ('Prompt binding count differs: '+$promptPath)}
     foreach($asset in $prompts.Assets){
         $key=$asset.CharacterId+'/'+$asset.VariantId;$name=[IO.Path]::GetFileNameWithoutExtension([string]$asset.Name)+'.png';$identity=$key+'/'+$name
-        if($key-notin $group.Variants-or-not $variantFiles.ContainsKey($key)-or-not $variantFiles[$key].ContainsKey($name)-or $seenPrompts.ContainsKey($identity)-or $asset.OutputSHA256-ne $variantFiles[$key][$name]){throw ('Prompt/image binding differs: '+$identity)}
+        if($key-notin $group.Variants-or-not $variantFiles.ContainsKey($key)-or-not $variantFiles[$key].ContainsKey($name)){throw ('Prompt/image identity differs: '+$identity)}
+        $expect=Get-ReleasePromptExpectation $group $key $name $variantFiles[$key][$name];$identity=$expect.Identity
+        if($seenPrompts.ContainsKey($identity)-or $asset.OutputSHA256-ne $expect.Sha256){throw ('Prompt/image binding differs: '+$identity)}
         if(-not ([string]$asset.RecordPath).StartsWith('Prompts/',[StringComparison]::Ordinal)-or-not(Test-Path -LiteralPath (Resolve-PackageFile $asset.RecordPath) -PathType Leaf)){throw 'Actual prompt record must be included in Prompts.'};$seenPrompts[$identity]=$true
     }
     $promptValidation+=@([ordered]@{Path=$promptPath;Sha256=(Hash (Resolve-PackageFile $promptPath));Assets=$group.Count})
@@ -57,7 +60,7 @@ Require-Hash 'Dependencies/BepInEx/runtime-manifest.json' 'D4C53D568F7254ACC9754
 Require-Hash 'Loader/winhttp.dll' 'D3B62F4C9C3E2196EF82603C52D6B98C043A0D6C125C081FD33D7CA3798B41B8'
 foreach($file in (Read-Json 'Dependencies/BepInEx/runtime-manifest.json').Files){Require-Hash ('Dependencies/BepInEx/files/'+$file.RelativePath) $file.Sha256}
 $backendPaths=@('installer/ZhaoHuoInstaller.psm1','installer/AppearanceManager.ps1','installer/VariantSupport.ps1','installer/CharacterCatalog.ps1','installer/CharacterState.ps1','installer/CharacterManager.ps1','installer/CharacterTransactions.ps1','VariantCatalog.json')
-$catalogValidation=Assert-CodeReport 'verification/character-catalog-acceptance.json' ($backendPaths+@('Install.ps1','tests/Test-CharacterCatalog.ps1','scripts/CharacterReleaseRules.ps1'))
+$catalogValidation=Assert-CodeReport 'verification/character-catalog-acceptance.json' ($backendPaths+@('Install.ps1','tests/Test-CharacterCatalog.ps1','scripts/CharacterReleaseRules.ps1','scripts/artwork-patch-v2.2.1.json'))
 $managerValidation=Assert-CodeReport 'verification/character-manager-tests.json' ($backendPaths+@('tests/Test-CharacterManager.ps1','Install.ps1')) -AllowHistoricalCatalog
 $regressionValidation=Assert-CodeReport 'verification/character-manager-regression.json' ($backendPaths+@('tests/Test-Installer.ps1')) -AllowHistoricalCatalog
 if((Read-Json $regressionValidation.Path).assertionCount-ne 74){throw 'The complete 74-assertion installer regression report must pass.'}
@@ -99,7 +102,7 @@ $fallback=Read-Json $fallbackValidation.Path
 if($fallback.PluginSha256-ne $dll-or $fallback.TestCount-ne 11-or @($fallback.Tests).Count-ne 11-or @($fallback.Tests|Where-Object{$_.Passed-isnot [bool]-or-not $_.Passed}).Count){throw 'The new game fallback and alias protection checks must all pass.'}
 $gameResourceValidation=[ordered]@{Path=$resourcePath;Sha256=(Hash (Resolve-PackageFile $resourcePath));GameBuildId=$releaseGameBuildId;FallbackPolicyValidation=$fallbackValidation;ActualGameRun=$false}
 # Retain v2.1.0 actual execution evidence unchanged and explicitly historical.
-# Its frozen catalog describes the unchanged 400 portraits, not the new hardman.
+# Its frozen catalog remains historical; fifteen female images were later repaired.
 $historicalRuntimePath='verification/character-runtime.json'
 Require-Hash $historicalRuntimePath '67A27B8079D7027F12A4132BB38EAE8BBFF80BC256731CADFFA8C2F9476BFF45'
 $historicalInstallationPath='verification/character-installation.json'
@@ -116,16 +119,28 @@ function Assert-RuntimeEvidence([string]$Path,[string]$CatalogHash,[string]$Buil
 }
 $previousRuntimeVariants=@('player/xianxia','tang-buyi/refined','tang-buyi/female','xiahou-lan/refined','tang-moling/refined','long-xiang/refined','yu-xiaomei/refined','tang-zheng/female')
 $historicalRuntime=Assert-RuntimeEvidence $historicalRuntimePath '837151A8455BF7618645FFC93532CF54C6BF46504E0A46435698D29C9D91ED3E' '25957922' $previousRuntimeVariants
-$historicalRuntimeValidation=[ordered]@{Path=$historicalRuntimePath;Sha256=(Hash (Resolve-PackageFile $historicalRuntimePath));Historical=$true;GameBuildId='25957922';UnchangedPortraits=400;Scope=$historicalRuntime.Scope}
-$runtimePath='verification/runtime-build25987745/compatibility-runtime.json'
-$runtime=Assert-RuntimeEvidence $runtimePath (Hash (Resolve-PackageFile 'VariantCatalog.json')) $releaseGameBuildId ($previousRuntimeVariants+@('player/hardman'))
+$historicalV22Path='verification/runtime-build25987745/compatibility-runtime.json'
+$historicalV22=Assert-RuntimeEvidence $historicalV22Path '4757E87DD043E145C9F8E744E0A04B13CE938A1C94811A0C0D27BCA7B1A2D5C8' $releaseGameBuildId ($previousRuntimeVariants+@('player/hardman'))
+$historicalRuntimeValidation=[ordered]@{Path=$historicalRuntimePath;Sha256=(Hash (Resolve-PackageFile $historicalRuntimePath));Historical=$true;GameBuildId='25957922';UnchangedPortraits=385;Scope=$historicalRuntime.Scope;V22=[ordered]@{Path=$historicalV22Path;Sha256=(Hash (Resolve-PackageFile $historicalV22Path));Historical=$true;GameBuildId=$releaseGameBuildId;UnchangedPortraits=432;SupersededVariant='tang-buyi/female';Scope=$historicalV22.Scope}}
+$runtimePath='verification/runtime-v2.2.1/artwork-runtime.json';$runtime=Read-Json $runtimePath
+Require-True $runtime.Passed 'repaired artwork runtime';Require-True $runtime.ActualGameRun 'actual repaired artwork loading'
+if($runtime.PackageVersion-ne $Version-or $runtime.RuntimeVersion-ne $releaseRuntimeVersion-or $runtime.PluginSha256-ne $dll-or $runtime.CatalogSha256-ne(Hash (Resolve-PackageFile 'VariantCatalog.json'))-or $runtime.GameBuildId-ne $releaseGameBuildId-or $runtime.CharacterId-ne 'tang-buyi'-or $runtime.VariantId-ne 'female'-or $runtime.AssetFingerprint-ne $releaseArtworkPatch.AfterFingerprint-or $runtime.LoadedPortraitCount-ne 15-or $runtime.ExpectedPortraitCount-ne 15-or [string]::IsNullOrWhiteSpace($runtime.Scope)){throw 'Current repaired-art runtime identity or coverage differs.'}
+foreach($field in @('AllPortraitsLoaded','UiSpriteMatch','LayoutVerified','NonTargetUnchanged')){Require-True $runtime.Checks.$field ('repaired artwork '+$field)}
+$fallbacks=@($runtime.OriginalFallbacks)
+if($fallbacks.Count-ne 1-or $fallbacks[0].Name-ne 'hand'){throw 'The original hand fallback must be tested separately.'};Require-True $fallbacks[0].Passed 'original hand fallback'
+Require-True $runtime.VisualReview.Passed 'repaired artwork visual review'
+if($runtime.VisualReview.ReviewedPortraitCount-ne 15){throw 'All fifteen repaired portraits require visual review.'}
+$seen=@{};foreach($file in $runtime.PortraitFiles){if($seen.ContainsKey($file.Name)-or-not $variantFiles['tang-buyi/female'].ContainsKey($file.Name)-or $file.Sha256-ne $variantFiles['tang-buyi/female'][$file.Name]-or $file.LiveSha256-ne $file.Sha256){throw 'Runtime live repaired portrait bytes differ.'};$seen[$file.Name]=$true}
+if($seen.Count-ne 15){throw 'Runtime live repaired portrait list is incomplete.'}
+if(@($runtime.EvidenceFiles).Count-lt 1){throw 'Repaired artwork runtime evidence is empty.'};$seen=@{}
+foreach($file in $runtime.EvidenceFiles){if($seen.ContainsKey($file.Path)){throw 'Duplicate repaired artwork evidence.'};$seen[$file.Path]=$true;Require-Hash $file.Path $file.Sha256}
 if($runtime.GameVersion-ne $releaseGameVersion){throw 'Current runtime evidence must identify release_1.0.6000.3.'}
 $normal=$runtime.NormalSteamStartup
 foreach($field in @('Passed','StillRunning','Responding','PluginReady')){Require-True $normal.$field ('normal Steam startup '+$field)}
 if($normal.SelftestArgumentPresent-isnot [bool]-or $normal.SelftestArgumentPresent-or $normal.ObservedSeconds-lt 90-or $normal.PluginErrorLines-ne 0){throw 'Current normal Steam startup evidence is incomplete.'}
 $runtimeValidation=[ordered]@{Path=$runtimePath;Sha256=(Hash (Resolve-PackageFile $runtimePath));GameBuildId=$releaseGameBuildId;RuntimeVersion=$releaseRuntimeVersion;Scope=$runtime.Scope}
-$installationValidation=Assert-CodeReport 'verification/character-release-upgrade.json' (@($backendPaths|Where-Object{$_-ne 'VariantCatalog.json'})+@('tests/Test-CharacterManager.ps1','tests/Test-CharacterReleaseUpgrade.ps1'))
+$installationValidation=Assert-CodeReport 'verification/character-artwork-patch.json' (@($backendPaths|Where-Object{$_-ne 'VariantCatalog.json'})+@('tests/Test-CharacterManager.ps1','tests/Test-CharacterArtworkPatch.ps1'))
 $installation=Read-Json $installationValidation.Path
-if($installation.ExecutionMode-ne 'IsolatedPreviousReleaseInstallation'-or $installation.FromVersion-ne '2.1.0'-or $installation.ToVersion-ne $Version-or $installation.RuntimeVersion-ne $releaseRuntimeVersion-or $installation.RuntimeProtocol-ne 2-or $installation.ProductionPluginSha256-ne $dll-or $installation.ActualGameRun-isnot [bool]-or $installation.ActualGameRun-or $installation.AssertionCount-lt 19-or @($installation.Checks).Count-ne $installation.AssertionCount){throw 'Release upgrade must be genuinely tested from the previous installer with isolated fixtures.'}
+if($installation.ExecutionMode-ne 'IsolatedPreviousReleaseInstallation'-or $installation.FromVersion-ne '2.2.0'-or $installation.ToVersion-ne $Version-or $installation.RuntimeVersion-ne $releaseRuntimeVersion-or $installation.RuntimeProtocol-ne 2-or $installation.ProductionPluginSha256-ne $dll-or $installation.HistoricalFemaleFingerprint-ne $releaseArtworkPatch.BeforeFingerprint-or $installation.PatchedPortraitCount-ne 15-or $installation.ActualGameRun-isnot [bool]-or $installation.ActualGameRun-or $installation.AssertionCount-lt 20-or @($installation.Checks).Count-ne $installation.AssertionCount){throw 'Artwork patch upgrade must be genuinely tested from the released v2.2.0 installer with isolated fixtures.'}
 foreach($field in @('InitialInstallationPreserved','OriginalBackupsPreserved','OtherPluginsPreserved','AllExistingSelectionsPreserved')){Require-True $installation.$field $field}
 $historicalInstallationValidation=[ordered]@{Path=$historicalInstallationPath;Sha256=(Hash (Resolve-PackageFile $historicalInstallationPath));Historical=$true;Scope='Original v2.1.0 installation acceptance, preserved without relabeling its source hashes as current.'}

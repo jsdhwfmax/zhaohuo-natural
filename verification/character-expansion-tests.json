@@ -2,7 +2,7 @@
     "Passed":  true,
     "AssertionCount":  33,
     "PowerShell":  "5.1.26100.9711",
-    "DurationSeconds":  361.84,
+    "DurationSeconds":  348.05,
     "ActualGameRun":  false,
     "RealGameFilesModified":  false,
     "FinalArtAcceptance":  false,
@@ -14,11 +14,11 @@
     "CodeHashes":  [
                        {
                            "Path":  "installer/CharacterCatalog.ps1",
-                           "Sha256":  "BDD6BABFF23319EA049E23CF220C51F0C29B5D79C30C0160A50B1F1DBB4B9F61"
+                           "Sha256":  "FBD10E9A4364653B98C9EEF25BE8B0F1DE946740BB2EBEBBFDFFAB81ECC5CAB4"
                        },
                        {
                            "Path":  "installer/CharacterState.ps1",
-                           "Sha256":  "74707F347AFCD20A699CF177FA7A30DBDE5DB53AF58CE34FFFBBC25E7CFCEC12"
+                           "Sha256":  "EB09E9EF055D3B25668D22CEBF38696BE122F8C284172733A9D001AC587A17F4"
                        },
                        {
                            "Path":  "installer/CharacterManager.ps1",
@@ -46,7 +46,7 @@
                        },
                        {
                            "Path":  "tests/Test-CharacterExpansion.ps1",
-                           "Sha256":  "0C5021656862F9797A51BBA0BDF2F4E8811D6A104608DB3F1E634CCC0AC225E0"
+                           "Sha256":  "C4DD85F6603AF734001EDFC0248329C36B436EEE5989F247557D6AC934C75E5C"
                        }
                    ],
     "Checks":  [

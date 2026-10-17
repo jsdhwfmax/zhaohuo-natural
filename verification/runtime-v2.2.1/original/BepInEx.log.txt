@@ -1,0 +1,68 @@
+[Message: Preloader] BepInEx 6.0.0-be.692 - Mortal
+[Message: Preloader] Built from commit 851521cc126e4f9d841d2d9bfe857558f0395939
+[Info   :   BepInEx] System platform: Windows 10 64-bit
+[Info   :   BepInEx] Process bitness: 64-bit (x64)
+[Info   : Preloader] Running under Unity 2020.3.49f1
+[Info   : Preloader] CLR runtime version: 4.0.30319.17020
+[Info   : Preloader] Supports SRE: False
+[Message: Preloader] Preloader started
+[Info   :AssemblyPatcher] Loaded 1 patcher type from [BepInEx.Unity.Mono.Preloader 6.0.0.0]
+[Info   : Preloader] 1 patcher plugin loaded
+[Info   : Preloader] 143 assemblies discovered
+[Message:AssemblyPatcher] Executing 1 patch(es)
+[Message: Preloader] Preloader finished
+[Message:   BepInEx] Chainloader initialized
+[Info   :   BepInEx] 1 plugin to load
+[Info   :   BepInEx] Loading [Zhao Huo Character Portraits 2.1.0]
+[Info   :Zhao Huo Character Portraits] Characters enabled: 
+[Info   :Zhao Huo Character Portraits] Ready. Game=release_1.0.6000.3, Unity=2020.3.49f1; coroutine + synchronous portrait hooks installed; PNG files=47
+[Info   :Zhao Huo Character Portraits] SELFTEST waiting for game startup (5 seconds)
+[Message:   BepInEx] Chainloader startup complete
+[Info   :Zhao Huo Character Portraits] SELFTEST initializing Addressables
+[Info   :Zhao Huo Character Portraits] SELFTEST located 50 current protagonist resources
+[Info   :Zhao Huo Character Portraits] SELFTEST normal game Setup completed
+[Info   :Zhao Huo Character Portraits] SELFTEST rendered page 1
+[Info   :Zhao Huo Character Portraits] SELFTEST rendered page 2
+[Info   :Zhao Huo Character Portraits] SELFTEST rendered page 3
+[Info   :Zhao Huo Character Portraits] SELFTEST rendered page 4
+[Info   :Zhao Huo Character Portraits] SELFTEST rendered page 5
+[Info   :Zhao Huo Character Portraits] SELFTEST rendered page 6
+[Info   :Zhao Huo Character Portraits] SELFTEST rendered page 7
+[Info   :Zhao Huo Character Portraits] SELFTEST testing real PlayerAvatarPanel.OnEnable, both talent branches
+[Info   :Zhao Huo Character Portraits] SELFTEST character fixture tang-buyi/brother1
+[Info   :Zhao Huo Character Portraits] SELFTEST character fixture tang-buyi/brother1_2
+[Info   :Zhao Huo Character Portraits] SELFTEST character fixture tang-buyi/brother1_0
+[Info   :Zhao Huo Character Portraits] SELFTEST character fixture tang-buyi/brother1_young
+[Info   :Zhao Huo Character Portraits] SELFTEST character fixture tang-buyi/__scope_probe
+[Info   :Zhao Huo Character Portraits] SELFTEST character fixture xiahou-lan/girl6
+[Info   :Zhao Huo Character Portraits] SELFTEST character fixture xiahou-lan/girl6_1
+[Info   :Zhao Huo Character Portraits] SELFTEST character fixture xiahou-lan/girl6_3
+[Info   :Zhao Huo Character Portraits] SELFTEST character fixture xiahou-lan/__scope_probe
+[Info   :Zhao Huo Character Portraits] SELFTEST character fixture tang-moling/sister1
+[Info   :Zhao Huo Character Portraits] SELFTEST character fixture tang-moling/sister1_look
+[Info   :Zhao Huo Character Portraits] SELFTEST character fixture tang-moling/__scope_probe
+[Info   :Zhao Huo Character Portraits] SELFTEST character fixture long-xiang/girl4
+[Info   :Zhao Huo Character Portraits] SELFTEST character fixture long-xiang/girl4_1
+[Info   :Zhao Huo Character Portraits] SELFTEST character fixture long-xiang/girl4_2
+[Info   :Zhao Huo Character Portraits] SELFTEST character fixture long-xiang/__scope_probe
+[Info   :Zhao Huo Character Portraits] SELFTEST character fixture yu-xiaomei/girl5
+[Info   :Zhao Huo Character Portraits] SELFTEST character fixture yu-xiaomei/girl5_hand
+[Info   :Zhao Huo Character Portraits] SELFTEST character fixture yu-xiaomei/girl5_9
+[Info   :Zhao Huo Character Portraits] SELFTEST character fixture yu-xiaomei/girl5_6
+[Info   :Zhao Huo Character Portraits] SELFTEST character fixture yu-xiaomei/girl5_10_1
+[Info   :Zhao Huo Character Portraits] SELFTEST character fixture yu-xiaomei/girl5_10_2
+[Info   :Zhao Huo Character Portraits] SELFTEST character fixture yu-xiaomei/girl5_10_3
+[Info   :Zhao Huo Character Portraits] SELFTEST character fixture yu-xiaomei/girl5_10_4
+[Info   :Zhao Huo Character Portraits] SELFTEST character fixture yu-xiaomei/girl5_10_5
+[Info   :Zhao Huo Character Portraits] SELFTEST character fixture yu-xiaomei/girl5_10_6
+[Info   :Zhao Huo Character Portraits] SELFTEST character fixture yu-xiaomei/girl5_7
+[Info   :Zhao Huo Character Portraits] SELFTEST character fixture yu-xiaomei/girl5_2
+[Info   :Zhao Huo Character Portraits] SELFTEST character fixture yu-xiaomei/girl5_5
+[Info   :Zhao Huo Character Portraits] SELFTEST character fixture yu-xiaomei/girl5_4
+[Info   :Zhao Huo Character Portraits] SELFTEST character fixture yu-xiaomei/girl5_8
+[Info   :Zhao Huo Character Portraits] SELFTEST character fixture yu-xiaomei/girl5_3
+[Info   :Zhao Huo Character Portraits] SELFTEST character fixture yu-xiaomei/__scope_probe
+[Info   :Zhao Huo Character Portraits] SELFTEST character fixture tang-zheng/brother2
+[Info   :Zhao Huo Character Portraits] SELFTEST character fixture tang-zheng/brother2_young
+[Info   :Zhao Huo Character Portraits] SELFTEST character fixture tang-zheng/__scope_probe
+[Info   :Zhao Huo Character Portraits] SELFTEST PASS: resources=50, replaced=0, fallback=50; reports=<GAME>\BepInEx\plugins\ZhaoHuoNatural\Diagnostics\20261017-155532

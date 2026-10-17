@@ -15,11 +15,11 @@
                        },
                        {
                            "Path":  "installer/CharacterCatalog.ps1",
-                           "Sha256":  "BDD6BABFF23319EA049E23CF220C51F0C29B5D79C30C0160A50B1F1DBB4B9F61"
+                           "Sha256":  "FBD10E9A4364653B98C9EEF25BE8B0F1DE946740BB2EBEBBFDFFAB81ECC5CAB4"
                        },
                        {
                            "Path":  "installer/CharacterState.ps1",
-                           "Sha256":  "74707F347AFCD20A699CF177FA7A30DBDE5DB53AF58CE34FFFBBC25E7CFCEC12"
+                           "Sha256":  "EB09E9EF055D3B25668D22CEBF38696BE122F8C284172733A9D001AC587A17F4"
                        },
                        {
                            "Path":  "installer/CharacterManager.ps1",
@@ -31,7 +31,7 @@
                        },
                        {
                            "Path":  "VariantCatalog.json",
-                           "Sha256":  "0CBD821B2DBB03FC7E369B2F1C2BE231A7D76DA3B90E3F9CD371D61FAF468EEA"
+                           "Sha256":  "D2AB32AF3AE767CC87F672CF0EE230FE31F4B00FA6190E8274B767787A0328EB"
                        },
                        {
                            "Path":  "tests/Test-Installer.ps1",
@@ -41,7 +41,7 @@
     "status":  "passed",
     "powershell":  "5.1.26100.9711",
     "assertionCount":  74,
-    "durationSeconds":  232.49,
+    "durationSeconds":  233.78,
     "scope":  "Installer integration with synthetic game fixtures, official bundled runtime and stubbed offline-probe results; metadata probe tested separately; no real game installation or execution",
     "checks":  [
                    "First verified four-assembly group remains supported",

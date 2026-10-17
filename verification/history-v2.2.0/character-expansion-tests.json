@@ -1,0 +1,87 @@
+{
+    "Passed":  true,
+    "AssertionCount":  33,
+    "PowerShell":  "5.1.26100.9711",
+    "DurationSeconds":  361.84,
+    "ActualGameRun":  false,
+    "RealGameFilesModified":  false,
+    "FinalArtAcceptance":  false,
+    "TemporaryFixtureAllowlists":  [
+
+                                   ],
+    "Scope":  "Inert transaction fixtures: v2.0 protocol1 to v2.1 protocol2 migration, new character independence, failure/interruption recovery, no-op, modified-file protection and uninstall. No game assemblies are executed.",
+    "CodeHashAlgorithm":  "SHA256-UTF8-noBOM-LF-v1",
+    "CodeHashes":  [
+                       {
+                           "Path":  "installer/CharacterCatalog.ps1",
+                           "Sha256":  "BDD6BABFF23319EA049E23CF220C51F0C29B5D79C30C0160A50B1F1DBB4B9F61"
+                       },
+                       {
+                           "Path":  "installer/CharacterState.ps1",
+                           "Sha256":  "74707F347AFCD20A699CF177FA7A30DBDE5DB53AF58CE34FFFBBC25E7CFCEC12"
+                       },
+                       {
+                           "Path":  "installer/CharacterManager.ps1",
+                           "Sha256":  "F62691721CFD9758CB1C4D5049E47C67968364E49BCF5B44C9AEF8B3A21D7079"
+                       },
+                       {
+                           "Path":  "installer/CharacterTransactions.ps1",
+                           "Sha256":  "193E73AFB67C163BA365B4B331AE27EAC9C80A8E047F787C86BC7DADFB120A80"
+                       },
+                       {
+                           "Path":  "installer/ZhaoHuoInstaller.psm1",
+                           "Sha256":  "8E6C9553BFA4ABD852687E1CEC71BCF78A33119B667FF86890B408D8549FE9FD"
+                       },
+                       {
+                           "Path":  "installer/AppearanceManager.ps1",
+                           "Sha256":  "68AC32DCF799A12AA05BA749F7BBB2B8B2C34A06F529EF4D57611A3CE12F78E7"
+                       },
+                       {
+                           "Path":  "installer/VariantSupport.ps1",
+                           "Sha256":  "E12665D920A4E9582EC88BCB92C679AA04AC558F61DC47E3960A9F4C99FAE89A"
+                       },
+                       {
+                           "Path":  "tests/Test-CharacterManager.ps1",
+                           "Sha256":  "DD7FAA07DF50A3F2A5AC7E7D2EA030C3AF18D087FDEE467E4A08D780BE48CDD2"
+                       },
+                       {
+                           "Path":  "tests/Test-CharacterExpansion.ps1",
+                           "Sha256":  "0C5021656862F9797A51BBA0BDF2F4E8811D6A104608DB3F1E634CCC0AC225E0"
+                       }
+                   ],
+    "Checks":  [
+                   "All 312 previously released PNGs are included in the unchanged-input guard",
+                   "Expanded catalog exposes seven independent roles and twenty-one choices",
+                   "Valid v2.0 state is recognized and new characters preview as original",
+                   "Same-selection migration writes only shared DLL and final seven-role config",
+                   "Migration check-only preserves every fixture byte",
+                   "Incomplete protocol2 state is rejected instead of silently filling choices",
+                   "Protocol1 cannot substitute a new role for a missing old role",
+                   "Mixed protocol1 manifest and protocol2 config are rejected even with an updated owned hash",
+                   "Inject failure after both migration writes before manifest commit",
+                   "Failed upgrade restores the exact three-role manifest, config and DLL",
+                   "Simulate process interruption after migration writes",
+                   "Interrupted migration never claims an installed selection",
+                   "Interrupted check-only verifies recovery without writes",
+                   "Recovery restores all historical three-role bytes",
+                   "Successful migration writes exact protocol2 and leaves every new role disabled",
+                   "Migration preserves first installation identity and every existing backup file",
+                   "All previously installed artwork, layouts and map bytes are unchanged",
+                   "New role installs without changing other role files: tang-moling",
+                   "Original option disables only its role and preserves owned cache: tang-moling",
+                   "New role installs without changing other role files: long-xiang",
+                   "Original option disables only its role and preserves owned cache: long-xiang",
+                   "New role installs without changing other role files: yu-xiaomei",
+                   "Original option disables only its role and preserves owned cache: yu-xiaomei",
+                   "New role installs without changing other role files: tang-zheng",
+                   "Original option disables only its role and preserves owned cache: tang-zheng",
+                   "Brother female style replaces the same role without creating a duplicate identity",
+                   "Switching brother female back to refined leaves every other NPC unchanged",
+                   "Repeated expanded selection is a byte-for-byte no-op",
+                   "Unknown files in a new role directory block all writes",
+                   "Modified new-role art blocks overwrite",
+                   "Uninstall preserves modified new-role artwork and restores the original unrelated installation",
+                   "All 312 production PNGs remain byte-identical after the isolated suite",
+                   "Production readiness is not changed by fixture tests"
+               ]
+}

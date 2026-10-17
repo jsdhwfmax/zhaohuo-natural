@@ -1,0 +1,827 @@
+{
+  "Passed": true,
+  "ActualGameRun": false,
+  "Scope": "Independent static image review of the final fifteen repaired PNGs; does not assert actual game placement.",
+  "OriginalPrivateReviewSha256": "99493641EDEEDB0BDB0DABAE99C6EC499F25AB3248E4B6419C2884EDE1250041",
+  "ReviewedPortraitCount": 15,
+  "Files": [
+    {
+      "Name": "angry1.png",
+      "Path": "Variants/tang-buyi/female/Portraits/angry1.png",
+      "Sha256": "18EBD3290D4D89702EF347DD8F71D1A6FF0A496E6E6DF66F78C0F4C4FD6DF93F",
+      "ComparedTo": "Variants/tang-buyi/female/Portraits/angry1.png",
+      "PreviousSha256": "0772C7E3DF9CEF9EE83521C46B853F382408A11092EF4CB194C70B7393DA361D",
+      "Accepted": true,
+      "VisualReview": "Accepted: controlled closed-mouth anger retained; clear repaired hands. No new head/side truncation visible; lower-left fingertips continue into the original bottom crop.",
+      "ImageMetadata": {
+        "Width": 1096,
+        "Height": 1435,
+        "Mode": "RGBA",
+        "AlphaExtrema": [
+          0,
+          255
+        ],
+        "AlphaBoundsGt16": [
+          0,
+          81,
+          1096,
+          1435
+        ],
+        "MarginsGt16": {
+          "left": 0,
+          "top": 81,
+          "right": 0,
+          "bottom": 0
+        }
+      },
+      "PreviousImageMetadata": {
+        "Width": 1096,
+        "Height": 1435,
+        "Mode": "RGBA"
+      },
+      "SideEdgePixels": {
+        "left": {
+          "CountGt16": 2,
+          "YRange": [
+            1433,
+            1434
+          ],
+          "MaxAlpha": 201
+        },
+        "right": {
+          "CountGt16": 45,
+          "YRange": [
+            1091,
+            1135
+          ],
+          "MaxAlpha": 126
+        }
+      },
+      "ComparedToRevision": "v2.2.0"
+    },
+    {
+      "Name": "angry2.png",
+      "Path": "Variants/tang-buyi/female/Portraits/angry2.png",
+      "Sha256": "145848B3C66AF4B37CCC651D916F388FA0B23B1711C566CCEEEE65182DA8320A",
+      "ComparedTo": "Variants/tang-buyi/female/Portraits/angry2.png",
+      "PreviousSha256": "F5C8B7B59904E68A184D17C8BFCF2E10FFD778BF58B57F43C1B5AA46FAADBA2C",
+      "Accepted": true,
+      "VisualReview": "Accepted: closed-mouth fierce anger, red aura and copper coins retained; waist-side hand has coherent bent fingers without the duplicate horizontal branch seen in the rejected angry3 candidate. Lower-left palm is clear. Minor aura/fringe edge contact is recorded in metadata.",
+      "ImageMetadata": {
+        "Width": 1096,
+        "Height": 1435,
+        "Mode": "RGBA",
+        "AlphaExtrema": [
+          0,
+          254
+        ],
+        "AlphaBoundsGt16": [
+          28,
+          95,
+          1088,
+          1435
+        ],
+        "MarginsGt16": {
+          "left": 28,
+          "top": 95,
+          "right": 8,
+          "bottom": 0
+        }
+      },
+      "PreviousImageMetadata": {
+        "Width": 1096,
+        "Height": 1435,
+        "Mode": "RGBA"
+      },
+      "SideEdgePixels": {
+        "left": {
+          "CountGt16": 0,
+          "YRange": null,
+          "MaxAlpha": 1
+        },
+        "right": {
+          "CountGt16": 0,
+          "YRange": null,
+          "MaxAlpha": 1
+        }
+      },
+      "ComparedToRevision": "v2.2.0"
+    },
+    {
+      "Name": "angry3.png",
+      "Path": "Variants/tang-buyi/female/Portraits/angry3.png",
+      "Sha256": "1B75E520A67581102BBCEB7BD7233EFD0B6D81368D01073E548E705C78717FE7",
+      "ComparedTo": "Variants/tang-buyi/female/Portraits/angry3.png",
+      "PreviousSha256": "537FE0ADDF1336D6A2F54DA70AB425193ABF7ECF80A94D39EDAF39F16C1EF5A1",
+      "Accepted": true,
+      "VisualReview": "Accepted revised candidate: the extra horizontal upper digit in the rejected v1 is removed; the waist-side hand now has five visually readable digits. Lower-left hand remains coherent. Red eyes, open fierce expression, red aura, copper coins, hair and robe style are retained. The full silhouette has side/top margin and the garment baseline remains above the canvas bottom.",
+      "ImageMetadata": {
+        "Width": 1096,
+        "Height": 1435,
+        "Mode": "RGBA",
+        "AlphaExtrema": [
+          0,
+          255
+        ],
+        "AlphaBoundsGt16": [
+          25,
+          121,
+          1058,
+          1383
+        ],
+        "MarginsGt16": {
+          "left": 25,
+          "top": 121,
+          "right": 38,
+          "bottom": 52
+        }
+      },
+      "PreviousImageMetadata": {
+        "Width": 1096,
+        "Height": 1435,
+        "Mode": "RGBA"
+      },
+      "SideEdgePixels": {
+        "left": {
+          "CountGt16": 0,
+          "YRange": null,
+          "MaxAlpha": 1
+        },
+        "right": {
+          "CountGt16": 0,
+          "YRange": null,
+          "MaxAlpha": 0
+        }
+      },
+      "ComparedToRevision": "v2.2.0"
+    },
+    {
+      "Name": "hat.png",
+      "Path": "Variants/tang-buyi/female/Portraits/hat.png",
+      "Sha256": "07676F2C9170F1B8F9D13D5392F732697EE91547C0CCE7B8A0EA4CBBF572FDFF",
+      "ComparedTo": "Variants/tang-buyi/female/Portraits/hat.png",
+      "PreviousSha256": "5C76B94FA454BC25443F44CA1F11A4AC3625CDE0390B9E5987FBAC1C131AAE81",
+      "Accepted": true,
+      "VisualReview": "Accepted: straw hat, shaded eyes and chin cords retained; both hands repaired. Hat silhouette and side clothing complete; original bottom crop retained.",
+      "ImageMetadata": {
+        "Width": 1097,
+        "Height": 1434,
+        "Mode": "RGBA",
+        "AlphaExtrema": [
+          0,
+          255
+        ],
+        "AlphaBoundsGt16": [
+          7,
+          111,
+          1097,
+          1434
+        ],
+        "MarginsGt16": {
+          "left": 7,
+          "top": 111,
+          "right": 0,
+          "bottom": 0
+        }
+      },
+      "PreviousImageMetadata": {
+        "Width": 1097,
+        "Height": 1434,
+        "Mode": "RGBA"
+      },
+      "SideEdgePixels": {
+        "left": {
+          "CountGt16": 0,
+          "YRange": null,
+          "MaxAlpha": 1
+        },
+        "right": {
+          "CountGt16": 86,
+          "YRange": [
+            1047,
+            1132
+          ],
+          "MaxAlpha": 212
+        }
+      },
+      "ComparedToRevision": "v2.2.0"
+    },
+    {
+      "Name": "hurt.png",
+      "Path": "Variants/tang-buyi/female/Portraits/hurt.png",
+      "Sha256": "674D72E5550FAFD8C41226571144B512318ADC9D3F574F7C04773848C80FEDEA",
+      "ComparedTo": "Variants/tang-buyi/female/Portraits/hurt.png",
+      "PreviousSha256": "0E29199CBDFF70059094706A9CD97E5FF741B92462E2F4CA0160B9F83FFF9E00",
+      "Accepted": true,
+      "VisualReview": "Accepted: defiant tired smile, forehead/cheek sweat and thin lip blood retained; waist-side fingers naturally curl and lower-left palm is clear.",
+      "ImageMetadata": {
+        "Width": 1096,
+        "Height": 1435,
+        "Mode": "RGBA",
+        "AlphaExtrema": [
+          0,
+          255
+        ],
+        "AlphaBoundsGt16": [
+          0,
+          81,
+          1095,
+          1435
+        ],
+        "MarginsGt16": {
+          "left": 0,
+          "top": 81,
+          "right": 1,
+          "bottom": 0
+        }
+      },
+      "PreviousImageMetadata": {
+        "Width": 1096,
+        "Height": 1435,
+        "Mode": "RGBA"
+      },
+      "SideEdgePixels": {
+        "left": {
+          "CountGt16": 2,
+          "YRange": [
+            1433,
+            1434
+          ],
+          "MaxAlpha": 186
+        },
+        "right": {
+          "CountGt16": 0,
+          "YRange": null,
+          "MaxAlpha": 8
+        }
+      },
+      "ComparedToRevision": "v2.2.0"
+    },
+    {
+      "Name": "laugh1.png",
+      "Path": "Variants/tang-buyi/female/Portraits/laugh1.png",
+      "Sha256": "EED3EFD5A2D36DB029DA9B57B3510EE9CF83AA8BDC8E393660BE7194409D6773",
+      "ComparedTo": "Variants/tang-buyi/female/Portraits/laugh1.png",
+      "PreviousSha256": "66CB1BB87A20D25DE1FB1B838B62E56F4884A77872EC250407849828C22018EE",
+      "Accepted": true,
+      "VisualReview": "Accepted: closed confident smile retained; both repaired hands readable; dark blue robe and plum hair maintain the existing style.",
+      "ImageMetadata": {
+        "Width": 1096,
+        "Height": 1435,
+        "Mode": "RGBA",
+        "AlphaExtrema": [
+          0,
+          255
+        ],
+        "AlphaBoundsGt16": [
+          11,
+          136,
+          1096,
+          1435
+        ],
+        "MarginsGt16": {
+          "left": 11,
+          "top": 136,
+          "right": 0,
+          "bottom": 0
+        }
+      },
+      "PreviousImageMetadata": {
+        "Width": 1096,
+        "Height": 1435,
+        "Mode": "RGBA"
+      },
+      "SideEdgePixels": {
+        "left": {
+          "CountGt16": 0,
+          "YRange": null,
+          "MaxAlpha": 0
+        },
+        "right": {
+          "CountGt16": 48,
+          "YRange": [
+            1053,
+            1100
+          ],
+          "MaxAlpha": 175
+        }
+      },
+      "ComparedToRevision": "v2.2.0"
+    },
+    {
+      "Name": "laugh2.png",
+      "Path": "Variants/tang-buyi/female/Portraits/laugh2.png",
+      "Sha256": "2574871789089DF05F6CB8490D86DD8C66A9BADFD1B59D4ABD69D55AD32BF257",
+      "ComparedTo": "Variants/tang-buyi/female/Portraits/laugh2.png",
+      "PreviousSha256": "AEB570353E3CDC0D1DFAA69414CDAC640147F921EDA315D27B287EF215B8A3CE",
+      "Accepted": true,
+      "VisualReview": "Accepted: open laugh, teeth and eye-corner tears retained; hands readable; no loss of the expressive face or side robe.",
+      "ImageMetadata": {
+        "Width": 1096,
+        "Height": 1435,
+        "Mode": "RGBA",
+        "AlphaExtrema": [
+          0,
+          255
+        ],
+        "AlphaBoundsGt16": [
+          1,
+          81,
+          1092,
+          1435
+        ],
+        "MarginsGt16": {
+          "left": 1,
+          "top": 81,
+          "right": 4,
+          "bottom": 0
+        }
+      },
+      "PreviousImageMetadata": {
+        "Width": 1096,
+        "Height": 1435,
+        "Mode": "RGBA"
+      },
+      "SideEdgePixels": {
+        "left": {
+          "CountGt16": 0,
+          "YRange": null,
+          "MaxAlpha": 13
+        },
+        "right": {
+          "CountGt16": 0,
+          "YRange": null,
+          "MaxAlpha": 5
+        }
+      },
+      "ComparedToRevision": "v2.2.0"
+    },
+    {
+      "Name": "nervous1.png",
+      "Path": "Variants/tang-buyi/female/Portraits/nervous1.png",
+      "Sha256": "FD37B7836882AFC94FDF26D20762EC824F5A5445AC053E361A2F1D7DDC30DBE4",
+      "ComparedTo": "Variants/tang-buyi/female/Portraits/nervous1.png",
+      "PreviousSha256": "471D10822C0D273B16E1B92A81A55C88DD34E34A15B6028BB1972F18155382C8",
+      "Accepted": true,
+      "VisualReview": "Accepted: worried open mouth and cheek sweat retained; lower-left open palm and naturally bent waist-side fingers are readable; female identity, clothing and proportion preserved visually.",
+      "ImageMetadata": {
+        "Width": 1096,
+        "Height": 1435,
+        "Mode": "RGBA",
+        "AlphaExtrema": [
+          0,
+          255
+        ],
+        "AlphaBoundsGt16": [
+          0,
+          92,
+          1096,
+          1435
+        ],
+        "MarginsGt16": {
+          "left": 0,
+          "top": 92,
+          "right": 0,
+          "bottom": 0
+        }
+      },
+      "PreviousImageMetadata": {
+        "Width": 1096,
+        "Height": 1435,
+        "Mode": "RGBA"
+      },
+      "SideEdgePixels": {
+        "left": {
+          "CountGt16": 9,
+          "YRange": [
+            1426,
+            1434
+          ],
+          "MaxAlpha": 245
+        },
+        "right": {
+          "CountGt16": 41,
+          "YRange": [
+            1038,
+            1078
+          ],
+          "MaxAlpha": 67
+        }
+      },
+      "ComparedToRevision": "v2.2.0"
+    },
+    {
+      "Name": "nervous2.png",
+      "Path": "Variants/tang-buyi/female/Portraits/nervous2.png",
+      "Sha256": "521D22D28168336C1CA0DFD113A30896DF36467DD2A32BE538220E31BCA3FB33",
+      "ComparedTo": "Variants/tang-buyi/female/Portraits/nervous2.png",
+      "PreviousSha256": "F6FA4BC53A6BF0D5BEB6BCFA59CA70AD880F4B11E15ACEFCE3DFF7226441EF15",
+      "Accepted": true,
+      "VisualReview": "Accepted: strained closed smile, tense brows and cheek sweat retained; repaired hands have no visible duplicate finger branch; outfit and original bottom framing preserved.",
+      "ImageMetadata": {
+        "Width": 1096,
+        "Height": 1435,
+        "Mode": "RGBA",
+        "AlphaExtrema": [
+          0,
+          255
+        ],
+        "AlphaBoundsGt16": [
+          2,
+          96,
+          1096,
+          1435
+        ],
+        "MarginsGt16": {
+          "left": 2,
+          "top": 96,
+          "right": 0,
+          "bottom": 0
+        }
+      },
+      "PreviousImageMetadata": {
+        "Width": 1096,
+        "Height": 1435,
+        "Mode": "RGBA"
+      },
+      "SideEdgePixels": {
+        "left": {
+          "CountGt16": 0,
+          "YRange": null,
+          "MaxAlpha": 8
+        },
+        "right": {
+          "CountGt16": 56,
+          "YRange": [
+            1024,
+            1079
+          ],
+          "MaxAlpha": 200
+        }
+      },
+      "ComparedToRevision": "v2.2.0"
+    },
+    {
+      "Name": "nervous3.png",
+      "Path": "Variants/tang-buyi/female/Portraits/nervous3.png",
+      "Sha256": "DD21FD444A11FAE4250E1C0815E7B82B6036021367D8813EEDF25F479EEF726D",
+      "ComparedTo": "Variants/tang-buyi/female/Portraits/nervous3.png",
+      "PreviousSha256": "655C57955A766F5E7DC09742F1AE14627302AFF4B580993E896D1735F0EFE484",
+      "Accepted": true,
+      "VisualReview": "Accepted: nervous smirk and cheek sweat retained; both hands read clearly; face identity, robe and original bottom framing preserved visually.",
+      "ImageMetadata": {
+        "Width": 1096,
+        "Height": 1435,
+        "Mode": "RGBA",
+        "AlphaExtrema": [
+          0,
+          255
+        ],
+        "AlphaBoundsGt16": [
+          0,
+          87,
+          1086,
+          1435
+        ],
+        "MarginsGt16": {
+          "left": 0,
+          "top": 87,
+          "right": 10,
+          "bottom": 0
+        }
+      },
+      "PreviousImageMetadata": {
+        "Width": 1096,
+        "Height": 1435,
+        "Mode": "RGBA"
+      },
+      "SideEdgePixels": {
+        "left": {
+          "CountGt16": 38,
+          "YRange": [
+            1397,
+            1434
+          ],
+          "MaxAlpha": 254
+        },
+        "right": {
+          "CountGt16": 0,
+          "YRange": null,
+          "MaxAlpha": 1
+        }
+      },
+      "ComparedToRevision": "v2.2.0"
+    },
+    {
+      "Name": "normal.png",
+      "Path": "Variants/tang-buyi/female/Portraits/normal.png",
+      "Sha256": "1E5DE6426644CB74365815570FD2E0CE6421CE6369457C8206C3E5AC9C189938",
+      "ComparedTo": "Variants/tang-buyi/female/Portraits/normal.png",
+      "PreviousSha256": "FE491C8DDADB3A46607DFFF137A7F6DB79F0E55851E22F82789FA0BAC15FF0ED",
+      "Accepted": true,
+      "VisualReview": "Accepted: both hands read more clearly; open lower-left palm and bent waist-side fingers are coherent. Neutral confident smile, costume and original bottom garment crop preserved.",
+      "ImageMetadata": {
+        "Width": 1096,
+        "Height": 1435,
+        "Mode": "RGBA",
+        "AlphaExtrema": [
+          0,
+          255
+        ],
+        "AlphaBoundsGt16": [
+          2,
+          83,
+          1096,
+          1435
+        ],
+        "MarginsGt16": {
+          "left": 2,
+          "top": 83,
+          "right": 0,
+          "bottom": 0
+        }
+      },
+      "PreviousImageMetadata": {
+        "Width": 1096,
+        "Height": 1435,
+        "Mode": "RGBA"
+      },
+      "SideEdgePixels": {
+        "left": {
+          "CountGt16": 0,
+          "YRange": null,
+          "MaxAlpha": 15
+        },
+        "right": {
+          "CountGt16": 19,
+          "YRange": [
+            1101,
+            1119
+          ],
+          "MaxAlpha": 42
+        }
+      },
+      "ComparedToRevision": "v2.2.0"
+    },
+    {
+      "Name": "serious.png",
+      "Path": "Variants/tang-buyi/female/Portraits/serious.png",
+      "Sha256": "86FE4AAB5A22197A687C641127B286813D32A52EFC043FEF4C3CF1282B819FFC",
+      "ComparedTo": "Variants/tang-buyi/female/Portraits/serious.png",
+      "PreviousSha256": "1F16E7E4DA993CF87E090029CE7DBB67C56416DCF2ED5E8D0BEB291C8E662067",
+      "Accepted": true,
+      "VisualReview": "Accepted: focused neutral mouth and brows retained; both repaired hands clear; original proportion, outfit and face identity preserved visually.",
+      "ImageMetadata": {
+        "Width": 1096,
+        "Height": 1435,
+        "Mode": "RGBA",
+        "AlphaExtrema": [
+          0,
+          255
+        ],
+        "AlphaBoundsGt16": [
+          0,
+          85,
+          1090,
+          1435
+        ],
+        "MarginsGt16": {
+          "left": 0,
+          "top": 85,
+          "right": 6,
+          "bottom": 0
+        }
+      },
+      "PreviousImageMetadata": {
+        "Width": 1096,
+        "Height": 1435,
+        "Mode": "RGBA"
+      },
+      "SideEdgePixels": {
+        "left": {
+          "CountGt16": 20,
+          "YRange": [
+            1415,
+            1434
+          ],
+          "MaxAlpha": 253
+        },
+        "right": {
+          "CountGt16": 0,
+          "YRange": null,
+          "MaxAlpha": 1
+        }
+      },
+      "ComparedToRevision": "v2.2.0"
+    },
+    {
+      "Name": "shock.png",
+      "Path": "Variants/tang-buyi/female/Portraits/shock.png",
+      "Sha256": "12B348BD1AC99FD781470DD938CF04471FB02024503585C1B6CBC71AC133B5CA",
+      "ComparedTo": "Variants/tang-buyi/female/Portraits/shock.png",
+      "PreviousSha256": "26A1054533CAF1B0628AD39460C74B2EA403E7DB08DB8E80AAA0BC9865EFAC70",
+      "Accepted": true,
+      "VisualReview": "Accepted: wide pale eyes, open mouth, cheek sweat, trembling outlines and falling coins retained; repaired waist-side hand is readable among the coins without a clear duplicate digit; lower-left palm and original framing preserved.",
+      "ImageMetadata": {
+        "Width": 1096,
+        "Height": 1435,
+        "Mode": "RGBA",
+        "AlphaExtrema": [
+          0,
+          255
+        ],
+        "AlphaBoundsGt16": [
+          0,
+          104,
+          1093,
+          1435
+        ],
+        "MarginsGt16": {
+          "left": 0,
+          "top": 104,
+          "right": 3,
+          "bottom": 0
+        }
+      },
+      "PreviousImageMetadata": {
+        "Width": 1096,
+        "Height": 1435,
+        "Mode": "RGBA"
+      },
+      "SideEdgePixels": {
+        "left": {
+          "CountGt16": 2,
+          "YRange": [
+            1433,
+            1434
+          ],
+          "MaxAlpha": 180
+        },
+        "right": {
+          "CountGt16": 0,
+          "YRange": null,
+          "MaxAlpha": 2
+        }
+      },
+      "ComparedToRevision": "v2.2.0"
+    },
+    {
+      "Name": "special1.png",
+      "Path": "Variants/tang-buyi/female/Portraits/special1.png",
+      "Sha256": "891C26CC943C88D042EC8486B3742A057247EA69085CA33825790839A9EB383F",
+      "ComparedTo": "Variants/tang-buyi/female/Portraits/special1.png",
+      "PreviousSha256": "77D6920632076CB4B02D5E108F5D6BE04AEA86701E8B2F4C16FA0AB24608CD42",
+      "Accepted": true,
+      "VisualReview": "Accepted: only the lower-left reaching palm is repaired. The waist-side hand and coins remain absent as intended. Closed tired eyes, forehead/cheek sweat and blood at the lip remain. Head, hair and fingertip silhouettes are intact; garment bottom cropping is inherited from the portrait framing.",
+      "ImageMetadata": {
+        "Width": 1096,
+        "Height": 1435,
+        "Mode": "RGBA",
+        "AlphaExtrema": [
+          0,
+          255
+        ],
+        "AlphaBoundsGt16": [
+          4,
+          92,
+          1083,
+          1435
+        ],
+        "MarginsGt16": {
+          "left": 4,
+          "top": 92,
+          "right": 13,
+          "bottom": 0
+        }
+      },
+      "PreviousImageMetadata": {
+        "Width": 1096,
+        "Height": 1435,
+        "Mode": "RGBA"
+      },
+      "SideEdgePixels": {
+        "left": {
+          "CountGt16": 0,
+          "YRange": null,
+          "MaxAlpha": 3
+        },
+        "right": {
+          "CountGt16": 0,
+          "YRange": null,
+          "MaxAlpha": 0
+        }
+      },
+      "ComparedToRevision": "v2.2.0"
+    },
+    {
+      "Name": "suck.png",
+      "Path": "Variants/tang-buyi/female/Portraits/suck.png",
+      "Sha256": "DD55C871FE1A953FB131FC4D0BA10A4C068170650C5ED1353CF729FAF74BB099",
+      "ComparedTo": "Variants/tang-buyi/female/Portraits/suck.png",
+      "PreviousSha256": "8C99E9DBF1495DFF10DC4AC2818199E85D6D94AE907EAC70435ED6B68B8D7C4A",
+      "Accepted": true,
+      "VisualReview": "Accepted: grimacing mouth, clenched teeth, one narrowed eye and abundant sweat are retained. Both hands now read clearly with five visible digits each; waist-side coin group remains. Lower-left fingertips still approach the original bottom framing; face, hair and clothing style remain coherent.",
+      "ImageMetadata": {
+        "Width": 1096,
+        "Height": 1435,
+        "Mode": "RGBA",
+        "AlphaExtrema": [
+          0,
+          255
+        ],
+        "AlphaBoundsGt16": [
+          0,
+          105,
+          1096,
+          1435
+        ],
+        "MarginsGt16": {
+          "left": 0,
+          "top": 105,
+          "right": 0,
+          "bottom": 0
+        }
+      },
+      "PreviousImageMetadata": {
+        "Width": 1096,
+        "Height": 1435,
+        "Mode": "RGBA"
+      },
+      "SideEdgePixels": {
+        "left": {
+          "CountGt16": 7,
+          "YRange": [
+            1428,
+            1434
+          ],
+          "MaxAlpha": 254
+        },
+        "right": {
+          "CountGt16": 119,
+          "YRange": [
+            1030,
+            1148
+          ],
+          "MaxAlpha": 253
+        }
+      },
+      "ComparedToRevision": "v2.2.0"
+    }
+  ],
+  "Limitations": [
+    "Accepted is a visual assessment, not a guarantee of exact anatomical reconstruction.",
+    "No claim of byte/pixel equality outside the edited hands; identity, expression and outfit were compared visually against the unchanged former production PNGs.",
+    "Bottom garment/fingertip cropping inherited from the original portrait framing is recorded separately from unintended side/top truncation.",
+    "Runtime alpha-bounds alignment and in-game appearance remain for the runtime test.",
+    "Several alpha>16 bounds touch a side edge, usually garment/fringe near the original framing; exact edge pixel ranges are recorded. Visual acceptance does not certify a positive transparent margin on every side."
+  ],
+  "SupersededReviews": [
+    {
+      "Name": "angry3.png",
+      "Path": "rejected/angry3-v1.png",
+      "Sha256": "A6029110270B92BA691EC19048CEB38591734D1F9CA698B7FA65A7E205E05E32",
+      "ComparedTo": "public-repo/Variants/tang-buyi/female/Portraits/angry3.png",
+      "PreviousSha256": "537FE0ADDF1336D6A2F54DA70AB425193ABF7ECF80A94D39EDAF39F16C1EF5A1",
+      "Accepted": false,
+      "VisualReview": "Needs regeneration: the waist-side hand retains an old horizontal upper finger branch above the newly bent fingers, producing six visible digit-like branches. Red eyes, open fierce expression, aura and coins are otherwise retained. Do not release this SHA; await root revision.",
+      "ImageMetadata": {
+        "Width": 1096,
+        "Height": 1435,
+        "Mode": "RGBA",
+        "AlphaExtrema": [
+          0,
+          255
+        ],
+        "AlphaBoundsGt16": [
+          31,
+          127,
+          1052,
+          1380
+        ],
+        "MarginsGt16": {
+          "left": 31,
+          "top": 127,
+          "right": 44,
+          "bottom": 55
+        }
+      },
+      "PreviousImageMetadata": {
+        "Width": 1096,
+        "Height": 1435,
+        "Mode": "RGBA"
+      },
+      "SideEdgePixels": {
+        "left": {
+          "CountGt16": 0,
+          "YRange": null,
+          "MaxAlpha": 1
+        },
+        "right": {
+          "CountGt16": 0,
+          "YRange": null,
+          "MaxAlpha": 0
+        }
+      }
+    }
+  ]
+}

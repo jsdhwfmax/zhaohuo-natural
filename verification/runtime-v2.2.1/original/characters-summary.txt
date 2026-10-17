@@ -1,0 +1,42 @@
+tang-buyi/brother1 resources=16 replaced=0 fallback=16 scope=approved PASS
+tang-buyi/brother1 bulk=16 PASS
+tang-buyi/brother1_2 resources=1 replaced=0 fallback=1 scope=approved PASS
+tang-buyi/brother1_0 resources=1 replaced=0 fallback=1 scope=approved PASS
+tang-buyi/brother1_young resources=1 replaced=0 fallback=1 scope=negative PASS
+tang-buyi/__scope_probe resources=1 replaced=0 fallback=1 scope=negative PASS
+xiahou-lan/girl6 resources=16 replaced=0 fallback=16 scope=approved PASS
+xiahou-lan/girl6 bulk=16 PASS
+xiahou-lan/girl6_1 resources=1 replaced=0 fallback=1 scope=approved PASS
+xiahou-lan/girl6_3 resources=1 replaced=0 fallback=1 scope=negative PASS
+xiahou-lan/__scope_probe resources=1 replaced=0 fallback=1 scope=negative PASS
+tang-moling/sister1 resources=16 replaced=0 fallback=16 scope=approved PASS
+tang-moling/sister1 bulk=16 PASS
+tang-moling/sister1_look resources=1 replaced=0 fallback=1 scope=negative PASS
+tang-moling/__scope_probe resources=1 replaced=0 fallback=1 scope=negative PASS
+long-xiang/girl4 resources=22 replaced=0 fallback=22 scope=approved PASS
+long-xiang/girl4 bulk=22 PASS
+long-xiang/girl4_1 resources=1 replaced=0 fallback=1 scope=approved PASS
+long-xiang/girl4_2 resources=1 replaced=0 fallback=1 scope=negative PASS
+long-xiang/__scope_probe resources=1 replaced=0 fallback=1 scope=negative PASS
+yu-xiaomei/girl5 resources=28 replaced=0 fallback=28 scope=approved PASS
+yu-xiaomei/girl5 bulk=28 PASS
+yu-xiaomei/girl5_hand resources=1 replaced=0 fallback=1 scope=negative PASS
+yu-xiaomei/girl5_9 resources=1 replaced=0 fallback=1 scope=negative PASS
+yu-xiaomei/girl5_6 resources=1 replaced=0 fallback=1 scope=negative PASS
+yu-xiaomei/girl5_10_1 resources=1 replaced=0 fallback=1 scope=negative PASS
+yu-xiaomei/girl5_10_2 resources=1 replaced=0 fallback=1 scope=negative PASS
+yu-xiaomei/girl5_10_3 resources=1 replaced=0 fallback=1 scope=negative PASS
+yu-xiaomei/girl5_10_4 resources=1 replaced=0 fallback=1 scope=negative PASS
+yu-xiaomei/girl5_10_5 resources=1 replaced=0 fallback=1 scope=negative PASS
+yu-xiaomei/girl5_10_6 resources=1 replaced=0 fallback=1 scope=negative PASS
+yu-xiaomei/girl5_7 resources=1 replaced=0 fallback=1 scope=negative PASS
+yu-xiaomei/girl5_2 resources=1 replaced=0 fallback=1 scope=negative PASS
+yu-xiaomei/girl5_5 resources=1 replaced=0 fallback=1 scope=negative PASS
+yu-xiaomei/girl5_4 resources=1 replaced=0 fallback=1 scope=negative PASS
+yu-xiaomei/girl5_8 resources=1 replaced=0 fallback=1 scope=negative PASS
+yu-xiaomei/girl5_3 resources=1 replaced=0 fallback=1 scope=negative PASS
+yu-xiaomei/__scope_probe resources=1 replaced=0 fallback=1 scope=negative PASS
+tang-zheng/brother2 resources=12 replaced=0 fallback=12 scope=approved PASS
+tang-zheng/brother2 bulk=12 PASS
+tang-zheng/brother2_young resources=1 replaced=0 fallback=1 scope=negative PASS
+tang-zheng/__scope_probe resources=1 replaced=0 fallback=1 scope=negative PASS

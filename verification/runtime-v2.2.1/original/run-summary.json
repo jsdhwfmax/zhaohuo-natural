@@ -1,0 +1,113 @@
+{
+  "DateUtc": "2026-10-17T04:56:10.1619742Z",
+  "GameBuildId": "25987745",
+  "GameVersion": "release_1.0.6000.3",
+  "GameBuildIdUnchanged": true,
+  "Selections": {
+    "player": "original",
+    "tang-buyi": "original",
+    "xiahou-lan": "original",
+    "tang-moling": "original",
+    "long-xiang": "original",
+    "yu-xiaomei": "original",
+    "tang-zheng": "original"
+  },
+  "ObservedSeconds": 47.2,
+  "Player": {
+    "Resources": 50,
+    "Replaced": 0,
+    "OriginalFallback": 50,
+    "AvatarBranches": 2,
+    "AvatarReplaced": 0,
+    "NonTargetUnchanged": true
+  },
+  "Characters": [
+    {
+      "Id": "tang-buyi",
+      "VariantId": "original",
+      "BaseResources": 16,
+      "Replaced": 0,
+      "OriginalFallback": 16,
+      "BulkResources": 16,
+      "AdultAliases": 2,
+      "NegativeControls": 2,
+      "Passed": true
+    },
+    {
+      "Id": "xiahou-lan",
+      "VariantId": "original",
+      "BaseResources": 16,
+      "Replaced": 0,
+      "OriginalFallback": 16,
+      "BulkResources": 16,
+      "AdultAliases": 1,
+      "NegativeControls": 2,
+      "Passed": true
+    },
+    {
+      "Id": "tang-moling",
+      "VariantId": "original",
+      "BaseResources": 16,
+      "Replaced": 0,
+      "OriginalFallback": 16,
+      "BulkResources": 16,
+      "AdultAliases": 0,
+      "NegativeControls": 2,
+      "Passed": true
+    },
+    {
+      "Id": "long-xiang",
+      "VariantId": "original",
+      "BaseResources": 22,
+      "Replaced": 0,
+      "OriginalFallback": 22,
+      "BulkResources": 22,
+      "AdultAliases": 1,
+      "NegativeControls": 2,
+      "Passed": true
+    },
+    {
+      "Id": "yu-xiaomei",
+      "VariantId": "original",
+      "BaseResources": 28,
+      "Replaced": 0,
+      "OriginalFallback": 28,
+      "BulkResources": 28,
+      "AdultAliases": 0,
+      "NegativeControls": 16,
+      "Passed": true
+    },
+    {
+      "Id": "tang-zheng",
+      "VariantId": "original",
+      "BaseResources": 12,
+      "Replaced": 0,
+      "OriginalFallback": 12,
+      "BulkResources": 12,
+      "AdultAliases": 0,
+      "NegativeControls": 2,
+      "Passed": true
+    }
+  ],
+  "CollectorHashes": [
+    {
+      "File": "Test-CharacterRuntime.ps1",
+      "Sha256": "280B76B7D5688E909FE7268DA6A4D8413DAFB5664B5668A8A05AB8B60EA50583"
+    },
+    {
+      "File": "Assert-CharacterDiagnostics.ps1",
+      "Sha256": "A2370E2FCE665FCEE113D2325FE5F2198229FE908E454D342DE8567E53294FCD"
+    },
+    {
+      "File": "runtime-expectations.json",
+      "Sha256": "2187508C19B591823C7B8F1BB8FA1C7716F67E7A284E133DF55A5122582CD3A3"
+    }
+  ],
+  "Mode": "original",
+  "Passed": true,
+  "ActualGameRun": true,
+  "RuntimeVersion": "2.1.0",
+  "PluginSha256": "AEEE02AC56DCDCB1E683D6356AC28FE19E61AF861D5663ACFFD1B83984F06957",
+  "CatalogSha256": "590859B8AB8939913EA80FB19E91BC5A972E5F099D8C5A211A28FB1844455F2A",
+  "LoadedPortraitCount": 0
+}

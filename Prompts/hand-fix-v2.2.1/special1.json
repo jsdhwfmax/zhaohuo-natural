@@ -1,0 +1,50 @@
+{
+  "SchemaVersion": 1,
+  "CharacterId": "tang-buyi",
+  "VariantId": "female",
+  "Name": "special1.png",
+  "GenerationMethod": "builtin imagegen",
+  "PixelPostProcessing": false,
+  "SelectedAttempt": 1,
+  "OutputFile": "Variants/tang-buyi/female/Portraits/special1.png",
+  "OutputSHA256": "891C26CC943C88D042EC8486B3742A057247EA69085CA33825790839A9EB383F",
+  "Width": 1096,
+  "Height": 1435,
+  "BeforeSHA256": "77D6920632076CB4B02D5E108F5D6BE04AEA86701E8B2F4C16FA0AB24608CD42",
+  "Attempts": [
+    {
+      "Attempt": 1,
+      "Selected": true,
+      "GenerationMethod": "builtin imagegen",
+      "Tool": "image_gen.imagegen",
+      "Mode": "edit",
+      "Prompt": "Use case: precise-object-edit. Image 1 is the exact transparent game portrait to edit. Image 2 is ONLY the approved corrected extended hand anatomy reference. Repair ONLY the one visible open hand at lower-left and its wrist. It belongs to the extended arm; make five anatomically plausible fingers, distinct thumb, natural palm creases, wrist connection, matching Image 2 hand style. Do NOT add the other hand at her waist: in this special pose it is hidden, keep it hidden. Do NOT add coins at her waist. Keep exact pained closed eyes, bruising, sweat drops and blood at lip, exact hair, costume, figure shape, pose, margins, canvas framing, painted/ink wuxia style. Preserve everything outside the visible hand/wrist as closely as possible. Transparent alpha background, no words, no added elements.",
+      "ReferenceImages": [
+        {
+          "Kind": "edit-target",
+          "Path": "Variants/tang-buyi/female/Portraits/special1.png",
+          "Revision": "v2.2.0",
+          "Sha256": "77D6920632076CB4B02D5E108F5D6BE04AEA86701E8B2F4C16FA0AB24608CD42",
+          "IncludedInCurrentRelease": false,
+          "Note": "This is the pre-repair revision of this path; its pixels are not bundled in the repaired package."
+        },
+        {
+          "Kind": "generated-reference",
+          "Asset": "normal.png",
+          "Sha256": "1E5DE6426644CB74365815570FD2E0CE6421CE6369457C8206C3E5AC9C189938",
+          "IncludedAsCurrentPortrait": true,
+          "GenerationRecord": "Prompts/hand-fix-v2.2.1/normal.json",
+          "Attempt": 1,
+          "SourceOutputFilename": "exec-68d61283-76c2-4d1a-85f6-ec81d1b707b4.png"
+        }
+      ],
+      "SourceRecordName": "special1.json",
+      "SourceRecordSha256": "A9CF1130EAADC9EA711623028FDC99BAB0BB3E0A2D915205D22460061D75E450",
+      "GeneratedOutputFilename": "exec-c6d4274b-d02b-427d-8774-ddceacee1ff6.png",
+      "OutputSHA256": "891C26CC943C88D042EC8486B3742A057247EA69085CA33825790839A9EB383F",
+      "PixelPostProcessing": false,
+      "OriginalRecordStatus": "pending-independent-review"
+    }
+  ],
+  "ProvenanceNote": "Prompt text is verbatim. Only local path metadata is replaced by revision-aware relative identities. SourceRecordSha256 identifies the original private record; this portable wrapper has its own release-manifest hash."
+}

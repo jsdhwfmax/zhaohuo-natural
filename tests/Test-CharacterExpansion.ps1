@@ -17,7 +17,7 @@ foreach($name in @('Write-Text','Save-Json','Hash','Assert','Reject','State','St
 }
 $production=Get-PortraitCharacters -PackageRoot $repo
 $sourceCatalog=Get-Content -LiteralPath (Join-Path $repo 'VariantCatalog.json') -Raw -Encoding UTF8|ConvertFrom-Json
-$oldProduction=@($sourceCatalog.Characters|Where-Object{$_.Id-in @('player','tang-buyi','xiahou-lan')}|ForEach-Object{$_.Variants}|Where-Object{$_.Kind-eq 'custom'-and $_.Id-ne 'female'})
+$oldProduction=@($sourceCatalog.Characters|Where-Object{$_.Id-in @('player','tang-buyi','xiahou-lan')}|ForEach-Object{$_.Variants}|Where-Object{$_.Kind-eq 'custom'-and $_.Id-notin @('female','hardman')})
 $productionBefore=@{};foreach($variant in $oldProduction){foreach($file in $variant.Files){$relative=$variant.SourcePath+'/'+$file.Name;$productionBefore[$relative]=Hash (Join-Path $repo $relative)}}
 Assert ($productionBefore.Count-eq 312) 'All 312 previously released PNGs are included in the unchanged-input guard'
 $pe=New-Object byte[] 256;$pe[0]=0x4D;$pe[1]=0x5A;$pe[0x3C]=0x80;$pe[0x80]=0x50;$pe[0x81]=0x45;$pe[0x84]=0x64;$pe[0x85]=0x86

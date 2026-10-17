@@ -1,0 +1,170 @@
+{
+  "Passed": true,
+  "CharacterId": "tang-buyi",
+  "VariantId": "female",
+  "ReviewedPortraitCount": 15,
+  "ReviewStatus": "Passed after viewing both actual Unity diagnostic pages.",
+  "Scope": "Static visual review of all 15 repaired Tang Buyi female portraits rendered by the real game diagnostic UI; not a story playthrough.",
+  "Screenshots": [
+    {
+      "Path": "female/diagnostics/character-tang-buyi-brother1-1.png",
+      "Sha256": "C70E357882921C177FE07A811E3AE1836FBC5471F04C59866ED4EF47EADFD8B0",
+      "Width": 1920,
+      "Height": 1080
+    },
+    {
+      "Path": "female/diagnostics/character-tang-buyi-brother1-2.png",
+      "Sha256": "143FA319E0DF73388D2C219882360BC48D04D901DFD714C98FBB07887402B9B4",
+      "Width": 1920,
+      "Height": 1080
+    }
+  ],
+  "Portraits": [
+    {
+      "Name": "normal.png",
+      "Passed": true,
+      "HandsPassed": true,
+      "PlacementPassed": true,
+      "EdgesPassed": true,
+      "ScreenshotPath": "female/diagnostics/character-tang-buyi-brother1-1.png",
+      "Notes": "Open reaching palm and bent waist fingers readable; neutral face, coins and silhouette align naturally in the slot. Original bottom garment/fingertip framing is accepted; no new loss of visible head, hat or hands is apparent."
+    },
+    {
+      "Name": "angry1.png",
+      "Passed": true,
+      "HandsPassed": true,
+      "PlacementPassed": true,
+      "EdgesPassed": true,
+      "ScreenshotPath": "female/diagnostics/character-tang-buyi-brother1-1.png",
+      "Notes": "Closed-mouth anger retained; both repaired hands readable; no unexpected head or side clipping. Original bottom garment/fingertip framing is accepted; no new loss of visible head, hat or hands is apparent."
+    },
+    {
+      "Name": "angry2.png",
+      "Passed": true,
+      "HandsPassed": true,
+      "PlacementPassed": true,
+      "EdgesPassed": true,
+      "ScreenshotPath": "female/diagnostics/character-tang-buyi-brother1-1.png",
+      "Notes": "Red aura, copper coins and fierce closed mouth preserved; repaired hands remain visible within the aura and slot. Original bottom garment/fingertip framing is accepted; no new loss of visible head, hat or hands is apparent."
+    },
+    {
+      "Name": "angry3.png",
+      "Passed": true,
+      "HandsPassed": true,
+      "PlacementPassed": true,
+      "EdgesPassed": true,
+      "ScreenshotPath": "female/diagnostics/character-tang-buyi-brother1-1.png",
+      "Notes": "Final v2 shows the repaired waist hand without the rejected extra horizontal finger; red eyes, open mouth, aura and coins intact. Both hands readable at screenshot scale. Original bottom garment/fingertip framing is accepted; no new loss of visible head, hat or hands is apparent."
+    },
+    {
+      "Name": "hat.png",
+      "Passed": true,
+      "HandsPassed": true,
+      "PlacementPassed": true,
+      "EdgesPassed": true,
+      "ScreenshotPath": "female/diagnostics/character-tang-buyi-brother1-1.png",
+      "Notes": "Straw hat and chin cords complete, shaded eyes retained; hands and sleeve edges visible and correctly placed. Original bottom garment/fingertip framing is accepted; no new loss of visible head, hat or hands is apparent."
+    },
+    {
+      "Name": "hurt.png",
+      "Passed": true,
+      "HandsPassed": true,
+      "PlacementPassed": true,
+      "EdgesPassed": true,
+      "ScreenshotPath": "female/diagnostics/character-tang-buyi-brother1-1.png",
+      "Notes": "Injured expression, lip blood and sweat retained; repaired hands readable, silhouette placed consistently. Original bottom garment/fingertip framing is accepted; no new loss of visible head, hat or hands is apparent."
+    },
+    {
+      "Name": "laugh1.png",
+      "Passed": true,
+      "HandsPassed": true,
+      "PlacementPassed": true,
+      "EdgesPassed": true,
+      "ScreenshotPath": "female/diagnostics/character-tang-buyi-brother1-1.png",
+      "Notes": "Confident closed smile retained; both hands and coins visible, with consistent scale and placement. Original bottom garment/fingertip framing is accepted; no new loss of visible head, hat or hands is apparent."
+    },
+    {
+      "Name": "laugh2.png",
+      "Passed": true,
+      "HandsPassed": true,
+      "PlacementPassed": true,
+      "EdgesPassed": true,
+      "ScreenshotPath": "female/diagnostics/character-tang-buyi-brother1-2.png",
+      "Notes": "Open laughing expression retained; both hands readable, no unintended side or head clipping. Original bottom garment/fingertip framing is accepted; no new loss of visible head, hat or hands is apparent."
+    },
+    {
+      "Name": "nervous1.png",
+      "Passed": true,
+      "HandsPassed": true,
+      "PlacementPassed": true,
+      "EdgesPassed": true,
+      "ScreenshotPath": "female/diagnostics/character-tang-buyi-brother1-2.png",
+      "Notes": "Worried open mouth and sweat retained; repaired hands remain readable and correctly placed. Original bottom garment/fingertip framing is accepted; no new loss of visible head, hat or hands is apparent."
+    },
+    {
+      "Name": "nervous2.png",
+      "Passed": true,
+      "HandsPassed": true,
+      "PlacementPassed": true,
+      "EdgesPassed": true,
+      "ScreenshotPath": "female/diagnostics/character-tang-buyi-brother1-2.png",
+      "Notes": "Tense smile and sweat retained; hand silhouette and clothing edges coherent at runtime display size. Original bottom garment/fingertip framing is accepted; no new loss of visible head, hat or hands is apparent."
+    },
+    {
+      "Name": "nervous3.png",
+      "Passed": true,
+      "HandsPassed": true,
+      "PlacementPassed": true,
+      "EdgesPassed": true,
+      "ScreenshotPath": "female/diagnostics/character-tang-buyi-brother1-2.png",
+      "Notes": "Nervous smirk retained; both hands visible with consistent silhouette placement. Original bottom garment/fingertip framing is accepted; no new loss of visible head, hat or hands is apparent."
+    },
+    {
+      "Name": "serious.png",
+      "Passed": true,
+      "HandsPassed": true,
+      "PlacementPassed": true,
+      "EdgesPassed": true,
+      "ScreenshotPath": "female/diagnostics/character-tang-buyi-brother1-2.png",
+      "Notes": "Stern closed-mouth expression retained; both repaired hands readable and placement consistent. Original bottom garment/fingertip framing is accepted; no new loss of visible head, hat or hands is apparent."
+    },
+    {
+      "Name": "shock.png",
+      "Passed": true,
+      "HandsPassed": true,
+      "PlacementPassed": true,
+      "EdgesPassed": true,
+      "ScreenshotPath": "female/diagnostics/character-tang-buyi-brother1-2.png",
+      "Notes": "Wide eyes, open mouth, trembling outlines and falling coins remain visible; hand shapes are not fused into the effects. Original bottom garment/fingertip framing is accepted; no new loss of visible head, hat or hands is apparent."
+    },
+    {
+      "Name": "special1.png",
+      "Passed": true,
+      "HandsPassed": true,
+      "PlacementPassed": true,
+      "EdgesPassed": true,
+      "ScreenshotPath": "female/diagnostics/character-tang-buyi-brother1-2.png",
+      "Notes": "Closed injured eyes, blood and sweat retained. Only the reaching hand appears; the intentionally hidden waist hand and absent coins stay absent. Original bottom garment/fingertip framing is accepted; no new loss of visible head, hat or hands is apparent."
+    },
+    {
+      "Name": "suck.png",
+      "Passed": true,
+      "HandsPassed": true,
+      "PlacementPassed": true,
+      "EdgesPassed": true,
+      "ScreenshotPath": "female/diagnostics/character-tang-buyi-brother1-2.png",
+      "Notes": "Grimace, clenched teeth and sweat retained; both hands and waist coins remain readable with consistent placement. Original bottom garment/fingertip framing is accepted; no new loss of visible head, hat or hands is apparent."
+    }
+  ],
+  "ReviewedAtUtc": "2026-10-17T04:48:24.535758+00:00",
+  "ExcludedOriginalFallback": "hand is shown on page 1 and is intentionally original; it is not counted among the 15 custom portraits.",
+  "StaticSourceReview": {
+    "Path": "../visual-review.json",
+    "Sha256": "99493641EDEEDB0BDB0DABAE99C6EC499F25AB3248E4B6419C2884EDE1250041"
+  },
+  "Limitations": [
+    "Screenshots show diagnostic slots rather than every story camera, UI scale or dialogue combination.",
+    "Hand detail is judged at the supplied 1920x1080 diagnostic-page scale, together with the previously completed full-resolution source review.",
+    "Bottom-edge portrait framing is inherited and is not treated as an unintended cut."
+  ]
+}

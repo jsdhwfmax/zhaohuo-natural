@@ -1,4 +1,14 @@
 ﻿#requires -Version 5.1
+$script:CharacterPriorFingerprints=@{
+    # Published v2.1.0/v2.2.0 female artwork. Accept only this complete historical
+    # payload after the ordinary live-file/manifest checks; never arbitrary edits.
+    'tang-buyi/female'=@('3DE6E1944779A6DFADEA26A8631CECFD09FE29D750F97A4AEFF39FF82BF003A8')
+}
+function Test-ZHCharacterPayloadFingerprint([string]$CharacterId,[object]$Variant,[string]$Fingerprint) {
+    if($Fingerprint-eq $Variant.AssetFingerprint){return $true}
+    $key=$CharacterId+'/'+$Variant.Id
+    return ($script:CharacterPriorFingerprints.ContainsKey($key)-and $Fingerprint-in $script:CharacterPriorFingerprints[$key])
+}
 function Copy-ZHObject([object]$Value) { $Value|ConvertTo-Json -Depth 20|ConvertFrom-Json }
 function Set-ZHProperty([object]$Object,[string]$Name,[object]$Value) { $Object|Add-Member NoteProperty $Name $Value -Force }
 function Get-ZHRecordCharacter([string]$Path) {
@@ -93,7 +103,7 @@ function ConvertTo-ZHCharacterState([object]$Paths,[object]$Manifest,[object]$Ca
         $variant=@($definition.Variants|Where-Object Id -eq $character.InstalledPayload.VariantId)
         $files=@($images|ForEach-Object{[pscustomobject]@{Name=[IO.Path]::GetFileName($_.RelativePath);Sha256=$_.InstalledSha256}})
         $fingerprint=Get-ZHCharacterFingerprint $character.Id $files
-        if($variant.Count-ne 1 -or $variant[0].Kind-ne 'custom' -or $fingerprint-ne $variant[0].AssetFingerprint -or $fingerprint-ne $character.InstalledPayload.AssetFingerprint -or ($character.SelectedVariantId-ne 'original' -and $character.SelectedVariantId-ne $character.InstalledPayload.VariantId)){throw '角色文件的完整指纹或启用状态不匹配，未自动接管。'}
+        if($variant.Count-ne 1 -or $variant[0].Kind-ne 'custom' -or -not(Test-ZHCharacterPayloadFingerprint $character.Id $variant[0] $fingerprint) -or $fingerprint-ne $character.InstalledPayload.AssetFingerprint -or ($character.SelectedVariantId-ne 'original' -and $character.SelectedVariantId-ne $character.InstalledPayload.VariantId)){throw '角色文件的完整指纹或启用状态不匹配，未自动接管。'}
     }
     if($Manifest.SchemaVersion-eq 4){
         if(@($records|Where-Object{$_.CharacterId -and $_.CharacterId-notin $expectedIds}).Count){throw '安装记录协议与受管角色文件不一致。'}

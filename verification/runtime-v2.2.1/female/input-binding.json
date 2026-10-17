@@ -1,0 +1,134 @@
+{
+  "Passed": true,
+  "ActualGameRun": true,
+  "Mode": "female",
+  "CheckedBeforeUtc": "2026-10-17T04:45:46.0568532Z",
+  "CheckedAfterUtc": "2026-10-17T04:47:21.4489396Z",
+  "PackageVersion": "2.2.1",
+  "CatalogSha256": "590859B8AB8939913EA80FB19E91BC5A972E5F099D8C5A211A28FB1844455F2A",
+  "PluginSha256": "AEEE02AC56DCDCB1E683D6356AC28FE19E61AF861D5663ACFFD1B83984F06957",
+  "AssetFingerprint": "6C94D6E83A1C983E331074A21872441E5A23D31D4C053E274DD246800E4EFFBE",
+  "LayoutPath": "Characters/tang-buyi/portrait-layout.tsv",
+  "LayoutSha256": "8FD61B62FF24CA3B625D6329A744E13EA8BC6B3BBDC7C5ED3542B3A1FE42C6F0",
+  "LiveLayoutSha256": "8FD61B62FF24CA3B625D6329A744E13EA8BC6B3BBDC7C5ED3542B3A1FE42C6F0",
+  "PortraitsUnchangedDuringRun": true,
+  "RuntimeRunSha256": "43B31FE9D98700E8BF41B856A0572A62722BAAD33CD829FA270711C2B106C2B6",
+  "WrapperSha256": "E7F0C06F508D3C76103158171974DFFF32564766C68290E49E08CB40A3642B72",
+  "PortraitFiles": [
+    {
+      "Name": "angry1.png",
+      "Sha256": "18EBD3290D4D89702EF347DD8F71D1A6FF0A496E6E6DF66F78C0F4C4FD6DF93F",
+      "LiveSha256": "18EBD3290D4D89702EF347DD8F71D1A6FF0A496E6E6DF66F78C0F4C4FD6DF93F",
+      "PackagePath": "Variants/tang-buyi/female/Portraits/angry1.png",
+      "GameRelativePath": "BepInEx/plugins/ZhaoHuoNatural/Characters/tang-buyi/Portraits/angry1.png"
+    },
+    {
+      "Name": "angry2.png",
+      "Sha256": "145848B3C66AF4B37CCC651D916F388FA0B23B1711C566CCEEEE65182DA8320A",
+      "LiveSha256": "145848B3C66AF4B37CCC651D916F388FA0B23B1711C566CCEEEE65182DA8320A",
+      "PackagePath": "Variants/tang-buyi/female/Portraits/angry2.png",
+      "GameRelativePath": "BepInEx/plugins/ZhaoHuoNatural/Characters/tang-buyi/Portraits/angry2.png"
+    },
+    {
+      "Name": "angry3.png",
+      "Sha256": "1B75E520A67581102BBCEB7BD7233EFD0B6D81368D01073E548E705C78717FE7",
+      "LiveSha256": "1B75E520A67581102BBCEB7BD7233EFD0B6D81368D01073E548E705C78717FE7",
+      "PackagePath": "Variants/tang-buyi/female/Portraits/angry3.png",
+      "GameRelativePath": "BepInEx/plugins/ZhaoHuoNatural/Characters/tang-buyi/Portraits/angry3.png"
+    },
+    {
+      "Name": "hat.png",
+      "Sha256": "07676F2C9170F1B8F9D13D5392F732697EE91547C0CCE7B8A0EA4CBBF572FDFF",
+      "LiveSha256": "07676F2C9170F1B8F9D13D5392F732697EE91547C0CCE7B8A0EA4CBBF572FDFF",
+      "PackagePath": "Variants/tang-buyi/female/Portraits/hat.png",
+      "GameRelativePath": "BepInEx/plugins/ZhaoHuoNatural/Characters/tang-buyi/Portraits/hat.png"
+    },
+    {
+      "Name": "hurt.png",
+      "Sha256": "674D72E5550FAFD8C41226571144B512318ADC9D3F574F7C04773848C80FEDEA",
+      "LiveSha256": "674D72E5550FAFD8C41226571144B512318ADC9D3F574F7C04773848C80FEDEA",
+      "PackagePath": "Variants/tang-buyi/female/Portraits/hurt.png",
+      "GameRelativePath": "BepInEx/plugins/ZhaoHuoNatural/Characters/tang-buyi/Portraits/hurt.png"
+    },
+    {
+      "Name": "laugh1.png",
+      "Sha256": "EED3EFD5A2D36DB029DA9B57B3510EE9CF83AA8BDC8E393660BE7194409D6773",
+      "LiveSha256": "EED3EFD5A2D36DB029DA9B57B3510EE9CF83AA8BDC8E393660BE7194409D6773",
+      "PackagePath": "Variants/tang-buyi/female/Portraits/laugh1.png",
+      "GameRelativePath": "BepInEx/plugins/ZhaoHuoNatural/Characters/tang-buyi/Portraits/laugh1.png"
+    },
+    {
+      "Name": "laugh2.png",
+      "Sha256": "2574871789089DF05F6CB8490D86DD8C66A9BADFD1B59D4ABD69D55AD32BF257",
+      "LiveSha256": "2574871789089DF05F6CB8490D86DD8C66A9BADFD1B59D4ABD69D55AD32BF257",
+      "PackagePath": "Variants/tang-buyi/female/Portraits/laugh2.png",
+      "GameRelativePath": "BepInEx/plugins/ZhaoHuoNatural/Characters/tang-buyi/Portraits/laugh2.png"
+    },
+    {
+      "Name": "nervous1.png",
+      "Sha256": "FD37B7836882AFC94FDF26D20762EC824F5A5445AC053E361A2F1D7DDC30DBE4",
+      "LiveSha256": "FD37B7836882AFC94FDF26D20762EC824F5A5445AC053E361A2F1D7DDC30DBE4",
+      "PackagePath": "Variants/tang-buyi/female/Portraits/nervous1.png",
+      "GameRelativePath": "BepInEx/plugins/ZhaoHuoNatural/Characters/tang-buyi/Portraits/nervous1.png"
+    },
+    {
+      "Name": "nervous2.png",
+      "Sha256": "521D22D28168336C1CA0DFD113A30896DF36467DD2A32BE538220E31BCA3FB33",
+      "LiveSha256": "521D22D28168336C1CA0DFD113A30896DF36467DD2A32BE538220E31BCA3FB33",
+      "PackagePath": "Variants/tang-buyi/female/Portraits/nervous2.png",
+      "GameRelativePath": "BepInEx/plugins/ZhaoHuoNatural/Characters/tang-buyi/Portraits/nervous2.png"
+    },
+    {
+      "Name": "nervous3.png",
+      "Sha256": "DD21FD444A11FAE4250E1C0815E7B82B6036021367D8813EEDF25F479EEF726D",
+      "LiveSha256": "DD21FD444A11FAE4250E1C0815E7B82B6036021367D8813EEDF25F479EEF726D",
+      "PackagePath": "Variants/tang-buyi/female/Portraits/nervous3.png",
+      "GameRelativePath": "BepInEx/plugins/ZhaoHuoNatural/Characters/tang-buyi/Portraits/nervous3.png"
+    },
+    {
+      "Name": "normal.png",
+      "Sha256": "1E5DE6426644CB74365815570FD2E0CE6421CE6369457C8206C3E5AC9C189938",
+      "LiveSha256": "1E5DE6426644CB74365815570FD2E0CE6421CE6369457C8206C3E5AC9C189938",
+      "PackagePath": "Variants/tang-buyi/female/Portraits/normal.png",
+      "GameRelativePath": "BepInEx/plugins/ZhaoHuoNatural/Characters/tang-buyi/Portraits/normal.png"
+    },
+    {
+      "Name": "serious.png",
+      "Sha256": "86FE4AAB5A22197A687C641127B286813D32A52EFC043FEF4C3CF1282B819FFC",
+      "LiveSha256": "86FE4AAB5A22197A687C641127B286813D32A52EFC043FEF4C3CF1282B819FFC",
+      "PackagePath": "Variants/tang-buyi/female/Portraits/serious.png",
+      "GameRelativePath": "BepInEx/plugins/ZhaoHuoNatural/Characters/tang-buyi/Portraits/serious.png"
+    },
+    {
+      "Name": "shock.png",
+      "Sha256": "12B348BD1AC99FD781470DD938CF04471FB02024503585C1B6CBC71AC133B5CA",
+      "LiveSha256": "12B348BD1AC99FD781470DD938CF04471FB02024503585C1B6CBC71AC133B5CA",
+      "PackagePath": "Variants/tang-buyi/female/Portraits/shock.png",
+      "GameRelativePath": "BepInEx/plugins/ZhaoHuoNatural/Characters/tang-buyi/Portraits/shock.png"
+    },
+    {
+      "Name": "special1.png",
+      "Sha256": "891C26CC943C88D042EC8486B3742A057247EA69085CA33825790839A9EB383F",
+      "LiveSha256": "891C26CC943C88D042EC8486B3742A057247EA69085CA33825790839A9EB383F",
+      "PackagePath": "Variants/tang-buyi/female/Portraits/special1.png",
+      "GameRelativePath": "BepInEx/plugins/ZhaoHuoNatural/Characters/tang-buyi/Portraits/special1.png"
+    },
+    {
+      "Name": "suck.png",
+      "Sha256": "DD55C871FE1A953FB131FC4D0BA10A4C068170650C5ED1353CF729FAF74BB099",
+      "LiveSha256": "DD55C871FE1A953FB131FC4D0BA10A4C068170650C5ED1353CF729FAF74BB099",
+      "PackagePath": "Variants/tang-buyi/female/Portraits/suck.png",
+      "GameRelativePath": "BepInEx/plugins/ZhaoHuoNatural/Characters/tang-buyi/Portraits/suck.png"
+    }
+  ],
+  "Selections": {
+    "player": "xianxia",
+    "tang-buyi": "female",
+    "xiahou-lan": "refined",
+    "tang-moling": "refined",
+    "long-xiang": "refined",
+    "yu-xiaomei": "refined",
+    "tang-zheng": "female"
+  },
+  "Scope": "Hashes checked before and after the actual diagnostic run; current installed state verified through the candidate installer. No game files were edited by this wrapper."
+}

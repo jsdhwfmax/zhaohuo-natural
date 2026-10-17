@@ -1,7 +1,7 @@
 ﻿#requires -Version 5.1
 [CmdletBinding()]
 param(
-    [ValidatePattern('^[0-9]+\.[0-9]+\.[0-9]+$')][string]$Version='2.2.0',
+    [ValidatePattern('^[0-9]+\.[0-9]+\.[0-9]+$')][string]$Version='2.2.1',
     [string]$OutputDirectory,
     [switch]$CheckOnly
 )
@@ -42,7 +42,7 @@ function Payload-Fingerprint([object[]]$Entries){
 function Assert-HistoricalCatalogBinding([string]$ReportPath,[string]$HistoricalHash){
     if($ReportPath-notin @('verification/character-manager-tests.json','verification/character-manager-regression.json')){throw 'Only the two original synthetic-fixture reports may reuse their historical Catalog data binding.'}
     $acceptPath='verification/character-catalog-acceptance.json'
-    $null=Assert-CodeReport $acceptPath @('installer/ZhaoHuoInstaller.psm1','installer/AppearanceManager.ps1','installer/VariantSupport.ps1','installer/CharacterCatalog.ps1','installer/CharacterState.ps1','installer/CharacterManager.ps1','installer/CharacterTransactions.ps1','VariantCatalog.json','Install.ps1','tests/Test-CharacterCatalog.ps1','scripts/CharacterReleaseRules.ps1')
+    $null=Assert-CodeReport $acceptPath @('installer/ZhaoHuoInstaller.psm1','installer/AppearanceManager.ps1','installer/VariantSupport.ps1','installer/CharacterCatalog.ps1','installer/CharacterState.ps1','installer/CharacterManager.ps1','installer/CharacterTransactions.ps1','VariantCatalog.json','Install.ps1','tests/Test-CharacterCatalog.ps1','scripts/CharacterReleaseRules.ps1','scripts/artwork-patch-v2.2.1.json')
     $accept=Read-Json $acceptPath
     foreach($field in @('DataOnlyAcceptance','PackageReady','ReadOnlyPackageUnchanged')){if($accept.$field-isnot [bool]-or-not $accept.$field){throw ('Final Catalog acceptance flag is missing: '+$field)}}
     if($accept.SourceSuitesRerun-isnot [bool]-or $accept.SourceSuitesRerun-or $accept.ActualGameRun-isnot [bool]-or $accept.ActualGameRun){throw 'Catalog-only evidence must not claim a fixture-suite rerun or actual game execution.'}
@@ -118,7 +118,7 @@ $manifest=[ordered]@{
     Package='ZhaoHuoPortraitManager';Version=$Version;RuntimeVersion=$releaseRuntimeVersion;Platform='Windows x64';SteamAppId=1859910;DefaultCharacterId='player';CatalogSchemaVersion=2;InstallationSchemaVersion=4
     Catalog=[ordered]@{Path='VariantCatalog.json';SHA256=(Hash (Resolve-PackageFile 'VariantCatalog.json'))}
     Characters=$releaseRoleIds.Count;Variants=$variants;PortraitCount=$releasePortraitCount;SharedPluginFiles=$shared;KnownGameFingerprintGroups=$supported
-    ManagerValidation=$managerValidation;RegressionValidation=$regressionValidation;CatalogDataValidation=$catalogValidation;GuiValidation=$guiValidation;CompatibilityValidation=$compatibilityValidation;GameResourceValidation=$gameResourceValidation;ConfigurationParserValidation=$configurationValidation;SharedDllUpdateValidation=$sharedUpdateValidation;ExpansionValidation=$expansionValidation;InstallationValidation=$installationValidation;ArtworkValidation=$managerArtValidation;RuntimeValidation=$runtimeValidation;HistoricalRuntimeValidation=$historicalRuntimeValidation;HistoricalInstallationValidation=$historicalInstallationValidation;PromptValidation=$promptValidation
+    ManagerValidation=$managerValidation;RegressionValidation=$regressionValidation;CatalogDataValidation=$catalogValidation;GuiValidation=$guiValidation;CompatibilityValidation=$compatibilityValidation;GameResourceValidation=$gameResourceValidation;ConfigurationParserValidation=$configurationValidation;SharedDllUpdateValidation=$sharedUpdateValidation;ExpansionValidation=$expansionValidation;InstallationValidation=$installationValidation;ArtworkValidation=$managerArtValidation;ArtworkPatchValidation=$artworkPatchValidation;RuntimeValidation=$runtimeValidation;HistoricalRuntimeValidation=$historicalRuntimeValidation;HistoricalInstallationValidation=$historicalInstallationValidation;PromptValidation=$promptValidation
     CompatibilityCheck=[ordered]@{Trigger='ManagerCheckOrApply';AutoRunOnGameStart=$false;NetworkRequired=$false;FastPathRequiresSteamBuildAndCompleteFingerprint=$true;UnknownBuildMode='OfflineCompatibilityProbe';ProbePath=$probePath;ProbeSHA256=(Hash (Resolve-PackageFile $probePath));Baselines=$compatibilityBaselines}
     Scope='Seven independently selectable characters, fourteen custom styles and per-character original mode. Runtime, art, GUI, fixture and installation evidence have separate scopes; not a full-story or universal future-update guarantee.'
     ProvenancePrivacy='Public text/provenance omits local username/desktop paths. Runtime binaries may retain their original compiler debug-path reference.'

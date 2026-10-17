@@ -1,0 +1,51 @@
+{
+  "SchemaVersion": 1,
+  "CharacterId": "tang-buyi",
+  "VariantId": "female",
+  "Name": "nervous2.png",
+  "GenerationMethod": "builtin imagegen",
+  "PixelPostProcessing": false,
+  "SelectedAttempt": 1,
+  "OutputFile": "Variants/tang-buyi/female/Portraits/nervous2.png",
+  "OutputSHA256": "521D22D28168336C1CA0DFD113A30896DF36467DD2A32BE538220E31BCA3FB33",
+  "Width": 1096,
+  "Height": 1435,
+  "BeforeSHA256": "F6FA4BC53A6BF0D5BEB6BCFA59CA70AD880F4B11E15ACEFCE3DFF7226441EF15",
+  "Attempts": [
+    {
+      "Attempt": 1,
+      "Selected": true,
+      "GenerationMethod": "builtin imagegen",
+      "Tool": "image_gen.imagegen",
+      "Mode": "edit",
+      "Prompt": "Use case: precise-object-edit.\nAsset: transparent PNG dialogue portrait for Chinese wuxia game Legend of Mortal. Image 1 is the EDIT TARGET, not merely style reference.\nCorrect ONLY the two visible hands and their wrist anatomy in this existing adult female Tang Buyi portrait. The extended arm at the lower left of the image is the character's anatomical RIGHT arm: give it a correctly oriented RIGHT hand, open palm, naturally relaxed fingers, correctly located thumb, convincing wrist-to-forearm connection. The smaller hand at her waist on the right side of the image belongs to her anatomical LEFT arm: make it a correctly oriented LEFT hand with five distinct plausible fingers and a natural wrist, keeping its relaxed playful gesture near the belt/coins. Fix mirrored hand/palm/finger anatomy; do not reproduce an impossible backwards hand or two hands of the same chirality. Keep coin ornaments in place. A small adjustment of finger pose is fine to make the hands anatomically convincing. Keep hands feminine and proportional.\nInvariants: preserve the exact character identity, face, current facial expression, eye direction, hairstyle, hair ornaments, body proportions, clothing, sleeves, jewelry, palette, textured ink outlines, original painted wuxia game style, stance, overall silhouette and framing. Do not redesign the character, smooth the art, enlarge head, add muscles, embellish costume, change facial expression, add words, background or watermark. Keep the original canvas aspect ratio and the character at the same size and position. Keep transparent negative space as real alpha. Make this a careful local hand repair, not a full redraw. Preserve every area outside the hands/wrists as closely as possible.\nImage 1 is the exact nervous2 expression target. Image 2 is the approved repaired normal portrait and is ONLY a corrected hands reference. Preserve Image 1's nervous facial expression, mouth shape, brows, eye direction and all sweat drops, and its existing head/body angle and costume. Do not replace the face with the smiling reference. Edit only the hands/wrists with anatomy consistent with Image 2.",
+      "ReferenceImages": [
+        {
+          "Kind": "edit-target",
+          "Path": "Variants/tang-buyi/female/Portraits/nervous2.png",
+          "Revision": "v2.2.0",
+          "Sha256": "F6FA4BC53A6BF0D5BEB6BCFA59CA70AD880F4B11E15ACEFCE3DFF7226441EF15",
+          "IncludedInCurrentRelease": false,
+          "Note": "This is the pre-repair revision of this path; its pixels are not bundled in the repaired package."
+        },
+        {
+          "Kind": "generated-reference",
+          "Asset": "normal.png",
+          "Sha256": "1E5DE6426644CB74365815570FD2E0CE6421CE6369457C8206C3E5AC9C189938",
+          "IncludedAsCurrentPortrait": true,
+          "GenerationRecord": "Prompts/hand-fix-v2.2.1/normal.json",
+          "Attempt": 1,
+          "SourceOutputFilename": "exec-68d61283-76c2-4d1a-85f6-ec81d1b707b4.png"
+        }
+      ],
+      "SourceRecordName": "nervous2.json",
+      "SourceRecordSha256": "04B880160F35DF14529E8B1358360C04B4C44AB0A734651317E3E4B8E735F3E5",
+      "GeneratedOutputFilename": "exec-8a50878d-23d1-41f5-866e-e97929803f05.png",
+      "OutputSHA256": "521D22D28168336C1CA0DFD113A30896DF36467DD2A32BE538220E31BCA3FB33",
+      "PixelPostProcessing": false,
+      "OriginalRecordStatus": "root-reviewed-pending-independent-review",
+      "TransparentBackground": true
+    }
+  ],
+  "ProvenanceNote": "Prompt text is verbatim. Only local path metadata is replaced by revision-aware relative identities. SourceRecordSha256 identifies the original private record; this portable wrapper has its own release-manifest hash."
+}

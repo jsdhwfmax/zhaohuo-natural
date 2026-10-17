@@ -1,0 +1,592 @@
+{
+  "Passed": true,
+  "ActualGameRun": true,
+  "PackageVersion": "2.2.1",
+  "RuntimeVersion": "2.1.0",
+  "GameBuildId": "25987745",
+  "GameVersion": "release_1.0.6000.3",
+  "PluginSha256": "AEEE02AC56DCDCB1E683D6356AC28FE19E61AF861D5663ACFFD1B83984F06957",
+  "CatalogSha256": "590859B8AB8939913EA80FB19E91BC5A972E5F099D8C5A211A28FB1844455F2A",
+  "CharacterId": "tang-buyi",
+  "VariantId": "female",
+  "AssetFingerprint": "6C94D6E83A1C983E331074A21872441E5A23D31D4C053E274DD246800E4EFFBE",
+  "LoadedPortraitCount": 15,
+  "ExpectedPortraitCount": 15,
+  "OriginalFallbacks": [
+    {
+      "Name": "hand",
+      "Passed": true
+    }
+  ],
+  "Checks": {
+    "AllPortraitsLoaded": true,
+    "UiSpriteMatch": true,
+    "LayoutVerified": true,
+    "NonTargetUnchanged": true
+  },
+  "PortraitFiles": [
+    {
+      "Name": "angry1.png",
+      "Sha256": "18EBD3290D4D89702EF347DD8F71D1A6FF0A496E6E6DF66F78C0F4C4FD6DF93F",
+      "LiveSha256": "18EBD3290D4D89702EF347DD8F71D1A6FF0A496E6E6DF66F78C0F4C4FD6DF93F",
+      "PackagePath": "Variants/tang-buyi/female/Portraits/angry1.png",
+      "GameRelativePath": "BepInEx/plugins/ZhaoHuoNatural/Characters/tang-buyi/Portraits/angry1.png"
+    },
+    {
+      "Name": "angry2.png",
+      "Sha256": "145848B3C66AF4B37CCC651D916F388FA0B23B1711C566CCEEEE65182DA8320A",
+      "LiveSha256": "145848B3C66AF4B37CCC651D916F388FA0B23B1711C566CCEEEE65182DA8320A",
+      "PackagePath": "Variants/tang-buyi/female/Portraits/angry2.png",
+      "GameRelativePath": "BepInEx/plugins/ZhaoHuoNatural/Characters/tang-buyi/Portraits/angry2.png"
+    },
+    {
+      "Name": "angry3.png",
+      "Sha256": "1B75E520A67581102BBCEB7BD7233EFD0B6D81368D01073E548E705C78717FE7",
+      "LiveSha256": "1B75E520A67581102BBCEB7BD7233EFD0B6D81368D01073E548E705C78717FE7",
+      "PackagePath": "Variants/tang-buyi/female/Portraits/angry3.png",
+      "GameRelativePath": "BepInEx/plugins/ZhaoHuoNatural/Characters/tang-buyi/Portraits/angry3.png"
+    },
+    {
+      "Name": "hat.png",
+      "Sha256": "07676F2C9170F1B8F9D13D5392F732697EE91547C0CCE7B8A0EA4CBBF572FDFF",
+      "LiveSha256": "07676F2C9170F1B8F9D13D5392F732697EE91547C0CCE7B8A0EA4CBBF572FDFF",
+      "PackagePath": "Variants/tang-buyi/female/Portraits/hat.png",
+      "GameRelativePath": "BepInEx/plugins/ZhaoHuoNatural/Characters/tang-buyi/Portraits/hat.png"
+    },
+    {
+      "Name": "hurt.png",
+      "Sha256": "674D72E5550FAFD8C41226571144B512318ADC9D3F574F7C04773848C80FEDEA",
+      "LiveSha256": "674D72E5550FAFD8C41226571144B512318ADC9D3F574F7C04773848C80FEDEA",
+      "PackagePath": "Variants/tang-buyi/female/Portraits/hurt.png",
+      "GameRelativePath": "BepInEx/plugins/ZhaoHuoNatural/Characters/tang-buyi/Portraits/hurt.png"
+    },
+    {
+      "Name": "laugh1.png",
+      "Sha256": "EED3EFD5A2D36DB029DA9B57B3510EE9CF83AA8BDC8E393660BE7194409D6773",
+      "LiveSha256": "EED3EFD5A2D36DB029DA9B57B3510EE9CF83AA8BDC8E393660BE7194409D6773",
+      "PackagePath": "Variants/tang-buyi/female/Portraits/laugh1.png",
+      "GameRelativePath": "BepInEx/plugins/ZhaoHuoNatural/Characters/tang-buyi/Portraits/laugh1.png"
+    },
+    {
+      "Name": "laugh2.png",
+      "Sha256": "2574871789089DF05F6CB8490D86DD8C66A9BADFD1B59D4ABD69D55AD32BF257",
+      "LiveSha256": "2574871789089DF05F6CB8490D86DD8C66A9BADFD1B59D4ABD69D55AD32BF257",
+      "PackagePath": "Variants/tang-buyi/female/Portraits/laugh2.png",
+      "GameRelativePath": "BepInEx/plugins/ZhaoHuoNatural/Characters/tang-buyi/Portraits/laugh2.png"
+    },
+    {
+      "Name": "nervous1.png",
+      "Sha256": "FD37B7836882AFC94FDF26D20762EC824F5A5445AC053E361A2F1D7DDC30DBE4",
+      "LiveSha256": "FD37B7836882AFC94FDF26D20762EC824F5A5445AC053E361A2F1D7DDC30DBE4",
+      "PackagePath": "Variants/tang-buyi/female/Portraits/nervous1.png",
+      "GameRelativePath": "BepInEx/plugins/ZhaoHuoNatural/Characters/tang-buyi/Portraits/nervous1.png"
+    },
+    {
+      "Name": "nervous2.png",
+      "Sha256": "521D22D28168336C1CA0DFD113A30896DF36467DD2A32BE538220E31BCA3FB33",
+      "LiveSha256": "521D22D28168336C1CA0DFD113A30896DF36467DD2A32BE538220E31BCA3FB33",
+      "PackagePath": "Variants/tang-buyi/female/Portraits/nervous2.png",
+      "GameRelativePath": "BepInEx/plugins/ZhaoHuoNatural/Characters/tang-buyi/Portraits/nervous2.png"
+    },
+    {
+      "Name": "nervous3.png",
+      "Sha256": "DD21FD444A11FAE4250E1C0815E7B82B6036021367D8813EEDF25F479EEF726D",
+      "LiveSha256": "DD21FD444A11FAE4250E1C0815E7B82B6036021367D8813EEDF25F479EEF726D",
+      "PackagePath": "Variants/tang-buyi/female/Portraits/nervous3.png",
+      "GameRelativePath": "BepInEx/plugins/ZhaoHuoNatural/Characters/tang-buyi/Portraits/nervous3.png"
+    },
+    {
+      "Name": "normal.png",
+      "Sha256": "1E5DE6426644CB74365815570FD2E0CE6421CE6369457C8206C3E5AC9C189938",
+      "LiveSha256": "1E5DE6426644CB74365815570FD2E0CE6421CE6369457C8206C3E5AC9C189938",
+      "PackagePath": "Variants/tang-buyi/female/Portraits/normal.png",
+      "GameRelativePath": "BepInEx/plugins/ZhaoHuoNatural/Characters/tang-buyi/Portraits/normal.png"
+    },
+    {
+      "Name": "serious.png",
+      "Sha256": "86FE4AAB5A22197A687C641127B286813D32A52EFC043FEF4C3CF1282B819FFC",
+      "LiveSha256": "86FE4AAB5A22197A687C641127B286813D32A52EFC043FEF4C3CF1282B819FFC",
+      "PackagePath": "Variants/tang-buyi/female/Portraits/serious.png",
+      "GameRelativePath": "BepInEx/plugins/ZhaoHuoNatural/Characters/tang-buyi/Portraits/serious.png"
+    },
+    {
+      "Name": "shock.png",
+      "Sha256": "12B348BD1AC99FD781470DD938CF04471FB02024503585C1B6CBC71AC133B5CA",
+      "LiveSha256": "12B348BD1AC99FD781470DD938CF04471FB02024503585C1B6CBC71AC133B5CA",
+      "PackagePath": "Variants/tang-buyi/female/Portraits/shock.png",
+      "GameRelativePath": "BepInEx/plugins/ZhaoHuoNatural/Characters/tang-buyi/Portraits/shock.png"
+    },
+    {
+      "Name": "special1.png",
+      "Sha256": "891C26CC943C88D042EC8486B3742A057247EA69085CA33825790839A9EB383F",
+      "LiveSha256": "891C26CC943C88D042EC8486B3742A057247EA69085CA33825790839A9EB383F",
+      "PackagePath": "Variants/tang-buyi/female/Portraits/special1.png",
+      "GameRelativePath": "BepInEx/plugins/ZhaoHuoNatural/Characters/tang-buyi/Portraits/special1.png"
+    },
+    {
+      "Name": "suck.png",
+      "Sha256": "DD55C871FE1A953FB131FC4D0BA10A4C068170650C5ED1353CF729FAF74BB099",
+      "LiveSha256": "DD55C871FE1A953FB131FC4D0BA10A4C068170650C5ED1353CF729FAF74BB099",
+      "PackagePath": "Variants/tang-buyi/female/Portraits/suck.png",
+      "GameRelativePath": "BepInEx/plugins/ZhaoHuoNatural/Characters/tang-buyi/Portraits/suck.png"
+    }
+  ],
+  "VisualReview": {
+    "Passed": true,
+    "ReviewedPortraitCount": 15,
+    "Scope": "Static visual review of all 15 repaired Tang Buyi female portraits rendered by the real game diagnostic UI; not a story playthrough."
+  },
+  "NormalSteamStartup": {
+    "Passed": true,
+    "StillRunning": true,
+    "Responding": true,
+    "PluginReady": true,
+    "SelftestArgumentPresent": false,
+    "ObservedSeconds": 90.7,
+    "PluginErrorLines": 0
+  },
+  "Runs": [
+    {
+      "DateUtc": "2026-10-17T04:47:15.7109148Z",
+      "GameBuildId": "25987745",
+      "GameVersion": "release_1.0.6000.3",
+      "GameBuildIdUnchanged": true,
+      "Selections": {
+        "player": "xianxia",
+        "tang-buyi": "female",
+        "xiahou-lan": "refined",
+        "tang-moling": "refined",
+        "long-xiang": "refined",
+        "yu-xiaomei": "refined",
+        "tang-zheng": "female"
+      },
+      "ObservedSeconds": 68.6,
+      "Player": {
+        "Resources": 50,
+        "Replaced": 47,
+        "OriginalFallback": 3,
+        "AvatarBranches": 2,
+        "AvatarReplaced": 2,
+        "NonTargetUnchanged": true
+      },
+      "Characters": [
+        {
+          "Id": "tang-buyi",
+          "VariantId": "female",
+          "BaseResources": 16,
+          "Replaced": 15,
+          "OriginalFallback": 1,
+          "BulkResources": 16,
+          "AdultAliases": 2,
+          "NegativeControls": 2,
+          "Passed": true
+        },
+        {
+          "Id": "xiahou-lan",
+          "VariantId": "refined",
+          "BaseResources": 16,
+          "Replaced": 15,
+          "OriginalFallback": 1,
+          "BulkResources": 16,
+          "AdultAliases": 1,
+          "NegativeControls": 2,
+          "Passed": true
+        },
+        {
+          "Id": "tang-moling",
+          "VariantId": "refined",
+          "BaseResources": 16,
+          "Replaced": 15,
+          "OriginalFallback": 1,
+          "BulkResources": 16,
+          "AdultAliases": 0,
+          "NegativeControls": 2,
+          "Passed": true
+        },
+        {
+          "Id": "long-xiang",
+          "VariantId": "refined",
+          "BaseResources": 22,
+          "Replaced": 21,
+          "OriginalFallback": 1,
+          "BulkResources": 22,
+          "AdultAliases": 1,
+          "NegativeControls": 2,
+          "Passed": true
+        },
+        {
+          "Id": "yu-xiaomei",
+          "VariantId": "refined",
+          "BaseResources": 28,
+          "Replaced": 25,
+          "OriginalFallback": 3,
+          "BulkResources": 28,
+          "AdultAliases": 0,
+          "NegativeControls": 16,
+          "Passed": true
+        },
+        {
+          "Id": "tang-zheng",
+          "VariantId": "female",
+          "BaseResources": 12,
+          "Replaced": 12,
+          "OriginalFallback": 0,
+          "BulkResources": 12,
+          "AdultAliases": 0,
+          "NegativeControls": 2,
+          "Passed": true
+        }
+      ],
+      "CollectorHashes": [
+        {
+          "File": "Test-CharacterRuntime.ps1",
+          "Sha256": "280B76B7D5688E909FE7268DA6A4D8413DAFB5664B5668A8A05AB8B60EA50583"
+        },
+        {
+          "File": "Assert-CharacterDiagnostics.ps1",
+          "Sha256": "A2370E2FCE665FCEE113D2325FE5F2198229FE908E454D342DE8567E53294FCD"
+        },
+        {
+          "File": "runtime-expectations.json",
+          "Sha256": "2187508C19B591823C7B8F1BB8FA1C7716F67E7A284E133DF55A5122582CD3A3"
+        }
+      ],
+      "Mode": "female",
+      "Passed": true,
+      "ActualGameRun": true,
+      "RuntimeVersion": "2.1.0",
+      "PluginSha256": "AEEE02AC56DCDCB1E683D6356AC28FE19E61AF861D5663ACFFD1B83984F06957",
+      "CatalogSha256": "590859B8AB8939913EA80FB19E91BC5A972E5F099D8C5A211A28FB1844455F2A",
+      "LoadedPortraitCount": 15
+    },
+    {
+      "DateUtc": "2026-10-17T04:50:12.8750790Z",
+      "GameBuildId": "25987745",
+      "GameVersion": "release_1.0.6000.3",
+      "GameBuildIdUnchanged": true,
+      "Selections": {
+        "player": "xianxia",
+        "tang-buyi": "refined",
+        "xiahou-lan": "refined",
+        "tang-moling": "refined",
+        "long-xiang": "refined",
+        "yu-xiaomei": "refined",
+        "tang-zheng": "female"
+      },
+      "ObservedSeconds": 67.1,
+      "Player": {
+        "Resources": 50,
+        "Replaced": 47,
+        "OriginalFallback": 3,
+        "AvatarBranches": 2,
+        "AvatarReplaced": 2,
+        "NonTargetUnchanged": true
+      },
+      "Characters": [
+        {
+          "Id": "tang-buyi",
+          "VariantId": "refined",
+          "BaseResources": 16,
+          "Replaced": 15,
+          "OriginalFallback": 1,
+          "BulkResources": 16,
+          "AdultAliases": 2,
+          "NegativeControls": 2,
+          "Passed": true
+        },
+        {
+          "Id": "xiahou-lan",
+          "VariantId": "refined",
+          "BaseResources": 16,
+          "Replaced": 15,
+          "OriginalFallback": 1,
+          "BulkResources": 16,
+          "AdultAliases": 1,
+          "NegativeControls": 2,
+          "Passed": true
+        },
+        {
+          "Id": "tang-moling",
+          "VariantId": "refined",
+          "BaseResources": 16,
+          "Replaced": 15,
+          "OriginalFallback": 1,
+          "BulkResources": 16,
+          "AdultAliases": 0,
+          "NegativeControls": 2,
+          "Passed": true
+        },
+        {
+          "Id": "long-xiang",
+          "VariantId": "refined",
+          "BaseResources": 22,
+          "Replaced": 21,
+          "OriginalFallback": 1,
+          "BulkResources": 22,
+          "AdultAliases": 1,
+          "NegativeControls": 2,
+          "Passed": true
+        },
+        {
+          "Id": "yu-xiaomei",
+          "VariantId": "refined",
+          "BaseResources": 28,
+          "Replaced": 25,
+          "OriginalFallback": 3,
+          "BulkResources": 28,
+          "AdultAliases": 0,
+          "NegativeControls": 16,
+          "Passed": true
+        },
+        {
+          "Id": "tang-zheng",
+          "VariantId": "female",
+          "BaseResources": 12,
+          "Replaced": 12,
+          "OriginalFallback": 0,
+          "BulkResources": 12,
+          "AdultAliases": 0,
+          "NegativeControls": 2,
+          "Passed": true
+        }
+      ],
+      "CollectorHashes": [
+        {
+          "File": "Test-CharacterRuntime.ps1",
+          "Sha256": "280B76B7D5688E909FE7268DA6A4D8413DAFB5664B5668A8A05AB8B60EA50583"
+        },
+        {
+          "File": "Assert-CharacterDiagnostics.ps1",
+          "Sha256": "A2370E2FCE665FCEE113D2325FE5F2198229FE908E454D342DE8567E53294FCD"
+        },
+        {
+          "File": "runtime-expectations.json",
+          "Sha256": "2187508C19B591823C7B8F1BB8FA1C7716F67E7A284E133DF55A5122582CD3A3"
+        }
+      ],
+      "Mode": "refined",
+      "Passed": true,
+      "ActualGameRun": true,
+      "RuntimeVersion": "2.1.0",
+      "PluginSha256": "AEEE02AC56DCDCB1E683D6356AC28FE19E61AF861D5663ACFFD1B83984F06957",
+      "CatalogSha256": "590859B8AB8939913EA80FB19E91BC5A972E5F099D8C5A211A28FB1844455F2A",
+      "LoadedPortraitCount": 15
+    },
+    {
+      "DateUtc": "2026-10-17T04:56:10.1619742Z",
+      "GameBuildId": "25987745",
+      "GameVersion": "release_1.0.6000.3",
+      "GameBuildIdUnchanged": true,
+      "Selections": {
+        "player": "original",
+        "tang-buyi": "original",
+        "xiahou-lan": "original",
+        "tang-moling": "original",
+        "long-xiang": "original",
+        "yu-xiaomei": "original",
+        "tang-zheng": "original"
+      },
+      "ObservedSeconds": 47.2,
+      "Player": {
+        "Resources": 50,
+        "Replaced": 0,
+        "OriginalFallback": 50,
+        "AvatarBranches": 2,
+        "AvatarReplaced": 0,
+        "NonTargetUnchanged": true
+      },
+      "Characters": [
+        {
+          "Id": "tang-buyi",
+          "VariantId": "original",
+          "BaseResources": 16,
+          "Replaced": 0,
+          "OriginalFallback": 16,
+          "BulkResources": 16,
+          "AdultAliases": 2,
+          "NegativeControls": 2,
+          "Passed": true
+        },
+        {
+          "Id": "xiahou-lan",
+          "VariantId": "original",
+          "BaseResources": 16,
+          "Replaced": 0,
+          "OriginalFallback": 16,
+          "BulkResources": 16,
+          "AdultAliases": 1,
+          "NegativeControls": 2,
+          "Passed": true
+        },
+        {
+          "Id": "tang-moling",
+          "VariantId": "original",
+          "BaseResources": 16,
+          "Replaced": 0,
+          "OriginalFallback": 16,
+          "BulkResources": 16,
+          "AdultAliases": 0,
+          "NegativeControls": 2,
+          "Passed": true
+        },
+        {
+          "Id": "long-xiang",
+          "VariantId": "original",
+          "BaseResources": 22,
+          "Replaced": 0,
+          "OriginalFallback": 22,
+          "BulkResources": 22,
+          "AdultAliases": 1,
+          "NegativeControls": 2,
+          "Passed": true
+        },
+        {
+          "Id": "yu-xiaomei",
+          "VariantId": "original",
+          "BaseResources": 28,
+          "Replaced": 0,
+          "OriginalFallback": 28,
+          "BulkResources": 28,
+          "AdultAliases": 0,
+          "NegativeControls": 16,
+          "Passed": true
+        },
+        {
+          "Id": "tang-zheng",
+          "VariantId": "original",
+          "BaseResources": 12,
+          "Replaced": 0,
+          "OriginalFallback": 12,
+          "BulkResources": 12,
+          "AdultAliases": 0,
+          "NegativeControls": 2,
+          "Passed": true
+        }
+      ],
+      "CollectorHashes": [
+        {
+          "File": "Test-CharacterRuntime.ps1",
+          "Sha256": "280B76B7D5688E909FE7268DA6A4D8413DAFB5664B5668A8A05AB8B60EA50583"
+        },
+        {
+          "File": "Assert-CharacterDiagnostics.ps1",
+          "Sha256": "A2370E2FCE665FCEE113D2325FE5F2198229FE908E454D342DE8567E53294FCD"
+        },
+        {
+          "File": "runtime-expectations.json",
+          "Sha256": "2187508C19B591823C7B8F1BB8FA1C7716F67E7A284E133DF55A5122582CD3A3"
+        }
+      ],
+      "Mode": "original",
+      "Passed": true,
+      "ActualGameRun": true,
+      "RuntimeVersion": "2.1.0",
+      "PluginSha256": "AEEE02AC56DCDCB1E683D6356AC28FE19E61AF861D5663ACFFD1B83984F06957",
+      "CatalogSha256": "590859B8AB8939913EA80FB19E91BC5A972E5F099D8C5A211A28FB1844455F2A",
+      "LoadedPortraitCount": 0
+    }
+  ],
+  "EvidenceFiles": [
+    {
+      "Path": "verification/runtime-v2.2.1/female/PASS.txt",
+      "Sha256": "4FEE0DEB806FE54445FEA547F4BE5D1E3E342F602BAFC6863F6DF20E79AB7597"
+    },
+    {
+      "Path": "verification/runtime-v2.2.1/female/characters.tsv",
+      "Sha256": "10C6E725C7395377C11D50E21357C5C59D812826C670AE0E1B1CF8C50972FF99"
+    },
+    {
+      "Path": "verification/runtime-v2.2.1/female/characters-summary.txt",
+      "Sha256": "3B25A5B899739FB0D8940F44E26D74BF953E94B3111D34CBE184BE989265633D"
+    },
+    {
+      "Path": "verification/runtime-v2.2.1/female/portraits.tsv",
+      "Sha256": "669735E11AB78C57B98B380B91CDD7BDDFD4F28D0F66AB6DDCB4CBC6CB248165"
+    },
+    {
+      "Path": "verification/runtime-v2.2.1/female/BepInEx.log.txt",
+      "Sha256": "0472E6E1332328FA54E6EE8DE73181CCAD278DCA7FA4C107CC681B659BF88887"
+    },
+    {
+      "Path": "verification/runtime-v2.2.1/female/input-binding.json",
+      "Sha256": "D4982D666F901BBDC556655C4D2C35905B5269DB8CE7FBB7347449F33F900B26"
+    },
+    {
+      "Path": "verification/runtime-v2.2.1/female/run-summary.json",
+      "Sha256": "62CCFF43B3FCBA0278F2F511BC8F466DECF0D8B00F4214ED734148E1431E4E74"
+    },
+    {
+      "Path": "verification/runtime-v2.2.1/refined/PASS.txt",
+      "Sha256": "4FEE0DEB806FE54445FEA547F4BE5D1E3E342F602BAFC6863F6DF20E79AB7597"
+    },
+    {
+      "Path": "verification/runtime-v2.2.1/refined/characters.tsv",
+      "Sha256": "10C6E725C7395377C11D50E21357C5C59D812826C670AE0E1B1CF8C50972FF99"
+    },
+    {
+      "Path": "verification/runtime-v2.2.1/refined/characters-summary.txt",
+      "Sha256": "3B25A5B899739FB0D8940F44E26D74BF953E94B3111D34CBE184BE989265633D"
+    },
+    {
+      "Path": "verification/runtime-v2.2.1/refined/portraits.tsv",
+      "Sha256": "669735E11AB78C57B98B380B91CDD7BDDFD4F28D0F66AB6DDCB4CBC6CB248165"
+    },
+    {
+      "Path": "verification/runtime-v2.2.1/refined/BepInEx.log.txt",
+      "Sha256": "83142FFF07F5370401E905FD7EB1A255B55220AB25177BD881B582716F573361"
+    },
+    {
+      "Path": "verification/runtime-v2.2.1/refined/input-binding.json",
+      "Sha256": "A845C26DFD4626CAB4B69487DD5A11D20332610356D9952DE892800C97CF8E6E"
+    },
+    {
+      "Path": "verification/runtime-v2.2.1/refined/run-summary.json",
+      "Sha256": "08DEBA26DC8503C64A3BBF061ACFCF1CABE30F7FF7BFE684DE05B37BAA9F1188"
+    },
+    {
+      "Path": "verification/runtime-v2.2.1/original/PASS.txt",
+      "Sha256": "063003511BC9455229639EF5C8A9F3C46C29829C6C1719A0B11351179BCB210A"
+    },
+    {
+      "Path": "verification/runtime-v2.2.1/original/characters.tsv",
+      "Sha256": "DAAC28E014A6A1D875B1E893AF0C737EA16AB9B5062138C57EC280AA45866619"
+    },
+    {
+      "Path": "verification/runtime-v2.2.1/original/characters-summary.txt",
+      "Sha256": "56023439EEE9E1230467B7ECE38612AED0BF0FDFB277100AC81BC352C4AAB51C"
+    },
+    {
+      "Path": "verification/runtime-v2.2.1/original/portraits.tsv",
+      "Sha256": "A0E8A22239F55FC2585ECA7919EBB11153A6EDF6B1E4932C34A2F56A5AC1597B"
+    },
+    {
+      "Path": "verification/runtime-v2.2.1/original/BepInEx.log.txt",
+      "Sha256": "07B5182B94CD17225BEFDB5EE167839572A2302FE59FD00D402200E8EAB5A2E0"
+    },
+    {
+      "Path": "verification/runtime-v2.2.1/original/input-binding.json",
+      "Sha256": "89F8EA39D45646883B0A36006A4028A84C6D6EB4ADB8CBDFEFD752624D8D066F"
+    },
+    {
+      "Path": "verification/runtime-v2.2.1/original/run-summary.json",
+      "Sha256": "C4E7857F9599DB142455F91B74F478BA2418CD5618FFA6E57FC0449587D68DBD"
+    },
+    {
+      "Path": "verification/runtime-v2.2.1/normal-startup.log.txt",
+      "Sha256": "6BE639562FF326E607B6DDAC198AD70D3D57D869189DF6AF8CE2FD63D2B45C5E"
+    },
+    {
+      "Path": "verification/runtime-v2.2.1/normal-startup.json",
+      "Sha256": "7E2121AF22EFABEFA9CCF2661A34EDB387F2F082132233F745EAAF49AA9CBF96"
+    },
+    {
+      "Path": "verification/runtime-v2.2.1/visual-review.json",
+      "Sha256": "2CD49B02DEB359D3FDF432888AF9FBECA3E7FE8F5FC6BD9A78C03D7901243A97"
+    },
+    {
+      "Path": "verification/runtime-v2.2.1/installation-preservation.json",
+      "Sha256": "BED5B35D88DA45464DB0631FD1762AE709F10650E55ED4A39DF1ABB940299D81"
+    }
+  ],
+  "Scope": "Current candidate Tang Buyi female 15 PNG files were hash-checked against the live installation before and after real Steam diagnostic loading. All 15 replacement/UI results and original hand fallback, canvas dimensions, adult aliases and negative identity controls passed; all 15 portraits received a separate recorded visual check for hands, placement and edges. Additional actual modes are listed under Runs. Normal Steam startup and preservation checks are new evidence. Unchanged appearances retain their separately dated historical evidence; no full-story or route completion is claimed."
+}

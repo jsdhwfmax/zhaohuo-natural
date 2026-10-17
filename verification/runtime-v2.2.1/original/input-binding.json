@@ -1,0 +1,28 @@
+{
+  "Passed": true,
+  "ActualGameRun": true,
+  "Mode": "original",
+  "CheckedBeforeUtc": "2026-10-17T04:55:02.4897937Z",
+  "CheckedAfterUtc": "2026-10-17T04:56:15.2891521Z",
+  "PackageVersion": "2.2.1",
+  "CatalogSha256": "590859B8AB8939913EA80FB19E91BC5A972E5F099D8C5A211A28FB1844455F2A",
+  "PluginSha256": "AEEE02AC56DCDCB1E683D6356AC28FE19E61AF861D5663ACFFD1B83984F06957",
+  "AssetFingerprint": null,
+  "LayoutPath": "Characters/tang-buyi/portrait-layout.tsv",
+  "LayoutSha256": "8FD61B62FF24CA3B625D6329A744E13EA8BC6B3BBDC7C5ED3542B3A1FE42C6F0",
+  "LiveLayoutSha256": "8FD61B62FF24CA3B625D6329A744E13EA8BC6B3BBDC7C5ED3542B3A1FE42C6F0",
+  "PortraitsUnchangedDuringRun": true,
+  "RuntimeRunSha256": "F279EE345CEAF72BBA8ACC5D43ADCA0F9BFC700949E3A99ED07DF1EC3F0676F8",
+  "WrapperSha256": "E7F0C06F508D3C76103158171974DFFF32564766C68290E49E08CB40A3642B72",
+  "PortraitFiles": [],
+  "Selections": {
+    "player": "original",
+    "tang-buyi": "original",
+    "xiahou-lan": "original",
+    "tang-moling": "original",
+    "long-xiang": "original",
+    "yu-xiaomei": "original",
+    "tang-zheng": "original"
+  },
+  "Scope": "Hashes checked before and after the actual diagnostic run; current installed state verified through the candidate installer. No game files were edited by this wrapper."
+}
