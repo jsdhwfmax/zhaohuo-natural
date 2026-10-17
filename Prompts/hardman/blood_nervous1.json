@@ -1,0 +1,43 @@
+{
+  "Prompt": "Use case: identity-preserve. Asset: one transparent dialogue portrait sprite for 活侠传 / Legend of Mortal.\nImage 1 is the ORIGINAL GAME expression target: its pose, action, expression, prop positions, injury marks, framing, simple coarse black ink outlines and sparse broad flat watercolor shading have highest priority.\nImage 2 is the approved hardman NORMAL identity: borrow only the exact rugged adult male face and slightly broader strong torso, NOT its neutral expression or arms-down pose when the target differs. Same man about 30–35: broad angular jaw, sturdy cheek planes, thick brows, small eyes, warm skin, clearly visible short dark stubble, swept long Chinese hair tied in ponytail. Preserve readable identity across expressions.\nKeep ORIGINAL GAME blue-grey Tangmen cloth robe, light blue lapel, off-white inner collar, blue waist sash, purple-brown forearm guards; preserve all expression-specific changes visible in image1. Keep details as simple as the original game: rough contour/fold ink, limited flat color blocks and understated pencil texture. No dense crosshatching, glossy realism, cinematic lighting, ornate texture, 3D or modern anime.\nTall 1060x1700-like composition, same original head-to-lower-robe view and generous clear space above. Full head/hair, hands and sleeve sides not cut off; original bottom robe/prop crop may remain. ONE character only. Real transparent PNG alpha, no scenery, solid background, checkerboard, text, signature or border. Ignore any invisible-alpha export artifacts in the raw source.\nEXPRESSION blood_nervous1: a nervous embarrassed strained tooth-showing smile, raised worried brows, obvious sweat beads and a thin red trickle from corner of mouth. Preserve the small stylized WHITE EXHALE/BREATH PUFF to image-left of his cheek; that is an intentional opaque effect, surroundings remain transparent. Both hands lowered without sword, clothing largely clean as in original. Do not copy the calm master face.",
+  "References": [
+    {
+      "LogicalName": "local-game-reference/blood_nervous1.png",
+      "Kind": "original-game-reference-not-distributed"
+    },
+    {
+      "LogicalName": "generated-hardman-reference/normal-v2.png",
+      "Kind": "generated-design-reference"
+    }
+  ],
+  "GeneratedSourceBasename": "exec-5b1bbba9-7b93-4b19-ae04-a1892688ad3c.png",
+  "RecordedOutputSHA256": "45D7DA21422CE511DB2995BF9C2A677421BC72828D7A371654DAFC702B610ABA",
+  "SchemaVersion": 1,
+  "CharacterId": "player",
+  "VariantId": "hardman",
+  "Name": "blood_nervous1.png",
+  "GenerationMethod": "builtin imagegen",
+  "PixelPostProcessing": false,
+  "OutputPath": "Variants/player/hardman/Portraits/blood_nervous1.png",
+  "OutputSHA256": "45D7DA21422CE511DB2995BF9C2A677421BC72828D7A371654DAFC702B610ABA",
+  "RawGeneratedCopyVerified": true,
+  "OriginalGameReferenceDistributed": false,
+  "SourceRecordBasename": "blood_nervous1.json",
+  "SourceRecordSHA256": "14F471CC96259874ADC5C338796605D443A8BC6DD2EAD84C33B53EA6191862CA",
+  "VisualReview": "passed before integration; runtime acceptance is separate",
+  "ReviewNotes": "Strained sweating smile, thin mouth blood and white breath puff preserved; empty lowered hands and clean robe as target.",
+  "ImageMetadata": {
+    "Width": 991,
+    "Height": 1587,
+    "Mode": "RGBA",
+    "AlphaMin": 0,
+    "AlphaMax": 255,
+    "AlphaBoundsGt16": [
+      137,
+      249,
+      946,
+      1587
+    ],
+    "Bytes": 1523698
+  }
+}

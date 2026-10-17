@@ -1,0 +1,68 @@
+{
+  "Passed": true,
+  "PackageVersion": "2.2.0",
+  "ActualGameRun": false,
+  "ActualInstallationStateRead": false,
+  "GameFilesModified": false,
+  "RealCatalogRead": true,
+  "MockReadinessUsed": false,
+  "UiTestReportModeUsed": false,
+  "RenderMethod": "Production WinForms VariantCard.LoadPortrait and DrawToBitmap via readonly -PreviewPath. The two bottom views use a private copy that only binds the original module/package paths and calls ScrollControlIntoView before capture. No product source or image pixels were edited.",
+  "StateDisclaimer": "Current and selected badges are explicitly preview examples; these images do not claim an installed game state.",
+  "ReviewedCharacterId": "player",
+  "ReviewedVariantId": "hardman",
+  "CatalogSha256": "4757E87DD043E145C9F8E744E0A04B13CE938A1C94811A0C0D27BCA7B1A2D5C8",
+  "PortraitSha256": "28E2B9CE0EAD0E81DDC9BC19DDF196D46918D938E729557F60662EAD5856C9FF",
+  "CodeHashAlgorithm": "SHA256-UTF8-noBOM-LF-v1",
+  "CodeHashes": [
+    {
+      "Path": "installer/Gui.ps1",
+      "Sha256": "84EA85DE49BF1BCDDBBD74BAE0913B95BF8D7144B83D57D7A7355D50D88807BE"
+    },
+    {
+      "Path": "installer/CharacterCatalog.ps1",
+      "Sha256": "BDD6BABFF23319EA049E23CF220C51F0C29B5D79C30C0160A50B1F1DBB4B9F61"
+    },
+    {
+      "Path": "VariantCatalog.json",
+      "Sha256": "66D8E8F66066EE9FB4982A674E885B5B34E724B22D2F06B8D7E4E4DD500F83DF"
+    }
+  ],
+  "PrivateRenderHarnessSha256": "3C66382AD6ABC03B2E13DA73AFCBCDBA6DD0D4CF40A50713691192265B60087C",
+  "Images": [
+    {
+      "Path": "docs/images/v2.2/gui-final-default.png",
+      "Sha256": "1A240DF82F2C424B8CD58FA2684AB6B106395EC6223DFA51F257ABB13564848B",
+      "Width": 1138,
+      "Height": 907,
+      "PreviewSize": "Default",
+      "PreviewScale": 1,
+      "ReviewPassed": true,
+      "Review": "Default top: eight player options indicated, real first-row portraits loaded."
+    },
+    {
+      "Path": "docs/images/v2.2/gui-final-hardman-default.png",
+      "Sha256": "1D557FB6E6DA05698D0E71593B1A2707666F2A255607F9C2660C70E4D005C6F2",
+      "Width": 1138,
+      "Height": 907,
+      "PreviewSize": "Default",
+      "PreviewScale": 1,
+      "ReviewPassed": true,
+      "Review": "Default scrolled: complete hardman portrait, title, description, selected/current markers and action controls readable."
+    },
+    {
+      "Path": "docs/images/v2.2/gui-final-hardman-compact150.png",
+      "Sha256": "716360F98E52C5072E5CF272620E605256FB6A4323743043992E3B5F0AD5F025",
+      "Width": 1398,
+      "Height": 1102,
+      "PreviewSize": "Compact",
+      "PreviewScale": 1.5,
+      "ReviewPassed": true,
+      "Review": "Compact 150 percent scrolled: complete hardman card, text and action controls readable without overlap."
+    }
+  ],
+  "Limitations": [
+    "This is off-screen app rendering and visual review, not manual desktop interaction.",
+    "These checks cover the new hardman preview and affected layout; previously completed GUI event tests remain separate evidence."
+  ]
+}

@@ -43,7 +43,7 @@ $catalog=& $module {param($Root) Read-ZHCharacterCatalog $Root} $root
 Assert ($catalog.PackageReady-is [bool]-and $catalog.PackageReady) 'Final production catalog is ready and passes the strict schema/runtime pins'
 $display=Get-PortraitCharacters -PackageRoot $root
 $options=@($display.Characters|ForEach-Object{$_.Variants})
-Assert (@($display.Characters).Count-eq $releaseRoleIds.Count-and $options.Count-eq $releaseChoiceCount-and @($options|Where-Object{-not $_.Available-or-not $_.Ready}).Count-eq 0) 'All 20 choices are available under the seven independent roles'
+Assert (@($display.Characters).Count-eq $releaseRoleIds.Count-and $options.Count-eq $releaseChoiceCount-and @($options|Where-Object{-not $_.Available-or-not $_.Ready}).Count-eq 0) ('All '+$releaseChoiceCount+' choices are available under the seven independent roles')
 Assert (@($options|Where-Object Kind -eq 'original').Count-eq $releaseRoleIds.Count) 'Each role exposes one original option without bundled original game images'
 $expected=$releaseCounts
 $variants=@{};$sourceLists=@{};$count=0
@@ -57,14 +57,14 @@ foreach($character in $catalog.Characters){
         Assert ($actions.Count-eq ($expected[$key]+$(if($character.Id-eq 'player'){0}else{1}))) ('Actual source hashes, isolated targets and layout geometry: '+$key)
         $files=@{};foreach($file in $variant.Files){$relative=$variant.SourcePath+'/'+$file.Name;$null=Track $relative;$files[$file.Name]=$file.Sha256}
         $sourceLists[$variant.SourcePath]=@($files.Keys);$variants[$key]=[pscustomobject]@{Definition=$variant;Files=$files};$count+=$files.Count
-        if($frozenV20Fingerprints.ContainsKey($key)){Assert ($variant.AssetFingerprint-eq $frozenV20Fingerprints[$key]) ('Previously released v2.0 PNGs are unchanged: '+$key)}
+        if($frozenV21Fingerprints.ContainsKey($key)){Assert ($variant.AssetFingerprint-eq $frozenV21Fingerprints[$key]) ('Previously released v2.1 PNGs are unchanged: '+$key)}
         if($character.Id-ne 'player'){
             $fallback=@($releaseFallbacks[$character.Id]);$actualFallback=@($variant.OriginalFallback)
             Assert ($actualFallback.Count-eq $fallback.Count-and @($actualFallback|Where-Object{$_-notin $fallback}).Count-eq 0-and @($fallback|Where-Object{$files.ContainsKey($_+'.png')}).Count-eq 0) ('Intentional original-art fallback: '+$key)
         }
     }
 }
-Assert ($variants.Count-eq $releaseCustomCount-and $count-eq $releasePortraitCount) 'Exactly thirteen custom variants and 400 declared PNGs'
+Assert ($variants.Count-eq $releaseCustomCount-and $count-eq $releasePortraitCount) ('Exactly '+$releaseCustomCount+' custom variants and '+$releasePortraitCount+' declared PNGs')
 foreach($entry in $catalog.SharedFiles){Assert ((Hash (Track ('BepInEx/plugins/ZhaoHuoNatural/'+$entry.Name)))-eq $entry.Sha256) ('Verified shared component: '+$entry.Name)}
 $artPath='verification/character-art-integrity.json';$art=Read-Json $artPath;$artSeen=@{}
 Assert ($art.Passed-is [bool]-and $art.Passed-and $art.PortraitCount-eq $releasePortraitCount-and @($art.Variants).Count-eq $releaseCustomCount) 'Decoded artwork evidence covers all final PNGs'
@@ -77,7 +77,7 @@ foreach($item in $art.Variants){
         if($seen.ContainsKey($file.Name)-or-not $v.Files.ContainsKey($file.Name)-or $file.Sha256-ne $v.Files[$file.Name]-or $file.Width-le 0-or $file.Height-le 0-or $file.AlphaMin-ne 0-or $file.AlphaMax-le 0-or $file.AlphaMax-gt 255){throw ('Artwork file evidence differs: '+$key+'/'+$file.Name)};$seen[$file.Name]=$true
     }
 }
-Assert ($artSeen.Count-eq $releaseCustomCount) 'Decoded dimensions/alpha evidence binds all 400 file hashes'
+Assert ($artSeen.Count-eq $releaseCustomCount) ('Decoded dimensions/alpha evidence binds all '+$releasePortraitCount+' file hashes')
 $promptSeen=@{};$promptEvidence=@()
 foreach($group in $releasePromptGroups){
     $promptPath=$group.Path;$prompts=Read-Json $promptPath
@@ -90,7 +90,7 @@ foreach($group in $releasePromptGroups){
     }
     $promptEvidence+=@([pscustomobject]@{Path=$promptPath;Sha256=$inputs[$promptPath];AssetCount=$group.Count})
 }
-Assert ($promptSeen.Count-eq 259) 'The historical 171 and new 88 generated images are bound to included prompt records'
+Assert ($promptSeen.Count-eq (@($releasePromptGroups|Measure-Object Count -Sum)[0].Sum)) 'Every required generated image is bound to an included actual prompt record'
 $reused=@()
 foreach($path in @('verification/character-manager-tests.json','verification/character-manager-regression.json')){
     $report=Read-Json $path;$entries=@(Entries $report.CodeHashes);$seen=@{};$oldCatalog=$null;$unchanged=0
@@ -117,7 +117,7 @@ $result=[ordered]@{
     AssertionCount=$checks.Count;Checks=$checks.ToArray();ReusedReports=$reused
     ArtworkEvidence=[pscustomobject]@{Path=$artPath;Sha256=$inputs[$artPath]};PromptEvidence=$promptEvidence
     CodeHashAlgorithm='SHA256-UTF8-noBOM-LF-v1';CodeHashes=@($bound|ForEach-Object{[pscustomobject]@{Path=$_;Sha256=(CodeHash (Resolve-Input $_))}})
-    Scope='Read-only final production-data/API acceptance: real 400 PNG bytes, exact thirteen inventories/fingerprints, seven role layouts, readiness, shared pins, old 312 preservation and historical 171 plus new 88 prompt bindings. Decoded-pixel evidence is checked against file hashes, not rerun here. Original 64/74 synthetic suites are reused only for unchanged source; their historical Catalog hashes remain intact. No game files, installation or game execution are accessed.'
+    Scope='Read-only final production-data/API acceptance: real final PNG bytes, exact release inventories/fingerprints, seven role layouts, readiness, shared pins, old 400 preservation and all required prompt bindings. Decoded-pixel evidence is checked against file hashes, not rerun here. Original 64/74 synthetic suites are reused only for unchanged source; their historical Catalog hashes remain intact. No game files, installation or game execution are accessed.'
 }
 $parent=[IO.Path]::GetDirectoryName($output);[IO.Directory]::CreateDirectory($parent)|Out-Null
 [IO.File]::WriteAllText($output,($result|ConvertTo-Json -Depth 14),(New-Object Text.UTF8Encoding($false)))

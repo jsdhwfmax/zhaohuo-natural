@@ -1,0 +1,43 @@
+{
+  "Prompt": "Use case: precise-object-edit.\nAsset: ONE NORMAL dialogue portrait for 活侠传 / Legend of Mortal. This is a correction toward the ORIGINAL GAME ART STYLE, not a more detailed remake.\nImage 1 is the ORIGINAL GAME NORMAL portrait and is the primary edit target and the HIGHEST-PRIORITY style, pose, costume, proportions and composition reference. Preserve its simple rough black ink outlines, broad flat painted color shapes, limited blocky light/shadow, restrained sparse pencil texture, slight hand-drawn irregularity, original robe folds and simple low-detail rendering. Preserve its original blue-grey Tangmen robe, lighter blue lapel, off-white inner collar, blue cloth waist sash, purple-brown forearm guards and relaxed BOTH-ARMS-DOWN stance. Preserve original silhouette and scale within the tall canvas, including generous clear transparent space above the head and the original bottom robe crop.\nImage 2 is an earlier HARDMAN concept. Borrow ONLY its rugged masculine facial identity idea: broad angular jaw, sturdy cheek planes, thick brows, small calm eyes, warm complexion and clearly readable short dark stubble. DO NOT borrow image2's dense crosshatching, highly textured cloth, heavy painterly shading, cinematic contrast, dark collar, wrist-wrap costume changes or hand-on-belt pose.\nChange only the original man's face into this hardman character and make his torso/shoulders modestly sturdier (about 15% broader, still human and fitting the original simple Tangmen cloth uniform). A grounded, robust adult martial artist about 30–35, not a modern soldier, not a muscular superhero. Keep an unforced relaxed NORMAL expression, mouth closed. Match ORIGINAL GAME normal's head/body proportion rather than making the face huge; keep hair silhouette close to the original tied Chinese ponytail, no modern haircut.\nCRITICAL STYLE MATCH: The final image must look like it was painted alongside Image 1 by the same game artist at the same level of detail. Use the original's plain blue color blocks and sparse black contour/fold lines. Reduce surface texture and face micro-detail dramatically compared with Image 2. No dense woven fabric pattern, no decorative embroidery, no glossy realistic skin, no photographic rendering, no ornate illustration finish. This is still hand-drawn coarse ink and flat watercolor, NOT clean vector artwork.\nOutput ONE isolated PNG with REAL TRANSPARENT alpha background. Same tall portrait composition, preferably 1060x1700. Clear top and side margins: no hair, hands or sleeve outline cut off. Keep the full original head-to-lower-robe view, do not zoom to a close-up. Original bottom crop allowed. No background, scenery, text, labels, border, checkerboard or second person.",
+  "References": [
+    {
+      "LogicalName": "local-game-reference/normal.png",
+      "Kind": "original-game-reference-not-distributed"
+    },
+    {
+      "LogicalName": "generated-hardman-reference/normal.png",
+      "Kind": "generated-design-reference"
+    }
+  ],
+  "GeneratedSourceBasename": "exec-4892ef48-cb6a-43f2-a1bc-1ae32b9bb0d0.png",
+  "RecordedOutputSHA256": "28E2B9CE0EAD0E81DDC9BC19DDF196D46918D938E729557F60662EAD5856C9FF",
+  "SchemaVersion": 1,
+  "CharacterId": "player",
+  "VariantId": "hardman",
+  "Name": "normal.png",
+  "GenerationMethod": "builtin imagegen",
+  "PixelPostProcessing": false,
+  "OutputPath": "Variants/player/hardman/Portraits/normal.png",
+  "OutputSHA256": "28E2B9CE0EAD0E81DDC9BC19DDF196D46918D938E729557F60662EAD5856C9FF",
+  "RawGeneratedCopyVerified": true,
+  "OriginalGameReferenceDistributed": false,
+  "SourceRecordBasename": "normal-v2.json",
+  "SourceRecordSHA256": "F078288B66698DB20EBB1BAC6754F853499FBA49D5787C38ECD5204D0C9A3CBD",
+  "VisualReview": "passed before integration; runtime acceptance is separate",
+  "ReviewNotes": "Approved by parent after viewing corrected original-style master. Original blue-grey Tangmen outfit, lower-detail flat shading, rugged identity and relaxed arms-down pose. Top and side margins intact; bottom robe crop intentional.",
+  "ImageMetadata": {
+    "Width": 991,
+    "Height": 1588,
+    "Mode": "RGBA",
+    "AlphaMin": 0,
+    "AlphaMax": 255,
+    "AlphaBoundsGt16": [
+      131,
+      253,
+      942,
+      1588
+    ],
+    "Bytes": 1578072
+  }
+}

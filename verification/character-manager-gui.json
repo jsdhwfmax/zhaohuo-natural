@@ -15,13 +15,18 @@
     "yu-xiaomei",
     "tang-zheng"
   ],
-  "ObservedOptions": 20,
-  "CatalogSnapshotSha256": "1AC334206DB6B3EECFAAE949663A448D88271764C48FABDAF814E36EA4D7B789",
+  "ObservedOptions": 21,
+  "CatalogSnapshotSha256": "0CBD821B2DBB03FC7E369B2F1C2BE231A7D76DA3B90E3F9CD371D61FAF468EEA",
+  "ProductionReadyAtTest": false,
   "CodeHashAlgorithm": "SHA256-UTF8-noBOM-LF-v1",
   "CodeHashes": [
     {
       "Path": "installer/Gui.ps1",
-      "Sha256": "2F5935C45465AEFD9D3D557421CFD29EC72011FF0BC4B1D8832648E9569B43C8"
+      "Sha256": "84EA85DE49BF1BCDDBBD74BAE0913B95BF8D7144B83D57D7A7355D50D88807BE"
+    },
+    {
+      "Path": "installer/CharacterCatalog.ps1",
+      "Sha256": "BDD6BABFF23319EA049E23CF220C51F0C29B5D79C30C0160A50B1F1DBB4B9F61"
     }
   ],
   "Configurations": [
@@ -96,13 +101,13 @@
         "uninstall all has explicit global dispatch",
         "unknown state is not shown as original",
         "empty path stops dispatch",
-        "player seven cards can scroll",
+        "all player appearance cards can scroll",
         "seven roles have vertical navigation and no hidden fixed-role list",
         "brother female appearance dispatches under the existing character",
         "brother refined and female appearances share a single installed selection",
         "control fits 活侠传角色美化管理器",
         "control fits 逐个角色，选你喜欢的江湖模样。",
-        "control fits v2.1.0 · 离线安装",
+        "control fits v2.2.0 · 离线安装",
         "control fits D:\\SteamLibrary\\steamapps\\common\\LegendOfMortal",
         "control fits 浏览文件夹",
         "control fits 应用当前角色",
@@ -183,13 +188,13 @@
         "uninstall all has explicit global dispatch",
         "unknown state is not shown as original",
         "empty path stops dispatch",
-        "player seven cards can scroll",
+        "all player appearance cards can scroll",
         "seven roles have vertical navigation and no hidden fixed-role list",
         "brother female appearance dispatches under the existing character",
         "brother refined and female appearances share a single installed selection",
         "control fits 活侠传角色美化管理器",
         "control fits 逐个角色，选你喜欢的江湖模样。",
-        "control fits v2.1.0 · 离线安装",
+        "control fits v2.2.0 · 离线安装",
         "control fits D:\\SteamLibrary\\steamapps\\common\\LegendOfMortal",
         "control fits 浏览文件夹",
         "control fits 应用当前角色",
@@ -200,5 +205,5 @@
       ]
     }
   ],
-  "Scope": "Real WinForms control events and layout checks using an isolated mock backend; seven roles and per-role apply/check/original, two brother styles, global uninstall, busy/error recovery, scroll and sizing at Default and Compact 150%. No game access; missing new artwork is not claimed as accepted."
+  "Scope": "Real WinForms event dispatch and layout assertions with an isolated mock backend in two sizes. The development catalog has seven roles and eight player cards. No game reads/writes; mock readiness is not final artwork acceptance. Production catalog hashes are accepted separately after artwork freeze."
 }

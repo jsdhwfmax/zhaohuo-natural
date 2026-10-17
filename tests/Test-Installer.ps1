@@ -4,6 +4,8 @@ param([string]$OutputPath)
 $ErrorActionPreference = 'Stop'
 Set-StrictMode -Version 2.0
 $repo = Split-Path -Parent $PSScriptRoot
+function Test-CodeHash([string]$Path){$text=[IO.File]::ReadAllText($Path).TrimStart([char]0xFEFF).Replace("`r`n","`n").Replace("`r","`n");$sha=[Security.Cryptography.SHA256]::Create();try{([BitConverter]::ToString($sha.ComputeHash([Text.Encoding]::UTF8.GetBytes($text)))).Replace('-','')}finally{$sha.Dispose()}}
+$sourceCodeHashes=@(foreach($relative in @('installer/ZhaoHuoInstaller.psm1','installer/AppearanceManager.ps1','installer/VariantSupport.ps1','installer/CharacterCatalog.ps1','installer/CharacterState.ps1','installer/CharacterManager.ps1','installer/CharacterTransactions.ps1','VariantCatalog.json','tests/Test-Installer.ps1')){[pscustomobject]@{Path=$relative;Sha256=(Test-CodeHash (Join-Path $repo $relative))}})
 if(-not $OutputPath){$OutputPath=Join-Path $PSScriptRoot 'results-summary.json'}
 [IO.Directory]::CreateDirectory([IO.Path]::GetDirectoryName([IO.Path]::GetFullPath($OutputPath)))|Out-Null
 $module = Import-Module (Join-Path $repo 'installer\ZhaoHuoInstaller.psm1') -Force -PassThru
@@ -387,7 +389,8 @@ try {
     $discovered = @(Get-ZhaoHuoSteamCandidates -SteamRoots @($steamA))
     Assert-True ($discovered.Count -eq 2 -and $discovered -contains (Join-Path $steamB 'steamapps\common\LegendOfMortal')) 'Steam library discovery handles multiple libraries and spaces'
 
-    $summary = [ordered]@{ status='passed'; powershell=$PSVersionTable.PSVersion.ToString(); assertionCount=$script:Assertions.Count; durationSeconds=[Math]::Round(([DateTime]::UtcNow-$start).TotalSeconds,2); scope='Installer integration with synthetic game fixtures, official bundled runtime and stubbed offline-probe results; metadata probe tested separately; no real game installation or execution'; checks=@($script:Assertions) }
+    foreach($entry in $sourceCodeHashes){if((Test-CodeHash (Join-Path $repo $entry.Path))-ne $entry.Sha256){throw ('Tested source changed during the run: '+$entry.Path)}}
+    $summary = [ordered]@{ CodeHashAlgorithm='SHA256-UTF8-noBOM-LF-v1';CodeHashes=$sourceCodeHashes;status='passed'; powershell=$PSVersionTable.PSVersion.ToString(); assertionCount=$script:Assertions.Count; durationSeconds=[Math]::Round(([DateTime]::UtcNow-$start).TotalSeconds,2); scope='Installer integration with synthetic game fixtures, official bundled runtime and stubbed offline-probe results; metadata probe tested separately; no real game installation or execution'; checks=@($script:Assertions) }
     [IO.File]::WriteAllText($OutputPath,($summary | ConvertTo-Json -Depth 6),(New-Object Text.UTF8Encoding($false)))
     Write-Host "ALL $($script:Assertions.Count) ASSERTIONS PASSED. No real game files were modified."
 } catch {

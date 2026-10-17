@@ -1,0 +1,43 @@
+{
+  "Prompt": "Use case: precise-object-edit.\nAsset: ONE transparent dialogue portrait from 活侠传 / Legend of Mortal.\nImage 1 is the original game's specific expression/action sprite and the PRIMARY edit target. Its pose, composition, framing, emotion, hands, props, blood, sweat and effects take priority. Do not replace this action with normal standing pose.\nImage 2 is the approved HARDMAN NORMAL master, used only for identity: rugged angular jaw, thick brows, small strong eyes, warm complexion, short dark stubble, sturdy adult man about 30–35, modestly broad shoulders. Match that same man, not the original comic face. Use the original Tangmen blue-grey robe with lighter blue lapel, off-white inner collar, blue sash and purple-brown forearm guards wherever visible.\nSTYLE PRIORITY: preserve Image 1's original coarse black contours and sparse pencil irregularity, simple large flat color and shadow blocks, restrained watercolor. Match the game's original plain rendering, NOT dense cloth weave, ornate/detail-heavy repaint, photorealistic skin, 3D, smooth modern anime or heavy oil painting.\nPreserve the exact story/emotion meaning and important silhouette of Image 1 while replacing facial identity and slightly strengthening build. The master is NOT the source of expression. Do not invent extra items or people.\nOutput one isolated PNG with true transparent alpha. Preserve source canvas aspect and relative transparent whitespace as much as possible. Keep complete hair/top and left/right extremities, props and effects within a clear transparent border. Bottom crop only where original has a crop. No text, frame, background, checkerboard, ground shadow or second figure.\nSpecific state: crouched three-point heroic landing, one fist on ground at lower left, raised right knee and boot, rear arm stretched toward upper-right with open palm, ponytail flying up. Keep entire boot, hands and dynamic foreshortening, face alert and determined. Absolutely no upright normal pose.",
+  "References": [
+    {
+      "LogicalName": "local-game-reference/hero_landing.png",
+      "Kind": "original-game-reference-not-distributed"
+    },
+    {
+      "LogicalName": "generated-hardman-reference/normal-v2.png",
+      "Kind": "generated-design-reference"
+    }
+  ],
+  "GeneratedSourceBasename": "exec-65d7ae0f-f5c9-4e84-bed0-c57291987043.png",
+  "RecordedOutputSHA256": "E106E06A50453C0DE31C87AFCCEF7BDD60FC53C8762638A4CB51ACD86BB179E3",
+  "SchemaVersion": 1,
+  "CharacterId": "player",
+  "VariantId": "hardman",
+  "Name": "hero_landing.png",
+  "GenerationMethod": "builtin imagegen",
+  "PixelPostProcessing": false,
+  "OutputPath": "Variants/player/hardman/Portraits/hero_landing.png",
+  "OutputSHA256": "E106E06A50453C0DE31C87AFCCEF7BDD60FC53C8762638A4CB51ACD86BB179E3",
+  "RawGeneratedCopyVerified": true,
+  "OriginalGameReferenceDistributed": false,
+  "SourceRecordBasename": "hero_landing.json",
+  "SourceRecordSHA256": "3C5A630178D1050AA41F78DAAA3F02AC51B04E96583A14295B183E9F8D34296D",
+  "VisualReview": "passed before integration; runtime acceptance is separate",
+  "ReviewNotes": "Crouching landing pose, full boot, grounded fist, open rear palm and flying ponytail retained. Clear edges all around.",
+  "ImageMetadata": {
+    "Width": 1054,
+    "Height": 1493,
+    "Mode": "RGBA",
+    "AlphaMin": 0,
+    "AlphaMax": 255,
+    "AlphaBoundsGt16": [
+      129,
+      45,
+      1024,
+      1409
+    ],
+    "Bytes": 1533670
+  }
+}

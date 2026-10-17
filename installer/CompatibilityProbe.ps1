@@ -2,6 +2,7 @@
 # Static inspection only. Never load a game assembly into the CLR.
 $script:ZHCecilHash = '7AE470288FFF4A402899C254D0A76CEFEF55877F5C54F96E83C797CC5BB6E2F6'
 $script:ZHCompatibilityBaselineHash = '7BA8D1175F4A9C603B61E81FAF4F42DA5A9A79D14D2EEA3A12C72B04CF6F2A26'
+$script:ZHCompatibilityBaseline25987745Hash = 'B20CF307BEDFED189303DFAC565B1E2EA1DBD8B616E8B649BFE41A0ED2A9B306'
 function Get-ZHCPHash([string]$Path) { (Get-FileHash -LiteralPath $Path -Algorithm SHA256).Hash }
 function Get-ZHCPChild([string]$Root, [string]$Relative) {
     if ([string]::IsNullOrWhiteSpace($Relative) -or [IO.Path]::IsPathRooted($Relative) -or $Relative.Contains(':') -or @($Relative -split '[\\/]' | Where-Object {$_ -in @('','..','.')}).Count) { throw '兼容性检查遇到不安全的相对路径。' }
@@ -134,20 +135,20 @@ function Get-ZHCPCoreSurface($Module, [string[]]$SeedTypes) {
         Types=@($usedTypes.Keys | Sort-Object | ForEach-Object {[pscustomobject]@{Name=$_;Sha256=$usedTypes[$_]}})
     }
 }
-function Test-ZhaoHuoCompatibility {
+function Test-ZHCPSingleBaseline {
     [CmdletBinding()]
-    param([Parameter(Mandatory=$true)][string]$GamePath,[Parameter(Mandatory=$true)][string]$PackageRoot)
+    param([Parameter(Mandatory=$true)][string]$GamePath,[Parameter(Mandatory=$true)][string]$PackageRoot,[Parameter(Mandatory=$true)][object]$BaselineSpec)
     $checks=New-Object 'System.Collections.Generic.List[object]'; $reasons=New-Object 'System.Collections.Generic.List[string]'
     $fingerprints=[ordered]@{}; $baselineIds=@(); $resolver=$null; $core=$null; $plugin=$null
     $originalCulture=[Threading.Thread]::CurrentThread.CurrentCulture
     try {
         [Threading.Thread]::CurrentThread.CurrentCulture=[Globalization.CultureInfo]::InvariantCulture
-        $baselinePath=Get-ZHCPChild $PackageRoot 'installer\compatibility-baseline.json'
-        if ((Get-ZHCPHash $baselinePath) -ne $script:ZHCompatibilityBaselineHash) {throw '兼容性基线校验失败，请重新下载完整安装包。'}
+        $baselinePath=Get-ZHCPChild $PackageRoot $BaselineSpec.RelativePath
+        if ((Get-ZHCPHash $baselinePath) -ne $BaselineSpec.Sha256) {throw '兼容性基线校验失败，请重新下载完整安装包。'}
         $baseline=Get-Content -LiteralPath $baselinePath -Raw -Encoding UTF8 | ConvertFrom-Json
         if ($baseline.SchemaVersion -ne 1) {throw '不支持的兼容性基线版本。'}
         $baselineIds=@($baseline.BaselineBuildIds)
-        $checks.Add([pscustomobject]@{Name='PinnedBaseline';Passed=$true;Sha256=$script:ZHCompatibilityBaselineHash})
+        $checks.Add([pscustomobject]@{Name='PinnedBaseline';Passed=$true;Sha256=$BaselineSpec.Sha256;RelativePath=$BaselineSpec.RelativePath})
         Initialize-ZHCPCecil $PackageRoot
         $checks.Add([pscustomobject]@{Name='TrustedCecil';Passed=$true;Sha256=$script:ZHCecilHash})
         foreach ($name in @('Assembly-CSharp.dll','Mortal.Core.dll','Mortal.Story.dll','Fungus.dll')) {$fingerprints[$name]=Get-ZHCPHash (Get-ZHCPChild $GamePath ('Mortal_Data\Managed\'+$name))}
@@ -155,6 +156,12 @@ function Test-ZhaoHuoCompatibility {
             $path=Get-ZHCPChild $GamePath $file.RelativePath
             if (-not (Test-Path -LiteralPath $path -PathType Leaf) -or (Get-Item -LiteralPath $path).Length -ne $file.SizeBytes -or (Get-ZHCPHash $path) -ne $file.Sha256) {throw ('相关框架或资源发生变化，需人工适配：'+$file.RelativePath)}
         }
+        $actualInventory=@(Get-ZHCPGuardInventory $GamePath)
+        $expectedInventory=@($baseline.FixedFiles | ForEach-Object {$_.RelativePath})
+        [Array]::Sort($actualInventory,[StringComparer]::Ordinal)
+        [Array]::Sort($expectedInventory,[StringComparer]::Ordinal)
+        if (($actualInventory -join "`n") -cne ($expectedInventory -join "`n")) {throw '相关运行库或资源文件集合发生变化，需人工适配。'}
+        $checks.Add([pscustomobject]@{Name='GuardedFileInventory';Passed=$true;Count=$actualInventory.Count;Sha256=(Get-ZHCPTextHash ($actualInventory -join "`n"))})
         foreach($group in @($baseline.FixedFiles | Group-Object Category)) {
             $checks.Add([pscustomobject]@{Name=$group.Name;Passed=$true;Count=$group.Count;Sha256=(Get-ZHCPTextHash (($group.Group | ForEach-Object {$_.RelativePath+'='+$_.Sha256}) -join "`n"))})
         }
@@ -193,5 +200,70 @@ function Test-ZhaoHuoCompatibility {
         if ($plugin) {$plugin.Dispose()}; if ($core) {$core.Dispose()}; if ($resolver) {$resolver.Dispose()}
         [Threading.Thread]::CurrentThread.CurrentCulture=$originalCulture
     }
-    [pscustomobject]@{Compatible=($reasons.Count -eq 0);Method='OfflineCompatibilityProbe';BaselineBuildIds=$baselineIds;Reasons=$reasons.ToArray();Checks=$checks.ToArray();FingerprintSet=$fingerprints}
+    [pscustomobject]@{Compatible=($reasons.Count -eq 0);Method='OfflineCompatibilityProbe';BaselineBuildIds=$baselineIds;MatchedBaselineFile=$(if($reasons.Count-eq 0){$BaselineSpec.RelativePath}else{$null});Reasons=$reasons.ToArray();Checks=$checks.ToArray();FingerprintSet=$fingerprints}
+}
+
+function Get-ZHCPGuardInventory([string]$GamePath) {
+    # This exact inventory closes the gap where a new bundle or serialized scene
+    # could be added while every previously pinned file remained unchanged.
+    $root=[IO.Path]::GetFullPath($GamePath).TrimEnd('\')
+    $files=New-Object 'System.Collections.Generic.List[string]'
+    function Add-InventoryPath([string]$Path) {
+        $relative=$Path.Substring($root.Length+1).Replace('\','/')
+        $null=Get-ZHCPChild $root $relative
+        $files.Add($relative)
+    }
+    Get-ChildItem -LiteralPath (Get-ZHCPChild $root 'Mortal_Data/Managed') -Filter '*.dll' -File|Where-Object Name -ne 'Mortal.Core.dll'|ForEach-Object{Add-InventoryPath $_.FullName}
+    foreach($name in @('Mortal.exe','UnityPlayer.dll')){Add-InventoryPath (Get-ZHCPChild $root $name)}
+    Get-ChildItem -LiteralPath (Get-ZHCPChild $root 'MonoBleedingEdge') -Recurse -File|ForEach-Object{Add-InventoryPath $_.FullName}
+    Get-ChildItem -LiteralPath (Get-ZHCPChild $root 'Mortal_Data') -File|Where-Object Name -ne 'globalgamemanagers'|ForEach-Object{Add-InventoryPath $_.FullName}
+    Get-ChildItem -LiteralPath (Get-ZHCPChild $root 'Mortal_Data/Resources') -Recurse -File|ForEach-Object{Add-InventoryPath $_.FullName}
+    $aa=Get-ZHCPChild $root 'Mortal_Data/StreamingAssets/aa'
+    foreach($name in @('catalog.json','settings.json')){Add-InventoryPath (Join-Path $aa $name)}
+    Get-ChildItem -LiteralPath $aa -Recurse -File -Filter '*.bundle'|ForEach-Object{Add-InventoryPath $_.FullName}
+    $files.ToArray()
+}
+function Get-ZHCompatibilityBaselineFiles {
+    # Each entry is one indivisible snapshot. Never accept a union of per-file
+    # hashes from these baselines, even when all individual files look familiar.
+    @(
+        [pscustomobject]@{RelativePath='installer/compatibility-baseline.json';Sha256=$script:ZHCompatibilityBaselineHash}
+        [pscustomobject]@{RelativePath='installer/compatibility-baseline-25987745.json';Sha256=$script:ZHCompatibilityBaseline25987745Hash}
+    )
+}
+function Test-ZhaoHuoCompatibility {
+    [CmdletBinding()]
+    param([Parameter(Mandatory=$true)][string]$GamePath,[Parameter(Mandatory=$true)][string]$PackageRoot)
+    $failures=New-Object 'System.Collections.Generic.List[object]'
+    $availableIds=New-Object 'System.Collections.Generic.List[string]'
+    $fingerprints=[ordered]@{}
+    try {
+        $specs=@(Get-ZHCompatibilityBaselineFiles)
+        # Validate the entire shipped baseline set before selecting one. A
+        # missing/tampered alternative must not silently become a successful
+        # partial package, nor permit arbitrary caller-supplied baselines.
+        foreach($spec in $specs) {
+            if($spec.Sha256 -notmatch '^[0-9A-F]{64}$'){throw '兼容性基线尚未完成，请使用正式完整安装包。'}
+            $path=Get-ZHCPChild $PackageRoot $spec.RelativePath
+            if(-not(Test-Path -LiteralPath $path -PathType Leaf) -or (Get-ZHCPHash $path)-ne $spec.Sha256){throw '兼容性基线校验失败，请重新下载完整安装包。'}
+            $baseline=Get-Content -LiteralPath $path -Raw -Encoding UTF8|ConvertFrom-Json
+            if($baseline.SchemaVersion-ne 1 -or @($baseline.BaselineBuildIds).Count-eq 0){throw '不支持的兼容性基线版本。'}
+            foreach($id in $baseline.BaselineBuildIds){$availableIds.Add([string]$id)}
+        }
+        foreach($spec in $specs) {
+            $result=Test-ZHCPSingleBaseline -GamePath $GamePath -PackageRoot $PackageRoot -BaselineSpec $spec
+            $fingerprints=$result.FingerprintSet
+            if($result.Compatible) {
+                $result|Add-Member NoteProperty 'AvailableBaselineBuildIds' @($availableIds.ToArray()|Select-Object -Unique)
+                return $result
+            }
+            $failures.Add([pscustomobject]@{BaselineBuildIds=@($result.BaselineBuildIds);Reasons=@($result.Reasons)})
+        }
+        $reasons=@($failures|ForEach-Object{'基线'+($_.BaselineBuildIds -join '/')+'：'+($_.Reasons -join '；')})
+    } catch {
+        $message=$_.Exception.Message
+        if($message -match '[A-Za-z]:[\\/]|\\\\' -or $message -notmatch '[\u4e00-\u9fff]'){$message='兼容性检查无法读取或解析必要文件，请完整解压并确认游戏文件完整。'}
+        $reasons=@($message)
+    }
+    [pscustomobject]@{Compatible=$false;Method='OfflineCompatibilityProbe';BaselineBuildIds=@($availableIds.ToArray()|Select-Object -Unique);AvailableBaselineBuildIds=@($availableIds.ToArray()|Select-Object -Unique);MatchedBaselineFile=$null;Reasons=$reasons;Checks=@();FingerprintSet=$fingerprints;RejectedBaselines=$failures.ToArray()}
 }

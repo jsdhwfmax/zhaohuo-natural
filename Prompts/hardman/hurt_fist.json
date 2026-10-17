@@ -1,0 +1,54 @@
+{
+  "Prompt": "Use case: precise-object-edit. Make ONE minimal framing correction to this already approved transparent game sprite. Keep exactly the same hardman face, hurt emotion, blood, tears, white breath puff, outstretched fist, pose, all colors and rough ink flat watercolor art. Zoom out/expand transparent canvas to leave about 6% clear transparent margin on both left and right, restoring any tiny clipped outer right sleeve contour. The hand and right sleeve must not touch either side. Keep bottom robe crop as before. Absolutely no other design change. Output real transparent PNG, no text/no background.",
+  "References": [
+    {
+      "LogicalName": "generated-hardman-reference/hurt_fist.png",
+      "Kind": "generated-design-reference"
+    }
+  ],
+  "GeneratedSourceBasename": "exec-5f1117fe-019f-4bce-a569-3c4c69b2018e.png",
+  "RecordedOutputSHA256": "131228DA6FFC74E79A6B3C765CD5BFB61FC955BE53F4A7C1BD285765EF2FF7F1",
+  "InitialGeneration": {
+    "Prompt": "Use case: precise-object-edit.\nAsset: ONE transparent dialogue portrait from 活侠传 / Legend of Mortal.\nImage 1 is the original game's specific expression/action sprite and the PRIMARY edit target. Its pose, composition, framing, emotion, hands, props, blood, sweat and effects take priority. Do not replace this action with normal standing pose.\nImage 2 is the approved HARDMAN NORMAL master, used only for identity: rugged angular jaw, thick brows, small strong eyes, warm complexion, short dark stubble, sturdy adult man about 30–35, modestly broad shoulders. Match that same man, not the original comic face. Use the original Tangmen blue-grey robe with lighter blue lapel, off-white inner collar, blue sash and purple-brown forearm guards wherever visible.\nSTYLE PRIORITY: preserve Image 1's original coarse black contours and sparse pencil irregularity, simple large flat color and shadow blocks, restrained watercolor. Match the game's original plain rendering, NOT dense cloth weave, ornate/detail-heavy repaint, photorealistic skin, 3D, smooth modern anime or heavy oil painting.\nPreserve the exact story/emotion meaning and important silhouette of Image 1 while replacing facial identity and slightly strengthening build. The master is NOT the source of expression. Do not invent extra items or people.\nOutput one isolated PNG with true transparent alpha. Preserve source canvas aspect and relative transparent whitespace as much as possible. Keep complete hair/top and left/right extremities, props and effects within a clear transparent border. Bottom crop only where original has a crop. No text, frame, background, checkerboard, ground shadow or second figure.\nSpecific state: badly battered, tears and blood down face, exhausted half-shut swollen eyes, painful gritted teeth, sweat, white exhale puff next to face. Image-left arm extends out horizontally and clenches bloody fist, other arm hangs down. Preserve blood-stained blue robe and scratches, no weapon.",
+    "References": [
+      {
+        "LogicalName": "local-game-reference/hurt_fist.png",
+        "Kind": "original-game-reference-not-distributed"
+      },
+      {
+        "LogicalName": "generated-hardman-reference/normal-v2.png",
+        "Kind": "generated-design-reference"
+      }
+    ],
+    "GeneratedSourceBasename": "exec-98a45b47-4ae0-414d-a746-6240055d4d2b.png",
+    "RecordedOutputSHA256": "2303A5D631167BE087463146307EA662ED9B4C01FD63D8E68D39CA01716F31AD"
+  },
+  "SchemaVersion": 1,
+  "CharacterId": "player",
+  "VariantId": "hardman",
+  "Name": "hurt_fist.png",
+  "GenerationMethod": "builtin imagegen",
+  "PixelPostProcessing": false,
+  "OutputPath": "Variants/player/hardman/Portraits/hurt_fist.png",
+  "OutputSHA256": "131228DA6FFC74E79A6B3C765CD5BFB61FC955BE53F4A7C1BD285765EF2FF7F1",
+  "RawGeneratedCopyVerified": true,
+  "OriginalGameReferenceDistributed": false,
+  "SourceRecordBasename": "hurt_fist.json",
+  "SourceRecordSHA256": "94F56A710DDE309463E4CEE20B6A43F7CB81C4F9263796D3FAFC1B22B2E9BE94",
+  "VisualReview": "passed before integration; runtime acceptance is separate",
+  "ReviewNotes": "Painful swollen eyes, tears, blood, breath puff and extended fist retained. Selected margin revision keeps full outer sleeve; narrow right opaque margin 2px plus antialias fringe.",
+  "ImageMetadata": {
+    "Width": 1162,
+    "Height": 1353,
+    "Mode": "RGBA",
+    "AlphaMin": 0,
+    "AlphaMax": 255,
+    "AlphaBoundsGt16": [
+      15,
+      83,
+      1160,
+      1353
+    ],
+    "Bytes": 1404241
+  }
+}

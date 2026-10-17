@@ -1,0 +1,43 @@
+{
+  "Prompt": "Use case: identity-preserve. Asset: ONE transparent PNG dialogue portrait for 活侠传. Image 1 is the original game's EXACT expression/action/layout reference and PRIMARY art style guide. Image 2 is the approved hardman normal model: preserve this adult man's rugged square jaw, thick brows, short dark stubble, black tied ponytail and robust build. Render the expression/action from image1 on this same man. Preserve original blue-grey simple Tangmen robe, light blue lapel, off-white inner collar, purple-brown guards, blue sash. Same rough black outlines, simple broad painted shadow blocks and restrained texture as original game. NOT realistic glossy rendering, NOT ornate fantasy armour. Original full torso/thigh portrait composition with transparent space above head; do not enlarge face or crop hair/arms at sides. Same model proportions as image2. ONE person, no text, no border, no background, real transparent alpha. Expression laugh2: Hearty laughing expression: eyes joyfully squeezed shut and mouth opened wide in laughter; screen-left arm bent with hand lifted near chest, wrist loosely drooping and fingers relaxed downward; screen-right hand slightly extended low. Match original jovial comedic gesture. No glow. Keep hands and sleeves inside margins.",
+  "References": [
+    {
+      "LogicalName": "local-game-reference/laugh2.png",
+      "Kind": "original-game-reference-not-distributed"
+    },
+    {
+      "LogicalName": "generated-hardman-reference/normal-v2.png",
+      "Kind": "generated-design-reference"
+    }
+  ],
+  "GeneratedSourceBasename": "exec-ee9e2462-a21c-4c89-863e-d89325dabd04.png",
+  "RecordedOutputSHA256": "9C17944045AC90815BADBF6ADEF2A1F731BAC84145DBE55DC5094E11A6F51C94",
+  "SchemaVersion": 1,
+  "CharacterId": "player",
+  "VariantId": "hardman",
+  "Name": "laugh2.png",
+  "GenerationMethod": "builtin imagegen",
+  "PixelPostProcessing": false,
+  "OutputPath": "Variants/player/hardman/Portraits/laugh2.png",
+  "OutputSHA256": "9C17944045AC90815BADBF6ADEF2A1F731BAC84145DBE55DC5094E11A6F51C94",
+  "RawGeneratedCopyVerified": true,
+  "OriginalGameReferenceDistributed": false,
+  "SourceRecordBasename": "laugh2.json",
+  "SourceRecordSHA256": "9AB8B273053815F140C65B0B3CD49539166EDC2148E3AAD2C912C97C716569FE",
+  "VisualReview": "passed before integration; runtime acceptance is separate",
+  "ReviewNotes": "Actual generated image visually reviewed by root. Same hardman identity and original costume/style; expression and corresponding pose preserved; hands/head not laterally cropped; original bottom robe crop retained.",
+  "ImageMetadata": {
+    "Width": 991,
+    "Height": 1588,
+    "Mode": "RGBA",
+    "AlphaMin": 0,
+    "AlphaMax": 255,
+    "AlphaBoundsGt16": [
+      26,
+      283,
+      975,
+      1588
+    ],
+    "Bytes": 1531171
+  }
+}

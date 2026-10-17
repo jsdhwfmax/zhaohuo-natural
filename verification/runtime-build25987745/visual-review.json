@@ -1,0 +1,130 @@
+{
+  "Passed": true,
+  "DateUtc": "2026-10-17T03:18:05.060Z",
+  "MainMenuReviewed": true,
+  "ReviewedVariants": [
+    {
+      "CharacterId": "player",
+      "VariantId": "xianxia"
+    },
+    {
+      "CharacterId": "player",
+      "VariantId": "hardman"
+    },
+    {
+      "CharacterId": "tang-buyi",
+      "VariantId": "female"
+    },
+    {
+      "CharacterId": "tang-buyi",
+      "VariantId": "refined"
+    },
+    {
+      "CharacterId": "xiahou-lan",
+      "VariantId": "refined"
+    },
+    {
+      "CharacterId": "tang-moling",
+      "VariantId": "refined"
+    },
+    {
+      "CharacterId": "long-xiang",
+      "VariantId": "refined"
+    },
+    {
+      "CharacterId": "yu-xiaomei",
+      "VariantId": "refined"
+    },
+    {
+      "CharacterId": "tang-zheng",
+      "VariantId": "female"
+    }
+  ],
+  "Screenshots": [
+    {
+      "Path": "all-on/diagnostics/portraits-01.png",
+      "Sha256": "297D7A3CA567C058C60385A210D10C95F4BD4991CFE09C6265FBAEA984B6AB5B"
+    },
+    {
+      "Path": "all-on/diagnostics/character-tang-buyi-brother1-1.png",
+      "Sha256": "229193CB91AD8A1F3BAE0260A3FAA4EEFDF5D55C6E21EFB1859D29313CC1B7CA"
+    },
+    {
+      "Path": "all-on/diagnostics/character-xiahou-lan-girl6-1.png",
+      "Sha256": "4CDA3395BA0922FA28AC82862FD6FDC5CFCC69DFF3E55631FC7FFDF93E8392F7"
+    },
+    {
+      "Path": "all-on/diagnostics/character-tang-moling-sister1-1.png",
+      "Sha256": "02EB3374846CDBA0A4134E73081CB462B1D26B0C51B136277A371387264008A9"
+    },
+    {
+      "Path": "all-on/diagnostics/character-long-xiang-girl4-1.png",
+      "Sha256": "977571D16B4923ED5CD41BC78DDC426BA3CF37F6CFA529342ACCDE82D15ACF85"
+    },
+    {
+      "Path": "all-on/diagnostics/character-yu-xiaomei-girl5-1.png",
+      "Sha256": "B02086613CD7D8E30238A7483571A8DB32080ACD615A6FD04F6B6C2FD6FE4BEA"
+    },
+    {
+      "Path": "all-on/diagnostics/character-tang-zheng-brother2-1.png",
+      "Sha256": "A118CB12BF09158F3AAF4C29E7EE3034B989B86344CA405AE3B951120BA8B2DA"
+    },
+    {
+      "Path": "brother-refined/diagnostics/character-tang-buyi-brother1-1.png",
+      "Sha256": "1C5B6B61BD7B7016C2D7F6A4ECFB0C5BF59DEDDC1006F9D30184CF3663583EEA"
+    },
+    {
+      "Path": "hardman/diagnostics/portraits-01.png",
+      "Sha256": "0B631A36F7091AF9720D91F0CBB7582CEF1BC46CA418FB635104A1E9EBA6D8DF"
+    },
+    {
+      "Path": "hardman/diagnostics/portraits-02.png",
+      "Sha256": "5911C37685D2C2B6468893BD1BBE2129EA773C1BA15BFDD6D721383C14CF2A4F"
+    },
+    {
+      "Path": "hardman/diagnostics/portraits-03.png",
+      "Sha256": "8F1F651ED4AC92A39C6E6519AFE6C19815E27D663119890541C83A4A8E6C12F1"
+    },
+    {
+      "Path": "hardman/diagnostics/portraits-04.png",
+      "Sha256": "6162F4F623346B3F30D74BFED88E82F138D04877EC3C2179613F3658EB0F4B7A"
+    },
+    {
+      "Path": "hardman/diagnostics/portraits-05.png",
+      "Sha256": "15C10F8919B4DEB895926EF59F6EC0B959EDF94A2BFA5CF5FDC1AED76D88575E"
+    },
+    {
+      "Path": "hardman/diagnostics/portraits-06.png",
+      "Sha256": "C95E715691FAC8C62E4FEEB6C033668BA2FD7327114E1650CD30E3FAB506DF25"
+    },
+    {
+      "Path": "hardman/diagnostics/portraits-07.png",
+      "Sha256": "D59775DAB064A65E98F83877EB29B4F6A71A845730937B10463F36A6F8562CEC"
+    },
+    {
+      "Path": "hardman/diagnostics/avatar-panel-0.png",
+      "Sha256": "4C84AA0F636F09149FABC1C7DFC1A4267334495139EC080FEB894AEFEBB40E6A"
+    },
+    {
+      "Path": "hardman/diagnostics/avatar-panel-1.png",
+      "Sha256": "4C84AA0F636F09149FABC1C7DFC1A4267334495139EC080FEB894AEFEBB40E6A"
+    },
+    {
+      "Path": "original/diagnostics/portraits-01.png",
+      "Sha256": "B3E77DEAD5CE1985E555134EDB1F5D7B7390A33DADFFF5F9E90EB0F989B58AA7"
+    },
+    {
+      "Path": "original/diagnostics/character-tang-buyi-brother1-1.png",
+      "Sha256": "4E7CF4373ACAED68F91955E406C39E5DA4014B96BC87DEE0C8489EB53247FE90"
+    },
+    {
+      "Path": "original/diagnostics/character-yu-xiaomei-girl5-1.png",
+      "Sha256": "99918E5599F64E352EB0150DDE12E911DB6BB3BCABEF820AC04BF02A5ACF5E26"
+    },
+    {
+      "Path": "normal/main-menu.png",
+      "Sha256": "168429A1DA1118EC5951ECF1627B416025A9A2333B182782AD6C5BCDA00E4015"
+    }
+  ],
+  "Scope": "Reviewed real Unity diagnostic grids for nine selected custom appearances; all seven hardman grids show all 47 new replacements and both avatar panels. Original-mode representative player, Tang Buyi and Yu Xiaomei grids also reviewed. Normal Steam main menu visibly shows release_1.0.6000.3. No story/save loaded; screenshot pixels remain private to avoid publishing original game artwork."
+}

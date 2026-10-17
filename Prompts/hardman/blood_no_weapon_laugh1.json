@@ -1,0 +1,43 @@
+{
+  "Prompt": "Use case: identity-preserve. Asset: one transparent dialogue portrait sprite for 活侠传 / Legend of Mortal.\nImage 1 is the ORIGINAL GAME expression target: its pose, action, expression, prop positions, injury marks, framing, simple coarse black ink outlines and sparse broad flat watercolor shading have highest priority.\nImage 2 is the approved hardman NORMAL identity: borrow only the exact rugged adult male face and slightly broader strong torso, NOT its neutral expression or arms-down pose when the target differs. Same man about 30–35: broad angular jaw, sturdy cheek planes, thick brows, small eyes, warm skin, clearly visible short dark stubble, swept long Chinese hair tied in ponytail. Preserve readable identity across expressions.\nKeep ORIGINAL GAME blue-grey Tangmen cloth robe, light blue lapel, off-white inner collar, blue waist sash, purple-brown forearm guards; preserve all expression-specific changes visible in image1. Keep details as simple as the original game: rough contour/fold ink, limited flat color blocks and understated pencil texture. No dense crosshatching, glossy realism, cinematic lighting, ornate texture, 3D or modern anime.\nTall 1060x1700-like composition, same original head-to-lower-robe view and generous clear space above. Full head/hair, hands and sleeve sides not cut off; original bottom robe/prop crop may remain. ONE character only. Real transparent PNG alpha, no scenery, solid background, checkerboard, text, signature or border. Ignore any invisible-alpha export artifacts in the raw source.\nEXPRESSION blood_no_weapon_laugh1: injured yet smiling warmly, showing teeth, sweat beads and red scratches on forehead/cheek/chin. Preserve sparse dark-red battle stains on robe shoulder/waist and hands. Both hands lowered and EMPTY, no sword or other weapon. Same original relaxed stance and cheerful wounded expression.",
+  "References": [
+    {
+      "LogicalName": "local-game-reference/blood_no_weapon_laugh1.png",
+      "Kind": "original-game-reference-not-distributed"
+    },
+    {
+      "LogicalName": "generated-hardman-reference/normal-v2.png",
+      "Kind": "generated-design-reference"
+    }
+  ],
+  "GeneratedSourceBasename": "exec-9e4e33af-f780-4bd9-86cf-56c8054bab1c.png",
+  "RecordedOutputSHA256": "FC68136F71CAFC2713762854EB31E32D24D135D4A182EB73D58B9913FC8C6005",
+  "SchemaVersion": 1,
+  "CharacterId": "player",
+  "VariantId": "hardman",
+  "Name": "blood_no_weapon_laugh1.png",
+  "GenerationMethod": "builtin imagegen",
+  "PixelPostProcessing": false,
+  "OutputPath": "Variants/player/hardman/Portraits/blood_no_weapon_laugh1.png",
+  "OutputSHA256": "FC68136F71CAFC2713762854EB31E32D24D135D4A182EB73D58B9913FC8C6005",
+  "RawGeneratedCopyVerified": true,
+  "OriginalGameReferenceDistributed": false,
+  "SourceRecordBasename": "blood_no_weapon_laugh1.json",
+  "SourceRecordSHA256": "19E41C42DB60EF9FB369FAF4FEFB533444D17D9AD503FDE2E273FECBF2C155CC",
+  "VisualReview": "passed before integration; runtime acceptance is separate",
+  "ReviewNotes": "Smiling injured expression, sparse cloth/hand blood, no sword; original lower portrait crop retained.",
+  "ImageMetadata": {
+    "Width": 991,
+    "Height": 1587,
+    "Mode": "RGBA",
+    "AlphaMin": 0,
+    "AlphaMax": 255,
+    "AlphaBoundsGt16": [
+      132,
+      251,
+      943,
+      1587
+    ],
+    "Bytes": 1559863
+  }
+}

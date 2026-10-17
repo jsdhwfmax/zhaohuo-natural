@@ -1,9 +1,38 @@
 # 验证记录
 
+## v2.2.0：1.0.6.03 适配与赵活硬汉版
+
+本轮管理器版本为 **2.2.0**，运行插件仍为 **2.1.0**。目标游戏为 Steam build `25987745` / `release_1.0.6000.3`（1.0.6.03）。旧 400 张 PNG 与插件 DLL 保持原字节，新增硬汉版 47 张；最终目录为 7 角色、14 套自定义外观、447 张 PNG，另有 7 个独立原版选项。
+
+**本次实机验收已通过。** `all-on`、`brother-refined`、`hardman`、`original` 四组实际游戏资源诊断覆盖 9 套代表外观，以及 7 位角色全部使用原版的模式。无自测参数的普通 Steam 启动观测 92 秒通过，主菜单确认 `release_1.0.6000.3`，随后正常菜单退出。见[本次新构建实机报告](runtime-build25987745/compatibility-runtime.json)和[选择与文件保护记录](runtime-build25987745/installation-preservation.json)。
+
+9 套为赵活小师弟、赵活硬汉、唐布衣精修与女版，以及夏侯兰、唐默铃、龙湘、虞小梅精修和唐铮女版。其余五套赵活外观保持原字节并沿用历史美术与运行证据，本次未在新构建下逐套重测。诊断使用实际 Addressables、立绘加载与 UI 组件，未加载剧情存档，也不是全剧情、全路线游玩测试。以下离线与界面证据各自保留范围，不代替实机结果。
+
+| 范围 | 记录与结果 | 边界 |
+| --- | --- | --- |
+| 当前游戏构建运行 | [实机总报告](runtime-build25987745/compatibility-runtime.json)：四组诊断、9 套外观、7 角色原版通过；[普通启动](runtime-build25987745/normal-startup.json)：92 秒通过 | 实际 Steam / Unity 组件与主菜单检查，未加载剧情存档；其余五套赵活未在本构建逐套重测 |
+| 真实安装保护 | [选择与文件保护](runtime-build25987745/installation-preservation.json)：通过 | 恢复原有角色选择，首次安装编号与备份、存档、其他插件及游戏文件保持 |
+| 最终素材与目录 | [图片完整性](character-art-integrity.json)：14 套 / 447 图；[最终目录验收](character-catalog-acceptance.json)：68 项通过 | 核对全部实际文件哈希、旧 400 图不变、角色布局、21 个选项及 306 条所需生成记录绑定；不启动游戏 |
+| 角色安装器与回归 | [角色管理](character-manager-tests.json)：64 项；[既有安装回归](character-manager-regression.json)：74 项 | Windows PowerShell 5.1 隔离文件夹夹具，验证事务与保护；未使用真实游戏或存档 |
+| 共享组件与迁移 | [共享组件更新](character-shared-update.json)：13 项；[三角色到七角色迁移](character-expansion-tests.json)：33 项 | 原有选择、首次备份、失败与中断恢复、外部修改拒绝 |
+| v2.1.0 → v2.2.0 | [旧正式版本升级](character-release-upgrade.json)：19 项 | 用真实旧版本安装器建立隔离安装；验证同款零写入、硬汉仅替换赵活 47 图、七角色选择与最初备份保留。不是原地实机安装 |
+| GUI 事件与布局 | [GUI 测试](character-manager-gui.json)：77 个断言 × 2 配置，共 154 次通过 | 真实 WinForms 事件，后端采用 mock；报告保留测试时的 Catalog 快照，不伪称最终素材验收 |
+| 最终硬汉界面 | [真实图预览](character-manager-gui-final-art.json)：默认与 Compact 150% 目视通过 | 实际 ImageLoader / DrawToBitmap 加载最终 PNG；未使用模拟素材就绪状态。“当前使用”标记是预览示例，不读取或修改游戏安装 |
+| 新旧完整兼容规则 | [双基线检查](compatibility-probe-tests-build25987745.json)：23 项通过 | 两套完整基线分别核验，均固定 395 个相关文件、23 个游戏成员引用；只读元数据检查与隔离变异测试，不执行游戏程序集 |
+| 新资源与原画回退 | [资源图核对](game-resources-build25987745/resource-graph.json)、[回退策略](game-resources-build25987745/fallback-policy-tests.json)：11 项通过 | 旧允许映射和 Sprite 内容保持；虞小梅唯一新增 `doubt` 在编译白名单外，继续显示原画 |
+
+代码测试报告绑定规范化源码哈希。最终 Catalog 补齐素材后的数据变化由 68 项目录验收单独验证：原 64 / 74 项报告及其当时的 Catalog 哈希保留，未改写成重新执行的结果。旧版本同名报告归档于 [history-v2.1](history-v2.1/)。
+
+### v2.1.0 的真实运行与安装记录
+
+[安装验收](character-installation.json)与[实际运行验收](character-runtime.json)来自上一轮 v2.1.0、游戏 build `25957922` 的实测，保留原始报告字节。它们记录七角色迁移、当时的代表外观与原版模式诊断、普通 Steam 启动等结果；本轮仅将其作为未变素材及旧版本的历史证据，不用它们替代上方 build `25987745` 的新实机报告。
+
+当前和历史验证均不代表全剧情通关、所有路线或所有第三方模组组合通过，也不保证所有未来更新自动适配。
+
 ## v1.3.0 三套外观管理器
 
 - [安装与切换专项](appearance-manager-tests.json)：PS5.1 下 98 项通过，包括生产载荷指纹、六个切换方向、旧记录识别、循环切换、失败回滚、卸载及文件保护。使用隔离夹具，不操作玩家游戏。
-- [既有安装器回归](appearance-manager-regression.json)：PS5.1 下 74 项通过，覆盖纯净安装、已有 BepInEx、版本/资源拒绝、误解压接管、失败回滚与卸载保护，绑定当前后端代码。
+- [既有安装器回归](appearance-manager-regression.json)：PS5.1 下 74 项通过，覆盖纯净安装、已有 BepInEx、版本/资源拒绝、误解压接管、失败回滚与卸载保护，绑定当时的后端代码。
 - [界面与 CLI 检查](appearance-manager-gui.json)：16 项真实 WinForms 事件/布局检查及 7 项隔离 CLI 进程检查通过，按钮后端采用 mock，不是实际桌面点击或游戏切换。源码指纹使用统一 UTF-8 / LF 规范，避免 Git 换行转换使报告失效。
 - [141 张图片校验](manager-art-integrity.json)：独立核对三套 47 张 PNG 的解码、透明通道、非空内容及完整载荷指纹。打包过程中没有重画或修改图片。
 - [实际安装副本切换](copied-manager-switch.json)：复制真实受管安装的 221 个必要文件，包含安装记录与现有备份，只调整副本内的 GamePath。这不是完整可运行游戏。在隔离副本中依次切换小师弟→自然→帅气→小师弟并重复应用，比较首次安装记录、已有备份、共享插件、游戏程序集和其他文件。原游戏仍在运行，本轮未改动原安装；报告的 CopiedActualInstallation 范围不等于原地实机操作。

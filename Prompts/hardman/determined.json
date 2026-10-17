@@ -1,0 +1,43 @@
+{
+  "Prompt": "Use case: identity-preserve. Asset: ONE transparent PNG dialogue portrait for 活侠传. Image 1 is the original game's EXACT expression/action/layout reference and PRIMARY art style guide. Image 2 is the approved hardman normal model: preserve this adult man's rugged square jaw, thick brows, short dark stubble, black tied ponytail and robust build. Render the expression/action from image1 on this same man. Preserve original blue-grey simple Tangmen robe, light blue lapel, off-white inner collar, purple-brown guards, blue sash. Same rough black outlines, simple broad painted shadow blocks and restrained texture as original game. NOT realistic glossy rendering, NOT ornate fantasy armour. Original full torso/thigh portrait composition with transparent space above head; do not enlarge face or crop hair/arms at sides. Same model proportions as image2. ONE person, no text, no border, no background, real transparent alpha. Expression determined: Determined heroic grin, bright focused normal eyes; screen-left fist raised near shoulder, other hand gripping/supporting that raised wrist in front of chest exactly as original; robe sash tails sweep out. Red brush-shaped determination halo behind torso as original, transparent beyond it. Keep entire halo and both arms well within side edges with at least 6% margin.",
+  "References": [
+    {
+      "LogicalName": "local-game-reference/determined.png",
+      "Kind": "original-game-reference-not-distributed"
+    },
+    {
+      "LogicalName": "generated-hardman-reference/normal-v2.png",
+      "Kind": "generated-design-reference"
+    }
+  ],
+  "GeneratedSourceBasename": "exec-ec3edefe-978a-49d0-b593-f29ba58728a3.png",
+  "RecordedOutputSHA256": "BA55CEDC23BFD15EB04DA8D7DBD6F309854D7F0CF7FEB7A10A2FE715787A900F",
+  "SchemaVersion": 1,
+  "CharacterId": "player",
+  "VariantId": "hardman",
+  "Name": "determined.png",
+  "GenerationMethod": "builtin imagegen",
+  "PixelPostProcessing": false,
+  "OutputPath": "Variants/player/hardman/Portraits/determined.png",
+  "OutputSHA256": "BA55CEDC23BFD15EB04DA8D7DBD6F309854D7F0CF7FEB7A10A2FE715787A900F",
+  "RawGeneratedCopyVerified": true,
+  "OriginalGameReferenceDistributed": false,
+  "SourceRecordBasename": "determined.json",
+  "SourceRecordSHA256": "2EBC44D5F1F8B9765093ECA588B8C70920B0D13AE48389BB6226261D5D90A1A4",
+  "VisualReview": "passed before integration; runtime acceptance is separate",
+  "ReviewNotes": "Actual generated image visually reviewed by root. Same hardman identity and original costume/style; expression and corresponding pose preserved; hands/head not laterally cropped; original bottom robe crop retained.",
+  "ImageMetadata": {
+    "Width": 990,
+    "Height": 1589,
+    "Mode": "RGBA",
+    "AlphaMin": 0,
+    "AlphaMax": 255,
+    "AlphaBoundsGt16": [
+      45,
+      290,
+      986,
+      1589
+    ],
+    "Bytes": 1912234
+  }
+}

@@ -1,0 +1,336 @@
+{
+  "Complete": true,
+  "GenerationMethod": "builtin imagegen",
+  "PixelPostProcessing": false,
+  "Assets": [
+    {
+      "CharacterId": "player",
+      "VariantId": "hardman",
+      "Name": "angry1.png",
+      "OutputSHA256": "84B04D515C7C4F6A438A6960848289EFB7AFA928E71F8F7D627AA3CD45A1C7B7",
+      "RecordPath": "Prompts/hardman/angry1.json"
+    },
+    {
+      "CharacterId": "player",
+      "VariantId": "hardman",
+      "Name": "angry2.png",
+      "OutputSHA256": "EFFED8181375D212FF4FE2D01328760922E4AB104935F9B0E2B3D78543687BFD",
+      "RecordPath": "Prompts/hardman/angry2.json"
+    },
+    {
+      "CharacterId": "player",
+      "VariantId": "hardman",
+      "Name": "angry3.png",
+      "OutputSHA256": "FEA42A19C478F3D2F639ABAD7C5D2FFEBB43170AD8B6BFAF99EC427996FA950E",
+      "RecordPath": "Prompts/hardman/angry3.json"
+    },
+    {
+      "CharacterId": "player",
+      "VariantId": "hardman",
+      "Name": "blood.png",
+      "OutputSHA256": "5C7B40CEB8EC6B03A8C5ED7E4B4479A8E71205255FF2403B709D940F5FECA819",
+      "RecordPath": "Prompts/hardman/blood.json"
+    },
+    {
+      "CharacterId": "player",
+      "VariantId": "hardman",
+      "Name": "blood_laugh1.png",
+      "OutputSHA256": "FF18F51B16C93D93EB592DCF02831C235132FAF5FC2523F43FF9C6498014CBD2",
+      "RecordPath": "Prompts/hardman/blood_laugh1.json"
+    },
+    {
+      "CharacterId": "player",
+      "VariantId": "hardman",
+      "Name": "blood_nervous1.png",
+      "OutputSHA256": "45D7DA21422CE511DB2995BF9C2A677421BC72828D7A371654DAFC702B610ABA",
+      "RecordPath": "Prompts/hardman/blood_nervous1.json"
+    },
+    {
+      "CharacterId": "player",
+      "VariantId": "hardman",
+      "Name": "blood_no_weapon.png",
+      "OutputSHA256": "7F39FA66A210C58EC93569D36956FB73C5AF6B8F106E7850951346615B56D149",
+      "RecordPath": "Prompts/hardman/blood_no_weapon.json"
+    },
+    {
+      "CharacterId": "player",
+      "VariantId": "hardman",
+      "Name": "blood_no_weapon_laugh1.png",
+      "OutputSHA256": "FC68136F71CAFC2713762854EB31E32D24D135D4A182EB73D58B9913FC8C6005",
+      "RecordPath": "Prompts/hardman/blood_no_weapon_laugh1.json"
+    },
+    {
+      "CharacterId": "player",
+      "VariantId": "hardman",
+      "Name": "caught.png",
+      "OutputSHA256": "20D2F1E3FE10DC66F94CA62170AEE8407FFC688CA3F22D576ACB9668797AF1DF",
+      "RecordPath": "Prompts/hardman/caught.json"
+    },
+    {
+      "CharacterId": "player",
+      "VariantId": "hardman",
+      "Name": "close_eye.png",
+      "OutputSHA256": "79FEA4154F46CC377B667B493D97DD6ACADB39D625E2BDE9AE67AFDC446B2A7F",
+      "RecordPath": "Prompts/hardman/close_eye.json"
+    },
+    {
+      "CharacterId": "player",
+      "VariantId": "hardman",
+      "Name": "close_eye_laugh.png",
+      "OutputSHA256": "A72E1D60333E61559F9266E2861FB2479D89EB8A1B4988471873DC520532B87C",
+      "RecordPath": "Prompts/hardman/close_eye_laugh.json"
+    },
+    {
+      "CharacterId": "player",
+      "VariantId": "hardman",
+      "Name": "close_eye_nervous.png",
+      "OutputSHA256": "657C36516AEB2BDC0373E2177F60A3D0BF9BF9652986B004D0D8EBA754294400",
+      "RecordPath": "Prompts/hardman/close_eye_nervous.json"
+    },
+    {
+      "CharacterId": "player",
+      "VariantId": "hardman",
+      "Name": "close_eye_nervous2.png",
+      "OutputSHA256": "74C82C06563BED2954BC544379D1EAD5DF18990601673A8389299C3A4C59A4C6",
+      "RecordPath": "Prompts/hardman/close_eye_nervous2.json"
+    },
+    {
+      "CharacterId": "player",
+      "VariantId": "hardman",
+      "Name": "close_eye_powder.png",
+      "OutputSHA256": "DB0F6BDBF510F38E2226010F830678739987C2491950F8D66E95156DA38F8501",
+      "RecordPath": "Prompts/hardman/close_eye_powder.json"
+    },
+    {
+      "CharacterId": "player",
+      "VariantId": "hardman",
+      "Name": "determined.png",
+      "OutputSHA256": "BA55CEDC23BFD15EB04DA8D7DBD6F309854D7F0CF7FEB7A10A2FE715787A900F",
+      "RecordPath": "Prompts/hardman/determined.json"
+    },
+    {
+      "CharacterId": "player",
+      "VariantId": "hardman",
+      "Name": "die.png",
+      "OutputSHA256": "6A149D9D12900D64349913125AB066B172449A2BD6707DDB87F8B9E6A170A89F",
+      "RecordPath": "Prompts/hardman/die.json"
+    },
+    {
+      "CharacterId": "player",
+      "VariantId": "hardman",
+      "Name": "doubt.png",
+      "OutputSHA256": "3D6FFDFC71AED9C43940B46BE71C3258AA4C9939F9B34D92C7C872BBD1A9C1A4",
+      "RecordPath": "Prompts/hardman/doubt.json"
+    },
+    {
+      "CharacterId": "player",
+      "VariantId": "hardman",
+      "Name": "eye_mask_nervous1.png",
+      "OutputSHA256": "1E4408C130029BFA51916F3263A8A1DC40EF8D2B1E6CB371BB6F41381F085647",
+      "RecordPath": "Prompts/hardman/eye_mask_nervous1.json"
+    },
+    {
+      "CharacterId": "player",
+      "VariantId": "hardman",
+      "Name": "eye_mask_nervous2.png",
+      "OutputSHA256": "C5760083E232CB2DAE845CC1889A4C9C3DC83AF561C01969B5F85C4028DF8D8A",
+      "RecordPath": "Prompts/hardman/eye_mask_nervous2.json"
+    },
+    {
+      "CharacterId": "player",
+      "VariantId": "hardman",
+      "Name": "fist_north_star.png",
+      "OutputSHA256": "0F4E650BCDFA00D60B860981C75B2CE06086AEB75FCFF6493AE9A6C6F219CDBC",
+      "RecordPath": "Prompts/hardman/fist_north_star.json"
+    },
+    {
+      "CharacterId": "player",
+      "VariantId": "hardman",
+      "Name": "gloomy2.png",
+      "OutputSHA256": "A861E314D4B4C2E3F9672FA7C42DC3976A949DF42DC6EA87594F6DED16D1AA33",
+      "RecordPath": "Prompts/hardman/gloomy2.json"
+    },
+    {
+      "CharacterId": "player",
+      "VariantId": "hardman",
+      "Name": "god_thunder.png",
+      "OutputSHA256": "5403476003C9BC3B672E833B6ED4D748A15AE7D7164D23FFA4F0F1AC20465507",
+      "RecordPath": "Prompts/hardman/god_thunder.json"
+    },
+    {
+      "CharacterId": "player",
+      "VariantId": "hardman",
+      "Name": "head.png",
+      "OutputSHA256": "1026DF76EE6C83BA6E2A557FA252E097D01EBDBF101428E92FABA3DE8283938C",
+      "RecordPath": "Prompts/hardman/head.json"
+    },
+    {
+      "CharacterId": "player",
+      "VariantId": "hardman",
+      "Name": "hero_landing.png",
+      "OutputSHA256": "E106E06A50453C0DE31C87AFCCEF7BDD60FC53C8762638A4CB51ACD86BB179E3",
+      "RecordPath": "Prompts/hardman/hero_landing.json"
+    },
+    {
+      "CharacterId": "player",
+      "VariantId": "hardman",
+      "Name": "hurt.png",
+      "OutputSHA256": "807F2ED11D976D6DBB5E843E3F36607A14D2704EAC0C25763F5CD4F7F723CEB4",
+      "RecordPath": "Prompts/hardman/hurt.json"
+    },
+    {
+      "CharacterId": "player",
+      "VariantId": "hardman",
+      "Name": "hurt2.png",
+      "OutputSHA256": "69B9B8BA323CCAFB41626FC1BEA1783FE630BA25652BAD6CB6FC528622AB1304",
+      "RecordPath": "Prompts/hardman/hurt2.json"
+    },
+    {
+      "CharacterId": "player",
+      "VariantId": "hardman",
+      "Name": "hurt_fist.png",
+      "OutputSHA256": "131228DA6FFC74E79A6B3C765CD5BFB61FC955BE53F4A7C1BD285765EF2FF7F1",
+      "RecordPath": "Prompts/hardman/hurt_fist.json"
+    },
+    {
+      "CharacterId": "player",
+      "VariantId": "hardman",
+      "Name": "laugh1.png",
+      "OutputSHA256": "1DEEA93626790C1D0C6C815ACF80FB7E6DC94068C2D6CE594EA4E8FFBDE05058",
+      "RecordPath": "Prompts/hardman/laugh1.json"
+    },
+    {
+      "CharacterId": "player",
+      "VariantId": "hardman",
+      "Name": "laugh2.png",
+      "OutputSHA256": "9C17944045AC90815BADBF6ADEF2A1F731BAC84145DBE55DC5094E11A6F51C94",
+      "RecordPath": "Prompts/hardman/laugh2.json"
+    },
+    {
+      "CharacterId": "player",
+      "VariantId": "hardman",
+      "Name": "mask.png",
+      "OutputSHA256": "724C9C61E86B76CFA6174DB69C4740B2EB0F0600A9DB929C807927B5BBB27B15",
+      "RecordPath": "Prompts/hardman/mask.json"
+    },
+    {
+      "CharacterId": "player",
+      "VariantId": "hardman",
+      "Name": "mud.png",
+      "OutputSHA256": "065966F5B1015F9F65382B6A6C5BA715C50601D516D32BB7D1AAE47C8B3F99D3",
+      "RecordPath": "Prompts/hardman/mud.json"
+    },
+    {
+      "CharacterId": "player",
+      "VariantId": "hardman",
+      "Name": "nervous1.png",
+      "OutputSHA256": "093CCBEEDCDB6F9E4925AEA5416586057BBEEF995364795A0A9E10E848B94F67",
+      "RecordPath": "Prompts/hardman/nervous1.json"
+    },
+    {
+      "CharacterId": "player",
+      "VariantId": "hardman",
+      "Name": "nervous2.png",
+      "OutputSHA256": "6E920E3CD288A6A7D05DA54DA996E9832C268E64A7BF3031614D6E14477181DF",
+      "RecordPath": "Prompts/hardman/nervous2.json"
+    },
+    {
+      "CharacterId": "player",
+      "VariantId": "hardman",
+      "Name": "nervous3.png",
+      "OutputSHA256": "E15699BD61C45943DA66430F490B859A7CC00D7250F597AE4637ED92EBE7AE1F",
+      "RecordPath": "Prompts/hardman/nervous3.json"
+    },
+    {
+      "CharacterId": "player",
+      "VariantId": "hardman",
+      "Name": "normal.png",
+      "OutputSHA256": "28E2B9CE0EAD0E81DDC9BC19DDF196D46918D938E729557F60662EAD5856C9FF",
+      "RecordPath": "Prompts/hardman/normal.json"
+    },
+    {
+      "CharacterId": "player",
+      "VariantId": "hardman",
+      "Name": "oraora.png",
+      "OutputSHA256": "7BEEC3B58C733E6E3773E2A9B0A9C600BAEB9A16EA7B64E532F132EA601987B7",
+      "RecordPath": "Prompts/hardman/oraora.json"
+    },
+    {
+      "CharacterId": "player",
+      "VariantId": "hardman",
+      "Name": "revel.png",
+      "OutputSHA256": "91B9D8F97CC6FA64E0D11301F43E41FF49B8719004B688B7145ED9CBEE109FC4",
+      "RecordPath": "Prompts/hardman/revel.json"
+    },
+    {
+      "CharacterId": "player",
+      "VariantId": "hardman",
+      "Name": "sad1.png",
+      "OutputSHA256": "FAC09EA43233F41B8A7EB68A01E2A68AC0421BC0B3913EBEE9EA543B2C8CDA77",
+      "RecordPath": "Prompts/hardman/sad1.json"
+    },
+    {
+      "CharacterId": "player",
+      "VariantId": "hardman",
+      "Name": "shake.png",
+      "OutputSHA256": "C5D2D7AD871D765603CEA09726FDBD583E82CF5A12EBC975A15FC04464F9A1BF",
+      "RecordPath": "Prompts/hardman/shake.json"
+    },
+    {
+      "CharacterId": "player",
+      "VariantId": "hardman",
+      "Name": "shake2.png",
+      "OutputSHA256": "863969620351489B8E9E6EC648D933574B1EE07574387A7C8FD510D73BC33C2D",
+      "RecordPath": "Prompts/hardman/shake2.json"
+    },
+    {
+      "CharacterId": "player",
+      "VariantId": "hardman",
+      "Name": "shock.png",
+      "OutputSHA256": "EB4A79CD6954F2E1965D886CDD49FD40D923833F9DC89978487576B413CD3C10",
+      "RecordPath": "Prompts/hardman/shock.json"
+    },
+    {
+      "CharacterId": "player",
+      "VariantId": "hardman",
+      "Name": "soul.png",
+      "OutputSHA256": "629C527F5438B3C4EAC5C36E90C40A60089AB327F1F25D312D3047D1C8CA2DBB",
+      "RecordPath": "Prompts/hardman/soul.json"
+    },
+    {
+      "CharacterId": "player",
+      "VariantId": "hardman",
+      "Name": "special1.png",
+      "OutputSHA256": "7413463BC1FD5AFEBE73B21756746F36A82DB5BE501DCCC3B4ACD23FE7CC47F8",
+      "RecordPath": "Prompts/hardman/special1.json"
+    },
+    {
+      "CharacterId": "player",
+      "VariantId": "hardman",
+      "Name": "stupid.png",
+      "OutputSHA256": "C2D296D7DCAEC6EB6AF90735D5275B44E3FAD9CE8BE934F0410674D8323D8108",
+      "RecordPath": "Prompts/hardman/stupid.json"
+    },
+    {
+      "CharacterId": "player",
+      "VariantId": "hardman",
+      "Name": "suck1.png",
+      "OutputSHA256": "D820C292F6F96675BCA5799255428C2782DAE57B416BCB318B5CFB70BA7C13BF",
+      "RecordPath": "Prompts/hardman/suck1.json"
+    },
+    {
+      "CharacterId": "player",
+      "VariantId": "hardman",
+      "Name": "suck3.png",
+      "OutputSHA256": "3177499CA51103554FD105A9581A2BCB3806DFFF998F2F23D01F5B0FDDA1F06F",
+      "RecordPath": "Prompts/hardman/suck3.json"
+    },
+    {
+      "CharacterId": "player",
+      "VariantId": "hardman",
+      "Name": "suck4.png",
+      "OutputSHA256": "CE87E69A6E25443183A53E7DAF477DFB5A25877473C5C88AD5317A4EC9463B8A",
+      "RecordPath": "Prompts/hardman/suck4.json"
+    }
+  ]
+}

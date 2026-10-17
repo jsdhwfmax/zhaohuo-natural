@@ -1,0 +1,43 @@
+{
+  "Prompt": "Use case: identity-preserve. Asset: ONE transparent PNG dialogue portrait for 活侠传. Image 1 is the original game's EXACT expression/action/layout reference and PRIMARY art style guide. Image 2 is the approved hardman normal model: preserve this adult man's rugged square jaw, thick brows, short dark stubble, black tied ponytail and robust build. Render the expression/action from image1 on this same man. Preserve original blue-grey simple Tangmen robe, light blue lapel, off-white inner collar, purple-brown guards, blue sash. Same rough black outlines, simple broad painted shadow blocks and restrained texture as original game. NOT realistic glossy rendering, NOT ornate fantasy armour. Original full torso/thigh portrait composition with transparent space above head; do not enlarge face or crop hair/arms at sides. Same model proportions as image2. ONE person, no text, no border, no background, real transparent alpha. Expression nervous1: Nervously surprised, eyes open wider, brows raised, small sweat drop at temple, hesitant open mouth. BOTH arms lowered, screen-left hand slightly extended with fingers tense/loosely curled, screen-right down. No aura.",
+  "References": [
+    {
+      "LogicalName": "local-game-reference/nervous1.png",
+      "Kind": "original-game-reference-not-distributed"
+    },
+    {
+      "LogicalName": "generated-hardman-reference/normal-v2.png",
+      "Kind": "generated-design-reference"
+    }
+  ],
+  "GeneratedSourceBasename": "exec-bd47bdf2-87ac-45d0-a727-bdec05d852ba.png",
+  "RecordedOutputSHA256": "093CCBEEDCDB6F9E4925AEA5416586057BBEEF995364795A0A9E10E848B94F67",
+  "SchemaVersion": 1,
+  "CharacterId": "player",
+  "VariantId": "hardman",
+  "Name": "nervous1.png",
+  "GenerationMethod": "builtin imagegen",
+  "PixelPostProcessing": false,
+  "OutputPath": "Variants/player/hardman/Portraits/nervous1.png",
+  "OutputSHA256": "093CCBEEDCDB6F9E4925AEA5416586057BBEEF995364795A0A9E10E848B94F67",
+  "RawGeneratedCopyVerified": true,
+  "OriginalGameReferenceDistributed": false,
+  "SourceRecordBasename": "nervous1.json",
+  "SourceRecordSHA256": "D9869242F1BEC4A736D14221DE3F824FDE75729602F4C87A9502E6494711CEC1",
+  "VisualReview": "passed before integration; runtime acceptance is separate",
+  "ReviewNotes": "Actual generated image visually reviewed by root. Same hardman identity and original costume/style; expression and corresponding pose preserved; hands/head not laterally cropped; original bottom robe crop retained.",
+  "ImageMetadata": {
+    "Width": 991,
+    "Height": 1588,
+    "Mode": "RGBA",
+    "AlphaMin": 0,
+    "AlphaMax": 255,
+    "AlphaBoundsGt16": [
+      74,
+      252,
+      944,
+      1588
+    ],
+    "Bytes": 1571967
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "Prompt": "Use case: identity-preserve. Asset: ONE transparent PNG dialogue portrait for 活侠传. Image 1 is the original game's EXACT expression/action/layout reference and PRIMARY art style guide. Image 2 is the approved hardman normal model: preserve this adult man's rugged square jaw, thick brows, short dark stubble, black tied ponytail and robust build. Render the expression/action from image1 on this same man. Preserve original blue-grey simple Tangmen robe, light blue lapel, off-white inner collar, purple-brown guards, blue sash. Same rough black outlines, simple broad painted shadow blocks and restrained texture as original game. NOT realistic glossy rendering, NOT ornate fantasy armour. Original full torso/thigh portrait composition with transparent space above head; do not enlarge face or crop hair/arms at sides. Same model proportions as image2. ONE person, no text, no border, no background, real transparent alpha. Expression close_eye: eyes fully closed, calm neutral mouth, BOTH arms bent toward waist with hands clasped together at mid-abdomen exactly as original, thoughtful restrained composure. No glow.",
+  "References": [
+    {
+      "LogicalName": "local-game-reference/close_eye.png",
+      "Kind": "original-game-reference-not-distributed"
+    },
+    {
+      "LogicalName": "generated-hardman-reference/normal-v2.png",
+      "Kind": "generated-design-reference"
+    }
+  ],
+  "GeneratedSourceBasename": "exec-ff88dc7c-2819-4506-95b2-59810a247d38.png",
+  "RecordedOutputSHA256": "79FEA4154F46CC377B667B493D97DD6ACADB39D625E2BDE9AE67AFDC446B2A7F",
+  "SchemaVersion": 1,
+  "CharacterId": "player",
+  "VariantId": "hardman",
+  "Name": "close_eye.png",
+  "GenerationMethod": "builtin imagegen",
+  "PixelPostProcessing": false,
+  "OutputPath": "Variants/player/hardman/Portraits/close_eye.png",
+  "OutputSHA256": "79FEA4154F46CC377B667B493D97DD6ACADB39D625E2BDE9AE67AFDC446B2A7F",
+  "RawGeneratedCopyVerified": true,
+  "OriginalGameReferenceDistributed": false,
+  "SourceRecordBasename": "close_eye.json",
+  "SourceRecordSHA256": "D4528E463D09AE2D057D40F2A118A66B12BE5A84657FD207E2F76BC63ABECCA0",
+  "VisualReview": "passed before integration; runtime acceptance is separate",
+  "ReviewNotes": "Actual generated image visually reviewed by root. Same hardman identity and original costume/style; expression and corresponding pose preserved; hands/head not laterally cropped; original bottom robe crop retained.",
+  "ImageMetadata": {
+    "Width": 991,
+    "Height": 1588,
+    "Mode": "RGBA",
+    "AlphaMin": 0,
+    "AlphaMax": 255,
+    "AlphaBoundsGt16": [
+      105,
+      248,
+      950,
+      1588
+    ],
+    "Bytes": 1427834
+  }
+}

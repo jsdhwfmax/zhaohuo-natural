@@ -1,0 +1,43 @@
+{
+  "Prompt": "Use case: precise-object-edit.\nAsset: ONE transparent dialogue portrait from 活侠传 / Legend of Mortal.\nImage 1 is the original game's specific expression/action sprite and the PRIMARY edit target. Its pose, composition, framing, emotion, hands, props, blood, sweat and effects take priority. Do not replace this action with normal standing pose.\nImage 2 is the approved HARDMAN NORMAL master, used only for identity: rugged angular jaw, thick brows, small strong eyes, warm complexion, short dark stubble, sturdy adult man about 30–35, modestly broad shoulders. Match that same man, not the original comic face. Use the original Tangmen blue-grey robe with lighter blue lapel, off-white inner collar, blue sash and purple-brown forearm guards wherever visible.\nSTYLE PRIORITY: preserve Image 1's original coarse black contours and sparse pencil irregularity, simple large flat color and shadow blocks, restrained watercolor. Match the game's original plain rendering, NOT dense cloth weave, ornate/detail-heavy repaint, photorealistic skin, 3D, smooth modern anime or heavy oil painting.\nPreserve the exact story/emotion meaning and important silhouette of Image 1 while replacing facial identity and slightly strengthening build. The master is NOT the source of expression. Do not invent extra items or people.\nOutput one isolated PNG with true transparent alpha. Preserve source canvas aspect and relative transparent whitespace as much as possible. Keep complete hair/top and left/right extremities, props and effects within a clear transparent border. Bottom crop only where original has a crop. No text, frame, background, checkerboard, ground shadow or second figure.\nFraming guard: leave at least 5% of canvas width genuinely transparent outside the leftmost/rightmost visible silhouette, and at least 4% above the highest hair or raised hand. Zoom out to make room; do not crop to fill the output.\nSpecific state: shocked trembling, upright stance with arms down, worried open mouth showing teeth, eyes blank/rolled pale, sweat drop, subtle offset duplicate outlines around head/hair/body showing trembling. Keep ghosted outlines intentional and mild; this is one man, not a second figure.",
+  "References": [
+    {
+      "LogicalName": "local-game-reference/shake.png",
+      "Kind": "original-game-reference-not-distributed"
+    },
+    {
+      "LogicalName": "generated-hardman-reference/normal-v2.png",
+      "Kind": "generated-design-reference"
+    }
+  ],
+  "GeneratedSourceBasename": "exec-7ecf4d84-5620-4865-8704-88bb63b2c082.png",
+  "RecordedOutputSHA256": "C5D2D7AD871D765603CEA09726FDBD583E82CF5A12EBC975A15FC04464F9A1BF",
+  "SchemaVersion": 1,
+  "CharacterId": "player",
+  "VariantId": "hardman",
+  "Name": "shake.png",
+  "GenerationMethod": "builtin imagegen",
+  "PixelPostProcessing": false,
+  "OutputPath": "Variants/player/hardman/Portraits/shake.png",
+  "OutputSHA256": "C5D2D7AD871D765603CEA09726FDBD583E82CF5A12EBC975A15FC04464F9A1BF",
+  "RawGeneratedCopyVerified": true,
+  "OriginalGameReferenceDistributed": false,
+  "SourceRecordBasename": "shake.json",
+  "SourceRecordSHA256": "5515653FBFBB7315E9FCC0C5D03950D0E1DD5AA94E3EB3446F20A01AB430AFF6",
+  "VisualReview": "passed before integration; runtime acceptance is separate",
+  "ReviewNotes": "Shocked pale eyes, open mouth, sweat and tremble outlines retained.",
+  "ImageMetadata": {
+    "Width": 991,
+    "Height": 1587,
+    "Mode": "RGBA",
+    "AlphaMin": 0,
+    "AlphaMax": 255,
+    "AlphaBoundsGt16": [
+      49,
+      168,
+      973,
+      1587
+    ],
+    "Bytes": 1933972
+  }
+}

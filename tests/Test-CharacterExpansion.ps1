@@ -42,7 +42,7 @@ foreach($entry in $catalog.SharedFiles){$path=Join-Path $package ($plugin+'\'+$e
 & $module {param($Shared)foreach($entry in $Shared){$script:CharacterSharedHashes[$entry.Name]=$entry.Sha256}} $catalog.SharedFiles
 $catalog.PackageReady=$true;Save-Json (Join-Path $package 'VariantCatalog.json') $catalog
 $view=Get-PortraitCharacters -PackageRoot $package
-Assert ($view.Characters.Count-eq 7-and @($view.Characters.Variants).Count-eq 20) 'Expanded catalog exposes seven independent roles and twenty choices'
+Assert ($view.Characters.Count-eq 7-and @($view.Characters.Variants).Count-eq 21) 'Expanded catalog exposes seven independent roles and twenty-one choices'
 $game=New-Game 'protocol-upgrade' -Existing
 $legacyPlugin=Join-Path $game 'BepInEx\plugins\Tianfei\MortalBeauty.dll';Write-Text $legacyPlugin 'ORIGINAL LEGACY PLUGIN'
 $otherPlugin=Join-Path $game 'BepInEx\plugins\Other\user.dll';Write-Text $otherPlugin 'UNCHANGED OTHER MOD'

@@ -1,0 +1,43 @@
+{
+  "Prompt": "Use case: identity-preserve. Asset: one transparent dialogue portrait sprite for 活侠传 / Legend of Mortal.\nImage 1 is the ORIGINAL GAME expression target: its pose, action, expression, prop positions, injury marks, framing, simple coarse black ink outlines and sparse broad flat watercolor shading have highest priority.\nImage 2 is the approved hardman NORMAL identity: borrow only the exact rugged adult male face and slightly broader strong torso, NOT its neutral expression or arms-down pose when the target differs. Same man about 30–35: broad angular jaw, sturdy cheek planes, thick brows, small eyes, warm skin, clearly visible short dark stubble, swept long Chinese hair tied in ponytail. Preserve readable identity across expressions.\nKeep ORIGINAL GAME blue-grey Tangmen cloth robe, light blue lapel, off-white inner collar, blue waist sash, purple-brown forearm guards; preserve all expression-specific changes visible in image1. Keep details as simple as the original game: rough contour/fold ink, limited flat color blocks and understated pencil texture. No dense crosshatching, glossy realism, cinematic lighting, ornate texture, 3D or modern anime.\nTall 1060x1700-like composition, same original head-to-lower-robe view and generous clear space above. Full head/hair, hands and sleeve sides not cut off; original bottom robe/prop crop may remain. ONE character only. Real transparent PNG alpha, no scenery, solid background, checkerboard, text, signature or border. Ignore any invisible-alpha export artifacts in the raw source.\nEXPRESSION sad1: exact original FACEPALM pose: the forearm at image-left is bent sharply upward and the gloved palm/fingers cover his forehead and eyes, fingers splayed across the face. Head bowed in embarrassed sadness, mouth grimacing in grief or frustration, the other arm hangs down. The gesture must obscure part of the approved hardman face naturally, do not move the hand away to display it. Clean original robe, no wound, blindfold, weapon or extra prop.",
+  "References": [
+    {
+      "LogicalName": "local-game-reference/sad1.png",
+      "Kind": "original-game-reference-not-distributed"
+    },
+    {
+      "LogicalName": "generated-hardman-reference/normal-v2.png",
+      "Kind": "generated-design-reference"
+    }
+  ],
+  "GeneratedSourceBasename": "exec-7f5a206c-040b-490c-9a4f-afa8e75772f0.png",
+  "RecordedOutputSHA256": "FAC09EA43233F41B8A7EB68A01E2A68AC0421BC0B3913EBEE9EA543B2C8CDA77",
+  "SchemaVersion": 1,
+  "CharacterId": "player",
+  "VariantId": "hardman",
+  "Name": "sad1.png",
+  "GenerationMethod": "builtin imagegen",
+  "PixelPostProcessing": false,
+  "OutputPath": "Variants/player/hardman/Portraits/sad1.png",
+  "OutputSHA256": "FAC09EA43233F41B8A7EB68A01E2A68AC0421BC0B3913EBEE9EA543B2C8CDA77",
+  "RawGeneratedCopyVerified": true,
+  "OriginalGameReferenceDistributed": false,
+  "SourceRecordBasename": "sad1.json",
+  "SourceRecordSHA256": "926D199056026CA0DB06DF162C22057EA15FBBB1153248926E4A8C88F0940EA4",
+  "VisualReview": "passed before integration; runtime acceptance is separate",
+  "ReviewNotes": "Raised splayed gloved hand masks eyes in original facepalm gesture; grimacing mouth and lowered second hand retained.",
+  "ImageMetadata": {
+    "Width": 991,
+    "Height": 1588,
+    "Mode": "RGBA",
+    "AlphaMin": 0,
+    "AlphaMax": 255,
+    "AlphaBoundsGt16": [
+      157,
+      282,
+      959,
+      1588
+    ],
+    "Bytes": 1400505
+  }
+}

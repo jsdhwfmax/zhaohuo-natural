@@ -1,0 +1,32 @@
+{
+  "Passed": true,
+  "DateUtc": "2026-10-17T03:21:01.937735+00:00",
+  "ActualInstalledGameCompared": true,
+  "UserSelectionsRestored": true,
+  "InitialInstallationPreserved": true,
+  "OriginalBackupsPreserved": true,
+  "SaveFilesPreserved": true,
+  "OtherPluginsPreserved": true,
+  "GameFilesPreserved": true,
+  "PreservedBackupFileCount": 1499,
+  "PreservedOtherPluginFileCount": 87,
+  "PreservedGameFileCount": 416,
+  "PreservedSaveFileCount": 34,
+  "Selections": {
+    "player": "xianxia",
+    "tang-buyi": "female",
+    "xiahou-lan": "refined",
+    "tang-moling": "refined",
+    "long-xiang": "refined",
+    "yu-xiaomei": "refined",
+    "tang-zheng": "female"
+  },
+  "CatalogSha256": "4757E87DD043E145C9F8E744E0A04B13CE938A1C94811A0C0D27BCA7B1A2D5C8",
+  "PluginSha256": "AEEE02AC56DCDCB1E683D6356AC28FE19E61AF861D5663ACFFD1B83984F06957",
+  "PrivateSnapshotHashes": {
+    "installation-hashes-private.json": "A46F912A8DEBCAFDB9FBAA73BDE9E1C64D8802F69B4A87834962076A7EF571AD",
+    "additional-game-hashes-private.json": "543495E08BC3E730216EE2A92AF55663E69614C9D43FA24553B751AC6AD83C02",
+    "save-hashes-private.json": "5303D2E236BBDCCDF029629EA7D08EF60F0CF57BCB7A91E010D308AA22912277"
+  },
+  "Scope": "Byte comparisons of all pre-existing first-backup/transaction files, other-plugin files, game data plus executable/Unity/Mono files, and the account save directory. New manager transaction snapshots are allowed; original snapshots must remain byte-identical. No story save is loaded during validation. Private paths and saves are retained locally, not published."
+}

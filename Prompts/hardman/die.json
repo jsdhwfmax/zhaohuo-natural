@@ -1,0 +1,43 @@
+{
+  "Prompt": "Use case: identity-preserve. Asset: one transparent dialogue portrait sprite for 活侠传 / Legend of Mortal.\nImage 1 is the ORIGINAL GAME expression target: its pose, action, expression, prop positions, injury marks, framing, simple coarse black ink outlines and sparse broad flat watercolor shading have highest priority.\nImage 2 is the approved hardman NORMAL identity: borrow only the exact rugged adult male face and slightly broader strong torso, NOT its neutral expression or arms-down pose when the target differs. Same man about 30–35: broad angular jaw, sturdy cheek planes, thick brows, small eyes, warm skin, clearly visible short dark stubble, swept long Chinese hair tied in ponytail. Preserve readable identity across expressions.\nKeep ORIGINAL GAME blue-grey Tangmen cloth robe, light blue lapel, off-white inner collar, blue waist sash, purple-brown forearm guards; preserve all expression-specific changes visible in image1. Keep details as simple as the original game: rough contour/fold ink, limited flat color blocks and understated pencil texture. No dense crosshatching, glossy realism, cinematic lighting, ornate texture, 3D or modern anime.\nTall 1060x1700-like composition, same original head-to-lower-robe view and generous clear space above. Full head/hair, hands and sleeve sides not cut off; original bottom robe/prop crop may remain. ONE character only. Real transparent PNG alpha, no scenery, solid background, checkerboard, text, signature or border. Ignore any invisible-alpha export artifacts in the raw source.\nEXPRESSION die: preserve the limp exhausted battered pose: head drooping forward, heavy closed or almost closed eyes, mouth loosely parted, shoulders fallen and arms hanging. Keep bruises, small scratches and thin blood streaks on face and robe, without graphic wounds. Preserve the small pale WHITE EXHALE SPIRIT/BREATH wisp curving to image-left of face. Sparse red battle smears on cloth and guards. NO sword. It is the same rugged man collapsed in exhaustion, not a neutral portrait. Follow source clothing condition and body lean.",
+  "References": [
+    {
+      "LogicalName": "local-game-reference/die.png",
+      "Kind": "original-game-reference-not-distributed"
+    },
+    {
+      "LogicalName": "generated-hardman-reference/normal-v2.png",
+      "Kind": "generated-design-reference"
+    }
+  ],
+  "GeneratedSourceBasename": "exec-598bd4c3-fa58-4bf7-b8f4-0df2f2fced19.png",
+  "RecordedOutputSHA256": "6A149D9D12900D64349913125AB066B172449A2BD6707DDB87F8B9E6A170A89F",
+  "SchemaVersion": 1,
+  "CharacterId": "player",
+  "VariantId": "hardman",
+  "Name": "die.png",
+  "GenerationMethod": "builtin imagegen",
+  "PixelPostProcessing": false,
+  "OutputPath": "Variants/player/hardman/Portraits/die.png",
+  "OutputSHA256": "6A149D9D12900D64349913125AB066B172449A2BD6707DDB87F8B9E6A170A89F",
+  "RawGeneratedCopyVerified": true,
+  "OriginalGameReferenceDistributed": false,
+  "SourceRecordBasename": "die.json",
+  "SourceRecordSHA256": "804F69CB766D6AA7D2DB69ADEEAEF104CA65E91052D674BE7F73BABDD0806707",
+  "VisualReview": "passed before integration; runtime acceptance is separate",
+  "ReviewNotes": "Drooped head, closed eyes, limp posture and curled pale breath wisp retained; blood/scratches remain stylized.",
+  "ImageMetadata": {
+    "Width": 991,
+    "Height": 1588,
+    "Mode": "RGBA",
+    "AlphaMin": 0,
+    "AlphaMax": 255,
+    "AlphaBoundsGt16": [
+      221,
+      272,
+      929,
+      1588
+    ],
+    "Bytes": 1462658
+  }
+}

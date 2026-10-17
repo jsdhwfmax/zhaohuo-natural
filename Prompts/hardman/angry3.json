@@ -1,0 +1,53 @@
+{
+  "Prompt": "Use case: precise-object-edit. Edit this ONE transparent game sprite. Only correct framing: retain exactly the same man's face, expression, pose, robe, colors and rough game drawing style. The red anger aura is clipped by the right canvas edge. Fit the ENTIRE figure plus complete red aura into the canvas with clear TRANSPARENT LEFT AND RIGHT margins of at least 8% of canvas width each. Narrow the aura as needed and zoom out a little so no sleeve, fist, hair or red effect is clipped laterally. Keep the original lower robe cropped at bottom; keep the same tall portrait aspect ratio and useful top margin. Do not change gritted-teeth versus sinister-smile expression. No new props, no frame, no background, no text. Output one PNG with true transparent alpha. This is a game sprite framing repair, not a style remake.",
+  "References": [
+    {
+      "LogicalName": "generated-hardman-reference/angry3.png",
+      "Kind": "generated-design-reference"
+    }
+  ],
+  "GeneratedSourceBasename": "exec-e48fdc5b-06dd-48a0-be2c-eaf58d986bbb.png",
+  "RecordedOutputSHA256": "FEA42A19C478F3D2F639ABAD7C5D2FFEBB43170AD8B6BFAF99EC427996FA950E",
+  "InitialGeneration": {
+    "Prompt": "Use case: identity-preserve. Asset: ONE transparent PNG dialogue portrait for 活侠传. Image 1 is the original game's EXACT expression/action/layout reference and PRIMARY art style guide. Image 2 is the approved hardman normal model: preserve this adult man's rugged square jaw, thick brows, short dark stubble, black tied ponytail and robust build. Render the expression/action from image1 on this same man. Preserve original blue-grey simple Tangmen robe, light blue lapel, off-white inner collar, purple-brown guards, blue sash. Same rough black outlines, simple broad painted shadow blocks and restrained texture as original game. NOT realistic glossy rendering, NOT ornate fantasy armour. Original full torso/thigh portrait composition with transparent space above head; do not enlarge face or crop hair/arms at sides. Same model proportions as image2. ONE person, no text, no border, no background, real transparent alpha. Expression angry3: comically frightening anger, wide glowing white eyes with tiny red pupils, restrained crooked half-smile with small glimpse of teeth, red anger aura tightly around silhouette, lowered clenched fists. Preserve identity despite exaggerated original expression. Outside aura transparent.",
+    "References": [
+      {
+        "LogicalName": "local-game-reference/angry3.png",
+        "Kind": "original-game-reference-not-distributed"
+      },
+      {
+        "LogicalName": "generated-hardman-reference/normal-v2.png",
+        "Kind": "generated-design-reference"
+      }
+    ],
+    "GeneratedSourceBasename": "exec-1be93144-8c03-406f-9760-f20d70b5d4d3.png"
+  },
+  "SchemaVersion": 1,
+  "CharacterId": "player",
+  "VariantId": "hardman",
+  "Name": "angry3.png",
+  "GenerationMethod": "builtin imagegen",
+  "PixelPostProcessing": false,
+  "OutputPath": "Variants/player/hardman/Portraits/angry3.png",
+  "OutputSHA256": "FEA42A19C478F3D2F639ABAD7C5D2FFEBB43170AD8B6BFAF99EC427996FA950E",
+  "RawGeneratedCopyVerified": true,
+  "OriginalGameReferenceDistributed": false,
+  "SourceRecordBasename": "angry3.json",
+  "SourceRecordSHA256": "FC93554E5B9B54EB4F851E52E6BE2837FFB52479726050716D1B4149630C41AD",
+  "VisualReview": "passed before integration; runtime acceptance is separate",
+  "ReviewNotes": "Viewed corrected output. Face, angry expression and original effects retained. Body contour is complete; alpha>16 right margin is narrow at 3px, sufficient for runtime 2px fringe. Bottom robe remains intentionally cropped.",
+  "ImageMetadata": {
+    "Width": 991,
+    "Height": 1587,
+    "Mode": "RGBA",
+    "AlphaMin": 0,
+    "AlphaMax": 254,
+    "AlphaBoundsGt16": [
+      53,
+      220,
+      988,
+      1587
+    ],
+    "Bytes": 1670375
+  }
+}

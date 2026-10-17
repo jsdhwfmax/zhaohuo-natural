@@ -1,0 +1,43 @@
+{
+  "Prompt": "Use case: identity-preserve. Asset: one transparent dialogue portrait sprite for 活侠传 / Legend of Mortal.\nImage 1 is the ORIGINAL GAME expression target: its pose, action, expression, prop positions, injury marks, framing, simple coarse black ink outlines and sparse broad flat watercolor shading have highest priority.\nImage 2 is the approved hardman NORMAL identity: borrow only the exact rugged adult male face and slightly broader strong torso, NOT its neutral expression or arms-down pose when the target differs. Same man about 30–35: broad angular jaw, sturdy cheek planes, thick brows, small eyes, warm skin, clearly visible short dark stubble, swept long Chinese hair tied in ponytail. Preserve readable identity across expressions.\nKeep ORIGINAL GAME blue-grey Tangmen cloth robe, light blue lapel, off-white inner collar, blue waist sash, purple-brown forearm guards; preserve all expression-specific changes visible in image1. Keep details as simple as the original game: rough contour/fold ink, limited flat color blocks and understated pencil texture. No dense crosshatching, glossy realism, cinematic lighting, ornate texture, 3D or modern anime.\nTall 1060x1700-like composition, same original head-to-lower-robe view and generous clear space above. Full head/hair, hands and sleeve sides not cut off; original bottom robe/prop crop may remain. ONE character only. Real transparent PNG alpha, no scenery, solid background, checkerboard, text, signature or border. Ignore any invisible-alpha export artifacts in the raw source.\nEXPRESSION hurt2: preserve the weary badly battered slumped standing posture, half-open drooping eyes and slightly open mouth, sweat, thin blood streaks on face and dark bruises, scratched stained robe and arms. Preserve the broad pale WHITE EXHALE PUFF beside the face at image-left. Follow image1 rather than the normal master's clean pose. No sword and no new props; neither hand raised. Non-graphic stylized scratches only.",
+  "References": [
+    {
+      "LogicalName": "local-game-reference/hurt2.png",
+      "Kind": "original-game-reference-not-distributed"
+    },
+    {
+      "LogicalName": "generated-hardman-reference/normal-v2.png",
+      "Kind": "generated-design-reference"
+    }
+  ],
+  "GeneratedSourceBasename": "exec-e14ae9de-5ea0-4331-8838-a30f5550b2ad.png",
+  "RecordedOutputSHA256": "69B9B8BA323CCAFB41626FC1BEA1783FE630BA25652BAD6CB6FC528622AB1304",
+  "SchemaVersion": 1,
+  "CharacterId": "player",
+  "VariantId": "hardman",
+  "Name": "hurt2.png",
+  "GenerationMethod": "builtin imagegen",
+  "PixelPostProcessing": false,
+  "OutputPath": "Variants/player/hardman/Portraits/hurt2.png",
+  "OutputSHA256": "69B9B8BA323CCAFB41626FC1BEA1783FE630BA25652BAD6CB6FC528622AB1304",
+  "RawGeneratedCopyVerified": true,
+  "OriginalGameReferenceDistributed": false,
+  "SourceRecordBasename": "hurt2.json",
+  "SourceRecordSHA256": "2A83A73239BEA3FC45815CC12E5A0F53EA2A5B785E2F752E4665688BE146D30D",
+  "VisualReview": "passed before integration; runtime acceptance is separate",
+  "ReviewNotes": "Slumped half-open eyes, broad white breath puff and battered robe/face preserved; distinct from die closed eyes.",
+  "ImageMetadata": {
+    "Width": 990,
+    "Height": 1588,
+    "Mode": "RGBA",
+    "AlphaMin": 0,
+    "AlphaMax": 255,
+    "AlphaBoundsGt16": [
+      84,
+      264,
+      975,
+      1588
+    ],
+    "Bytes": 1594887
+  }
+}

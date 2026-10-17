@@ -1,0 +1,43 @@
+{
+  "Prompt": "Use case: identity-preserve. Asset: ONE transparent PNG dialogue portrait for 活侠传. Image 1 is the original game's EXACT expression/action/layout reference and PRIMARY art style guide. Image 2 is the approved hardman normal model: preserve this adult man's rugged square jaw, thick brows, short dark stubble, black tied ponytail and robust build. Render the expression/action from image1 on this same man. Preserve original blue-grey simple Tangmen robe, light blue lapel, off-white inner collar, purple-brown guards, blue sash. Same rough black outlines, simple broad painted shadow blocks and restrained texture as original game. NOT realistic glossy rendering, NOT ornate fantasy armour. Original full torso/thigh portrait composition with transparent space above head; do not enlarge face or crop hair/arms at sides. Same model proportions as image2. ONE person, no text, no border, no background, real transparent alpha. Expression nervous3: Awkward friendly embarrassed smile with normal open eyes and small temple sweat drop; screen-left hand raised with index fingertip touching/scratching cheek beside mouth, screen-right arm relaxed down. Same original apologetic gesture. No aura.",
+  "References": [
+    {
+      "LogicalName": "local-game-reference/nervous3.png",
+      "Kind": "original-game-reference-not-distributed"
+    },
+    {
+      "LogicalName": "generated-hardman-reference/normal-v2.png",
+      "Kind": "generated-design-reference"
+    }
+  ],
+  "GeneratedSourceBasename": "exec-c14aef35-8b9e-44f4-922f-2c3b87bb97f1.png",
+  "RecordedOutputSHA256": "E15699BD61C45943DA66430F490B859A7CC00D7250F597AE4637ED92EBE7AE1F",
+  "SchemaVersion": 1,
+  "CharacterId": "player",
+  "VariantId": "hardman",
+  "Name": "nervous3.png",
+  "GenerationMethod": "builtin imagegen",
+  "PixelPostProcessing": false,
+  "OutputPath": "Variants/player/hardman/Portraits/nervous3.png",
+  "OutputSHA256": "E15699BD61C45943DA66430F490B859A7CC00D7250F597AE4637ED92EBE7AE1F",
+  "RawGeneratedCopyVerified": true,
+  "OriginalGameReferenceDistributed": false,
+  "SourceRecordBasename": "nervous3.json",
+  "SourceRecordSHA256": "32C2A1D0B239EE96C97AF83DF5AD11F4EF56AF0048BC43D7E147EE6CDE022266",
+  "VisualReview": "passed before integration; runtime acceptance is separate",
+  "ReviewNotes": "Actual generated image visually reviewed by root. Same hardman identity and original costume/style; expression and corresponding pose preserved; hands/head not laterally cropped; original bottom robe crop retained.",
+  "ImageMetadata": {
+    "Width": 991,
+    "Height": 1588,
+    "Mode": "RGBA",
+    "AlphaMin": 0,
+    "AlphaMax": 255,
+    "AlphaBoundsGt16": [
+      90,
+      254,
+      949,
+      1588
+    ],
+    "Bytes": 1477510
+  }
+}

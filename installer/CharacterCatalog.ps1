@@ -40,7 +40,7 @@ function Test-ZHMultiPackage([string]$PackageRoot) {
 function Read-ZHCharacterCatalog([string]$PackageRoot) {
     $root=Get-ZHCanonical $PackageRoot;$path=Get-ZHChild $root 'VariantCatalog.json';Assert-ZHNoLink $path
     $catalog=Get-Content -LiteralPath $path -Raw -Encoding UTF8|ConvertFrom-Json
-    if($catalog.SchemaVersion-ne 2 -or $catalog.PackageVersion-ne '2.1.0' -or $catalog.RuntimeProtocol-ne 2 -or $catalog.PackageReady-isnot [bool] -or $catalog.DefaultCharacterId-ne 'player' -or $catalog.FingerprintAlgorithm-ne 'SHA256-character-path-hash-lines-ordinal-v1' -or @($catalog.Characters).Count-ne $script:CharacterIds.Count){throw '多角色目录协议无效，请重新完整解压正式安装包。'}
+    if($catalog.SchemaVersion-ne 2 -or $catalog.PackageVersion-ne '2.2.0' -or $catalog.RuntimeProtocol-ne 2 -or $catalog.PackageReady-isnot [bool] -or $catalog.DefaultCharacterId-ne 'player' -or $catalog.FingerprintAlgorithm-ne 'SHA256-character-path-hash-lines-ordinal-v1' -or @($catalog.Characters).Count-ne $script:CharacterIds.Count){throw '多角色目录协议无效，请重新完整解压正式安装包。'}
     $ids=@{};$sources=@{}
     foreach($character in @($catalog.Characters)){
         if($character.Id-notin $script:CharacterIds -or $ids.ContainsKey($character.Id) -or $character.RuntimeBindingId-ne $character.Id -or [string]::IsNullOrWhiteSpace($character.DisplayName)){throw '角色目录包含未知、重复或不匹配的身份。'}

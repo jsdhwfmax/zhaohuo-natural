@@ -1,0 +1,43 @@
+{
+  "Prompt": "Use case: identity-preserve. Asset: one transparent dialogue portrait sprite for 活侠传 / Legend of Mortal.\nImage 1 is the ORIGINAL GAME expression target: its pose, action, expression, prop positions, injury marks, framing, simple coarse black ink outlines and sparse broad flat watercolor shading have highest priority.\nImage 2 is the approved hardman NORMAL identity: borrow only the exact rugged adult male face and slightly broader strong torso, NOT its neutral expression or arms-down pose when the target differs. Same man about 30–35: broad angular jaw, sturdy cheek planes, thick brows, small eyes, warm skin, clearly visible short dark stubble, swept long Chinese hair tied in ponytail. Preserve readable identity across expressions.\nKeep ORIGINAL GAME blue-grey Tangmen cloth robe, light blue lapel, off-white inner collar, blue waist sash, purple-brown forearm guards; preserve all expression-specific changes visible in image1. Keep details as simple as the original game: rough contour/fold ink, limited flat color blocks and understated pencil texture. No dense crosshatching, glossy realism, cinematic lighting, ornate texture, 3D or modern anime.\nTall 1060x1700-like composition, same original head-to-lower-robe view and generous clear space above. Full head/hair, hands and sleeve sides not cut off; original bottom robe/prop crop may remain. ONE character only. Real transparent PNG alpha, no scenery, solid background, checkerboard, text, signature or border. Ignore any invisible-alpha export artifacts in the raw source.\nEXPRESSION eye_mask_nervous1: preserve the off-white cloth BLINDFOLD fully covering both eyes horizontally, tied behind head with the long ends hanging at image-right beside ponytail. Mouth open nervously, brows anxious above blindfold and visible sweat droplet. Left-in-image forearm angles forward with loosely flexed uncertain fingers, other hand hangs down. Clean clothing, no blood and no weapon. Do not erase the blindfold to show the master's eyes. Maintain exact original pose and comical uncertainty.",
+  "References": [
+    {
+      "LogicalName": "local-game-reference/eye_mask_nervous1.png",
+      "Kind": "original-game-reference-not-distributed"
+    },
+    {
+      "LogicalName": "generated-hardman-reference/normal-v2.png",
+      "Kind": "generated-design-reference"
+    }
+  ],
+  "GeneratedSourceBasename": "exec-16fb2623-ac19-4d71-abc3-826fac291d55.png",
+  "RecordedOutputSHA256": "1E4408C130029BFA51916F3263A8A1DC40EF8D2B1E6CB371BB6F41381F085647",
+  "SchemaVersion": 1,
+  "CharacterId": "player",
+  "VariantId": "hardman",
+  "Name": "eye_mask_nervous1.png",
+  "GenerationMethod": "builtin imagegen",
+  "PixelPostProcessing": false,
+  "OutputPath": "Variants/player/hardman/Portraits/eye_mask_nervous1.png",
+  "OutputSHA256": "1E4408C130029BFA51916F3263A8A1DC40EF8D2B1E6CB371BB6F41381F085647",
+  "RawGeneratedCopyVerified": true,
+  "OriginalGameReferenceDistributed": false,
+  "SourceRecordBasename": "eye_mask_nervous1.json",
+  "SourceRecordSHA256": "0FE64595BD8541C5BF4218FC0C46D972AC086C6DC21402A356065C5945781CFB",
+  "VisualReview": "passed before integration; runtime acceptance is separate",
+  "ReviewNotes": "Blindfold and hanging ties preserved; open nervous mouth, forward low hand; no eye exposure or weapon.",
+  "ImageMetadata": {
+    "Width": 991,
+    "Height": 1588,
+    "Mode": "RGBA",
+    "AlphaMin": 0,
+    "AlphaMax": 255,
+    "AlphaBoundsGt16": [
+      64,
+      204,
+      950,
+      1588
+    ],
+    "Bytes": 1597601
+  }
+}

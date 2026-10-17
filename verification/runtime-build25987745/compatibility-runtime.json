@@ -1,0 +1,579 @@
+{
+  "Passed": true,
+  "ActualGameRun": true,
+  "RuntimeVersion": "2.1.0",
+  "PackageVersion": "2.2.0",
+  "CurrentPlayerVariant": "xianxia",
+  "BuildId": "25987745",
+  "GameBuildId": "25987745",
+  "GameVersion": "release_1.0.6000.3",
+  "GameBuildIdUnchanged": true,
+  "PluginSha256": "AEEE02AC56DCDCB1E683D6356AC28FE19E61AF861D5663ACFFD1B83984F06957",
+  "CatalogSha256": "4757E87DD043E145C9F8E744E0A04B13CE938A1C94811A0C0D27BCA7B1A2D5C8",
+  "Characters": [
+    {
+      "Id": "player",
+      "Passed": true,
+      "OriginalDisabled": true,
+      "NonTargetUnchanged": true
+    },
+    {
+      "Id": "tang-buyi",
+      "Passed": true,
+      "OriginalDisabled": true,
+      "NonTargetUnchanged": true
+    },
+    {
+      "Id": "xiahou-lan",
+      "Passed": true,
+      "OriginalDisabled": true,
+      "NonTargetUnchanged": true
+    },
+    {
+      "Id": "tang-moling",
+      "Passed": true,
+      "OriginalDisabled": true,
+      "NonTargetUnchanged": true
+    },
+    {
+      "Id": "long-xiang",
+      "Passed": true,
+      "OriginalDisabled": true,
+      "NonTargetUnchanged": true
+    },
+    {
+      "Id": "yu-xiaomei",
+      "Passed": true,
+      "OriginalDisabled": true,
+      "NonTargetUnchanged": true
+    },
+    {
+      "Id": "tang-zheng",
+      "Passed": true,
+      "OriginalDisabled": true,
+      "NonTargetUnchanged": true
+    }
+  ],
+  "TestedVariants": [
+    {
+      "CharacterId": "long-xiang",
+      "VariantId": "refined",
+      "Passed": true
+    },
+    {
+      "CharacterId": "player",
+      "VariantId": "hardman",
+      "Passed": true
+    },
+    {
+      "CharacterId": "player",
+      "VariantId": "xianxia",
+      "Passed": true
+    },
+    {
+      "CharacterId": "tang-buyi",
+      "VariantId": "female",
+      "Passed": true
+    },
+    {
+      "CharacterId": "tang-buyi",
+      "VariantId": "refined",
+      "Passed": true
+    },
+    {
+      "CharacterId": "tang-moling",
+      "VariantId": "refined",
+      "Passed": true
+    },
+    {
+      "CharacterId": "tang-zheng",
+      "VariantId": "female",
+      "Passed": true
+    },
+    {
+      "CharacterId": "xiahou-lan",
+      "VariantId": "refined",
+      "Passed": true
+    },
+    {
+      "CharacterId": "yu-xiaomei",
+      "VariantId": "refined",
+      "Passed": true
+    }
+  ],
+  "Runs": [
+    {
+      "DateUtc": "2026-10-17T03:02:00.3606303Z",
+      "GameBuildId": "25987745",
+      "GameVersion": "release_1.0.6000.3",
+      "GameBuildIdUnchanged": true,
+      "PlayerVariant": "xianxia",
+      "TangBuyiVariant": "female",
+      "AllOriginal": false,
+      "Selections": {
+        "player": "xianxia",
+        "tang-buyi": "female",
+        "xiahou-lan": "refined",
+        "tang-moling": "refined",
+        "long-xiang": "refined",
+        "yu-xiaomei": "refined",
+        "tang-zheng": "female"
+      },
+      "ObservedSeconds": 70.1,
+      "Player": {
+        "Resources": 50,
+        "Replaced": 47,
+        "OriginalFallback": 3,
+        "AvatarBranches": 2,
+        "AvatarReplaced": 2,
+        "NonTargetUnchanged": true
+      },
+      "Characters": [
+        {
+          "Id": "tang-buyi",
+          "VariantId": "female",
+          "BaseResources": 16,
+          "Replaced": 15,
+          "OriginalFallback": 1,
+          "BulkResources": 16,
+          "AdultAliases": 2,
+          "NegativeControls": 2,
+          "Passed": true
+        },
+        {
+          "Id": "xiahou-lan",
+          "VariantId": "refined",
+          "BaseResources": 16,
+          "Replaced": 15,
+          "OriginalFallback": 1,
+          "BulkResources": 16,
+          "AdultAliases": 1,
+          "NegativeControls": 2,
+          "Passed": true
+        },
+        {
+          "Id": "tang-moling",
+          "VariantId": "refined",
+          "BaseResources": 16,
+          "Replaced": 15,
+          "OriginalFallback": 1,
+          "BulkResources": 16,
+          "AdultAliases": 0,
+          "NegativeControls": 2,
+          "Passed": true
+        },
+        {
+          "Id": "long-xiang",
+          "VariantId": "refined",
+          "BaseResources": 22,
+          "Replaced": 21,
+          "OriginalFallback": 1,
+          "BulkResources": 22,
+          "AdultAliases": 1,
+          "NegativeControls": 2,
+          "Passed": true
+        },
+        {
+          "Id": "yu-xiaomei",
+          "VariantId": "refined",
+          "BaseResources": 28,
+          "Replaced": 25,
+          "OriginalFallback": 3,
+          "BulkResources": 28,
+          "AdultAliases": 0,
+          "NegativeControls": 16,
+          "Passed": true
+        },
+        {
+          "Id": "tang-zheng",
+          "VariantId": "female",
+          "BaseResources": 12,
+          "Replaced": 12,
+          "OriginalFallback": 0,
+          "BulkResources": 12,
+          "AdultAliases": 0,
+          "NegativeControls": 2,
+          "Passed": true
+        }
+      ]
+    },
+    {
+      "DateUtc": "2026-10-17T03:04:24.6556237Z",
+      "GameBuildId": "25987745",
+      "GameVersion": "release_1.0.6000.3",
+      "GameBuildIdUnchanged": true,
+      "PlayerVariant": "xianxia",
+      "TangBuyiVariant": "refined",
+      "AllOriginal": false,
+      "Selections": {
+        "player": "xianxia",
+        "tang-buyi": "refined",
+        "xiahou-lan": "refined",
+        "tang-moling": "refined",
+        "long-xiang": "refined",
+        "yu-xiaomei": "refined",
+        "tang-zheng": "female"
+      },
+      "ObservedSeconds": 63.3,
+      "Player": {
+        "Resources": 50,
+        "Replaced": 47,
+        "OriginalFallback": 3,
+        "AvatarBranches": 2,
+        "AvatarReplaced": 2,
+        "NonTargetUnchanged": true
+      },
+      "Characters": [
+        {
+          "Id": "tang-buyi",
+          "VariantId": "refined",
+          "BaseResources": 16,
+          "Replaced": 15,
+          "OriginalFallback": 1,
+          "BulkResources": 16,
+          "AdultAliases": 2,
+          "NegativeControls": 2,
+          "Passed": true
+        },
+        {
+          "Id": "xiahou-lan",
+          "VariantId": "refined",
+          "BaseResources": 16,
+          "Replaced": 15,
+          "OriginalFallback": 1,
+          "BulkResources": 16,
+          "AdultAliases": 1,
+          "NegativeControls": 2,
+          "Passed": true
+        },
+        {
+          "Id": "tang-moling",
+          "VariantId": "refined",
+          "BaseResources": 16,
+          "Replaced": 15,
+          "OriginalFallback": 1,
+          "BulkResources": 16,
+          "AdultAliases": 0,
+          "NegativeControls": 2,
+          "Passed": true
+        },
+        {
+          "Id": "long-xiang",
+          "VariantId": "refined",
+          "BaseResources": 22,
+          "Replaced": 21,
+          "OriginalFallback": 1,
+          "BulkResources": 22,
+          "AdultAliases": 1,
+          "NegativeControls": 2,
+          "Passed": true
+        },
+        {
+          "Id": "yu-xiaomei",
+          "VariantId": "refined",
+          "BaseResources": 28,
+          "Replaced": 25,
+          "OriginalFallback": 3,
+          "BulkResources": 28,
+          "AdultAliases": 0,
+          "NegativeControls": 16,
+          "Passed": true
+        },
+        {
+          "Id": "tang-zheng",
+          "VariantId": "female",
+          "BaseResources": 12,
+          "Replaced": 12,
+          "OriginalFallback": 0,
+          "BulkResources": 12,
+          "AdultAliases": 0,
+          "NegativeControls": 2,
+          "Passed": true
+        }
+      ]
+    },
+    {
+      "DateUtc": "2026-10-17T03:10:16.4902806Z",
+      "GameBuildId": "25987745",
+      "GameVersion": "release_1.0.6000.3",
+      "GameBuildIdUnchanged": true,
+      "PlayerVariant": "hardman",
+      "TangBuyiVariant": "female",
+      "AllOriginal": false,
+      "Selections": {
+        "player": "hardman",
+        "tang-buyi": "female",
+        "xiahou-lan": "refined",
+        "tang-moling": "refined",
+        "long-xiang": "refined",
+        "yu-xiaomei": "refined",
+        "tang-zheng": "female"
+      },
+      "ObservedSeconds": 65.8,
+      "Player": {
+        "Resources": 50,
+        "Replaced": 47,
+        "OriginalFallback": 3,
+        "AvatarBranches": 2,
+        "AvatarReplaced": 2,
+        "NonTargetUnchanged": true
+      },
+      "Characters": [
+        {
+          "Id": "tang-buyi",
+          "VariantId": "female",
+          "BaseResources": 16,
+          "Replaced": 15,
+          "OriginalFallback": 1,
+          "BulkResources": 16,
+          "AdultAliases": 2,
+          "NegativeControls": 2,
+          "Passed": true
+        },
+        {
+          "Id": "xiahou-lan",
+          "VariantId": "refined",
+          "BaseResources": 16,
+          "Replaced": 15,
+          "OriginalFallback": 1,
+          "BulkResources": 16,
+          "AdultAliases": 1,
+          "NegativeControls": 2,
+          "Passed": true
+        },
+        {
+          "Id": "tang-moling",
+          "VariantId": "refined",
+          "BaseResources": 16,
+          "Replaced": 15,
+          "OriginalFallback": 1,
+          "BulkResources": 16,
+          "AdultAliases": 0,
+          "NegativeControls": 2,
+          "Passed": true
+        },
+        {
+          "Id": "long-xiang",
+          "VariantId": "refined",
+          "BaseResources": 22,
+          "Replaced": 21,
+          "OriginalFallback": 1,
+          "BulkResources": 22,
+          "AdultAliases": 1,
+          "NegativeControls": 2,
+          "Passed": true
+        },
+        {
+          "Id": "yu-xiaomei",
+          "VariantId": "refined",
+          "BaseResources": 28,
+          "Replaced": 25,
+          "OriginalFallback": 3,
+          "BulkResources": 28,
+          "AdultAliases": 0,
+          "NegativeControls": 16,
+          "Passed": true
+        },
+        {
+          "Id": "tang-zheng",
+          "VariantId": "female",
+          "BaseResources": 12,
+          "Replaced": 12,
+          "OriginalFallback": 0,
+          "BulkResources": 12,
+          "AdultAliases": 0,
+          "NegativeControls": 2,
+          "Passed": true
+        }
+      ]
+    },
+    {
+      "DateUtc": "2026-10-17T03:13:36.5320110Z",
+      "GameBuildId": "25987745",
+      "GameVersion": "release_1.0.6000.3",
+      "GameBuildIdUnchanged": true,
+      "PlayerVariant": "original",
+      "TangBuyiVariant": "original",
+      "AllOriginal": true,
+      "Selections": {
+        "player": "original",
+        "tang-buyi": "original",
+        "xiahou-lan": "original",
+        "tang-moling": "original",
+        "long-xiang": "original",
+        "yu-xiaomei": "original",
+        "tang-zheng": "original"
+      },
+      "ObservedSeconds": 45.8,
+      "Player": {
+        "Resources": 50,
+        "Replaced": 0,
+        "OriginalFallback": 50,
+        "AvatarBranches": 2,
+        "AvatarReplaced": 0,
+        "NonTargetUnchanged": true
+      },
+      "Characters": [
+        {
+          "Id": "tang-buyi",
+          "VariantId": "original",
+          "BaseResources": 16,
+          "Replaced": 0,
+          "OriginalFallback": 16,
+          "BulkResources": 16,
+          "AdultAliases": 2,
+          "NegativeControls": 2,
+          "Passed": true
+        },
+        {
+          "Id": "xiahou-lan",
+          "VariantId": "original",
+          "BaseResources": 16,
+          "Replaced": 0,
+          "OriginalFallback": 16,
+          "BulkResources": 16,
+          "AdultAliases": 1,
+          "NegativeControls": 2,
+          "Passed": true
+        },
+        {
+          "Id": "tang-moling",
+          "VariantId": "original",
+          "BaseResources": 16,
+          "Replaced": 0,
+          "OriginalFallback": 16,
+          "BulkResources": 16,
+          "AdultAliases": 0,
+          "NegativeControls": 2,
+          "Passed": true
+        },
+        {
+          "Id": "long-xiang",
+          "VariantId": "original",
+          "BaseResources": 22,
+          "Replaced": 0,
+          "OriginalFallback": 22,
+          "BulkResources": 22,
+          "AdultAliases": 1,
+          "NegativeControls": 2,
+          "Passed": true
+        },
+        {
+          "Id": "yu-xiaomei",
+          "VariantId": "original",
+          "BaseResources": 28,
+          "Replaced": 0,
+          "OriginalFallback": 28,
+          "BulkResources": 28,
+          "AdultAliases": 0,
+          "NegativeControls": 16,
+          "Passed": true
+        },
+        {
+          "Id": "tang-zheng",
+          "VariantId": "original",
+          "BaseResources": 12,
+          "Replaced": 0,
+          "OriginalFallback": 12,
+          "BulkResources": 12,
+          "AdultAliases": 0,
+          "NegativeControls": 2,
+          "Passed": true
+        }
+      ]
+    }
+  ],
+  "NormalStartupObservedSeconds": 92,
+  "EvidenceFiles": [
+    {
+      "Path": "verification/runtime-build25987745/all-on/PASS.txt",
+      "Sha256": "4FEE0DEB806FE54445FEA547F4BE5D1E3E342F602BAFC6863F6DF20E79AB7597"
+    },
+    {
+      "Path": "verification/runtime-build25987745/all-on/portraits.tsv",
+      "Sha256": "669735E11AB78C57B98B380B91CDD7BDDFD4F28D0F66AB6DDCB4CBC6CB248165"
+    },
+    {
+      "Path": "verification/runtime-build25987745/all-on/characters.tsv",
+      "Sha256": "10C6E725C7395377C11D50E21357C5C59D812826C670AE0E1B1CF8C50972FF99"
+    },
+    {
+      "Path": "verification/runtime-build25987745/all-on/characters-summary.txt",
+      "Sha256": "3B25A5B899739FB0D8940F44E26D74BF953E94B3111D34CBE184BE989265633D"
+    },
+    {
+      "Path": "verification/runtime-build25987745/brother-refined/PASS.txt",
+      "Sha256": "4FEE0DEB806FE54445FEA547F4BE5D1E3E342F602BAFC6863F6DF20E79AB7597"
+    },
+    {
+      "Path": "verification/runtime-build25987745/brother-refined/portraits.tsv",
+      "Sha256": "669735E11AB78C57B98B380B91CDD7BDDFD4F28D0F66AB6DDCB4CBC6CB248165"
+    },
+    {
+      "Path": "verification/runtime-build25987745/brother-refined/characters.tsv",
+      "Sha256": "10C6E725C7395377C11D50E21357C5C59D812826C670AE0E1B1CF8C50972FF99"
+    },
+    {
+      "Path": "verification/runtime-build25987745/brother-refined/characters-summary.txt",
+      "Sha256": "3B25A5B899739FB0D8940F44E26D74BF953E94B3111D34CBE184BE989265633D"
+    },
+    {
+      "Path": "verification/runtime-build25987745/hardman/PASS.txt",
+      "Sha256": "4FEE0DEB806FE54445FEA547F4BE5D1E3E342F602BAFC6863F6DF20E79AB7597"
+    },
+    {
+      "Path": "verification/runtime-build25987745/hardman/portraits.tsv",
+      "Sha256": "669735E11AB78C57B98B380B91CDD7BDDFD4F28D0F66AB6DDCB4CBC6CB248165"
+    },
+    {
+      "Path": "verification/runtime-build25987745/hardman/characters.tsv",
+      "Sha256": "10C6E725C7395377C11D50E21357C5C59D812826C670AE0E1B1CF8C50972FF99"
+    },
+    {
+      "Path": "verification/runtime-build25987745/hardman/characters-summary.txt",
+      "Sha256": "3B25A5B899739FB0D8940F44E26D74BF953E94B3111D34CBE184BE989265633D"
+    },
+    {
+      "Path": "verification/runtime-build25987745/original/PASS.txt",
+      "Sha256": "063003511BC9455229639EF5C8A9F3C46C29829C6C1719A0B11351179BCB210A"
+    },
+    {
+      "Path": "verification/runtime-build25987745/original/portraits.tsv",
+      "Sha256": "A0E8A22239F55FC2585ECA7919EBB11153A6EDF6B1E4932C34A2F56A5AC1597B"
+    },
+    {
+      "Path": "verification/runtime-build25987745/original/characters.tsv",
+      "Sha256": "DAAC28E014A6A1D875B1E893AF0C737EA16AB9B5062138C57EC280AA45866619"
+    },
+    {
+      "Path": "verification/runtime-build25987745/original/characters-summary.txt",
+      "Sha256": "56023439EEE9E1230467B7ECE38612AED0BF0FDFB277100AC81BC352C4AAB51C"
+    },
+    {
+      "Path": "verification/runtime-build25987745/normal-startup.json",
+      "Sha256": "A45BAB51966B2DB10ACC4BAB339233D16972509319FD698E2BDCE7A1EDA4013F"
+    },
+    {
+      "Path": "verification/runtime-build25987745/normal-startup.log.txt",
+      "Sha256": "6BE639562FF326E607B6DDAC198AD70D3D57D869189DF6AF8CE2FD63D2B45C5E"
+    },
+    {
+      "Path": "verification/runtime-build25987745/visual-review.json",
+      "Sha256": "82B72F1B76C35DC995AB0C2376D420072B37F21C48E91AF09FBCBC5678D0FD84"
+    },
+    {
+      "Path": "verification/runtime-build25987745/installation-preservation.json",
+      "Sha256": "5F10A8A3C3D6B6CB2FFEBCCAF7DA17135A8DFB11DB2C22B178A7324B9497BEF6"
+    }
+  ],
+  "Scope": "Actual Steam build 25987745/release_1.0.6000.3 with unchanged runtime 2.1.0 and manager 2.2.0. Four diagnostic runs cover nine selected appearances including hardman, six NPCs, Tang Buyi refined/female, and all seven original modes. Real Addressables, Setup, sync/async, UI sprites, avatar branches, bulk loading, aliases and negative identity controls. Normal startup observed at least 90 seconds; screenshot review recorded. Existing selections, first backup, saves, other plugins and game files preserved. No story/save loaded; no full-route playthrough. Other five unchanged Zhao Huo appearances retain historical artwork/runtime evidence, not newly claimed as tested on this build.",
+  "NormalSteamStartup": {
+    "Passed": true,
+    "SelftestArgumentPresent": false,
+    "StillRunning": true,
+    "Responding": true,
+    "ObservedSeconds": 92,
+    "PluginReady": true,
+    "PluginErrorLines": 0
+  }
+}

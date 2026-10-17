@@ -1,0 +1,43 @@
+{
+  "Prompt": "Use case: identity-preserve. Asset: one transparent dialogue portrait sprite for 活侠传 / Legend of Mortal.\nImage 1 is the ORIGINAL GAME expression target: its pose, action, expression, prop positions, injury marks, framing, simple coarse black ink outlines and sparse broad flat watercolor shading have highest priority.\nImage 2 is the approved hardman NORMAL identity: borrow only the exact rugged adult male face and slightly broader strong torso, NOT its neutral expression or arms-down pose when the target differs. Same man about 30–35: broad angular jaw, sturdy cheek planes, thick brows, small eyes, warm skin, clearly visible short dark stubble, swept long Chinese hair tied in ponytail. Preserve readable identity across expressions.\nKeep ORIGINAL GAME blue-grey Tangmen cloth robe, light blue lapel, off-white inner collar, blue waist sash, purple-brown forearm guards; preserve all expression-specific changes visible in image1. Keep details as simple as the original game: rough contour/fold ink, limited flat color blocks and understated pencil texture. No dense crosshatching, glossy realism, cinematic lighting, ornate texture, 3D or modern anime.\nTall 1060x1700-like composition, same original head-to-lower-robe view and generous clear space above. Full head/hair, hands and sleeve sides not cut off; original bottom robe/prop crop may remain. ONE character only. Real transparent PNG alpha, no scenery, solid background, checkerboard, text, signature or border. Ignore any invisible-alpha export artifacts in the raw source.\nEXPRESSION blood: preserve the weary concerned injured face, tense raised eyebrows and small partly open mouth, small red cuts on forehead, cheek and chin, sweat, sparse battle stains on collar/shoulder/waist/hands. Preserve the sword held low by the hand at image-right: broad silver blade lies diagonally across the bottom of the portrait. Other hand lowered. Upright standing pose, not attacking and not smiling.",
+  "References": [
+    {
+      "LogicalName": "local-game-reference/blood.png",
+      "Kind": "original-game-reference-not-distributed"
+    },
+    {
+      "LogicalName": "generated-hardman-reference/normal-v2.png",
+      "Kind": "generated-design-reference"
+    }
+  ],
+  "GeneratedSourceBasename": "exec-3f56eb87-e563-401c-8378-4d9a160d934a.png",
+  "RecordedOutputSHA256": "5C7B40CEB8EC6B03A8C5ED7E4B4479A8E71205255FF2403B709D940F5FECA819",
+  "SchemaVersion": 1,
+  "CharacterId": "player",
+  "VariantId": "hardman",
+  "Name": "blood.png",
+  "GenerationMethod": "builtin imagegen",
+  "PixelPostProcessing": false,
+  "OutputPath": "Variants/player/hardman/Portraits/blood.png",
+  "OutputSHA256": "5C7B40CEB8EC6B03A8C5ED7E4B4479A8E71205255FF2403B709D940F5FECA819",
+  "RawGeneratedCopyVerified": true,
+  "OriginalGameReferenceDistributed": false,
+  "SourceRecordBasename": "blood.json",
+  "SourceRecordSHA256": "2675B74860C8B0D36CBEFD8B26D5113ED20F26F596F835B8B0956B0464D2226B",
+  "VisualReview": "passed before integration; runtime acceptance is separate",
+  "ReviewNotes": "Worried weary injured expression and low diagonal silver sword preserved; differs from laughing variant.",
+  "ImageMetadata": {
+    "Width": 991,
+    "Height": 1587,
+    "Mode": "RGBA",
+    "AlphaMin": 0,
+    "AlphaMax": 255,
+    "AlphaBoundsGt16": [
+      128,
+      245,
+      944,
+      1587
+    ],
+    "Bytes": 1582908
+  }
+}

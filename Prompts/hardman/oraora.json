@@ -1,0 +1,43 @@
+{
+  "Prompt": "Use case: precise-object-edit.\nAsset: ONE transparent dialogue portrait from 活侠传 / Legend of Mortal.\nImage 1 is the original game's specific expression/action sprite and the PRIMARY edit target. Its pose, composition, framing, emotion, hands, props, blood, sweat and effects take priority. Do not replace this action with normal standing pose.\nImage 2 is the approved HARDMAN NORMAL master, used only for identity: rugged angular jaw, thick brows, small strong eyes, warm complexion, short dark stubble, sturdy adult man about 30–35, modestly broad shoulders. Match that same man, not the original comic face. Use the original Tangmen blue-grey robe with lighter blue lapel, off-white inner collar, blue sash and purple-brown forearm guards wherever visible.\nSTYLE PRIORITY: preserve Image 1's original coarse black contours and sparse pencil irregularity, simple large flat color and shadow blocks, restrained watercolor. Match the game's original plain rendering, NOT dense cloth weave, ornate/detail-heavy repaint, photorealistic skin, 3D, smooth modern anime or heavy oil painting.\nPreserve the exact story/emotion meaning and important silhouette of Image 1 while replacing facial identity and slightly strengthening build. The master is NOT the source of expression. Do not invent extra items or people.\nOutput one isolated PNG with true transparent alpha. Preserve source canvas aspect and relative transparent whitespace as much as possible. Keep complete hair/top and left/right extremities, props and effects within a clear transparent border. Bottom crop only where original has a crop. No text, frame, background, checkerboard, ground shadow or second figure.\nFraming guard: leave at least 5% of canvas width genuinely transparent outside the leftmost/rightmost visible silhouette, and at least 4% above the highest hair or raised hand. Zoom out to make room; do not crop to fill the output.\nSpecific state: comic repeated head blows. ONE body and TWO overlapping translucent head afterimages snapping left and right, rolling white eyes, open dazed mouths, directional streaks and white mouth spray. The duplicate heads are intentional motion afterimages, not two people. Preserve double-image motion effect and hands down; do not simplify to a single static normal face.",
+  "References": [
+    {
+      "LogicalName": "local-game-reference/oraora.png",
+      "Kind": "original-game-reference-not-distributed"
+    },
+    {
+      "LogicalName": "generated-hardman-reference/normal-v2.png",
+      "Kind": "generated-design-reference"
+    }
+  ],
+  "GeneratedSourceBasename": "exec-dc3dcff6-f7ef-47a7-ace3-f28bbae3de7c.png",
+  "RecordedOutputSHA256": "7BEEC3B58C733E6E3773E2A9B0A9C600BAEB9A16EA7B64E532F132EA601987B7",
+  "SchemaVersion": 1,
+  "CharacterId": "player",
+  "VariantId": "hardman",
+  "Name": "oraora.png",
+  "GenerationMethod": "builtin imagegen",
+  "PixelPostProcessing": false,
+  "OutputPath": "Variants/player/hardman/Portraits/oraora.png",
+  "OutputSHA256": "7BEEC3B58C733E6E3773E2A9B0A9C600BAEB9A16EA7B64E532F132EA601987B7",
+  "RawGeneratedCopyVerified": true,
+  "OriginalGameReferenceDistributed": false,
+  "SourceRecordBasename": "oraora.json",
+  "SourceRecordSHA256": "F8FD73525E08435A77E10ECC0BFECAF80056882D0AD67FBDDA391AC750158CF6",
+  "VisualReview": "passed before integration; runtime acceptance is separate",
+  "ReviewNotes": "Two intentional translucent head motion afterimages on one body; rolling eyes and white spray preserved.",
+  "ImageMetadata": {
+    "Width": 991,
+    "Height": 1588,
+    "Mode": "RGBA",
+    "AlphaMin": 0,
+    "AlphaMax": 255,
+    "AlphaBoundsGt16": [
+      80,
+      254,
+      936,
+      1588
+    ],
+    "Bytes": 1781219
+  }
+}

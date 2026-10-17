@@ -1,0 +1,43 @@
+{
+  "Prompt": "Use case: precise-object-edit.\nAsset: ONE transparent dialogue portrait from 活侠传 / Legend of Mortal.\nImage 1 is the original game's specific expression/action sprite and the PRIMARY edit target. Its pose, composition, framing, emotion, hands, props, blood, sweat and effects take priority. Do not replace this action with normal standing pose.\nImage 2 is the approved HARDMAN NORMAL master, used only for identity: rugged angular jaw, thick brows, small strong eyes, warm complexion, short dark stubble, sturdy adult man about 30–35, modestly broad shoulders. Match that same man, not the original comic face. Use the original Tangmen blue-grey robe with lighter blue lapel, off-white inner collar, blue sash and purple-brown forearm guards wherever visible.\nSTYLE PRIORITY: preserve Image 1's original coarse black contours and sparse pencil irregularity, simple large flat color and shadow blocks, restrained watercolor. Match the game's original plain rendering, NOT dense cloth weave, ornate/detail-heavy repaint, photorealistic skin, 3D, smooth modern anime or heavy oil painting.\nPreserve the exact story/emotion meaning and important silhouette of Image 1 while replacing facial identity and slightly strengthening build. The master is NOT the source of expression. Do not invent extra items or people.\nOutput one isolated PNG with true transparent alpha. Preserve source canvas aspect and relative transparent whitespace as much as possible. Keep complete hair/top and left/right extremities, props and effects within a clear transparent border. Bottom crop only where original has a crop. No text, frame, background, checkerboard, ground shadow or second figure.\nFraming guard: leave at least 5% of canvas width genuinely transparent outside the leftmost/rightmost visible silhouette, and at least 4% above the highest hair or raised hand. Zoom out to make room; do not crop to fill the output.\nSpecific state: mischievous creepy comic hunched stance leaning forward, both hands raised at chest like curled claws, huge open mischievous grin, eyebrows lifted, eyes sly. Preserve hand anatomy and energetic pose and comic stretched expression but same rugged man/stubble. No added weapon for this version.",
+  "References": [
+    {
+      "LogicalName": "local-game-reference/suck1.png",
+      "Kind": "original-game-reference-not-distributed"
+    },
+    {
+      "LogicalName": "generated-hardman-reference/normal-v2.png",
+      "Kind": "generated-design-reference"
+    }
+  ],
+  "GeneratedSourceBasename": "exec-e96636ef-82be-47a7-93aa-32530eeaa1a6.png",
+  "RecordedOutputSHA256": "D820C292F6F96675BCA5799255428C2782DAE57B416BCB318B5CFB70BA7C13BF",
+  "SchemaVersion": 1,
+  "CharacterId": "player",
+  "VariantId": "hardman",
+  "Name": "suck1.png",
+  "GenerationMethod": "builtin imagegen",
+  "PixelPostProcessing": false,
+  "OutputPath": "Variants/player/hardman/Portraits/suck1.png",
+  "OutputSHA256": "D820C292F6F96675BCA5799255428C2782DAE57B416BCB318B5CFB70BA7C13BF",
+  "RawGeneratedCopyVerified": true,
+  "OriginalGameReferenceDistributed": false,
+  "SourceRecordBasename": "suck1.json",
+  "SourceRecordSHA256": "C83F40E07A01FD9A7B143E6483954EC28EC944C8D6D5A918AC3915863C7BEA96",
+  "VisualReview": "passed before integration; runtime acceptance is separate",
+  "ReviewNotes": "Forward hunched pose, curled claw hands and mischievous open grin retained.",
+  "ImageMetadata": {
+    "Width": 991,
+    "Height": 1588,
+    "Mode": "RGBA",
+    "AlphaMin": 0,
+    "AlphaMax": 255,
+    "AlphaBoundsGt16": [
+      115,
+      284,
+      959,
+      1588
+    ],
+    "Bytes": 1474699
+  }
+}

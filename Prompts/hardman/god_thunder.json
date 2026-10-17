@@ -1,0 +1,43 @@
+{
+  "Prompt": "Use case: precise-object-edit.\nAsset: ONE transparent dialogue portrait from 活侠传 / Legend of Mortal.\nImage 1 is the original game's specific expression/action sprite and the PRIMARY edit target. Its pose, composition, framing, emotion, hands, props, blood, sweat and effects take priority. Do not replace this action with normal standing pose.\nImage 2 is the approved HARDMAN NORMAL master, used only for identity: rugged angular jaw, thick brows, small strong eyes, warm complexion, short dark stubble, sturdy adult man about 30–35, modestly broad shoulders. Match that same man, not the original comic face. Use the original Tangmen blue-grey robe with lighter blue lapel, off-white inner collar, blue sash and purple-brown forearm guards wherever visible.\nSTYLE PRIORITY: preserve Image 1's original coarse black contours and sparse pencil irregularity, simple large flat color and shadow blocks, restrained watercolor. Match the game's original plain rendering, NOT dense cloth weave, ornate/detail-heavy repaint, photorealistic skin, 3D, smooth modern anime or heavy oil painting.\nPreserve the exact story/emotion meaning and important silhouette of Image 1 while replacing facial identity and slightly strengthening build. The master is NOT the source of expression. Do not invent extra items or people.\nOutput one isolated PNG with true transparent alpha. Preserve source canvas aspect and relative transparent whitespace as much as possible. Keep complete hair/top and left/right extremities, props and effects within a clear transparent border. Bottom crop only where original has a crop. No text, frame, background, checkerboard, ground shadow or second figure.\nSpecific state: weary but alert after battle, looking upward, mouth slightly open, forehead sweat and face scratches/blood; blue robe has blood stains. Keep sword held low on image-left and bloody hand on image-right. No invented thunder.",
+  "References": [
+    {
+      "LogicalName": "local-game-reference/god_thunder.png",
+      "Kind": "original-game-reference-not-distributed"
+    },
+    {
+      "LogicalName": "generated-hardman-reference/normal-v2.png",
+      "Kind": "generated-design-reference"
+    }
+  ],
+  "GeneratedSourceBasename": "exec-aa2c593f-a40c-4ad8-887e-bef7850d8906.png",
+  "RecordedOutputSHA256": "5403476003C9BC3B672E833B6ED4D748A15AE7D7164D23FFA4F0F1AC20465507",
+  "SchemaVersion": 1,
+  "CharacterId": "player",
+  "VariantId": "hardman",
+  "Name": "god_thunder.png",
+  "GenerationMethod": "builtin imagegen",
+  "PixelPostProcessing": false,
+  "OutputPath": "Variants/player/hardman/Portraits/god_thunder.png",
+  "OutputSHA256": "5403476003C9BC3B672E833B6ED4D748A15AE7D7164D23FFA4F0F1AC20465507",
+  "RawGeneratedCopyVerified": true,
+  "OriginalGameReferenceDistributed": false,
+  "SourceRecordBasename": "god_thunder.json",
+  "SourceRecordSHA256": "74ECEED9D64FD9FD08A13588881B8358D101F5FAB4893D7976D05A140A8EDD6E",
+  "VisualReview": "passed before integration; runtime acceptance is separate",
+  "ReviewNotes": "Weary upward-alert injured face, blood/sweat, low sword on image-left and bloody opposite hand retained. Sword meets lower-left canvas as in original.",
+  "ImageMetadata": {
+    "Width": 1105,
+    "Height": 1423,
+    "Mode": "RGBA",
+    "AlphaMin": 0,
+    "AlphaMax": 255,
+    "AlphaBoundsGt16": [
+      0,
+      323,
+      937,
+      1423
+    ],
+    "Bytes": 1160651
+  }
+}

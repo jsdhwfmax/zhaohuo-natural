@@ -1,0 +1,43 @@
+{
+  "Prompt": "Use case: identity-preserve. Asset: ONE transparent PNG dialogue portrait for 活侠传. Image 1 is the original game's EXACT expression/action/layout reference and PRIMARY art style guide. Image 2 is the approved hardman normal model: preserve this adult man's rugged square jaw, thick brows, short dark stubble, black tied ponytail and robust build. Render the expression/action from image1 on this same man. Preserve original blue-grey simple Tangmen robe, light blue lapel, off-white inner collar, purple-brown guards, blue sash. Same rough black outlines, simple broad painted shadow blocks and restrained texture as original game. NOT realistic glossy rendering, NOT ornate fantasy armour. Original full torso/thigh portrait composition with transparent space above head; do not enlarge face or crop hair/arms at sides. Same model proportions as image2. ONE person, no text, no border, no background, real transparent alpha. Expression close_eye_nervous: Eyes fully closed with worried brow, several visible sweat drops on temples, forehead and cheek, nervous partly open mouth. Both hands clasped at waist; white comic steam puffs behind head like original, separate puffs transparent gaps, no white background. Frame entire figure with safe left/right margins, no lateral crop.",
+  "References": [
+    {
+      "LogicalName": "local-game-reference/close_eye_nervous.png",
+      "Kind": "original-game-reference-not-distributed"
+    },
+    {
+      "LogicalName": "generated-hardman-reference/normal-v2.png",
+      "Kind": "generated-design-reference"
+    }
+  ],
+  "GeneratedSourceBasename": "exec-202fef1e-4672-49d0-8a61-403cbc837043.png",
+  "RecordedOutputSHA256": "657C36516AEB2BDC0373E2177F60A3D0BF9BF9652986B004D0D8EBA754294400",
+  "SchemaVersion": 1,
+  "CharacterId": "player",
+  "VariantId": "hardman",
+  "Name": "close_eye_nervous.png",
+  "GenerationMethod": "builtin imagegen",
+  "PixelPostProcessing": false,
+  "OutputPath": "Variants/player/hardman/Portraits/close_eye_nervous.png",
+  "OutputSHA256": "657C36516AEB2BDC0373E2177F60A3D0BF9BF9652986B004D0D8EBA754294400",
+  "RawGeneratedCopyVerified": true,
+  "OriginalGameReferenceDistributed": false,
+  "SourceRecordBasename": "close_eye_nervous.json",
+  "SourceRecordSHA256": "AD9B150A673202BC0D14523D1D887E3DAB8BCA75DD9DD2FE171C3DD1A32D74A9",
+  "VisualReview": "passed before integration; runtime acceptance is separate",
+  "ReviewNotes": "Actual generated image visually reviewed by root. Same hardman identity and original costume/style; expression and corresponding pose preserved; hands/head not laterally cropped; original bottom robe crop retained.",
+  "ImageMetadata": {
+    "Width": 991,
+    "Height": 1587,
+    "Mode": "RGBA",
+    "AlphaMin": 0,
+    "AlphaMax": 255,
+    "AlphaBoundsGt16": [
+      107,
+      100,
+      947,
+      1587
+    ],
+    "Bytes": 1757920
+  }
+}

@@ -1,9 +1,9 @@
 {
   "Passed": true,
-  "Scope": "All 13 portrait sets decoded; exact file inventories, RGBA transparency, actual dimensions, SHA256 and per-character ordinal fingerprints checked. The previous 312 PNGs and eight fingerprints are unchanged. New 88 PNGs are byte-identical to built-in imagegen sources. No pixel processing. Runtime display acceptance is separate.",
-  "PortraitCount": 400,
-  "PreservedV20Portraits": 312,
-  "NewPortraitCount": 88,
+  "Scope": "All 14 portrait sets decoded; exact file inventories, RGBA transparency, actual dimensions, SHA256 and ordinal character fingerprints checked. Previously released 13 sets / 400 PNGs are unchanged. New 47 hardman PNGs match preserved built-in imagegen outputs byte for byte. No pixel processing. Visual generation review passed; actual runtime display acceptance is separate.",
+  "PortraitCount": 447,
+  "PreservedV21Portraits": 400,
+  "NewPortraitCount": 47,
   "PixelPostProcessing": false,
   "Variants": [
     {
@@ -6520,6 +6520,767 @@
             1500
           ],
           "Bytes": 1999038
+        }
+      ]
+    },
+    {
+      "CharacterId": "player",
+      "Id": "hardman",
+      "SourcePath": "Variants/player/hardman/Portraits",
+      "PortraitCount": 47,
+      "AssetFingerprint": "0D768B89EF22EFC38EA9CCE994120EFC77FFDD3A762DBD2FB2F1745CEF4A7A5E",
+      "Files": [
+        {
+          "Name": "angry1.png",
+          "Sha256": "84B04D515C7C4F6A438A6960848289EFB7AFA928E71F8F7D627AA3CD45A1C7B7",
+          "Width": 990,
+          "Height": 1588,
+          "Mode": "RGBA",
+          "AlphaMin": 0,
+          "AlphaMax": 255,
+          "AlphaBoundsGt16": [
+            137,
+            395,
+            893,
+            1588
+          ],
+          "Bytes": 1247122
+        },
+        {
+          "Name": "angry2.png",
+          "Sha256": "EFFED8181375D212FF4FE2D01328760922E4AB104935F9B0E2B3D78543687BFD",
+          "Width": 991,
+          "Height": 1588,
+          "Mode": "RGBA",
+          "AlphaMin": 0,
+          "AlphaMax": 254,
+          "AlphaBoundsGt16": [
+            62,
+            209,
+            988,
+            1588
+          ],
+          "Bytes": 1843158
+        },
+        {
+          "Name": "angry3.png",
+          "Sha256": "FEA42A19C478F3D2F639ABAD7C5D2FFEBB43170AD8B6BFAF99EC427996FA950E",
+          "Width": 991,
+          "Height": 1587,
+          "Mode": "RGBA",
+          "AlphaMin": 0,
+          "AlphaMax": 254,
+          "AlphaBoundsGt16": [
+            53,
+            220,
+            988,
+            1587
+          ],
+          "Bytes": 1670375
+        },
+        {
+          "Name": "blood.png",
+          "Sha256": "5C7B40CEB8EC6B03A8C5ED7E4B4479A8E71205255FF2403B709D940F5FECA819",
+          "Width": 991,
+          "Height": 1587,
+          "Mode": "RGBA",
+          "AlphaMin": 0,
+          "AlphaMax": 255,
+          "AlphaBoundsGt16": [
+            128,
+            245,
+            944,
+            1587
+          ],
+          "Bytes": 1582908
+        },
+        {
+          "Name": "blood_laugh1.png",
+          "Sha256": "FF18F51B16C93D93EB592DCF02831C235132FAF5FC2523F43FF9C6498014CBD2",
+          "Width": 991,
+          "Height": 1587,
+          "Mode": "RGBA",
+          "AlphaMin": 0,
+          "AlphaMax": 255,
+          "AlphaBoundsGt16": [
+            90,
+            91,
+            979,
+            1587
+          ],
+          "Bytes": 1949037
+        },
+        {
+          "Name": "blood_nervous1.png",
+          "Sha256": "45D7DA21422CE511DB2995BF9C2A677421BC72828D7A371654DAFC702B610ABA",
+          "Width": 991,
+          "Height": 1587,
+          "Mode": "RGBA",
+          "AlphaMin": 0,
+          "AlphaMax": 255,
+          "AlphaBoundsGt16": [
+            137,
+            249,
+            946,
+            1587
+          ],
+          "Bytes": 1523698
+        },
+        {
+          "Name": "blood_no_weapon.png",
+          "Sha256": "7F39FA66A210C58EC93569D36956FB73C5AF6B8F106E7850951346615B56D149",
+          "Width": 991,
+          "Height": 1588,
+          "Mode": "RGBA",
+          "AlphaMin": 0,
+          "AlphaMax": 255,
+          "AlphaBoundsGt16": [
+            141,
+            225,
+            946,
+            1588
+          ],
+          "Bytes": 1593575
+        },
+        {
+          "Name": "blood_no_weapon_laugh1.png",
+          "Sha256": "FC68136F71CAFC2713762854EB31E32D24D135D4A182EB73D58B9913FC8C6005",
+          "Width": 991,
+          "Height": 1587,
+          "Mode": "RGBA",
+          "AlphaMin": 0,
+          "AlphaMax": 255,
+          "AlphaBoundsGt16": [
+            132,
+            251,
+            943,
+            1587
+          ],
+          "Bytes": 1559863
+        },
+        {
+          "Name": "caught.png",
+          "Sha256": "20D2F1E3FE10DC66F94CA62170AEE8407FFC688CA3F22D576ACB9668797AF1DF",
+          "Width": 991,
+          "Height": 1587,
+          "Mode": "RGBA",
+          "AlphaMin": 0,
+          "AlphaMax": 255,
+          "AlphaBoundsGt16": [
+            43,
+            7,
+            968,
+            1587
+          ],
+          "Bytes": 1839810
+        },
+        {
+          "Name": "close_eye.png",
+          "Sha256": "79FEA4154F46CC377B667B493D97DD6ACADB39D625E2BDE9AE67AFDC446B2A7F",
+          "Width": 991,
+          "Height": 1588,
+          "Mode": "RGBA",
+          "AlphaMin": 0,
+          "AlphaMax": 255,
+          "AlphaBoundsGt16": [
+            105,
+            248,
+            950,
+            1588
+          ],
+          "Bytes": 1427834
+        },
+        {
+          "Name": "close_eye_laugh.png",
+          "Sha256": "A72E1D60333E61559F9266E2861FB2479D89EB8A1B4988471873DC520532B87C",
+          "Width": 991,
+          "Height": 1588,
+          "Mode": "RGBA",
+          "AlphaMin": 0,
+          "AlphaMax": 255,
+          "AlphaBoundsGt16": [
+            132,
+            253,
+            948,
+            1588
+          ],
+          "Bytes": 1497339
+        },
+        {
+          "Name": "close_eye_nervous.png",
+          "Sha256": "657C36516AEB2BDC0373E2177F60A3D0BF9BF9652986B004D0D8EBA754294400",
+          "Width": 991,
+          "Height": 1587,
+          "Mode": "RGBA",
+          "AlphaMin": 0,
+          "AlphaMax": 255,
+          "AlphaBoundsGt16": [
+            107,
+            100,
+            947,
+            1587
+          ],
+          "Bytes": 1757920
+        },
+        {
+          "Name": "close_eye_nervous2.png",
+          "Sha256": "74C82C06563BED2954BC544379D1EAD5DF18990601673A8389299C3A4C59A4C6",
+          "Width": 991,
+          "Height": 1588,
+          "Mode": "RGBA",
+          "AlphaMin": 0,
+          "AlphaMax": 255,
+          "AlphaBoundsGt16": [
+            94,
+            208,
+            965,
+            1588
+          ],
+          "Bytes": 1558293
+        },
+        {
+          "Name": "close_eye_powder.png",
+          "Sha256": "DB0F6BDBF510F38E2226010F830678739987C2491950F8D66E95156DA38F8501",
+          "Width": 991,
+          "Height": 1588,
+          "Mode": "RGBA",
+          "AlphaMin": 0,
+          "AlphaMax": 255,
+          "AlphaBoundsGt16": [
+            130,
+            249,
+            946,
+            1588
+          ],
+          "Bytes": 1514943
+        },
+        {
+          "Name": "determined.png",
+          "Sha256": "BA55CEDC23BFD15EB04DA8D7DBD6F309854D7F0CF7FEB7A10A2FE715787A900F",
+          "Width": 990,
+          "Height": 1589,
+          "Mode": "RGBA",
+          "AlphaMin": 0,
+          "AlphaMax": 255,
+          "AlphaBoundsGt16": [
+            45,
+            290,
+            986,
+            1589
+          ],
+          "Bytes": 1912234
+        },
+        {
+          "Name": "die.png",
+          "Sha256": "6A149D9D12900D64349913125AB066B172449A2BD6707DDB87F8B9E6A170A89F",
+          "Width": 991,
+          "Height": 1588,
+          "Mode": "RGBA",
+          "AlphaMin": 0,
+          "AlphaMax": 255,
+          "AlphaBoundsGt16": [
+            221,
+            272,
+            929,
+            1588
+          ],
+          "Bytes": 1462658
+        },
+        {
+          "Name": "doubt.png",
+          "Sha256": "3D6FFDFC71AED9C43940B46BE71C3258AA4C9939F9B34D92C7C872BBD1A9C1A4",
+          "Width": 991,
+          "Height": 1588,
+          "Mode": "RGBA",
+          "AlphaMin": 0,
+          "AlphaMax": 255,
+          "AlphaBoundsGt16": [
+            60,
+            254,
+            970,
+            1588
+          ],
+          "Bytes": 1554124
+        },
+        {
+          "Name": "eye_mask_nervous1.png",
+          "Sha256": "1E4408C130029BFA51916F3263A8A1DC40EF8D2B1E6CB371BB6F41381F085647",
+          "Width": 991,
+          "Height": 1588,
+          "Mode": "RGBA",
+          "AlphaMin": 0,
+          "AlphaMax": 255,
+          "AlphaBoundsGt16": [
+            64,
+            204,
+            950,
+            1588
+          ],
+          "Bytes": 1597601
+        },
+        {
+          "Name": "eye_mask_nervous2.png",
+          "Sha256": "C5760083E232CB2DAE845CC1889A4C9C3DC83AF561C01969B5F85C4028DF8D8A",
+          "Width": 991,
+          "Height": 1588,
+          "Mode": "RGBA",
+          "AlphaMin": 0,
+          "AlphaMax": 255,
+          "AlphaBoundsGt16": [
+            143,
+            242,
+            946,
+            1588
+          ],
+          "Bytes": 1437556
+        },
+        {
+          "Name": "fist_north_star.png",
+          "Sha256": "0F4E650BCDFA00D60B860981C75B2CE06086AEB75FCFF6493AE9A6C6F219CDBC",
+          "Width": 1054,
+          "Height": 1493,
+          "Mode": "RGBA",
+          "AlphaMin": 0,
+          "AlphaMax": 255,
+          "AlphaBoundsGt16": [
+            151,
+            8,
+            965,
+            1493
+          ],
+          "Bytes": 1409384
+        },
+        {
+          "Name": "gloomy2.png",
+          "Sha256": "A861E314D4B4C2E3F9672FA7C42DC3976A949DF42DC6EA87594F6DED16D1AA33",
+          "Width": 990,
+          "Height": 1589,
+          "Mode": "RGBA",
+          "AlphaMin": 0,
+          "AlphaMax": 255,
+          "AlphaBoundsGt16": [
+            153,
+            247,
+            873,
+            1589
+          ],
+          "Bytes": 1435858
+        },
+        {
+          "Name": "god_thunder.png",
+          "Sha256": "5403476003C9BC3B672E833B6ED4D748A15AE7D7164D23FFA4F0F1AC20465507",
+          "Width": 1105,
+          "Height": 1423,
+          "Mode": "RGBA",
+          "AlphaMin": 0,
+          "AlphaMax": 255,
+          "AlphaBoundsGt16": [
+            0,
+            323,
+            937,
+            1423
+          ],
+          "Bytes": 1160651
+        },
+        {
+          "Name": "head.png",
+          "Sha256": "1026DF76EE6C83BA6E2A557FA252E097D01EBDBF101428E92FABA3DE8283938C",
+          "Width": 990,
+          "Height": 1589,
+          "Mode": "RGBA",
+          "AlphaMin": 0,
+          "AlphaMax": 255,
+          "AlphaBoundsGt16": [
+            20,
+            78,
+            985,
+            1589
+          ],
+          "Bytes": 2105685
+        },
+        {
+          "Name": "hero_landing.png",
+          "Sha256": "E106E06A50453C0DE31C87AFCCEF7BDD60FC53C8762638A4CB51ACD86BB179E3",
+          "Width": 1054,
+          "Height": 1493,
+          "Mode": "RGBA",
+          "AlphaMin": 0,
+          "AlphaMax": 255,
+          "AlphaBoundsGt16": [
+            129,
+            45,
+            1024,
+            1409
+          ],
+          "Bytes": 1533670
+        },
+        {
+          "Name": "hurt.png",
+          "Sha256": "807F2ED11D976D6DBB5E843E3F36607A14D2704EAC0C25763F5CD4F7F723CEB4",
+          "Width": 991,
+          "Height": 1587,
+          "Mode": "RGBA",
+          "AlphaMin": 0,
+          "AlphaMax": 255,
+          "AlphaBoundsGt16": [
+            129,
+            249,
+            938,
+            1587
+          ],
+          "Bytes": 1528390
+        },
+        {
+          "Name": "hurt2.png",
+          "Sha256": "69B9B8BA323CCAFB41626FC1BEA1783FE630BA25652BAD6CB6FC528622AB1304",
+          "Width": 990,
+          "Height": 1588,
+          "Mode": "RGBA",
+          "AlphaMin": 0,
+          "AlphaMax": 255,
+          "AlphaBoundsGt16": [
+            84,
+            264,
+            975,
+            1588
+          ],
+          "Bytes": 1594887
+        },
+        {
+          "Name": "hurt_fist.png",
+          "Sha256": "131228DA6FFC74E79A6B3C765CD5BFB61FC955BE53F4A7C1BD285765EF2FF7F1",
+          "Width": 1162,
+          "Height": 1353,
+          "Mode": "RGBA",
+          "AlphaMin": 0,
+          "AlphaMax": 255,
+          "AlphaBoundsGt16": [
+            15,
+            83,
+            1160,
+            1353
+          ],
+          "Bytes": 1404241
+        },
+        {
+          "Name": "laugh1.png",
+          "Sha256": "1DEEA93626790C1D0C6C815ACF80FB7E6DC94068C2D6CE594EA4E8FFBDE05058",
+          "Width": 990,
+          "Height": 1589,
+          "Mode": "RGBA",
+          "AlphaMin": 0,
+          "AlphaMax": 255,
+          "AlphaBoundsGt16": [
+            131,
+            249,
+            943,
+            1589
+          ],
+          "Bytes": 1501806
+        },
+        {
+          "Name": "laugh2.png",
+          "Sha256": "9C17944045AC90815BADBF6ADEF2A1F731BAC84145DBE55DC5094E11A6F51C94",
+          "Width": 991,
+          "Height": 1588,
+          "Mode": "RGBA",
+          "AlphaMin": 0,
+          "AlphaMax": 255,
+          "AlphaBoundsGt16": [
+            26,
+            283,
+            975,
+            1588
+          ],
+          "Bytes": 1531171
+        },
+        {
+          "Name": "mask.png",
+          "Sha256": "724C9C61E86B76CFA6174DB69C4740B2EB0F0600A9DB929C807927B5BBB27B15",
+          "Width": 990,
+          "Height": 1589,
+          "Mode": "RGBA",
+          "AlphaMin": 0,
+          "AlphaMax": 255,
+          "AlphaBoundsGt16": [
+            128,
+            247,
+            943,
+            1589
+          ],
+          "Bytes": 1349375
+        },
+        {
+          "Name": "mud.png",
+          "Sha256": "065966F5B1015F9F65382B6A6C5BA715C50601D516D32BB7D1AAE47C8B3F99D3",
+          "Width": 990,
+          "Height": 1589,
+          "Mode": "RGBA",
+          "AlphaMin": 0,
+          "AlphaMax": 255,
+          "AlphaBoundsGt16": [
+            72,
+            28,
+            974,
+            1589
+          ],
+          "Bytes": 1704877
+        },
+        {
+          "Name": "nervous1.png",
+          "Sha256": "093CCBEEDCDB6F9E4925AEA5416586057BBEEF995364795A0A9E10E848B94F67",
+          "Width": 991,
+          "Height": 1588,
+          "Mode": "RGBA",
+          "AlphaMin": 0,
+          "AlphaMax": 255,
+          "AlphaBoundsGt16": [
+            74,
+            252,
+            944,
+            1588
+          ],
+          "Bytes": 1571967
+        },
+        {
+          "Name": "nervous2.png",
+          "Sha256": "6E920E3CD288A6A7D05DA54DA996E9832C268E64A7BF3031614D6E14477181DF",
+          "Width": 991,
+          "Height": 1588,
+          "Mode": "RGBA",
+          "AlphaMin": 0,
+          "AlphaMax": 255,
+          "AlphaBoundsGt16": [
+            141,
+            211,
+            969,
+            1588
+          ],
+          "Bytes": 1627608
+        },
+        {
+          "Name": "nervous3.png",
+          "Sha256": "E15699BD61C45943DA66430F490B859A7CC00D7250F597AE4637ED92EBE7AE1F",
+          "Width": 991,
+          "Height": 1588,
+          "Mode": "RGBA",
+          "AlphaMin": 0,
+          "AlphaMax": 255,
+          "AlphaBoundsGt16": [
+            90,
+            254,
+            949,
+            1588
+          ],
+          "Bytes": 1477510
+        },
+        {
+          "Name": "normal.png",
+          "Sha256": "28E2B9CE0EAD0E81DDC9BC19DDF196D46918D938E729557F60662EAD5856C9FF",
+          "Width": 991,
+          "Height": 1588,
+          "Mode": "RGBA",
+          "AlphaMin": 0,
+          "AlphaMax": 255,
+          "AlphaBoundsGt16": [
+            131,
+            253,
+            942,
+            1588
+          ],
+          "Bytes": 1578072
+        },
+        {
+          "Name": "oraora.png",
+          "Sha256": "7BEEC3B58C733E6E3773E2A9B0A9C600BAEB9A16EA7B64E532F132EA601987B7",
+          "Width": 991,
+          "Height": 1588,
+          "Mode": "RGBA",
+          "AlphaMin": 0,
+          "AlphaMax": 255,
+          "AlphaBoundsGt16": [
+            80,
+            254,
+            936,
+            1588
+          ],
+          "Bytes": 1781219
+        },
+        {
+          "Name": "revel.png",
+          "Sha256": "91B9D8F97CC6FA64E0D11301F43E41FF49B8719004B688B7145ED9CBEE109FC4",
+          "Width": 990,
+          "Height": 1589,
+          "Mode": "RGBA",
+          "AlphaMin": 0,
+          "AlphaMax": 255,
+          "AlphaBoundsGt16": [
+            44,
+            239,
+            972,
+            1589
+          ],
+          "Bytes": 1621065
+        },
+        {
+          "Name": "sad1.png",
+          "Sha256": "FAC09EA43233F41B8A7EB68A01E2A68AC0421BC0B3913EBEE9EA543B2C8CDA77",
+          "Width": 991,
+          "Height": 1588,
+          "Mode": "RGBA",
+          "AlphaMin": 0,
+          "AlphaMax": 255,
+          "AlphaBoundsGt16": [
+            157,
+            282,
+            959,
+            1588
+          ],
+          "Bytes": 1400505
+        },
+        {
+          "Name": "shake.png",
+          "Sha256": "C5D2D7AD871D765603CEA09726FDBD583E82CF5A12EBC975A15FC04464F9A1BF",
+          "Width": 991,
+          "Height": 1587,
+          "Mode": "RGBA",
+          "AlphaMin": 0,
+          "AlphaMax": 255,
+          "AlphaBoundsGt16": [
+            49,
+            168,
+            973,
+            1587
+          ],
+          "Bytes": 1933972
+        },
+        {
+          "Name": "shake2.png",
+          "Sha256": "863969620351489B8E9E6EC648D933574B1EE07574387A7C8FD510D73BC33C2D",
+          "Width": 990,
+          "Height": 1588,
+          "Mode": "RGBA",
+          "AlphaMin": 0,
+          "AlphaMax": 255,
+          "AlphaBoundsGt16": [
+            19,
+            129,
+            986,
+            1587
+          ],
+          "Bytes": 1769343
+        },
+        {
+          "Name": "shock.png",
+          "Sha256": "EB4A79CD6954F2E1965D886CDD49FD40D923833F9DC89978487576B413CD3C10",
+          "Width": 991,
+          "Height": 1587,
+          "Mode": "RGBA",
+          "AlphaMin": 0,
+          "AlphaMax": 255,
+          "AlphaBoundsGt16": [
+            83,
+            27,
+            928,
+            1587
+          ],
+          "Bytes": 1500198
+        },
+        {
+          "Name": "soul.png",
+          "Sha256": "629C527F5438B3C4EAC5C36E90C40A60089AB327F1F25D312D3047D1C8CA2DBB",
+          "Width": 991,
+          "Height": 1588,
+          "Mode": "RGBA",
+          "AlphaMin": 0,
+          "AlphaMax": 255,
+          "AlphaBoundsGt16": [
+            124,
+            235,
+            953,
+            1588
+          ],
+          "Bytes": 1629725
+        },
+        {
+          "Name": "special1.png",
+          "Sha256": "7413463BC1FD5AFEBE73B21756746F36A82DB5BE501DCCC3B4ACD23FE7CC47F8",
+          "Width": 991,
+          "Height": 1588,
+          "Mode": "RGBA",
+          "AlphaMin": 0,
+          "AlphaMax": 255,
+          "AlphaBoundsGt16": [
+            141,
+            243,
+            922,
+            1588
+          ],
+          "Bytes": 1481524
+        },
+        {
+          "Name": "stupid.png",
+          "Sha256": "C2D296D7DCAEC6EB6AF90735D5275B44E3FAD9CE8BE934F0410674D8323D8108",
+          "Width": 990,
+          "Height": 1589,
+          "Mode": "RGBA",
+          "AlphaMin": 0,
+          "AlphaMax": 255,
+          "AlphaBoundsGt16": [
+            108,
+            231,
+            945,
+            1589
+          ],
+          "Bytes": 1537813
+        },
+        {
+          "Name": "suck1.png",
+          "Sha256": "D820C292F6F96675BCA5799255428C2782DAE57B416BCB318B5CFB70BA7C13BF",
+          "Width": 991,
+          "Height": 1588,
+          "Mode": "RGBA",
+          "AlphaMin": 0,
+          "AlphaMax": 255,
+          "AlphaBoundsGt16": [
+            115,
+            284,
+            959,
+            1588
+          ],
+          "Bytes": 1474699
+        },
+        {
+          "Name": "suck3.png",
+          "Sha256": "3177499CA51103554FD105A9581A2BCB3806DFFF998F2F23D01F5B0FDDA1F06F",
+          "Width": 990,
+          "Height": 1589,
+          "Mode": "RGBA",
+          "AlphaMin": 0,
+          "AlphaMax": 255,
+          "AlphaBoundsGt16": [
+            71,
+            149,
+            986,
+            1589
+          ],
+          "Bytes": 1775994
+        },
+        {
+          "Name": "suck4.png",
+          "Sha256": "CE87E69A6E25443183A53E7DAF477DFB5A25877473C5C88AD5317A4EC9463B8A",
+          "Width": 990,
+          "Height": 1589,
+          "Mode": "RGBA",
+          "AlphaMin": 0,
+          "AlphaMax": 255,
+          "AlphaBoundsGt16": [
+            146,
+            247,
+            915,
+            1589
+          ],
+          "Bytes": 1440969
         }
       ]
     }

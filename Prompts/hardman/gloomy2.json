@@ -1,0 +1,43 @@
+{
+  "Prompt": "Use case: identity-preserve. Asset: ONE transparent PNG dialogue portrait for 活侠传. Image 1 is the original game's EXACT expression/action/layout reference and PRIMARY art style guide. Image 2 is the approved hardman normal model: preserve this adult man's rugged square jaw, thick brows, short dark stubble, black tied ponytail and robust build. Render the expression/action from image1 on this same man. Preserve original blue-grey simple Tangmen robe, light blue lapel, off-white inner collar, purple-brown guards, blue sash. Same rough black outlines, simple broad painted shadow blocks and restrained texture as original game. NOT realistic glossy rendering, NOT ornate fantasy armour. Original full torso/thigh portrait composition with transparent space above head; do not enlarge face or crop hair/arms at sides. Same model proportions as image2. ONE person, no text, no border, no background, real transparent alpha. Expression gloomy2: Sly brooding theatrical expression with chin tipped and narrow confident eyes, subtle crooked smirk; twist torso as original, one hand's fingers elegantly splayed beside face, other forearm across low waist with splayed hand; muted cool shadow over face and dark blue aura directly behind silhouette. This is original comic pose, keep correct five fingers and full body/arms visible.",
+  "References": [
+    {
+      "LogicalName": "local-game-reference/gloomy2.png",
+      "Kind": "original-game-reference-not-distributed"
+    },
+    {
+      "LogicalName": "generated-hardman-reference/normal-v2.png",
+      "Kind": "generated-design-reference"
+    }
+  ],
+  "GeneratedSourceBasename": "exec-d33a57d2-1fd1-4636-83ee-c0fe16013b12.png",
+  "RecordedOutputSHA256": "A861E314D4B4C2E3F9672FA7C42DC3976A949DF42DC6EA87594F6DED16D1AA33",
+  "SchemaVersion": 1,
+  "CharacterId": "player",
+  "VariantId": "hardman",
+  "Name": "gloomy2.png",
+  "GenerationMethod": "builtin imagegen",
+  "PixelPostProcessing": false,
+  "OutputPath": "Variants/player/hardman/Portraits/gloomy2.png",
+  "OutputSHA256": "A861E314D4B4C2E3F9672FA7C42DC3976A949DF42DC6EA87594F6DED16D1AA33",
+  "RawGeneratedCopyVerified": true,
+  "OriginalGameReferenceDistributed": false,
+  "SourceRecordBasename": "gloomy2.json",
+  "SourceRecordSHA256": "E1DD2B952782C724C6FB2E7561C39E5AD4C408FE04C2EFCDC51828A296C2A998",
+  "VisualReview": "passed before integration; runtime acceptance is separate",
+  "ReviewNotes": "Actual generated image visually reviewed by root. Same hardman identity and original costume/style; expression and corresponding pose preserved; hands/head not laterally cropped; original bottom robe crop retained.",
+  "ImageMetadata": {
+    "Width": 990,
+    "Height": 1589,
+    "Mode": "RGBA",
+    "AlphaMin": 0,
+    "AlphaMax": 255,
+    "AlphaBoundsGt16": [
+      153,
+      247,
+      873,
+      1589
+    ],
+    "Bytes": 1435858
+  }
+}

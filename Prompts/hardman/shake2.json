@@ -1,0 +1,54 @@
+{
+  "Prompt": "Use case: precise-object-edit. Make ONE minimal framing correction to this already approved transparent game sprite. Keep exactly the same hardman identity, shocked face, sweat, trembling outlines and full NEGATIVE-COLOR effect: white hair and outlines, dark teal skin, pale tan robe. Zoom out/expand transparent canvas to leave about 6% clear transparent space on both left and right, restoring the outer right sleeve and white motion outline that currently touches the edge. Keep the existing bottom robe crop. Absolutely no recoloring, no new style or pose. Output real transparent PNG, no background.",
+  "References": [
+    {
+      "LogicalName": "generated-hardman-reference/shake2.png",
+      "Kind": "generated-design-reference"
+    }
+  ],
+  "GeneratedSourceBasename": "exec-f6a3419f-985d-4a9c-8d2f-14c5075543d2.png",
+  "RecordedOutputSHA256": "863969620351489B8E9E6EC648D933574B1EE07574387A7C8FD510D73BC33C2D",
+  "InitialGeneration": {
+    "Prompt": "Use case: precise-object-edit.\nAsset: ONE transparent dialogue portrait from 活侠传 / Legend of Mortal.\nImage 1 is the original game's specific expression/action sprite and the PRIMARY edit target. Its pose, composition, framing, emotion, hands, props, blood, sweat and effects take priority. Do not replace this action with normal standing pose.\nImage 2 is the approved HARDMAN NORMAL master, used only for identity: rugged angular jaw, thick brows, small strong eyes, warm complexion, short dark stubble, sturdy adult man about 30–35, modestly broad shoulders. Match that same man, not the original comic face. Use the original Tangmen blue-grey robe with lighter blue lapel, off-white inner collar, blue sash and purple-brown forearm guards wherever visible.\nSTYLE PRIORITY: preserve Image 1's original coarse black contours and sparse pencil irregularity, simple large flat color and shadow blocks, restrained watercolor. Match the game's original plain rendering, NOT dense cloth weave, ornate/detail-heavy repaint, photorealistic skin, 3D, smooth modern anime or heavy oil painting.\nPreserve the exact story/emotion meaning and important silhouette of Image 1 while replacing facial identity and slightly strengthening build. The master is NOT the source of expression. Do not invent extra items or people.\nOutput one isolated PNG with true transparent alpha. Preserve source canvas aspect and relative transparent whitespace as much as possible. Keep complete hair/top and left/right extremities, props and effects within a clear transparent border. Bottom crop only where original has a crop. No text, frame, background, checkerboard, ground shadow or second figure.\nFraming guard: leave at least 5% of canvas width genuinely transparent outside the leftmost/rightmost visible silhouette, and at least 4% above the highest hair or raised hand. Zoom out to make room; do not crop to fill the output.\nSpecific state: same upright trembling shock with pale blank eyes, open mouth and sweat, BUT with ENTIRE CHARACTER IN NEGATIVE/INVERTED COLORS exactly as Image1: icy white hair and bright white contour, deep dark teal-blue face/hands, pale warm beige robe, light blue forearm guards. This color-negative shock effect overrides all normal costume/skin/hair colors. Preserve hardman jaw/brows/stubble as negative-color stylization. No normal flesh tones or normal blue robe.",
+    "References": [
+      {
+        "LogicalName": "local-game-reference/shake2.png",
+        "Kind": "original-game-reference-not-distributed"
+      },
+      {
+        "LogicalName": "generated-hardman-reference/normal-v2.png",
+        "Kind": "generated-design-reference"
+      }
+    ],
+    "GeneratedSourceBasename": "exec-659d636c-8a0f-416d-b025-d990a5bfd6de.png",
+    "RecordedOutputSHA256": "ABD210719857629B5B4A3EA2EE1B0008B86928D746542D6F849074DE51551BCE"
+  },
+  "SchemaVersion": 1,
+  "CharacterId": "player",
+  "VariantId": "hardman",
+  "Name": "shake2.png",
+  "GenerationMethod": "builtin imagegen",
+  "PixelPostProcessing": false,
+  "OutputPath": "Variants/player/hardman/Portraits/shake2.png",
+  "OutputSHA256": "863969620351489B8E9E6EC648D933574B1EE07574387A7C8FD510D73BC33C2D",
+  "RawGeneratedCopyVerified": true,
+  "OriginalGameReferenceDistributed": false,
+  "SourceRecordBasename": "shake2.json",
+  "SourceRecordSHA256": "A6EB717CE6D8C833396799A84806192354CE3C645D43A1632E15FD169AE9AF6D",
+  "VisualReview": "passed before integration; runtime acceptance is separate",
+  "ReviewNotes": "Negative-color shock preserved. Selected margin revision leaves 4px right opaque margin; full sleeve and white effect outline visible.",
+  "ImageMetadata": {
+    "Width": 990,
+    "Height": 1588,
+    "Mode": "RGBA",
+    "AlphaMin": 0,
+    "AlphaMax": 255,
+    "AlphaBoundsGt16": [
+      19,
+      129,
+      986,
+      1587
+    ],
+    "Bytes": 1769343
+  }
+}

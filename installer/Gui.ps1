@@ -357,7 +357,7 @@ function Invoke-UiEventTests {
     Assert-Ui 'unknown state is not shown as original' (@($script:Cards|Where-Object Installed).Count -eq 0)
     Refresh-InstalledState;$before=$script:MockRequests.Count;$script:PathBox.Text='';$script:ApplyButton.PerformClick();Assert-Ui 'empty path stops dispatch' ($script:MockRequests.Count -eq $before -and $script:Status.Text -like '*选择游戏目录*')
     $script:PathBox.Text='D:\SteamLibrary\steamapps\common\LegendOfMortal'
-    Assert-Ui 'player seven cards can scroll' ($script:Cards.Count -eq 7 -and $cardGrid.AutoScroll -and $cardGrid.DisplayRectangle.Height -gt $cardGrid.ClientSize.Height)
+    Assert-Ui 'all player appearance cards can scroll' ($script:Cards.Count -eq @($script:Catalog.Characters|Where-Object Id -eq 'player')[0].Variants.Count -and $cardGrid.AutoScroll -and $cardGrid.DisplayRectangle.Height -gt $cardGrid.ClientSize.Height)
     Assert-Ui 'seven roles have vertical navigation and no hidden fixed-role list' ($script:RoleButtons.Count-eq $script:Catalog.Characters.Count-and $script:RoleButtons.Count-eq 7-and $rolePanel.AutoScroll-and $rolePanel.DisplayRectangle.Height-gt $rolePanel.ClientSize.Height)
     Select-Character 'tang-buyi';Select-Variant 'female';$script:ApplyButton.PerformClick()
     Assert-Ui 'brother female appearance dispatches under the existing character' ($script:MockRequests[-1].CharacterId-eq 'tang-buyi'-and $script:MockRequests[-1].VariantId-eq 'female')

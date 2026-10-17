@@ -1,0 +1,14 @@
+PASS
+Game=release_1.0.6000.3
+Unity=2020.3.49f1
+Resources=50
+Replaced=47
+OriginalFallback=3
+NormalSetupPath=true
+AsyncAndSync=true
+UiSpriteMatch=true
+RepeatLoadCache=true
+NonProtagonistUnchanged=true
+AvatarPanelBranches=2
+AvatarPanelReplaced=2
+Scope=isolated real StoryCharacterController and PlayerAvatarPanel fixtures, actual Addressables, game-created UI Images; no story/save simulation

@@ -116,7 +116,7 @@ Export-ModuleMember -Function Get-ZhaoHuoSteamCandidates,Install-ZhaoHuo
     $catalog.Characters[1].Variants+=@($mini)
     $catalog.PackageReady=$true;Save-Json (Join-Path $package 'VariantCatalog.json') $catalog
     $view=Get-PortraitCharacters -PackageRoot $package
-    Assert ($view.Characters.Count-eq 7-and $view.Characters[0].Variants.Count-eq 7) 'Dynamic catalog exposes seven independent character groups and six player styles'
+    Assert ($view.Characters.Count-eq 7-and $view.Characters[0].Variants.Count-eq 8) 'Dynamic catalog exposes seven independent character groups and seven player styles'
     Assert (($prod.PackageReady-and @($prod.Characters.Variants|Where-Object{-not $_.Ready}).Count-eq 0)-or(-not $prod.PackageReady-and @($prod.Characters.Variants|Where-Object Available).Count-eq 0)) 'Production catalog exposes availability only when its global readiness permits it'
     $clean=New-Game 'clean'
     $catalog.PackageReady=$false;Save-Json (Join-Path $package 'VariantCatalog.json') $catalog

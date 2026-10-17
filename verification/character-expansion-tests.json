@@ -2,7 +2,7 @@
     "Passed":  true,
     "AssertionCount":  33,
     "PowerShell":  "5.1.26100.9711",
-    "DurationSeconds":  372.47,
+    "DurationSeconds":  361.84,
     "ActualGameRun":  false,
     "RealGameFilesModified":  false,
     "FinalArtAcceptance":  false,
@@ -14,7 +14,7 @@
     "CodeHashes":  [
                        {
                            "Path":  "installer/CharacterCatalog.ps1",
-                           "Sha256":  "4D4C671A3FA58C7B42F88E60DD6509B86E9C4A820F2FB19BBE2601A4E6A54566"
+                           "Sha256":  "BDD6BABFF23319EA049E23CF220C51F0C29B5D79C30C0160A50B1F1DBB4B9F61"
                        },
                        {
                            "Path":  "installer/CharacterState.ps1",
@@ -30,7 +30,7 @@
                        },
                        {
                            "Path":  "installer/ZhaoHuoInstaller.psm1",
-                           "Sha256":  "DF5A5070DD2E5D5ECFCB41D6444A459B994714D9F60565FA08C1DEB2F6445BC9"
+                           "Sha256":  "8E6C9553BFA4ABD852687E1CEC71BCF78A33119B667FF86890B408D8549FE9FD"
                        },
                        {
                            "Path":  "installer/AppearanceManager.ps1",
@@ -42,16 +42,16 @@
                        },
                        {
                            "Path":  "tests/Test-CharacterManager.ps1",
-                           "Sha256":  "D191B3ADE06F6F6D4E364791343DA065C1A5644BC67678B9E641AE7E2FCCBDF3"
+                           "Sha256":  "DD7FAA07DF50A3F2A5AC7E7D2EA030C3AF18D087FDEE467E4A08D780BE48CDD2"
                        },
                        {
                            "Path":  "tests/Test-CharacterExpansion.ps1",
-                           "Sha256":  "F003E889703DD0DDC77850EC93CA96BBE4D78B1FCCB171433E5627E92977A80F"
+                           "Sha256":  "0C5021656862F9797A51BBA0BDF2F4E8811D6A104608DB3F1E634CCC0AC225E0"
                        }
                    ],
     "Checks":  [
                    "All 312 previously released PNGs are included in the unchanged-input guard",
-                   "Expanded catalog exposes seven independent roles and twenty choices",
+                   "Expanded catalog exposes seven independent roles and twenty-one choices",
                    "Valid v2.0 state is recognized and new characters preview as original",
                    "Same-selection migration writes only shared DLL and final seven-role config",
                    "Migration check-only preserves every fixture byte",

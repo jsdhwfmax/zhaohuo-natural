@@ -1,0 +1,65 @@
+﻿{
+    "Passed":  true,
+    "ActualGameRun":  false,
+    "Scope":  "Frozen production policy compiled unchanged with an isolated test wrapper. No game assembly is executed and no game process is started. The newly added Yu Xiaomei doubt resource remains original.",
+    "PowerShellVersion":  "5.1.26100.9711",
+    "PluginSha256":  "AEEE02AC56DCDCB1E683D6356AC28FE19E61AF861D5663ACFFD1B83984F06957",
+    "CodeHashAlgorithm":  "SHA256-UTF8-noBOM-LF-v1",
+    "CodeHashes":  [
+                       {
+                           "Path":  "Source/CharacterPolicy.cs",
+                           "Sha256":  "81B8B8E33ED03C87A7717A58F128C2FDB6CB3311818A9EC954D714A5C3801F91"
+                       },
+                       {
+                           "Path":  "tests/Test-NewGameResourceFallback.ps1",
+                           "Sha256":  "6B0620B0FC064708ACBE800B73CB2BCC6D6905A8485416963065272DDA9A7C2C"
+                       }
+                   ],
+    "TestCount":  11,
+    "Tests":  [
+                  {
+                      "Name":  "Exact adult Yu identity remains supported",
+                      "Passed":  true
+                  },
+                  {
+                      "Name":  "New doubt canonical is outside identity whitelist",
+                      "Passed":  true
+                  },
+                  {
+                      "Name":  "Case normalization cannot admit new doubt",
+                      "Passed":  true
+                  },
+                  {
+                      "Name":  "New doubt expression is not replaceable",
+                      "Passed":  true
+                  },
+                  {
+                      "Name":  "Role-only canonical lookup also rejects doubt",
+                      "Passed":  true
+                  },
+                  {
+                      "Name":  "Existing normal canonical remains supported",
+                      "Passed":  true
+                  },
+                  {
+                      "Name":  "Existing normal expression stays replaceable",
+                      "Passed":  true
+                  },
+                  {
+                      "Name":  "Player doubt cannot cross into Yu role",
+                      "Passed":  true
+                  },
+                  {
+                      "Name":  "Black silhouette still original",
+                      "Passed":  true
+                  },
+                  {
+                      "Name":  "Composite special5 still original",
+                      "Passed":  true
+                  },
+                  {
+                      "Name":  "Composite special5_2 still original",
+                      "Passed":  true
+                  }
+              ]
+}

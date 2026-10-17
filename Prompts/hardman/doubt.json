@@ -1,0 +1,43 @@
+{
+  "Prompt": "Use case: identity-preserve. Asset: ONE transparent PNG dialogue portrait for 活侠传. Image 1 is the original game's EXACT expression/action/layout reference and PRIMARY art style guide. Image 2 is the approved hardman normal model: preserve this adult man's rugged square jaw, thick brows, short dark stubble, black tied ponytail and robust build. Render the expression/action from image1 on this same man. Preserve original blue-grey simple Tangmen robe, light blue lapel, off-white inner collar, purple-brown guards, blue sash. Same rough black outlines, simple broad painted shadow blocks and restrained texture as original game. NOT realistic glossy rendering, NOT ornate fantasy armour. Original full torso/thigh portrait composition with transparent space above head; do not enlarge face or crop hair/arms at sides. Same model proportions as image2. ONE person, no text, no border, no background, real transparent alpha. Expression doubt: Puzzled squint, raised questioning eyebrow, slightly open questioning mouth and small cheek sweat drop; screen-left forearm raised with index finger pointing UP beside head, screen-right hand lowered. Match this exact original gesture, full index fingertip visible with ample margin.",
+  "References": [
+    {
+      "LogicalName": "local-game-reference/doubt.png",
+      "Kind": "original-game-reference-not-distributed"
+    },
+    {
+      "LogicalName": "generated-hardman-reference/normal-v2.png",
+      "Kind": "generated-design-reference"
+    }
+  ],
+  "GeneratedSourceBasename": "exec-f74d69ed-a1f1-440b-aea4-5f3ae18821aa.png",
+  "RecordedOutputSHA256": "3D6FFDFC71AED9C43940B46BE71C3258AA4C9939F9B34D92C7C872BBD1A9C1A4",
+  "SchemaVersion": 1,
+  "CharacterId": "player",
+  "VariantId": "hardman",
+  "Name": "doubt.png",
+  "GenerationMethod": "builtin imagegen",
+  "PixelPostProcessing": false,
+  "OutputPath": "Variants/player/hardman/Portraits/doubt.png",
+  "OutputSHA256": "3D6FFDFC71AED9C43940B46BE71C3258AA4C9939F9B34D92C7C872BBD1A9C1A4",
+  "RawGeneratedCopyVerified": true,
+  "OriginalGameReferenceDistributed": false,
+  "SourceRecordBasename": "doubt.json",
+  "SourceRecordSHA256": "92D01720B67E275531151F403660E3F3A1FC668E5F3272103FDD85651B65CDC7",
+  "VisualReview": "passed before integration; runtime acceptance is separate",
+  "ReviewNotes": "Actual generated image visually reviewed by root. Same hardman identity and original costume/style; expression and corresponding pose preserved; hands/head not laterally cropped; original bottom robe crop retained.",
+  "ImageMetadata": {
+    "Width": 991,
+    "Height": 1588,
+    "Mode": "RGBA",
+    "AlphaMin": 0,
+    "AlphaMax": 255,
+    "AlphaBoundsGt16": [
+      60,
+      254,
+      970,
+      1588
+    ],
+    "Bytes": 1554124
+  }
+}
