@@ -8,7 +8,7 @@
 
 **[下载最新版完整安装包](https://github.com/jsdhwfmax/zhaohuo-natural/releases/latest)** · [安装与切换教程](docs/形象管理器安装指南.md) · [常见问题](docs/角色管理器常见问题.md)
 
-当前完整包：`ZhaoHuoPortraitManager-v2.2.0-win-x64.zip`。请下载 Release 的这个附件；`Source code` 是源码归档，不是玩家安装包。以后分享上方的 **`releases/latest`** 链接，就能进入最新正式版。新版网盘待维护者同步；游戏 1.0.6.03 请先使用 GitHub 新包，旧网盘 v2.1.0 会被兼容检查拦住。
+当前完整包：`ZhaoHuoPortraitManager-v2.2.0-win-x64.zip`。请下载 Release 的这个附件；`Source code` 是源码归档，不是玩家安装包。以后分享上方的 **`releases/latest`** 链接，就能进入最新正式版。也可使用 [百度网盘下载 v2.2.0](https://pan.baidu.com/s/1x2x7BX3lh0Rtwxb31IMobw?pwd=5ije)（提取码：5ije）。
 
 ## 一个窗口，分别搭配每位角色
 
