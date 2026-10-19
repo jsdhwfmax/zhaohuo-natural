@@ -1,4 +1,4 @@
-#requires -Version 5.1
+﻿#requires -Version 5.1
 [CmdletBinding()]
 param(
     [string]$PackageRoot,
@@ -120,7 +120,7 @@ $result=[ordered]@{
     AssertionCount=$checks.Count;Checks=$checks.ToArray();ReusedReports=$reused
     ArtworkEvidence=[pscustomobject]@{Path=$artPath;Sha256=$inputs[$artPath]};PromptEvidence=$promptEvidence
     CodeHashAlgorithm='SHA256-UTF8-noBOM-LF-v1';CodeHashes=@($bound|ForEach-Object{[pscustomobject]@{Path=$_;Sha256=(CodeHash (Resolve-Input $_))}})
-    Scope='Read-only final production-data/API acceptance: 447 PNGs, 432 unchanged v2.2 portraits, fifteen approved female repairs, seven role layouts, readiness, shared pins and current/historical prompt bindings. Decoded-pixel evidence is checked against file hashes, not rerun here. The latest 64/74 synthetic suites are reused only for unchanged source; their tested Catalog hashes remain intact. No game files, installation or game execution are accessed.'
+    Scope='Read-only final production-data/API acceptance: 447 unchanged v2.2.1 PNGs, including fifteen previously approved female repairs, seven role layouts, readiness, shared pins and current/historical prompt bindings. Decoded-pixel evidence is checked against file hashes, not rerun here. The latest 64/74 synthetic suites are reused only for unchanged source; their tested Catalog hashes remain intact. No game files, installation or game execution are accessed.'
 }
 $parent=[IO.Path]::GetDirectoryName($output);[IO.Directory]::CreateDirectory($parent)|Out-Null
 [IO.File]::WriteAllText($output,($result|ConvertTo-Json -Depth 14),(New-Object Text.UTF8Encoding($false)))

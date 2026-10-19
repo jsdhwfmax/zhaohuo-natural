@@ -1,5 +1,23 @@
 # 验证记录
 
+## v2.2.2：1.0.6.04 兼容适配
+
+本轮在 Steam build `26021712` / `release_1.0.6000.4` 完成新的独立验收。运行插件仍为 v2.1.0，全部 447 张 PNG 和布局保持 v2.2.1 字节。
+
+[新构建运行总报告](runtime-build26021712/compatibility-runtime.json)记录两组实际 Steam 诊断：赵活小师弟与六位 NPC 的代表外观，共 150 张替换图；随后七角色全部原版。正常 Setup、异步与同步加载、UI 引用、重复加载缓存和非目标保护通过。恢复原有七项选择后，普通启动观测 92.4 秒通过，未带自测参数、无插件错误。见[普通启动](runtime-build26021712/normal-startup.json)及[文件保护记录](runtime-build26021712/preservation.json)。
+
+本轮只重测列出的七款外观，其余七款与全部未变素材沿用历史证据。未加载剧情存档，不代表全剧情、全路线或全部第三方模组组合验证。
+
+| 范围 | 证据与实际结果 |
+| --- | --- |
+| 新构建兼容规则 | [三基线核验](compatibility-probe-tests-build26021712.json)：27 项；[构建识别与回退路由](build26021712-validation-tests.json)：17 项。完整基线分别检查，不混用新旧资源。具体执行环境与复用边界由报告注明 |
+| 静态资源 | [七角色资源映射](game-resources-build26021712/resource-graph.json)：相对 25987745 既有映射和 Sprite 内容保持；[头像引用](game-resources-build26021712/avatar-resources.json)：5 个组件与两张头像资源，比较快照为 25957922。两份均为静态审查 |
+| 安装器回归 | [角色管理](character-manager-tests.json) 64 项、[回归](character-manager-regression.json) 74 项、[共享组件](character-shared-update.json) 13 项、[扩展迁移](character-expansion-tests.json) 33 项 |
+| 旧版直接升级 | [v2.2.1 升级](character-compatibility-upgrade.json) 19 项：同款零写入、七项选择、首次备份、切换回滚与卸载；[旧女版修图升级](character-artwork-patch.json) 22 项：继续支持 v2.2.0 的已知旧女版完整安装 |
+| 界面和最终目录 | [GUI](character-manager-gui.json)：77 个事件断言 × 2 配置，共 154 次；[最终 Catalog](character-catalog-acceptance.json)：69 项，绑定冻结目录与 447 张真实 PNG。GUI 使用隔离 mock 后端，不冒称实际安装 |
+
+所有本轮代码报告真实重跑并绑定相应源码。64 项夹具保留测试时 Catalog 的未就绪哈希；仅 readiness 数据变化由最终目录验收单独关联，未改写成新的测试哈希。v2.2.1 同名旧报告原字节保存在 [history-v2.2.1](history-v2.2.1/)，下面的运行记录保持各自原构建与范围。
+
 ## v2.2.1：大师兄女版手部修复
 
 本轮管理器版本为 **2.2.1**，运行插件仍为 **2.1.0**。只替换唐布衣“明艳女侠”的 15 张 PNG，其余 432 张图、运行 DLL、布局与兼容规则保持原字节。总量仍为 7 位角色、14 套自定义外观、447 张图。
@@ -10,9 +28,9 @@
 | --- | --- | --- |
 | 本次实机与图片绑定 | [运行总报告](runtime-v2.2.1/artwork-runtime.json) | 女版、男版、原画三组通过，绑定最终 Catalog、运行 DLL 和 15 张修复图；包含普通启动与真实安装保护证据 |
 | 手部与显示核对 | [静态目视记录](artwork-patch-v2.2.1-static-review.json)及运行报告引用的游戏内记录 | 15/15 通过；截图在维护者本地保存，公开报告保留哈希，不附带游戏原画/UI截图 |
-| 最终发行目录 | [图片完整性](character-art-integrity.json)、[目录验收](character-catalog-acceptance.json) | 447 图完整，69 项目录检查通过；不代替实际游戏测试 |
-| 旧女版直接升级 | [同款图片升级](character-artwork-patch.json) | 22 项通过；用已发布 v2.2.0 安装器建立隔离安装，覆盖精确旧版识别、失败回滚、中断恢复、外部修改拒绝、重复应用及卸载 |
-| 安装器与界面 | [角色管理](character-manager-tests.json)、[回归](character-manager-regression.json)、[共享组件](character-shared-update.json)、[扩展迁移](character-expansion-tests.json)、[GUI](character-manager-gui.json) | 64 + 74 + 13 + 33 + 154 项；连同升级专项共 360 次断言执行。隔离夹具与界面 mock 的范围在各报告中说明 |
+| 最终发行目录 | [图片完整性](character-art-integrity.json)、[目录验收](history-v2.2.1/character-catalog-acceptance.json) | 447 图完整，69 项目录检查通过；不代替实际游戏测试 |
+| 旧女版直接升级 | [同款图片升级](history-v2.2.1/character-artwork-patch.json) | 22 项通过；用已发布 v2.2.0 安装器建立隔离安装，覆盖精确旧版识别、失败回滚、中断恢复、外部修改拒绝、重复应用及卸载 |
+| 安装器与界面 | [角色管理](history-v2.2.1/character-manager-tests.json)、[回归](history-v2.2.1/character-manager-regression.json)、[共享组件](history-v2.2.1/character-shared-update.json)、[扩展迁移](history-v2.2.1/character-expansion-tests.json)、[GUI](history-v2.2.1/character-manager-gui.json) | 64 + 74 + 13 + 33 + 154 项；连同升级专项共 360 次断言执行。隔离夹具与界面 mock 的范围在各报告中说明 |
 
 最终 Catalog 的数据验收单独记录，并引用测试时的 Catalog 哈希；没有把历史报告改写成最终图片的实机测试。v2.2.0 被同名新报告替代的文件，原字节归档于 [history-v2.2.0](history-v2.2.0/)。未修改外观可沿用下面的历史证据。
 

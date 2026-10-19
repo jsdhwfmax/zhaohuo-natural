@@ -2,7 +2,7 @@
     "Passed":  true,
     "AssertionCount":  33,
     "PowerShell":  "5.1.26100.9711",
-    "DurationSeconds":  348.05,
+    "DurationSeconds":  418.42,
     "ActualGameRun":  false,
     "RealGameFilesModified":  false,
     "FinalArtAcceptance":  false,
@@ -14,7 +14,7 @@
     "CodeHashes":  [
                        {
                            "Path":  "installer/CharacterCatalog.ps1",
-                           "Sha256":  "FBD10E9A4364653B98C9EEF25BE8B0F1DE946740BB2EBEBBFDFFAB81ECC5CAB4"
+                           "Sha256":  "3CB7789635762748C831241CD17649C03931970E35FB6FE46FD745892D9DFF61"
                        },
                        {
                            "Path":  "installer/CharacterState.ps1",
@@ -30,7 +30,7 @@
                        },
                        {
                            "Path":  "installer/ZhaoHuoInstaller.psm1",
-                           "Sha256":  "8E6C9553BFA4ABD852687E1CEC71BCF78A33119B667FF86890B408D8549FE9FD"
+                           "Sha256":  "65D43AEFF6E593B125D9CC96784A45DF4D9351A41B0BD19EF8923A548D5213C3"
                        },
                        {
                            "Path":  "installer/AppearanceManager.ps1",
@@ -46,7 +46,7 @@
                        },
                        {
                            "Path":  "tests/Test-CharacterExpansion.ps1",
-                           "Sha256":  "C4DD85F6603AF734001EDFC0248329C36B436EEE5989F247557D6AC934C75E5C"
+                           "Sha256":  "A28BB49BD6E47B589B105D45F4FB7B2948D2BDE50A72FD53C3C15640E008F6DC"
                        }
                    ],
     "Checks":  [

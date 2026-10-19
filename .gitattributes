@@ -23,4 +23,5 @@ VariantCatalog.json -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,
 # The offline probe pins the exact baseline bytes, including line endings.
 installer/compatibility-baseline.json -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
 installer/compatibility-baseline-25987745.json -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+installer/compatibility-baseline-26021712.json -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
 verification/runtime-build25987745/*/portraits.tsv whitespace=-blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol

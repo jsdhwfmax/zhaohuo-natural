@@ -1,0 +1,32 @@
+{
+  "Passed": true,
+  "ActualGameRun": true,
+  "RuntimeVersion": "2.1.0",
+  "GameBuildId": "26021712",
+  "GameVersion": "release_1.0.6000.4",
+  "GameBuildIdUnchanged": true,
+  "Selections": {
+    "player": "xianxia",
+    "tang-buyi": "refined",
+    "xiahou-lan": "refined",
+    "tang-moling": "refined",
+    "long-xiang": "refined",
+    "yu-xiaomei": "refined",
+    "tang-zheng": "original"
+  },
+  "DateUtc": "2026-10-19T05:12:12.5999855Z",
+  "LaunchUtc": "2026-10-19T05:10:15.3451966Z",
+  "ObservedSeconds": 92.4,
+  "StillRunning": true,
+  "Responding": true,
+  "SelftestArgumentPresent": false,
+  "PluginReady": true,
+  "PluginSha256": "AEEE02AC56DCDCB1E683D6356AC28FE19E61AF861D5663ACFFD1B83984F06957",
+  "CatalogSha256": "28AFAB60DBAFFC8428767A970EF4C03B1BE44938E76A353B1D3EBF6C3EDFFC10",
+  "InstalledPayloadUnchanged": true,
+  "ChainloaderComplete": true,
+  "LogIsFromThisLaunch": true,
+  "PluginErrorLines": 0,
+  "Scope": "Normal registered Steam startup after multi-character installation; observed responsiveness at least 90 seconds. Main menu visual review is separate; no save or story loaded.",
+  "PrivateSourceSHA256": "0E40112333FB9DDB6D926BAACFFB99DF246F9AFF9F6BCFB2BCD201103A35A624"
+}

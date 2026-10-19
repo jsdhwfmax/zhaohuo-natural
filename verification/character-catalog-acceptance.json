@@ -1,15 +1,15 @@
 {
     "Passed":  true,
-    "DateUtc":  "2026-10-17T04:42:28.0120676Z",
+    "DateUtc":  "2026-10-19T05:01:23.4728633Z",
     "PowerShell":  "5.1.26100.9711",
-    "DurationSeconds":  21.18,
+    "DurationSeconds":  28.08,
     "DataOnlyAcceptance":  true,
     "SourceSuitesRerun":  false,
     "ActualGameRun":  false,
     "PackageReady":  true,
     "ReadOnlyPackageUnchanged":  true,
-    "CatalogSha256":  "590859B8AB8939913EA80FB19E91BC5A972E5F099D8C5A211A28FB1844455F2A",
-    "CatalogCodeSha256":  "36C49F8EB8D78DBD8D95542BEF2642120CCD07736E8ACDAA1235BD21A3B8C78E",
+    "CatalogSha256":  "28AFAB60DBAFFC8428767A970EF4C03B1BE44938E76A353B1D3EBF6C3EDFFC10",
+    "CatalogCodeSha256":  "3A8448548AA3F108E3BA0732D3ECBDD306CED747F1A46165CD3C9AAF454A5D5D",
     "PortraitCount":  447,
     "CustomVariantCount":  14,
     "CharacterCount":  7,
@@ -88,8 +88,8 @@
     "ReusedReports":  [
                           {
                               "Path":  "verification/character-manager-tests.json",
-                              "Sha256":  "931E0452F6AE579D71196EEE6EE78066E7766852ADCFEDB2C3FA81CCB254DA81",
-                              "HistoricalCatalogCodeSha256":  "D2AB32AF3AE767CC87F672CF0EE230FE31F4B00FA6190E8274B767787A0328EB",
+                              "Sha256":  "43E17B801956A0B88541D5D0518EEC0E3445720531662CB31088C70C65EDA1EC",
+                              "HistoricalCatalogCodeSha256":  "F5B401DEF21F205B562DD2C36461597C2BC05BA3474A9411ECE720C874EAF849",
                               "AssertionCount":  64,
                               "UnchangedNonCatalogCodeFiles":  9,
                               "SourceSuiteRerun":  false,
@@ -97,8 +97,8 @@
                           },
                           {
                               "Path":  "verification/character-manager-regression.json",
-                              "Sha256":  "C45499193296B88DEC93CBD93DC060677052945DC2F12F744708B0E537CC32A0",
-                              "HistoricalCatalogCodeSha256":  "D2AB32AF3AE767CC87F672CF0EE230FE31F4B00FA6190E8274B767787A0328EB",
+                              "Sha256":  "464D32AF4CBCD3C03A66D28197DF15F9F7BF9283625599287946D3246BF7E653",
+                              "HistoricalCatalogCodeSha256":  "3A8448548AA3F108E3BA0732D3ECBDD306CED747F1A46165CD3C9AAF454A5D5D",
                               "AssertionCount":  74,
                               "UnchangedNonCatalogCodeFiles":  8,
                               "SourceSuiteRerun":  false,
@@ -135,7 +135,7 @@
     "CodeHashes":  [
                        {
                            "Path":  "installer/ZhaoHuoInstaller.psm1",
-                           "Sha256":  "8E6C9553BFA4ABD852687E1CEC71BCF78A33119B667FF86890B408D8549FE9FD"
+                           "Sha256":  "65D43AEFF6E593B125D9CC96784A45DF4D9351A41B0BD19EF8923A548D5213C3"
                        },
                        {
                            "Path":  "installer/AppearanceManager.ps1",
@@ -147,7 +147,7 @@
                        },
                        {
                            "Path":  "installer/CharacterCatalog.ps1",
-                           "Sha256":  "FBD10E9A4364653B98C9EEF25BE8B0F1DE946740BB2EBEBBFDFFAB81ECC5CAB4"
+                           "Sha256":  "3CB7789635762748C831241CD17649C03931970E35FB6FE46FD745892D9DFF61"
                        },
                        {
                            "Path":  "installer/CharacterState.ps1",
@@ -163,7 +163,7 @@
                        },
                        {
                            "Path":  "VariantCatalog.json",
-                           "Sha256":  "36C49F8EB8D78DBD8D95542BEF2642120CCD07736E8ACDAA1235BD21A3B8C78E"
+                           "Sha256":  "3A8448548AA3F108E3BA0732D3ECBDD306CED747F1A46165CD3C9AAF454A5D5D"
                        },
                        {
                            "Path":  "Install.ps1",
@@ -171,16 +171,16 @@
                        },
                        {
                            "Path":  "tests/Test-CharacterCatalog.ps1",
-                           "Sha256":  "633D83247976DFED94FE4D6C52935C0CD0A7E539862019FBDDA1DEAB61D4F803"
+                           "Sha256":  "D4506C71504C591F92F398060E762AD96F751777D290A4F7E70070608D558223"
                        },
                        {
                            "Path":  "scripts/CharacterReleaseRules.ps1",
-                           "Sha256":  "A6BC92C3B2CBC9CE8CE37FBF4CB38677DA082E8F6FE1F13C7442C9F26B9D397C"
+                           "Sha256":  "BF60B97624C991412011E8DD38213E06AD19D9B6022362657657CFED6F34F920"
                        },
                        {
                            "Path":  "scripts/artwork-patch-v2.2.1.json",
                            "Sha256":  "422435B60C7AF3994A8744E4438CFD8859C14798CDDAEFAD68D48027AB8A6E23"
                        }
                    ],
-    "Scope":  "Read-only final production-data/API acceptance: 447 PNGs, 432 unchanged v2.2 portraits, fifteen approved female repairs, seven role layouts, readiness, shared pins and current/historical prompt bindings. Decoded-pixel evidence is checked against file hashes, not rerun here. The latest 64/74 synthetic suites are reused only for unchanged source; their tested Catalog hashes remain intact. No game files, installation or game execution are accessed."
+    "Scope":  "Read-only final production-data/API acceptance: 447 unchanged v2.2.1 PNGs, including fifteen previously approved female repairs, seven role layouts, readiness, shared pins and current/historical prompt bindings. Decoded-pixel evidence is checked against file hashes, not rerun here. The latest 64/74 synthetic suites are reused only for unchanged source; their tested Catalog hashes remain intact. No game files, installation or game execution are accessed."
 }

@@ -121,6 +121,9 @@ $kept=@(Get-ChildItem -LiteralPath $first -File -Recurse|Where-Object{$_.FullNam
 Assert ($kept.Count-eq 1-and-not(Test-Path -LiteralPath (StatePath $game))-and(Get-Content -LiteralPath $legacyPlugin -Raw)-eq 'ORIGINAL LEGACY PLUGIN'-and(Get-Content -LiteralPath $otherPlugin -Raw)-eq 'UNCHANGED OTHER MOD') 'Uninstall preserves modified new-role artwork and restores the original unrelated installation'
 $unchanged=$true;foreach($relative in $productionBefore.Keys){if((Hash (Join-Path $repo $relative))-ne $productionBefore[$relative]){$unchanged=$false}}
 Assert $unchanged 'All 312 production PNGs remain byte-identical after the isolated suite'
+# The isolated fixture replaced these in-memory pins. Restore the original pins
+# before validating a ready production catalog; no production file is written.
+& $module {param($Shared)foreach($entry in $Shared){$script:CharacterSharedHashes[$entry.Name]=$entry.Sha256}} $sourceCatalog.SharedFiles
 Assert ((Get-PortraitCharacters -PackageRoot $repo).PackageReady-eq $production.PackageReady) 'Production readiness is not changed by fixture tests'
 $codePaths=@('installer/CharacterCatalog.ps1','installer/CharacterState.ps1','installer/CharacterManager.ps1','installer/CharacterTransactions.ps1','installer/ZhaoHuoInstaller.psm1','installer/AppearanceManager.ps1','installer/VariantSupport.ps1','tests/Test-CharacterManager.ps1','tests/Test-CharacterExpansion.ps1')
 $hashes=@(foreach($relative in $codePaths){$text=[IO.File]::ReadAllText((Join-Path $repo $relative)).TrimStart([char]0xFEFF).Replace("`r`n","`n").Replace("`r","`n");[pscustomobject]@{Path=$relative;Sha256=(& $module {param($Text)Get-ZHTextHash $Text} $text)}})

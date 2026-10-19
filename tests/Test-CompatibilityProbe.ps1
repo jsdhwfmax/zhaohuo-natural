@@ -4,6 +4,8 @@ param(
     [Parameter(Mandatory=$true)][string]$GamePath,
     [string]$PriorManagedPath,
     [string]$PriorGamePath,
+    [string[]]$AdditionalPriorGamePaths,
+    [string]$GeneratorPowerShell,
     [string]$PackageRoot,
     [string]$ReportPath
 )
@@ -14,7 +16,7 @@ if (-not $PackageRoot) {$PackageRoot=Split-Path -Parent $PSScriptRoot}
 $initial=Test-ZhaoHuoCompatibility -GamePath $GamePath -PackageRoot $PackageRoot
 if(-not $initial.Compatible){throw ('Current source failed before fixture creation: '+($initial.Reasons -join '; '))}
 $baseline=Get-Content -LiteralPath (Join-Path $PackageRoot $initial.MatchedBaselineFile) -Raw -Encoding UTF8 | ConvertFrom-Json
-if(-not $ReportPath){$ReportPath=Join-Path $PackageRoot 'verification\compatibility-probe-tests-build25987745.json'}
+if(-not $ReportPath){$ReportPath=Join-Path $PackageRoot ('verification\compatibility-probe-tests-build'+$baseline.BaselineBuildIds[-1]+'.json')}
 $work=Join-Path $PSScriptRoot ('.work\probe-'+[guid]::NewGuid().ToString('N'))
 $fixture=Join-Path $work 'Game'
 $fixturePackage=Join-Path $work 'Package'
@@ -55,8 +57,9 @@ function Flip-FixtureByte([string]$Relative) {
     $stream=[IO.File]::Open($path,[IO.FileMode]::Open,[IO.FileAccess]::ReadWrite,[IO.FileShare]::None)
     try {$value=$stream.ReadByte();$stream.Position=0;$stream.WriteByte([byte]($value -bxor 1))}finally{$stream.Dispose()}
 }
-Assert-Probe 'Current build 25987745, read only static inspection' $true $GamePath
+Assert-Probe ('Current build '+($baseline.BaselineBuildIds -join '/')+', read only static inspection') $true $GamePath
 if($PriorGamePath){Assert-Probe 'Prior authentic complete game snapshot still accepted' $true $PriorGamePath}
+foreach($prior in @($AdditionalPriorGamePaths)){if($prior){Assert-Probe 'Additional historical game snapshot still accepted' $true $prior}}
 foreach($file in $baseline.FixedFiles) {Copy-ToFixture $GamePath $fixture $file.RelativePath}
 Copy-ToFixture $GamePath $fixture $baseline.VersionMetadata.RelativePath
 Reset-Core
@@ -120,7 +123,9 @@ $versionPath=Get-ZHCPChild $fixture $baseline.VersionMetadata.RelativePath
 $versionBytes=[IO.File]::ReadAllBytes($versionPath)
 $latin=[Text.Encoding]::GetEncoding(28591)
 $versionText=$latin.GetString($versionBytes)
-$versionText=[regex]::Replace($versionText,'release_[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+','release_1.0.6000.4')
+$replacementVersion='release_1.0.6000.9'
+if($versionText.Contains($replacementVersion)){throw 'Version-only test must use a different version label'}
+$versionText=[regex]::Replace($versionText,'release_[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+',$replacementVersion)
 [IO.File]::WriteAllBytes($versionPath,$latin.GetBytes($versionText))
 Assert-Probe 'Version label only change with unchanged protected behavior accepted' $true
 [IO.File]::WriteAllBytes($versionPath,$versionBytes)
@@ -129,15 +134,14 @@ Assert-Probe 'Non-version bootstrap metadata change rejected' $false
 [IO.File]::WriteAllBytes($versionPath,$versionBytes)
 $packageFiles=@((Get-ZHCompatibilityBaselineFiles|ForEach-Object RelativePath))+@('Dependencies/BepInEx/files/BepInEx/core/Mono.Cecil.dll','BepInEx/plugins/ZhaoHuoNatural/ZhaoHuoNatural.dll')
 foreach($relative in $packageFiles) {Copy-ToFixture $PackageRoot $fixturePackage $relative}
-[IO.File]::AppendAllText((Join-Path $fixturePackage 'installer\compatibility-baseline-25987745.json'),' ')
-Assert-Probe 'Changed new baseline rejected' $false $fixture $fixturePackage
-Copy-ToFixture $PackageRoot $fixturePackage 'installer/compatibility-baseline-25987745.json'
-[IO.File]::AppendAllText((Join-Path $fixturePackage 'installer\compatibility-baseline.json'),' ')
-Assert-Probe 'Changed prior baseline rejected even when current snapshot would match' $false $fixture $fixturePackage
-Copy-ToFixture $PackageRoot $fixturePackage 'installer/compatibility-baseline.json'
-Remove-Item -LiteralPath (Join-Path $fixturePackage 'installer\compatibility-baseline.json')
-Assert-Probe 'Missing prior baseline rejects incomplete package' $false $fixture $fixturePackage
-Copy-ToFixture $PackageRoot $fixturePackage 'installer/compatibility-baseline.json'
+foreach($spec in (Get-ZHCompatibilityBaselineFiles)){
+    [IO.File]::AppendAllText((Join-Path $fixturePackage $spec.RelativePath),' ')
+    Assert-Probe ('Changed baseline rejected: '+$spec.RelativePath) $false $fixture $fixturePackage
+    Copy-ToFixture $PackageRoot $fixturePackage $spec.RelativePath
+    Remove-Item -LiteralPath (Join-Path $fixturePackage $spec.RelativePath)
+    Assert-Probe ('Missing baseline rejects incomplete package: '+$spec.RelativePath) $false $fixture $fixturePackage
+    Copy-ToFixture $PackageRoot $fixturePackage $spec.RelativePath
+}
 [IO.File]::AppendAllText((Join-Path $fixturePackage 'BepInEx\plugins\ZhaoHuoNatural\ZhaoHuoNatural.dll'),' ')
 Assert-Probe 'Changed runtime plugin rejected' $false $fixture $fixturePackage
 Copy-ToFixture $PackageRoot $fixturePackage 'BepInEx/plugins/ZhaoHuoNatural/ZhaoHuoNatural.dll'
@@ -145,9 +149,24 @@ Copy-ToFixture $PackageRoot $fixturePackage 'BepInEx/plugins/ZhaoHuoNatural/Zhao
 Assert-Probe 'Changed trusted metadata reader rejected' $false $fixture $fixturePackage
 foreach($name in $sourceHashes.Keys) {if ((Get-ZHCPHash (Join-Path $GamePath ('Mortal_Data\Managed\'+$name))) -ne $sourceHashes[$name]) {throw 'Source game changed during test; results invalid'}}
 $results.Add([pscustomobject]@{Test='Source game assembly fingerprints unchanged';Passed=$true})
+$generatedPath=Join-Path $work 'regenerated-baseline.json'
+$generatorVersion=$PSVersionTable.PSVersion.ToString()
+if($GeneratorPowerShell){
+    # Byte reproduction is evaluated in the original generation engine. The
+    # consumer regressions above still run entirely in this PowerShell process.
+    $generatorVersion=((& $GeneratorPowerShell -NoProfile -Command '$PSVersionTable.PSVersion.ToString()')|Out-String).Trim()
+    if($LASTEXITCODE-ne 0){throw 'Could not identify the explicit baseline generator engine'}
+    & $GeneratorPowerShell -NoProfile -ExecutionPolicy Bypass -File (Join-Path $PackageRoot 'scripts/Generate-CompatibilityBaseline.ps1') -GamePath $GamePath -BuildId $baseline.CapturedFromBuildId -OutputPath $generatedPath -PackageRoot $PackageRoot | Out-Host
+    if($LASTEXITCODE-ne 0){throw 'Explicit-engine baseline generation failed'}
+}else{
+    $null=& (Join-Path $PackageRoot 'scripts/Generate-CompatibilityBaseline.ps1') -GamePath $GamePath -BuildId $baseline.CapturedFromBuildId -OutputPath $generatedPath -PackageRoot $PackageRoot
+}
+if((Get-ZHCPHash $generatedPath) -ne (Get-ZHCPHash (Join-Path $PackageRoot $initial.MatchedBaselineFile))){throw 'Baseline generator did not reproduce the frozen current snapshot'}
+$generated=Get-Content -LiteralPath $generatedPath -Raw -Encoding UTF8|ConvertFrom-Json
+$results.Add([pscustomobject]@{Test='Baseline generator reproduces frozen bytes in the original generation engine';Passed=$true;ActualGameRun=$false;GeneratorPowerShellVersion=$generatorVersion;GeneratedSha256=(Get-ZHCPHash $generatedPath);FixedFileCount=@($generated.FixedFiles).Count;Methods=@($generated.CoreSurface.Methods).Count;Types=@($generated.CoreSurface.Types).Count;GameMemberReferenceCount=$generated.GameMemberReferenceCount})
 $baselineRecords=@(foreach($spec in (Get-ZHCompatibilityBaselineFiles)){$b=Get-Content -LiteralPath (Join-Path $PackageRoot $spec.RelativePath) -Raw -Encoding UTF8|ConvertFrom-Json;[pscustomobject]@{Path=$spec.RelativePath;Sha256=$spec.Sha256;BuildIds=@($b.BaselineBuildIds);FixedFileCount=@($b.FixedFiles).Count;GameMemberReferenceCount=$b.GameMemberReferenceCount}})
-$codePaths=@('installer/CompatibilityProbe.ps1','installer/compatibility-baseline.json','installer/compatibility-baseline-25987745.json','scripts/Generate-CompatibilityBaseline.ps1','tests/Test-CompatibilityProbe.ps1','Source/Plugin.cs','Source/CharacterPolicy.cs','Source/CharacterSupport.cs','Source/build.ps1')
+$codePaths=@('installer/CompatibilityProbe.ps1','installer/ZhaoHuoInstaller.psm1')+@(Get-ZHCompatibilityBaselineFiles|ForEach-Object RelativePath)+@('scripts/Generate-CompatibilityBaseline.ps1','tests/Test-CompatibilityProbe.ps1','Source/Plugin.cs','Source/CharacterPolicy.cs','Source/CharacterSupport.cs','Source/build.ps1')
 $codeHashes=@(foreach($relative in $codePaths){$text=[IO.File]::ReadAllText((Join-Path $PackageRoot $relative)).TrimStart([char]0xFEFF).Replace("`r`n","`n");[pscustomobject]@{Path=$relative;Sha256=(Get-ZHCPTextHash $text)}})
-$summary=[pscustomobject][ordered]@{Passed=$true;ActualGameRun=$false;Scope='Read-only source metadata/resource checks and isolated copied-file mutation tests. No game process launched; historical snapshots do not claim current runtime verification.';PowerShellVersion=$PSVersionTable.PSVersion.ToString();PluginSha256=$baseline.PluginSha256;BaselineSha256=$script:ZHCompatibilityBaselineHash;FixedFileCount=@($baseline.FixedFiles).Count;GameMemberReferenceCount=$baseline.GameMemberReferenceCount;Baselines=$baselineRecords;CodeHashAlgorithm='SHA256-UTF8-noBOM-LF-v1';CodeHashes=$codeHashes;TestCount=$results.Count;Tests=$results.ToArray()}
+$summary=[pscustomobject][ordered]@{Passed=$true;ActualGameRun=$false;Scope='Read-only source metadata/resource checks and isolated copied-file mutation tests. No game process launched; historical snapshots do not claim current runtime verification. Consumer regressions and baseline-generation engine versions are recorded separately; no cross-engine byte determinism is claimed.';PowerShellVersion=$PSVersionTable.PSVersion.ToString();ConsumerPowerShellVersion=$PSVersionTable.PSVersion.ToString();GeneratorPowerShellVersion=$generatorVersion;PluginSha256=$baseline.PluginSha256;BaselineSha256=$script:ZHCompatibilityBaselineHash;FixedFileCount=@($baseline.FixedFiles).Count;GameMemberReferenceCount=$baseline.GameMemberReferenceCount;Baselines=$baselineRecords;CodeHashAlgorithm='SHA256-UTF8-noBOM-LF-v1';CodeHashes=$codeHashes;TestCount=$results.Count;Tests=$results.ToArray()}
 $summary | ConvertTo-Json -Depth 12 | Set-Content -LiteralPath $ReportPath -Encoding UTF8
 Write-Host ('All '+$results.Count+' focused compatibility checks passed. Only isolated fixture copies were modified.')

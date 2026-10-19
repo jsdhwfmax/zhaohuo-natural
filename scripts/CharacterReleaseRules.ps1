@@ -1,11 +1,11 @@
 ﻿#requires -Version 5.1
 # Frozen release inventories, separate from editable catalog readiness and hashes.
-$releaseVersion='2.2.1'
+$releaseVersion='2.2.2'
 $releaseRuntimeVersion='2.1.0'
 $releaseArtworkPatchPath='scripts/artwork-patch-v2.2.1.json'
 $releaseArtworkPatch=Get-Content -LiteralPath (Join-Path $PSScriptRoot 'artwork-patch-v2.2.1.json') -Raw -Encoding UTF8|ConvertFrom-Json
-$releaseGameBuildId='25987745'
-$releaseGameVersion='release_1.0.6000.3'
+$releaseGameBuildId='26021712'
+$releaseGameVersion='release_1.0.6000.4'
 $releaseRoleIds=@('player','tang-buyi','xiahou-lan','tang-moling','long-xiang','yu-xiaomei','tang-zheng')
 $releasePortraitCount=447;$releaseCustomCount=14;$releaseChoiceCount=21
 $releaseCounts=@{
@@ -58,7 +58,7 @@ function Assert-ReleaseArtworkRevision([string]$Key,[object]$Variant){
         return
     }
     $patch=$releaseArtworkPatch
-    if($patch.SchemaVersion-ne 1-or $patch.FromPackageVersion-ne '2.2.0'-or $patch.ToPackageVersion-ne $releaseVersion-or $patch.CharacterId-ne 'tang-buyi'-or $patch.VariantId-ne 'female'-or $patch.PortraitCount-ne 15-or $patch.BeforeFingerprint-ne $frozenV21Fingerprints[$Key]-or $patch.AfterFingerprint-notmatch '^[0-9A-F]{64}$'-or $Variant.AssetFingerprint-ne $patch.AfterFingerprint-or $patch.AfterFingerprint-eq $patch.BeforeFingerprint){throw 'Final approved fifteen-portrait patch fingerprint is missing or differs.'}
+    if($patch.SchemaVersion-ne 1-or $patch.FromPackageVersion-ne '2.2.0'-or $patch.ToPackageVersion-ne '2.2.1'-or $patch.CharacterId-ne 'tang-buyi'-or $patch.VariantId-ne 'female'-or $patch.PortraitCount-ne 15-or $patch.BeforeFingerprint-ne $frozenV21Fingerprints[$Key]-or $patch.AfterFingerprint-notmatch '^[0-9A-F]{64}$'-or $Variant.AssetFingerprint-ne $patch.AfterFingerprint-or $patch.AfterFingerprint-eq $patch.BeforeFingerprint){throw 'Final approved fifteen-portrait patch fingerprint is missing or differs.'}
     if(@($patch.BeforeFiles).Count-ne 15-or @($Variant.Files).Count-ne 15){throw 'Patch inventory must contain exactly fifteen old and new portraits.'}
     $lines=[string[]]@($patch.BeforeFiles|ForEach-Object{'tang-buyi/'+([string]$_.Name).ToLowerInvariant()+'='+([string]$_.Sha256).ToUpperInvariant()});[Array]::Sort($lines,[StringComparer]::Ordinal)
     $sha=[Security.Cryptography.SHA256]::Create();try{$before=([BitConverter]::ToString($sha.ComputeHash([Text.Encoding]::UTF8.GetBytes(($lines-join "`n"))))).Replace('-','')}finally{$sha.Dispose()}

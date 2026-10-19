@@ -1,7 +1,7 @@
 ﻿#requires -Version 5.1
 [CmdletBinding()]
 param(
-    [ValidatePattern('^[0-9]+\.[0-9]+\.[0-9]+$')][string]$Version='2.2.1',
+    [ValidatePattern('^[0-9]+\.[0-9]+\.[0-9]+$')][string]$Version='2.2.2',
     [string]$OutputDirectory,
     [switch]$CheckOnly
 )
@@ -74,7 +74,7 @@ function Assert-CodeReport([string]$Relative,[string[]]$RequiredPaths,[switch]$A
     return [ordered]@{Path=$Relative;Sha256=(Hash (Resolve-PackageFile $Relative));CodeHashAlgorithm=$report.CodeHashAlgorithm;CodeHashCount=$seen.Count;CodeHashes=@($hashEntries);HistoricalCatalogBinding=$historicalCatalog;CatalogAcceptancePath=$(if($historicalCatalog){'verification/character-catalog-acceptance.json'}else{$null})}
 }
 . (Join-Path $PSScriptRoot 'Validate-CharacterRelease.ps1')
-$gameVersions=@{'25953419'='release_1.0.6000.0';'25957922'='release_1.0.6000.2';'25987745'='release_1.0.6000.3'}
+$gameVersions=@{'25953419'='release_1.0.6000.0';'25957922'='release_1.0.6000.2';'25987745'='release_1.0.6000.3';'26021712'='release_1.0.6000.4'}
 $supported=@(& $installer {$script:SupportedGameBuilds}|ForEach-Object{if(-not $gameVersions.ContainsKey([string]$_.BuildId)){throw 'Game metadata is missing.'};[ordered]@{BuildId=[string]$_.BuildId;GameVersion=$gameVersions[[string]$_.BuildId];Hashes=$_.Hashes}})
 $folderNames=@('BepInEx','Variants','Characters','Loader','Dependencies','installer','Source','Prompts','docs','verification','scripts')
 $rootNames=@('打开美化管理器.cmd','Install.cmd','Uninstall.cmd','Install.ps1','Uninstall.ps1','VariantCatalog.json','README.md','LICENSE','ARTWORK-NOTICE.md','THIRD_PARTY_NOTICES.md','CHANGELOG.md')
@@ -120,6 +120,8 @@ $manifest=[ordered]@{
     Characters=$releaseRoleIds.Count;Variants=$variants;PortraitCount=$releasePortraitCount;SharedPluginFiles=$shared;KnownGameFingerprintGroups=$supported
     ManagerValidation=$managerValidation;RegressionValidation=$regressionValidation;CatalogDataValidation=$catalogValidation;GuiValidation=$guiValidation;CompatibilityValidation=$compatibilityValidation;GameResourceValidation=$gameResourceValidation;ConfigurationParserValidation=$configurationValidation;SharedDllUpdateValidation=$sharedUpdateValidation;ExpansionValidation=$expansionValidation;InstallationValidation=$installationValidation;ArtworkValidation=$managerArtValidation;ArtworkPatchValidation=$artworkPatchValidation;RuntimeValidation=$runtimeValidation;HistoricalRuntimeValidation=$historicalRuntimeValidation;HistoricalInstallationValidation=$historicalInstallationValidation;PromptValidation=$promptValidation
     CompatibilityCheck=[ordered]@{Trigger='ManagerCheckOrApply';AutoRunOnGameStart=$false;NetworkRequired=$false;FastPathRequiresSteamBuildAndCompleteFingerprint=$true;UnknownBuildMode='OfflineCompatibilityProbe';ProbePath=$probePath;ProbeSHA256=(Hash (Resolve-PackageFile $probePath));Baselines=$compatibilityBaselines}
+    CompatibilityUpgradeValidation=$compatibilityUpgradeValidation
+    BuildRoutingValidation=$buildRoutingValidation
     Scope='Seven independently selectable characters, fourteen custom styles and per-character original mode. Runtime, art, GUI, fixture and installation evidence have separate scopes; not a full-story or universal future-update guarantee.'
     ProvenancePrivacy='Public text/provenance omits local username/desktop paths. Runtime binaries may retain their original compiler debug-path reference.'
     Files=@($selected|Sort-Object Path|ForEach-Object{[ordered]@{Path=$_.Path;SHA256=$_.SHA256;Bytes=$_.Bytes}})
