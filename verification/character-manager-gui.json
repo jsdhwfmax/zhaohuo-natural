@@ -16,8 +16,8 @@
                                  "tang-zheng"
                              ],
     "ObservedOptions":  21,
-    "CatalogSnapshotSha256":  "28AFAB60DBAFFC8428767A970EF4C03B1BE44938E76A353B1D3EBF6C3EDFFC10",
-    "ProductionReadyAtTest":  true,
+    "CatalogSnapshotSha256":  "2E2490B2C0DD0B10B158A067D11E4DEB61DD9F186ED5EEDA146A3C2662342921",
+    "ProductionReadyAtTest":  false,
     "CodeHashAlgorithm":  "SHA256-UTF8-noBOM-LF-v1",
     "CodeHashes":  [
                        {
@@ -26,7 +26,7 @@
                        },
                        {
                            "Path":  "installer/CharacterCatalog.ps1",
-                           "Sha256":  "3CB7789635762748C831241CD17649C03931970E35FB6FE46FD745892D9DFF61"
+                           "Sha256":  "A424E13FD254258066333290397C606DB75122E8DE8223827ECAABF741ED294D"
                        }
                    ],
     "Configurations":  [
@@ -107,7 +107,7 @@
                                                   "brother refined and female appearances share a single installed selection",
                                                   "control fits 活侠传角色美化管理器",
                                                   "control fits 逐个角色，选你喜欢的江湖模样。",
-                                                  "control fits v2.2.2 · 离线安装",
+                                                  "control fits v2.2.3 · 离线安装",
                                                   "control fits D:\\SteamLibrary\\steamapps\\common\\LegendOfMortal",
                                                   "control fits 浏览文件夹",
                                                   "control fits 应用当前角色",
@@ -194,7 +194,7 @@
                                                   "brother refined and female appearances share a single installed selection",
                                                   "control fits 活侠传角色美化管理器",
                                                   "control fits 逐个角色，选你喜欢的江湖模样。",
-                                                  "control fits v2.2.2 · 离线安装",
+                                                  "control fits v2.2.3 · 离线安装",
                                                   "control fits D:\\SteamLibrary\\steamapps\\common\\LegendOfMortal",
                                                   "control fits 浏览文件夹",
                                                   "control fits 应用当前角色",

@@ -1,7 +1,7 @@
 {
     "Passed":  true,
     "FromVersion":  "2.2.0",
-    "ToVersion":  "2.2.2",
+    "ToVersion":  "2.2.3",
     "RuntimeVersion":  "2.1.0",
     "RuntimeProtocol":  2,
     "ExecutionMode":  "IsolatedPreviousReleaseInstallation",
@@ -40,7 +40,7 @@
     "OtherPluginsPreserved":  true,
     "AllExistingSelectionsPreserved":  true,
     "PowerShell":  "5.1.26100.9711",
-    "DurationSeconds":  370.02,
+    "DurationSeconds":  451.5,
     "PreviousInstallerCodeHashes":  [
                                         {
                                             "Path":  "installer/AppearanceManager.ps1",
@@ -83,7 +83,7 @@
     "CodeHashes":  [
                        {
                            "Path":  "installer/ZhaoHuoInstaller.psm1",
-                           "Sha256":  "65D43AEFF6E593B125D9CC96784A45DF4D9351A41B0BD19EF8923A548D5213C3"
+                           "Sha256":  "C93596D4B695B196A6BC1FB53EFD0E61D22EFF5C0206B30EF697F838A800036B"
                        },
                        {
                            "Path":  "installer/AppearanceManager.ps1",
@@ -95,7 +95,7 @@
                        },
                        {
                            "Path":  "installer/CharacterCatalog.ps1",
-                           "Sha256":  "3CB7789635762748C831241CD17649C03931970E35FB6FE46FD745892D9DFF61"
+                           "Sha256":  "A424E13FD254258066333290397C606DB75122E8DE8223827ECAABF741ED294D"
                        },
                        {
                            "Path":  "installer/CharacterState.ps1",

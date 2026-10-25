@@ -1,0 +1,122 @@
+{
+    "Passed":  true,
+    "FromVersion":  "2.2.0",
+    "ToVersion":  "2.2.2",
+    "RuntimeVersion":  "2.1.0",
+    "RuntimeProtocol":  2,
+    "ExecutionMode":  "IsolatedPreviousReleaseInstallation",
+    "ActualGameRun":  false,
+    "RealGameFilesModified":  false,
+    "ProductionPluginSha256":  "AEEE02AC56DCDCB1E683D6356AC28FE19E61AF861D5663ACFFD1B83984F06957",
+    "HistoricalFemaleFingerprint":  "3DE6E1944779A6DFADEA26A8631CECFD09FE29D750F97A4AEFF39FF82BF003A8",
+    "PatchedPortraitCount":  15,
+    "AssertionCount":  22,
+    "Checks":  [
+                   "Released v2.2.0 installer creates seven selections with the exact public old female fingerprint",
+                   "Production historical allowlist accepts the exact released female revision without fixture overrides",
+                   "Historical permission cannot be reused under another appearance ID",
+                   "Check-only recognizes the old installation and plans fifteen PNG writes without changing files",
+                   "Same-appearance patch targets only the fifteen female portraits",
+                   "Applying another unchanged role preserves the recognized old female revision",
+                   "Unknown extra files still block the update",
+                   "A changed live PNG is rejected before overwriting it",
+                   "Self-consistent but unknown historical PNG and manifest hashes are not adopted",
+                   "Failure is injected after all repaired PNG writes",
+                   "Failed commit restores the exact old portraits and manifest",
+                   "A process interruption remains recoverable",
+                   "Interrupted update check is read-only and does not claim success",
+                   "Interrupted update recovery restores old artwork and every selection",
+                   "Successful artwork patch preserves all selections and the first installation identity",
+                   "Every pre-existing original backup and switch snapshot remains byte-identical",
+                   "All other character portraits, shared components, layout and enabled-role configuration remain unchanged",
+                   "Installed metadata records the repaired complete female fingerprint",
+                   "Repeated application of the repaired appearance is a complete no-op",
+                   "Original mode and re-enabling the repaired appearance preserve all other role choices",
+                   "Other mods and the inert save remain unchanged",
+                   "Uninstall after the patch restores the first legacy plugin and preserves unrelated files"
+               ],
+    "InitialInstallationPreserved":  true,
+    "OriginalBackupsPreserved":  true,
+    "OtherPluginsPreserved":  true,
+    "AllExistingSelectionsPreserved":  true,
+    "PowerShell":  "5.1.26100.9711",
+    "DurationSeconds":  370.02,
+    "PreviousInstallerCodeHashes":  [
+                                        {
+                                            "Path":  "installer/AppearanceManager.ps1",
+                                            "Sha256":  "68AC32DCF799A12AA05BA749F7BBB2B8B2C34A06F529EF4D57611A3CE12F78E7"
+                                        },
+                                        {
+                                            "Path":  "installer/CharacterCatalog.ps1",
+                                            "Sha256":  "BDD6BABFF23319EA049E23CF220C51F0C29B5D79C30C0160A50B1F1DBB4B9F61"
+                                        },
+                                        {
+                                            "Path":  "installer/CharacterManager.ps1",
+                                            "Sha256":  "F62691721CFD9758CB1C4D5049E47C67968364E49BCF5B44C9AEF8B3A21D7079"
+                                        },
+                                        {
+                                            "Path":  "installer/CharacterState.ps1",
+                                            "Sha256":  "74707F347AFCD20A699CF177FA7A30DBDE5DB53AF58CE34FFFBBC25E7CFCEC12"
+                                        },
+                                        {
+                                            "Path":  "installer/CharacterTransactions.ps1",
+                                            "Sha256":  "193E73AFB67C163BA365B4B331AE27EAC9C80A8E047F787C86BC7DADFB120A80"
+                                        },
+                                        {
+                                            "Path":  "installer/CompatibilityProbe.ps1",
+                                            "Sha256":  "74DFA1CAF8012136709B0E19B8478154E5E79B6AF4F2C635503EFB36B312FE04"
+                                        },
+                                        {
+                                            "Path":  "installer/Gui.ps1",
+                                            "Sha256":  "84EA85DE49BF1BCDDBBD74BAE0913B95BF8D7144B83D57D7A7355D50D88807BE"
+                                        },
+                                        {
+                                            "Path":  "installer/VariantSupport.ps1",
+                                            "Sha256":  "E12665D920A4E9582EC88BCB92C679AA04AC558F61DC47E3960A9F4C99FAE89A"
+                                        },
+                                        {
+                                            "Path":  "installer/ZhaoHuoInstaller.psm1",
+                                            "Sha256":  "8E6C9553BFA4ABD852687E1CEC71BCF78A33119B667FF86890B408D8549FE9FD"
+                                        }
+                                    ],
+    "CodeHashAlgorithm":  "SHA256-UTF8-noBOM-LF-v1",
+    "CodeHashes":  [
+                       {
+                           "Path":  "installer/ZhaoHuoInstaller.psm1",
+                           "Sha256":  "65D43AEFF6E593B125D9CC96784A45DF4D9351A41B0BD19EF8923A548D5213C3"
+                       },
+                       {
+                           "Path":  "installer/AppearanceManager.ps1",
+                           "Sha256":  "68AC32DCF799A12AA05BA749F7BBB2B8B2C34A06F529EF4D57611A3CE12F78E7"
+                       },
+                       {
+                           "Path":  "installer/VariantSupport.ps1",
+                           "Sha256":  "E12665D920A4E9582EC88BCB92C679AA04AC558F61DC47E3960A9F4C99FAE89A"
+                       },
+                       {
+                           "Path":  "installer/CharacterCatalog.ps1",
+                           "Sha256":  "3CB7789635762748C831241CD17649C03931970E35FB6FE46FD745892D9DFF61"
+                       },
+                       {
+                           "Path":  "installer/CharacterState.ps1",
+                           "Sha256":  "EB09E9EF055D3B25668D22CEBF38696BE122F8C284172733A9D001AC587A17F4"
+                       },
+                       {
+                           "Path":  "installer/CharacterManager.ps1",
+                           "Sha256":  "F62691721CFD9758CB1C4D5049E47C67968364E49BCF5B44C9AEF8B3A21D7079"
+                       },
+                       {
+                           "Path":  "installer/CharacterTransactions.ps1",
+                           "Sha256":  "193E73AFB67C163BA365B4B331AE27EAC9C80A8E047F787C86BC7DADFB120A80"
+                       },
+                       {
+                           "Path":  "tests/Test-CharacterManager.ps1",
+                           "Sha256":  "DD7FAA07DF50A3F2A5AC7E7D2EA030C3AF18D087FDEE467E4A08D780BE48CDD2"
+                       },
+                       {
+                           "Path":  "tests/Test-CharacterArtworkPatch.ps1",
+                           "Sha256":  "900E86B954A2EB848BE6F0DF623D7791C185974E9E27B795D0D09B0672A24AE4"
+                       }
+                   ],
+    "Scope":  "Genuine v2.2.0 installer and exact released female PNGs create an isolated seven-role installation. Fifteen inert replacement portraits exercise same-appearance updates, rejection, rollback, interruption, no-op and uninstall. No game execution occurs; final repaired artwork and runtime acceptance are separate."
+}

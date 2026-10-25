@@ -1,5 +1,20 @@
 # 验证记录
 
+## v2.2.3：1.0.6.05 兼容适配
+
+本轮目标为 Steam build `26073097` / `release_1.0.6000.5`。运行插件仍为 v2.1.0，全部 447 张 PNG 与角色布局保持原字节。
+
+[实际运行总报告](runtime-build26073097/compatibility-runtime.json)记录七角色各一款代表外观（150 张替换图）及七角色全原版两组实际 Steam 诊断，覆盖资源加载、UI 引用、缓存和非目标保护。恢复原有七项选择后，[普通启动](runtime-build26073097/normal-startup.json)观测 91.8 秒通过，无自测参数与插件错误。[文件保护记录](runtime-build26073097/preservation.json)核对首次备份、其他模组、游戏文件与存档。
+
+| 范围 | 证据与边界 |
+| --- | --- |
+| 静态资源与接口 | [资源映射](game-resources-build26073097/resource-graph.json)、[头像引用](game-resources-build26073097/avatar-resources.json)、[相关接口](game-resources-build26073097/api-surface.json)。48 项角色身份记录及其立绘映射、11 个立绘资源包保持；Core 147 方法/35 类型、Story 立绘闭包 60 方法/14 类型保持。游戏其他资源及 Story 闭包外实现确有变化，不称为单纯版本字符串更新 |
+| 新旧构建识别 | [四基线核验](compatibility-probe-tests-build26073097.json)、[构建路由](build26073097-validation-tests.json)。各套基线完整核对，保留未知文件、混装与检测竞态的拒绝规则 |
+| 安装与升级 | [角色管理](character-manager-tests.json)、[安装器回归](character-manager-regression.json)、[共享组件](character-shared-update.json)、[扩展迁移](character-expansion-tests.json)、[兼容升级](character-compatibility-upgrade.json)、[旧女版修图升级](character-artwork-patch.json)。使用隔离夹具，不能替代实机结果 |
+| 界面与目录 | [GUI](character-manager-gui.json)为真实 WinForms 事件配合 mock 后端；[最终目录](character-catalog-acceptance.json)绑定当前 Catalog 与全部真实图片 |
+
+本轮没有推进或保存剧情，也未逐套重测其余七款未变外观。旧实机报告保留各自构建和范围，不等于全路线或全部第三方模组组合验证。被本轮替换的 v2.2.2 报告原字节归档于 [history-v2.2.2](history-v2.2.2/)。
+
 ## v2.2.2：1.0.6.04 兼容适配
 
 本轮在 Steam build `26021712` / `release_1.0.6000.4` 完成新的独立验收。运行插件仍为 v2.1.0，全部 447 张 PNG 和布局保持 v2.2.1 字节。
@@ -12,9 +27,9 @@
 | --- | --- |
 | 新构建兼容规则 | [三基线核验](compatibility-probe-tests-build26021712.json)：27 项；[构建识别与回退路由](build26021712-validation-tests.json)：17 项。完整基线分别检查，不混用新旧资源。具体执行环境与复用边界由报告注明 |
 | 静态资源 | [七角色资源映射](game-resources-build26021712/resource-graph.json)：相对 25987745 既有映射和 Sprite 内容保持；[头像引用](game-resources-build26021712/avatar-resources.json)：5 个组件与两张头像资源，比较快照为 25957922。两份均为静态审查 |
-| 安装器回归 | [角色管理](character-manager-tests.json) 64 项、[回归](character-manager-regression.json) 74 项、[共享组件](character-shared-update.json) 13 项、[扩展迁移](character-expansion-tests.json) 33 项 |
-| 旧版直接升级 | [v2.2.1 升级](character-compatibility-upgrade.json) 19 项：同款零写入、七项选择、首次备份、切换回滚与卸载；[旧女版修图升级](character-artwork-patch.json) 22 项：继续支持 v2.2.0 的已知旧女版完整安装 |
-| 界面和最终目录 | [GUI](character-manager-gui.json)：77 个事件断言 × 2 配置，共 154 次；[最终 Catalog](character-catalog-acceptance.json)：69 项，绑定冻结目录与 447 张真实 PNG。GUI 使用隔离 mock 后端，不冒称实际安装 |
+| 安装器回归 | [角色管理](history-v2.2.2/character-manager-tests.json) 64 项、[回归](history-v2.2.2/character-manager-regression.json) 74 项、[共享组件](history-v2.2.2/character-shared-update.json) 13 项、[扩展迁移](history-v2.2.2/character-expansion-tests.json) 33 项 |
+| 旧版直接升级 | [v2.2.1 升级](history-v2.2.2/character-compatibility-upgrade.json) 19 项：同款零写入、七项选择、首次备份、切换回滚与卸载；[旧女版修图升级](history-v2.2.2/character-artwork-patch.json) 22 项：继续支持 v2.2.0 的已知旧女版完整安装 |
+| 界面和最终目录 | [GUI](history-v2.2.2/character-manager-gui.json)：77 个事件断言 × 2 配置，共 154 次；[最终 Catalog](history-v2.2.2/character-catalog-acceptance.json)：69 项，绑定冻结目录与 447 张真实 PNG。GUI 使用隔离 mock 后端，不冒称实际安装 |
 
 所有本轮代码报告真实重跑并绑定相应源码。64 项夹具保留测试时 Catalog 的未就绪哈希；仅 readiness 数据变化由最终目录验收单独关联，未改写成新的测试哈希。v2.2.1 同名旧报告原字节保存在 [history-v2.2.1](history-v2.2.1/)，下面的运行记录保持各自原构建与范围。
 

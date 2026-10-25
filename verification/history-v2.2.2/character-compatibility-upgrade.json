@@ -1,0 +1,117 @@
+{
+    "Passed":  true,
+    "FromVersion":  "2.2.1",
+    "ToVersion":  "2.2.2",
+    "RuntimeVersion":  "2.1.0",
+    "RuntimeProtocol":  2,
+    "ExecutionMode":  "IsolatedPreviousReleaseInstallation",
+    "ActualGameRun":  false,
+    "RealGameFilesModified":  false,
+    "ProductionPluginSha256":  "AEEE02AC56DCDCB1E683D6356AC28FE19E61AF861D5663ACFFD1B83984F06957",
+    "AssertionCount":  19,
+    "Checks":  [
+                   "Released v2.2.1 installer creates the seven-role schema4/protocol2 source installation",
+                   "New game support declares a complete build26021712 fingerprint group",
+                   "New manager checks an old complete installation without rewriting any file",
+                   "v2.2.1 to current same-selection upgrade is a complete file no-op",
+                   "All seven existing character selections survive the manager upgrade",
+                   "An existing alternative hardman appearance plans only its 47 player PNG replacements",
+                   "A failed hardman manifest commit is injected after portrait writes",
+                   "Failed switch restores the exact v2.2.1 selections and payload",
+                   "Interrupted hardman switch remains recoverable",
+                   "Interrupted upgrade check does not write or misreport success",
+                   "Interrupted upgrade recovery restores the original installed version",
+                   "Successful hardman switch preserves the first installation identity and backup root",
+                   "Selecting hardman leaves all six NPC selections unchanged",
+                   "Every pre-existing original backup and transaction snapshot remains unchanged",
+                   "Externally modified portraits block switching instead of being overwritten",
+                   "Only the isolated modified fixture is restored for subsequent checks",
+                   "Switching back restores the complete previous mixed appearance set",
+                   "Loader, existing BepInEx, unrelated plugin and save fixture remain unchanged",
+                   "Uninstall after the release upgrade restores the original legacy plugin and preserves unrelated files"
+               ],
+    "InitialInstallationPreserved":  true,
+    "OriginalBackupsPreserved":  true,
+    "OtherPluginsPreserved":  true,
+    "AllExistingSelectionsPreserved":  true,
+    "PowerShell":  "5.1.26100.9711",
+    "DurationSeconds":  392.54,
+    "PreviousInstallerCodeHashes":  [
+                                        {
+                                            "Path":  "installer/AppearanceManager.ps1",
+                                            "Sha256":  "68AC32DCF799A12AA05BA749F7BBB2B8B2C34A06F529EF4D57611A3CE12F78E7"
+                                        },
+                                        {
+                                            "Path":  "installer/CharacterCatalog.ps1",
+                                            "Sha256":  "FBD10E9A4364653B98C9EEF25BE8B0F1DE946740BB2EBEBBFDFFAB81ECC5CAB4"
+                                        },
+                                        {
+                                            "Path":  "installer/CharacterManager.ps1",
+                                            "Sha256":  "F62691721CFD9758CB1C4D5049E47C67968364E49BCF5B44C9AEF8B3A21D7079"
+                                        },
+                                        {
+                                            "Path":  "installer/CharacterState.ps1",
+                                            "Sha256":  "EB09E9EF055D3B25668D22CEBF38696BE122F8C284172733A9D001AC587A17F4"
+                                        },
+                                        {
+                                            "Path":  "installer/CharacterTransactions.ps1",
+                                            "Sha256":  "193E73AFB67C163BA365B4B331AE27EAC9C80A8E047F787C86BC7DADFB120A80"
+                                        },
+                                        {
+                                            "Path":  "installer/CompatibilityProbe.ps1",
+                                            "Sha256":  "74DFA1CAF8012136709B0E19B8478154E5E79B6AF4F2C635503EFB36B312FE04"
+                                        },
+                                        {
+                                            "Path":  "installer/Gui.ps1",
+                                            "Sha256":  "84EA85DE49BF1BCDDBBD74BAE0913B95BF8D7144B83D57D7A7355D50D88807BE"
+                                        },
+                                        {
+                                            "Path":  "installer/VariantSupport.ps1",
+                                            "Sha256":  "E12665D920A4E9582EC88BCB92C679AA04AC558F61DC47E3960A9F4C99FAE89A"
+                                        },
+                                        {
+                                            "Path":  "installer/ZhaoHuoInstaller.psm1",
+                                            "Sha256":  "8E6C9553BFA4ABD852687E1CEC71BCF78A33119B667FF86890B408D8549FE9FD"
+                                        }
+                                    ],
+    "CodeHashAlgorithm":  "SHA256-UTF8-noBOM-LF-v1",
+    "CodeHashes":  [
+                       {
+                           "Path":  "installer/ZhaoHuoInstaller.psm1",
+                           "Sha256":  "65D43AEFF6E593B125D9CC96784A45DF4D9351A41B0BD19EF8923A548D5213C3"
+                       },
+                       {
+                           "Path":  "installer/AppearanceManager.ps1",
+                           "Sha256":  "68AC32DCF799A12AA05BA749F7BBB2B8B2C34A06F529EF4D57611A3CE12F78E7"
+                       },
+                       {
+                           "Path":  "installer/VariantSupport.ps1",
+                           "Sha256":  "E12665D920A4E9582EC88BCB92C679AA04AC558F61DC47E3960A9F4C99FAE89A"
+                       },
+                       {
+                           "Path":  "installer/CharacterCatalog.ps1",
+                           "Sha256":  "3CB7789635762748C831241CD17649C03931970E35FB6FE46FD745892D9DFF61"
+                       },
+                       {
+                           "Path":  "installer/CharacterState.ps1",
+                           "Sha256":  "EB09E9EF055D3B25668D22CEBF38696BE122F8C284172733A9D001AC587A17F4"
+                       },
+                       {
+                           "Path":  "installer/CharacterManager.ps1",
+                           "Sha256":  "F62691721CFD9758CB1C4D5049E47C67968364E49BCF5B44C9AEF8B3A21D7079"
+                       },
+                       {
+                           "Path":  "installer/CharacterTransactions.ps1",
+                           "Sha256":  "193E73AFB67C163BA365B4B331AE27EAC9C80A8E047F787C86BC7DADFB120A80"
+                       },
+                       {
+                           "Path":  "tests/Test-CharacterManager.ps1",
+                           "Sha256":  "DD7FAA07DF50A3F2A5AC7E7D2EA030C3AF18D087FDEE467E4A08D780BE48CDD2"
+                       },
+                       {
+                           "Path":  "tests/Test-CharacterCompatibilityUpgrade.ps1",
+                           "Sha256":  "61D254BF6CD9018E151B76BFE7680EB16243E737C50C6C149755FEC447B99091"
+                       }
+                   ],
+    "Scope":  "Genuine released v2.2.1 installer creates an isolated inert seven-role installation. The current manager checks it, preserves every selection, switches hardman, rolls back a failure, recovers an interruption, rejects external edits and uninstalls. No game code or real game files are used. Dummy payload hashes are accepted only inside this test process; artwork acceptance is separate."
+}

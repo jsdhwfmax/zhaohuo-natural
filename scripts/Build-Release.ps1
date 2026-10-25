@@ -1,7 +1,7 @@
 ﻿#requires -Version 5.1
 [CmdletBinding()]
 param(
-    [ValidatePattern('^[0-9]+\.[0-9]+\.[0-9]+$')][string]$Version='2.2.2',
+    [ValidatePattern('^[0-9]+\.[0-9]+\.[0-9]+$')][string]$Version='2.2.3',
     [string]$OutputDirectory,
     [switch]$CheckOnly
 )
@@ -74,7 +74,7 @@ function Assert-CodeReport([string]$Relative,[string[]]$RequiredPaths,[switch]$A
     return [ordered]@{Path=$Relative;Sha256=(Hash (Resolve-PackageFile $Relative));CodeHashAlgorithm=$report.CodeHashAlgorithm;CodeHashCount=$seen.Count;CodeHashes=@($hashEntries);HistoricalCatalogBinding=$historicalCatalog;CatalogAcceptancePath=$(if($historicalCatalog){'verification/character-catalog-acceptance.json'}else{$null})}
 }
 . (Join-Path $PSScriptRoot 'Validate-CharacterRelease.ps1')
-$gameVersions=@{'25953419'='release_1.0.6000.0';'25957922'='release_1.0.6000.2';'25987745'='release_1.0.6000.3';'26021712'='release_1.0.6000.4'}
+$gameVersions=@{'25953419'='release_1.0.6000.0';'25957922'='release_1.0.6000.2';'25987745'='release_1.0.6000.3';'26021712'='release_1.0.6000.4';'26073097'='release_1.0.6000.5'}
 $supported=@(& $installer {$script:SupportedGameBuilds}|ForEach-Object{if(-not $gameVersions.ContainsKey([string]$_.BuildId)){throw 'Game metadata is missing.'};[ordered]@{BuildId=[string]$_.BuildId;GameVersion=$gameVersions[[string]$_.BuildId];Hashes=$_.Hashes}})
 $folderNames=@('BepInEx','Variants','Characters','Loader','Dependencies','installer','Source','Prompts','docs','verification','scripts')
 $rootNames=@('打开美化管理器.cmd','Install.cmd','Uninstall.cmd','Install.ps1','Uninstall.ps1','VariantCatalog.json','README.md','LICENSE','ARTWORK-NOTICE.md','THIRD_PARTY_NOTICES.md','CHANGELOG.md')

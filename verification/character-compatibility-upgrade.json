@@ -1,7 +1,7 @@
 {
     "Passed":  true,
-    "FromVersion":  "2.2.1",
-    "ToVersion":  "2.2.2",
+    "FromVersion":  "2.2.2",
+    "ToVersion":  "2.2.3",
     "RuntimeVersion":  "2.1.0",
     "RuntimeProtocol":  2,
     "ExecutionMode":  "IsolatedPreviousReleaseInstallation",
@@ -10,14 +10,14 @@
     "ProductionPluginSha256":  "AEEE02AC56DCDCB1E683D6356AC28FE19E61AF861D5663ACFFD1B83984F06957",
     "AssertionCount":  19,
     "Checks":  [
-                   "Released v2.2.1 installer creates the seven-role schema4/protocol2 source installation",
-                   "New game support declares a complete build26021712 fingerprint group",
+                   "Released v2.2.2 installer creates the seven-role schema4/protocol2 source installation",
+                   "New game support declares a complete build26073097 fingerprint group",
                    "New manager checks an old complete installation without rewriting any file",
-                   "v2.2.1 to current same-selection upgrade is a complete file no-op",
+                   "v2.2.2 to current same-selection upgrade is a complete file no-op",
                    "All seven existing character selections survive the manager upgrade",
                    "An existing alternative hardman appearance plans only its 47 player PNG replacements",
                    "A failed hardman manifest commit is injected after portrait writes",
-                   "Failed switch restores the exact v2.2.1 selections and payload",
+                   "Failed switch restores the exact v2.2.2 selections and payload",
                    "Interrupted hardman switch remains recoverable",
                    "Interrupted upgrade check does not write or misreport success",
                    "Interrupted upgrade recovery restores the original installed version",
@@ -35,7 +35,7 @@
     "OtherPluginsPreserved":  true,
     "AllExistingSelectionsPreserved":  true,
     "PowerShell":  "5.1.26100.9711",
-    "DurationSeconds":  392.54,
+    "DurationSeconds":  474.29,
     "PreviousInstallerCodeHashes":  [
                                         {
                                             "Path":  "installer/AppearanceManager.ps1",
@@ -43,7 +43,7 @@
                                         },
                                         {
                                             "Path":  "installer/CharacterCatalog.ps1",
-                                            "Sha256":  "FBD10E9A4364653B98C9EEF25BE8B0F1DE946740BB2EBEBBFDFFAB81ECC5CAB4"
+                                            "Sha256":  "3CB7789635762748C831241CD17649C03931970E35FB6FE46FD745892D9DFF61"
                                         },
                                         {
                                             "Path":  "installer/CharacterManager.ps1",
@@ -59,7 +59,7 @@
                                         },
                                         {
                                             "Path":  "installer/CompatibilityProbe.ps1",
-                                            "Sha256":  "74DFA1CAF8012136709B0E19B8478154E5E79B6AF4F2C635503EFB36B312FE04"
+                                            "Sha256":  "DBA3085E7EDCD57063C789F925D3612A4C4D55C266CC2618B4D4E663BD6634EF"
                                         },
                                         {
                                             "Path":  "installer/Gui.ps1",
@@ -71,14 +71,14 @@
                                         },
                                         {
                                             "Path":  "installer/ZhaoHuoInstaller.psm1",
-                                            "Sha256":  "8E6C9553BFA4ABD852687E1CEC71BCF78A33119B667FF86890B408D8549FE9FD"
+                                            "Sha256":  "65D43AEFF6E593B125D9CC96784A45DF4D9351A41B0BD19EF8923A548D5213C3"
                                         }
                                     ],
     "CodeHashAlgorithm":  "SHA256-UTF8-noBOM-LF-v1",
     "CodeHashes":  [
                        {
                            "Path":  "installer/ZhaoHuoInstaller.psm1",
-                           "Sha256":  "65D43AEFF6E593B125D9CC96784A45DF4D9351A41B0BD19EF8923A548D5213C3"
+                           "Sha256":  "C93596D4B695B196A6BC1FB53EFD0E61D22EFF5C0206B30EF697F838A800036B"
                        },
                        {
                            "Path":  "installer/AppearanceManager.ps1",
@@ -90,7 +90,7 @@
                        },
                        {
                            "Path":  "installer/CharacterCatalog.ps1",
-                           "Sha256":  "3CB7789635762748C831241CD17649C03931970E35FB6FE46FD745892D9DFF61"
+                           "Sha256":  "A424E13FD254258066333290397C606DB75122E8DE8223827ECAABF741ED294D"
                        },
                        {
                            "Path":  "installer/CharacterState.ps1",
@@ -110,8 +110,8 @@
                        },
                        {
                            "Path":  "tests/Test-CharacterCompatibilityUpgrade.ps1",
-                           "Sha256":  "61D254BF6CD9018E151B76BFE7680EB16243E737C50C6C149755FEC447B99091"
+                           "Sha256":  "CE77ABEACF78AB04D45F70DACB2E7C29F473914A4E65E43EBF64ABE62E2EE377"
                        }
                    ],
-    "Scope":  "Genuine released v2.2.1 installer creates an isolated inert seven-role installation. The current manager checks it, preserves every selection, switches hardman, rolls back a failure, recovers an interruption, rejects external edits and uninstalls. No game code or real game files are used. Dummy payload hashes are accepted only inside this test process; artwork acceptance is separate."
+    "Scope":  "Genuine released v2.2.2 installer creates an isolated inert seven-role installation. The current manager checks it, preserves every selection, switches hardman, rolls back a failure, recovers an interruption, rejects external edits and uninstalls. No game code or real game files are used. Dummy payload hashes are accepted only inside this test process; artwork acceptance is separate."
 }
