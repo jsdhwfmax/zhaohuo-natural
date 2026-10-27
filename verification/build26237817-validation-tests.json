@@ -1,0 +1,89 @@
+﻿{
+    "Passed":  true,
+    "ActualGameRun":  false,
+    "Scope":  "Known fingerprint group and fallback routing in isolated copied-file fixtures; no install/uninstall and no game process execution.",
+    "PowerShellVersion":  "5.1.26100.9711",
+    "GameBuildId":  "26237817",
+    "TestCount":  17,
+    "Tests":  [
+                  {
+                      "Test":  "All previously supported build groups are retained",
+                      "Passed":  true
+                  },
+                  {
+                      "Test":  "Current declared fingerprint matches the observed game: Assembly-CSharp.dll",
+                      "Passed":  true
+                  },
+                  {
+                      "Test":  "Current declared fingerprint matches the observed game: Mortal.Core.dll",
+                      "Passed":  true
+                  },
+                  {
+                      "Test":  "Current declared fingerprint matches the observed game: Mortal.Story.dll",
+                      "Passed":  true
+                  },
+                  {
+                      "Test":  "Current declared fingerprint matches the observed game: Fungus.dll",
+                      "Passed":  true
+                  },
+                  {
+                      "Test":  "Exact current build and all four fingerprints use the verified group",
+                      "Passed":  true
+                  },
+                  {
+                      "Test":  "Exact current group does not invoke the unknown-build probe",
+                      "Passed":  true
+                  },
+                  {
+                      "Test":  "Same four DLLs with a future build require the offline probe",
+                      "Passed":  true
+                  },
+                  {
+                      "Test":  "Missing Steam manifest cannot claim the known build",
+                      "Passed":  true
+                  },
+                  {
+                      "Test":  "Current DLLs cannot claim the prior verified build",
+                      "Passed":  true
+                  },
+                  {
+                      "Test":  "One modified DLL disables the current build fast path",
+                      "Passed":  true
+                  },
+                  {
+                      "Test":  "Read-only source preserved: Mortal.exe",
+                      "Passed":  true
+                  },
+                  {
+                      "Test":  "Read-only source preserved: UnityPlayer.dll",
+                      "Passed":  true
+                  },
+                  {
+                      "Test":  "Read-only source preserved: Mortal_Data/Managed/Assembly-CSharp.dll",
+                      "Passed":  true
+                  },
+                  {
+                      "Test":  "Read-only source preserved: Mortal_Data/Managed/Mortal.Core.dll",
+                      "Passed":  true
+                  },
+                  {
+                      "Test":  "Read-only source preserved: Mortal_Data/Managed/Mortal.Story.dll",
+                      "Passed":  true
+                  },
+                  {
+                      "Test":  "Read-only source preserved: Mortal_Data/Managed/Fungus.dll",
+                      "Passed":  true
+                  }
+              ],
+    "CodeHashAlgorithm":  "SHA256-UTF8-noBOM-LF-v1",
+    "CodeHashes":  [
+                       {
+                           "Path":  "installer/ZhaoHuoInstaller.psm1",
+                           "Sha256":  "912C61A6190BC1DD582545AADE9CEF71AD130B0D2754DA083E725FB1DB09CABF"
+                       },
+                       {
+                           "Path":  "tests/Test-Build26237817Validation.ps1",
+                           "Sha256":  "4227A15D8D6B7EC20DBB6CB9C6BD2848677793E1AD225B79A0502FA43E8909A4"
+                       }
+                   ]
+}

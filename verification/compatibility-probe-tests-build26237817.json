@@ -1,0 +1,1318 @@
+﻿{
+    "Passed":  true,
+    "ActualGameRun":  false,
+    "Scope":  "Read-only source metadata/resource checks and isolated copied-file mutation tests. No game process launched; historical snapshots do not claim current runtime verification. Consumer regressions and baseline-generation engine versions are recorded separately; no cross-engine byte determinism is claimed.",
+    "PowerShellVersion":  "5.1.26100.9711",
+    "ConsumerPowerShellVersion":  "5.1.26100.9711",
+    "GeneratorPowerShellVersion":  "7.6.5",
+    "PluginSha256":  "AEEE02AC56DCDCB1E683D6356AC28FE19E61AF861D5663ACFFD1B83984F06957",
+    "BaselineSha256":  "7BA8D1175F4A9C603B61E81FAF4F42DA5A9A79D14D2EEA3A12C72B04CF6F2A26",
+    "FixedFileCount":  395,
+    "GameMemberReferenceCount":  23,
+    "Baselines":  [
+                      {
+                          "Path":  "installer/compatibility-baseline.json",
+                          "Sha256":  "7BA8D1175F4A9C603B61E81FAF4F42DA5A9A79D14D2EEA3A12C72B04CF6F2A26",
+                          "BuildIds":  [
+                                           "25953419",
+                                           "25957922"
+                                       ],
+                          "FixedFileCount":  395,
+                          "GameMemberReferenceCount":  23
+                      },
+                      {
+                          "Path":  "installer/compatibility-baseline-25987745.json",
+                          "Sha256":  "B20CF307BEDFED189303DFAC565B1E2EA1DBD8B616E8B649BFE41A0ED2A9B306",
+                          "BuildIds":  [
+                                           "25987745"
+                                       ],
+                          "FixedFileCount":  395,
+                          "GameMemberReferenceCount":  23
+                      },
+                      {
+                          "Path":  "installer/compatibility-baseline-26021712.json",
+                          "Sha256":  "70F16F0205A49450740B0D4216292EE666657FB66A4DE1E9F0788B7A63561200",
+                          "BuildIds":  [
+                                           "26021712"
+                                       ],
+                          "FixedFileCount":  395,
+                          "GameMemberReferenceCount":  23
+                      },
+                      {
+                          "Path":  "installer/compatibility-baseline-26073097.json",
+                          "Sha256":  "E448C4F8E3A9D9D57DBA5BB2779B0A0774995BF7BDDDE1448421A086839DEC53",
+                          "BuildIds":  [
+                                           "26073097"
+                                       ],
+                          "FixedFileCount":  395,
+                          "GameMemberReferenceCount":  23
+                      },
+                      {
+                          "Path":  "installer/compatibility-baseline-26237817.json",
+                          "Sha256":  "022B17E3598D441E60B887FE130389BFA9DBB7D81F1600F65B4F3FC5CC19AD6F",
+                          "BuildIds":  [
+                                           "26237817"
+                                       ],
+                          "FixedFileCount":  395,
+                          "GameMemberReferenceCount":  23
+                      }
+                  ],
+    "CodeHashAlgorithm":  "SHA256-UTF8-noBOM-LF-v1",
+    "CodeHashes":  [
+                       {
+                           "Path":  "installer/CompatibilityProbe.ps1",
+                           "Sha256":  "2191A95D70BF51D41985045D855A10C824DBEF5D23D24993E7967807D616C563"
+                       },
+                       {
+                           "Path":  "installer/ZhaoHuoInstaller.psm1",
+                           "Sha256":  "912C61A6190BC1DD582545AADE9CEF71AD130B0D2754DA083E725FB1DB09CABF"
+                       },
+                       {
+                           "Path":  "installer/compatibility-baseline.json",
+                           "Sha256":  "450515A98C248315DDDEA5B572A5CB21E37BE852D75DD01C0BF2DBB7E15BEB73"
+                       },
+                       {
+                           "Path":  "installer/compatibility-baseline-25987745.json",
+                           "Sha256":  "B20CF307BEDFED189303DFAC565B1E2EA1DBD8B616E8B649BFE41A0ED2A9B306"
+                       },
+                       {
+                           "Path":  "installer/compatibility-baseline-26021712.json",
+                           "Sha256":  "70F16F0205A49450740B0D4216292EE666657FB66A4DE1E9F0788B7A63561200"
+                       },
+                       {
+                           "Path":  "installer/compatibility-baseline-26073097.json",
+                           "Sha256":  "E448C4F8E3A9D9D57DBA5BB2779B0A0774995BF7BDDDE1448421A086839DEC53"
+                       },
+                       {
+                           "Path":  "installer/compatibility-baseline-26237817.json",
+                           "Sha256":  "022B17E3598D441E60B887FE130389BFA9DBB7D81F1600F65B4F3FC5CC19AD6F"
+                       },
+                       {
+                           "Path":  "scripts/Generate-CompatibilityBaseline.ps1",
+                           "Sha256":  "0DEA3D488BD2026FBE6F39BD5E3426CD14363DC694C5A3B3D976856CF203D4B1"
+                       },
+                       {
+                           "Path":  "tests/Test-CompatibilityProbe.ps1",
+                           "Sha256":  "293706B4B13028E1A71868C1423E0273282CD7B6F44BB778DE3CCB1E5D79417B"
+                       },
+                       {
+                           "Path":  "Source/Plugin.cs",
+                           "Sha256":  "B553A56DD98EB41086136A5AA98694B0ECA96C215276694AF7A0A77D1D658447"
+                       },
+                       {
+                           "Path":  "Source/CharacterPolicy.cs",
+                           "Sha256":  "81B8B8E33ED03C87A7717A58F128C2FDB6CB3311818A9EC954D714A5C3801F91"
+                       },
+                       {
+                           "Path":  "Source/CharacterSupport.cs",
+                           "Sha256":  "E07A91A0681DD3CE1BF0975E8743F4E7DACF8E0D42F513AD82678687919F6189"
+                       },
+                       {
+                           "Path":  "Source/build.ps1",
+                           "Sha256":  "FC7C2DD73618339082A3CAC89C4168D729FAF9470596AF2C3AFE6A0840253468"
+                       }
+                   ],
+    "TestCount":  32,
+    "Tests":  [
+                  {
+                      "Test":  "Current build 26237817, read only static inspection",
+                      "Passed":  true,
+                      "ExpectedCompatible":  true,
+                      "MatchedBaselineFile":  "installer/compatibility-baseline-26237817.json",
+                      "BaselineBuildIds":  [
+                                               "26237817"
+                                           ],
+                      "Seconds":  14.35,
+                      "Reasons":  [
+
+                                  ],
+                      "Checks":  [
+                                     {
+                                         "Name":  "PinnedBaseline",
+                                         "Passed":  true,
+                                         "Sha256":  "022B17E3598D441E60B887FE130389BFA9DBB7D81F1600F65B4F3FC5CC19AD6F",
+                                         "RelativePath":  "installer/compatibility-baseline-26237817.json"
+                                     },
+                                     {
+                                         "Name":  "TrustedCecil",
+                                         "Passed":  true,
+                                         "Sha256":  "7AE470288FFF4A402899C254D0A76CEFEF55877F5C54F96E83C797CC5BB6E2F6"
+                                     },
+                                     {
+                                         "Name":  "GuardedFileInventory",
+                                         "Passed":  true,
+                                         "Count":  395,
+                                         "Sha256":  "DF0111B1F721EE2EEA9882981B68D86919B956D4016D1129464D269381F371C1"
+                                     },
+                                     {
+                                         "Name":  "MonoRuntime",
+                                         "Passed":  true,
+                                         "Count":  20,
+                                         "Sha256":  "EF09D3985C97CF69636B9232FDAF7A18DA04BDADE50900DD68A87A0804AA97EB"
+                                     },
+                                     {
+                                         "Name":  "SceneAndSerializedAssets",
+                                         "Passed":  true,
+                                         "Count":  51,
+                                         "Sha256":  "00819E9C2DCCFBF0D9B8D3F3C16AABF8904DBC5C483C4EB1FD9E5811281BAB38"
+                                     },
+                                     {
+                                         "Name":  "ManagedDependencies",
+                                         "Passed":  true,
+                                         "Count":  130,
+                                         "Sha256":  "6F58ED8242984445325CA265350DC98D6323378A3562B378390A976D554B3014"
+                                     },
+                                     {
+                                         "Name":  "AddressablesCatalog",
+                                         "Passed":  true,
+                                         "Count":  2,
+                                         "Sha256":  "A98A8999777E138A91099E4F2B04C90E63F3EEBC1119CD876469DF11945C9AD7"
+                                     },
+                                     {
+                                         "Name":  "AddressablesBundles",
+                                         "Passed":  true,
+                                         "Count":  190,
+                                         "Sha256":  "3350135A10E863F5FA58B5BB8E31621026FBA0BA41D45EACD3EBFB6CC1E56FCD"
+                                     },
+                                     {
+                                         "Name":  "UnityRuntime",
+                                         "Passed":  true,
+                                         "Count":  2,
+                                         "Sha256":  "AB2BAFE13DC1B89EC884AB0172522156085A18C44147B5878DC9EDAE08709F4A"
+                                     },
+                                     {
+                                         "Name":  "VersionMetadata",
+                                         "Passed":  true,
+                                         "Sha256":  "FE693F7803582583F253444052CE8837DDAC6EFBC94143D51D1E280BF2085E2B"
+                                     },
+                                     {
+                                         "Name":  "ManagedAssemblyNames",
+                                         "Passed":  true,
+                                         "Count":  131,
+                                         "Sha256":  "49002CC72F7E2A86ACAF0677B2770CF7E6FCF594EFA9ACDA7A0FDED79DD878A4"
+                                     },
+                                     {
+                                         "Name":  "CoreMethods",
+                                         "Passed":  true,
+                                         "Count":  147,
+                                         "Sha256":  "C6E7206E8670B0D20C81F87C41C110108D422B53544A8CE0D91D049E039833D4"
+                                     },
+                                     {
+                                         "Name":  "CoreTypes",
+                                         "Passed":  true,
+                                         "Count":  35,
+                                         "Sha256":  "21D1597E2509FED6B9E1D836A9B3D2E666B9F626CF07365FAE2129D497F17D93"
+                                     },
+                                     {
+                                         "Name":  "GameMemberReferences",
+                                         "Passed":  true,
+                                         "Count":  23,
+                                         "Sha256":  "0B8A55548C34A38D91BFA04701C57EA69C9C7CC05B14B33B49633FE07D3D4E8C"
+                                     }
+                                 ]
+                  },
+                  {
+                      "Test":  "Prior authentic complete game snapshot still accepted",
+                      "Passed":  true,
+                      "ExpectedCompatible":  true,
+                      "MatchedBaselineFile":  "installer/compatibility-baseline-26073097.json",
+                      "BaselineBuildIds":  [
+                                               "26073097"
+                                           ],
+                      "Seconds":  18.91,
+                      "Reasons":  [
+
+                                  ],
+                      "Checks":  [
+                                     {
+                                         "Name":  "PinnedBaseline",
+                                         "Passed":  true,
+                                         "Sha256":  "E448C4F8E3A9D9D57DBA5BB2779B0A0774995BF7BDDDE1448421A086839DEC53",
+                                         "RelativePath":  "installer/compatibility-baseline-26073097.json"
+                                     },
+                                     {
+                                         "Name":  "TrustedCecil",
+                                         "Passed":  true,
+                                         "Sha256":  "7AE470288FFF4A402899C254D0A76CEFEF55877F5C54F96E83C797CC5BB6E2F6"
+                                     },
+                                     {
+                                         "Name":  "GuardedFileInventory",
+                                         "Passed":  true,
+                                         "Count":  395,
+                                         "Sha256":  "DF0111B1F721EE2EEA9882981B68D86919B956D4016D1129464D269381F371C1"
+                                     },
+                                     {
+                                         "Name":  "MonoRuntime",
+                                         "Passed":  true,
+                                         "Count":  20,
+                                         "Sha256":  "EF09D3985C97CF69636B9232FDAF7A18DA04BDADE50900DD68A87A0804AA97EB"
+                                     },
+                                     {
+                                         "Name":  "SceneAndSerializedAssets",
+                                         "Passed":  true,
+                                         "Count":  51,
+                                         "Sha256":  "7FB733A1B5D51B8BBE266BB63C7D8999E2D9529DEB158523330F69217709981E"
+                                     },
+                                     {
+                                         "Name":  "ManagedDependencies",
+                                         "Passed":  true,
+                                         "Count":  130,
+                                         "Sha256":  "F35199429079FE9F11B810CDB05391A40FDCFDBD9F124C66AEB60287F4C1EBAE"
+                                     },
+                                     {
+                                         "Name":  "AddressablesCatalog",
+                                         "Passed":  true,
+                                         "Count":  2,
+                                         "Sha256":  "3613A50599E5896AF1125B686EA6488312790329EAAC9704771A1A596071A30C"
+                                     },
+                                     {
+                                         "Name":  "AddressablesBundles",
+                                         "Passed":  true,
+                                         "Count":  190,
+                                         "Sha256":  "3350135A10E863F5FA58B5BB8E31621026FBA0BA41D45EACD3EBFB6CC1E56FCD"
+                                     },
+                                     {
+                                         "Name":  "UnityRuntime",
+                                         "Passed":  true,
+                                         "Count":  2,
+                                         "Sha256":  "AB2BAFE13DC1B89EC884AB0172522156085A18C44147B5878DC9EDAE08709F4A"
+                                     },
+                                     {
+                                         "Name":  "VersionMetadata",
+                                         "Passed":  true,
+                                         "Sha256":  "A1B747996FE56FB9F85731EDC3B19BEF78A35F12AEC8092B1F6BC85564B8EFCC"
+                                     },
+                                     {
+                                         "Name":  "ManagedAssemblyNames",
+                                         "Passed":  true,
+                                         "Count":  131,
+                                         "Sha256":  "49002CC72F7E2A86ACAF0677B2770CF7E6FCF594EFA9ACDA7A0FDED79DD878A4"
+                                     },
+                                     {
+                                         "Name":  "CoreMethods",
+                                         "Passed":  true,
+                                         "Count":  147,
+                                         "Sha256":  "C6E7206E8670B0D20C81F87C41C110108D422B53544A8CE0D91D049E039833D4"
+                                     },
+                                     {
+                                         "Name":  "CoreTypes",
+                                         "Passed":  true,
+                                         "Count":  35,
+                                         "Sha256":  "21D1597E2509FED6B9E1D836A9B3D2E666B9F626CF07365FAE2129D497F17D93"
+                                     },
+                                     {
+                                         "Name":  "GameMemberReferences",
+                                         "Passed":  true,
+                                         "Count":  23,
+                                         "Sha256":  "0B8A55548C34A38D91BFA04701C57EA69C9C7CC05B14B33B49633FE07D3D4E8C"
+                                     }
+                                 ]
+                  },
+                  {
+                      "Test":  "Additional historical game snapshot still accepted",
+                      "Passed":  true,
+                      "ExpectedCompatible":  true,
+                      "MatchedBaselineFile":  "installer/compatibility-baseline-26021712.json",
+                      "BaselineBuildIds":  [
+                                               "26021712"
+                                           ],
+                      "Seconds":  28.87,
+                      "Reasons":  [
+
+                                  ],
+                      "Checks":  [
+                                     {
+                                         "Name":  "PinnedBaseline",
+                                         "Passed":  true,
+                                         "Sha256":  "70F16F0205A49450740B0D4216292EE666657FB66A4DE1E9F0788B7A63561200",
+                                         "RelativePath":  "installer/compatibility-baseline-26021712.json"
+                                     },
+                                     {
+                                         "Name":  "TrustedCecil",
+                                         "Passed":  true,
+                                         "Sha256":  "7AE470288FFF4A402899C254D0A76CEFEF55877F5C54F96E83C797CC5BB6E2F6"
+                                     },
+                                     {
+                                         "Name":  "GuardedFileInventory",
+                                         "Passed":  true,
+                                         "Count":  395,
+                                         "Sha256":  "F64BAD4B92DB908234800762DD5D27989E755E26B88C0884574F680A44C09509"
+                                     },
+                                     {
+                                         "Name":  "MonoRuntime",
+                                         "Passed":  true,
+                                         "Count":  20,
+                                         "Sha256":  "EF09D3985C97CF69636B9232FDAF7A18DA04BDADE50900DD68A87A0804AA97EB"
+                                     },
+                                     {
+                                         "Name":  "SceneAndSerializedAssets",
+                                         "Passed":  true,
+                                         "Count":  51,
+                                         "Sha256":  "6529865B7A9F911E6E39FC0E2EDBC87633CB8B50C7C850E2BCD2740E941ADA9B"
+                                     },
+                                     {
+                                         "Name":  "ManagedDependencies",
+                                         "Passed":  true,
+                                         "Count":  130,
+                                         "Sha256":  "3C9C521404EA7A812AB6EC83923DCD803B2E55C1AF0FC7C6210359F5E19C63CA"
+                                     },
+                                     {
+                                         "Name":  "AddressablesCatalog",
+                                         "Passed":  true,
+                                         "Count":  2,
+                                         "Sha256":  "2324921E8FF15ABCB8FD70877AB4E0B65CC5F212ECC2B4BD39991F0FE6D84A2B"
+                                     },
+                                     {
+                                         "Name":  "AddressablesBundles",
+                                         "Passed":  true,
+                                         "Count":  190,
+                                         "Sha256":  "DF00E7ED8FDB5B4B507527B61B052FD80C1EDDA80CB5BC4FD71ABA09D0B47E99"
+                                     },
+                                     {
+                                         "Name":  "UnityRuntime",
+                                         "Passed":  true,
+                                         "Count":  2,
+                                         "Sha256":  "AB2BAFE13DC1B89EC884AB0172522156085A18C44147B5878DC9EDAE08709F4A"
+                                     },
+                                     {
+                                         "Name":  "VersionMetadata",
+                                         "Passed":  true,
+                                         "Sha256":  "7F797B7A1D112F3200ADE9CD2A87638ED86CBD42558B21284D04D1FB86FA825F"
+                                     },
+                                     {
+                                         "Name":  "ManagedAssemblyNames",
+                                         "Passed":  true,
+                                         "Count":  131,
+                                         "Sha256":  "49002CC72F7E2A86ACAF0677B2770CF7E6FCF594EFA9ACDA7A0FDED79DD878A4"
+                                     },
+                                     {
+                                         "Name":  "CoreMethods",
+                                         "Passed":  true,
+                                         "Count":  147,
+                                         "Sha256":  "C6E7206E8670B0D20C81F87C41C110108D422B53544A8CE0D91D049E039833D4"
+                                     },
+                                     {
+                                         "Name":  "CoreTypes",
+                                         "Passed":  true,
+                                         "Count":  35,
+                                         "Sha256":  "21D1597E2509FED6B9E1D836A9B3D2E666B9F626CF07365FAE2129D497F17D93"
+                                     },
+                                     {
+                                         "Name":  "GameMemberReferences",
+                                         "Passed":  true,
+                                         "Count":  23,
+                                         "Sha256":  "0B8A55548C34A38D91BFA04701C57EA69C9C7CC05B14B33B49633FE07D3D4E8C"
+                                     }
+                                 ]
+                  },
+                  {
+                      "Test":  "Additional historical game snapshot still accepted",
+                      "Passed":  true,
+                      "ExpectedCompatible":  true,
+                      "MatchedBaselineFile":  "installer/compatibility-baseline-25987745.json",
+                      "BaselineBuildIds":  [
+                                               "25987745"
+                                           ],
+                      "Seconds":  27.43,
+                      "Reasons":  [
+
+                                  ],
+                      "Checks":  [
+                                     {
+                                         "Name":  "PinnedBaseline",
+                                         "Passed":  true,
+                                         "Sha256":  "B20CF307BEDFED189303DFAC565B1E2EA1DBD8B616E8B649BFE41A0ED2A9B306",
+                                         "RelativePath":  "installer/compatibility-baseline-25987745.json"
+                                     },
+                                     {
+                                         "Name":  "TrustedCecil",
+                                         "Passed":  true,
+                                         "Sha256":  "7AE470288FFF4A402899C254D0A76CEFEF55877F5C54F96E83C797CC5BB6E2F6"
+                                     },
+                                     {
+                                         "Name":  "GuardedFileInventory",
+                                         "Passed":  true,
+                                         "Count":  395,
+                                         "Sha256":  "C6D85AD0DA6C7B4B80E642C1378666189056585CF7CCA63009190ABAA2C00A77"
+                                     },
+                                     {
+                                         "Name":  "MonoRuntime",
+                                         "Passed":  true,
+                                         "Count":  20,
+                                         "Sha256":  "EF09D3985C97CF69636B9232FDAF7A18DA04BDADE50900DD68A87A0804AA97EB"
+                                     },
+                                     {
+                                         "Name":  "UnityRuntime",
+                                         "Passed":  true,
+                                         "Count":  2,
+                                         "Sha256":  "AB2BAFE13DC1B89EC884AB0172522156085A18C44147B5878DC9EDAE08709F4A"
+                                     },
+                                     {
+                                         "Name":  "SceneAndSerializedAssets",
+                                         "Passed":  true,
+                                         "Count":  51,
+                                         "Sha256":  "0E03AD1771AF5EEF9F7A90A37E928CAD5C2F48433E1746333BAF59A45887A24E"
+                                     },
+                                     {
+                                         "Name":  "ManagedDependencies",
+                                         "Passed":  true,
+                                         "Count":  130,
+                                         "Sha256":  "07F870F2B26B8F923B7B360A85F2B70BE989E838A67B7F3B5B789F118E218DEC"
+                                     },
+                                     {
+                                         "Name":  "AddressablesCatalog",
+                                         "Passed":  true,
+                                         "Count":  2,
+                                         "Sha256":  "876522FF86001F314C1F62E863C8DB15820BF77E29AAE54EF91F0877E2B751C0"
+                                     },
+                                     {
+                                         "Name":  "AddressablesBundles",
+                                         "Passed":  true,
+                                         "Count":  190,
+                                         "Sha256":  "49402CF557B42A02141D573E41FCA14E4A3D9FF5D95A62B003522588038CD212"
+                                     },
+                                     {
+                                         "Name":  "VersionMetadata",
+                                         "Passed":  true,
+                                         "Sha256":  "1E2F1F1698360B4E85BFB379C8C8E1E0CE3D0FBE1F246754C077AF71F8E59FE9"
+                                     },
+                                     {
+                                         "Name":  "ManagedAssemblyNames",
+                                         "Passed":  true,
+                                         "Count":  131,
+                                         "Sha256":  "49002CC72F7E2A86ACAF0677B2770CF7E6FCF594EFA9ACDA7A0FDED79DD878A4"
+                                     },
+                                     {
+                                         "Name":  "CoreMethods",
+                                         "Passed":  true,
+                                         "Count":  147,
+                                         "Sha256":  "C6E7206E8670B0D20C81F87C41C110108D422B53544A8CE0D91D049E039833D4"
+                                     },
+                                     {
+                                         "Name":  "CoreTypes",
+                                         "Passed":  true,
+                                         "Count":  35,
+                                         "Sha256":  "21D1597E2509FED6B9E1D836A9B3D2E666B9F626CF07365FAE2129D497F17D93"
+                                     },
+                                     {
+                                         "Name":  "GameMemberReferences",
+                                         "Passed":  true,
+                                         "Count":  23,
+                                         "Sha256":  "0B8A55548C34A38D91BFA04701C57EA69C9C7CC05B14B33B49633FE07D3D4E8C"
+                                     }
+                                 ]
+                  },
+                  {
+                      "Test":  "Additional historical game snapshot still accepted",
+                      "Passed":  true,
+                      "ExpectedCompatible":  true,
+                      "MatchedBaselineFile":  "installer/compatibility-baseline.json",
+                      "BaselineBuildIds":  [
+                                               "25953419",
+                                               "25957922"
+                                           ],
+                      "Seconds":  26.87,
+                      "Reasons":  [
+
+                                  ],
+                      "Checks":  [
+                                     {
+                                         "Name":  "PinnedBaseline",
+                                         "Passed":  true,
+                                         "Sha256":  "7BA8D1175F4A9C603B61E81FAF4F42DA5A9A79D14D2EEA3A12C72B04CF6F2A26",
+                                         "RelativePath":  "installer/compatibility-baseline.json"
+                                     },
+                                     {
+                                         "Name":  "TrustedCecil",
+                                         "Passed":  true,
+                                         "Sha256":  "7AE470288FFF4A402899C254D0A76CEFEF55877F5C54F96E83C797CC5BB6E2F6"
+                                     },
+                                     {
+                                         "Name":  "GuardedFileInventory",
+                                         "Passed":  true,
+                                         "Count":  395,
+                                         "Sha256":  "223D891A7645CEF292CEBEF7318A4EB2A740A1AD5CBCFD4455B87D1127B948A2"
+                                     },
+                                     {
+                                         "Name":  "MonoRuntime",
+                                         "Passed":  true,
+                                         "Count":  20,
+                                         "Sha256":  "EF09D3985C97CF69636B9232FDAF7A18DA04BDADE50900DD68A87A0804AA97EB"
+                                     },
+                                     {
+                                         "Name":  "SceneAndSerializedAssets",
+                                         "Passed":  true,
+                                         "Count":  51,
+                                         "Sha256":  "BF7B11E5A785E6103D8B740606005030A6489EDAEAA892B479CE9B76E6C8CA83"
+                                     },
+                                     {
+                                         "Name":  "ManagedDependencies",
+                                         "Passed":  true,
+                                         "Count":  130,
+                                         "Sha256":  "D423465CC3B724E90BF548893084D020BC6F55914361CD41DBA837C97EDAC12E"
+                                     },
+                                     {
+                                         "Name":  "AddressablesCatalog",
+                                         "Passed":  true,
+                                         "Count":  2,
+                                         "Sha256":  "C7997FB91E2DECD1898FD564C72A75EEB4871D1ABBA90A6DE6C507D76B657124"
+                                     },
+                                     {
+                                         "Name":  "AddressablesBundles",
+                                         "Passed":  true,
+                                         "Count":  190,
+                                         "Sha256":  "B5F5AA260F11C809B39B0FC13426B499992DDB59126A7050E712945E4336A6CB"
+                                     },
+                                     {
+                                         "Name":  "UnityRuntime",
+                                         "Passed":  true,
+                                         "Count":  2,
+                                         "Sha256":  "AB2BAFE13DC1B89EC884AB0172522156085A18C44147B5878DC9EDAE08709F4A"
+                                     },
+                                     {
+                                         "Name":  "VersionMetadata",
+                                         "Passed":  true,
+                                         "Sha256":  "678C45802FFBCEAA9E2C6B7B2A334B2F042301203BFC70555A3AE6CB9C8AD8B7"
+                                     },
+                                     {
+                                         "Name":  "ManagedAssemblyNames",
+                                         "Passed":  true,
+                                         "Count":  131,
+                                         "Sha256":  "49002CC72F7E2A86ACAF0677B2770CF7E6FCF594EFA9ACDA7A0FDED79DD878A4"
+                                     },
+                                     {
+                                         "Name":  "CoreMethods",
+                                         "Passed":  true,
+                                         "Count":  147,
+                                         "Sha256":  "C6E7206E8670B0D20C81F87C41C110108D422B53544A8CE0D91D049E039833D4"
+                                     },
+                                     {
+                                         "Name":  "CoreTypes",
+                                         "Passed":  true,
+                                         "Count":  35,
+                                         "Sha256":  "21D1597E2509FED6B9E1D836A9B3D2E666B9F626CF07365FAE2129D497F17D93"
+                                     },
+                                     {
+                                         "Name":  "GameMemberReferences",
+                                         "Passed":  true,
+                                         "Count":  23,
+                                         "Sha256":  "0B8A55548C34A38D91BFA04701C57EA69C9C7CC05B14B33B49633FE07D3D4E8C"
+                                     }
+                                 ]
+                  },
+                  {
+                      "Test":  "Unrelated IL edit plus new method and metadata rewrite",
+                      "Passed":  true,
+                      "ExpectedCompatible":  true,
+                      "MatchedBaselineFile":  "installer/compatibility-baseline-26237817.json",
+                      "BaselineBuildIds":  [
+                                               "26237817"
+                                           ],
+                      "Seconds":  28.34,
+                      "Reasons":  [
+
+                                  ],
+                      "Checks":  [
+                                     {
+                                         "Name":  "PinnedBaseline",
+                                         "Passed":  true,
+                                         "Sha256":  "022B17E3598D441E60B887FE130389BFA9DBB7D81F1600F65B4F3FC5CC19AD6F",
+                                         "RelativePath":  "installer/compatibility-baseline-26237817.json"
+                                     },
+                                     {
+                                         "Name":  "TrustedCecil",
+                                         "Passed":  true,
+                                         "Sha256":  "7AE470288FFF4A402899C254D0A76CEFEF55877F5C54F96E83C797CC5BB6E2F6"
+                                     },
+                                     {
+                                         "Name":  "GuardedFileInventory",
+                                         "Passed":  true,
+                                         "Count":  395,
+                                         "Sha256":  "DF0111B1F721EE2EEA9882981B68D86919B956D4016D1129464D269381F371C1"
+                                     },
+                                     {
+                                         "Name":  "MonoRuntime",
+                                         "Passed":  true,
+                                         "Count":  20,
+                                         "Sha256":  "EF09D3985C97CF69636B9232FDAF7A18DA04BDADE50900DD68A87A0804AA97EB"
+                                     },
+                                     {
+                                         "Name":  "SceneAndSerializedAssets",
+                                         "Passed":  true,
+                                         "Count":  51,
+                                         "Sha256":  "00819E9C2DCCFBF0D9B8D3F3C16AABF8904DBC5C483C4EB1FD9E5811281BAB38"
+                                     },
+                                     {
+                                         "Name":  "ManagedDependencies",
+                                         "Passed":  true,
+                                         "Count":  130,
+                                         "Sha256":  "6F58ED8242984445325CA265350DC98D6323378A3562B378390A976D554B3014"
+                                     },
+                                     {
+                                         "Name":  "AddressablesCatalog",
+                                         "Passed":  true,
+                                         "Count":  2,
+                                         "Sha256":  "A98A8999777E138A91099E4F2B04C90E63F3EEBC1119CD876469DF11945C9AD7"
+                                     },
+                                     {
+                                         "Name":  "AddressablesBundles",
+                                         "Passed":  true,
+                                         "Count":  190,
+                                         "Sha256":  "3350135A10E863F5FA58B5BB8E31621026FBA0BA41D45EACD3EBFB6CC1E56FCD"
+                                     },
+                                     {
+                                         "Name":  "UnityRuntime",
+                                         "Passed":  true,
+                                         "Count":  2,
+                                         "Sha256":  "AB2BAFE13DC1B89EC884AB0172522156085A18C44147B5878DC9EDAE08709F4A"
+                                     },
+                                     {
+                                         "Name":  "VersionMetadata",
+                                         "Passed":  true,
+                                         "Sha256":  "FE693F7803582583F253444052CE8837DDAC6EFBC94143D51D1E280BF2085E2B"
+                                     },
+                                     {
+                                         "Name":  "ManagedAssemblyNames",
+                                         "Passed":  true,
+                                         "Count":  131,
+                                         "Sha256":  "49002CC72F7E2A86ACAF0677B2770CF7E6FCF594EFA9ACDA7A0FDED79DD878A4"
+                                     },
+                                     {
+                                         "Name":  "CoreMethods",
+                                         "Passed":  true,
+                                         "Count":  147,
+                                         "Sha256":  "C6E7206E8670B0D20C81F87C41C110108D422B53544A8CE0D91D049E039833D4"
+                                     },
+                                     {
+                                         "Name":  "CoreTypes",
+                                         "Passed":  true,
+                                         "Count":  35,
+                                         "Sha256":  "21D1597E2509FED6B9E1D836A9B3D2E666B9F626CF07365FAE2129D497F17D93"
+                                     },
+                                     {
+                                         "Name":  "GameMemberReferences",
+                                         "Passed":  true,
+                                         "Count":  23,
+                                         "Sha256":  "0B8A55548C34A38D91BFA04701C57EA69C9C7CC05B14B33B49633FE07D3D4E8C"
+                                     }
+                                 ]
+                  },
+                  {
+                      "Test":  "Changed direct portrait hook rejected",
+                      "Passed":  true,
+                      "ExpectedCompatible":  false,
+                      "MatchedBaselineFile":  null,
+                      "BaselineBuildIds":  [
+                                               "25953419",
+                                               "25957922",
+                                               "25987745",
+                                               "26021712",
+                                               "26073097",
+                                               "26237817"
+                                           ],
+                      "Seconds":  18.53,
+                      "Reasons":  [
+                                      "基线25953419/25957922：相关框架或资源发生变化，需人工适配：Mortal_Data/globalgamemanagers.assets",
+                                      "基线25987745：相关框架或资源发生变化，需人工适配：Mortal_Data/globalgamemanagers.assets",
+                                      "基线26021712：相关框架或资源发生变化，需人工适配：Mortal_Data/globalgamemanagers.assets",
+                                      "基线26073097：相关框架或资源发生变化，需人工适配：Mortal_Data/globalgamemanagers.assets",
+                                      "基线26237817：立绘接口或行为发生变化：System.Void Mortal.Core.PlayerAvatarPanel::OnEnable()"
+                                  ],
+                      "Checks":  [
+
+                                 ]
+                  },
+                  {
+                      "Test":  "Changed transitive asset loader helper rejected",
+                      "Passed":  true,
+                      "ExpectedCompatible":  false,
+                      "MatchedBaselineFile":  null,
+                      "BaselineBuildIds":  [
+                                               "25953419",
+                                               "25957922",
+                                               "25987745",
+                                               "26021712",
+                                               "26073097",
+                                               "26237817"
+                                           ],
+                      "Seconds":  17.97,
+                      "Reasons":  [
+                                      "基线25953419/25957922：相关框架或资源发生变化，需人工适配：Mortal_Data/globalgamemanagers.assets",
+                                      "基线25987745：相关框架或资源发生变化，需人工适配：Mortal_Data/globalgamemanagers.assets",
+                                      "基线26021712：相关框架或资源发生变化，需人工适配：Mortal_Data/globalgamemanagers.assets",
+                                      "基线26073097：相关框架或资源发生变化，需人工适配：Mortal_Data/globalgamemanagers.assets",
+                                      "基线26237817：立绘接口或行为发生变化：T Mortal.Core.AssetReferenceCache`1::LoadSync()"
+                                  ],
+                      "Checks":  [
+
+                                 ]
+                  },
+                  {
+                      "Test":  "Changed portrait field layout rejected",
+                      "Passed":  true,
+                      "ExpectedCompatible":  false,
+                      "MatchedBaselineFile":  null,
+                      "BaselineBuildIds":  [
+                                               "25953419",
+                                               "25957922",
+                                               "25987745",
+                                               "26021712",
+                                               "26073097",
+                                               "26237817"
+                                           ],
+                      "Seconds":  20.87,
+                      "Reasons":  [
+                                      "基线25953419/25957922：相关框架或资源发生变化，需人工适配：Mortal_Data/globalgamemanagers.assets",
+                                      "基线25987745：相关框架或资源发生变化，需人工适配：Mortal_Data/globalgamemanagers.assets",
+                                      "基线26021712：相关框架或资源发生变化，需人工适配：Mortal_Data/globalgamemanagers.assets",
+                                      "基线26073097：相关框架或资源发生变化，需人工适配：Mortal_Data/globalgamemanagers.assets",
+                                      "基线26237817：立绘接口或行为发生变化：System.Void Mortal.Core.PlayerAvatarPanel::OnEnable()"
+                                  ],
+                      "Checks":  [
+
+                                 ]
+                  },
+                  {
+                      "Test":  "Changed portrait bundle with unchanged catalog rejected",
+                      "Passed":  true,
+                      "ExpectedCompatible":  false,
+                      "MatchedBaselineFile":  null,
+                      "BaselineBuildIds":  [
+                                               "25953419",
+                                               "25957922",
+                                               "25987745",
+                                               "26021712",
+                                               "26073097",
+                                               "26237817"
+                                           ],
+                      "Seconds":  11,
+                      "Reasons":  [
+                                      "基线25953419/25957922：相关框架或资源发生变化，需人工适配：Mortal_Data/globalgamemanagers.assets",
+                                      "基线25987745：相关框架或资源发生变化，需人工适配：Mortal_Data/globalgamemanagers.assets",
+                                      "基线26021712：相关框架或资源发生变化，需人工适配：Mortal_Data/globalgamemanagers.assets",
+                                      "基线26073097：相关框架或资源发生变化，需人工适配：Mortal_Data/globalgamemanagers.assets",
+                                      "基线26237817：相关框架或资源发生变化，需人工适配：Mortal_Data/StreamingAssets/aa/StandaloneWindows64/portrait_player_assets_all_7bec2bcbfba83b3c2a6357abd0d0fcdf.bundle"
+                                  ],
+                      "Checks":  [
+
+                                 ]
+                  },
+                  {
+                      "Test":  "Changed Addressables catalog rejected",
+                      "Passed":  true,
+                      "ExpectedCompatible":  false,
+                      "MatchedBaselineFile":  null,
+                      "BaselineBuildIds":  [
+                                               "25953419",
+                                               "25957922",
+                                               "25987745",
+                                               "26021712",
+                                               "26073097",
+                                               "26237817"
+                                           ],
+                      "Seconds":  8.66,
+                      "Reasons":  [
+                                      "基线25953419/25957922：相关框架或资源发生变化，需人工适配：Mortal_Data/globalgamemanagers.assets",
+                                      "基线25987745：相关框架或资源发生变化，需人工适配：Mortal_Data/globalgamemanagers.assets",
+                                      "基线26021712：相关框架或资源发生变化，需人工适配：Mortal_Data/globalgamemanagers.assets",
+                                      "基线26073097：相关框架或资源发生变化，需人工适配：Mortal_Data/globalgamemanagers.assets",
+                                      "基线26237817：相关框架或资源发生变化，需人工适配：Mortal_Data/StreamingAssets/aa/catalog.json"
+                                  ],
+                      "Checks":  [
+
+                                 ]
+                  },
+                  {
+                      "Test":  "Changed Addressables runtime rejected",
+                      "Passed":  true,
+                      "ExpectedCompatible":  false,
+                      "MatchedBaselineFile":  null,
+                      "BaselineBuildIds":  [
+                                               "25953419",
+                                               "25957922",
+                                               "25987745",
+                                               "26021712",
+                                               "26073097",
+                                               "26237817"
+                                           ],
+                      "Seconds":  5.01,
+                      "Reasons":  [
+                                      "基线25953419/25957922：相关框架或资源发生变化，需人工适配：Mortal_Data/globalgamemanagers.assets",
+                                      "基线25987745：相关框架或资源发生变化，需人工适配：Mortal_Data/globalgamemanagers.assets",
+                                      "基线26021712：相关框架或资源发生变化，需人工适配：Mortal_Data/globalgamemanagers.assets",
+                                      "基线26073097：相关框架或资源发生变化，需人工适配：Mortal_Data/globalgamemanagers.assets",
+                                      "基线26237817：相关框架或资源发生变化，需人工适配：Mortal_Data/Managed/Unity.Addressables.dll"
+                                  ],
+                      "Checks":  [
+
+                                 ]
+                  },
+                  {
+                      "Test":  "Old/new individually known snapshot files cannot be mixed: Mortal_Data/StreamingAssets/aa/catalog.json",
+                      "Passed":  true,
+                      "ExpectedCompatible":  false,
+                      "MatchedBaselineFile":  null,
+                      "BaselineBuildIds":  [
+                                               "25953419",
+                                               "25957922",
+                                               "25987745",
+                                               "26021712",
+                                               "26073097",
+                                               "26237817"
+                                           ],
+                      "Seconds":  7.98,
+                      "Reasons":  [
+                                      "基线25953419/25957922：相关框架或资源发生变化，需人工适配：Mortal_Data/globalgamemanagers.assets",
+                                      "基线25987745：相关框架或资源发生变化，需人工适配：Mortal_Data/globalgamemanagers.assets",
+                                      "基线26021712：相关框架或资源发生变化，需人工适配：Mortal_Data/globalgamemanagers.assets",
+                                      "基线26073097：相关框架或资源发生变化，需人工适配：Mortal_Data/globalgamemanagers.assets",
+                                      "基线26237817：相关框架或资源发生变化，需人工适配：Mortal_Data/StreamingAssets/aa/catalog.json"
+                                  ],
+                      "Checks":  [
+
+                                 ]
+                  },
+                  {
+                      "Test":  "Old/new individually known snapshot files cannot be mixed: Mortal_Data/globalgamemanagers.assets",
+                      "Passed":  true,
+                      "ExpectedCompatible":  false,
+                      "MatchedBaselineFile":  null,
+                      "BaselineBuildIds":  [
+                                               "25953419",
+                                               "25957922",
+                                               "25987745",
+                                               "26021712",
+                                               "26073097",
+                                               "26237817"
+                                           ],
+                      "Seconds":  3.22,
+                      "Reasons":  [
+                                      "基线25953419/25957922：相关框架或资源发生变化，需人工适配：Mortal_Data/globalgamemanagers.assets",
+                                      "基线25987745：相关框架或资源发生变化，需人工适配：Mortal_Data/globalgamemanagers.assets",
+                                      "基线26021712：相关框架或资源发生变化，需人工适配：Mortal_Data/globalgamemanagers.assets",
+                                      "基线26073097：相关框架或资源发生变化，需人工适配：Mortal_Data/level0",
+                                      "基线26237817：相关框架或资源发生变化，需人工适配：Mortal_Data/globalgamemanagers.assets"
+                                  ],
+                      "Checks":  [
+
+                                 ]
+                  },
+                  {
+                      "Test":  "Unexpected additional bundle rejected by exact inventory",
+                      "Passed":  true,
+                      "ExpectedCompatible":  false,
+                      "MatchedBaselineFile":  null,
+                      "BaselineBuildIds":  [
+                                               "25953419",
+                                               "25957922",
+                                               "25987745",
+                                               "26021712",
+                                               "26073097",
+                                               "26237817"
+                                           ],
+                      "Seconds":  19.21,
+                      "Reasons":  [
+                                      "基线25953419/25957922：相关框架或资源发生变化，需人工适配：Mortal_Data/globalgamemanagers.assets",
+                                      "基线25987745：相关框架或资源发生变化，需人工适配：Mortal_Data/globalgamemanagers.assets",
+                                      "基线26021712：相关框架或资源发生变化，需人工适配：Mortal_Data/globalgamemanagers.assets",
+                                      "基线26073097：相关框架或资源发生变化，需人工适配：Mortal_Data/globalgamemanagers.assets",
+                                      "基线26237817：相关运行库或资源文件集合发生变化，需人工适配。"
+                                  ],
+                      "Checks":  [
+
+                                 ]
+                  },
+                  {
+                      "Test":  "Unexpected additional serialized asset rejected",
+                      "Passed":  true,
+                      "ExpectedCompatible":  false,
+                      "MatchedBaselineFile":  null,
+                      "BaselineBuildIds":  [
+                                               "25953419",
+                                               "25957922",
+                                               "25987745",
+                                               "26021712",
+                                               "26073097",
+                                               "26237817"
+                                           ],
+                      "Seconds":  21.25,
+                      "Reasons":  [
+                                      "基线25953419/25957922：相关框架或资源发生变化，需人工适配：Mortal_Data/globalgamemanagers.assets",
+                                      "基线25987745：相关框架或资源发生变化，需人工适配：Mortal_Data/globalgamemanagers.assets",
+                                      "基线26021712：相关框架或资源发生变化，需人工适配：Mortal_Data/globalgamemanagers.assets",
+                                      "基线26073097：相关框架或资源发生变化，需人工适配：Mortal_Data/globalgamemanagers.assets",
+                                      "基线26237817：相关运行库或资源文件集合发生变化，需人工适配。"
+                                  ],
+                      "Checks":  [
+
+                                 ]
+                  },
+                  {
+                      "Test":  "Version label only change with unchanged protected behavior accepted",
+                      "Passed":  true,
+                      "ExpectedCompatible":  true,
+                      "MatchedBaselineFile":  "installer/compatibility-baseline-26237817.json",
+                      "BaselineBuildIds":  [
+                                               "26237817"
+                                           ],
+                      "Seconds":  17.98,
+                      "Reasons":  [
+
+                                  ],
+                      "Checks":  [
+                                     {
+                                         "Name":  "PinnedBaseline",
+                                         "Passed":  true,
+                                         "Sha256":  "022B17E3598D441E60B887FE130389BFA9DBB7D81F1600F65B4F3FC5CC19AD6F",
+                                         "RelativePath":  "installer/compatibility-baseline-26237817.json"
+                                     },
+                                     {
+                                         "Name":  "TrustedCecil",
+                                         "Passed":  true,
+                                         "Sha256":  "7AE470288FFF4A402899C254D0A76CEFEF55877F5C54F96E83C797CC5BB6E2F6"
+                                     },
+                                     {
+                                         "Name":  "GuardedFileInventory",
+                                         "Passed":  true,
+                                         "Count":  395,
+                                         "Sha256":  "DF0111B1F721EE2EEA9882981B68D86919B956D4016D1129464D269381F371C1"
+                                     },
+                                     {
+                                         "Name":  "MonoRuntime",
+                                         "Passed":  true,
+                                         "Count":  20,
+                                         "Sha256":  "EF09D3985C97CF69636B9232FDAF7A18DA04BDADE50900DD68A87A0804AA97EB"
+                                     },
+                                     {
+                                         "Name":  "SceneAndSerializedAssets",
+                                         "Passed":  true,
+                                         "Count":  51,
+                                         "Sha256":  "00819E9C2DCCFBF0D9B8D3F3C16AABF8904DBC5C483C4EB1FD9E5811281BAB38"
+                                     },
+                                     {
+                                         "Name":  "ManagedDependencies",
+                                         "Passed":  true,
+                                         "Count":  130,
+                                         "Sha256":  "6F58ED8242984445325CA265350DC98D6323378A3562B378390A976D554B3014"
+                                     },
+                                     {
+                                         "Name":  "AddressablesCatalog",
+                                         "Passed":  true,
+                                         "Count":  2,
+                                         "Sha256":  "A98A8999777E138A91099E4F2B04C90E63F3EEBC1119CD876469DF11945C9AD7"
+                                     },
+                                     {
+                                         "Name":  "AddressablesBundles",
+                                         "Passed":  true,
+                                         "Count":  190,
+                                         "Sha256":  "3350135A10E863F5FA58B5BB8E31621026FBA0BA41D45EACD3EBFB6CC1E56FCD"
+                                     },
+                                     {
+                                         "Name":  "UnityRuntime",
+                                         "Passed":  true,
+                                         "Count":  2,
+                                         "Sha256":  "AB2BAFE13DC1B89EC884AB0172522156085A18C44147B5878DC9EDAE08709F4A"
+                                     },
+                                     {
+                                         "Name":  "VersionMetadata",
+                                         "Passed":  true,
+                                         "Sha256":  "FE693F7803582583F253444052CE8837DDAC6EFBC94143D51D1E280BF2085E2B"
+                                     },
+                                     {
+                                         "Name":  "ManagedAssemblyNames",
+                                         "Passed":  true,
+                                         "Count":  131,
+                                         "Sha256":  "49002CC72F7E2A86ACAF0677B2770CF7E6FCF594EFA9ACDA7A0FDED79DD878A4"
+                                     },
+                                     {
+                                         "Name":  "CoreMethods",
+                                         "Passed":  true,
+                                         "Count":  147,
+                                         "Sha256":  "C6E7206E8670B0D20C81F87C41C110108D422B53544A8CE0D91D049E039833D4"
+                                     },
+                                     {
+                                         "Name":  "CoreTypes",
+                                         "Passed":  true,
+                                         "Count":  35,
+                                         "Sha256":  "21D1597E2509FED6B9E1D836A9B3D2E666B9F626CF07365FAE2129D497F17D93"
+                                     },
+                                     {
+                                         "Name":  "GameMemberReferences",
+                                         "Passed":  true,
+                                         "Count":  23,
+                                         "Sha256":  "0B8A55548C34A38D91BFA04701C57EA69C9C7CC05B14B33B49633FE07D3D4E8C"
+                                     }
+                                 ]
+                  },
+                  {
+                      "Test":  "Non-version bootstrap metadata change rejected",
+                      "Passed":  true,
+                      "ExpectedCompatible":  false,
+                      "MatchedBaselineFile":  null,
+                      "BaselineBuildIds":  [
+                                               "25953419",
+                                               "25957922",
+                                               "25987745",
+                                               "26021712",
+                                               "26073097",
+                                               "26237817"
+                                           ],
+                      "Seconds":  17.49,
+                      "Reasons":  [
+                                      "基线25953419/25957922：相关框架或资源发生变化，需人工适配：Mortal_Data/globalgamemanagers.assets",
+                                      "基线25987745：相关框架或资源发生变化，需人工适配：Mortal_Data/globalgamemanagers.assets",
+                                      "基线26021712：相关框架或资源发生变化，需人工适配：Mortal_Data/globalgamemanagers.assets",
+                                      "基线26073097：相关框架或资源发生变化，需人工适配：Mortal_Data/globalgamemanagers.assets",
+                                      "基线26237817：游戏引导或版本元数据结构发生变化，需人工适配。"
+                                  ],
+                      "Checks":  [
+
+                                 ]
+                  },
+                  {
+                      "Test":  "Changed baseline rejected: installer/compatibility-baseline.json",
+                      "Passed":  true,
+                      "ExpectedCompatible":  false,
+                      "MatchedBaselineFile":  null,
+                      "BaselineBuildIds":  [
+
+                                           ],
+                      "Seconds":  0.02,
+                      "Reasons":  [
+                                      "兼容性基线校验失败，请重新下载完整安装包。"
+                                  ],
+                      "Checks":  [
+
+                                 ]
+                  },
+                  {
+                      "Test":  "Missing baseline rejects incomplete package: installer/compatibility-baseline.json",
+                      "Passed":  true,
+                      "ExpectedCompatible":  false,
+                      "MatchedBaselineFile":  null,
+                      "BaselineBuildIds":  [
+
+                                           ],
+                      "Seconds":  0.01,
+                      "Reasons":  [
+                                      "兼容性基线校验失败，请重新下载完整安装包。"
+                                  ],
+                      "Checks":  [
+
+                                 ]
+                  },
+                  {
+                      "Test":  "Changed baseline rejected: installer/compatibility-baseline-25987745.json",
+                      "Passed":  true,
+                      "ExpectedCompatible":  false,
+                      "MatchedBaselineFile":  null,
+                      "BaselineBuildIds":  [
+                                               "25953419",
+                                               "25957922"
+                                           ],
+                      "Seconds":  0.05,
+                      "Reasons":  [
+                                      "兼容性基线校验失败，请重新下载完整安装包。"
+                                  ],
+                      "Checks":  [
+
+                                 ]
+                  },
+                  {
+                      "Test":  "Missing baseline rejects incomplete package: installer/compatibility-baseline-25987745.json",
+                      "Passed":  true,
+                      "ExpectedCompatible":  false,
+                      "MatchedBaselineFile":  null,
+                      "BaselineBuildIds":  [
+                                               "25953419",
+                                               "25957922"
+                                           ],
+                      "Seconds":  0.03,
+                      "Reasons":  [
+                                      "兼容性基线校验失败，请重新下载完整安装包。"
+                                  ],
+                      "Checks":  [
+
+                                 ]
+                  },
+                  {
+                      "Test":  "Changed baseline rejected: installer/compatibility-baseline-26021712.json",
+                      "Passed":  true,
+                      "ExpectedCompatible":  false,
+                      "MatchedBaselineFile":  null,
+                      "BaselineBuildIds":  [
+                                               "25953419",
+                                               "25957922",
+                                               "25987745"
+                                           ],
+                      "Seconds":  0.09,
+                      "Reasons":  [
+                                      "兼容性基线校验失败，请重新下载完整安装包。"
+                                  ],
+                      "Checks":  [
+
+                                 ]
+                  },
+                  {
+                      "Test":  "Missing baseline rejects incomplete package: installer/compatibility-baseline-26021712.json",
+                      "Passed":  true,
+                      "ExpectedCompatible":  false,
+                      "MatchedBaselineFile":  null,
+                      "BaselineBuildIds":  [
+                                               "25953419",
+                                               "25957922",
+                                               "25987745"
+                                           ],
+                      "Seconds":  0.09,
+                      "Reasons":  [
+                                      "兼容性基线校验失败，请重新下载完整安装包。"
+                                  ],
+                      "Checks":  [
+
+                                 ]
+                  },
+                  {
+                      "Test":  "Changed baseline rejected: installer/compatibility-baseline-26073097.json",
+                      "Passed":  true,
+                      "ExpectedCompatible":  false,
+                      "MatchedBaselineFile":  null,
+                      "BaselineBuildIds":  [
+                                               "25953419",
+                                               "25957922",
+                                               "25987745",
+                                               "26021712"
+                                           ],
+                      "Seconds":  0.11,
+                      "Reasons":  [
+                                      "兼容性基线校验失败，请重新下载完整安装包。"
+                                  ],
+                      "Checks":  [
+
+                                 ]
+                  },
+                  {
+                      "Test":  "Missing baseline rejects incomplete package: installer/compatibility-baseline-26073097.json",
+                      "Passed":  true,
+                      "ExpectedCompatible":  false,
+                      "MatchedBaselineFile":  null,
+                      "BaselineBuildIds":  [
+                                               "25953419",
+                                               "25957922",
+                                               "25987745",
+                                               "26021712"
+                                           ],
+                      "Seconds":  0.11,
+                      "Reasons":  [
+                                      "兼容性基线校验失败，请重新下载完整安装包。"
+                                  ],
+                      "Checks":  [
+
+                                 ]
+                  },
+                  {
+                      "Test":  "Changed baseline rejected: installer/compatibility-baseline-26237817.json",
+                      "Passed":  true,
+                      "ExpectedCompatible":  false,
+                      "MatchedBaselineFile":  null,
+                      "BaselineBuildIds":  [
+                                               "25953419",
+                                               "25957922",
+                                               "25987745",
+                                               "26021712",
+                                               "26073097"
+                                           ],
+                      "Seconds":  0.15,
+                      "Reasons":  [
+                                      "兼容性基线校验失败，请重新下载完整安装包。"
+                                  ],
+                      "Checks":  [
+
+                                 ]
+                  },
+                  {
+                      "Test":  "Missing baseline rejects incomplete package: installer/compatibility-baseline-26237817.json",
+                      "Passed":  true,
+                      "ExpectedCompatible":  false,
+                      "MatchedBaselineFile":  null,
+                      "BaselineBuildIds":  [
+                                               "25953419",
+                                               "25957922",
+                                               "25987745",
+                                               "26021712",
+                                               "26073097"
+                                           ],
+                      "Seconds":  0.16,
+                      "Reasons":  [
+                                      "兼容性基线校验失败，请重新下载完整安装包。"
+                                  ],
+                      "Checks":  [
+
+                                 ]
+                  },
+                  {
+                      "Test":  "Changed runtime plugin rejected",
+                      "Passed":  true,
+                      "ExpectedCompatible":  false,
+                      "MatchedBaselineFile":  null,
+                      "BaselineBuildIds":  [
+                                               "25953419",
+                                               "25957922",
+                                               "25987745",
+                                               "26021712",
+                                               "26073097",
+                                               "26237817"
+                                           ],
+                      "Seconds":  18.39,
+                      "Reasons":  [
+                                      "基线25953419/25957922：相关框架或资源发生变化，需人工适配：Mortal_Data/globalgamemanagers.assets",
+                                      "基线25987745：相关框架或资源发生变化，需人工适配：Mortal_Data/globalgamemanagers.assets",
+                                      "基线26021712：相关框架或资源发生变化，需人工适配：Mortal_Data/globalgamemanagers.assets",
+                                      "基线26073097：相关框架或资源发生变化，需人工适配：Mortal_Data/globalgamemanagers.assets",
+                                      "基线26237817：插件版本与兼容性基线不一致。"
+                                  ],
+                      "Checks":  [
+
+                                 ]
+                  },
+                  {
+                      "Test":  "Changed trusted metadata reader rejected",
+                      "Passed":  true,
+                      "ExpectedCompatible":  false,
+                      "MatchedBaselineFile":  null,
+                      "BaselineBuildIds":  [
+                                               "25953419",
+                                               "25957922",
+                                               "25987745",
+                                               "26021712",
+                                               "26073097",
+                                               "26237817"
+                                           ],
+                      "Seconds":  0.42,
+                      "Reasons":  [
+                                      "基线25953419/25957922：包内官方 Mono.Cecil 校验失败，请重新下载完整安装包。",
+                                      "基线25987745：包内官方 Mono.Cecil 校验失败，请重新下载完整安装包。",
+                                      "基线26021712：包内官方 Mono.Cecil 校验失败，请重新下载完整安装包。",
+                                      "基线26073097：包内官方 Mono.Cecil 校验失败，请重新下载完整安装包。",
+                                      "基线26237817：包内官方 Mono.Cecil 校验失败，请重新下载完整安装包。"
+                                  ],
+                      "Checks":  [
+
+                                 ]
+                  },
+                  {
+                      "Test":  "Source game assembly fingerprints unchanged",
+                      "Passed":  true
+                  },
+                  {
+                      "Test":  "Baseline generator reproduces frozen bytes in the original generation engine",
+                      "Passed":  true,
+                      "ActualGameRun":  false,
+                      "GeneratorPowerShellVersion":  "7.6.5",
+                      "GeneratedSha256":  "022B17E3598D441E60B887FE130389BFA9DBB7D81F1600F65B4F3FC5CC19AD6F",
+                      "FixedFileCount":  395,
+                      "Methods":  147,
+                      "Types":  35,
+                      "GameMemberReferenceCount":  23
+                  }
+              ]
+}

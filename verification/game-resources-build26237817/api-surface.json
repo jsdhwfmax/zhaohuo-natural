@@ -1,0 +1,2184 @@
+{
+  "SchemaVersion": 1,
+  "SourceBuildId": "26237817",
+  "ComparisonBuildId": "26073097",
+  "ActualGameRun": false,
+  "GameDirectoryModified": false,
+  "GameAssembliesExecuted": false,
+  "TrustedCecilSha256": "7AE470288FFF4A402899C254D0A76CEFEF55877F5C54F96E83C797CC5BB6E2F6",
+  "PluginSha256": "AEEE02AC56DCDCB1E683D6356AC28FE19E61AF861D5663ACFFD1B83984F06957",
+  "CoreSurface": [
+    {
+      "Category": "Methods",
+      "PreviousCount": 147,
+      "CurrentCount": 147,
+      "Unchanged": true,
+      "Changes": []
+    },
+    {
+      "Category": "Types",
+      "PreviousCount": 35,
+      "CurrentCount": 35,
+      "Unchanged": true,
+      "Changes": []
+    }
+  ],
+  "GameMemberReferenceCount": 23,
+  "GameMemberReferences": [
+    {
+      "Name": "System.String Mortal.Core.StoryCharacterData::get_Id()",
+      "Resolved": true
+    },
+    {
+      "Name": "Mortal.Core.StoryCharacterData Mortal.Story.StoryCharacterController::Data",
+      "Resolved": true
+    },
+    {
+      "Name": "Mortal.Core.StoryCharaterImageItem[] Mortal.Core.StoryCharacterData::get_PortraitResourceList()",
+      "Resolved": true
+    },
+    {
+      "Name": "System.Collections.Generic.List`1<UnityEngine.Sprite> Fungus.Character::get_Portraits()",
+      "Resolved": true
+    },
+    {
+      "Name": "Fungus.PortraitState Fungus.Character::get_State()",
+      "Resolved": true
+    },
+    {
+      "Name": "System.Collections.Generic.List`1<UnityEngine.UI.Image> Fungus.PortraitState::allPortraits",
+      "Resolved": true
+    },
+    {
+      "Name": "UnityEngine.Sprite Fungus.Character::get_ProfileSprite()",
+      "Resolved": true
+    },
+    {
+      "Name": "System.Void Fungus.Character::set_ProfileSprite(UnityEngine.Sprite)",
+      "Resolved": true
+    },
+    {
+      "Name": "Mortal.Core.RelationshipStatType Mortal.Core.RelationshipStat::get_Type()",
+      "Resolved": true
+    },
+    {
+      "Name": "OBB.Framework.Data.StoryMappingItem Mortal.Core.StoryCharaterImageItem::get_Mapping()",
+      "Resolved": true
+    },
+    {
+      "Name": "System.String OBB.Framework.Data.StoryMappingItem::Value",
+      "Resolved": true
+    },
+    {
+      "Name": "System.String Mortal.Core.StoryCharaterImageItem::get_AddressKey()",
+      "Resolved": true
+    },
+    {
+      "Name": "System.String OBB.Framework.Data.StoryMappingItem::Key",
+      "Resolved": true
+    },
+    {
+      "Name": "System.Void Mortal.Core.StoryCharaterImageItem::.ctor()",
+      "Resolved": true
+    },
+    {
+      "Name": "UnityEngine.RectTransform Fungus.PortraitState::holder",
+      "Resolved": true
+    },
+    {
+      "Name": "Mortal.Core.LocalizationManager Mortal.Core.LocalizationManager::get_Instance()",
+      "Resolved": true
+    },
+    {
+      "Name": "System.Collections.IEnumerator Mortal.Story.StoryCharacterController::Setup(Mortal.Core.StoryCharacterData)",
+      "Resolved": true
+    },
+    {
+      "Name": "System.Void Mortal.Story.StoryCharacterController::LoadPortraitSync(System.String)",
+      "Resolved": true
+    },
+    {
+      "Name": "System.Collections.IEnumerator Mortal.Story.StoryCharacterController::LoadPortrait(System.String)",
+      "Resolved": true
+    },
+    {
+      "Name": "System.String Mortal.Story.StoryCharacterController::GetPortraitName(System.String)",
+      "Resolved": true
+    },
+    {
+      "Name": "UnityEngine.Sprite Fungus.Character::GetPortrait(System.String)",
+      "Resolved": true
+    },
+    {
+      "Name": "System.Void Mortal.Core.PlayerTalentData::Setup(System.Int32)",
+      "Resolved": true
+    },
+    {
+      "Name": "System.Collections.IEnumerator Mortal.Story.StoryCharacterController::LoadPortraitAssetByAddressable(Mortal.Core.StoryCharaterImageItem[])",
+      "Resolved": true
+    }
+  ],
+  "AllGameReferencesResolve": true,
+  "ManagedAssemblyNamesUnchanged": true,
+  "GuardedInventoryAdded": [],
+  "GuardedInventoryRemoved": [],
+  "VersionMetadataNormalizedUnchanged": false,
+  "FingerprintSet": {
+    "Assembly-CSharp.dll": "5803AF11CFA7428CF1E8E6B9F0447CAC607C1310119F7DB1CE013DB651D8BF23",
+    "Mortal.Core.dll": "093EF965BBCCF3C9EF543C51C1D9AF61B8B9CAE93BB8EBE8D8F58ACDAB12D922",
+    "Mortal.Story.dll": "320F77D0B2CEE562420EC44FCD244E20CB7E007A6F8AFF7275567015EEC2310F",
+    "Fungus.dll": "16DCD300966F3CB747E693B3BD7996AD6C36303B9112B81F9696D2B4C8BC0114"
+  },
+  "Limitations": [
+    "Static metadata/IL surface only. Unchanged portrait surface is not whole-game or third-party-mod compatibility. No game process was launched.",
+    "Version-normalized globalgamemanagers hash changed, so this is not a version-string-only update.",
+    "The new baseline must independently pin the complete current fixed-file inventory; no old/new resource mixing is accepted."
+  ],
+  "Passed": true,
+  "SourceGameVersion": "release_1.0.6001.0",
+  "StoryPortraitClosure": {
+    "SourceBuildId": "26237817",
+    "ComparisonBuildId": "26073097",
+    "ActualGameRun": false,
+    "GameAssembliesExecuted": false,
+    "Seed": "Mortal.Story.StoryCharacterController",
+    "Closure": [
+      {
+        "Category": "Methods",
+        "PreviousCount": 60,
+        "CurrentCount": 60,
+        "Unchanged": true,
+        "Changes": []
+      },
+      {
+        "Category": "Types",
+        "PreviousCount": 14,
+        "CurrentCount": 14,
+        "Unchanged": true,
+        "Changes": []
+      }
+    ],
+    "Scope": "All methods and generated nested state machines of the actual portrait controller, plus its internal transitive method/field/static initializer dependencies. External Fungus/OBB/Addressables/ResourceManager compared separately."
+  },
+  "DependencyImplementationComparison": {
+    "SchemaVersion": 1,
+    "ActualGameRun": false,
+    "GameAssembliesExecuted": false,
+    "GameDirectoryModified": false,
+    "SourceBuildId": "26237817",
+    "ComparisonBuildId": "26073097",
+    "BaselineSha256": "E448C4F8E3A9D9D57DBA5BB2779B0A0774995BF7BDDDE1448421A086839DEC53",
+    "Assemblies": [
+      {
+        "Assembly": "Mortal.Story.dll",
+        "PriorBytesVerifiedAgainstBaseline": true,
+        "PreviousSha256": "907F42E06624A2B0C603757DC22DE3A4F33C26CB3CEBE8017A24CA6FF27DCF56",
+        "CurrentSha256": "320F77D0B2CEE562420EC44FCD244E20CB7E007A6F8AFF7275567015EEC2310F",
+        "Comparison": [
+          {
+            "Category": "Methods",
+            "PreviousCount": 934,
+            "CurrentCount": 932,
+            "Unchanged": false,
+            "Changes": [
+              {
+                "Name": "System.Boolean Mortal.Story.DiceMenuDialog/<ExecuteRoll>d__60::MoveNext()",
+                "PreviousSha256": "54D72AF8DB4C7C7C2E26508CD6C3D7F29882881651046C14BAABE2EBFB6A0C14",
+                "CurrentSha256": "0D90C57D603AEABEC2757EF14B62271DD42BD498F83143ED6A97868D6A9266A9"
+              },
+              {
+                "Name": "System.Boolean Mortal.Story.DiceMenuDialog/<Roll>d__61::MoveNext()",
+                "PreviousSha256": "FD02839436FD7257EF432B5949E6D66998790074804F13DC48ECA385CFF0B394",
+                "CurrentSha256": null
+              },
+              {
+                "Name": "System.Boolean Mortal.Story.DiceMenuDialog/<Roll>d__62::MoveNext()",
+                "PreviousSha256": null,
+                "CurrentSha256": "AD31D79B76F638F43937FF6490874D5DDC78892EC43043B8A1A58ADE3B05D914"
+              },
+              {
+                "Name": "System.Boolean Mortal.Story.DiceMenuDialog/<StartSpin>d__67::MoveNext()",
+                "PreviousSha256": "FF604DD123540A26A760CA31896C8BA496046327FBB6A9DBF974D3CF84505E3D",
+                "CurrentSha256": null
+              },
+              {
+                "Name": "System.Boolean Mortal.Story.DiceMenuDialog/<StartSpin>d__68::MoveNext()",
+                "PreviousSha256": null,
+                "CurrentSha256": "7D3C6DAFE436E67D8B76A67F0652BF7414FF14888D2D283F14C1377121828A48"
+              },
+              {
+                "Name": "System.Boolean Mortal.Story.StatModifyManager/<AddAchievementLib>d__30::MoveNext()",
+                "PreviousSha256": "AB3094E2E1996B1222AECBFD6BDBFBAC76C3735E3903EDD8B4B0A8DDD5429A1D",
+                "CurrentSha256": "0E8E4E7BBDDC7DE4DCC78CA23D380ACDAF4FF2DDF096400BCB0759A2D84D52A1"
+              },
+              {
+                "Name": "System.Boolean Mortal.Story.StoryCommandNarrativeLog::get_IsActive()",
+                "PreviousSha256": "74E7C4C7A7AD80F39876861DC6576A85257117CDBA440B9CDA47E3EAEFFDDCF2",
+                "CurrentSha256": "9526B37F1FC3F5ABF1F356EFDE6ADC837D6DBDD09D17AF731AE0A78FEF9A5AC6"
+              },
+              {
+                "Name": "System.Boolean Mortal.Story.StoryMainUI/<HideBigPicture>d__38::MoveNext()",
+                "PreviousSha256": "C46B506FCBBC85924149E1AB97DD5AECB8BF65F2E502F5A4F05B1373040C235A",
+                "CurrentSha256": null
+              },
+              {
+                "Name": "System.Boolean Mortal.Story.StoryMainUI/<HideBigPicture>d__40::MoveNext()",
+                "PreviousSha256": null,
+                "CurrentSha256": "EA5F4A834A302977A7E86C4A9DAB799A51506C0CF3057421EDA45AB4045C9083"
+              },
+              {
+                "Name": "System.Boolean Mortal.Story.StoryMainUI/<HideFamilyTree>d__42::MoveNext()",
+                "PreviousSha256": "03FFEFB0CC66A1A9873CAEF503DA77477DEE21BDB386557E9295E43DCCB7FD4B",
+                "CurrentSha256": null
+              },
+              {
+                "Name": "System.Boolean Mortal.Story.StoryMainUI/<HideFamilyTree>d__44::MoveNext()",
+                "PreviousSha256": null,
+                "CurrentSha256": "2115E4BE5C106DFC493E7FC99F35970E53F4E439B5F8F10A288FAD274FB4E2C3"
+              },
+              {
+                "Name": "System.Boolean Mortal.Story.StoryMainUI/<HideItemPicture>d__34::MoveNext()",
+                "PreviousSha256": "D260E076697D14ADDE804742BE0D9C89AA912360C4D47AF3F45BBBC1418F3396",
+                "CurrentSha256": null
+              },
+              {
+                "Name": "System.Boolean Mortal.Story.StoryMainUI/<HideItemPicture>d__36::MoveNext()",
+                "PreviousSha256": null,
+                "CurrentSha256": "6C5B13E21472263A35AAB4761DE810BD123B89045A099656BC1C8A8083F4CB2C"
+              },
+              {
+                "Name": "System.Boolean Mortal.Story.StoryMainUI/<HideMap>d__40::MoveNext()",
+                "PreviousSha256": "3B9175A537C2669710646141E4E1922A0B2B3EA8FBE99D88265470F011F179B0",
+                "CurrentSha256": null
+              },
+              {
+                "Name": "System.Boolean Mortal.Story.StoryMainUI/<HideMap>d__42::MoveNext()",
+                "PreviousSha256": null,
+                "CurrentSha256": "6B146BC43A5831B0B1375D25D9A80554459186FA0656DED79460A2A863CE24DE"
+              },
+              {
+                "Name": "System.Boolean Mortal.Story.StoryMainUI/<HidePicture>d__36::MoveNext()",
+                "PreviousSha256": "7745B9D2265B05BE75E2D013C60147A5ECDC457712CD8279F6C61411A24E4586",
+                "CurrentSha256": null
+              },
+              {
+                "Name": "System.Boolean Mortal.Story.StoryMainUI/<HidePicture>d__38::MoveNext()",
+                "PreviousSha256": null,
+                "CurrentSha256": "105F8380AA428CCF5FB7C047AFFD9E4AD1153D9ED7F4E67A3EC3A6AD5B65F554"
+              },
+              {
+                "Name": "System.Boolean Mortal.Story.StoryMainUI/<ShowBigPicture>d__37::MoveNext()",
+                "PreviousSha256": "3DC27A73706762951FA407D051D654AC566EE5388D9C65925E0F55846A17284C",
+                "CurrentSha256": null
+              },
+              {
+                "Name": "System.Boolean Mortal.Story.StoryMainUI/<ShowBigPicture>d__39::MoveNext()",
+                "PreviousSha256": null,
+                "CurrentSha256": "6CC51BCBC8243BEA4B68C83648F5C0E86E7DB2356B763FB13BBA5744B8AA88F4"
+              },
+              {
+                "Name": "System.Boolean Mortal.Story.StoryMainUI/<ShowCanvas>d__47::MoveNext()",
+                "PreviousSha256": "C6553325F8379DD956FCFE6ECB9DD39A63BC1D9240C12938EE1B0E767E9122A2",
+                "CurrentSha256": null
+              },
+              {
+                "Name": "System.Boolean Mortal.Story.StoryMainUI/<ShowCanvas>d__49::MoveNext()",
+                "PreviousSha256": null,
+                "CurrentSha256": "038AB58C09DE0BE89C7FC55B7E2B452C7449BCD0959074527D7098E381C8E51C"
+              },
+              {
+                "Name": "System.Boolean Mortal.Story.StoryMainUI/<ShowFamilyTree>d__41::MoveNext()",
+                "PreviousSha256": "20F7CDFED9FEFCB64E5443C37F8B18435F5B42A6A65A1630BF1C4EF3FFC9536F",
+                "CurrentSha256": null
+              },
+              {
+                "Name": "System.Boolean Mortal.Story.StoryMainUI/<ShowFamilyTree>d__43::MoveNext()",
+                "PreviousSha256": null,
+                "CurrentSha256": "52FC55522E456EEBF449D841C274268BD11EBE461B0615162FD54BB123FD0F3D"
+              },
+              {
+                "Name": "System.Boolean Mortal.Story.StoryMainUI/<ShowItemPicture>d__33::MoveNext()",
+                "PreviousSha256": "3D153C789D5DC1CBDBFEF9CBD3DCF1B4AD0F993037DA6441F6E6D03E7B78C784",
+                "CurrentSha256": null
+              },
+              {
+                "Name": "System.Boolean Mortal.Story.StoryMainUI/<ShowItemPicture>d__35::MoveNext()",
+                "PreviousSha256": null,
+                "CurrentSha256": "F8692B27DE0418BA1BB7033A910F642DAF972E7D050D69F0B405153A9E47F84C"
+              },
+              {
+                "Name": "System.Boolean Mortal.Story.StoryMainUI/<ShowMap>d__39::MoveNext()",
+                "PreviousSha256": "3398C3CF1A98BC66757E67A9018804DF32B46426D4D9E0935E712C45214A13C4",
+                "CurrentSha256": null
+              },
+              {
+                "Name": "System.Boolean Mortal.Story.StoryMainUI/<ShowMap>d__41::MoveNext()",
+                "PreviousSha256": null,
+                "CurrentSha256": "FFBEE60950483BE1D4DB352A6B536A34D025A1CA5607B53FC29902A2A4480B24"
+              },
+              {
+                "Name": "System.Boolean Mortal.Story.StoryMainUI/<ShowPicture>d__35::MoveNext()",
+                "PreviousSha256": "ED32AFBE68A0D447C5927A74C4CABF37F654CDB2412BC28E7A600A28A42D88DB",
+                "CurrentSha256": null
+              },
+              {
+                "Name": "System.Boolean Mortal.Story.StoryMainUI/<ShowPicture>d__37::MoveNext()",
+                "PreviousSha256": null,
+                "CurrentSha256": "39DB3D5A4BBC927ED5C92253F67007651136ED62A4BCA89DD32E2C2BA4DAD342"
+              },
+              {
+                "Name": "System.Boolean Mortal.Story.StoryManager/<ShowDisableSaveText>d__76::MoveNext()",
+                "PreviousSha256": null,
+                "CurrentSha256": "7B72D62D3A362464524835E04FB3BCBF5D501418CAE7B9E4EFBA05D281118842"
+              },
+              {
+                "Name": "System.Boolean Mortal.Story.StoryManager/<ShowDisableSaveText>d__79::MoveNext()",
+                "PreviousSha256": "0E81403CCE97560B48B4F847F2B1664A36030D1DA51A73B7FF2729086DBBC172",
+                "CurrentSha256": null
+              },
+              {
+                "Name": "System.Boolean Mortal.Story.StoryManager/<ShowEnableSaveText>d__75::MoveNext()",
+                "PreviousSha256": null,
+                "CurrentSha256": "BCA472D80EAFDBBC7ED488B79B46031C34F4829AA2CCA10169B6F00D1ABB31B0"
+              },
+              {
+                "Name": "System.Boolean Mortal.Story.StoryManager/<ShowEnableSaveText>d__78::MoveNext()",
+                "PreviousSha256": "F81121C9120FB54113B1DB139EB6F87E30770877736A5AC885F10A26B33E770C",
+                "CurrentSha256": null
+              },
+              {
+                "Name": "System.Boolean Mortal.Story.StoryManager/<ShowFreeAutoSave>d__74::MoveNext()",
+                "PreviousSha256": null,
+                "CurrentSha256": "BAFC0C0FDE18BD149C1A1293A2229DE1A3342D377F4D9556CE5A85CF07D6A1D6"
+              },
+              {
+                "Name": "System.Boolean Mortal.Story.StoryManager/<ShowFreeAutoSave>d__77::MoveNext()",
+                "PreviousSha256": "3856016AD6BE2182F36B2CABCEB086A280F200C3713C49983661099D305CD736",
+                "CurrentSha256": null
+              },
+              {
+                "Name": "System.Boolean Mortal.Story.StoryManager/<ShowStoryAutoSave>d__73::MoveNext()",
+                "PreviousSha256": null,
+                "CurrentSha256": "8EC42A2E0A67F1D12D1000D500AC88EF9321583C7EDDF8666E0F00FCB63A386D"
+              },
+              {
+                "Name": "System.Boolean Mortal.Story.StoryManager/<ShowStoryAutoSave>d__76::MoveNext()",
+                "PreviousSha256": "672DC93AE1A474CC4B024F64D6F9EB757FA80B840A1BA1AD9DC6BE161B15082B",
+                "CurrentSha256": null
+              },
+              {
+                "Name": "System.Boolean Mortal.Story.StoryManager/<StartAutoDialogue>d__80::MoveNext()",
+                "PreviousSha256": null,
+                "CurrentSha256": "E5B827078DF717F7254030109642FABBD8F1B5FAF578D35CC7DAF3413D3AA3BB"
+              },
+              {
+                "Name": "System.Boolean Mortal.Story.StoryManager/<StartAutoDialogue>d__84::MoveNext()",
+                "PreviousSha256": "8E64B95A9675068873D52DDE8BC52C9D2CD84ACDE9A4D0F3AD677DA78DB64BEE",
+                "CurrentSha256": null
+              },
+              {
+                "Name": "System.Boolean Mortal.Story.StoryManager/<WaitForLogCanvas>d__81::MoveNext()",
+                "PreviousSha256": "1CBE58A449C7132DDABC5A2714FFA39C4CF24A576030B8329B111BFDC6B9E8F0",
+                "CurrentSha256": null
+              },
+              {
+                "Name": "System.Collections.IEnumerator Mortal.Story.DiceMenuDialog::Roll(System.String)",
+                "PreviousSha256": "B8B418353F481C058752C32DCD0B8D4AB872058FCFFC693377CE548641033DC1",
+                "CurrentSha256": "031CD57AD37BA571E7C7483EF5A2F22C8DC3DFEE1A7F90DF9268C0BC0C195671"
+              },
+              {
+                "Name": "System.Collections.IEnumerator Mortal.Story.DiceMenuDialog::StartSpin(System.Single)",
+                "PreviousSha256": "21A3E1F6CA3F8463988DC844C7F3457FECB94F95731661DDFE5BFFB8AA3D35BE",
+                "CurrentSha256": "E01ECF376BE26F978FD1A834359104923DF8236772B54EDFB6B4B2244A6B0819"
+              },
+              {
+                "Name": "System.Collections.IEnumerator Mortal.Story.StoryMainUI::HideBigPicture()",
+                "PreviousSha256": "5A5C98202CA6F8063F1CC6A637C0A8D3BE180763AA97F08835C17FB0178297EB",
+                "CurrentSha256": "3364BF0C38B5233CBB8985870ACAAB9089873E0802F73E69DF13C2DEBE0E296B"
+              },
+              {
+                "Name": "System.Collections.IEnumerator Mortal.Story.StoryMainUI::HideFamilyTree()",
+                "PreviousSha256": "CAF1FE7E29186029EFB55B844B7C553C7DCC27F5F0561C83D2D8AB1A159E672D",
+                "CurrentSha256": "E34CF0918A90825B926B237D32CCB5BE509D54D4B18813260DC0A9D6B5C90427"
+              },
+              {
+                "Name": "System.Collections.IEnumerator Mortal.Story.StoryMainUI::HideItemPicture()",
+                "PreviousSha256": "D0DAAB63D85621AC88CDC1F6758794A87156BE43416C7C8D1D12613CE69F3AE3",
+                "CurrentSha256": "117514B60A4F381AE7ABB604636C38CEDEF6F54517125A3B27A5585973F6308C"
+              },
+              {
+                "Name": "System.Collections.IEnumerator Mortal.Story.StoryMainUI::HideMap()",
+                "PreviousSha256": "CFF58A537DDB114E403F5DC5E5202F9165BDF39B8119B1D34FFE3EC467142C0F",
+                "CurrentSha256": "654D30D36DA97468DEE8F8EA089506CA02D9A2866E68244B652BDB367FC124E4"
+              },
+              {
+                "Name": "System.Collections.IEnumerator Mortal.Story.StoryMainUI::HidePicture()",
+                "PreviousSha256": "1F30064635B7A204ADF9A81F1ABADBACCADF29841D91BAEBCFE4C554207679F7",
+                "CurrentSha256": "784DF563AE534B3D0369B352AC418DD0B5FC807644EB9A4E75C39C91163341DC"
+              },
+              {
+                "Name": "System.Collections.IEnumerator Mortal.Story.StoryMainUI::ShowBigPicture(System.String,System.Int32)",
+                "PreviousSha256": "9CF0802806D3F2A91064404271593D4CF3296051E59162394ABC5F8F83BA5096",
+                "CurrentSha256": "ACD9575684A461524500683C8FA48584B3C5E9062364AAB9C492DCDD9B856525"
+              },
+              {
+                "Name": "System.Collections.IEnumerator Mortal.Story.StoryMainUI::ShowCanvas()",
+                "PreviousSha256": "40538F0D56FE860A28060A3E835D7DF92B533C9EF5D61FD66BD638111392DA09",
+                "CurrentSha256": "9AB4A4A0D32833FBEE18EC934A2AC075F47DECF81BA522422B098A9DFEE2BDBA"
+              },
+              {
+                "Name": "System.Collections.IEnumerator Mortal.Story.StoryMainUI::ShowFamilyTree(System.String,System.String,System.Single,System.Single)",
+                "PreviousSha256": "043B4BEC1D8698ACF4A5C5F7042074E8E162F6319714F6B32E72A019ED5EB584",
+                "CurrentSha256": "16598B98EF984BBDB1C97AF84862111B4F9368812C70672309FBAFD21E2CF433"
+              },
+              {
+                "Name": "System.Collections.IEnumerator Mortal.Story.StoryMainUI::ShowItemPicture(System.String)",
+                "PreviousSha256": "B1B1C3AA5BD22733AFA0791CE3B07EAC210FA126421D5AB9DC79DD55CAB5E152",
+                "CurrentSha256": "B6B1E05840FB1FFEF2A3711ED98A6866AA97821AAC0D8E9AF20829A43F619F02"
+              },
+              {
+                "Name": "System.Collections.IEnumerator Mortal.Story.StoryMainUI::ShowMap(System.String,System.String)",
+                "PreviousSha256": "BDD03F0F93477817675CC8E587D2B5D2AA74D57417E54A92964A375D207DDF9A",
+                "CurrentSha256": "968F02C544106FB428CB563090CC898E2D28DC8B05B2F1782C3D508B7BB4C8F6"
+              },
+              {
+                "Name": "System.Collections.IEnumerator Mortal.Story.StoryMainUI::ShowPicture(System.String)",
+                "PreviousSha256": "E1F215CB1A51DA0D37194A30E38D434B48856C58FEB41A6062D230B2E434E3CB",
+                "CurrentSha256": "191E3824990C17F24448DCB0BA28518F42BCD6C523CF1C08BC0DBCCCD584ADB7"
+              },
+              {
+                "Name": "System.Collections.IEnumerator Mortal.Story.StoryManager::ShowDisableSaveText()",
+                "PreviousSha256": "B2C3562014BF58F2CB552D621ABC00FBE445F188B37AA40B80F7BCAD63F261EF",
+                "CurrentSha256": "B6C0FF27137E72402A0193A109A07F6E0B25DE2CAEF3B48D42572A1ACCDB0404"
+              },
+              {
+                "Name": "System.Collections.IEnumerator Mortal.Story.StoryManager::ShowEnableSaveText()",
+                "PreviousSha256": "9681561E213E6738CD55457B3B0D96674EBB5C7E993803C3F47C36ECA6171A28",
+                "CurrentSha256": "DC997F97942B03616857C4EB646120AC967767C41C8DF50D05E6A4C257DD9B7B"
+              },
+              {
+                "Name": "System.Collections.IEnumerator Mortal.Story.StoryManager::ShowFreeAutoSave()",
+                "PreviousSha256": "7C7B5C17871AF330B264D466FEFE7FDEDC1DC0B9D17F8DEECB18B31B11042A05",
+                "CurrentSha256": "6BA1595A7BF70A418A9716148FD1315470B2200518B13B86E3321EB99DB94E6E"
+              },
+              {
+                "Name": "System.Collections.IEnumerator Mortal.Story.StoryManager::ShowStoryAutoSave()",
+                "PreviousSha256": "FCE5096C31015287C452A380F5E9BA93C965D61B8CC034CDEEF645C5DC906F5C",
+                "CurrentSha256": "5308D2B2AAC67E0C7AADDF11A9F2144226BA6ECFFDD77B78B7599FE8EFD511B7"
+              },
+              {
+                "Name": "System.Collections.IEnumerator Mortal.Story.StoryManager::StartAutoDialogue()",
+                "PreviousSha256": "07EB72881BA49A54AE75B5877368524DD73D5EDEF1CE99AA5AD6DF4739788081",
+                "CurrentSha256": "F4BF8775E1E781BAB32AEB01C3AE2DB2D60D08163254330B3BEEB235B77A5EF4"
+              },
+              {
+                "Name": "System.Collections.IEnumerator Mortal.Story.StoryManager::WaitForLogCanvas()",
+                "PreviousSha256": "F72F9526EC5AC754BEA50984949BBBCAE593CC2DF4104723010F35945DC8AE6F",
+                "CurrentSha256": null
+              },
+              {
+                "Name": "System.Object Mortal.Story.DiceMenuDialog/<Roll>d__61::System.Collections.Generic.IEnumerator<System.Object>.get_Current()",
+                "PreviousSha256": "325ECE7286B36004B85324EFAD9423701921A0F874F2E0338322BC8FD5F0BC7D",
+                "CurrentSha256": null
+              },
+              {
+                "Name": "System.Object Mortal.Story.DiceMenuDialog/<Roll>d__61::System.Collections.IEnumerator.get_Current()",
+                "PreviousSha256": "82621E37BBF9EF4D2727EFE2CC56ACC740564BF3C5BC95A1B09E3A852CCEFD84",
+                "CurrentSha256": null
+              },
+              {
+                "Name": "System.Object Mortal.Story.DiceMenuDialog/<Roll>d__62::System.Collections.Generic.IEnumerator<System.Object>.get_Current()",
+                "PreviousSha256": null,
+                "CurrentSha256": "3BB0A8957965376760A05D04547EAE9251B419337C4AC9360850D0A549A18176"
+              },
+              {
+                "Name": "System.Object Mortal.Story.DiceMenuDialog/<Roll>d__62::System.Collections.IEnumerator.get_Current()",
+                "PreviousSha256": null,
+                "CurrentSha256": "E5ED3D354101BDE3A72349FFE92DD4CECA4F2F256FA7BD272A97786DB6B50AE7"
+              },
+              {
+                "Name": "System.Object Mortal.Story.DiceMenuDialog/<StartSpin>d__67::System.Collections.Generic.IEnumerator<System.Object>.get_Current()",
+                "PreviousSha256": "918FDA92B51788D528AA87B5F8C87902624BD8672F7292A96F1398A7D92A1330",
+                "CurrentSha256": null
+              },
+              {
+                "Name": "System.Object Mortal.Story.DiceMenuDialog/<StartSpin>d__67::System.Collections.IEnumerator.get_Current()",
+                "PreviousSha256": "9959A98353012C82C9C061D08AA59BB68F39A92385C8F765AAF245A2C712970F",
+                "CurrentSha256": null
+              },
+              {
+                "Name": "System.Object Mortal.Story.DiceMenuDialog/<StartSpin>d__68::System.Collections.Generic.IEnumerator<System.Object>.get_Current()",
+                "PreviousSha256": null,
+                "CurrentSha256": "55CED7E68A221C1FD23DE51B1531BD2ED42FFCC9B8256BEC5003D38AB4FCD7C4"
+              },
+              {
+                "Name": "System.Object Mortal.Story.DiceMenuDialog/<StartSpin>d__68::System.Collections.IEnumerator.get_Current()",
+                "PreviousSha256": null,
+                "CurrentSha256": "80D74404DF3FA4718BCF6FE7FC57FE4BAD9CCE2E7B34F49A773FA4B4A25B6B56"
+              },
+              {
+                "Name": "System.Object Mortal.Story.StoryMainUI/<HideBigPicture>d__38::System.Collections.Generic.IEnumerator<System.Object>.get_Current()",
+                "PreviousSha256": "3B85166695CAE3A0758082B15421D1ECEAB4745306D51BC3471C2E9AE200F8BA",
+                "CurrentSha256": null
+              },
+              {
+                "Name": "System.Object Mortal.Story.StoryMainUI/<HideBigPicture>d__38::System.Collections.IEnumerator.get_Current()",
+                "PreviousSha256": "DCDED4866A0412A4827D13794ADD538757E2A9BE247E5CE917234DAA52D906E2",
+                "CurrentSha256": null
+              },
+              {
+                "Name": "System.Object Mortal.Story.StoryMainUI/<HideBigPicture>d__40::System.Collections.Generic.IEnumerator<System.Object>.get_Current()",
+                "PreviousSha256": null,
+                "CurrentSha256": "4E4F8207AC081FF8A3C9360ED82A785CF1FA26C79AB5F368AF300BAC66DC6BEA"
+              },
+              {
+                "Name": "System.Object Mortal.Story.StoryMainUI/<HideBigPicture>d__40::System.Collections.IEnumerator.get_Current()",
+                "PreviousSha256": null,
+                "CurrentSha256": "2FA725AAC129D003D72FCD7ADD31C5A559FA385B2F9A9A4ADAD915BAAE20C0D0"
+              },
+              {
+                "Name": "System.Object Mortal.Story.StoryMainUI/<HideFamilyTree>d__42::System.Collections.Generic.IEnumerator<System.Object>.get_Current()",
+                "PreviousSha256": "46A5279BA9FB1D00A4F77155F3710BD6A956EA27B7816B0842818D071A35EFD9",
+                "CurrentSha256": null
+              },
+              {
+                "Name": "System.Object Mortal.Story.StoryMainUI/<HideFamilyTree>d__42::System.Collections.IEnumerator.get_Current()",
+                "PreviousSha256": "972C125D2FB0E42613EE2C828100C24C2DB45F09289D436143C0053F48159B00",
+                "CurrentSha256": null
+              },
+              {
+                "Name": "System.Object Mortal.Story.StoryMainUI/<HideFamilyTree>d__44::System.Collections.Generic.IEnumerator<System.Object>.get_Current()",
+                "PreviousSha256": null,
+                "CurrentSha256": "42516E7A6E597ACEE2A4EF8677EE9A19933697F316DC53F0BC0314D4AD9055C7"
+              },
+              {
+                "Name": "System.Object Mortal.Story.StoryMainUI/<HideFamilyTree>d__44::System.Collections.IEnumerator.get_Current()",
+                "PreviousSha256": null,
+                "CurrentSha256": "66BDF50EDCE95572199B65F1AC2853D9860C02C021207F274957D29ED2A13C1E"
+              },
+              {
+                "Name": "System.Object Mortal.Story.StoryMainUI/<HideItemPicture>d__34::System.Collections.Generic.IEnumerator<System.Object>.get_Current()",
+                "PreviousSha256": "7C0FDD4B47FCC5949121FAF9CAD89D96594085FC8FA4009455BFF09E481EE312",
+                "CurrentSha256": null
+              },
+              {
+                "Name": "System.Object Mortal.Story.StoryMainUI/<HideItemPicture>d__34::System.Collections.IEnumerator.get_Current()",
+                "PreviousSha256": "84F1F63C734F3086FE6F96638564C6654BCA196127D51A3F46013E88B0635F01",
+                "CurrentSha256": null
+              },
+              {
+                "Name": "System.Object Mortal.Story.StoryMainUI/<HideItemPicture>d__36::System.Collections.Generic.IEnumerator<System.Object>.get_Current()",
+                "PreviousSha256": null,
+                "CurrentSha256": "429C41E4969020071DD92637F0B21153EC845BFEE43BB65E1CB2CE268F4C1853"
+              },
+              {
+                "Name": "System.Object Mortal.Story.StoryMainUI/<HideItemPicture>d__36::System.Collections.IEnumerator.get_Current()",
+                "PreviousSha256": null,
+                "CurrentSha256": "FE33E03258388D8CA5765E77D30DBA2C6AC2E8468096C7E92CAEF9DA850CD4D9"
+              },
+              {
+                "Name": "System.Object Mortal.Story.StoryMainUI/<HideMap>d__40::System.Collections.Generic.IEnumerator<System.Object>.get_Current()",
+                "PreviousSha256": "79F05F5D8AE93AFB983DFE8D6B1071C3A2A49A682D32E515261D590A3BBC3347",
+                "CurrentSha256": null
+              },
+              {
+                "Name": "System.Object Mortal.Story.StoryMainUI/<HideMap>d__40::System.Collections.IEnumerator.get_Current()",
+                "PreviousSha256": "CE8E3342C4D78D4068D63562E3F66F0929FEF66BF7748DF3E405EB954002D66B",
+                "CurrentSha256": null
+              },
+              {
+                "Name": "System.Object Mortal.Story.StoryMainUI/<HideMap>d__42::System.Collections.Generic.IEnumerator<System.Object>.get_Current()",
+                "PreviousSha256": null,
+                "CurrentSha256": "F1BB2E2680BCD5328E0672310D78FFA2431E29246B2B03CB95968B2D61F597FF"
+              },
+              {
+                "Name": "System.Object Mortal.Story.StoryMainUI/<HideMap>d__42::System.Collections.IEnumerator.get_Current()",
+                "PreviousSha256": null,
+                "CurrentSha256": "32CEBEECC59EA4EEE40CD16858300696D448B76329EB4023C205B43C343E2CF7"
+              },
+              {
+                "Name": "System.Object Mortal.Story.StoryMainUI/<HidePicture>d__36::System.Collections.Generic.IEnumerator<System.Object>.get_Current()",
+                "PreviousSha256": "A69027A8AC42C884B8B703313D82835F9A90826C2A77C3758A5A7FE31E92AC81",
+                "CurrentSha256": null
+              },
+              {
+                "Name": "System.Object Mortal.Story.StoryMainUI/<HidePicture>d__36::System.Collections.IEnumerator.get_Current()",
+                "PreviousSha256": "F576178159F28CA7E2F95CCC71DE8C89986BE734288559A70DA72031317E265D",
+                "CurrentSha256": null
+              },
+              {
+                "Name": "System.Object Mortal.Story.StoryMainUI/<HidePicture>d__38::System.Collections.Generic.IEnumerator<System.Object>.get_Current()",
+                "PreviousSha256": null,
+                "CurrentSha256": "7DF5DABA3EF892944F54BA7366FF0443BA494A99A4F0AFE3FB5344242ADF59BF"
+              },
+              {
+                "Name": "System.Object Mortal.Story.StoryMainUI/<HidePicture>d__38::System.Collections.IEnumerator.get_Current()",
+                "PreviousSha256": null,
+                "CurrentSha256": "7A31C1999575D18D498E8C1A36591F000BBA6F04A33F247C6A5736319EA69B92"
+              },
+              {
+                "Name": "System.Object Mortal.Story.StoryMainUI/<ShowBigPicture>d__37::System.Collections.Generic.IEnumerator<System.Object>.get_Current()",
+                "PreviousSha256": "E302949940A0E538676737CC943F251EA73911D064360324B6672AAAE3E3ED51",
+                "CurrentSha256": null
+              },
+              {
+                "Name": "System.Object Mortal.Story.StoryMainUI/<ShowBigPicture>d__37::System.Collections.IEnumerator.get_Current()",
+                "PreviousSha256": "AB2FDF95ACE90B38DC9D975ACECDE6D95B85D2A8C3A2474D6281C38C26A22EA8",
+                "CurrentSha256": null
+              },
+              {
+                "Name": "System.Object Mortal.Story.StoryMainUI/<ShowBigPicture>d__39::System.Collections.Generic.IEnumerator<System.Object>.get_Current()",
+                "PreviousSha256": null,
+                "CurrentSha256": "077B7D120FDE2A93556A8D5D6ADF2D56703E42689661FCD1CCF0949B216675FD"
+              },
+              {
+                "Name": "System.Object Mortal.Story.StoryMainUI/<ShowBigPicture>d__39::System.Collections.IEnumerator.get_Current()",
+                "PreviousSha256": null,
+                "CurrentSha256": "3C533609F211C21A3C816F2E17A1DA3C685391501A5EC7D248C429CC3967B219"
+              },
+              {
+                "Name": "System.Object Mortal.Story.StoryMainUI/<ShowCanvas>d__47::System.Collections.Generic.IEnumerator<System.Object>.get_Current()",
+                "PreviousSha256": "E553674734744324F317E7028425B985ABD1669D6D3140FDAD0CAAB9ACC1AC64",
+                "CurrentSha256": null
+              },
+              {
+                "Name": "System.Object Mortal.Story.StoryMainUI/<ShowCanvas>d__47::System.Collections.IEnumerator.get_Current()",
+                "PreviousSha256": "858BE05EE11710C9032B474AC735FD73FA1EDCB752191CC6DF588492DE560AF5",
+                "CurrentSha256": null
+              },
+              {
+                "Name": "System.Object Mortal.Story.StoryMainUI/<ShowCanvas>d__49::System.Collections.Generic.IEnumerator<System.Object>.get_Current()",
+                "PreviousSha256": null,
+                "CurrentSha256": "45442AD741D221A923E0310B63FEDECFB044AEB5AB2E210204EBA7029EBA6AB5"
+              },
+              {
+                "Name": "System.Object Mortal.Story.StoryMainUI/<ShowCanvas>d__49::System.Collections.IEnumerator.get_Current()",
+                "PreviousSha256": null,
+                "CurrentSha256": "9017E9E4A5D4892EFA97C0E75ED3D568780147894D1C7BFEB652901801E841B5"
+              },
+              {
+                "Name": "System.Object Mortal.Story.StoryMainUI/<ShowFamilyTree>d__41::System.Collections.Generic.IEnumerator<System.Object>.get_Current()",
+                "PreviousSha256": "C18D636CA66A04ABAB04B9A96716BF5450DA2770A28E18604CE064700070F85E",
+                "CurrentSha256": null
+              },
+              {
+                "Name": "System.Object Mortal.Story.StoryMainUI/<ShowFamilyTree>d__41::System.Collections.IEnumerator.get_Current()",
+                "PreviousSha256": "280FC7C0CE8CBADD6681BEE201D3579F84861AE83B7D27DB6BEDC782A58DFB0B",
+                "CurrentSha256": null
+              },
+              {
+                "Name": "System.Object Mortal.Story.StoryMainUI/<ShowFamilyTree>d__43::System.Collections.Generic.IEnumerator<System.Object>.get_Current()",
+                "PreviousSha256": null,
+                "CurrentSha256": "50D4EA00E6B24B102DA4D397B8901DEEDD82A5C517B3A032EC79A5199FD1980A"
+              },
+              {
+                "Name": "System.Object Mortal.Story.StoryMainUI/<ShowFamilyTree>d__43::System.Collections.IEnumerator.get_Current()",
+                "PreviousSha256": null,
+                "CurrentSha256": "A998F4146AAE92E3372CFBCEA30C7DA89775CFC3DA292BD8C8FCD872823B7F88"
+              },
+              {
+                "Name": "System.Object Mortal.Story.StoryMainUI/<ShowItemPicture>d__33::System.Collections.Generic.IEnumerator<System.Object>.get_Current()",
+                "PreviousSha256": "A76E6E3FA907F4DBD1A3972CE7E6823C7607DDB5706923FC9D82ED7800735EF2",
+                "CurrentSha256": null
+              },
+              {
+                "Name": "System.Object Mortal.Story.StoryMainUI/<ShowItemPicture>d__33::System.Collections.IEnumerator.get_Current()",
+                "PreviousSha256": "E49B35B0C84146A69CC5D3400BB6022A4BD0968BEDDC817471C99CA718C36FD2",
+                "CurrentSha256": null
+              },
+              {
+                "Name": "System.Object Mortal.Story.StoryMainUI/<ShowItemPicture>d__35::System.Collections.Generic.IEnumerator<System.Object>.get_Current()",
+                "PreviousSha256": null,
+                "CurrentSha256": "1D089571E3E2479A26E33463A528BD44E532BA64D17A61E6561E1B0F941DC200"
+              },
+              {
+                "Name": "System.Object Mortal.Story.StoryMainUI/<ShowItemPicture>d__35::System.Collections.IEnumerator.get_Current()",
+                "PreviousSha256": null,
+                "CurrentSha256": "7FD24D1774561CBF5933FD384C73AAFC72CB7DE2CE5BE0911D70A3DA455D499C"
+              },
+              {
+                "Name": "System.Object Mortal.Story.StoryMainUI/<ShowMap>d__39::System.Collections.Generic.IEnumerator<System.Object>.get_Current()",
+                "PreviousSha256": "C93AF1DFC00D71A5A0A0CF0F79CFF86DF00C88EC8F10AD961F287DD475BACA7A",
+                "CurrentSha256": null
+              },
+              {
+                "Name": "System.Object Mortal.Story.StoryMainUI/<ShowMap>d__39::System.Collections.IEnumerator.get_Current()",
+                "PreviousSha256": "237BB23DF9A04C5AB59A1A5132A04E561D7FA50AF3DF59C8C029E7561ECF4A2D",
+                "CurrentSha256": null
+              },
+              {
+                "Name": "System.Object Mortal.Story.StoryMainUI/<ShowMap>d__41::System.Collections.Generic.IEnumerator<System.Object>.get_Current()",
+                "PreviousSha256": null,
+                "CurrentSha256": "554C83A426DEF797A5DFF59D2358F6A0B8C09F916D4FCD29EF13B0D74ED10F51"
+              },
+              {
+                "Name": "System.Object Mortal.Story.StoryMainUI/<ShowMap>d__41::System.Collections.IEnumerator.get_Current()",
+                "PreviousSha256": null,
+                "CurrentSha256": "B33EC198AEBB1D5B7A570DF73CC8C7E3F310BD4C8A04C22A95EE2639BDCEC4EE"
+              },
+              {
+                "Name": "System.Object Mortal.Story.StoryMainUI/<ShowPicture>d__35::System.Collections.Generic.IEnumerator<System.Object>.get_Current()",
+                "PreviousSha256": "CEAC2A66C68A98CB0C7C99494F8BBC4798374C6B2EF32B998888D6796D95ABA5",
+                "CurrentSha256": null
+              },
+              {
+                "Name": "System.Object Mortal.Story.StoryMainUI/<ShowPicture>d__35::System.Collections.IEnumerator.get_Current()",
+                "PreviousSha256": "94F772EB8A7907EE0272C7561CCA4C5C1D10EBB9BADE09FDC5AC7FB934839E2B",
+                "CurrentSha256": null
+              },
+              {
+                "Name": "System.Object Mortal.Story.StoryMainUI/<ShowPicture>d__37::System.Collections.Generic.IEnumerator<System.Object>.get_Current()",
+                "PreviousSha256": null,
+                "CurrentSha256": "DA80F3526931B0E76C064C8CEF93591502538A7380DDE2650C4FC06DA98416D0"
+              },
+              {
+                "Name": "System.Object Mortal.Story.StoryMainUI/<ShowPicture>d__37::System.Collections.IEnumerator.get_Current()",
+                "PreviousSha256": null,
+                "CurrentSha256": "C6A981969B3894ED1070E117874073D045AD6800C43AD081F9E3293936521736"
+              },
+              {
+                "Name": "System.Object Mortal.Story.StoryManager/<ShowDisableSaveText>d__76::System.Collections.Generic.IEnumerator<System.Object>.get_Current()",
+                "PreviousSha256": null,
+                "CurrentSha256": "47C172F8B2879EB9F746CCD3F7CFBB6B01F817EE04E320329C4819A16D5601E1"
+              },
+              {
+                "Name": "System.Object Mortal.Story.StoryManager/<ShowDisableSaveText>d__76::System.Collections.IEnumerator.get_Current()",
+                "PreviousSha256": null,
+                "CurrentSha256": "C69411262513AC3CCA98F08AB221422F4B7A6D0BCA20F2DA09FC5ED3C924E214"
+              },
+              {
+                "Name": "System.Object Mortal.Story.StoryManager/<ShowDisableSaveText>d__79::System.Collections.Generic.IEnumerator<System.Object>.get_Current()",
+                "PreviousSha256": "8457A76A95D3C2FCACC522D11323E79A71A2AE37AAAA132936135F9258429B24",
+                "CurrentSha256": null
+              },
+              {
+                "Name": "System.Object Mortal.Story.StoryManager/<ShowDisableSaveText>d__79::System.Collections.IEnumerator.get_Current()",
+                "PreviousSha256": "DAB55C62983EAF55D776240E54CFDE03E667D6671EDE7DF889261B293B743F2A",
+                "CurrentSha256": null
+              },
+              {
+                "Name": "System.Object Mortal.Story.StoryManager/<ShowEnableSaveText>d__75::System.Collections.Generic.IEnumerator<System.Object>.get_Current()",
+                "PreviousSha256": null,
+                "CurrentSha256": "CB6D7C678E24A0C3C7CE28FE1133E85D802483FC87C913776071EEECC6DCCD76"
+              },
+              {
+                "Name": "System.Object Mortal.Story.StoryManager/<ShowEnableSaveText>d__75::System.Collections.IEnumerator.get_Current()",
+                "PreviousSha256": null,
+                "CurrentSha256": "3280E8138AFFB22A9DEC5CA2E37A0A9249B6890280687A6935536404263ED0CF"
+              },
+              {
+                "Name": "System.Object Mortal.Story.StoryManager/<ShowEnableSaveText>d__78::System.Collections.Generic.IEnumerator<System.Object>.get_Current()",
+                "PreviousSha256": "99165CA6BD8B3B53381CF9EAB7E7631FB7A7CA29E4FA83C94179A301A704C056",
+                "CurrentSha256": null
+              },
+              {
+                "Name": "System.Object Mortal.Story.StoryManager/<ShowEnableSaveText>d__78::System.Collections.IEnumerator.get_Current()",
+                "PreviousSha256": "CD45CA845F3C6E9BE45509334F14C8561F4DECA64E55C8264D6146EBE6579A7F",
+                "CurrentSha256": null
+              },
+              {
+                "Name": "System.Object Mortal.Story.StoryManager/<ShowFreeAutoSave>d__74::System.Collections.Generic.IEnumerator<System.Object>.get_Current()",
+                "PreviousSha256": null,
+                "CurrentSha256": "FE106C091A21831FA15E2D28F4D93E61F2D4CACD44FD1E88A1D8B6A132AB9EEF"
+              },
+              {
+                "Name": "System.Object Mortal.Story.StoryManager/<ShowFreeAutoSave>d__74::System.Collections.IEnumerator.get_Current()",
+                "PreviousSha256": null,
+                "CurrentSha256": "1BBF78F32BD753722D2FED1328422A639B445AF6FA9829A662BC863B10251420"
+              },
+              {
+                "Name": "System.Object Mortal.Story.StoryManager/<ShowFreeAutoSave>d__77::System.Collections.Generic.IEnumerator<System.Object>.get_Current()",
+                "PreviousSha256": "50697AD6547397DD805307F60E8B82C8446CA38E4A43FDCDEDEEDB3A202806EA",
+                "CurrentSha256": null
+              },
+              {
+                "Name": "System.Object Mortal.Story.StoryManager/<ShowFreeAutoSave>d__77::System.Collections.IEnumerator.get_Current()",
+                "PreviousSha256": "E307058B357EDAE995222AB2BACC7B6045494F4A1D45F82F6ECE8E32F3AF368B",
+                "CurrentSha256": null
+              },
+              {
+                "Name": "System.Object Mortal.Story.StoryManager/<ShowStoryAutoSave>d__73::System.Collections.Generic.IEnumerator<System.Object>.get_Current()",
+                "PreviousSha256": null,
+                "CurrentSha256": "D732C58B9EB378F0BAA7AC464E224EEA66745D8028F92335A041136331719F53"
+              },
+              {
+                "Name": "System.Object Mortal.Story.StoryManager/<ShowStoryAutoSave>d__73::System.Collections.IEnumerator.get_Current()",
+                "PreviousSha256": null,
+                "CurrentSha256": "B4BE0BBB4CF24195721BA750B1162079D05F030BD8D0C6C26CADA4BAED2DBBD2"
+              },
+              {
+                "Name": "System.Object Mortal.Story.StoryManager/<ShowStoryAutoSave>d__76::System.Collections.Generic.IEnumerator<System.Object>.get_Current()",
+                "PreviousSha256": "4862E416204D6AA334EE8647B80E92E08FE8F594E914A6CA9895047A8F125DF4",
+                "CurrentSha256": null
+              },
+              {
+                "Name": "System.Object Mortal.Story.StoryManager/<ShowStoryAutoSave>d__76::System.Collections.IEnumerator.get_Current()",
+                "PreviousSha256": "5C0E154944DF05AAEB618F9BE209D4A36934B5989FFF5C5919E5D6FC13D8789F",
+                "CurrentSha256": null
+              },
+              {
+                "Name": "System.Object Mortal.Story.StoryManager/<StartAutoDialogue>d__80::System.Collections.Generic.IEnumerator<System.Object>.get_Current()",
+                "PreviousSha256": null,
+                "CurrentSha256": "E0D32F1A19F20938EECBEDAE2CA93CA858021A2B21635A8B3795A801C34B8461"
+              },
+              {
+                "Name": "System.Object Mortal.Story.StoryManager/<StartAutoDialogue>d__80::System.Collections.IEnumerator.get_Current()",
+                "PreviousSha256": null,
+                "CurrentSha256": "D97F77B6DACC86D85DA465F0FFCAAAFA4ED3EBA2BC7F6BA54094D6CF86EFC2A2"
+              },
+              {
+                "Name": "System.Object Mortal.Story.StoryManager/<StartAutoDialogue>d__84::System.Collections.Generic.IEnumerator<System.Object>.get_Current()",
+                "PreviousSha256": "A0E71B8AEAB98B6A67CB9522AF552C42ED1FA48690CA4849EF04F44B7A3849E2",
+                "CurrentSha256": null
+              },
+              {
+                "Name": "System.Object Mortal.Story.StoryManager/<StartAutoDialogue>d__84::System.Collections.IEnumerator.get_Current()",
+                "PreviousSha256": "1B92607A5E23AB538DFEBC3F08D9DA1E1A1DDA56FB694F8ADFCB54BE7B639456",
+                "CurrentSha256": null
+              },
+              {
+                "Name": "System.Object Mortal.Story.StoryManager/<WaitForLogCanvas>d__81::System.Collections.Generic.IEnumerator<System.Object>.get_Current()",
+                "PreviousSha256": "AA144F7230482E58208097EA227933F900D20702008078950AFCAA975C6FC5EE",
+                "CurrentSha256": null
+              },
+              {
+                "Name": "System.Object Mortal.Story.StoryManager/<WaitForLogCanvas>d__81::System.Collections.IEnumerator.get_Current()",
+                "PreviousSha256": "F1E113BFFEC875020E2EB86920F3268CC0F484AB7C8C99152277EDAB9D6A9130",
+                "CurrentSha256": null
+              },
+              {
+                "Name": "System.String Mortal.Story.LuaManager::GetStoryText(System.String)",
+                "PreviousSha256": "A77CE7A1366E1977DF4BE08B3412DAF2E6A589A03DC2DBCF162B0A43BE77ECE6",
+                "CurrentSha256": "96B82CF3652B9F07B6DE20CC3BF2859F15DC0CDBA4A75A2877E906D7720E79A5"
+              },
+              {
+                "Name": "System.Void Mortal.Story.DiceMenuDialog::<StartSpin>b__67_0(System.Int32)",
+                "PreviousSha256": "ECBD1642F17ED587751BB3DC60B9FCA9646653805B8AB55D31C8A304C73DB09B",
+                "CurrentSha256": null
+              },
+              {
+                "Name": "System.Void Mortal.Story.DiceMenuDialog::<StartSpin>b__68_0(System.Int32)",
+                "PreviousSha256": null,
+                "CurrentSha256": "2CBC2947DA01F045F30A3386F86662DD1F69C64A477560BCDCC6C438F150DEEC"
+              },
+              {
+                "Name": "System.Void Mortal.Story.DiceMenuDialog::AddDiceCheckLog(System.String[])",
+                "PreviousSha256": null,
+                "CurrentSha256": "C4881416C0FB960F22483930B55790BEE467ABB112A6B2D3D5E95FC309A05DC1"
+              },
+              {
+                "Name": "System.Void Mortal.Story.DiceMenuDialog/<Roll>d__61::.ctor(System.Int32)",
+                "PreviousSha256": "A5DF4ABC6441522DE4FCFDE44A21901E3358042A2E378D6F32F2F98618C2B1B2",
+                "CurrentSha256": null
+              },
+              {
+                "Name": "System.Void Mortal.Story.DiceMenuDialog/<Roll>d__61::System.Collections.IEnumerator.Reset()",
+                "PreviousSha256": "716E1F6E4589332AECCD5987E4814D3608FDAEA0B86070AC5C462DBE4BDE5460",
+                "CurrentSha256": null
+              },
+              {
+                "Name": "System.Void Mortal.Story.DiceMenuDialog/<Roll>d__61::System.IDisposable.Dispose()",
+                "PreviousSha256": "CE8117C35F5AC3444A1BCA7F5DCD262C2D310038004F193476DDE5CF33C129F6",
+                "CurrentSha256": null
+              },
+              {
+                "Name": "System.Void Mortal.Story.DiceMenuDialog/<Roll>d__62::.ctor(System.Int32)",
+                "PreviousSha256": null,
+                "CurrentSha256": "6FA8112F86EF5C9B1713C31507BD757FD0E8A946E5D3060022DB52FDF7A34207"
+              },
+              {
+                "Name": "System.Void Mortal.Story.DiceMenuDialog/<Roll>d__62::System.Collections.IEnumerator.Reset()",
+                "PreviousSha256": null,
+                "CurrentSha256": "3021C7D45C4C26DE60CD25691CB0B4D718F3B06608DE5490A59AC3D392C0FCF9"
+              },
+              {
+                "Name": "System.Void Mortal.Story.DiceMenuDialog/<Roll>d__62::System.IDisposable.Dispose()",
+                "PreviousSha256": null,
+                "CurrentSha256": "E12A3B2BDBEE245BDE4BA379F0DFCDF54AD1405E870D22E3C6E15B484CAE576A"
+              },
+              {
+                "Name": "System.Void Mortal.Story.DiceMenuDialog/<StartSpin>d__67::.ctor(System.Int32)",
+                "PreviousSha256": "336644A9D0B39DFBC5536106B563C2F99499EAA407D67E0BA412642FE58EFDB3",
+                "CurrentSha256": null
+              },
+              {
+                "Name": "System.Void Mortal.Story.DiceMenuDialog/<StartSpin>d__67::System.Collections.IEnumerator.Reset()",
+                "PreviousSha256": "31E3ECC55FC9D9EF646084A03A9283BB82C8B53C95285B4C4CD9773D4C3C52BD",
+                "CurrentSha256": null
+              },
+              {
+                "Name": "System.Void Mortal.Story.DiceMenuDialog/<StartSpin>d__67::System.IDisposable.Dispose()",
+                "PreviousSha256": "766D0A766C5B12E3C50A89B3ADB5F4A6554FF519FCD9EDF4D3B32DD15B499AC4",
+                "CurrentSha256": null
+              },
+              {
+                "Name": "System.Void Mortal.Story.DiceMenuDialog/<StartSpin>d__68::.ctor(System.Int32)",
+                "PreviousSha256": null,
+                "CurrentSha256": "87BB99CE6665381E02A9C201FA2F6A0A39C115ECB0E2141FABBD55877305F4B2"
+              },
+              {
+                "Name": "System.Void Mortal.Story.DiceMenuDialog/<StartSpin>d__68::System.Collections.IEnumerator.Reset()",
+                "PreviousSha256": null,
+                "CurrentSha256": "68899AE263856AA457AE28E9CD36F8BDA9DDA7A9663887CD923C0A07EC2870A9"
+              },
+              {
+                "Name": "System.Void Mortal.Story.DiceMenuDialog/<StartSpin>d__68::System.IDisposable.Dispose()",
+                "PreviousSha256": null,
+                "CurrentSha256": "59535CC0250490705B5A975EC91158B6C789AF42E196E0D46416B55B2EA4C929"
+              },
+              {
+                "Name": "System.Void Mortal.Story.LuaManager::AddStoryLog(System.String,Fungus.SayDialog)",
+                "PreviousSha256": null,
+                "CurrentSha256": "11E06EDB4B93053661089598B65A820FD1B2A429DB3CB0D92B826EB6D8D50591"
+              },
+              {
+                "Name": "System.Void Mortal.Story.LuaManager::AddStoryLogText(System.String)",
+                "PreviousSha256": null,
+                "CurrentSha256": "898FBA8838EE1A2E59997F15A64A46FD39B863BF0363CB2F915E20BC3272644D"
+              },
+              {
+                "Name": "System.Void Mortal.Story.StatModifyManager::Character(System.String,System.Int32,System.Int32)",
+                "PreviousSha256": "1A0EC3EBF8DAD60D06DBA5464180226AC25227EE652358E3B85E2FE88AFF4091",
+                "CurrentSha256": "98939E1BEDCF136D6B73EAEDA025DA1B48F138D5851F5AC19DEB2919ECD89B0F"
+              },
+              {
+                "Name": "System.Void Mortal.Story.StatModifyManager::UpdateShopFlag()",
+                "PreviousSha256": "DB5AB8E72A123C0E5A821129072C5A99BAECE92E629EA3963E71643C1DB269BE",
+                "CurrentSha256": "C629B45E87487673D112490F2C2595EC0C4DAE8F9693D951DB03902FB048F086"
+              },
+              {
+                "Name": "System.Void Mortal.Story.StoryCommandNarrativeLog::Write(System.String)",
+                "PreviousSha256": "C7160023CB73EF4850C656B581841F43F6CC0C227F2316FE21D53F31A6A27767",
+                "CurrentSha256": "57755557E56D5F8B002FB7B1707D93F7C9EC6C059D6499E0E4F9EA0B43A4BAA6"
+              },
+              {
+                "Name": "System.Void Mortal.Story.StoryMainUI::<ShowCanvas>b__47_0()",
+                "PreviousSha256": "70DF5DB3368249403368690C22E30F89AFC49914D65F211FAF140DEA9845959B",
+                "CurrentSha256": null
+              },
+              {
+                "Name": "System.Void Mortal.Story.StoryMainUI::<ShowCanvas>b__49_0()",
+                "PreviousSha256": null,
+                "CurrentSha256": "60B57F5BF7838AF03346A5BAB037D930B648E12A238DF5905F6ED6945131E7FB"
+              },
+              {
+                "Name": "System.Void Mortal.Story.StoryMainUI::AddEnemyModifyLog(System.String,System.String,System.Int32)",
+                "PreviousSha256": null,
+                "CurrentSha256": "23B6D4DB8D9CA98F434FA61B1643FCD15199048DAF54E3DCB0AA425FAB2F1DCA"
+              },
+              {
+                "Name": "System.Void Mortal.Story.StoryMainUI::DisplayFormatMessage(System.String,Mortal.Core.StoryLogArg[])",
+                "PreviousSha256": null,
+                "CurrentSha256": "3E64A04BFDD142E0388CB2C96ADD071E28D83DA4FF5492D0EFA396D4A4091D89"
+              },
+              {
+                "Name": "System.Void Mortal.Story.StoryMainUI::DisplayItemMessage(System.String,System.String,System.String)",
+                "PreviousSha256": "2656461933650D2B6D87761323ECAA4F52DED7EE0DEB449DF71AC437039D9D78",
+                "CurrentSha256": "27F5ED67F6768A1ECFD2EC27FFBB184D2E83677E92017573C26E981FA25CE887"
+              },
+              {
+                "Name": "System.Void Mortal.Story.StoryMainUI::DisplayMessage(System.String)",
+                "PreviousSha256": "F011334D5768AFAB20D9F658211196571D2ED7D21DA0BB69C09B2B85A09D9B28",
+                "CurrentSha256": "EACEE41066CF493D47A4D9E6DA9E08BEEB0103D83EC51CDC27BC9A50BBE5CEF6"
+              },
+              {
+                "Name": "System.Void Mortal.Story.StoryMainUI::DisplayModifyEnemyPeopleMessage(System.String,System.Int32)",
+                "PreviousSha256": "EDB774FF824FDEFFBE94A59997050320FA0AA1E11D6BC88B1AAAE21F15351D24",
+                "CurrentSha256": "EB60F0A43D0182859DD1F8926E10E9216DBB7E733370A24880A76C748405CF82"
+              },
+              {
+                "Name": "System.Void Mortal.Story.StoryMainUI::DisplayModifyEnemyTeamMessage(System.String,System.Int32)",
+                "PreviousSha256": "EED73759CDB761670B701F9D34C25E4D6B1D1C5DC5873E1CC4A897F7C6E60619",
+                "CurrentSha256": "92942C14C176ED8454C8AE6D73FF61B1B7646B62BBD043BAECEAB96D7263BA37"
+              },
+              {
+                "Name": "System.Void Mortal.Story.StoryMainUI::DisplayRelationshipModification(Mortal.Core.RelationshipStat,System.Int32)",
+                "PreviousSha256": null,
+                "CurrentSha256": "7D9B4AA162FE4ADCC2F75A1BB8B24FC3C596BD3A60697EB649F1ECC86E15170A"
+              },
+              {
+                "Name": "System.Void Mortal.Story.StoryMainUI::DisplayRelationshipModification(UnityEngine.Sprite,System.Int32)",
+                "PreviousSha256": "E12C751A87C29DCA59B9F726AD1627013AE4C6C21A1816AD96CD561C300D3411",
+                "CurrentSha256": null
+              },
+              {
+                "Name": "System.Void Mortal.Story.StoryMainUI::DisplayStatModification(Mortal.Core.GameStat,System.Int32)",
+                "PreviousSha256": "E543FF507A7E406B23FEC5ED2D05FF2644F214091C42A218F1DBE95AF2B48122",
+                "CurrentSha256": "59DE6C4ADFD1FE4BF52D69A2C4DD4CBB52932549F70832ABDEE326A05809733E"
+              },
+              {
+                "Name": "System.Void Mortal.Story.StoryMainUI::DisplayTalentMessage(System.String,System.Int32,System.Int32,System.Boolean)",
+                "PreviousSha256": "19349868851D72EBC9A64410721EB9FC20549DE189D7E076E89A7F155B56261C",
+                "CurrentSha256": "6CEF7456A9BD81BBEA30FD8C0EDF8E371BE63A6308F371982B6DB7181E525373"
+              },
+              {
+                "Name": "System.Void Mortal.Story.StoryMainUI/<HideBigPicture>d__38::.ctor(System.Int32)",
+                "PreviousSha256": "E7C1F52D559F4F8F2CFC12C6E0C236B510F2A222F2BD937117D081D8A37E0965",
+                "CurrentSha256": null
+              },
+              {
+                "Name": "System.Void Mortal.Story.StoryMainUI/<HideBigPicture>d__38::System.Collections.IEnumerator.Reset()",
+                "PreviousSha256": "5655A2F6FDC7EFFA2DFE2B27EAB59A31E351A9AEB3CE18E0F1A95986F047F759",
+                "CurrentSha256": null
+              },
+              {
+                "Name": "System.Void Mortal.Story.StoryMainUI/<HideBigPicture>d__38::System.IDisposable.Dispose()",
+                "PreviousSha256": "1AA9996ACD9DA145B959CE71BD7324CBA0D695AE02449236B1B881FE42F1F77E",
+                "CurrentSha256": null
+              },
+              {
+                "Name": "System.Void Mortal.Story.StoryMainUI/<HideBigPicture>d__40::.ctor(System.Int32)",
+                "PreviousSha256": null,
+                "CurrentSha256": "BD356A72078CC3E38FC5E14D0D5AF2DCA00E0D8CF302046FE0AC333925B8AC17"
+              },
+              {
+                "Name": "System.Void Mortal.Story.StoryMainUI/<HideBigPicture>d__40::System.Collections.IEnumerator.Reset()",
+                "PreviousSha256": null,
+                "CurrentSha256": "A31406625B7E7385AFEBC896B5DB19736F937E4F1CE158F8F584E122560EC84A"
+              },
+              {
+                "Name": "System.Void Mortal.Story.StoryMainUI/<HideBigPicture>d__40::System.IDisposable.Dispose()",
+                "PreviousSha256": null,
+                "CurrentSha256": "90730932A04EE16E34CFE090B7309FA761F7FD3BEC1D0034B5439B1B83ECF2E0"
+              },
+              {
+                "Name": "System.Void Mortal.Story.StoryMainUI/<HideFamilyTree>d__42::.ctor(System.Int32)",
+                "PreviousSha256": "F58ACF788424B9B093B28CBC1E1A7DE693CF4DD5473B814936E94C34B792C8F2",
+                "CurrentSha256": null
+              },
+              {
+                "Name": "System.Void Mortal.Story.StoryMainUI/<HideFamilyTree>d__42::System.Collections.IEnumerator.Reset()",
+                "PreviousSha256": "57E19B0944094497887EF4775EC9C68D80454952AA80FB93A360BF8F2A22D30E",
+                "CurrentSha256": null
+              },
+              {
+                "Name": "System.Void Mortal.Story.StoryMainUI/<HideFamilyTree>d__42::System.IDisposable.Dispose()",
+                "PreviousSha256": "0B12F6EC7B20FB1F23FA8BC2FAE843D3AEFCE8FEC5916518318810563F63A14E",
+                "CurrentSha256": null
+              },
+              {
+                "Name": "System.Void Mortal.Story.StoryMainUI/<HideFamilyTree>d__44::.ctor(System.Int32)",
+                "PreviousSha256": null,
+                "CurrentSha256": "E7946DE69DFD9DC3364C9F8A634FD2520F2D6938B16A317B20FD21D2F3785F52"
+              },
+              {
+                "Name": "System.Void Mortal.Story.StoryMainUI/<HideFamilyTree>d__44::System.Collections.IEnumerator.Reset()",
+                "PreviousSha256": null,
+                "CurrentSha256": "11C7A3671DA8C963B2201DD657F7AA3550EB22A50406B2DD598EEBE7F0C9F155"
+              },
+              {
+                "Name": "System.Void Mortal.Story.StoryMainUI/<HideFamilyTree>d__44::System.IDisposable.Dispose()",
+                "PreviousSha256": null,
+                "CurrentSha256": "DF3E5BE9175CBA98B163F2A1369567F977594305CC8B0BF876EF6A1A52328512"
+              },
+              {
+                "Name": "System.Void Mortal.Story.StoryMainUI/<HideItemPicture>d__34::.ctor(System.Int32)",
+                "PreviousSha256": "F42CC48976C2A4FCD0A3028A415060C88D3553C11F510F0DAA5D7032AABD1F2D",
+                "CurrentSha256": null
+              },
+              {
+                "Name": "System.Void Mortal.Story.StoryMainUI/<HideItemPicture>d__34::System.Collections.IEnumerator.Reset()",
+                "PreviousSha256": "A5E06BBDFA4638B5EF43D1E0B45055CD9522D104C07E41B5BDA2078D516D4305",
+                "CurrentSha256": null
+              },
+              {
+                "Name": "System.Void Mortal.Story.StoryMainUI/<HideItemPicture>d__34::System.IDisposable.Dispose()",
+                "PreviousSha256": "5FC7E77AD5C76EA2887EB0C5C1B67A29BA783D5B51A1BFA8B4C482AA92D7E60C",
+                "CurrentSha256": null
+              },
+              {
+                "Name": "System.Void Mortal.Story.StoryMainUI/<HideItemPicture>d__36::.ctor(System.Int32)",
+                "PreviousSha256": null,
+                "CurrentSha256": "AF4D2B909A4F71999E6A5EAC6E23A98F54167FCC03AD67F8EC826AF257A045C9"
+              },
+              {
+                "Name": "System.Void Mortal.Story.StoryMainUI/<HideItemPicture>d__36::System.Collections.IEnumerator.Reset()",
+                "PreviousSha256": null,
+                "CurrentSha256": "BA253D08E76CFD6684CA97120842316EBCC036AB09ABDC01680EA3F1B4AE7029"
+              },
+              {
+                "Name": "System.Void Mortal.Story.StoryMainUI/<HideItemPicture>d__36::System.IDisposable.Dispose()",
+                "PreviousSha256": null,
+                "CurrentSha256": "C57240621192806F024136CF89A6A4095E3DE1785761CFA4F81956133A2B13CD"
+              },
+              {
+                "Name": "System.Void Mortal.Story.StoryMainUI/<HideMap>d__40::.ctor(System.Int32)",
+                "PreviousSha256": "189CEF6AC1F23202C8C93861E8B683C5BA6A3A0C915AB1EE1C7424B5918914C6",
+                "CurrentSha256": null
+              },
+              {
+                "Name": "System.Void Mortal.Story.StoryMainUI/<HideMap>d__40::System.Collections.IEnumerator.Reset()",
+                "PreviousSha256": "B55764CA3F57E2E65474E301E5609D83A8266CB0FAE4B7B1C08D8E92C8E6DB23",
+                "CurrentSha256": null
+              },
+              {
+                "Name": "System.Void Mortal.Story.StoryMainUI/<HideMap>d__40::System.IDisposable.Dispose()",
+                "PreviousSha256": "019BE3BA8740EB1B23E808E6DC5694D1AA5A103DBA89D35A159448641A5A32FD",
+                "CurrentSha256": null
+              },
+              {
+                "Name": "System.Void Mortal.Story.StoryMainUI/<HideMap>d__42::.ctor(System.Int32)",
+                "PreviousSha256": null,
+                "CurrentSha256": "70AD7F3EA307A2EFAD56F5168D7A10C34560FD008AF2F7786A98AF91ECDE48C9"
+              },
+              {
+                "Name": "System.Void Mortal.Story.StoryMainUI/<HideMap>d__42::System.Collections.IEnumerator.Reset()",
+                "PreviousSha256": null,
+                "CurrentSha256": "C8F9188EFA3B61DD5B92C68CF2C6DDE0D02115FE9D39C33A88D5C60F89B38760"
+              },
+              {
+                "Name": "System.Void Mortal.Story.StoryMainUI/<HideMap>d__42::System.IDisposable.Dispose()",
+                "PreviousSha256": null,
+                "CurrentSha256": "73FD4A3448D0A9EEB095C501B16E257572EB01E7E529DC53D20F167B3C8F95E1"
+              },
+              {
+                "Name": "System.Void Mortal.Story.StoryMainUI/<HidePicture>d__36::.ctor(System.Int32)",
+                "PreviousSha256": "0C1FF4803F4EDC29C2899F48E855C01B047FFB439D4AB696BB81BE426D1F47F5",
+                "CurrentSha256": null
+              },
+              {
+                "Name": "System.Void Mortal.Story.StoryMainUI/<HidePicture>d__36::System.Collections.IEnumerator.Reset()",
+                "PreviousSha256": "494CFE18C95BD01BE7E7771F9F650F6296DA254C47C073647156F93F815D6F18",
+                "CurrentSha256": null
+              },
+              {
+                "Name": "System.Void Mortal.Story.StoryMainUI/<HidePicture>d__36::System.IDisposable.Dispose()",
+                "PreviousSha256": "30A654017F0B79B4C8EBF565BE6CCEAFB41FBD4F590AA4E036AE3E0382E024F5",
+                "CurrentSha256": null
+              },
+              {
+                "Name": "System.Void Mortal.Story.StoryMainUI/<HidePicture>d__38::.ctor(System.Int32)",
+                "PreviousSha256": null,
+                "CurrentSha256": "8B4DD39F4918AA6DC6B4549C671E486ED6146EA5142A2008AFB0CA7028FF2C3F"
+              },
+              {
+                "Name": "System.Void Mortal.Story.StoryMainUI/<HidePicture>d__38::System.Collections.IEnumerator.Reset()",
+                "PreviousSha256": null,
+                "CurrentSha256": "C433C3E02EA516CDF406D602406380A1C628120B648E3C54C0E417B826B534DD"
+              },
+              {
+                "Name": "System.Void Mortal.Story.StoryMainUI/<HidePicture>d__38::System.IDisposable.Dispose()",
+                "PreviousSha256": null,
+                "CurrentSha256": "8B91BC6BF1943A62F09F4D298EDB55CAA8159F248DBF75CC803FA75B8AE837DF"
+              },
+              {
+                "Name": "System.Void Mortal.Story.StoryMainUI/<ShowBigPicture>d__37::.ctor(System.Int32)",
+                "PreviousSha256": "A90096B46DA2DD73B1E1F7E689DC6F5B80C77FFAD449E5C199D1B7890E650A86",
+                "CurrentSha256": null
+              },
+              {
+                "Name": "System.Void Mortal.Story.StoryMainUI/<ShowBigPicture>d__37::System.Collections.IEnumerator.Reset()",
+                "PreviousSha256": "0DABB2D74C27A85DE836757BE875389CEB53DF80EBB54BCA8FD9FF54109FF0C6",
+                "CurrentSha256": null
+              },
+              {
+                "Name": "System.Void Mortal.Story.StoryMainUI/<ShowBigPicture>d__37::System.IDisposable.Dispose()",
+                "PreviousSha256": "C5AE633B7D90CCE6E5F7500068882E815DEF32B9B6FAF9665293AC80351A6DE7",
+                "CurrentSha256": null
+              },
+              {
+                "Name": "System.Void Mortal.Story.StoryMainUI/<ShowBigPicture>d__39::.ctor(System.Int32)",
+                "PreviousSha256": null,
+                "CurrentSha256": "74F3B4ACE622C699397D4F949860F9C10E587E1CB076749CF12C44F3947E0FAC"
+              },
+              {
+                "Name": "System.Void Mortal.Story.StoryMainUI/<ShowBigPicture>d__39::System.Collections.IEnumerator.Reset()",
+                "PreviousSha256": null,
+                "CurrentSha256": "58D9CD5FE2A7F2AF220EF1221CADC54FB8BA2505C5C04B8870A7D5C1423FF565"
+              },
+              {
+                "Name": "System.Void Mortal.Story.StoryMainUI/<ShowBigPicture>d__39::System.IDisposable.Dispose()",
+                "PreviousSha256": null,
+                "CurrentSha256": "B828082273762DB3FC960A3F058B7EE69F32C9F8B7EAEA4429E6FAC47AD5A32E"
+              },
+              {
+                "Name": "System.Void Mortal.Story.StoryMainUI/<ShowCanvas>d__47::.ctor(System.Int32)",
+                "PreviousSha256": "8BDEE1CEFA52170EFD82DCD51E0CBD793F801C57A54CE656461683EA25547287",
+                "CurrentSha256": null
+              },
+              {
+                "Name": "System.Void Mortal.Story.StoryMainUI/<ShowCanvas>d__47::System.Collections.IEnumerator.Reset()",
+                "PreviousSha256": "365BF5D721F09DA38E22E0EFDF450DBA83B6F910FC03E8BBEA6386B2A9ADB89A",
+                "CurrentSha256": null
+              },
+              {
+                "Name": "System.Void Mortal.Story.StoryMainUI/<ShowCanvas>d__47::System.IDisposable.Dispose()",
+                "PreviousSha256": "1A773C13AADAE029EDAC743C8D17EEDBB189F0FCE400233F071FC5D6217DDB64",
+                "CurrentSha256": null
+              },
+              {
+                "Name": "System.Void Mortal.Story.StoryMainUI/<ShowCanvas>d__49::.ctor(System.Int32)",
+                "PreviousSha256": null,
+                "CurrentSha256": "1D781765F6625B5051082CBA0305E1D4B385B7B79B9EB6AF04D9169EB52CEB86"
+              },
+              {
+                "Name": "System.Void Mortal.Story.StoryMainUI/<ShowCanvas>d__49::System.Collections.IEnumerator.Reset()",
+                "PreviousSha256": null,
+                "CurrentSha256": "1F686166867F61816063CCB3ED7670751CE3F3AB5B111C28F6DA07C592914362"
+              },
+              {
+                "Name": "System.Void Mortal.Story.StoryMainUI/<ShowCanvas>d__49::System.IDisposable.Dispose()",
+                "PreviousSha256": null,
+                "CurrentSha256": "AFFFBC8C4BD8CA182DBB96EC6EFED0820A03C7236802DE0E4A242005B0FE6FA0"
+              },
+              {
+                "Name": "System.Void Mortal.Story.StoryMainUI/<ShowFamilyTree>d__41::.ctor(System.Int32)",
+                "PreviousSha256": "42C83CB52E3C4FE9EFB839E7768BD51CB87B58B07A61118B4650CD6218CFCFFD",
+                "CurrentSha256": null
+              },
+              {
+                "Name": "System.Void Mortal.Story.StoryMainUI/<ShowFamilyTree>d__41::System.Collections.IEnumerator.Reset()",
+                "PreviousSha256": "922284FDA626FFEFF214769C03E889FB98DA56D7AD2A91D5CF948BFEEF84B5D0",
+                "CurrentSha256": null
+              },
+              {
+                "Name": "System.Void Mortal.Story.StoryMainUI/<ShowFamilyTree>d__41::System.IDisposable.Dispose()",
+                "PreviousSha256": "3E41B425884F928D7355779FA08F016D4F96FCDA4FB5ACEEC95C60E48EDF2FC2",
+                "CurrentSha256": null
+              },
+              {
+                "Name": "System.Void Mortal.Story.StoryMainUI/<ShowFamilyTree>d__43::.ctor(System.Int32)",
+                "PreviousSha256": null,
+                "CurrentSha256": "0D5D31359B684B3E73CBBFCBDF0B128C7531AF59D0A4E4BE8FE1E4C8EF76654F"
+              },
+              {
+                "Name": "System.Void Mortal.Story.StoryMainUI/<ShowFamilyTree>d__43::System.Collections.IEnumerator.Reset()",
+                "PreviousSha256": null,
+                "CurrentSha256": "21FEDA9F589039BAA6AD100D3C23D5E9D484543219F09300B33BD03CC7E48764"
+              },
+              {
+                "Name": "System.Void Mortal.Story.StoryMainUI/<ShowFamilyTree>d__43::System.IDisposable.Dispose()",
+                "PreviousSha256": null,
+                "CurrentSha256": "141DC695FEA3A6CE880506068279DEE2829695F1D942364061D3ABA09DD11016"
+              },
+              {
+                "Name": "System.Void Mortal.Story.StoryMainUI/<ShowItemPicture>d__33::.ctor(System.Int32)",
+                "PreviousSha256": "2370D86BF6FCF30302134E0125558EF880760D3EB3B6D11075AA50A8DAFC4D49",
+                "CurrentSha256": null
+              },
+              {
+                "Name": "System.Void Mortal.Story.StoryMainUI/<ShowItemPicture>d__33::System.Collections.IEnumerator.Reset()",
+                "PreviousSha256": "19A08FE0CC0E2F9A60D201E51C4E7DEE7C007FEA6DC1BB7219BBC9C6776FC9D0",
+                "CurrentSha256": null
+              },
+              {
+                "Name": "System.Void Mortal.Story.StoryMainUI/<ShowItemPicture>d__33::System.IDisposable.Dispose()",
+                "PreviousSha256": "4B046D7F81BB3D138329A03BD6AC8658A39F18310A77A9BF01C73428CE59023D",
+                "CurrentSha256": null
+              },
+              {
+                "Name": "System.Void Mortal.Story.StoryMainUI/<ShowItemPicture>d__35::.ctor(System.Int32)",
+                "PreviousSha256": null,
+                "CurrentSha256": "D5B45718CA83DE3872178F5630906ACDFE67BC42145E06235EBA532F1F538CE2"
+              },
+              {
+                "Name": "System.Void Mortal.Story.StoryMainUI/<ShowItemPicture>d__35::System.Collections.IEnumerator.Reset()",
+                "PreviousSha256": null,
+                "CurrentSha256": "D6ABD297CD0AD89092F6A31092EC89F12EC79A5CE12512A30A4117414111516E"
+              },
+              {
+                "Name": "System.Void Mortal.Story.StoryMainUI/<ShowItemPicture>d__35::System.IDisposable.Dispose()",
+                "PreviousSha256": null,
+                "CurrentSha256": "0A4648B7273451771DEDDEA31EA7A38695AD94DE267DB5F6A9890405D321CCDA"
+              },
+              {
+                "Name": "System.Void Mortal.Story.StoryMainUI/<ShowMap>d__39::.ctor(System.Int32)",
+                "PreviousSha256": "70D17AD49528A09D67308CC7611D9F624BA06225AB3A7DF6690A1121FA747583",
+                "CurrentSha256": null
+              },
+              {
+                "Name": "System.Void Mortal.Story.StoryMainUI/<ShowMap>d__39::System.Collections.IEnumerator.Reset()",
+                "PreviousSha256": "55EE2D3DF4F33C6A3F1B6617264B4AA0C73C3FF14D9809A04492ACE3DB904B3E",
+                "CurrentSha256": null
+              },
+              {
+                "Name": "System.Void Mortal.Story.StoryMainUI/<ShowMap>d__39::System.IDisposable.Dispose()",
+                "PreviousSha256": "12D32D088E77B17D8A3440AB07933E8E46DED96BC65380C890E7A47E84D5009C",
+                "CurrentSha256": null
+              },
+              {
+                "Name": "System.Void Mortal.Story.StoryMainUI/<ShowMap>d__41::.ctor(System.Int32)",
+                "PreviousSha256": null,
+                "CurrentSha256": "6490522C2E7DC351585A021636F6F57CB2DB3B93AF1046A39D820B164473EB85"
+              },
+              {
+                "Name": "System.Void Mortal.Story.StoryMainUI/<ShowMap>d__41::System.Collections.IEnumerator.Reset()",
+                "PreviousSha256": null,
+                "CurrentSha256": "9C4E0E628FA3BF84A8A80F42C65D545BC03E95A57604EEBC1249C5315C27102E"
+              },
+              {
+                "Name": "System.Void Mortal.Story.StoryMainUI/<ShowMap>d__41::System.IDisposable.Dispose()",
+                "PreviousSha256": null,
+                "CurrentSha256": "89BB561B1C9FBEFB235AA3902CF463E5492DCD808B0827B5EE4E47478F030D61"
+              },
+              {
+                "Name": "System.Void Mortal.Story.StoryMainUI/<ShowPicture>d__35::.ctor(System.Int32)",
+                "PreviousSha256": "E55779FBF5197660C19347EBCD7646A8431458D0B1074D24C06A4759E3723D4B",
+                "CurrentSha256": null
+              },
+              {
+                "Name": "System.Void Mortal.Story.StoryMainUI/<ShowPicture>d__35::System.Collections.IEnumerator.Reset()",
+                "PreviousSha256": "61524C1C46E05B755679E3619DCCAEE6B65D06D6E8B1DE94E7EEBA5B32F4AE16",
+                "CurrentSha256": null
+              },
+              {
+                "Name": "System.Void Mortal.Story.StoryMainUI/<ShowPicture>d__35::System.IDisposable.Dispose()",
+                "PreviousSha256": "9BF46AB0041A2BEE26A74A24B69D3DB55B99F9F878DBD2015EEA3CADE05FD82B",
+                "CurrentSha256": null
+              },
+              {
+                "Name": "System.Void Mortal.Story.StoryMainUI/<ShowPicture>d__37::.ctor(System.Int32)",
+                "PreviousSha256": null,
+                "CurrentSha256": "4980BA0AE42FBA796E8F337134BF34F08F12E5C54C8002A6F0DCE8460569DD16"
+              },
+              {
+                "Name": "System.Void Mortal.Story.StoryMainUI/<ShowPicture>d__37::System.Collections.IEnumerator.Reset()",
+                "PreviousSha256": null,
+                "CurrentSha256": "D7D70F377EAA9F3D72281BD88E1AC3B23DC123272C0FFD8B6ACC50171C19DE23"
+              },
+              {
+                "Name": "System.Void Mortal.Story.StoryMainUI/<ShowPicture>d__37::System.IDisposable.Dispose()",
+                "PreviousSha256": null,
+                "CurrentSha256": "C0460F45022C9F9A317DEC28C948F7225B5FF9E40AC6B6AA269CF9CE58AED764"
+              },
+              {
+                "Name": "System.Void Mortal.Story.StoryManager::Awake()",
+                "PreviousSha256": "44906BA3B77846787BF02C68CD574FD85E8D4EC8D0F6E9E1CC47670BCE13E11B",
+                "CurrentSha256": "843613154BE92DD56C5DDF074A8C5DFC42FA15B46B3907A98652F5D6661D1272"
+              },
+              {
+                "Name": "System.Void Mortal.Story.StoryManager::Log(System.Boolean)",
+                "PreviousSha256": "2DBC796BC7FEEE180FAD374977351A64C107A75020E7A9854F003CBEBE88C22D",
+                "CurrentSha256": "BAFBE44FC5AD671E993FC24736FA404BAB6DEBCC8B363295A7AC67A12341E0DE"
+              },
+              {
+                "Name": "System.Void Mortal.Story.StoryManager::LogActionChanged(UnityEngine.InputSystem.InputAction/CallbackContext)",
+                "PreviousSha256": "284A027621BF649ED2700D75D72400867B6ECA117476232901B3470634F42531",
+                "CurrentSha256": "E4AB0E044BBD6D7C569AF79D3E15A8872D32BC9F4BA47F0BD227484E240ABCF6"
+              },
+              {
+                "Name": "System.Void Mortal.Story.StoryManager::OnPanelClose()",
+                "PreviousSha256": "227A477FE39416D5623E3B9B953732063691D5F12B96060BADCE08C55B3629A2",
+                "CurrentSha256": "57E573F2557B5DA8DBBF9504706022EA0C935CC70F86FE7CF410BBE0F5280F84"
+              },
+              {
+                "Name": "System.Void Mortal.Story.StoryManager::ToggleLogButton(System.Boolean)",
+                "PreviousSha256": "CD6605EAA03650510503C27EEF939EAA36D00260AF29D1E0D667D5EC08564B30",
+                "CurrentSha256": "6645E09661D5AEE4A4FFD22FD9CD6ACCEC4529CEEB0BF438DD09A4CD8DF9945B"
+              },
+              {
+                "Name": "System.Void Mortal.Story.StoryManager/<ShowDisableSaveText>d__76::.ctor(System.Int32)",
+                "PreviousSha256": null,
+                "CurrentSha256": "A373891B47C57312D4C767D00FA42FAB75864AAF477EA6163DF7D2FB60411617"
+              },
+              {
+                "Name": "System.Void Mortal.Story.StoryManager/<ShowDisableSaveText>d__76::System.Collections.IEnumerator.Reset()",
+                "PreviousSha256": null,
+                "CurrentSha256": "9A31E39D8BF1AFDD0B43655AD67FBA0C3849DF49E148FE4609E187567A11D019"
+              },
+              {
+                "Name": "System.Void Mortal.Story.StoryManager/<ShowDisableSaveText>d__76::System.IDisposable.Dispose()",
+                "PreviousSha256": null,
+                "CurrentSha256": "1900BEDDB0210AEF730CB5BF7FDB3C649E112500E552BC1EC204AB852FF30B0D"
+              },
+              {
+                "Name": "System.Void Mortal.Story.StoryManager/<ShowDisableSaveText>d__79::.ctor(System.Int32)",
+                "PreviousSha256": "801BB616890ADB0D9634D3709975845D06384FA0BF5EB605F7966207E1C57146",
+                "CurrentSha256": null
+              },
+              {
+                "Name": "System.Void Mortal.Story.StoryManager/<ShowDisableSaveText>d__79::System.Collections.IEnumerator.Reset()",
+                "PreviousSha256": "027822F10F87F1ED1F6EBAE83C61BABDF535229CBB4D79F97E3BA523D0F008B2",
+                "CurrentSha256": null
+              },
+              {
+                "Name": "System.Void Mortal.Story.StoryManager/<ShowDisableSaveText>d__79::System.IDisposable.Dispose()",
+                "PreviousSha256": "3781D10FD0B19AD8FAEF8F0E6197ABFD2037865D0EAD4159AF073EF90348464D",
+                "CurrentSha256": null
+              },
+              {
+                "Name": "System.Void Mortal.Story.StoryManager/<ShowEnableSaveText>d__75::.ctor(System.Int32)",
+                "PreviousSha256": null,
+                "CurrentSha256": "50BD144F9DABBEEB59BB1194FA27222B78596FBED7ED42136BA637804273EBA0"
+              },
+              {
+                "Name": "System.Void Mortal.Story.StoryManager/<ShowEnableSaveText>d__75::System.Collections.IEnumerator.Reset()",
+                "PreviousSha256": null,
+                "CurrentSha256": "576B58DD5C526F442614D9A027D6F9347249C76C430A5DEE6CD2F62A57E95644"
+              },
+              {
+                "Name": "System.Void Mortal.Story.StoryManager/<ShowEnableSaveText>d__75::System.IDisposable.Dispose()",
+                "PreviousSha256": null,
+                "CurrentSha256": "53D524EA233B59F35F4DE2DEB5D5639C03C70B811CA7FAAD89A613D7E74C3E4F"
+              },
+              {
+                "Name": "System.Void Mortal.Story.StoryManager/<ShowEnableSaveText>d__78::.ctor(System.Int32)",
+                "PreviousSha256": "DAAED0B63ACE25B487C177529FDEDB0C41D4AF86B04CCF10D7DAD2EFC2606E89",
+                "CurrentSha256": null
+              },
+              {
+                "Name": "System.Void Mortal.Story.StoryManager/<ShowEnableSaveText>d__78::System.Collections.IEnumerator.Reset()",
+                "PreviousSha256": "2FB1B9F48AD4B2040101EB0F12B5E88E20E0367096556D971B2961E8DF7F8A68",
+                "CurrentSha256": null
+              },
+              {
+                "Name": "System.Void Mortal.Story.StoryManager/<ShowEnableSaveText>d__78::System.IDisposable.Dispose()",
+                "PreviousSha256": "827A14C93CBFD0D2901ABA0C6F46E5BE03E0D815B079E1A0489C28E12E2BB809",
+                "CurrentSha256": null
+              },
+              {
+                "Name": "System.Void Mortal.Story.StoryManager/<ShowFreeAutoSave>d__74::.ctor(System.Int32)",
+                "PreviousSha256": null,
+                "CurrentSha256": "9A7CA247EA2A56072F7861453251526FB9F348F0AFF1A4A9520DE0852F4D8725"
+              },
+              {
+                "Name": "System.Void Mortal.Story.StoryManager/<ShowFreeAutoSave>d__74::System.Collections.IEnumerator.Reset()",
+                "PreviousSha256": null,
+                "CurrentSha256": "9F549C5DD6A86EBD8B5ECA648F83644414B51F213ADDA9F0FEC5BBEB86BAE848"
+              },
+              {
+                "Name": "System.Void Mortal.Story.StoryManager/<ShowFreeAutoSave>d__74::System.IDisposable.Dispose()",
+                "PreviousSha256": null,
+                "CurrentSha256": "0FC91F8D5B0844C900EFB206099C6AD16CBA0786F999F7E13989764C893CE976"
+              },
+              {
+                "Name": "System.Void Mortal.Story.StoryManager/<ShowFreeAutoSave>d__77::.ctor(System.Int32)",
+                "PreviousSha256": "3EE08A47F24A9F1D82FD804DEC270E6391AE9DB8EB17898E8904DB8436CAD280",
+                "CurrentSha256": null
+              },
+              {
+                "Name": "System.Void Mortal.Story.StoryManager/<ShowFreeAutoSave>d__77::System.Collections.IEnumerator.Reset()",
+                "PreviousSha256": "EBA155554D5D01072BA9496F1E4EA81B24116185BA7ADF7730EE00EE7F0E97FB",
+                "CurrentSha256": null
+              },
+              {
+                "Name": "System.Void Mortal.Story.StoryManager/<ShowFreeAutoSave>d__77::System.IDisposable.Dispose()",
+                "PreviousSha256": "12E141A4E5F61AD6952FB7C653BC3295C9519A1A776EC441FEC7B1FE8E5D696B",
+                "CurrentSha256": null
+              },
+              {
+                "Name": "System.Void Mortal.Story.StoryManager/<ShowStoryAutoSave>d__73::.ctor(System.Int32)",
+                "PreviousSha256": null,
+                "CurrentSha256": "7DB972A11A13C709D60548CA731FCD10D9D6F98111FE38997EA9C10092865931"
+              },
+              {
+                "Name": "System.Void Mortal.Story.StoryManager/<ShowStoryAutoSave>d__73::System.Collections.IEnumerator.Reset()",
+                "PreviousSha256": null,
+                "CurrentSha256": "96FCD6416E29774C6BEDFD369455072BFA06A3B1787D02C4AA56899A4CE1C2C8"
+              },
+              {
+                "Name": "System.Void Mortal.Story.StoryManager/<ShowStoryAutoSave>d__73::System.IDisposable.Dispose()",
+                "PreviousSha256": null,
+                "CurrentSha256": "11044E47A319E2565A85EFB7129D47D131595FCAF42E325AEF385017CA529046"
+              },
+              {
+                "Name": "System.Void Mortal.Story.StoryManager/<ShowStoryAutoSave>d__76::.ctor(System.Int32)",
+                "PreviousSha256": "ABD2FFCC86F9C9458E4224BCA516F0E6FD6E665AF95D9CF765523B341935547D",
+                "CurrentSha256": null
+              },
+              {
+                "Name": "System.Void Mortal.Story.StoryManager/<ShowStoryAutoSave>d__76::System.Collections.IEnumerator.Reset()",
+                "PreviousSha256": "4A69CDFB18EDDC04D956157AC788EA26CF50623F5E0DBA8ACB533BBE063445B7",
+                "CurrentSha256": null
+              },
+              {
+                "Name": "System.Void Mortal.Story.StoryManager/<ShowStoryAutoSave>d__76::System.IDisposable.Dispose()",
+                "PreviousSha256": "512EC91A6C7046B2D8D723058976C8B94B79B729D489514247C42E493DD1D5F9",
+                "CurrentSha256": null
+              },
+              {
+                "Name": "System.Void Mortal.Story.StoryManager/<StartAutoDialogue>d__80::.ctor(System.Int32)",
+                "PreviousSha256": null,
+                "CurrentSha256": "5B62CCB99F7F6337C1C002379603CD36BF1B3C0C33DE88D527DD710ADE04321D"
+              },
+              {
+                "Name": "System.Void Mortal.Story.StoryManager/<StartAutoDialogue>d__80::System.Collections.IEnumerator.Reset()",
+                "PreviousSha256": null,
+                "CurrentSha256": "F06C71857AC5F85A26052D94207ADB82AEEC8113E0FB34F0ACA591E81B64E725"
+              },
+              {
+                "Name": "System.Void Mortal.Story.StoryManager/<StartAutoDialogue>d__80::System.IDisposable.Dispose()",
+                "PreviousSha256": null,
+                "CurrentSha256": "7E4622E7658DD05AC1169A83E8E97E4A77F5734682EAD4B7B224CF21F1C7FB08"
+              },
+              {
+                "Name": "System.Void Mortal.Story.StoryManager/<StartAutoDialogue>d__84::.ctor(System.Int32)",
+                "PreviousSha256": "7C8EB5A628EF0511D41DF39920F119448B59F4028CD44750DD98019C96ED8469",
+                "CurrentSha256": null
+              },
+              {
+                "Name": "System.Void Mortal.Story.StoryManager/<StartAutoDialogue>d__84::System.Collections.IEnumerator.Reset()",
+                "PreviousSha256": "AAF71A29E5E23EDF0D1BC044A95A18D65F24CA1DEA3DB2A8AAF8CF4B069EF32D",
+                "CurrentSha256": null
+              },
+              {
+                "Name": "System.Void Mortal.Story.StoryManager/<StartAutoDialogue>d__84::System.IDisposable.Dispose()",
+                "PreviousSha256": "C43F0EE62623DF28A2BAFDFF8AA8074616593DE0FF5876DBCA33DD1B6BB9BD08",
+                "CurrentSha256": null
+              },
+              {
+                "Name": "System.Void Mortal.Story.StoryManager/<WaitForLogCanvas>d__81::.ctor(System.Int32)",
+                "PreviousSha256": "7690D0989D43F1ED8E90853769060D5DFCCB1AAED64307D882C4EA85FD43BEE0",
+                "CurrentSha256": null
+              },
+              {
+                "Name": "System.Void Mortal.Story.StoryManager/<WaitForLogCanvas>d__81::System.Collections.IEnumerator.Reset()",
+                "PreviousSha256": "35481D166AE4819432037636D5B3E3C4617E4448D96F8ABF7615F067B4806285",
+                "CurrentSha256": null
+              },
+              {
+                "Name": "System.Void Mortal.Story.StoryManager/<WaitForLogCanvas>d__81::System.IDisposable.Dispose()",
+                "PreviousSha256": "ED8865919E6753313173BAE2E8E06B5FDC90936340FEFCF1DAA4075D2D7B4797",
+                "CurrentSha256": null
+              }
+            ]
+          },
+          {
+            "Category": "Types",
+            "PreviousCount": 135,
+            "CurrentCount": 134,
+            "Unchanged": false,
+            "Changes": [
+              {
+                "Name": "Mortal.Story.DiceMenuDialog/<Roll>d__61",
+                "PreviousSha256": "F41E1A99BDBC6A030AC53093DBD8F03DC0D4C8633758A76C29849EC62D37F663",
+                "CurrentSha256": null
+              },
+              {
+                "Name": "Mortal.Story.DiceMenuDialog/<Roll>d__62",
+                "PreviousSha256": null,
+                "CurrentSha256": "AF59C494B4FF6ED847EDF15954BD4AE4AB72B75A06D3B93EB647DEBDD468E84F"
+              },
+              {
+                "Name": "Mortal.Story.DiceMenuDialog/<StartSpin>d__67",
+                "PreviousSha256": "2B09A59480A6CD81DDBCE719E4E8387D40473F178FB68811210E9F2DF5CEDCAE",
+                "CurrentSha256": null
+              },
+              {
+                "Name": "Mortal.Story.DiceMenuDialog/<StartSpin>d__68",
+                "PreviousSha256": null,
+                "CurrentSha256": "531A8B89B059C95534B2642BE8B8566F1CA8186E4A8B93F6A39137474A815CF9"
+              },
+              {
+                "Name": "Mortal.Story.StoryMainUI/<HideBigPicture>d__38",
+                "PreviousSha256": "565AFCC677770533557D5C87D6D0BC49AF032AA8D38818986377CE7FD39CF093",
+                "CurrentSha256": null
+              },
+              {
+                "Name": "Mortal.Story.StoryMainUI/<HideBigPicture>d__40",
+                "PreviousSha256": null,
+                "CurrentSha256": "1F26E4C29BB94EE057E5EE1037D9ACACD9445743E340297D854D8801D89C3F08"
+              },
+              {
+                "Name": "Mortal.Story.StoryMainUI/<HideFamilyTree>d__42",
+                "PreviousSha256": "D000C169E960FCE64C616C60C3414A812F3CB731C3437973F203D5BD0CD1BE7D",
+                "CurrentSha256": null
+              },
+              {
+                "Name": "Mortal.Story.StoryMainUI/<HideFamilyTree>d__44",
+                "PreviousSha256": null,
+                "CurrentSha256": "EFAB7418C46AB74F614BEDA082F4C7ADBC80948B45355C3E7D91B8493ABEB39F"
+              },
+              {
+                "Name": "Mortal.Story.StoryMainUI/<HideItemPicture>d__34",
+                "PreviousSha256": "19D6CF3EF96027063BB150E9E7529180259319D88B918ED0B4BF78F088D4BA9D",
+                "CurrentSha256": null
+              },
+              {
+                "Name": "Mortal.Story.StoryMainUI/<HideItemPicture>d__36",
+                "PreviousSha256": null,
+                "CurrentSha256": "6C4894EBF08821ABE93ABC1E882AC9066791F6E38583AAF2573DAD6AF6BBBA49"
+              },
+              {
+                "Name": "Mortal.Story.StoryMainUI/<HideMap>d__40",
+                "PreviousSha256": "1819537242067094373340B6F16175AEC4DAF978F5DE51CA2ACC810AF7268EB2",
+                "CurrentSha256": null
+              },
+              {
+                "Name": "Mortal.Story.StoryMainUI/<HideMap>d__42",
+                "PreviousSha256": null,
+                "CurrentSha256": "6B6BA539227D7FA102BD8D3E6EA5630A80A275EB83AACED73AADA136EC376DC9"
+              },
+              {
+                "Name": "Mortal.Story.StoryMainUI/<HidePicture>d__36",
+                "PreviousSha256": "EF0E1B79F37A319109D44D0595D11C190DEC90A3C1AB966A0F9835C033DD0A52",
+                "CurrentSha256": null
+              },
+              {
+                "Name": "Mortal.Story.StoryMainUI/<HidePicture>d__38",
+                "PreviousSha256": null,
+                "CurrentSha256": "B9C278C6ABE143285101516B7F103F4C2705ADC7D7F17FABE413634532192359"
+              },
+              {
+                "Name": "Mortal.Story.StoryMainUI/<ShowBigPicture>d__37",
+                "PreviousSha256": "767CCB2122E1DAC4A6DDD5A96B55C91873FAC4B02733293D6FA4A97C509FFB3E",
+                "CurrentSha256": null
+              },
+              {
+                "Name": "Mortal.Story.StoryMainUI/<ShowBigPicture>d__39",
+                "PreviousSha256": null,
+                "CurrentSha256": "40F74CA44B1E2C4171E32AA3CFB07DDC61FF5E3CE0B0411BEDCBD9A7F3AFBECD"
+              },
+              {
+                "Name": "Mortal.Story.StoryMainUI/<ShowCanvas>d__47",
+                "PreviousSha256": "E7CFF677C9FB761A3F9C74ACB655C4ACDED37EC7CACD502FC710CA44EAE194EA",
+                "CurrentSha256": null
+              },
+              {
+                "Name": "Mortal.Story.StoryMainUI/<ShowCanvas>d__49",
+                "PreviousSha256": null,
+                "CurrentSha256": "047187837FFCFE1AB530560141B0572E79DAA99D57B1F8C8D69BBD19CEB09387"
+              },
+              {
+                "Name": "Mortal.Story.StoryMainUI/<ShowFamilyTree>d__41",
+                "PreviousSha256": "8B985C88B7BF44BAD01FA20686FC81ED5E1DAE72B7C96A0E3407DFB4CAB42E0B",
+                "CurrentSha256": null
+              },
+              {
+                "Name": "Mortal.Story.StoryMainUI/<ShowFamilyTree>d__43",
+                "PreviousSha256": null,
+                "CurrentSha256": "ADC8C21DA5819F8775DA1DA01C70220E0A77F044A98B44DDC6B9A02C9B106133"
+              },
+              {
+                "Name": "Mortal.Story.StoryMainUI/<ShowItemPicture>d__33",
+                "PreviousSha256": "465B031754790F79CB263BE360B1DE53FF6232B607203BA62050BF02150F17CC",
+                "CurrentSha256": null
+              },
+              {
+                "Name": "Mortal.Story.StoryMainUI/<ShowItemPicture>d__35",
+                "PreviousSha256": null,
+                "CurrentSha256": "7A162BA40919A3432BE1D3D2F6FF81CB494A887E379D26CEB54FEC69AE7E1494"
+              },
+              {
+                "Name": "Mortal.Story.StoryMainUI/<ShowMap>d__39",
+                "PreviousSha256": "10CD1D07CA628BD34403C40C1DA3004722255DE3B4FF45B366A89C712A30CE3D",
+                "CurrentSha256": null
+              },
+              {
+                "Name": "Mortal.Story.StoryMainUI/<ShowMap>d__41",
+                "PreviousSha256": null,
+                "CurrentSha256": "5CA89FCFDC8857B8C3AF6EAEE35B270131EB55D8353E77F6FD7A4EB30EE0B77E"
+              },
+              {
+                "Name": "Mortal.Story.StoryMainUI/<ShowPicture>d__35",
+                "PreviousSha256": "AE868B92FE3ED0122B36FBDFAEF12489695B7CD6B738CF6FE5AC89419A8F2D01",
+                "CurrentSha256": null
+              },
+              {
+                "Name": "Mortal.Story.StoryMainUI/<ShowPicture>d__37",
+                "PreviousSha256": null,
+                "CurrentSha256": "99C17E7296D44E38E8945C3D49B00D81EBEF69B68871B11FB29F47D5D78B9D7C"
+              },
+              {
+                "Name": "Mortal.Story.StoryManager",
+                "PreviousSha256": "C9D470295080A5E3667EA6CE61919D5246BBD57F0D3F3DABE3A20E1CE8A7FD76",
+                "CurrentSha256": "02DFC73F7E994F6A2CA3CDBBE495B993D8566F570C81CA289956913FB450313D"
+              },
+              {
+                "Name": "Mortal.Story.StoryManager/<ShowDisableSaveText>d__76",
+                "PreviousSha256": null,
+                "CurrentSha256": "1550FDB9922AACF2C2FA682ED6670CB9F8AC7DAB7085E5864A9A446E0F416D81"
+              },
+              {
+                "Name": "Mortal.Story.StoryManager/<ShowDisableSaveText>d__79",
+                "PreviousSha256": "7F39A7C3404729D50FCE038E6619854875E919112FCAF2050B0AFE89B379EEA9",
+                "CurrentSha256": null
+              },
+              {
+                "Name": "Mortal.Story.StoryManager/<ShowEnableSaveText>d__75",
+                "PreviousSha256": null,
+                "CurrentSha256": "40045C6A70383394ACC2F1C617040D9418D41F399BA947ABC2CF3BE2CDF0B908"
+              },
+              {
+                "Name": "Mortal.Story.StoryManager/<ShowEnableSaveText>d__78",
+                "PreviousSha256": "5A60BAC99822F3B6A4C8CB8EEEB9EC1BD33EE844A7FD32BF3BD0E1304DE50D7F",
+                "CurrentSha256": null
+              },
+              {
+                "Name": "Mortal.Story.StoryManager/<ShowFreeAutoSave>d__74",
+                "PreviousSha256": null,
+                "CurrentSha256": "2263F04D65D7FA30986A6EEBBF4CBA76BFCA6B0848357EE6CF2E9CACAB3EF000"
+              },
+              {
+                "Name": "Mortal.Story.StoryManager/<ShowFreeAutoSave>d__77",
+                "PreviousSha256": "59CB8A596FD706B3338B6EBB1702CD85E4974BEC7B526436907B8CF47DD6BAAA",
+                "CurrentSha256": null
+              },
+              {
+                "Name": "Mortal.Story.StoryManager/<ShowStoryAutoSave>d__73",
+                "PreviousSha256": null,
+                "CurrentSha256": "5D6B1A896956515917090798AAD517777756021F8AC32AFBE27FCA04ED570A85"
+              },
+              {
+                "Name": "Mortal.Story.StoryManager/<ShowStoryAutoSave>d__76",
+                "PreviousSha256": "23EBE0BC74EA1CD304830B83EA4CCAC2BEB99CDF818771A8872FE9789DDC13E8",
+                "CurrentSha256": null
+              },
+              {
+                "Name": "Mortal.Story.StoryManager/<StartAutoDialogue>d__80",
+                "PreviousSha256": null,
+                "CurrentSha256": "4BD4BC0C0476E2D68A857D51D080FA8B3401BB550731EB0617AE49E93D63247E"
+              },
+              {
+                "Name": "Mortal.Story.StoryManager/<StartAutoDialogue>d__84",
+                "PreviousSha256": "1434F919D5B60C45A970F57683824DF90EA3EE48F3DCF4E3A3BB16BF6838F3BE",
+                "CurrentSha256": null
+              },
+              {
+                "Name": "Mortal.Story.StoryManager/<WaitForLogCanvas>d__81",
+                "PreviousSha256": "9045EE94FB15D2975F7DECCBF777DE4DCAF90617D4AAAEC8BA88581CA0BB470B",
+                "CurrentSha256": null
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "Assembly": "Fungus.dll",
+        "PriorBytesVerifiedAgainstBaseline": true,
+        "PreviousSha256": "16DCD300966F3CB747E693B3BD7996AD6C36303B9112B81F9696D2B4C8BC0114",
+        "CurrentSha256": "16DCD300966F3CB747E693B3BD7996AD6C36303B9112B81F9696D2B4C8BC0114",
+        "Comparison": [
+          {
+            "Category": "Methods",
+            "PreviousCount": 7508,
+            "CurrentCount": 7508,
+            "Unchanged": true,
+            "Changes": []
+          },
+          {
+            "Category": "Types",
+            "PreviousCount": 1080,
+            "CurrentCount": 1080,
+            "Unchanged": true,
+            "Changes": []
+          }
+        ]
+      },
+      {
+        "Assembly": "OBB.Framework.dll",
+        "PriorBytesVerifiedAgainstBaseline": true,
+        "PreviousSha256": "D1F60EF383C1B919700321D839609950ED4BE24CA6F37E6D90FC5C04DD674DAA",
+        "CurrentSha256": "D1F60EF383C1B919700321D839609950ED4BE24CA6F37E6D90FC5C04DD674DAA",
+        "Comparison": [
+          {
+            "Category": "Methods",
+            "PreviousCount": 64,
+            "CurrentCount": 64,
+            "Unchanged": true,
+            "Changes": []
+          },
+          {
+            "Category": "Types",
+            "PreviousCount": 24,
+            "CurrentCount": 24,
+            "Unchanged": true,
+            "Changes": []
+          }
+        ]
+      },
+      {
+        "Assembly": "Unity.Addressables.dll",
+        "PriorBytesVerifiedAgainstBaseline": true,
+        "PreviousSha256": "C55E76254705D6B2BFA03377C1A411C1406E8DD0A1F83A1E5054F124C0E1D274",
+        "CurrentSha256": "C55E76254705D6B2BFA03377C1A411C1406E8DD0A1F83A1E5054F124C0E1D274",
+        "Comparison": [
+          {
+            "Category": "Methods",
+            "PreviousCount": 652,
+            "CurrentCount": 652,
+            "Unchanged": true,
+            "Changes": []
+          },
+          {
+            "Category": "Types",
+            "PreviousCount": 89,
+            "CurrentCount": 89,
+            "Unchanged": true,
+            "Changes": []
+          }
+        ]
+      },
+      {
+        "Assembly": "Unity.ResourceManager.dll",
+        "PriorBytesVerifiedAgainstBaseline": true,
+        "PreviousSha256": "CEC22EEE6D58FADE908C5E7F784B18DC905ED13E3A09329C1D775F1365B707DC",
+        "CurrentSha256": "CEC22EEE6D58FADE908C5E7F784B18DC905ED13E3A09329C1D775F1365B707DC",
+        "Comparison": [
+          {
+            "Category": "Methods",
+            "PreviousCount": 886,
+            "CurrentCount": 886,
+            "Unchanged": true,
+            "Changes": []
+          },
+          {
+            "Category": "Types",
+            "PreviousCount": 125,
+            "CurrentCount": 125,
+            "Unchanged": true,
+            "Changes": []
+          }
+        ]
+      }
+    ],
+    "Scope": "All methods and type layout hashes in five resource-loading dependencies, including generated nested coroutine types; old source DLL bytes verified against the published 26073097 baseline. No game code execution."
+  },
+  "ChangedStoryImplementationBoundary": "270 changed/added/removed method records and 38 type records outside the unchanged actual portrait-controller closure. Changes include DiceMenuDialog, LuaManager, StatModifyManager, StoryMainUI, StoryManager and StoryCommandNarrativeLog; generated coroutine type numbering also shifted. This audit does not prove arbitrary story/gameplay equivalence.",
+  "AddressablesCatalogDelta": {
+    "ActualGameRun": false,
+    "ComparisonBuildId": "26073097",
+    "SourceBuildId": "26237817",
+    "Files": [
+      {
+        "Name": "catalog.json",
+        "ChangedTopLevelFields": [
+          {
+            "Field": "m_BucketDataString",
+            "PreviousSemanticSha256": "F0DC26B6D47B6C6D7C20C971D9BFE5B0F6810E65F791AE692C05B9FABD746535",
+            "CurrentSemanticSha256": "1500B08A71069007433319A9165BAB0736F65F78095C4B154A14B06AC5E8BCA3",
+            "PreviousLength": 192012,
+            "CurrentLength": 192056
+          },
+          {
+            "Field": "m_EntryDataString",
+            "PreviousSemanticSha256": "83EC211FB92B6FE852226018C9D180C4BC199A87C8AF8A643EF0072500524543",
+            "CurrentSemanticSha256": "8838E72E4E06424D9F01A07CCE616CF399939FDAB397F2CAEEBC886C94071D45",
+            "PreviousLength": 284636,
+            "CurrentLength": 284672
+          },
+          {
+            "Field": "m_InternalIds",
+            "PreviousSemanticSha256": "81F188C8D87F3BD94BB1F4FE7D0DBD8F67732C3A5428C8F66044273BFA5C483E",
+            "CurrentSemanticSha256": "6807EB36B8CEA66D7E28CBDC6D87F2DF9F79D8301FDA99CEBB0811E400CFD019",
+            "PreviousLength": 5322,
+            "CurrentLength": 5323
+          },
+          {
+            "Field": "m_KeyDataString",
+            "PreviousSemanticSha256": "E9E1660E0E80BE7EC77787F179EDBD098A9C9F6D1C382C06ED3B2986B52486D2",
+            "CurrentSemanticSha256": "BDA3830EF1741046D371276A4FF6486698EB4A0B2788F0B5760372254B7E9BD8",
+            "PreviousLength": 716984,
+            "CurrentLength": 717116
+          }
+        ],
+        "InternalIdsUnchanged": false
+      },
+      {
+        "Name": "settings.json",
+        "ChangedTopLevelFields": [
+          {
+            "Field": "m_SettingsHash",
+            "PreviousSemanticSha256": "42C63E0B256FC1CF4E3128BA82DACC9431F0E8349EDBD1E58227E5398189984A",
+            "CurrentSemanticSha256": "C1D1856935D38E7054853FA765F0F5A81D8CBD6EFAB6EBB18E86697FAC87E840",
+            "PreviousLength": 32,
+            "CurrentLength": 32,
+            "PreviousValue": "c5cf267ce2fc7f29be3223addb5b3461",
+            "CurrentValue": "d4c1621cf8bdcc7562e16fa4934b7408"
+          }
+        ],
+        "InternalIdsUnchanged": null
+      }
+    ]
+  },
+  "AdditionalInternalIds": [
+    "Story/ChineseTraditional/ch4_9_3_8_part_2"
+  ],
+  "PriorSnapshotValidation": {
+    "Compatible": true,
+    "Method": "OfflineCompatibilityProbe",
+    "BaselineBuildIds": [
+      "26073097"
+    ],
+    "MatchedBaselineFile": "installer/compatibility-baseline-26073097.json",
+    "Reasons": [],
+    "Checks": [
+      {
+        "Name": "PinnedBaseline",
+        "Passed": true,
+        "Sha256": "E448C4F8E3A9D9D57DBA5BB2779B0A0774995BF7BDDDE1448421A086839DEC53",
+        "RelativePath": "installer/compatibility-baseline-26073097.json"
+      },
+      {
+        "Name": "TrustedCecil",
+        "Passed": true,
+        "Sha256": "7AE470288FFF4A402899C254D0A76CEFEF55877F5C54F96E83C797CC5BB6E2F6"
+      },
+      {
+        "Name": "GuardedFileInventory",
+        "Passed": true,
+        "Count": 395,
+        "Sha256": "DF0111B1F721EE2EEA9882981B68D86919B956D4016D1129464D269381F371C1"
+      },
+      {
+        "Name": "AddressablesBundles",
+        "Passed": true,
+        "Count": 190,
+        "Sha256": "3350135A10E863F5FA58B5BB8E31621026FBA0BA41D45EACD3EBFB6CC1E56FCD"
+      },
+      {
+        "Name": "AddressablesCatalog",
+        "Passed": true,
+        "Count": 2,
+        "Sha256": "3613A50599E5896AF1125B686EA6488312790329EAAC9704771A1A596071A30C"
+      },
+      {
+        "Name": "ManagedDependencies",
+        "Passed": true,
+        "Count": 130,
+        "Sha256": "F35199429079FE9F11B810CDB05391A40FDCFDBD9F124C66AEB60287F4C1EBAE"
+      },
+      {
+        "Name": "MonoRuntime",
+        "Passed": true,
+        "Count": 20,
+        "Sha256": "EF09D3985C97CF69636B9232FDAF7A18DA04BDADE50900DD68A87A0804AA97EB"
+      },
+      {
+        "Name": "SceneAndSerializedAssets",
+        "Passed": true,
+        "Count": 51,
+        "Sha256": "7FB733A1B5D51B8BBE266BB63C7D8999E2D9529DEB158523330F69217709981E"
+      },
+      {
+        "Name": "UnityRuntime",
+        "Passed": true,
+        "Count": 2,
+        "Sha256": "AB2BAFE13DC1B89EC884AB0172522156085A18C44147B5878DC9EDAE08709F4A"
+      },
+      {
+        "Name": "VersionMetadata",
+        "Passed": true,
+        "Sha256": "A1B747996FE56FB9F85731EDC3B19BEF78A35F12AEC8092B1F6BC85564B8EFCC"
+      },
+      {
+        "Name": "ManagedAssemblyNames",
+        "Passed": true,
+        "Count": 131,
+        "Sha256": "49002CC72F7E2A86ACAF0677B2770CF7E6FCF594EFA9ACDA7A0FDED79DD878A4"
+      },
+      {
+        "Name": "CoreMethods",
+        "Passed": true,
+        "Count": 147,
+        "Sha256": "B0746514BDDD10284853AC0D6FF10CEA7E8165045C481E9D729E2BA52854AB5C"
+      },
+      {
+        "Name": "CoreTypes",
+        "Passed": true,
+        "Count": 35,
+        "Sha256": "21D1597E2509FED6B9E1D836A9B3D2E666B9F626CF07365FAE2129D497F17D93"
+      },
+      {
+        "Name": "GameMemberReferences",
+        "Passed": true,
+        "Count": 23,
+        "Sha256": "0B8A55548C34A38D91BFA04701C57EA69C9C7CC05B14B33B49633FE07D3D4E8C"
+      }
+    ],
+    "FingerprintSet": {
+      "Assembly-CSharp.dll": "5803AF11CFA7428CF1E8E6B9F0447CAC607C1310119F7DB1CE013DB651D8BF23",
+      "Mortal.Core.dll": "4F0E6C53F31B786BECEAF66BF2649C0DE414E36D440113603C5196C10CB54B4F",
+      "Mortal.Story.dll": "907F42E06624A2B0C603757DC22DE3A4F33C26CB3CEBE8017A24CA6FF27DCF56",
+      "Fungus.dll": "16DCD300966F3CB747E693B3BD7996AD6C36303B9112B81F9696D2B4C8BC0114"
+    }
+  },
+  "FixedResourceDelta": {
+    "FixedFilesCompared": 395,
+    "FixedFilesUnchanged": 363,
+    "FixedFilesChanged": [
+      {
+        "RelativePath": "Mortal_Data/globalgamemanagers.assets",
+        "Category": "SceneAndSerializedAssets",
+        "PreviousSha256": "8F586101672650686E494EAF8839342D1D062D1D2195665379843AC8DEB1D5CD",
+        "CurrentSha256": "F1615F455C8C8E35B540BC74B393D435564CA46E787F706ACBD638039939900D"
+      },
+      {
+        "RelativePath": "Mortal_Data/level0",
+        "Category": "SceneAndSerializedAssets",
+        "PreviousSha256": "6E272F1903B6AD87B2EB046171A414C6D463D91152F98910945AD90C63F7D793",
+        "CurrentSha256": "CFAA0820F811473AB0EC9D7705F09D83CCFD25C8B495FCB3E59EFDD851C107A7"
+      },
+      {
+        "RelativePath": "Mortal_Data/level1",
+        "Category": "SceneAndSerializedAssets",
+        "PreviousSha256": "766B72E225AD243C83FF5A950E4AF7C38520FDAB26A97B48678770E8C0F0E250",
+        "CurrentSha256": "20DE78C13140D3521C790D8BB09921C0460D0FA6BC759DABE4EE6CC5C4B3EA53"
+      },
+      {
+        "RelativePath": "Mortal_Data/level10",
+        "Category": "SceneAndSerializedAssets",
+        "PreviousSha256": "B66293158AA3A917607F70360790D62789429A34257D2622372677688E6287C1",
+        "CurrentSha256": "EE2C15B13BD5C405B61DCB86AD55E177347D7053E23CF95277E63C08A86B7F1B"
+      },
+      {
+        "RelativePath": "Mortal_Data/level2",
+        "Category": "SceneAndSerializedAssets",
+        "PreviousSha256": "6A837808D2771BD6D8F4160171F3DAB729737002303518AD55A1126921ACA3D1",
+        "CurrentSha256": "124951F37EAB1DB6B85233071A4AB588294AA6BC6442778E8F3171EB1AE5433C"
+      },
+      {
+        "RelativePath": "Mortal_Data/level3",
+        "Category": "SceneAndSerializedAssets",
+        "PreviousSha256": "1E46C0E7489EC468E8E9ACAEA4489AB9DAA2AA6EBB35C1A559164B93BB801499",
+        "CurrentSha256": "A5363842155AEEA554444E26572DA43FE8451B38CB3F79856FB3A81CD4628C75"
+      },
+      {
+        "RelativePath": "Mortal_Data/level4",
+        "Category": "SceneAndSerializedAssets",
+        "PreviousSha256": "145A50DD9AB9168D82117B75551532A0A394A5A7FA64350A9F791C336D8E1C06",
+        "CurrentSha256": "51BF9577AF426012F4CF30A94442FA09F83FEE20156EDC19925BB0DA9F82D1EA"
+      },
+      {
+        "RelativePath": "Mortal_Data/level5",
+        "Category": "SceneAndSerializedAssets",
+        "PreviousSha256": "0CC7E938DF8682170725A102386BE5090020832FF71349FCC32CF6E8524EB192",
+        "CurrentSha256": "B986BAFC45621B963F6904114A3C39ACF9566E50303120EE468977685F028B54"
+      },
+      {
+        "RelativePath": "Mortal_Data/level6",
+        "Category": "SceneAndSerializedAssets",
+        "PreviousSha256": "9127749B6403616211A05AF6A27134317A1D43DD96D09621BAD9A6FCD4F87A13",
+        "CurrentSha256": "86DA57440BD24C8E73560DC143A7C1A9BBBBB46704045613D4C775C23D827F9D"
+      },
+      {
+        "RelativePath": "Mortal_Data/level7",
+        "Category": "SceneAndSerializedAssets",
+        "PreviousSha256": "F6667971476736B63AEA830CC952AAE825D59EACADB4B301482DB0BB8738885F",
+        "CurrentSha256": "B46AE8819B37443D900D2A9E5025574041684B13A8EFD3B0300D6C4BBA126B60"
+      },
+      {
+        "RelativePath": "Mortal_Data/level8",
+        "Category": "SceneAndSerializedAssets",
+        "PreviousSha256": "11A848A5EF096E2BF330284580D172570FD91061486A59E4B99C54DBDD618449",
+        "CurrentSha256": "BB74359D89F4D59C9F8EDA96EAE58C07E020E52A4CCD72E12EC10C88E0AC1D8F"
+      },
+      {
+        "RelativePath": "Mortal_Data/level9",
+        "Category": "SceneAndSerializedAssets",
+        "PreviousSha256": "C557A33C9B26591D7942C278816DE04309F101403EB23466978C3C7317360D63",
+        "CurrentSha256": "4778C158AB204789C6040AC2C44B3ECA255575DF09FFF2DA85DCAA39496146AE"
+      },
+      {
+        "RelativePath": "Mortal_Data/Managed/Mortal.Battle.dll",
+        "Category": "ManagedDependencies",
+        "PreviousSha256": "D70BCE74524E73E5FDB29A37FEC595944547652FF63B27FB0DA0E71CB9672121",
+        "CurrentSha256": "D9142F692FF0F379CCB768EFF0568C3635D1059ADF00D80E6A0A9AFC2D314992"
+      },
+      {
+        "RelativePath": "Mortal_Data/Managed/Mortal.Combat.dll",
+        "Category": "ManagedDependencies",
+        "PreviousSha256": "3AAF7DFB4A25F1C0052E2611D024DBBA494FBB56763545C9BCF53EDCC03D995E",
+        "CurrentSha256": "D35179271EC13841E1EF6A9A2341846F8C484CA67916FC332B44F1853B480ABE"
+      },
+      {
+        "RelativePath": "Mortal_Data/Managed/Mortal.Free.dll",
+        "Category": "ManagedDependencies",
+        "PreviousSha256": "F82558A87E1A735E5DCA71A106B27128BE9FC376A0120CCFC8DD0D50158F54C9",
+        "CurrentSha256": "BC03FA8DDB8FF92BEE2D5BF7A80E5D9AEAFB640B7DADC40B2D1ECE44180BA731"
+      },
+      {
+        "RelativePath": "Mortal_Data/Managed/Mortal.Story.dll",
+        "Category": "ManagedDependencies",
+        "PreviousSha256": "907F42E06624A2B0C603757DC22DE3A4F33C26CB3CEBE8017A24CA6FF27DCF56",
+        "CurrentSha256": "320F77D0B2CEE562420EC44FCD244E20CB7E007A6F8AFF7275567015EEC2310F"
+      },
+      {
+        "RelativePath": "Mortal_Data/resources.assets",
+        "Category": "SceneAndSerializedAssets",
+        "PreviousSha256": "F8938FD2088AC46DBAAD61E45DB94C4DAA1F5A71727BE1F28DB06B5D49B0B6CC",
+        "CurrentSha256": "A186E836044D095624BB58600371E8780FCFC093DCC30928236F0D81EEEE5224"
+      },
+      {
+        "RelativePath": "Mortal_Data/RuntimeInitializeOnLoads.json",
+        "Category": "SceneAndSerializedAssets",
+        "PreviousSha256": "4B9E4B11A3CFB7023863CD5FCBFC50A7E73C6E09C86DF2DDE41D839506A5264F",
+        "CurrentSha256": "FC748D71C91ABA42C2E8D429B53DF2FD4E005A364A05CA919D97241E65FD0AAA"
+      },
+      {
+        "RelativePath": "Mortal_Data/sharedassets0.assets",
+        "Category": "SceneAndSerializedAssets",
+        "PreviousSha256": "E12818F8BFA94C3F59FF5150BCCE6E9438340EEB0333BA1CD04567C2968AE4EE",
+        "CurrentSha256": "B58475CD1EFE941B3A1206BA6D6F9813E06FDCE181880D09F34D143785E82D49"
+      },
+      {
+        "RelativePath": "Mortal_Data/sharedassets1.assets",
+        "Category": "SceneAndSerializedAssets",
+        "PreviousSha256": "056F2E3866CF284D017B0AA67AC0FFF844C5A3EC81D78A5E8E32D796C0DEF011",
+        "CurrentSha256": "E4705E82DB2264A3BBAF6434E7C19721DB220F6A1024FCE2234720F5C56627BB"
+      },
+      {
+        "RelativePath": "Mortal_Data/sharedassets10.assets",
+        "Category": "SceneAndSerializedAssets",
+        "PreviousSha256": "6F1019613C89890B2153EC61588C69C2A95075E35E429BEE16AB9E27347C2C69",
+        "CurrentSha256": "FF14AD58BBE27A5530668CDC9F6DA62B9F60C9041B27A949990615AC7A10E4AD"
+      },
+      {
+        "RelativePath": "Mortal_Data/sharedassets2.assets",
+        "Category": "SceneAndSerializedAssets",
+        "PreviousSha256": "BE44A8177AB1B680E78CE2D52C5395CFDCD91CF6D1A579C4776F2F3A01B4AB8B",
+        "CurrentSha256": "BFFA0ECD389B1B9B5BEA10159B4789F5F6B9F24AA106D2A0F99CA895DF859554"
+      },
+      {
+        "RelativePath": "Mortal_Data/sharedassets3.assets",
+        "Category": "SceneAndSerializedAssets",
+        "PreviousSha256": "90A61BCA3697C7D4F6656DC3DF57619DB4B6C0A4F27E33C0F101901C04E662E4",
+        "CurrentSha256": "A1E7B8CA7AAC9EECA9D31A3CB3DA65D8CA370983081B0529C02C9B4B63934666"
+      },
+      {
+        "RelativePath": "Mortal_Data/sharedassets4.assets",
+        "Category": "SceneAndSerializedAssets",
+        "PreviousSha256": "324AC6C0E508EB27708052B0D395B27B4F2384ECA28122618895F8DE51910F2F",
+        "CurrentSha256": "2006C89EDFE0E51E3484852D15DCD4B12783003259AED64F9C7C61FFEF01E20C"
+      },
+      {
+        "RelativePath": "Mortal_Data/sharedassets5.assets",
+        "Category": "SceneAndSerializedAssets",
+        "PreviousSha256": "DDD7E12F91542FE94E67E3574F4B9957E5043AABC0F7D1CAC0447ABE3F4F3A12",
+        "CurrentSha256": "1A529129D7E354753E4963D75642F884E31499F265B352C651F3AE63ED43DDC7"
+      },
+      {
+        "RelativePath": "Mortal_Data/sharedassets6.assets",
+        "Category": "SceneAndSerializedAssets",
+        "PreviousSha256": "8CF2A3C456235FACB4C340B62AB29E8F68428A52CB01D12BE992E8027DB3E582",
+        "CurrentSha256": "ECDC47C037E78CBB6A6D1A82067B8F3DC4166D94D177EEDA2D821E777A6234BF"
+      },
+      {
+        "RelativePath": "Mortal_Data/sharedassets6.assets.resS",
+        "Category": "SceneAndSerializedAssets",
+        "PreviousSha256": "B30D8AA4497D7F2E09BB0B9179C192A33B107EF660F290D251180F2DD5F0FC54",
+        "CurrentSha256": "791E9CE95B35013A907825EC005A5B56F1688A2E8CB3384244435754EC94220A"
+      },
+      {
+        "RelativePath": "Mortal_Data/sharedassets7.assets",
+        "Category": "SceneAndSerializedAssets",
+        "PreviousSha256": "9DD10586B52AA98A2CEED00AA1E217C383E21A482B5B368DDE5A503CC6CC4C44",
+        "CurrentSha256": "4EB42300C2727EE8E26BB18B552C67CEF6853BD47B6FD393C04E2C545435A28C"
+      },
+      {
+        "RelativePath": "Mortal_Data/sharedassets8.assets",
+        "Category": "SceneAndSerializedAssets",
+        "PreviousSha256": "70EB1E6BBDAEC605CC63455A9E0291A45D6405641140806227F70F9775628F29",
+        "CurrentSha256": "2F5ACAB62D783978EE4C77C2301C05FBC53C09087779A2DF305C03469A6BC548"
+      },
+      {
+        "RelativePath": "Mortal_Data/sharedassets9.assets",
+        "Category": "SceneAndSerializedAssets",
+        "PreviousSha256": "8A6F9F47764A7BB8468622F598C04FCDF3D7693459E372895C8599691CC6CF71",
+        "CurrentSha256": "2BC773BD7DC69CDDDD1802458CC97BCC1EA03ABFC9B7A2B5D0123E426962B6D5"
+      },
+      {
+        "RelativePath": "Mortal_Data/StreamingAssets/aa/catalog.json",
+        "Category": "AddressablesCatalog",
+        "PreviousSha256": "C35DFBEBF90C21553AD80B6AA298ED9F160E4CE5ADEBEF57F633518159FF79DD",
+        "CurrentSha256": "463B71DF6DA77047C74C7FB1C2E8CAEFD305028C10C668E55FA57CD1E064D06D"
+      },
+      {
+        "RelativePath": "Mortal_Data/StreamingAssets/aa/settings.json",
+        "Category": "AddressablesCatalog",
+        "PreviousSha256": "FB15B34948B8AE2F80C629CAFB53E1A79454859FBCC1268A64246FC31C404794",
+        "CurrentSha256": "F8366FCD09A8D51CA3267B57A7FA5F41E868A5F1EB91F1294F9440E566EB37A9"
+      }
+    ]
+  }
+}

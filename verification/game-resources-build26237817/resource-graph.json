@@ -1,0 +1,2962 @@
+{
+  "SchemaVersion": 1,
+  "Passed": true,
+  "Scope": "Read-only mapping audit of all 48 previously recorded supported-family identities and controls, plus exact byte comparison of 11 portrait bundles against build26073097. No game launch or game writes.",
+  "CurrentBuildId": "26237817",
+  "SourceBuildId": "26237817",
+  "SourceGameVersion": "release_1.0.6001.0",
+  "VersionLabelSource": "Current globalgamemanagers PlayerSettings.bundleVersion parsed by UnityPy",
+  "PreviousBuildId": "26073097",
+  "PreviousEvidencePath": "verification/game-resources-build26073097/resource-graph.json",
+  "PreviousEvidenceSHA256": "F230A33220EB650035A4A8B09A828BAE6E30513CA38E1CD1CF8C64732C49DBAD",
+  "CharacterCount": 7,
+  "RecordCount": 48,
+  "Characters": [
+    {
+      "CharacterId": "player",
+      "Records": [
+        {
+          "Id": "playerRight",
+          "ObjectName": "主角_右",
+          "Allowed": false,
+          "PreviousPathId": 5048,
+          "CurrentPathId": 5071,
+          "PreviousCount": 1,
+          "CurrentCount": 1,
+          "MappingsUnchanged": true,
+          "CanonicalIdsAllPresent": true,
+          "Mappings": [
+            {
+              "Expression": "normal",
+              "CanonicalPath": "assets/__project/images/characters/player_主角/shadow_right.png",
+              "Count": 1
+            }
+          ],
+          "Added": [],
+          "Removed": [],
+          "Passed": true
+        },
+        {
+          "Id": "player_unknown",
+          "ObjectName": "主角_問號",
+          "Allowed": false,
+          "PreviousPathId": 5049,
+          "CurrentPathId": 5072,
+          "PreviousCount": 1,
+          "CurrentCount": 1,
+          "MappingsUnchanged": true,
+          "CanonicalIdsAllPresent": true,
+          "Mappings": [
+            {
+              "Expression": "normal",
+              "CanonicalPath": "assets/__project/images/characters/player_主角/back.png",
+              "Count": 1
+            }
+          ],
+          "Added": [],
+          "Removed": [],
+          "Passed": true
+        },
+        {
+          "Id": "playerLeft",
+          "ObjectName": "主角_左",
+          "Allowed": false,
+          "PreviousPathId": 5050,
+          "CurrentPathId": 5073,
+          "PreviousCount": 1,
+          "CurrentCount": 1,
+          "MappingsUnchanged": true,
+          "CanonicalIdsAllPresent": true,
+          "Mappings": [
+            {
+              "Expression": "normal",
+              "CanonicalPath": "assets/__project/images/characters/player_主角/shadow_left.png",
+              "Count": 1
+            }
+          ],
+          "Added": [],
+          "Removed": [],
+          "Passed": true
+        },
+        {
+          "Id": "player_old",
+          "ObjectName": "主角_老",
+          "Allowed": false,
+          "PreviousPathId": 5051,
+          "CurrentPathId": 5074,
+          "PreviousCount": 1,
+          "CurrentCount": 1,
+          "MappingsUnchanged": true,
+          "CanonicalIdsAllPresent": true,
+          "Mappings": [
+            {
+              "Expression": "normal",
+              "CanonicalPath": "assets/__project/images/characters/player_主角_老/old.png",
+              "Count": 1
+            }
+          ],
+          "Added": [],
+          "Removed": [],
+          "Passed": true
+        },
+        {
+          "Id": "player_section",
+          "ObjectName": "主角_門派",
+          "Allowed": false,
+          "PreviousPathId": 5052,
+          "CurrentPathId": 5075,
+          "PreviousCount": 10,
+          "CurrentCount": 10,
+          "MappingsUnchanged": true,
+          "CanonicalIdsAllPresent": true,
+          "Mappings": [
+            {
+              "Expression": "normal",
+              "CanonicalPath": "assets/__project/images/characters/player_主角/normal.png",
+              "Count": 1
+            },
+            {
+              "Expression": "special1",
+              "CanonicalPath": "assets/__project/images/characters/player_主角_門派/special_1.png",
+              "Count": 1
+            },
+            {
+              "Expression": "special2",
+              "CanonicalPath": "assets/__project/images/characters/player_主角_門派/special_2.png",
+              "Count": 1
+            },
+            {
+              "Expression": "special3",
+              "CanonicalPath": "assets/__project/images/characters/player_主角_門派/special_3.png",
+              "Count": 1
+            },
+            {
+              "Expression": "special4",
+              "CanonicalPath": "assets/__project/images/characters/player_主角_門派/special_4.png",
+              "Count": 1
+            },
+            {
+              "Expression": "special5",
+              "CanonicalPath": "assets/__project/images/characters/player_主角_門派/special_5.png",
+              "Count": 1
+            },
+            {
+              "Expression": "special6",
+              "CanonicalPath": "assets/__project/images/characters/player_主角_門派/special_6.png",
+              "Count": 1
+            },
+            {
+              "Expression": "special7",
+              "CanonicalPath": "assets/__project/images/characters/player_主角_門派/special_7.png",
+              "Count": 1
+            },
+            {
+              "Expression": "special8",
+              "CanonicalPath": "assets/__project/images/characters/player_主角_門派/special_8.png",
+              "Count": 1
+            },
+            {
+              "Expression": "special9",
+              "CanonicalPath": "assets/__project/images/characters/player_主角_門派/special_9.png",
+              "Count": 1
+            }
+          ],
+          "Added": [],
+          "Removed": [],
+          "Passed": true
+        },
+        {
+          "Id": "player_soul",
+          "ObjectName": "主角_魂",
+          "Allowed": false,
+          "PreviousPathId": 5053,
+          "CurrentPathId": 5076,
+          "PreviousCount": 1,
+          "CurrentCount": 1,
+          "MappingsUnchanged": true,
+          "CanonicalIdsAllPresent": true,
+          "Mappings": [
+            {
+              "Expression": "normal",
+              "CanonicalPath": "assets/__project/images/characters/player_主角/soul.png",
+              "Count": 1
+            }
+          ],
+          "Added": [],
+          "Removed": [],
+          "Passed": true
+        },
+        {
+          "Id": "player_imagine",
+          "ObjectName": "主角_魔",
+          "Allowed": false,
+          "PreviousPathId": 5054,
+          "CurrentPathId": 5077,
+          "PreviousCount": 1,
+          "CurrentCount": 1,
+          "MappingsUnchanged": true,
+          "CanonicalIdsAllPresent": true,
+          "Mappings": [
+            {
+              "Expression": "normal",
+              "CanonicalPath": "assets/__project/images/characters/player_主角_魔/normal.png",
+              "Count": 1
+            }
+          ],
+          "Added": [],
+          "Removed": [],
+          "Passed": true
+        },
+        {
+          "Id": "mom1",
+          "ObjectName": "主角媽",
+          "Allowed": false,
+          "PreviousPathId": 5055,
+          "CurrentPathId": 5078,
+          "PreviousCount": 1,
+          "CurrentCount": 1,
+          "MappingsUnchanged": true,
+          "CanonicalIdsAllPresent": true,
+          "Mappings": [
+            {
+              "Expression": "normal",
+              "CanonicalPath": "assets/__project/images/characters/female_女路人/mom1_normal.png",
+              "Count": 1
+            }
+          ],
+          "Added": [],
+          "Removed": [],
+          "Passed": true
+        },
+        {
+          "Id": "player",
+          "ObjectName": "唐門_主角",
+          "Allowed": true,
+          "PreviousPathId": 5088,
+          "CurrentPathId": 5111,
+          "PreviousCount": 59,
+          "CurrentCount": 59,
+          "MappingsUnchanged": true,
+          "CanonicalIdsAllPresent": true,
+          "Mappings": [
+            {
+              "Expression": "angry1",
+              "CanonicalPath": "assets/__project/images/characters/player_主角/angry1.png",
+              "Count": 1
+            },
+            {
+              "Expression": "angry2",
+              "CanonicalPath": "assets/__project/images/characters/player_主角/angry2.png",
+              "Count": 1
+            },
+            {
+              "Expression": "angry3",
+              "CanonicalPath": "assets/__project/images/characters/player_主角/angry3.png",
+              "Count": 1
+            },
+            {
+              "Expression": "blood",
+              "CanonicalPath": "assets/__project/images/characters/player_主角/blood.png",
+              "Count": 1
+            },
+            {
+              "Expression": "blood2",
+              "CanonicalPath": "assets/__project/images/characters/player_主角/blood_no_weapon.png",
+              "Count": 1
+            },
+            {
+              "Expression": "blood_laugh1",
+              "CanonicalPath": "assets/__project/images/characters/player_主角/blood_laugh1.png",
+              "Count": 1
+            },
+            {
+              "Expression": "blood_laugh2",
+              "CanonicalPath": "assets/__project/images/characters/player_主角/blood_no_weapon_laugh1.png",
+              "Count": 1
+            },
+            {
+              "Expression": "blood_nervous1",
+              "CanonicalPath": "assets/__project/images/characters/player_主角/blood_nervous1.png",
+              "Count": 1
+            },
+            {
+              "Expression": "caught",
+              "CanonicalPath": "assets/__project/images/characters/player_主角/caught.png",
+              "Count": 1
+            },
+            {
+              "Expression": "close_eye_laugh",
+              "CanonicalPath": "assets/__project/images/characters/player_主角/close_eye_laugh.png",
+              "Count": 1
+            },
+            {
+              "Expression": "die",
+              "CanonicalPath": "assets/__project/images/characters/player_主角/die.png",
+              "Count": 1
+            },
+            {
+              "Expression": "doubt",
+              "CanonicalPath": "assets/__project/images/characters/player_主角/doubt.png",
+              "Count": 1
+            },
+            {
+              "Expression": "gloomy1",
+              "CanonicalPath": "assets/__project/images/characters/player_主角/gloomy2.png",
+              "Count": 1
+            },
+            {
+              "Expression": "gloomy2",
+              "CanonicalPath": "assets/__project/images/characters/player_主角/gloomy2.png",
+              "Count": 1
+            },
+            {
+              "Expression": "god_thunder",
+              "CanonicalPath": "assets/__project/images/characters/player_主角/god_thunder.png",
+              "Count": 1
+            },
+            {
+              "Expression": "god_thunder_nervous1",
+              "CanonicalPath": "assets/__project/images/characters/player_主角/god_thunder.png",
+              "Count": 1
+            },
+            {
+              "Expression": "haggard",
+              "CanonicalPath": "assets/__project/images/characters/player_主角/normal.png",
+              "Count": 1
+            },
+            {
+              "Expression": "hurt",
+              "CanonicalPath": "assets/__project/images/characters/player_主角/hurt.png",
+              "Count": 1
+            },
+            {
+              "Expression": "hurt2",
+              "CanonicalPath": "assets/__project/images/characters/player_主角/hurt2.png",
+              "Count": 1
+            },
+            {
+              "Expression": "laugh1",
+              "CanonicalPath": "assets/__project/images/characters/player_主角/laugh1.png",
+              "Count": 1
+            },
+            {
+              "Expression": "laugh2",
+              "CanonicalPath": "assets/__project/images/characters/player_主角/laugh2.png",
+              "Count": 1
+            },
+            {
+              "Expression": "nervous1",
+              "CanonicalPath": "assets/__project/images/characters/player_主角/nervous1.png",
+              "Count": 1
+            },
+            {
+              "Expression": "nervous2",
+              "CanonicalPath": "assets/__project/images/characters/player_主角/nervous2.png",
+              "Count": 1
+            },
+            {
+              "Expression": "nervous3",
+              "CanonicalPath": "assets/__project/images/characters/player_主角/nervous3.png",
+              "Count": 1
+            },
+            {
+              "Expression": "nervous4",
+              "CanonicalPath": "assets/__project/images/characters/player_主角/nervous1.png",
+              "Count": 1
+            },
+            {
+              "Expression": "normal",
+              "CanonicalPath": "assets/__project/images/characters/player_主角/normal.png",
+              "Count": 1
+            },
+            {
+              "Expression": "revel",
+              "CanonicalPath": "assets/__project/images/characters/player_主角/revel.png",
+              "Count": 1
+            },
+            {
+              "Expression": "sad1",
+              "CanonicalPath": "assets/__project/images/characters/player_主角/sad1.png",
+              "Count": 1
+            },
+            {
+              "Expression": "sad2",
+              "CanonicalPath": "assets/__project/images/characters/player_主角/sad1.png",
+              "Count": 1
+            },
+            {
+              "Expression": "shake1",
+              "CanonicalPath": "assets/__project/images/characters/player_主角/shake.png",
+              "Count": 1
+            },
+            {
+              "Expression": "shake2",
+              "CanonicalPath": "assets/__project/images/characters/player_主角/shake2.png",
+              "Count": 1
+            },
+            {
+              "Expression": "shock",
+              "CanonicalPath": "assets/__project/images/characters/player_主角/shock.png",
+              "Count": 1
+            },
+            {
+              "Expression": "shy",
+              "CanonicalPath": "assets/__project/images/characters/player_主角/nervous3.png",
+              "Count": 1
+            },
+            {
+              "Expression": "silent",
+              "CanonicalPath": "assets/__project/images/characters/player_主角/nervous1.png",
+              "Count": 1
+            },
+            {
+              "Expression": "special1",
+              "CanonicalPath": "assets/__project/images/characters/player_主角/special1.png",
+              "Count": 1
+            },
+            {
+              "Expression": "special10",
+              "CanonicalPath": "assets/__project/images/characters/player_主角/hurt_fist.png",
+              "Count": 1
+            },
+            {
+              "Expression": "special11",
+              "CanonicalPath": "assets/__project/images/characters/player_主角/head.png",
+              "Count": 1
+            },
+            {
+              "Expression": "special12",
+              "CanonicalPath": "assets/__project/images/characters/player_主角/blood_no_weapon.png",
+              "Count": 1
+            },
+            {
+              "Expression": "special13",
+              "CanonicalPath": "assets/__project/images/characters/player_主角/caught.png",
+              "Count": 1
+            },
+            {
+              "Expression": "special14",
+              "CanonicalPath": "assets/__project/images/characters/player_主角/close_eye_nervous2.png",
+              "Count": 1
+            },
+            {
+              "Expression": "special15",
+              "CanonicalPath": "assets/__project/images/characters/player_主角/blood_nervous1.png",
+              "Count": 1
+            },
+            {
+              "Expression": "special16",
+              "CanonicalPath": "assets/__project/images/characters/player_主角/hero_landing.png",
+              "Count": 1
+            },
+            {
+              "Expression": "special17",
+              "CanonicalPath": "assets/__project/images/characters/player_主角/oraora.png",
+              "Count": 1
+            },
+            {
+              "Expression": "special18",
+              "CanonicalPath": "assets/__project/images/characters/player_主角/fist_north_star.png",
+              "Count": 1
+            },
+            {
+              "Expression": "special19",
+              "CanonicalPath": "assets/__project/images/characters/player_主角/eye_mask_nervous1.png",
+              "Count": 1
+            },
+            {
+              "Expression": "special2",
+              "CanonicalPath": "assets/__project/images/characters/player_主角/close_eye.png",
+              "Count": 1
+            },
+            {
+              "Expression": "special20",
+              "CanonicalPath": "assets/__project/images/characters/player_主角/eye_mask_nervous2.png",
+              "Count": 1
+            },
+            {
+              "Expression": "special21",
+              "CanonicalPath": "assets/__project/images/characters/player_主角/suck4.png",
+              "Count": 1
+            },
+            {
+              "Expression": "special3",
+              "CanonicalPath": "assets/__project/images/characters/player_主角/close_eye_nervous.png",
+              "Count": 1
+            },
+            {
+              "Expression": "special4",
+              "CanonicalPath": "assets/__project/images/characters/player_主角/determined.png",
+              "Count": 1
+            },
+            {
+              "Expression": "special5",
+              "CanonicalPath": "assets/__project/images/characters/player_主角/close_eye_powder.png",
+              "Count": 1
+            },
+            {
+              "Expression": "special6",
+              "CanonicalPath": "assets/__project/images/characters/player_主角/mud.png",
+              "Count": 1
+            },
+            {
+              "Expression": "special7",
+              "CanonicalPath": "assets/__project/images/characters/player_主角/mask.png",
+              "Count": 1
+            },
+            {
+              "Expression": "special8",
+              "CanonicalPath": "assets/__project/images/characters/player_主角/stupid.png",
+              "Count": 1
+            },
+            {
+              "Expression": "special9",
+              "CanonicalPath": "assets/__project/images/characters/player_主角/blood.png",
+              "Count": 1
+            },
+            {
+              "Expression": "suck1",
+              "CanonicalPath": "assets/__project/images/characters/player_主角/suck1.png",
+              "Count": 1
+            },
+            {
+              "Expression": "suck2",
+              "CanonicalPath": "assets/__project/images/characters/player_主角/revel.png",
+              "Count": 1
+            },
+            {
+              "Expression": "suck3",
+              "CanonicalPath": "assets/__project/images/characters/player_主角/suck3.png",
+              "Count": 1
+            },
+            {
+              "Expression": "suck4",
+              "CanonicalPath": "assets/__project/images/characters/player_主角/suck1.png",
+              "Count": 1
+            }
+          ],
+          "Added": [],
+          "Removed": [],
+          "Passed": true
+        },
+        {
+          "Id": "player_young",
+          "ObjectName": "唐門_主角_少年",
+          "Allowed": true,
+          "PreviousPathId": 5089,
+          "CurrentPathId": 5112,
+          "PreviousCount": 1,
+          "CurrentCount": 1,
+          "MappingsUnchanged": true,
+          "CanonicalIdsAllPresent": true,
+          "Mappings": [
+            {
+              "Expression": "normal",
+              "CanonicalPath": "assets/__project/images/characters/player_主角/normal.png",
+              "Count": 1
+            }
+          ],
+          "Added": [],
+          "Removed": [],
+          "Passed": true
+        },
+        {
+          "Id": "player_child",
+          "ObjectName": "唐門_主角_幼年",
+          "Allowed": false,
+          "PreviousPathId": 5090,
+          "CurrentPathId": 5113,
+          "PreviousCount": 3,
+          "CurrentCount": 3,
+          "MappingsUnchanged": true,
+          "CanonicalIdsAllPresent": true,
+          "Mappings": [
+            {
+              "Expression": "normal",
+              "CanonicalPath": "assets/__project/images/characters/player_主角_幼年/normal.png",
+              "Count": 1
+            },
+            {
+              "Expression": "sad2",
+              "CanonicalPath": "assets/__project/images/characters/player_主角_幼年/sad1.png",
+              "Count": 1
+            },
+            {
+              "Expression": "special1",
+              "CanonicalPath": "assets/__project/images/characters/player_主角_幼年/laugh3.png",
+              "Count": 1
+            }
+          ],
+          "Added": [],
+          "Removed": [],
+          "Passed": true
+        },
+        {
+          "Id": "player",
+          "ObjectName": "唐門_主角_自戀",
+          "Allowed": true,
+          "PreviousPathId": 5091,
+          "CurrentPathId": 5114,
+          "PreviousCount": 59,
+          "CurrentCount": 59,
+          "MappingsUnchanged": true,
+          "CanonicalIdsAllPresent": true,
+          "Mappings": [
+            {
+              "Expression": "angry1",
+              "CanonicalPath": "assets/__project/images/characters/player_自戀/angry1.png",
+              "Count": 1
+            },
+            {
+              "Expression": "angry2",
+              "CanonicalPath": "assets/__project/images/characters/player_主角/angry2.png",
+              "Count": 1
+            },
+            {
+              "Expression": "angry3",
+              "CanonicalPath": "assets/__project/images/characters/player_主角/angry3.png",
+              "Count": 1
+            },
+            {
+              "Expression": "blood",
+              "CanonicalPath": "assets/__project/images/characters/player_主角/blood.png",
+              "Count": 1
+            },
+            {
+              "Expression": "blood2",
+              "CanonicalPath": "assets/__project/images/characters/player_主角/blood_no_weapon.png",
+              "Count": 1
+            },
+            {
+              "Expression": "blood_laugh1",
+              "CanonicalPath": "assets/__project/images/characters/player_主角/blood_laugh1.png",
+              "Count": 1
+            },
+            {
+              "Expression": "blood_laugh2",
+              "CanonicalPath": "assets/__project/images/characters/player_主角/blood_no_weapon_laugh1.png",
+              "Count": 1
+            },
+            {
+              "Expression": "blood_nervous1",
+              "CanonicalPath": "assets/__project/images/characters/player_主角/blood_nervous1.png",
+              "Count": 1
+            },
+            {
+              "Expression": "caught",
+              "CanonicalPath": "assets/__project/images/characters/player_主角/caught.png",
+              "Count": 1
+            },
+            {
+              "Expression": "close_eye_laugh",
+              "CanonicalPath": "assets/__project/images/characters/player_主角/close_eye_laugh.png",
+              "Count": 1
+            },
+            {
+              "Expression": "die",
+              "CanonicalPath": "assets/__project/images/characters/player_主角/die.png",
+              "Count": 1
+            },
+            {
+              "Expression": "doubt",
+              "CanonicalPath": "assets/__project/images/characters/player_主角/doubt.png",
+              "Count": 1
+            },
+            {
+              "Expression": "gloomy1",
+              "CanonicalPath": "assets/__project/images/characters/player_主角/gloomy2.png",
+              "Count": 1
+            },
+            {
+              "Expression": "gloomy2",
+              "CanonicalPath": "assets/__project/images/characters/player_主角/gloomy2.png",
+              "Count": 1
+            },
+            {
+              "Expression": "god_thunder",
+              "CanonicalPath": "assets/__project/images/characters/player_主角/god_thunder.png",
+              "Count": 1
+            },
+            {
+              "Expression": "god_thunder_nervous1",
+              "CanonicalPath": "assets/__project/images/characters/player_主角/god_thunder.png",
+              "Count": 1
+            },
+            {
+              "Expression": "haggard",
+              "CanonicalPath": "assets/__project/images/characters/player_主角/normal.png",
+              "Count": 1
+            },
+            {
+              "Expression": "hurt",
+              "CanonicalPath": "assets/__project/images/characters/player_主角/hurt.png",
+              "Count": 1
+            },
+            {
+              "Expression": "hurt2",
+              "CanonicalPath": "assets/__project/images/characters/player_主角/hurt2.png",
+              "Count": 1
+            },
+            {
+              "Expression": "laugh1",
+              "CanonicalPath": "assets/__project/images/characters/player_自戀/laugh1.png",
+              "Count": 1
+            },
+            {
+              "Expression": "laugh2",
+              "CanonicalPath": "assets/__project/images/characters/player_主角/laugh2.png",
+              "Count": 1
+            },
+            {
+              "Expression": "nervous1",
+              "CanonicalPath": "assets/__project/images/characters/player_自戀/nervous1.png",
+              "Count": 1
+            },
+            {
+              "Expression": "nervous2",
+              "CanonicalPath": "assets/__project/images/characters/player_主角/nervous2.png",
+              "Count": 1
+            },
+            {
+              "Expression": "nervous3",
+              "CanonicalPath": "assets/__project/images/characters/player_自戀/nervous3.png",
+              "Count": 1
+            },
+            {
+              "Expression": "nervous4",
+              "CanonicalPath": "assets/__project/images/characters/player_自戀/nervous1.png",
+              "Count": 1
+            },
+            {
+              "Expression": "normal",
+              "CanonicalPath": "assets/__project/images/characters/player_自戀/normal.png",
+              "Count": 1
+            },
+            {
+              "Expression": "revel",
+              "CanonicalPath": "assets/__project/images/characters/player_主角/revel.png",
+              "Count": 1
+            },
+            {
+              "Expression": "sad1",
+              "CanonicalPath": "assets/__project/images/characters/player_主角/sad1.png",
+              "Count": 1
+            },
+            {
+              "Expression": "sad2",
+              "CanonicalPath": "assets/__project/images/characters/player_主角/sad1.png",
+              "Count": 1
+            },
+            {
+              "Expression": "shake1",
+              "CanonicalPath": "assets/__project/images/characters/player_主角/shake.png",
+              "Count": 1
+            },
+            {
+              "Expression": "shake2",
+              "CanonicalPath": "assets/__project/images/characters/player_主角/shake2.png",
+              "Count": 1
+            },
+            {
+              "Expression": "shock",
+              "CanonicalPath": "assets/__project/images/characters/player_主角/shock.png",
+              "Count": 1
+            },
+            {
+              "Expression": "shy",
+              "CanonicalPath": "assets/__project/images/characters/player_自戀/nervous3.png",
+              "Count": 1
+            },
+            {
+              "Expression": "silent",
+              "CanonicalPath": "assets/__project/images/characters/player_自戀/nervous1.png",
+              "Count": 1
+            },
+            {
+              "Expression": "special1",
+              "CanonicalPath": "assets/__project/images/characters/player_主角/special1.png",
+              "Count": 1
+            },
+            {
+              "Expression": "special10",
+              "CanonicalPath": "assets/__project/images/characters/player_主角/hurt_fist.png",
+              "Count": 1
+            },
+            {
+              "Expression": "special11",
+              "CanonicalPath": "assets/__project/images/characters/player_主角/head.png",
+              "Count": 1
+            },
+            {
+              "Expression": "special12",
+              "CanonicalPath": "assets/__project/images/characters/player_主角/blood_no_weapon.png",
+              "Count": 1
+            },
+            {
+              "Expression": "special13",
+              "CanonicalPath": "assets/__project/images/characters/player_主角/caught.png",
+              "Count": 1
+            },
+            {
+              "Expression": "special14",
+              "CanonicalPath": "assets/__project/images/characters/player_主角/close_eye_nervous2.png",
+              "Count": 1
+            },
+            {
+              "Expression": "special15",
+              "CanonicalPath": "assets/__project/images/characters/player_主角/blood_nervous1.png",
+              "Count": 1
+            },
+            {
+              "Expression": "special16",
+              "CanonicalPath": "assets/__project/images/characters/player_主角/hero_landing.png",
+              "Count": 1
+            },
+            {
+              "Expression": "special17",
+              "CanonicalPath": "assets/__project/images/characters/player_主角/oraora.png",
+              "Count": 1
+            },
+            {
+              "Expression": "special18",
+              "CanonicalPath": "assets/__project/images/characters/player_主角/fist_north_star.png",
+              "Count": 1
+            },
+            {
+              "Expression": "special19",
+              "CanonicalPath": "assets/__project/images/characters/player_主角/eye_mask_nervous1.png",
+              "Count": 1
+            },
+            {
+              "Expression": "special2",
+              "CanonicalPath": "assets/__project/images/characters/player_主角/close_eye.png",
+              "Count": 1
+            },
+            {
+              "Expression": "special20",
+              "CanonicalPath": "assets/__project/images/characters/player_主角/eye_mask_nervous2.png",
+              "Count": 1
+            },
+            {
+              "Expression": "special21",
+              "CanonicalPath": "assets/__project/images/characters/player_主角/suck4.png",
+              "Count": 1
+            },
+            {
+              "Expression": "special3",
+              "CanonicalPath": "assets/__project/images/characters/player_主角/close_eye_nervous.png",
+              "Count": 1
+            },
+            {
+              "Expression": "special4",
+              "CanonicalPath": "assets/__project/images/characters/player_主角/determined.png",
+              "Count": 1
+            },
+            {
+              "Expression": "special5",
+              "CanonicalPath": "assets/__project/images/characters/player_主角/close_eye_powder.png",
+              "Count": 1
+            },
+            {
+              "Expression": "special6",
+              "CanonicalPath": "assets/__project/images/characters/player_主角/mud.png",
+              "Count": 1
+            },
+            {
+              "Expression": "special7",
+              "CanonicalPath": "assets/__project/images/characters/player_主角/mask.png",
+              "Count": 1
+            },
+            {
+              "Expression": "special8",
+              "CanonicalPath": "assets/__project/images/characters/player_主角/stupid.png",
+              "Count": 1
+            },
+            {
+              "Expression": "special9",
+              "CanonicalPath": "assets/__project/images/characters/player_主角/blood.png",
+              "Count": 1
+            },
+            {
+              "Expression": "suck1",
+              "CanonicalPath": "assets/__project/images/characters/player_主角/suck1.png",
+              "Count": 1
+            },
+            {
+              "Expression": "suck2",
+              "CanonicalPath": "assets/__project/images/characters/player_主角/revel.png",
+              "Count": 1
+            },
+            {
+              "Expression": "suck3",
+              "CanonicalPath": "assets/__project/images/characters/player_主角/suck3.png",
+              "Count": 1
+            },
+            {
+              "Expression": "suck4",
+              "CanonicalPath": "assets/__project/images/characters/player_主角/suck1.png",
+              "Count": 1
+            }
+          ],
+          "Added": [],
+          "Removed": [],
+          "Passed": true
+        },
+        {
+          "Id": "player_ass",
+          "ObjectName": "唐門_主角屁股",
+          "Allowed": false,
+          "PreviousPathId": 5092,
+          "CurrentPathId": 5115,
+          "PreviousCount": 1,
+          "CurrentCount": 1,
+          "MappingsUnchanged": true,
+          "CanonicalIdsAllPresent": true,
+          "Mappings": [
+            {
+              "Expression": "normal",
+              "CanonicalPath": "assets/__project/images/characters/player_主角/normal.png",
+              "Count": 1
+            }
+          ],
+          "Added": [],
+          "Removed": [],
+          "Passed": true
+        },
+        {
+          "Id": "player_hand",
+          "ObjectName": "唐門_主角手",
+          "Allowed": false,
+          "PreviousPathId": 5093,
+          "CurrentPathId": 5116,
+          "PreviousCount": 1,
+          "CurrentCount": 1,
+          "MappingsUnchanged": true,
+          "CanonicalIdsAllPresent": true,
+          "Mappings": [
+            {
+              "Expression": "normal",
+              "CanonicalPath": "assets/__project/images/characters/player_主角/normal.png",
+              "Count": 1
+            }
+          ],
+          "Added": [],
+          "Removed": [],
+          "Passed": true
+        }
+      ],
+      "Passed": true,
+      "AllowedExistingMappingsPreserved": true
+    },
+    {
+      "CharacterId": "tang-buyi",
+      "Records": [
+        {
+          "Id": "brother1",
+          "ObjectName": "唐門_大師兄",
+          "Allowed": true,
+          "PreviousPathId": 5105,
+          "CurrentPathId": 5128,
+          "PreviousCount": 18,
+          "CurrentCount": 18,
+          "MappingsUnchanged": true,
+          "CanonicalIdsAllPresent": true,
+          "Mappings": [
+            {
+              "Expression": "angry1",
+              "CanonicalPath": "assets/__project/images/characters/brother1/angry1.png",
+              "Count": 1
+            },
+            {
+              "Expression": "angry2",
+              "CanonicalPath": "assets/__project/images/characters/brother1/angry2.png",
+              "Count": 1
+            },
+            {
+              "Expression": "angry3",
+              "CanonicalPath": "assets/__project/images/characters/brother1/angry3.png",
+              "Count": 1
+            },
+            {
+              "Expression": "hurt",
+              "CanonicalPath": "assets/__project/images/characters/brother1/hurt.png",
+              "Count": 1
+            },
+            {
+              "Expression": "hurt2",
+              "CanonicalPath": "assets/__project/images/characters/brother1/hurt.png",
+              "Count": 1
+            },
+            {
+              "Expression": "laugh1",
+              "CanonicalPath": "assets/__project/images/characters/brother1/laugh1.png",
+              "Count": 1
+            },
+            {
+              "Expression": "laugh2",
+              "CanonicalPath": "assets/__project/images/characters/brother1/laugh2.png",
+              "Count": 1
+            },
+            {
+              "Expression": "nervous1",
+              "CanonicalPath": "assets/__project/images/characters/brother1/nervous1.png",
+              "Count": 1
+            },
+            {
+              "Expression": "nervous2",
+              "CanonicalPath": "assets/__project/images/characters/brother1/nervous2.png",
+              "Count": 1
+            },
+            {
+              "Expression": "nervous3",
+              "CanonicalPath": "assets/__project/images/characters/brother1/nervous3.png",
+              "Count": 1
+            },
+            {
+              "Expression": "normal",
+              "CanonicalPath": "assets/__project/images/characters/brother1/normal.png",
+              "Count": 1
+            },
+            {
+              "Expression": "serious",
+              "CanonicalPath": "assets/__project/images/characters/brother1/serious.png",
+              "Count": 1
+            },
+            {
+              "Expression": "shock",
+              "CanonicalPath": "assets/__project/images/characters/brother1/shock.png",
+              "Count": 1
+            },
+            {
+              "Expression": "silent",
+              "CanonicalPath": "assets/__project/images/characters/brother1/nervous1.png",
+              "Count": 1
+            },
+            {
+              "Expression": "special1",
+              "CanonicalPath": "assets/__project/images/characters/brother1/special1.png",
+              "Count": 1
+            },
+            {
+              "Expression": "special2",
+              "CanonicalPath": "assets/__project/images/characters/brother1/hat.png",
+              "Count": 1
+            },
+            {
+              "Expression": "special3",
+              "CanonicalPath": "assets/__project/images/characters/brother1/hand.png",
+              "Count": 1
+            },
+            {
+              "Expression": "special4",
+              "CanonicalPath": "assets/__project/images/characters/brother1/suck.png",
+              "Count": 1
+            }
+          ],
+          "Added": [],
+          "Removed": [],
+          "Passed": true
+        },
+        {
+          "Id": "brother1_2",
+          "ObjectName": "唐門_大師兄2",
+          "Allowed": true,
+          "PreviousPathId": 5106,
+          "CurrentPathId": 5129,
+          "PreviousCount": 18,
+          "CurrentCount": 18,
+          "MappingsUnchanged": true,
+          "CanonicalIdsAllPresent": true,
+          "Mappings": [
+            {
+              "Expression": "angry1",
+              "CanonicalPath": "assets/__project/images/characters/brother1/angry1.png",
+              "Count": 1
+            },
+            {
+              "Expression": "angry2",
+              "CanonicalPath": "assets/__project/images/characters/brother1/angry2.png",
+              "Count": 1
+            },
+            {
+              "Expression": "angry3",
+              "CanonicalPath": "assets/__project/images/characters/brother1/angry3.png",
+              "Count": 1
+            },
+            {
+              "Expression": "hurt",
+              "CanonicalPath": "assets/__project/images/characters/brother1/hurt.png",
+              "Count": 1
+            },
+            {
+              "Expression": "hurt2",
+              "CanonicalPath": "assets/__project/images/characters/brother1/hurt.png",
+              "Count": 1
+            },
+            {
+              "Expression": "laugh1",
+              "CanonicalPath": "assets/__project/images/characters/brother1/laugh1.png",
+              "Count": 1
+            },
+            {
+              "Expression": "laugh2",
+              "CanonicalPath": "assets/__project/images/characters/brother1/laugh2.png",
+              "Count": 1
+            },
+            {
+              "Expression": "nervous1",
+              "CanonicalPath": "assets/__project/images/characters/brother1/nervous1.png",
+              "Count": 1
+            },
+            {
+              "Expression": "nervous2",
+              "CanonicalPath": "assets/__project/images/characters/brother1/nervous2.png",
+              "Count": 1
+            },
+            {
+              "Expression": "nervous3",
+              "CanonicalPath": "assets/__project/images/characters/brother1/nervous3.png",
+              "Count": 1
+            },
+            {
+              "Expression": "normal",
+              "CanonicalPath": "assets/__project/images/characters/brother1/normal.png",
+              "Count": 1
+            },
+            {
+              "Expression": "serious",
+              "CanonicalPath": "assets/__project/images/characters/brother1/serious.png",
+              "Count": 1
+            },
+            {
+              "Expression": "shock",
+              "CanonicalPath": "assets/__project/images/characters/brother1/shock.png",
+              "Count": 1
+            },
+            {
+              "Expression": "silent",
+              "CanonicalPath": "assets/__project/images/characters/brother1/nervous1.png",
+              "Count": 1
+            },
+            {
+              "Expression": "special1",
+              "CanonicalPath": "assets/__project/images/characters/brother1/special1.png",
+              "Count": 1
+            },
+            {
+              "Expression": "special2",
+              "CanonicalPath": "assets/__project/images/characters/brother1/hat.png",
+              "Count": 1
+            },
+            {
+              "Expression": "special3",
+              "CanonicalPath": "assets/__project/images/characters/brother1/hand.png",
+              "Count": 1
+            },
+            {
+              "Expression": "special4",
+              "CanonicalPath": "assets/__project/images/characters/brother1/suck.png",
+              "Count": 1
+            }
+          ],
+          "Added": [],
+          "Removed": [],
+          "Passed": true
+        },
+        {
+          "Id": "brother1_young",
+          "ObjectName": "唐門_大師兄_少年",
+          "Allowed": false,
+          "PreviousPathId": 5107,
+          "CurrentPathId": 5130,
+          "PreviousCount": 1,
+          "CurrentCount": 1,
+          "MappingsUnchanged": true,
+          "CanonicalIdsAllPresent": true,
+          "Mappings": [
+            {
+              "Expression": "normal",
+              "CanonicalPath": "assets/__project/images/characters/brother1/normal.png",
+              "Count": 1
+            }
+          ],
+          "Added": [],
+          "Removed": [],
+          "Passed": true
+        },
+        {
+          "Id": "brother1_1",
+          "ObjectName": "唐門_大師兄_蒙面",
+          "Allowed": false,
+          "PreviousPathId": 5108,
+          "CurrentPathId": 5131,
+          "PreviousCount": 1,
+          "CurrentCount": 1,
+          "MappingsUnchanged": true,
+          "CanonicalIdsAllPresent": true,
+          "Mappings": [
+            {
+              "Expression": "normal",
+              "CanonicalPath": "assets/__project/images/characters/mask1/normal.png",
+              "Count": 1
+            }
+          ],
+          "Added": [],
+          "Removed": [],
+          "Passed": true
+        },
+        {
+          "Id": "brother1_0",
+          "ObjectName": "唐門_大師兄_隱",
+          "Allowed": true,
+          "PreviousPathId": 5109,
+          "CurrentPathId": 5132,
+          "PreviousCount": 18,
+          "CurrentCount": 18,
+          "MappingsUnchanged": true,
+          "CanonicalIdsAllPresent": true,
+          "Mappings": [
+            {
+              "Expression": "angry1",
+              "CanonicalPath": "assets/__project/images/characters/brother1/angry1.png",
+              "Count": 1
+            },
+            {
+              "Expression": "angry2",
+              "CanonicalPath": "assets/__project/images/characters/brother1/angry2.png",
+              "Count": 1
+            },
+            {
+              "Expression": "angry3",
+              "CanonicalPath": "assets/__project/images/characters/brother1/angry3.png",
+              "Count": 1
+            },
+            {
+              "Expression": "hurt",
+              "CanonicalPath": "assets/__project/images/characters/brother1/hurt.png",
+              "Count": 1
+            },
+            {
+              "Expression": "hurt2",
+              "CanonicalPath": "assets/__project/images/characters/brother1/hurt.png",
+              "Count": 1
+            },
+            {
+              "Expression": "laugh1",
+              "CanonicalPath": "assets/__project/images/characters/brother1/laugh1.png",
+              "Count": 1
+            },
+            {
+              "Expression": "laugh2",
+              "CanonicalPath": "assets/__project/images/characters/brother1/laugh2.png",
+              "Count": 1
+            },
+            {
+              "Expression": "nervous1",
+              "CanonicalPath": "assets/__project/images/characters/brother1/nervous1.png",
+              "Count": 1
+            },
+            {
+              "Expression": "nervous2",
+              "CanonicalPath": "assets/__project/images/characters/brother1/nervous2.png",
+              "Count": 1
+            },
+            {
+              "Expression": "nervous3",
+              "CanonicalPath": "assets/__project/images/characters/brother1/nervous3.png",
+              "Count": 1
+            },
+            {
+              "Expression": "normal",
+              "CanonicalPath": "assets/__project/images/characters/brother1/normal.png",
+              "Count": 1
+            },
+            {
+              "Expression": "serious",
+              "CanonicalPath": "assets/__project/images/characters/brother1/serious.png",
+              "Count": 1
+            },
+            {
+              "Expression": "shock",
+              "CanonicalPath": "assets/__project/images/characters/brother1/shock.png",
+              "Count": 1
+            },
+            {
+              "Expression": "silent",
+              "CanonicalPath": "assets/__project/images/characters/brother1/nervous1.png",
+              "Count": 1
+            },
+            {
+              "Expression": "special1",
+              "CanonicalPath": "assets/__project/images/characters/brother1/special1.png",
+              "Count": 1
+            },
+            {
+              "Expression": "special2",
+              "CanonicalPath": "assets/__project/images/characters/brother1/hat.png",
+              "Count": 1
+            },
+            {
+              "Expression": "special3",
+              "CanonicalPath": "assets/__project/images/characters/brother1/hand.png",
+              "Count": 1
+            },
+            {
+              "Expression": "special4",
+              "CanonicalPath": "assets/__project/images/characters/brother1/suck.png",
+              "Count": 1
+            }
+          ],
+          "Added": [],
+          "Removed": [],
+          "Passed": true
+        },
+        {
+          "Id": "brother1_upper",
+          "ObjectName": "唐門_大師兄上",
+          "Allowed": false,
+          "PreviousPathId": 5110,
+          "CurrentPathId": 5133,
+          "PreviousCount": 1,
+          "CurrentCount": 1,
+          "MappingsUnchanged": true,
+          "CanonicalIdsAllPresent": true,
+          "Mappings": [
+            {
+              "Expression": "normal",
+              "CanonicalPath": "assets/__project/images/characters/brother1/body_upper.png",
+              "Count": 1
+            }
+          ],
+          "Added": [],
+          "Removed": [],
+          "Passed": true
+        },
+        {
+          "Id": "brother1_lower",
+          "ObjectName": "唐門_大師兄下",
+          "Allowed": false,
+          "PreviousPathId": 5111,
+          "CurrentPathId": 5134,
+          "PreviousCount": 1,
+          "CurrentCount": 1,
+          "MappingsUnchanged": true,
+          "CanonicalIdsAllPresent": true,
+          "Mappings": [
+            {
+              "Expression": "normal",
+              "CanonicalPath": "assets/__project/images/characters/brother1/body_lower.png",
+              "Count": 1
+            }
+          ],
+          "Added": [],
+          "Removed": [],
+          "Passed": true
+        }
+      ],
+      "Passed": true,
+      "AllowedExistingMappingsPreserved": true
+    },
+    {
+      "CharacterId": "xiahou-lan",
+      "Records": [
+        {
+          "Id": "girl6",
+          "ObjectName": "崆峒_小蘭",
+          "Allowed": true,
+          "PreviousPathId": 5236,
+          "CurrentPathId": 5259,
+          "PreviousCount": 18,
+          "CurrentCount": 18,
+          "MappingsUnchanged": true,
+          "CanonicalIdsAllPresent": true,
+          "Mappings": [
+            {
+              "Expression": "angry1",
+              "CanonicalPath": "assets/__project/images/characters/girl6_小蘭/angry.png",
+              "Count": 1
+            },
+            {
+              "Expression": "angry2",
+              "CanonicalPath": "assets/__project/images/characters/girl6_小蘭/angry2.png",
+              "Count": 1
+            },
+            {
+              "Expression": "down_eye",
+              "CanonicalPath": "assets/__project/images/characters/girl6_小蘭/droopy.png",
+              "Count": 1
+            },
+            {
+              "Expression": "gloomy1",
+              "CanonicalPath": "assets/__project/images/characters/girl6_小蘭/gloomy.png",
+              "Count": 1
+            },
+            {
+              "Expression": "gloomy2",
+              "CanonicalPath": "assets/__project/images/characters/girl6_小蘭/gloomy2.png",
+              "Count": 1
+            },
+            {
+              "Expression": "laugh1",
+              "CanonicalPath": "assets/__project/images/characters/girl6_小蘭/laugh1.png",
+              "Count": 1
+            },
+            {
+              "Expression": "laugh2",
+              "CanonicalPath": "assets/__project/images/characters/girl6_小蘭/laugh1.png",
+              "Count": 1
+            },
+            {
+              "Expression": "love",
+              "CanonicalPath": "assets/__project/images/characters/girl6_小蘭/love.png",
+              "Count": 1
+            },
+            {
+              "Expression": "nervous1",
+              "CanonicalPath": "assets/__project/images/characters/girl6_小蘭/nervous.png",
+              "Count": 1
+            },
+            {
+              "Expression": "nervous2",
+              "CanonicalPath": "assets/__project/images/characters/girl6_小蘭/nervous2.png",
+              "Count": 1
+            },
+            {
+              "Expression": "normal",
+              "CanonicalPath": "assets/__project/images/characters/girl6_小蘭/normal.png",
+              "Count": 1
+            },
+            {
+              "Expression": "sad2",
+              "CanonicalPath": "assets/__project/images/characters/girl6_小蘭/cry.png",
+              "Count": 1
+            },
+            {
+              "Expression": "special1",
+              "CanonicalPath": "assets/__project/images/characters/girl6_小蘭/shy2.png",
+              "Count": 1
+            },
+            {
+              "Expression": "special2",
+              "CanonicalPath": "assets/__project/images/characters/girl6_小蘭/block.png",
+              "Count": 1
+            },
+            {
+              "Expression": "special3",
+              "CanonicalPath": "assets/__project/images/characters/girl6_小蘭/blood.png",
+              "Count": 1
+            },
+            {
+              "Expression": "special4",
+              "CanonicalPath": "assets/__project/images/characters/girl6_小蘭/squint.png",
+              "Count": 1
+            },
+            {
+              "Expression": "special5",
+              "CanonicalPath": "assets/__project/images/characters/girl6_小蘭/droopy.png",
+              "Count": 1
+            },
+            {
+              "Expression": "white",
+              "CanonicalPath": "assets/__project/images/characters/girl6_小蘭/white.png",
+              "Count": 1
+            }
+          ],
+          "Added": [],
+          "Removed": [],
+          "Passed": true
+        },
+        {
+          "Id": "girl6_3",
+          "ObjectName": "崆峒_小蘭_幼年",
+          "Allowed": false,
+          "PreviousPathId": 5237,
+          "CurrentPathId": 5260,
+          "PreviousCount": 3,
+          "CurrentCount": 3,
+          "MappingsUnchanged": true,
+          "CanonicalIdsAllPresent": true,
+          "Mappings": [
+            {
+              "Expression": "angry1",
+              "CanonicalPath": "assets/__project/images/characters/girl6_小蘭_幼年/angry1.png",
+              "Count": 1
+            },
+            {
+              "Expression": "laugh1",
+              "CanonicalPath": "assets/__project/images/characters/girl6_小蘭_幼年/laugh1.png",
+              "Count": 1
+            },
+            {
+              "Expression": "normal",
+              "CanonicalPath": "assets/__project/images/characters/girl6_小蘭_幼年/normal.png",
+              "Count": 1
+            }
+          ],
+          "Added": [],
+          "Removed": [],
+          "Passed": true
+        },
+        {
+          "Id": "girl6_1",
+          "ObjectName": "崆峒_小蘭_早",
+          "Allowed": true,
+          "PreviousPathId": 5238,
+          "CurrentPathId": 5261,
+          "PreviousCount": 14,
+          "CurrentCount": 14,
+          "MappingsUnchanged": true,
+          "CanonicalIdsAllPresent": true,
+          "Mappings": [
+            {
+              "Expression": "angry1",
+              "CanonicalPath": "assets/__project/images/characters/girl6_小蘭/angry.png",
+              "Count": 1
+            },
+            {
+              "Expression": "angry2",
+              "CanonicalPath": "assets/__project/images/characters/girl6_小蘭/angry2.png",
+              "Count": 1
+            },
+            {
+              "Expression": "gloomy1",
+              "CanonicalPath": "assets/__project/images/characters/girl6_小蘭/gloomy.png",
+              "Count": 1
+            },
+            {
+              "Expression": "gloomy2",
+              "CanonicalPath": "assets/__project/images/characters/girl6_小蘭/gloomy2.png",
+              "Count": 1
+            },
+            {
+              "Expression": "laugh1",
+              "CanonicalPath": "assets/__project/images/characters/girl6_小蘭/laugh1.png",
+              "Count": 1
+            },
+            {
+              "Expression": "laugh2",
+              "CanonicalPath": "assets/__project/images/characters/girl6_小蘭/laugh1.png",
+              "Count": 1
+            },
+            {
+              "Expression": "love",
+              "CanonicalPath": "assets/__project/images/characters/girl6_小蘭/love.png",
+              "Count": 1
+            },
+            {
+              "Expression": "nervous1",
+              "CanonicalPath": "assets/__project/images/characters/girl6_小蘭/nervous.png",
+              "Count": 1
+            },
+            {
+              "Expression": "nervous2",
+              "CanonicalPath": "assets/__project/images/characters/girl6_小蘭/nervous2.png",
+              "Count": 1
+            },
+            {
+              "Expression": "normal",
+              "CanonicalPath": "assets/__project/images/characters/girl6_小蘭/normal.png",
+              "Count": 1
+            },
+            {
+              "Expression": "sad2",
+              "CanonicalPath": "assets/__project/images/characters/girl6_小蘭/cry.png",
+              "Count": 1
+            },
+            {
+              "Expression": "special1",
+              "CanonicalPath": "assets/__project/images/characters/girl6_小蘭/shy2.png",
+              "Count": 1
+            },
+            {
+              "Expression": "special2",
+              "CanonicalPath": "assets/__project/images/characters/girl6_小蘭/block.png",
+              "Count": 1
+            },
+            {
+              "Expression": "special3",
+              "CanonicalPath": "assets/__project/images/characters/girl6_小蘭/blood.png",
+              "Count": 1
+            }
+          ],
+          "Added": [],
+          "Removed": [],
+          "Passed": true
+        },
+        {
+          "Id": "girl6_2",
+          "ObjectName": "崆峒_小蘭_魂",
+          "Allowed": false,
+          "PreviousPathId": 5239,
+          "CurrentPathId": 5262,
+          "PreviousCount": 1,
+          "CurrentCount": 1,
+          "MappingsUnchanged": true,
+          "CanonicalIdsAllPresent": true,
+          "Mappings": [
+            {
+              "Expression": "normal",
+              "CanonicalPath": "assets/__project/images/characters/girl6_小蘭/soul.png",
+              "Count": 1
+            }
+          ],
+          "Added": [],
+          "Removed": [],
+          "Passed": true
+        }
+      ],
+      "Passed": true,
+      "AllowedExistingMappingsPreserved": true
+    },
+    {
+      "CharacterId": "tang-moling",
+      "Records": [
+        {
+          "Id": "sister1",
+          "ObjectName": "唐門_小師妹",
+          "Allowed": true,
+          "PreviousPathId": 5123,
+          "CurrentPathId": 5146,
+          "PreviousCount": 21,
+          "CurrentCount": 21,
+          "MappingsUnchanged": true,
+          "CanonicalIdsAllPresent": true,
+          "Mappings": [
+            {
+              "Expression": "angry1",
+              "CanonicalPath": "assets/__project/images/characters/sister/angry1.png",
+              "Count": 1
+            },
+            {
+              "Expression": "angry2",
+              "CanonicalPath": "assets/__project/images/characters/sister/angry1.png",
+              "Count": 1
+            },
+            {
+              "Expression": "close_eye",
+              "CanonicalPath": "assets/__project/images/characters/sister/close_eye.png",
+              "Count": 1
+            },
+            {
+              "Expression": "close_eye_laugh",
+              "CanonicalPath": "assets/__project/images/characters/sister/close_eye_laugh.png",
+              "Count": 1
+            },
+            {
+              "Expression": "gamer",
+              "CanonicalPath": "assets/__project/images/characters/sister/gamer.png",
+              "Count": 1
+            },
+            {
+              "Expression": "laugh1",
+              "CanonicalPath": "assets/__project/images/characters/sister/laugh1.png",
+              "Count": 1
+            },
+            {
+              "Expression": "laugh2",
+              "CanonicalPath": "assets/__project/images/characters/sister/laugh1.png",
+              "Count": 1
+            },
+            {
+              "Expression": "nervous1",
+              "CanonicalPath": "assets/__project/images/characters/sister/nervous1.png",
+              "Count": 1
+            },
+            {
+              "Expression": "nervous2",
+              "CanonicalPath": "assets/__project/images/characters/sister/nervous2.png",
+              "Count": 1
+            },
+            {
+              "Expression": "normal",
+              "CanonicalPath": "assets/__project/images/characters/sister/normal.png",
+              "Count": 1
+            },
+            {
+              "Expression": "proud",
+              "CanonicalPath": "assets/__project/images/characters/sister/proud.png",
+              "Count": 1
+            },
+            {
+              "Expression": "sad2",
+              "CanonicalPath": "assets/__project/images/characters/sister/sad2.png",
+              "Count": 1
+            },
+            {
+              "Expression": "shock",
+              "CanonicalPath": "assets/__project/images/characters/sister/nervous2.png",
+              "Count": 1
+            },
+            {
+              "Expression": "shy",
+              "CanonicalPath": "assets/__project/images/characters/sister/shy.png",
+              "Count": 1
+            },
+            {
+              "Expression": "silent",
+              "CanonicalPath": "assets/__project/images/characters/sister/nervous1.png",
+              "Count": 1
+            },
+            {
+              "Expression": "special1",
+              "CanonicalPath": "assets/__project/images/characters/sister/special1.png",
+              "Count": 1
+            },
+            {
+              "Expression": "special2",
+              "CanonicalPath": "assets/__project/images/characters/sister/special2.png",
+              "Count": 1
+            },
+            {
+              "Expression": "special3",
+              "CanonicalPath": "assets/__project/images/characters/sister/close_eye.png",
+              "Count": 1
+            },
+            {
+              "Expression": "special4",
+              "CanonicalPath": "assets/__project/images/characters/sister/laugh3.png",
+              "Count": 1
+            },
+            {
+              "Expression": "special5",
+              "CanonicalPath": "assets/__project/images/characters/sister/special3.png",
+              "Count": 1
+            },
+            {
+              "Expression": "special6",
+              "CanonicalPath": "assets/__project/images/characters/sister/one_hand.png",
+              "Count": 1
+            }
+          ],
+          "Added": [],
+          "Removed": [],
+          "Passed": true
+        },
+        {
+          "Id": "sister1_look",
+          "ObjectName": "唐門_小師妹瞪",
+          "Allowed": false,
+          "PreviousPathId": 5124,
+          "CurrentPathId": 5147,
+          "PreviousCount": 1,
+          "CurrentCount": 1,
+          "MappingsUnchanged": true,
+          "CanonicalIdsAllPresent": true,
+          "Mappings": [
+            {
+              "Expression": "normal",
+              "CanonicalPath": "pic_look_002",
+              "Count": 1
+            }
+          ],
+          "Added": [],
+          "Removed": [],
+          "Passed": true
+        }
+      ],
+      "Passed": true,
+      "AllowedExistingMappingsPreserved": true
+    },
+    {
+      "CharacterId": "long-xiang",
+      "Records": [
+        {
+          "Id": "girl4",
+          "ObjectName": "錦香_龍湘",
+          "Allowed": true,
+          "PreviousPathId": 5347,
+          "CurrentPathId": 5370,
+          "PreviousCount": 25,
+          "CurrentCount": 25,
+          "MappingsUnchanged": true,
+          "CanonicalIdsAllPresent": true,
+          "Mappings": [
+            {
+              "Expression": "angry1",
+              "CanonicalPath": "assets/__project/images/characters/girl4_龍湘/angry1.png",
+              "Count": 1
+            },
+            {
+              "Expression": "angry2",
+              "CanonicalPath": "assets/__project/images/characters/girl4_龍湘/angry1.png",
+              "Count": 1
+            },
+            {
+              "Expression": "angry3",
+              "CanonicalPath": "assets/__project/images/characters/girl4_龍湘/angry3.png",
+              "Count": 1
+            },
+            {
+              "Expression": "black",
+              "CanonicalPath": "assets/__project/images/characters/girl4_龍湘/black.png",
+              "Count": 1
+            },
+            {
+              "Expression": "hurt",
+              "CanonicalPath": "assets/__project/images/characters/girl4_龍湘/hurt.png",
+              "Count": 1
+            },
+            {
+              "Expression": "hurt2",
+              "CanonicalPath": "assets/__project/images/characters/girl4_龍湘/hurt.png",
+              "Count": 1
+            },
+            {
+              "Expression": "laugh1",
+              "CanonicalPath": "assets/__project/images/characters/girl4_龍湘/laugh1.png",
+              "Count": 1
+            },
+            {
+              "Expression": "laugh2",
+              "CanonicalPath": "assets/__project/images/characters/girl4_龍湘/laugh2.png",
+              "Count": 1
+            },
+            {
+              "Expression": "nervous1",
+              "CanonicalPath": "assets/__project/images/characters/girl4_龍湘/nervous1.png",
+              "Count": 1
+            },
+            {
+              "Expression": "nervous2",
+              "CanonicalPath": "assets/__project/images/characters/girl4_龍湘/nervous2.png",
+              "Count": 1
+            },
+            {
+              "Expression": "nervous3",
+              "CanonicalPath": "assets/__project/images/characters/girl4_龍湘/nervous3.png",
+              "Count": 1
+            },
+            {
+              "Expression": "normal",
+              "CanonicalPath": "assets/__project/images/characters/girl4_龍湘/normal.png",
+              "Count": 1
+            },
+            {
+              "Expression": "sad1",
+              "CanonicalPath": "assets/__project/images/characters/girl4_龍湘/sad.png",
+              "Count": 1
+            },
+            {
+              "Expression": "sad2",
+              "CanonicalPath": "assets/__project/images/characters/girl4_龍湘/sad2.png",
+              "Count": 1
+            },
+            {
+              "Expression": "shock",
+              "CanonicalPath": "assets/__project/images/characters/girl4_龍湘/nervous2.png",
+              "Count": 1
+            },
+            {
+              "Expression": "shy",
+              "CanonicalPath": "assets/__project/images/characters/girl4_龍湘/shy.png",
+              "Count": 1
+            },
+            {
+              "Expression": "special1",
+              "CanonicalPath": "assets/__project/images/characters/girl4_龍湘/drumstick.png",
+              "Count": 1
+            },
+            {
+              "Expression": "special2",
+              "CanonicalPath": "assets/__project/images/characters/girl4_龍湘/sword.png",
+              "Count": 1
+            },
+            {
+              "Expression": "special3",
+              "CanonicalPath": "assets/__project/images/characters/girl4_龍湘/drumstick_sword.png",
+              "Count": 1
+            },
+            {
+              "Expression": "special4",
+              "CanonicalPath": "assets/__project/images/characters/girl4_龍湘/close_eyes.png",
+              "Count": 1
+            },
+            {
+              "Expression": "special5",
+              "CanonicalPath": "assets/__project/images/characters/girl4_龍湘/doubt.png",
+              "Count": 1
+            },
+            {
+              "Expression": "special6",
+              "CanonicalPath": "assets/__project/images/characters/girl4_龍湘/shy2.png",
+              "Count": 1
+            },
+            {
+              "Expression": "special7",
+              "CanonicalPath": "assets/__project/images/characters/girl4_龍湘/hurt2.png",
+              "Count": 1
+            },
+            {
+              "Expression": "special8",
+              "CanonicalPath": "assets/__project/images/characters/girl4_龍湘/diffident.png",
+              "Count": 1
+            },
+            {
+              "Expression": "special9",
+              "CanonicalPath": "assets/__project/images/characters/girl4_龍湘/angry4.png",
+              "Count": 1
+            }
+          ],
+          "Added": [],
+          "Removed": [],
+          "Passed": true
+        },
+        {
+          "Id": "girl4_2",
+          "ObjectName": "錦香_龍湘_宮裝",
+          "Allowed": false,
+          "PreviousPathId": 5348,
+          "CurrentPathId": 5371,
+          "PreviousCount": 3,
+          "CurrentCount": 3,
+          "MappingsUnchanged": true,
+          "CanonicalIdsAllPresent": true,
+          "Mappings": [
+            {
+              "Expression": "normal",
+              "CanonicalPath": "assets/__project/images/characters/girl4_龍湘_宮裝/normal.png",
+              "Count": 1
+            },
+            {
+              "Expression": "shy",
+              "CanonicalPath": "assets/__project/images/characters/girl4_龍湘_宮裝/shy.png",
+              "Count": 1
+            },
+            {
+              "Expression": "special1",
+              "CanonicalPath": "assets/__project/images/characters/girl4_龍湘_宮裝/shy2.png",
+              "Count": 1
+            }
+          ],
+          "Added": [],
+          "Removed": [],
+          "Passed": true
+        },
+        {
+          "Id": "girl4_1",
+          "ObjectName": "錦香_龍湘_隱",
+          "Allowed": true,
+          "PreviousPathId": 5349,
+          "CurrentPathId": 5372,
+          "PreviousCount": 25,
+          "CurrentCount": 25,
+          "MappingsUnchanged": true,
+          "CanonicalIdsAllPresent": true,
+          "Mappings": [
+            {
+              "Expression": "angry1",
+              "CanonicalPath": "assets/__project/images/characters/girl4_龍湘/angry1.png",
+              "Count": 1
+            },
+            {
+              "Expression": "angry2",
+              "CanonicalPath": "assets/__project/images/characters/girl4_龍湘/angry1.png",
+              "Count": 1
+            },
+            {
+              "Expression": "angry3",
+              "CanonicalPath": "assets/__project/images/characters/girl4_龍湘/angry3.png",
+              "Count": 1
+            },
+            {
+              "Expression": "black",
+              "CanonicalPath": "assets/__project/images/characters/girl4_龍湘/black.png",
+              "Count": 1
+            },
+            {
+              "Expression": "hurt",
+              "CanonicalPath": "assets/__project/images/characters/girl4_龍湘/hurt.png",
+              "Count": 1
+            },
+            {
+              "Expression": "hurt2",
+              "CanonicalPath": "assets/__project/images/characters/girl4_龍湘/hurt.png",
+              "Count": 1
+            },
+            {
+              "Expression": "laugh1",
+              "CanonicalPath": "assets/__project/images/characters/girl4_龍湘/laugh1.png",
+              "Count": 1
+            },
+            {
+              "Expression": "laugh2",
+              "CanonicalPath": "assets/__project/images/characters/girl4_龍湘/laugh2.png",
+              "Count": 1
+            },
+            {
+              "Expression": "nervous1",
+              "CanonicalPath": "assets/__project/images/characters/girl4_龍湘/nervous1.png",
+              "Count": 1
+            },
+            {
+              "Expression": "nervous2",
+              "CanonicalPath": "assets/__project/images/characters/girl4_龍湘/nervous2.png",
+              "Count": 1
+            },
+            {
+              "Expression": "nervous3",
+              "CanonicalPath": "assets/__project/images/characters/girl4_龍湘/nervous3.png",
+              "Count": 1
+            },
+            {
+              "Expression": "normal",
+              "CanonicalPath": "assets/__project/images/characters/girl4_龍湘/normal.png",
+              "Count": 1
+            },
+            {
+              "Expression": "sad1",
+              "CanonicalPath": "assets/__project/images/characters/girl4_龍湘/sad.png",
+              "Count": 1
+            },
+            {
+              "Expression": "sad2",
+              "CanonicalPath": "assets/__project/images/characters/girl4_龍湘/sad2.png",
+              "Count": 1
+            },
+            {
+              "Expression": "shock",
+              "CanonicalPath": "assets/__project/images/characters/girl4_龍湘/nervous2.png",
+              "Count": 1
+            },
+            {
+              "Expression": "shy",
+              "CanonicalPath": "assets/__project/images/characters/girl4_龍湘/shy.png",
+              "Count": 1
+            },
+            {
+              "Expression": "special1",
+              "CanonicalPath": "assets/__project/images/characters/girl4_龍湘/drumstick.png",
+              "Count": 1
+            },
+            {
+              "Expression": "special2",
+              "CanonicalPath": "assets/__project/images/characters/girl4_龍湘/sword.png",
+              "Count": 1
+            },
+            {
+              "Expression": "special3",
+              "CanonicalPath": "assets/__project/images/characters/girl4_龍湘/drumstick_sword.png",
+              "Count": 1
+            },
+            {
+              "Expression": "special4",
+              "CanonicalPath": "assets/__project/images/characters/girl4_龍湘/close_eyes.png",
+              "Count": 1
+            },
+            {
+              "Expression": "special5",
+              "CanonicalPath": "assets/__project/images/characters/girl4_龍湘/doubt.png",
+              "Count": 1
+            },
+            {
+              "Expression": "special6",
+              "CanonicalPath": "assets/__project/images/characters/girl4_龍湘/shy2.png",
+              "Count": 1
+            },
+            {
+              "Expression": "special7",
+              "CanonicalPath": "assets/__project/images/characters/girl4_龍湘/hurt2.png",
+              "Count": 1
+            },
+            {
+              "Expression": "special8",
+              "CanonicalPath": "assets/__project/images/characters/girl4_龍湘/diffident.png",
+              "Count": 1
+            },
+            {
+              "Expression": "special9",
+              "CanonicalPath": "assets/__project/images/characters/girl4_龍湘/angry4.png",
+              "Count": 1
+            }
+          ],
+          "Added": [],
+          "Removed": [],
+          "Passed": true
+        }
+      ],
+      "Passed": true,
+      "AllowedExistingMappingsPreserved": true
+    },
+    {
+      "CharacterId": "yu-xiaomei",
+      "Records": [
+        {
+          "Id": "girl5_hand",
+          "ObjectName": "崆峒_小小梅手",
+          "Allowed": false,
+          "PreviousPathId": 5208,
+          "CurrentPathId": 5231,
+          "PreviousCount": 2,
+          "CurrentCount": 2,
+          "MappingsUnchanged": true,
+          "CanonicalIdsAllPresent": true,
+          "Mappings": [
+            {
+              "Expression": "normal",
+              "CanonicalPath": "pic_big_girl_hand_001",
+              "Count": 1
+            },
+            {
+              "Expression": "special1",
+              "CanonicalPath": "pic_big_girl_hand_002",
+              "Count": 1
+            }
+          ],
+          "Added": [],
+          "Removed": [],
+          "Passed": true
+        },
+        {
+          "Id": "girl5",
+          "ObjectName": "崆峒_小梅",
+          "Allowed": true,
+          "PreviousPathId": 5209,
+          "CurrentPathId": 5232,
+          "PreviousCount": 35,
+          "CurrentCount": 35,
+          "MappingsUnchanged": true,
+          "CanonicalIdsAllPresent": true,
+          "Mappings": [
+            {
+              "Expression": "angry1",
+              "CanonicalPath": "assets/__project/images/characters/girl5_小梅/angry1.png",
+              "Count": 1
+            },
+            {
+              "Expression": "angry2",
+              "CanonicalPath": "assets/__project/images/characters/girl5_小梅/angry2.png",
+              "Count": 1
+            },
+            {
+              "Expression": "angry3",
+              "CanonicalPath": "assets/__project/images/characters/girl5_小梅/angry3.png",
+              "Count": 1
+            },
+            {
+              "Expression": "backstage ",
+              "CanonicalPath": "assets/__project/images/characters/girl5_小梅/backstage.png",
+              "Count": 1
+            },
+            {
+              "Expression": "bitter",
+              "CanonicalPath": "assets/__project/images/characters/girl5_小梅/nervous3.png",
+              "Count": 1
+            },
+            {
+              "Expression": "black",
+              "CanonicalPath": "assets/__project/images/characters/girl5_小梅/black.png",
+              "Count": 1
+            },
+            {
+              "Expression": "doubt",
+              "CanonicalPath": "assets/__project/images/characters/girl5_小梅/doubt.png",
+              "Count": 1
+            },
+            {
+              "Expression": "gloomy2",
+              "CanonicalPath": "assets/__project/images/characters/girl5_小梅/gloomy2.png",
+              "Count": 1
+            },
+            {
+              "Expression": "hurt",
+              "CanonicalPath": "assets/__project/images/characters/girl5_小梅/hurt.png",
+              "Count": 1
+            },
+            {
+              "Expression": "hurt2",
+              "CanonicalPath": "assets/__project/images/characters/girl5_小梅/hurt.png",
+              "Count": 1
+            },
+            {
+              "Expression": "laugh1",
+              "CanonicalPath": "assets/__project/images/characters/girl5_小梅/laugh1.png",
+              "Count": 1
+            },
+            {
+              "Expression": "laugh2",
+              "CanonicalPath": "assets/__project/images/characters/girl5_小梅/laugh2.png",
+              "Count": 1
+            },
+            {
+              "Expression": "nervous1",
+              "CanonicalPath": "assets/__project/images/characters/girl5_小梅/nervous1.png",
+              "Count": 1
+            },
+            {
+              "Expression": "nervous2",
+              "CanonicalPath": "assets/__project/images/characters/girl5_小梅/nervous3.png",
+              "Count": 1
+            },
+            {
+              "Expression": "nervous3",
+              "CanonicalPath": "assets/__project/images/characters/girl5_小梅/nervous2.png",
+              "Count": 1
+            },
+            {
+              "Expression": "normal",
+              "CanonicalPath": "assets/__project/images/characters/girl5_小梅/normal.png",
+              "Count": 1
+            },
+            {
+              "Expression": "proud",
+              "CanonicalPath": "assets/__project/images/characters/girl5_小梅/proud.png",
+              "Count": 1
+            },
+            {
+              "Expression": "revel",
+              "CanonicalPath": "assets/__project/images/characters/girl5_小梅/shy4.png",
+              "Count": 1
+            },
+            {
+              "Expression": "sad2",
+              "CanonicalPath": "assets/__project/images/characters/girl5_小梅/sad1.png",
+              "Count": 1
+            },
+            {
+              "Expression": "shock",
+              "CanonicalPath": "assets/__project/images/characters/girl5_小梅/nervous3.png",
+              "Count": 1
+            },
+            {
+              "Expression": "shy",
+              "CanonicalPath": "assets/__project/images/characters/girl5_小梅/shy1.png",
+              "Count": 1
+            },
+            {
+              "Expression": "special1",
+              "CanonicalPath": "assets/__project/images/characters/girl5_小梅/shy2.png",
+              "Count": 1
+            },
+            {
+              "Expression": "special10",
+              "CanonicalPath": "assets/__project/images/characters/girl5_小梅/scary_laugh.png",
+              "Count": 1
+            },
+            {
+              "Expression": "special11",
+              "CanonicalPath": "assets/__project/images/characters/girl5_小梅/scary_shock.png",
+              "Count": 1
+            },
+            {
+              "Expression": "special12",
+              "CanonicalPath": "assets/__project/images/characters/girl5_小梅/kick.png",
+              "Count": 1
+            },
+            {
+              "Expression": "special13",
+              "CanonicalPath": "assets/__project/images/characters/girl5_小梅/norseblood.png",
+              "Count": 1
+            },
+            {
+              "Expression": "special14",
+              "CanonicalPath": "assets/__project/images/characters/girl5_小梅/special5_2.png",
+              "Count": 1
+            },
+            {
+              "Expression": "special15",
+              "CanonicalPath": "assets/__project/images/characters/girl5_小梅/normal.png",
+              "Count": 1
+            },
+            {
+              "Expression": "special2",
+              "CanonicalPath": "assets/__project/images/characters/girl5_小梅/laugh3.png",
+              "Count": 1
+            },
+            {
+              "Expression": "special3",
+              "CanonicalPath": "assets/__project/images/characters/girl5_小梅/shy3.png",
+              "Count": 1
+            },
+            {
+              "Expression": "special4",
+              "CanonicalPath": "assets/__project/images/characters/girl5_小梅/shy4.png",
+              "Count": 1
+            },
+            {
+              "Expression": "special5",
+              "CanonicalPath": "assets/__project/images/characters/girl5_小梅/proud.png",
+              "Count": 1
+            },
+            {
+              "Expression": "special7",
+              "CanonicalPath": "assets/__project/images/characters/girl5_小梅/special5.png",
+              "Count": 1
+            },
+            {
+              "Expression": "special8",
+              "CanonicalPath": "assets/__project/images/characters/girl5_小梅/special6.png",
+              "Count": 1
+            },
+            {
+              "Expression": "special9",
+              "CanonicalPath": "assets/__project/images/characters/girl5_小梅/scary.png",
+              "Count": 1
+            }
+          ],
+          "Added": [],
+          "Removed": [],
+          "Passed": true
+        },
+        {
+          "Id": "girl5_9",
+          "ObjectName": "崆峒_小梅_入魔",
+          "Allowed": false,
+          "PreviousPathId": 5210,
+          "CurrentPathId": 5233,
+          "PreviousCount": 6,
+          "CurrentCount": 6,
+          "MappingsUnchanged": true,
+          "CanonicalIdsAllPresent": true,
+          "Mappings": [
+            {
+              "Expression": "caught",
+              "CanonicalPath": "assets/__project/images/characters/girl5_小梅_入魔/caught.png",
+              "Count": 1
+            },
+            {
+              "Expression": "kick",
+              "CanonicalPath": "assets/__project/images/characters/girl5_小梅_入魔/kick.png",
+              "Count": 1
+            },
+            {
+              "Expression": "normal",
+              "CanonicalPath": "assets/__project/images/characters/girl5_小梅_入魔/normal.png",
+              "Count": 1
+            },
+            {
+              "Expression": "sad2",
+              "CanonicalPath": "assets/__project/images/characters/girl5_小梅_入魔/half.png",
+              "Count": 1
+            },
+            {
+              "Expression": "special1",
+              "CanonicalPath": "assets/__project/images/characters/girl5_小梅_入魔/no_weapon.png",
+              "Count": 1
+            },
+            {
+              "Expression": "special2",
+              "CanonicalPath": "assets/__project/images/characters/girl5_小梅_入魔/half.png",
+              "Count": 1
+            }
+          ],
+          "Added": [],
+          "Removed": [],
+          "Passed": true
+        },
+        {
+          "Id": "girl5_6",
+          "ObjectName": "崆峒_小梅_公子",
+          "Allowed": false,
+          "PreviousPathId": 5211,
+          "CurrentPathId": 5234,
+          "PreviousCount": 1,
+          "CurrentCount": 1,
+          "MappingsUnchanged": true,
+          "CanonicalIdsAllPresent": true,
+          "Mappings": [
+            {
+              "Expression": "normal",
+              "CanonicalPath": "assets/__project/images/characters/girl5_小梅/ranger1.png",
+              "Count": 1
+            }
+          ],
+          "Added": [],
+          "Removed": [],
+          "Passed": true
+        },
+        {
+          "Id": "girl5_10_1",
+          "ObjectName": "崆峒_小梅_分身1",
+          "Allowed": false,
+          "PreviousPathId": 5212,
+          "CurrentPathId": 5235,
+          "PreviousCount": 1,
+          "CurrentCount": 1,
+          "MappingsUnchanged": true,
+          "CanonicalIdsAllPresent": true,
+          "Mappings": [
+            {
+              "Expression": "normal",
+              "CanonicalPath": "assets/__project/images/characters/girl5_小梅_幼年/normal.png",
+              "Count": 1
+            }
+          ],
+          "Added": [],
+          "Removed": [],
+          "Passed": true
+        },
+        {
+          "Id": "girl5_10_2",
+          "ObjectName": "崆峒_小梅_分身2",
+          "Allowed": false,
+          "PreviousPathId": 5213,
+          "CurrentPathId": 5236,
+          "PreviousCount": 1,
+          "CurrentCount": 1,
+          "MappingsUnchanged": true,
+          "CanonicalIdsAllPresent": true,
+          "Mappings": [
+            {
+              "Expression": "normal",
+              "CanonicalPath": "assets/__project/images/characters/girl5_小梅_幼年/normal.png",
+              "Count": 1
+            }
+          ],
+          "Added": [],
+          "Removed": [],
+          "Passed": true
+        },
+        {
+          "Id": "girl5_10_3",
+          "ObjectName": "崆峒_小梅_分身3",
+          "Allowed": false,
+          "PreviousPathId": 5214,
+          "CurrentPathId": 5237,
+          "PreviousCount": 1,
+          "CurrentCount": 1,
+          "MappingsUnchanged": true,
+          "CanonicalIdsAllPresent": true,
+          "Mappings": [
+            {
+              "Expression": "normal",
+              "CanonicalPath": "assets/__project/images/characters/girl5_小梅_幼年/normal.png",
+              "Count": 1
+            }
+          ],
+          "Added": [],
+          "Removed": [],
+          "Passed": true
+        },
+        {
+          "Id": "girl5_10_4",
+          "ObjectName": "崆峒_小梅_分身4",
+          "Allowed": false,
+          "PreviousPathId": 5215,
+          "CurrentPathId": 5238,
+          "PreviousCount": 1,
+          "CurrentCount": 1,
+          "MappingsUnchanged": true,
+          "CanonicalIdsAllPresent": true,
+          "Mappings": [
+            {
+              "Expression": "normal",
+              "CanonicalPath": "assets/__project/images/characters/girl5_小梅_幼年/normal.png",
+              "Count": 1
+            }
+          ],
+          "Added": [],
+          "Removed": [],
+          "Passed": true
+        },
+        {
+          "Id": "girl5_10_5",
+          "ObjectName": "崆峒_小梅_分身5",
+          "Allowed": false,
+          "PreviousPathId": 5216,
+          "CurrentPathId": 5239,
+          "PreviousCount": 1,
+          "CurrentCount": 1,
+          "MappingsUnchanged": true,
+          "CanonicalIdsAllPresent": true,
+          "Mappings": [
+            {
+              "Expression": "normal",
+              "CanonicalPath": "assets/__project/images/characters/girl5_小梅_幼年/normal.png",
+              "Count": 1
+            }
+          ],
+          "Added": [],
+          "Removed": [],
+          "Passed": true
+        },
+        {
+          "Id": "girl5_10_6",
+          "ObjectName": "崆峒_小梅_分身6",
+          "Allowed": false,
+          "PreviousPathId": 5217,
+          "CurrentPathId": 5240,
+          "PreviousCount": 1,
+          "CurrentCount": 1,
+          "MappingsUnchanged": true,
+          "CanonicalIdsAllPresent": true,
+          "Mappings": [
+            {
+              "Expression": "normal",
+              "CanonicalPath": "assets/__project/images/characters/girl5_小梅_幼年/normal.png",
+              "Count": 1
+            }
+          ],
+          "Added": [],
+          "Removed": [],
+          "Passed": true
+        },
+        {
+          "Id": "girl5_7",
+          "ObjectName": "崆峒_小梅_半",
+          "Allowed": false,
+          "PreviousPathId": 5218,
+          "CurrentPathId": 5241,
+          "PreviousCount": 2,
+          "CurrentCount": 2,
+          "MappingsUnchanged": true,
+          "CanonicalIdsAllPresent": true,
+          "Mappings": [
+            {
+              "Expression": "laugh2",
+              "CanonicalPath": "assets/__project/images/characters/girl5_小梅/laugh2_66.png",
+              "Count": 1
+            },
+            {
+              "Expression": "normal",
+              "CanonicalPath": "assets/__project/images/characters/girl5_小梅/laugh2_66.png",
+              "Count": 1
+            }
+          ],
+          "Added": [],
+          "Removed": [],
+          "Passed": true
+        },
+        {
+          "Id": "girl5_2",
+          "ObjectName": "崆峒_小梅_夜行",
+          "Allowed": false,
+          "PreviousPathId": 5219,
+          "CurrentPathId": 5242,
+          "PreviousCount": 2,
+          "CurrentCount": 2,
+          "MappingsUnchanged": true,
+          "CanonicalIdsAllPresent": true,
+          "Mappings": [
+            {
+              "Expression": "laugh2",
+              "CanonicalPath": "assets/__project/images/characters/girl5_小梅_飛賊/laugh2.png",
+              "Count": 1
+            },
+            {
+              "Expression": "normal",
+              "CanonicalPath": "assets/__project/images/characters/girl5_小梅_飛賊/normal.png",
+              "Count": 1
+            }
+          ],
+          "Added": [],
+          "Removed": [],
+          "Passed": true
+        },
+        {
+          "Id": "girl5_5",
+          "ObjectName": "崆峒_小梅_大師兄",
+          "Allowed": false,
+          "PreviousPathId": 5220,
+          "CurrentPathId": 5243,
+          "PreviousCount": 3,
+          "CurrentCount": 3,
+          "MappingsUnchanged": true,
+          "CanonicalIdsAllPresent": true,
+          "Mappings": [
+            {
+              "Expression": "hurt",
+              "CanonicalPath": "assets/__project/images/characters/girl5_小梅/brother1_hurt.png",
+              "Count": 1
+            },
+            {
+              "Expression": "hurt2",
+              "CanonicalPath": "assets/__project/images/characters/girl5_小梅/brother1_hurt.png",
+              "Count": 1
+            },
+            {
+              "Expression": "normal",
+              "CanonicalPath": "assets/__project/images/characters/girl5_小梅/brother1.png",
+              "Count": 1
+            }
+          ],
+          "Added": [],
+          "Removed": [],
+          "Passed": true
+        },
+        {
+          "Id": "girl5_4",
+          "ObjectName": "崆峒_小梅_幼年",
+          "Allowed": false,
+          "PreviousPathId": 5221,
+          "CurrentPathId": 5244,
+          "PreviousCount": 19,
+          "CurrentCount": 19,
+          "MappingsUnchanged": true,
+          "CanonicalIdsAllPresent": true,
+          "Mappings": [
+            {
+              "Expression": "angry1",
+              "CanonicalPath": "assets/__project/images/characters/girl5_小梅/angry1.png",
+              "Count": 1
+            },
+            {
+              "Expression": "angry2",
+              "CanonicalPath": "assets/__project/images/characters/girl5_小梅/angry2.png",
+              "Count": 1
+            },
+            {
+              "Expression": "angry3",
+              "CanonicalPath": "assets/__project/images/characters/girl5_小梅/angry3.png",
+              "Count": 1
+            },
+            {
+              "Expression": "black",
+              "CanonicalPath": "assets/__project/images/characters/girl5_小梅/black.png",
+              "Count": 1
+            },
+            {
+              "Expression": "hurt",
+              "CanonicalPath": "assets/__project/images/characters/girl5_小梅/hurt.png",
+              "Count": 1
+            },
+            {
+              "Expression": "hurt2",
+              "CanonicalPath": "assets/__project/images/characters/girl5_小梅/hurt.png",
+              "Count": 1
+            },
+            {
+              "Expression": "laugh1",
+              "CanonicalPath": "assets/__project/images/characters/girl5_小梅/laugh1.png",
+              "Count": 1
+            },
+            {
+              "Expression": "laugh2",
+              "CanonicalPath": "assets/__project/images/characters/girl5_小梅/laugh2.png",
+              "Count": 1
+            },
+            {
+              "Expression": "nervous1",
+              "CanonicalPath": "assets/__project/images/characters/girl5_小梅/nervous1.png",
+              "Count": 1
+            },
+            {
+              "Expression": "nervous2",
+              "CanonicalPath": "assets/__project/images/characters/girl5_小梅/nervous3.png",
+              "Count": 1
+            },
+            {
+              "Expression": "nervous3",
+              "CanonicalPath": "assets/__project/images/characters/girl5_小梅/nervous2.png",
+              "Count": 1
+            },
+            {
+              "Expression": "normal",
+              "CanonicalPath": "assets/__project/images/characters/girl5_小梅/normal.png",
+              "Count": 1
+            },
+            {
+              "Expression": "sad2",
+              "CanonicalPath": "assets/__project/images/characters/girl5_小梅/sad1.png",
+              "Count": 1
+            },
+            {
+              "Expression": "shock",
+              "CanonicalPath": "assets/__project/images/characters/girl5_小梅/nervous3.png",
+              "Count": 1
+            },
+            {
+              "Expression": "shy",
+              "CanonicalPath": "assets/__project/images/characters/girl5_小梅/shy1.png",
+              "Count": 1
+            },
+            {
+              "Expression": "special1",
+              "CanonicalPath": "assets/__project/images/characters/girl5_小梅/shy2.png",
+              "Count": 1
+            },
+            {
+              "Expression": "special2",
+              "CanonicalPath": "assets/__project/images/characters/girl5_小梅/laugh3.png",
+              "Count": 1
+            },
+            {
+              "Expression": "special3",
+              "CanonicalPath": "assets/__project/images/characters/girl5_小梅/shy3.png",
+              "Count": 1
+            },
+            {
+              "Expression": "special4",
+              "CanonicalPath": "assets/__project/images/characters/girl5_小梅/shy4.png",
+              "Count": 1
+            }
+          ],
+          "Added": [],
+          "Removed": [],
+          "Passed": true
+        },
+        {
+          "Id": "girl5_8",
+          "ObjectName": "崆峒_小梅_幼年2",
+          "Allowed": false,
+          "PreviousPathId": 5222,
+          "CurrentPathId": 5245,
+          "PreviousCount": 4,
+          "CurrentCount": 4,
+          "MappingsUnchanged": true,
+          "CanonicalIdsAllPresent": true,
+          "Mappings": [
+            {
+              "Expression": "laugh1",
+              "CanonicalPath": "assets/__project/images/characters/girl5_小梅_幼年/laugh1.png",
+              "Count": 1
+            },
+            {
+              "Expression": "normal",
+              "CanonicalPath": "assets/__project/images/characters/girl5_小梅_幼年/normal.png",
+              "Count": 1
+            },
+            {
+              "Expression": "special1",
+              "CanonicalPath": "assets/__project/images/characters/girl5_小梅_幼年/hand.png",
+              "Count": 1
+            },
+            {
+              "Expression": "white",
+              "CanonicalPath": "assets/__project/images/characters/girl5_小梅_幼年/white.png",
+              "Count": 1
+            }
+          ],
+          "Added": [],
+          "Removed": [],
+          "Passed": true
+        },
+        {
+          "Id": "girl5_3",
+          "ObjectName": "崆峒_小梅_飛賊",
+          "Allowed": false,
+          "PreviousPathId": 5223,
+          "CurrentPathId": 5246,
+          "PreviousCount": 2,
+          "CurrentCount": 2,
+          "MappingsUnchanged": true,
+          "CanonicalIdsAllPresent": true,
+          "Mappings": [
+            {
+              "Expression": "laugh2",
+              "CanonicalPath": "assets/__project/images/characters/girl5_小梅_飛賊/laugh2.png",
+              "Count": 1
+            },
+            {
+              "Expression": "normal",
+              "CanonicalPath": "assets/__project/images/characters/girl5_小梅_飛賊/normal.png",
+              "Count": 1
+            }
+          ],
+          "Added": [],
+          "Removed": [],
+          "Passed": true
+        }
+      ],
+      "Passed": true,
+      "AllowedExistingMappingsPreserved": true
+    },
+    {
+      "CharacterId": "tang-zheng",
+      "Records": [
+        {
+          "Id": "brother2",
+          "ObjectName": "唐門_二師兄",
+          "Allowed": true,
+          "PreviousPathId": 5094,
+          "CurrentPathId": 5117,
+          "PreviousCount": 13,
+          "CurrentCount": 13,
+          "MappingsUnchanged": true,
+          "CanonicalIdsAllPresent": true,
+          "Mappings": [
+            {
+              "Expression": "angry1",
+              "CanonicalPath": "assets/__project/images/characters/brother2/angry1.png",
+              "Count": 1
+            },
+            {
+              "Expression": "angry2",
+              "CanonicalPath": "assets/__project/images/characters/brother2/angry2.png",
+              "Count": 1
+            },
+            {
+              "Expression": "gloomy1",
+              "CanonicalPath": "assets/__project/images/characters/brother2/gloomy1.png",
+              "Count": 1
+            },
+            {
+              "Expression": "gloomy2",
+              "CanonicalPath": "assets/__project/images/characters/brother2/gloomy2.png",
+              "Count": 1
+            },
+            {
+              "Expression": "hurt",
+              "CanonicalPath": "assets/__project/images/characters/brother2/hurt.png",
+              "Count": 1
+            },
+            {
+              "Expression": "laugh1",
+              "CanonicalPath": "assets/__project/images/characters/brother2/laugh1.png",
+              "Count": 1
+            },
+            {
+              "Expression": "laugh2",
+              "CanonicalPath": "assets/__project/images/characters/brother2/laugh2.png",
+              "Count": 1
+            },
+            {
+              "Expression": "nervous1",
+              "CanonicalPath": "assets/__project/images/characters/brother2/nervous1.png",
+              "Count": 1
+            },
+            {
+              "Expression": "nervous2",
+              "CanonicalPath": "assets/__project/images/characters/brother2/nervous2.png",
+              "Count": 1
+            },
+            {
+              "Expression": "normal",
+              "CanonicalPath": "assets/__project/images/characters/brother2/normal.png",
+              "Count": 1
+            },
+            {
+              "Expression": "silent",
+              "CanonicalPath": "assets/__project/images/characters/brother2/nervous1.png",
+              "Count": 1
+            },
+            {
+              "Expression": "special1",
+              "CanonicalPath": "assets/__project/images/characters/brother2/close_eye.png",
+              "Count": 1
+            },
+            {
+              "Expression": "special2",
+              "CanonicalPath": "assets/__project/images/characters/brother2/close_eye_nervous.png",
+              "Count": 1
+            }
+          ],
+          "Added": [],
+          "Removed": [],
+          "Passed": true
+        },
+        {
+          "Id": "brother2_young",
+          "ObjectName": "唐門_二師兄_少年",
+          "Allowed": false,
+          "PreviousPathId": 5095,
+          "CurrentPathId": 5118,
+          "PreviousCount": 1,
+          "CurrentCount": 1,
+          "MappingsUnchanged": true,
+          "CanonicalIdsAllPresent": true,
+          "Mappings": [
+            {
+              "Expression": "normal",
+              "CanonicalPath": "assets/__project/images/characters/brother2/normal.png",
+              "Count": 1
+            }
+          ],
+          "Added": [],
+          "Removed": [],
+          "Passed": true
+        }
+      ],
+      "Passed": true,
+      "AllowedExistingMappingsPreserved": true
+    }
+  ],
+  "Bundles": [
+    {
+      "PreviousFile": "portrait_brother1_assets_all_2c1fe9a0119206bd4544009c1dc7c8e1.bundle",
+      "CurrentFile": "portrait_brother1_assets_all_2c1fe9a0119206bd4544009c1dc7c8e1.bundle",
+      "PreviousSHA256": "C9135BDDA2C89607859A1C4E03967D456C32B6BACA87A23FE915B7DCE36E70A4",
+      "CurrentSHA256": "C9135BDDA2C89607859A1C4E03967D456C32B6BACA87A23FE915B7DCE36E70A4",
+      "ByteIdentical": true
+    },
+    {
+      "PreviousFile": "portrait_brother2_assets_all_6ca049a2b8407dc902e6dd9970f41ea4.bundle",
+      "CurrentFile": "portrait_brother2_assets_all_6ca049a2b8407dc902e6dd9970f41ea4.bundle",
+      "PreviousSHA256": "D43F31C99C37B96618843C0336521C7F3F8FE8DA5AE36A7637F4D1E2A1C2E5C5",
+      "CurrentSHA256": "D43F31C99C37B96618843C0336521C7F3F8FE8DA5AE36A7637F4D1E2A1C2E5C5",
+      "ByteIdentical": true
+    },
+    {
+      "PreviousFile": "portrait_girl_04_01_assets_all_f0aec3309d6b49443f958c26c4597f10.bundle",
+      "CurrentFile": "portrait_girl_04_01_assets_all_f0aec3309d6b49443f958c26c4597f10.bundle",
+      "PreviousSHA256": "42F9EFD621123512D482416212F811CE2BC57E3375DB0926C3482156DD13AFE6",
+      "CurrentSHA256": "42F9EFD621123512D482416212F811CE2BC57E3375DB0926C3482156DD13AFE6",
+      "ByteIdentical": true
+    },
+    {
+      "PreviousFile": "portrait_girl_04_assets_all_ba6d9ee6a8cc4e8f7f7ca46018085760.bundle",
+      "CurrentFile": "portrait_girl_04_assets_all_ba6d9ee6a8cc4e8f7f7ca46018085760.bundle",
+      "PreviousSHA256": "F852DD28AC03ABDDED180E28F53D3B0C9EFB318E6D7D50906C6799DFDA8D0CA6",
+      "CurrentSHA256": "F852DD28AC03ABDDED180E28F53D3B0C9EFB318E6D7D50906C6799DFDA8D0CA6",
+      "ByteIdentical": true
+    },
+    {
+      "PreviousFile": "portrait_girl_05_01_assets_all_37b4be75483a9ae7dfbe0d252acc9487.bundle",
+      "CurrentFile": "portrait_girl_05_01_assets_all_37b4be75483a9ae7dfbe0d252acc9487.bundle",
+      "PreviousSHA256": "B6A3E244DA9127835C504619D9B5A2B46D228979678FC792D59D15A282B7AE8C",
+      "CurrentSHA256": "B6A3E244DA9127835C504619D9B5A2B46D228979678FC792D59D15A282B7AE8C",
+      "ByteIdentical": true
+    },
+    {
+      "PreviousFile": "portrait_girl_05_02_assets_all_b1302097ce72bb8cba19cce0c3618832.bundle",
+      "CurrentFile": "portrait_girl_05_02_assets_all_b1302097ce72bb8cba19cce0c3618832.bundle",
+      "PreviousSHA256": "04799099444DF9854BEDBA9F3ABCD85DD4E67464C9C290E14D4F461586CD97CF",
+      "CurrentSHA256": "04799099444DF9854BEDBA9F3ABCD85DD4E67464C9C290E14D4F461586CD97CF",
+      "ByteIdentical": true
+    },
+    {
+      "PreviousFile": "portrait_girl_05_assets_all_4e534e78891ef8c95d61bc72a47b99df.bundle",
+      "CurrentFile": "portrait_girl_05_assets_all_4e534e78891ef8c95d61bc72a47b99df.bundle",
+      "PreviousSHA256": "2A3CCB35E46F535F740434DD4164EFF6C5820A7A7880FED62E1205B532F335AE",
+      "CurrentSHA256": "2A3CCB35E46F535F740434DD4164EFF6C5820A7A7880FED62E1205B532F335AE",
+      "ByteIdentical": true
+    },
+    {
+      "PreviousFile": "portrait_girl_06_assets_all_2a4523a967edee2c60c0689f727f7977.bundle",
+      "CurrentFile": "portrait_girl_06_assets_all_2a4523a967edee2c60c0689f727f7977.bundle",
+      "PreviousSHA256": "E60AC712D95914B1EC843DB1F95781186F7677A4F634A9B57C8D60F893C22956",
+      "CurrentSHA256": "E60AC712D95914B1EC843DB1F95781186F7677A4F634A9B57C8D60F893C22956",
+      "ByteIdentical": true
+    },
+    {
+      "PreviousFile": "portrait_player_assets_all_7bec2bcbfba83b3c2a6357abd0d0fcdf.bundle",
+      "CurrentFile": "portrait_player_assets_all_7bec2bcbfba83b3c2a6357abd0d0fcdf.bundle",
+      "PreviousSHA256": "58435BD2CC34606D55AEFAA10706E7A5A17A3D5B2EAA4558C8853F9A9D1C626F",
+      "CurrentSHA256": "58435BD2CC34606D55AEFAA10706E7A5A17A3D5B2EAA4558C8853F9A9D1C626F",
+      "ByteIdentical": true
+    },
+    {
+      "PreviousFile": "portrait_player_section_assets_all_af595b76ed6832971b81c74fde3ae2a4.bundle",
+      "CurrentFile": "portrait_player_section_assets_all_af595b76ed6832971b81c74fde3ae2a4.bundle",
+      "PreviousSHA256": "BD3304DE7B398DACCD0EC09B8D49AB0642DCC36139BAF3A95A170812D5E737A5",
+      "CurrentSHA256": "BD3304DE7B398DACCD0EC09B8D49AB0642DCC36139BAF3A95A170812D5E737A5",
+      "ByteIdentical": true
+    },
+    {
+      "PreviousFile": "portrait_sister_assets_all_5f6ec59e57efe201339c1bd0c202a961.bundle",
+      "CurrentFile": "portrait_sister_assets_all_5f6ec59e57efe201339c1bd0c202a961.bundle",
+      "PreviousSHA256": "03D510CE6E03C96AB1F9C27A71993D294C950CBBB7A19B1A3950A5E086C74B56",
+      "CurrentSHA256": "03D510CE6E03C96AB1F9C27A71993D294C950CBBB7A19B1A3950A5E086C74B56",
+      "ByteIdentical": true
+    }
+  ],
+  "BundleCount": 11,
+  "AllPortraitBundlesByteIdentical": true,
+  "SpriteLayoutAndPixelConclusion": "Byte-identical portrait bundles preserve all serialized sprite layout, alpha and raw pixel data. The avatar scene references were separately re-read.",
+  "YuXiaomeiDoubt": "Original fallback introduced in build25987745 remains outside the unchanged compiled whitelist; no new portrait mapping this update.",
+  "AddedMappings": [],
+  "AdditionalRelatedIdentities": [],
+  "ExistingAllowedMappingsAndSpriteBytesPreserved": true,
+  "SharedAssets2Sha256": "BFFA0ECD389B1B9B5BEA10159B4789F5F6B9F24AA106D2A0F99CA895DF859554",
+  "SourcePolicySha256": "81B8B8E33ED03C87A7717A58F128C2FDB6CB3311818A9EC954D714A5C3801F91",
+  "PluginSha256": "AEEE02AC56DCDCB1E683D6356AC28FE19E61AF861D5663ACFFD1B83984F06957",
+  "GlobalGameManagersSha256": "9EA1CB9151E33CD1A885D5AACE0A0AA706B59997DAE42B40D013891E77A0AAE2",
+  "VersionSourceUnchangedDuringInspection": true,
+  "SourceSharedFileUnchangedDuringInspection": true,
+  "GameDirectoryModified": false,
+  "ActualGameRun": false,
+  "Limitations": [
+    "This is a resource fact check, not runtime or all-route verification.",
+    "Nonportrait scenes, catalog and managed assemblies changed; the new complete compatibility baseline and actual runtime evidence are separate.",
+    "Additional identity detection is limited to the seven supported families plus all prior control identities."
+  ]
+}

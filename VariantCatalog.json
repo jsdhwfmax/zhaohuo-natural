@@ -1,6 +1,6 @@
 {
   "SchemaVersion": 2,
-  "PackageVersion": "2.2.3",
+  "PackageVersion": "2.2.4",
   "RuntimeProtocol": 2,
   "PackageReady": true,
   "DefaultCharacterId": "player",

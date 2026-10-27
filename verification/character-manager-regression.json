@@ -3,7 +3,7 @@
     "CodeHashes":  [
                        {
                            "Path":  "installer/ZhaoHuoInstaller.psm1",
-                           "Sha256":  "C93596D4B695B196A6BC1FB53EFD0E61D22EFF5C0206B30EF697F838A800036B"
+                           "Sha256":  "912C61A6190BC1DD582545AADE9CEF71AD130B0D2754DA083E725FB1DB09CABF"
                        },
                        {
                            "Path":  "installer/AppearanceManager.ps1",
@@ -15,7 +15,7 @@
                        },
                        {
                            "Path":  "installer/CharacterCatalog.ps1",
-                           "Sha256":  "A424E13FD254258066333290397C606DB75122E8DE8223827ECAABF741ED294D"
+                           "Sha256":  "612BCDD6967D102C38BEB8758B5B31BD87649AF73184A55A21A7199019533E78"
                        },
                        {
                            "Path":  "installer/CharacterState.ps1",
@@ -31,7 +31,7 @@
                        },
                        {
                            "Path":  "VariantCatalog.json",
-                           "Sha256":  "C0A1872468DC61796F606E994A7D472B8F3C730CD5893174066AF9D1A29792AE"
+                           "Sha256":  "B209FD420AC6E2DD2C6BEB17906C0AE72DAD49E690002DF5F2CC78014B3CF1F8"
                        },
                        {
                            "Path":  "tests/Test-Installer.ps1",
@@ -41,7 +41,7 @@
     "status":  "passed",
     "powershell":  "5.1.26100.9711",
     "assertionCount":  74,
-    "durationSeconds":  286.66,
+    "durationSeconds":  179.28,
     "scope":  "Installer integration with synthetic game fixtures, official bundled runtime and stubbed offline-probe results; metadata probe tested separately; no real game installation or execution",
     "checks":  [
                    "First verified four-assembly group remains supported",

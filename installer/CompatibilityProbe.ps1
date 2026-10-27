@@ -5,6 +5,7 @@ $script:ZHCompatibilityBaselineHash = '7BA8D1175F4A9C603B61E81FAF4F42DA5A9A79D14
 $script:ZHCompatibilityBaseline25987745Hash = 'B20CF307BEDFED189303DFAC565B1E2EA1DBD8B616E8B649BFE41A0ED2A9B306'
 $script:ZHCompatibilityBaseline26021712Hash = '70F16F0205A49450740B0D4216292EE666657FB66A4DE1E9F0788B7A63561200'
 $script:ZHCompatibilityBaseline26073097Hash = 'E448C4F8E3A9D9D57DBA5BB2779B0A0774995BF7BDDDE1448421A086839DEC53'
+$script:ZHCompatibilityBaseline26237817Hash = '022B17E3598D441E60B887FE130389BFA9DBB7D81F1600F65B4F3FC5CC19AD6F'
 function Get-ZHCPHash([string]$Path) { (Get-FileHash -LiteralPath $Path -Algorithm SHA256).Hash }
 function Get-ZHCPChild([string]$Root, [string]$Relative) {
     if ([string]::IsNullOrWhiteSpace($Relative) -or [IO.Path]::IsPathRooted($Relative) -or $Relative.Contains(':') -or @($Relative -split '[\\/]' | Where-Object {$_ -in @('','..','.')}).Count) { throw '兼容性检查遇到不安全的相对路径。' }
@@ -233,6 +234,7 @@ function Get-ZHCompatibilityBaselineFiles {
         [pscustomobject]@{RelativePath='installer/compatibility-baseline-25987745.json';Sha256=$script:ZHCompatibilityBaseline25987745Hash}
         [pscustomobject]@{RelativePath='installer/compatibility-baseline-26021712.json';Sha256=$script:ZHCompatibilityBaseline26021712Hash}
         [pscustomobject]@{RelativePath='installer/compatibility-baseline-26073097.json';Sha256=$script:ZHCompatibilityBaseline26073097Hash}
+        [pscustomobject]@{RelativePath='installer/compatibility-baseline-26237817.json';Sha256=$script:ZHCompatibilityBaseline26237817Hash}
     )
 }
 function Test-ZhaoHuoCompatibility {

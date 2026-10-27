@@ -1,0 +1,152 @@
+{
+  "Passed": true,
+  "ActualGameRun": true,
+  "RuntimeVersion": "2.1.0",
+  "GameBuildId": "26237817",
+  "GameVersion": "release_1.0.6001.0",
+  "GameBuildIdUnchanged": true,
+  "DateUtc": "2026-10-27T23:34:01.2000152Z",
+  "LaunchUtc": "2026-10-27T23:33:23.2518509Z",
+  "PlayerVariant": "original",
+  "TangBuyiVariant": "original",
+  "AllOriginal": true,
+  "Selections": {
+    "player": "original",
+    "tang-buyi": "original",
+    "xiahou-lan": "original",
+    "tang-moling": "original",
+    "long-xiang": "original",
+    "yu-xiaomei": "original",
+    "tang-zheng": "original"
+  },
+  "ProcessExited": true,
+  "ObservedSeconds": 37.9,
+  "PluginSha256": "AEEE02AC56DCDCB1E683D6356AC28FE19E61AF861D5663ACFFD1B83984F06957",
+  "CatalogSha256": "6C601657AFC265DE5D8731E71BC95F9D5F0556CFFC2AA275075C8E5F53A07FB5",
+  "ManifestUnchanged": true,
+  "Player": {
+    "Resources": 50,
+    "Replaced": 0,
+    "OriginalFallback": 50,
+    "AvatarBranches": 2,
+    "AvatarReplaced": 0,
+    "NonTargetUnchanged": true
+  },
+  "Characters": [
+    {
+      "Id": "tang-buyi",
+      "VariantId": "original",
+      "BaseResources": 16,
+      "Replaced": 0,
+      "OriginalFallback": 16,
+      "BulkResources": 16,
+      "AdultAliases": 2,
+      "NegativeControls": 2,
+      "Passed": true
+    },
+    {
+      "Id": "xiahou-lan",
+      "VariantId": "original",
+      "BaseResources": 16,
+      "Replaced": 0,
+      "OriginalFallback": 16,
+      "BulkResources": 16,
+      "AdultAliases": 1,
+      "NegativeControls": 2,
+      "Passed": true
+    },
+    {
+      "Id": "tang-moling",
+      "VariantId": "original",
+      "BaseResources": 16,
+      "Replaced": 0,
+      "OriginalFallback": 16,
+      "BulkResources": 16,
+      "AdultAliases": 0,
+      "NegativeControls": 2,
+      "Passed": true
+    },
+    {
+      "Id": "long-xiang",
+      "VariantId": "original",
+      "BaseResources": 22,
+      "Replaced": 0,
+      "OriginalFallback": 22,
+      "BulkResources": 22,
+      "AdultAliases": 1,
+      "NegativeControls": 2,
+      "Passed": true
+    },
+    {
+      "Id": "yu-xiaomei",
+      "VariantId": "original",
+      "BaseResources": 28,
+      "Replaced": 0,
+      "OriginalFallback": 28,
+      "BulkResources": 28,
+      "AdultAliases": 0,
+      "NegativeControls": 16,
+      "Passed": true
+    },
+    {
+      "Id": "tang-zheng",
+      "VariantId": "original",
+      "BaseResources": 12,
+      "Replaced": 0,
+      "OriginalFallback": 12,
+      "BulkResources": 12,
+      "AdultAliases": 0,
+      "NegativeControls": 2,
+      "Passed": true
+    }
+  ],
+  "CollectorHashes": [
+    {
+      "File": "Test-CharacterRuntime.ps1",
+      "Sha256": "A663CB23360C82AA784611CF0ECAB074EEFA0FAB86657D7AFE29ED0714E10F0A"
+    },
+    {
+      "File": "Assert-CharacterDiagnostics.ps1",
+      "Sha256": "A2370E2FCE665FCEE113D2325FE5F2198229FE908E454D342DE8567E53294FCD"
+    },
+    {
+      "File": "runtime-expectations.json",
+      "Sha256": "2187508C19B591823C7B8F1BB8FA1C7716F67E7A284E133DF55A5122582CD3A3"
+    }
+  ],
+  "Scope": "Actual registered Steam executable, v2.1 DLL, real Addressables/LoadPortrait/Sync/Setup/UI sprites, six NPC bulk paths and exact alias/negative controls. Diagnostic fixtures only, no story or save loaded. This run proves only the recorded installed variants; screenshots need separate visual review.",
+  "DiagnosticFlags": {
+    "Game": "release_1.0.6001.0",
+    "Unity": "2020.3.49f1",
+    "Resources": "50",
+    "Replaced": "0",
+    "OriginalFallback": "50",
+    "NormalSetupPath": "true",
+    "AsyncAndSync": "true",
+    "UiSpriteMatch": "true",
+    "RepeatLoadCache": "true",
+    "NonProtagonistUnchanged": "true",
+    "AvatarPanelBranches": "2",
+    "AvatarPanelReplaced": "0",
+    "Scope": "isolated real StoryCharacterController and PlayerAvatarPanel fixtures, actual Addressables, game-created UI Images; no story/save simulation"
+  },
+  "PrivateSourceSHA256": "4C25A91E761106557A776A10649334AC1DDF9C3C85E962FA965D4D969653279C",
+  "DiagnosticFileHashes": [
+    {
+      "File": "PASS.txt",
+      "Sha256": "120DBCE0EA24FCDBDA8077501CD091AED00764C5890729205C8CCC4A6348BACB"
+    },
+    {
+      "File": "portraits.tsv",
+      "Sha256": "444F322884CDFE46561BE38981AFDF4574F451A59E5120CA764E17B15E3FD14E"
+    },
+    {
+      "File": "characters.tsv",
+      "Sha256": "FF60088ECE60E77637747C7FDE7D23F89435804C3B53B2FCE51CF1673FFFE66D"
+    },
+    {
+      "File": "characters-summary.txt",
+      "Sha256": "5A2909A04437BD7201FB0F304176671428FE3F4713F3978DE69651207756C043"
+    }
+  ]
+}

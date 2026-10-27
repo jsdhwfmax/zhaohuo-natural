@@ -1,0 +1,154 @@
+{
+  "Passed": true,
+  "ActualGameRun": true,
+  "PackageVersion": "2.2.4",
+  "RuntimeVersion": "2.1.0",
+  "GameBuildId": "26237817",
+  "GameVersion": "release_1.0.6001.0",
+  "CatalogSha256": "6C601657AFC265DE5D8731E71BC95F9D5F0556CFFC2AA275075C8E5F53A07FB5",
+  "PluginSha256": "AEEE02AC56DCDCB1E683D6356AC28FE19E61AF861D5663ACFFD1B83984F06957",
+  "Characters": [
+    {
+      "Id": "player",
+      "Passed": true,
+      "OriginalDisabled": true,
+      "NonTargetUnchanged": true
+    },
+    {
+      "Id": "tang-buyi",
+      "Passed": true,
+      "OriginalDisabled": true,
+      "NonTargetUnchanged": true
+    },
+    {
+      "Id": "xiahou-lan",
+      "Passed": true,
+      "OriginalDisabled": true,
+      "NonTargetUnchanged": true
+    },
+    {
+      "Id": "tang-moling",
+      "Passed": true,
+      "OriginalDisabled": true,
+      "NonTargetUnchanged": true
+    },
+    {
+      "Id": "long-xiang",
+      "Passed": true,
+      "OriginalDisabled": true,
+      "NonTargetUnchanged": true
+    },
+    {
+      "Id": "yu-xiaomei",
+      "Passed": true,
+      "OriginalDisabled": true,
+      "NonTargetUnchanged": true
+    },
+    {
+      "Id": "tang-zheng",
+      "Passed": true,
+      "OriginalDisabled": true,
+      "NonTargetUnchanged": true
+    }
+  ],
+  "TestedVariants": [
+    {
+      "CharacterId": "player",
+      "VariantId": "xianxia",
+      "Passed": true,
+      "AssetFingerprint": "E8EB408F31283581605425055AD742753C3E76D7C2D78065473117CB19794DBA",
+      "LoadedPortraitCount": 47
+    },
+    {
+      "CharacterId": "tang-buyi",
+      "VariantId": "female",
+      "Passed": true,
+      "AssetFingerprint": "6C94D6E83A1C983E331074A21872441E5A23D31D4C053E274DD246800E4EFFBE",
+      "LoadedPortraitCount": 15
+    },
+    {
+      "CharacterId": "xiahou-lan",
+      "VariantId": "refined",
+      "Passed": true,
+      "AssetFingerprint": "DDA8E47B85FAD60AB97B6A3FD9617062A4D08F84F5D1F81D84E9F1625E0DF282",
+      "LoadedPortraitCount": 15
+    },
+    {
+      "CharacterId": "tang-moling",
+      "VariantId": "refined",
+      "Passed": true,
+      "AssetFingerprint": "14A2135E12355E2573DB89C04E2E70624C9601D00279FAD5F984CD39E8909439",
+      "LoadedPortraitCount": 15
+    },
+    {
+      "CharacterId": "long-xiang",
+      "VariantId": "refined",
+      "Passed": true,
+      "AssetFingerprint": "6C8C80E689B18BF53B08BC7C361C03F1DE4CFDE2079EF4310CD0E0CA075E022E",
+      "LoadedPortraitCount": 21
+    },
+    {
+      "CharacterId": "yu-xiaomei",
+      "VariantId": "refined",
+      "Passed": true,
+      "AssetFingerprint": "FF0EE32DD3B0EE440BAAD042CCC409B31FD40B99DF2B6A63CB3D137973132E8E",
+      "LoadedPortraitCount": 25
+    },
+    {
+      "CharacterId": "tang-zheng",
+      "VariantId": "female",
+      "Passed": true,
+      "AssetFingerprint": "311251159B1B6D6D46324D686EC3FDF5314906318A2904203DD24818FEE944ED",
+      "LoadedPortraitCount": 12
+    }
+  ],
+  "Checks": {
+    "AllPortraitsLoaded": true,
+    "UiSpriteMatch": true,
+    "RepeatLoadCache": true,
+    "NonTargetUnchanged": true,
+    "OriginalModeVerified": true
+  },
+  "NormalSteamStartup": {
+    "Passed": true,
+    "StillRunning": true,
+    "Responding": true,
+    "PluginReady": true,
+    "SelftestArgumentPresent": false,
+    "ObservedSeconds": 91.6,
+    "PluginErrorLines": 0
+  },
+  "Preservation": {
+    "Passed": true,
+    "InitialInstallationPreserved": true,
+    "OriginalBackupsPreserved": true,
+    "OtherPluginsPreserved": true,
+    "GameFilesPreserved": true,
+    "SaveFilesPreserved": true,
+    "SelectionsRestored": true
+  },
+  "EvidenceFiles": [
+    {
+      "Path": "verification/runtime-build26237817/all-on.json",
+      "Sha256": "E92AD8E32D0549D120CD80F24714B6F664F0BE38A0E90B48469E243434DD6D74"
+    },
+    {
+      "Path": "verification/runtime-build26237817/all-original.json",
+      "Sha256": "2DF2554F022F7839B23470C787CAC51B1C366BD50289562C4024657A84789108"
+    },
+    {
+      "Path": "verification/runtime-build26237817/normal-startup.json",
+      "Sha256": "74988C1E9D6CCFA6025CB66190C4E4EA5FC078A94D1E8E6D0ECB7DB69DFA5E93"
+    },
+    {
+      "Path": "verification/runtime-build26237817/preservation.json",
+      "Sha256": "72DBD0547C3BE6BAC32A131D33B01570E75A3E9044F72995058D46CA5CF1B0AB"
+    }
+  ],
+  "Scope": "Two actual Steam diagnostic-fixture runs on build26237817: xianxia and six representative NPC custom appearances, then all seven original modes. Original user choices restored before at least90 seconds of ordinary Steam startup. No story/save loaded; no claim that all fourteen styles or full game routes were rerun.",
+  "Limitations": [
+    "Read-only mapping and portrait bundles were audited separately.",
+    "The unchanged runtime/artwork inherits earlier style-specific tests; this report covers only seven listed custom appearances.",
+    "Screenshots are kept in private runtime evidence; visual review is separate from the automated assertions."
+  ]
+}

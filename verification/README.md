@@ -1,5 +1,22 @@
 # 验证记录
 
+## v2.2.4：Steam build 26237817 兼容适配
+
+本轮目标为 Steam build `26237817` / `release_1.0.6001.0`。运行插件仍为 v2.1.0，全部 447 张 PNG 与布局保持原字节。
+
+[实际运行总报告](runtime-build26237817/compatibility-runtime.json)记录七角色各一款代表外观（150 张替换图）及七角色全原版两组实际 Steam 诊断，覆盖资源加载、UI 引用、缓存和非目标保护。恢复原有七项选择后，[普通启动](runtime-build26237817/normal-startup.json)观测 91.6 秒通过，无自测参数与插件错误。[文件保护记录](runtime-build26237817/preservation.json)核对首次备份、其他模组、游戏文件与存档。
+
+| 范围 | 证据与边界 |
+| --- | --- |
+| 静态资源与接口 | [资源映射](game-resources-build26237817/resource-graph.json)、[头像引用](game-resources-build26237817/avatar-resources.json)、[相关接口](game-resources-build26237817/api-surface.json)。对照 build `26073097` 的真实旧快照，核对角色映射、资源包和相关代码；不把游戏更新概括为单纯版本字符串变化 |
+| 新旧构建识别 | [五基线核验](compatibility-probe-tests-build26237817.json)、[构建路由](build26237817-validation-tests.json)。各套基线分别完整核对，保留未知文件、混装与检测竞态的拒绝规则 |
+| 安装与升级 | [角色管理](character-manager-tests.json)、[安装器回归](character-manager-regression.json)、[共享组件](character-shared-update.json)、[扩展迁移](character-expansion-tests.json)、[兼容升级](character-compatibility-upgrade.json)、[旧女版修图升级](character-artwork-patch.json)。使用隔离夹具，不能替代实机结果 |
+| 界面与目录 | [GUI](character-manager-gui.json)为真实 WinForms 事件配合 mock 后端；[最终目录](character-catalog-acceptance.json)绑定当前 Catalog 与全部真实图片 |
+
+本轮没有推进或保存剧情，也未逐套重测其余七款未变外观。旧实机报告保留原构建和范围，不等于全路线或全部第三方模组组合验证。被替换的 v2.2.3 报告原字节归档于 [history-v2.2.3](history-v2.2.3/)。
+
+环境记录：首次尝试时，Steam 客户端在游戏启动前异常退出，该次未计为通过。恢复原选择并正常启动 Steam 客户端后，在独立目录重新完成本轮验证；原始失败与恢复记录保存在维护者本地。
+
 ## v2.2.3：1.0.6.05 兼容适配
 
 本轮目标为 Steam build `26073097` / `release_1.0.6000.5`。运行插件仍为 v2.1.0，全部 447 张 PNG 与角色布局保持原字节。
@@ -10,8 +27,8 @@
 | --- | --- |
 | 静态资源与接口 | [资源映射](game-resources-build26073097/resource-graph.json)、[头像引用](game-resources-build26073097/avatar-resources.json)、[相关接口](game-resources-build26073097/api-surface.json)。48 项角色身份记录及其立绘映射、11 个立绘资源包保持；Core 147 方法/35 类型、Story 立绘闭包 60 方法/14 类型保持。游戏其他资源及 Story 闭包外实现确有变化，不称为单纯版本字符串更新 |
 | 新旧构建识别 | [四基线核验](compatibility-probe-tests-build26073097.json)、[构建路由](build26073097-validation-tests.json)。各套基线完整核对，保留未知文件、混装与检测竞态的拒绝规则 |
-| 安装与升级 | [角色管理](character-manager-tests.json)、[安装器回归](character-manager-regression.json)、[共享组件](character-shared-update.json)、[扩展迁移](character-expansion-tests.json)、[兼容升级](character-compatibility-upgrade.json)、[旧女版修图升级](character-artwork-patch.json)。使用隔离夹具，不能替代实机结果 |
-| 界面与目录 | [GUI](character-manager-gui.json)为真实 WinForms 事件配合 mock 后端；[最终目录](character-catalog-acceptance.json)绑定当前 Catalog 与全部真实图片 |
+| 安装与升级 | [角色管理](history-v2.2.3/character-manager-tests.json)、[安装器回归](history-v2.2.3/character-manager-regression.json)、[共享组件](history-v2.2.3/character-shared-update.json)、[扩展迁移](history-v2.2.3/character-expansion-tests.json)、[兼容升级](history-v2.2.3/character-compatibility-upgrade.json)、[旧女版修图升级](history-v2.2.3/character-artwork-patch.json)。使用隔离夹具，不能替代实机结果 |
+| 界面与目录 | [GUI](history-v2.2.3/character-manager-gui.json)为真实 WinForms 事件配合 mock 后端；[最终目录](history-v2.2.3/character-catalog-acceptance.json)绑定当前 Catalog 与全部真实图片 |
 
 本轮没有推进或保存剧情，也未逐套重测其余七款未变外观。旧实机报告保留各自构建和范围，不等于全路线或全部第三方模组组合验证。被本轮替换的 v2.2.2 报告原字节归档于 [history-v2.2.2](history-v2.2.2/)。
 

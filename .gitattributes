@@ -26,3 +26,4 @@ installer/compatibility-baseline-25987745.json -text whitespace=blank-at-eol,bla
 installer/compatibility-baseline-26021712.json -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
 installer/compatibility-baseline-26073097.json -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
 verification/runtime-build25987745/*/portraits.tsv whitespace=-blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+installer/compatibility-baseline-26237817.json -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol

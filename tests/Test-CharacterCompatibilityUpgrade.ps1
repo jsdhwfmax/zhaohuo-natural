@@ -4,13 +4,13 @@ param(
     [Parameter(Mandatory=$true)][string]$PreviousPackageRoot,
     [Parameter(Mandatory=$true)][string]$OutputPath
 )
-# Exercise the genuine released v2.2.2 installer first, then the current one.
+# Exercise the genuine released v2.2.3 installer first, then the current one.
 # Every game, DLL and portrait used by the transactions below is an inert fixture.
 $ErrorActionPreference='Stop';Set-StrictMode -Version 2.0
 $repo=Split-Path -Parent $PSScriptRoot
 $previous=[IO.Path]::GetFullPath($PreviousPackageRoot)
 $oldCatalog=Get-Content -LiteralPath (Join-Path $previous 'VariantCatalog.json') -Raw -Encoding UTF8|ConvertFrom-Json
-if($oldCatalog.PackageVersion-ne '2.2.2'-or $oldCatalog.RuntimeProtocol-ne 2){throw 'A complete genuine v2.2.2 source package is required.'}
+if($oldCatalog.PackageVersion-ne '2.2.3'-or $oldCatalog.RuntimeProtocol-ne 2){throw 'A complete genuine v2.2.3 source package is required.'}
 $newCatalog=Get-Content -LiteralPath (Join-Path $repo 'VariantCatalog.json') -Raw -Encoding UTF8|ConvertFrom-Json
 $productionDll=@($newCatalog.SharedFiles|Where-Object Name -eq 'ZhaoHuoNatural.dll')[0].Sha256
 $work=Join-Path $PSScriptRoot ('.work\release-upgrade-'+[Guid]::NewGuid().ToString('N'))
@@ -52,7 +52,7 @@ foreach($character in $newCatalog.Characters){
 foreach($entry in $newCatalog.SharedFiles){$p=Join-Path $package ($plugin+'\'+$entry.Name);if($entry.Name-ne 'portrait-layout.tsv'){Write-Text $p ('INERT UNCHANGED SHARED '+$entry.Name)};$entry.Sha256=Hash $p}
 $newCatalog.PackageReady=$true
 $catalog=$newCatalog|ConvertTo-Json -Depth 20|ConvertFrom-Json
-$catalog.PackageVersion='2.2.2'
+$catalog.PackageVersion='2.2.3'
 Save-Json (Join-Path $package 'VariantCatalog.json') $catalog
 & $module {param($Shared)foreach($e in $Shared){$script:CharacterSharedHashes[$e.Name]=$e.Sha256}} $catalog.SharedFiles
 $pe=New-Object byte[] 256;$pe[0]=0x4D;$pe[1]=0x5A;$pe[0x3C]=0x80;$pe[0x80]=0x50;$pe[0x81]=0x45;$pe[0x84]=0x64;$pe[0x85]=0x86
@@ -65,24 +65,24 @@ $choices=[ordered]@{player='xianxia';'tang-buyi'='female';'xiahou-lan'='refined'
 foreach($role in $choices.Keys){$null=Apply $game $role $choices[$role]}
 $before=State $game;$beforeManifest=Hash (StatePath $game);$payloadBefore=Snapshot (Join-Path $game $plugin)
 $first=Join-Path (Join-Path $game 'BepInEx\ZhaoHuoNatural-install') $before.BackupRelativePath;$backups=Snapshot $first
-Assert ($before.SchemaVersion-eq 4-and $before.RuntimeProtocol-eq 2-and $before.Characters.Count-eq 7) 'Released v2.2.2 installer creates the seven-role schema4/protocol2 source installation'
+Assert ($before.SchemaVersion-eq 4-and $before.RuntimeProtocol-eq 2-and $before.Characters.Count-eq 7) 'Released v2.2.3 installer creates the seven-role schema4/protocol2 source installation'
 Remove-Module $module
 $module=Import-Module (Join-Path $repo 'installer\ZhaoHuoInstaller.psm1') -Force -PassThru
-$group=@(& $module {$script:SupportedGameBuilds|Where-Object BuildId -eq '26073097'})
-Assert ($group.Count-eq 1-and $group[0].Hashes.Count-eq 4) 'New game support declares a complete build26073097 fingerprint group'
+$group=@(& $module {$script:SupportedGameBuilds|Where-Object BuildId -eq '26237817'})
+Assert ($group.Count-eq 1-and $group[0].Hashes.Count-eq 4) 'New game support declares a complete build26237817 fingerprint group'
 $fixtureHashes=[ordered]@{};foreach($name in @('Assembly-CSharp.dll','Mortal.Core.dll','Mortal.Story.dll','Fungus.dll')){$fixtureHashes[$name]=Hash (Join-Path $game ('Mortal_Data\Managed\'+$name))}
 & $module {param($Shared,$Hashes)foreach($e in $Shared){$script:CharacterSharedHashes[$e.Name]=$e.Sha256};$script:SupportedGameBuilds=@([pscustomobject]@{BuildId='90000001';Hashes=$Hashes})} $newCatalog.SharedFiles $fixtureHashes
 $catalog=$newCatalog;Save-Json (Join-Path $package 'VariantCatalog.json') $catalog
 $snap=Snapshot $game;$result=Check $game 'player' 'xianxia'
 Assert ($result.Status-eq 'Checked'-and $result.ChangedFiles-eq 0-and(Same $snap (Snapshot $game))) 'New manager checks an old complete installation without rewriting any file'
 $result=Apply $game 'player' 'xianxia';$after=State $game
-Assert ($result.Status-eq 'NoOp'-and-not $result.RequiresMigration-and(Same $snap (Snapshot $game))) 'v2.2.2 to current same-selection upgrade is a complete file no-op'
+Assert ($result.Status-eq 'NoOp'-and-not $result.RequiresMigration-and(Same $snap (Snapshot $game))) 'v2.2.3 to current same-selection upgrade is a complete file no-op'
 Assert (($after.Characters|ConvertTo-Json -Depth 8)-ceq($before.Characters|ConvertTo-Json -Depth 8)) 'All seven existing character selections survive the manager upgrade'
 $plan=Get-PortraitApplyPlan -GamePath $game -PackageRoot $package -CharacterId player -VariantId hardman
 Assert ($plan.Actions.Count-eq 47-and @($plan.Actions|Where-Object{$_.CharacterId-ne 'player'-or $_.Category-ne 'CharacterPortrait'}).Count-eq 0) 'An existing alternative hardman appearance plans only its 47 player PNG replacements'
 Inject-Failure $game '@commit'
 try{Reject {Apply $game 'player' 'hardman'} '*INJECTED_CHARACTER_WRITE_FAILURE*' 'A failed hardman manifest commit is injected after portrait writes'}finally{Clear-Failure}
-Assert ((Hash (StatePath $game))-eq $beforeManifest-and(Same $payloadBefore (Snapshot (Join-Path $game $plugin)))) 'Failed switch restores the exact v2.2.2 selections and payload'
+Assert ((Hash (StatePath $game))-eq $beforeManifest-and(Same $payloadBefore (Snapshot (Join-Path $game $plugin)))) 'Failed switch restores the exact v2.2.3 selections and payload'
 Inject-Failure $game '@commit' -Interrupt
 try{Reject {Apply $game 'player' 'hardman'} '*INJECTED_CHARACTER_WRITE_FAILURE*' 'Interrupted hardman switch remains recoverable'}finally{Clear-Failure}
 $snap=Snapshot $game;$check=Check $game 'player' 'hardman'
@@ -104,6 +104,6 @@ Assert ((Same $initialCore (Snapshot (Join-Path $game 'BepInEx\core')))-and(Hash
 Uninstall-PortraitManager -GamePath $game -Log $quiet
 Assert (-not(Test-Path -LiteralPath (Join-Path $game $plugin))-and(Get-Content $legacy -Raw)-eq 'ORIGINAL LEGACY PLUGIN'-and(Get-Content $other -Raw)-eq 'UNRELATED USER PLUGIN') 'Uninstall after the release upgrade restores the original legacy plugin and preserves unrelated files'
 $code=@('installer/ZhaoHuoInstaller.psm1','installer/AppearanceManager.ps1','installer/VariantSupport.ps1','installer/CharacterCatalog.ps1','installer/CharacterState.ps1','installer/CharacterManager.ps1','installer/CharacterTransactions.ps1','tests/Test-CharacterManager.ps1','tests/Test-CharacterCompatibilityUpgrade.ps1')
-$report=[ordered]@{Passed=$true;FromVersion='2.2.2';ToVersion=$newCatalog.PackageVersion;RuntimeVersion='2.1.0';RuntimeProtocol=2;ExecutionMode='IsolatedPreviousReleaseInstallation';ActualGameRun=$false;RealGameFilesModified=$false;ProductionPluginSha256=$productionDll;AssertionCount=$checks.Count;Checks=$checks.ToArray();InitialInstallationPreserved=$true;OriginalBackupsPreserved=$true;OtherPluginsPreserved=$true;AllExistingSelectionsPreserved=$true;PowerShell=$PSVersionTable.PSVersion.ToString();DurationSeconds=[Math]::Round(([DateTime]::UtcNow-$start).TotalSeconds,2);PreviousInstallerCodeHashes=$oldSourceHashes;CodeHashAlgorithm='SHA256-UTF8-noBOM-LF-v1';CodeHashes=@($code|ForEach-Object{[pscustomobject]@{Path=$_;Sha256=(CodeHash (Join-Path $repo $_))}});Scope='Genuine released v2.2.2 installer creates an isolated inert seven-role installation. The current manager checks it, preserves every selection, switches hardman, rolls back a failure, recovers an interruption, rejects external edits and uninstalls. No game code or real game files are used. Dummy payload hashes are accepted only inside this test process; artwork acceptance is separate.'}
+$report=[ordered]@{Passed=$true;FromVersion='2.2.3';ToVersion=$newCatalog.PackageVersion;RuntimeVersion='2.1.0';RuntimeProtocol=2;ExecutionMode='IsolatedPreviousReleaseInstallation';ActualGameRun=$false;RealGameFilesModified=$false;ProductionPluginSha256=$productionDll;AssertionCount=$checks.Count;Checks=$checks.ToArray();InitialInstallationPreserved=$true;OriginalBackupsPreserved=$true;OtherPluginsPreserved=$true;AllExistingSelectionsPreserved=$true;PowerShell=$PSVersionTable.PSVersion.ToString();DurationSeconds=[Math]::Round(([DateTime]::UtcNow-$start).TotalSeconds,2);PreviousInstallerCodeHashes=$oldSourceHashes;CodeHashAlgorithm='SHA256-UTF8-noBOM-LF-v1';CodeHashes=@($code|ForEach-Object{[pscustomobject]@{Path=$_;Sha256=(CodeHash (Join-Path $repo $_))}});Scope='Genuine released v2.2.3 installer creates an isolated inert seven-role installation. The current manager checks it, preserves every selection, switches hardman, rolls back a failure, recovers an interruption, rejects external edits and uninstalls. No game code or real game files are used. Dummy payload hashes are accepted only inside this test process; artwork acceptance is separate.'}
 Save-Json $OutputPath $report
 Write-Host ('ALL '+$checks.Count+' RELEASE UPGRADE ASSERTIONS PASSED')

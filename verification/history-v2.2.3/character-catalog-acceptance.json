@@ -1,0 +1,186 @@
+{
+    "Passed":  true,
+    "DateUtc":  "2026-10-25T04:45:53.0144835Z",
+    "PowerShell":  "5.1.26100.9711",
+    "DurationSeconds":  30.68,
+    "DataOnlyAcceptance":  true,
+    "SourceSuitesRerun":  false,
+    "ActualGameRun":  false,
+    "PackageReady":  true,
+    "ReadOnlyPackageUnchanged":  true,
+    "CatalogSha256":  "92D144460C9DA73BB673DD9043911CDB80E4345B44F3D84FF884A48BE49FDD5E",
+    "CatalogCodeSha256":  "C0A1872468DC61796F606E994A7D472B8F3C730CD5893174066AF9D1A29792AE",
+    "PortraitCount":  447,
+    "CustomVariantCount":  14,
+    "CharacterCount":  7,
+    "AssertionCount":  69,
+    "Checks":  [
+                   "Final production catalog is ready and passes the strict schema/runtime pins",
+                   "All 21 choices are available under the seven independent roles",
+                   "Each role exposes one original option without bundled original game images",
+                   "Frozen role layout: player",
+                   "Final variant inventory: player/natural",
+                   "Actual source hashes, isolated targets and layout geometry: player/natural",
+                   "Exact frozen or approved repaired artwork revision: player/natural",
+                   "Final variant inventory: player/handsome",
+                   "Actual source hashes, isolated targets and layout geometry: player/handsome",
+                   "Exact frozen or approved repaired artwork revision: player/handsome",
+                   "Final variant inventory: player/xianxia",
+                   "Actual source hashes, isolated targets and layout geometry: player/xianxia",
+                   "Exact frozen or approved repaired artwork revision: player/xianxia",
+                   "Final variant inventory: player/white",
+                   "Actual source hashes, isolated targets and layout geometry: player/white",
+                   "Exact frozen or approved repaired artwork revision: player/white",
+                   "Final variant inventory: player/black",
+                   "Actual source hashes, isolated targets and layout geometry: player/black",
+                   "Exact frozen or approved repaired artwork revision: player/black",
+                   "Final variant inventory: player/veteran",
+                   "Actual source hashes, isolated targets and layout geometry: player/veteran",
+                   "Exact frozen or approved repaired artwork revision: player/veteran",
+                   "Final variant inventory: player/hardman",
+                   "Actual source hashes, isolated targets and layout geometry: player/hardman",
+                   "Exact frozen or approved repaired artwork revision: player/hardman",
+                   "Frozen role layout: tang-buyi",
+                   "Final variant inventory: tang-buyi/refined",
+                   "Actual source hashes, isolated targets and layout geometry: tang-buyi/refined",
+                   "Exact frozen or approved repaired artwork revision: tang-buyi/refined",
+                   "Intentional original-art fallback: tang-buyi/refined",
+                   "Final variant inventory: tang-buyi/female",
+                   "Actual source hashes, isolated targets and layout geometry: tang-buyi/female",
+                   "Exact frozen or approved repaired artwork revision: tang-buyi/female",
+                   "Intentional original-art fallback: tang-buyi/female",
+                   "Frozen role layout: xiahou-lan",
+                   "Final variant inventory: xiahou-lan/refined",
+                   "Actual source hashes, isolated targets and layout geometry: xiahou-lan/refined",
+                   "Exact frozen or approved repaired artwork revision: xiahou-lan/refined",
+                   "Intentional original-art fallback: xiahou-lan/refined",
+                   "Frozen role layout: tang-moling",
+                   "Final variant inventory: tang-moling/refined",
+                   "Actual source hashes, isolated targets and layout geometry: tang-moling/refined",
+                   "Exact frozen or approved repaired artwork revision: tang-moling/refined",
+                   "Intentional original-art fallback: tang-moling/refined",
+                   "Frozen role layout: long-xiang",
+                   "Final variant inventory: long-xiang/refined",
+                   "Actual source hashes, isolated targets and layout geometry: long-xiang/refined",
+                   "Exact frozen or approved repaired artwork revision: long-xiang/refined",
+                   "Intentional original-art fallback: long-xiang/refined",
+                   "Frozen role layout: yu-xiaomei",
+                   "Final variant inventory: yu-xiaomei/refined",
+                   "Actual source hashes, isolated targets and layout geometry: yu-xiaomei/refined",
+                   "Exact frozen or approved repaired artwork revision: yu-xiaomei/refined",
+                   "Intentional original-art fallback: yu-xiaomei/refined",
+                   "Frozen role layout: tang-zheng",
+                   "Final variant inventory: tang-zheng/female",
+                   "Actual source hashes, isolated targets and layout geometry: tang-zheng/female",
+                   "Exact frozen or approved repaired artwork revision: tang-zheng/female",
+                   "Intentional original-art fallback: tang-zheng/female",
+                   "Exactly 14 custom variants and 447 declared PNGs",
+                   "Verified shared component: ZhaoHuoNatural.dll",
+                   "Verified shared component: portrait-map.txt",
+                   "Verified shared component: portrait-layout.tsv",
+                   "Decoded artwork evidence covers all final PNGs",
+                   "Decoded dimensions/alpha evidence binds all 447 file hashes",
+                   "Every required generated image is bound to an included actual prompt record",
+                   "Historical report retained; every non-Catalog tested source still matches: verification/character-manager-tests.json",
+                   "Historical report retained; every non-Catalog tested source still matches: verification/character-manager-regression.json",
+                   "All checked package inputs and exact portrait inventories remain unchanged"
+               ],
+    "ReusedReports":  [
+                          {
+                              "Path":  "verification/character-manager-tests.json",
+                              "Sha256":  "15CC0931A3C83DEAE1DAA6E95085ADE7D841005C50610B00346CA7C36C28ABF8",
+                              "HistoricalCatalogCodeSha256":  "C0A1872468DC61796F606E994A7D472B8F3C730CD5893174066AF9D1A29792AE",
+                              "AssertionCount":  64,
+                              "UnchangedNonCatalogCodeFiles":  9,
+                              "SourceSuiteRerun":  false,
+                              "Scope":  "Original synthetic-fixture report retained unchanged. Production Catalog data is separately validated in this acceptance; the old hash is not relabeled as a new test run."
+                          },
+                          {
+                              "Path":  "verification/character-manager-regression.json",
+                              "Sha256":  "37D00038D7D5BE385271D6AE3648DC2C8C7F9E8AF485F1CAD5F39A88C806F345",
+                              "HistoricalCatalogCodeSha256":  "C0A1872468DC61796F606E994A7D472B8F3C730CD5893174066AF9D1A29792AE",
+                              "AssertionCount":  74,
+                              "UnchangedNonCatalogCodeFiles":  8,
+                              "SourceSuiteRerun":  false,
+                              "Scope":  "Original synthetic-fixture report retained unchanged. Production Catalog data is separately validated in this acceptance; the old hash is not relabeled as a new test run."
+                          }
+                      ],
+    "ArtworkEvidence":  {
+                            "Path":  "verification/character-art-integrity.json",
+                            "Sha256":  "C5D242C8F80B83F0FB4686F4FE03F1ABD0406445CB3DB8F2997D18E477632EA7"
+                        },
+    "PromptEvidence":  [
+                           {
+                               "Path":  "Prompts/hardman/index.json",
+                               "Sha256":  "AE18020F082CF884456F1C4067F325C92BEFF94EBBB5A47836E915F54E9489CE",
+                               "AssetCount":  47
+                           },
+                           {
+                               "Path":  "Prompts/multichar/index.json",
+                               "Sha256":  "4E7483CA8732CAA2F4879238B0D90F6EFFFABE4D56DBC73F8365898CBC2A20BF",
+                               "AssetCount":  171
+                           },
+                           {
+                               "Path":  "Prompts/expansion-v2.1/index.json",
+                               "Sha256":  "F4C6879E8B4DF201A1E2576FE6ECA9215BA900189079DB05BC8E034D9BDF5139",
+                               "AssetCount":  88
+                           },
+                           {
+                               "Path":  "Prompts/hand-fix-v2.2.1/index.json",
+                               "Sha256":  "7A75602EA16CF0904BA3BD0F0C6EA0386FF0C64A3F971624AF4D964F1584AF36",
+                               "AssetCount":  15
+                           }
+                       ],
+    "CodeHashAlgorithm":  "SHA256-UTF8-noBOM-LF-v1",
+    "CodeHashes":  [
+                       {
+                           "Path":  "installer/ZhaoHuoInstaller.psm1",
+                           "Sha256":  "C93596D4B695B196A6BC1FB53EFD0E61D22EFF5C0206B30EF697F838A800036B"
+                       },
+                       {
+                           "Path":  "installer/AppearanceManager.ps1",
+                           "Sha256":  "68AC32DCF799A12AA05BA749F7BBB2B8B2C34A06F529EF4D57611A3CE12F78E7"
+                       },
+                       {
+                           "Path":  "installer/VariantSupport.ps1",
+                           "Sha256":  "E12665D920A4E9582EC88BCB92C679AA04AC558F61DC47E3960A9F4C99FAE89A"
+                       },
+                       {
+                           "Path":  "installer/CharacterCatalog.ps1",
+                           "Sha256":  "A424E13FD254258066333290397C606DB75122E8DE8223827ECAABF741ED294D"
+                       },
+                       {
+                           "Path":  "installer/CharacterState.ps1",
+                           "Sha256":  "EB09E9EF055D3B25668D22CEBF38696BE122F8C284172733A9D001AC587A17F4"
+                       },
+                       {
+                           "Path":  "installer/CharacterManager.ps1",
+                           "Sha256":  "F62691721CFD9758CB1C4D5049E47C67968364E49BCF5B44C9AEF8B3A21D7079"
+                       },
+                       {
+                           "Path":  "installer/CharacterTransactions.ps1",
+                           "Sha256":  "193E73AFB67C163BA365B4B331AE27EAC9C80A8E047F787C86BC7DADFB120A80"
+                       },
+                       {
+                           "Path":  "VariantCatalog.json",
+                           "Sha256":  "C0A1872468DC61796F606E994A7D472B8F3C730CD5893174066AF9D1A29792AE"
+                       },
+                       {
+                           "Path":  "Install.ps1",
+                           "Sha256":  "88E5E4CB6B4AB5B4A854F7741B27A24426D46C3B864F8512C38E475F14E7D77B"
+                       },
+                       {
+                           "Path":  "tests/Test-CharacterCatalog.ps1",
+                           "Sha256":  "D4506C71504C591F92F398060E762AD96F751777D290A4F7E70070608D558223"
+                       },
+                       {
+                           "Path":  "scripts/CharacterReleaseRules.ps1",
+                           "Sha256":  "18BD624F9C6BD4203E95F0D0AAF7ACF1350827CB3E8FDA008E26925D010EEC4C"
+                       },
+                       {
+                           "Path":  "scripts/artwork-patch-v2.2.1.json",
+                           "Sha256":  "422435B60C7AF3994A8744E4438CFD8859C14798CDDAEFAD68D48027AB8A6E23"
+                       }
+                   ],
+    "Scope":  "Read-only final production-data/API acceptance: 447 unchanged v2.2.1 PNGs, including fifteen previously approved female repairs, seven role layouts, readiness, shared pins and current/historical prompt bindings. Decoded-pixel evidence is checked against file hashes, not rerun here. The latest 64/74 synthetic suites are reused only for unchanged source; their tested Catalog hashes remain intact. No game files, installation or game execution are accessed."
+}

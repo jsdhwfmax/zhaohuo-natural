@@ -1,11 +1,11 @@
 ﻿#requires -Version 5.1
 # Frozen release inventories, separate from editable catalog readiness and hashes.
-$releaseVersion='2.2.3'
+$releaseVersion='2.2.4'
 $releaseRuntimeVersion='2.1.0'
 $releaseArtworkPatchPath='scripts/artwork-patch-v2.2.1.json'
 $releaseArtworkPatch=Get-Content -LiteralPath (Join-Path $PSScriptRoot 'artwork-patch-v2.2.1.json') -Raw -Encoding UTF8|ConvertFrom-Json
-$releaseGameBuildId='26073097'
-$releaseGameVersion='release_1.0.6000.5'
+$releaseGameBuildId='26237817'
+$releaseGameVersion='release_1.0.6001.0'
 $releaseRoleIds=@('player','tang-buyi','xiahou-lan','tang-moling','long-xiang','yu-xiaomei','tang-zheng')
 $releasePortraitCount=447;$releaseCustomCount=14;$releaseChoiceCount=21
 $releaseCounts=@{
