@@ -1,0 +1,88 @@
+{
+  "Passed": true,
+  "DateUtc": "2026-10-28T00:22:46.041365+00:00",
+  "TargetVersion": "2.2.4",
+  "SupportedBaseVersions": [
+    "2.2.1",
+    "2.2.2",
+    "2.2.3"
+  ],
+  "ActualGameRun": false,
+  "ActualGameInstall": false,
+  "GuiInteractionTested": false,
+  "Archive": {
+    "File": "ZhaoHuoPortraitManager-v2.2.4-small-update.zip",
+    "SHA256": "137868AD7D3EDA816A724529B10EAE3ED61EFAAD82F6885FC7D338E2C31164FE",
+    "Bytes": 665067,
+    "ArchiveFiles": 99,
+    "AllZipCRCValid": true,
+    "EveryArchivedByteMatchesTestedStage": true,
+    "ChecksumInventoryExact": true
+  },
+  "FrozenInputs": {
+    "UpdaterSHA256": "C464327F3440B88845349BD85CD78D7C4921371287A9945772C1589DDFC9F789",
+    "UpdateManifestSHA256": "23D992E29E2E937BE4E0D33A918FB18CA70DEEA14D5E115BD3EAA5CDBC1413AB",
+    "TargetReleaseManifestSHA256": "94EB067026E6DA5E74FDD9EBEBD00C51C52921C526CB63E9CE18B59BEE720F53",
+    "TargetSumsSHA256": "28AF8FE68498246FFF127ED07F3FDECE0C14E265C9B101F38B5094CF8B451C9C"
+  },
+  "Reconstruction": {
+    "TargetFiles": 1196,
+    "SuppliedPayloadFiles": 93,
+    "SuppliedPayloadBytes": 2666616,
+    "ReusedFiles": 1103,
+    "ReusedBytes": 790824453,
+    "RealCaseCount": 4,
+    "AllTargetFilesMatchOfficialRelease": true,
+    "AllSourcesUnchanged": true,
+    "ExtraPrivateFileNotPropagated": true,
+    "Report": "verification/package-updater-real-packages.json",
+    "ReportSHA256": "2005E7D1AAEF5B10E688BBC328744C2A4932203B9A27AD15DD6BC1005FB67338"
+  },
+  "FixtureValidation": {
+    "Report": "verification/package-updater-tests.json",
+    "ReportSHA256": "5244A39FDD838CB5C21E41AB4631CB7014647BEF8478BF627E6238763B0536EA",
+    "Assertions": 43,
+    "PowerShell": "5.1.26100.9711"
+  },
+  "BuildValidation": {
+    "WrongTargetManifestPinRejected": true,
+    "InvalidPinCreatedNoOutput": true,
+    "AllInputManifestEntriesVerifiedFromActualFiles": true
+  },
+  "ReadOnlyGameCheck": {
+    "Requested": true,
+    "BlockedByRunningGame": true,
+    "ExitCode": 1,
+    "FreshCompatibilityPass": false,
+    "ProtectedInstallationFilesChecked": 5,
+    "ProtectedInstallationFilesUnchanged": true,
+    "GameProcessStartedOrClosed": false
+  },
+  "UnchangedTarget": {
+    "Release": "https://github.com/jsdhwfmax/zhaohuo-natural/releases/tag/v2.2.4",
+    "FullArchiveSHA256": "A79E64611EFAAEBB82FC04CB3646C79BA8020997766210AEE332C67990728401",
+    "ReleaseCommit": "49e4e5e5260d7b97fa3a873926bf70462c7b3b2b",
+    "ExistingRuntimeEvidence": "verification/runtime-build26237817/compatibility-runtime.json",
+    "ExistingRuntimeEvidenceSHA256": "1314C4009795FAD04E0133DA876AC43DD812822181DA41ADB3E3EC06754517A6"
+  },
+  "CodeHashAlgorithm": "SHA256-UTF8-noBOM-LF-v1",
+  "CodeHashes": [
+    {
+      "Path": "scripts/Build-SmallUpdate.ps1",
+      "Sha256": "65CD332D490FF75EF56A249CC5620EB0D71DF2DAE2ECCAADD911210471668D89"
+    },
+    {
+      "Path": "updates/Update-Manager.ps1",
+      "Sha256": "32E4FB8FFD1A42AE35BEAE740FA0277774D10E325A3E4AC9D3BB561C27390823"
+    },
+    {
+      "Path": "updates/双击更新管理器.cmd",
+      "Sha256": "A89472E3407FB7C2E1F4353204A6CD80A3A55E21D5BF8D3F8B2F7A13E48A1630"
+    },
+    {
+      "Path": "updates/tests/Test-UpdateManager.ps1",
+      "Sha256": "5C975A74DA161702CACED085F6F32F9C4E6C7E063221F59061C4F191CA70BE45"
+    }
+  ],
+  "Scope": "The new offline updater was verified with isolated fixtures and four real package reconstructions. The generated 1196 files match the previously published v2.2.4 package exactly, so unchanged runtime and art reuse that release evidence. No new game launch or installation is claimed; an optional read-only check was blocked by the existing running-game guard. This is not an automatic online downloader or a guarantee for all future game updates."
+}

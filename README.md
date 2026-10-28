@@ -8,6 +8,8 @@
 
 **[下载最新版完整安装包](https://github.com/jsdhwfmax/zhaohuo-natural/releases/latest)** · [安装与切换教程](docs/形象管理器安装指南.md) · [常见问题](docs/角色管理器常见问题.md)
 
+**已经下载过 v2.2.1、v2.2.2 或 v2.2.3？** 保留着旧管理器的完整解压文件夹，就可以用 **[v2.2.4 小更新包（不到 1 MB）](https://github.com/jsdhwfmax/zhaohuo-natural/releases/download/v2.2.4/ZhaoHuoPortraitManager-v2.2.4-small-update.zip)**，不用再下载立绘。双击后选择旧文件夹，检查通过会在旁边生成新版，旧文件保留。详见[小包更新步骤](docs/小包更新.md)。首次使用或旧素材已删除，请下载完整包。
+
 当前完整包：`ZhaoHuoPortraitManager-v2.2.4-win-x64.zip`。请下载 Release 的这个附件；`Source code` 是源码归档，不是玩家安装包。以后分享上方的 **`releases/latest`** 链接，就能进入最新正式版。另有 [百度网盘分享文件夹](https://pan.baidu.com/s/1x2x7BX3lh0Rtwxb31IMobw?pwd=5ije)（提取码：5ije）；网盘由维护者手动同步，原分享链接不变。请核对文件名含 v2.2.4；未看到新版时先用 GitHub。
 
 **Steam 游戏更新到 build `26237817` 后，v2.2.3 及更早管理器可能提示 `globalgamemanagers.assets` 不兼容。v2.2.4 已补好适配，原有角色和外观保留。** 正常旧版安装不必先卸载，退出游戏后用新版检查即可；同款图片与插件不需要重复覆盖。

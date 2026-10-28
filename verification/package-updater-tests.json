@@ -1,0 +1,69 @@
+{
+    "Passed":  true,
+    "ActualGameRun":  false,
+    "RealGameFilesModified":  false,
+    "PowerShell":  "5.1.26100.9711",
+    "AssertionCount":  43,
+    "Checks":  [
+                   "Read-only check preserves source 2.2.1",
+                   "Exact reconstructed target inventory and bytes 2.2.1",
+                   "Original directory, extra notes and scripts remain untouched 2.2.1",
+                   "Repeated destination is never overwritten 2.2.1",
+                   "Repeated attempt preserves existing target 2.2.1",
+                   "Read-only check preserves source 2.2.2",
+                   "Exact reconstructed target inventory and bytes 2.2.2",
+                   "Original directory, extra notes and scripts remain untouched 2.2.2",
+                   "Repeated destination is never overwritten 2.2.2",
+                   "Repeated attempt preserves existing target 2.2.2",
+                   "Read-only check preserves source 2.2.3",
+                   "Exact reconstructed target inventory and bytes 2.2.3",
+                   "Original directory, extra notes and scripts remain untouched 2.2.3",
+                   "Repeated destination is never overwritten 2.2.3",
+                   "Repeated attempt preserves existing target 2.2.3",
+                   "Unsupported v2.2.0 gets complete-package guidance",
+                   "Already-current package creates no new directory",
+                   "Disagreeing old JSON versions are rejected",
+                   "Missing reused portrait is rejected before creating target",
+                   "Changed reused binary is rejected without execution",
+                   "Pinned update manifest tampering is rejected",
+                   "Changed payload is rejected",
+                   "Unsafe manifest path rejected: ../escape.txt",
+                   "Unsafe manifest path rejected: C:/escape.txt",
+                   "Unsafe manifest path rejected: notes.txt:stream",
+                   "Unsafe manifest path rejected: CON.txt",
+                   "Unsafe manifest path rejected: bad./name",
+                   "Unsafe manifest path rejected: two\\\\parts",
+                   "Duplicate manifest entries are rejected",
+                   "Target manifest fixed hash cannot disagree with inventory",
+                   "Destination inside old source is rejected",
+                   "Destination inside small package is rejected",
+                   "Game ancestor prevents writes",
+                   "Reused file through a junction is rejected",
+                   "Junction rejection does not touch its target",
+                   "Output ancestor junction is rejected",
+                   "Mid-copy failure is injected after verified writes",
+                   "Failure removes only its own new staging directory",
+                   "Failure cleanup preserves read-only attributes of the original source",
+                   "Concurrent target creation is refused at atomic publish",
+                   "Publish race preserves competing target and cleans only staging",
+                   "Windows PowerShell CLI CheckOnly returns success without writing target",
+                   "Windows PowerShell CLI failure returns a nonzero exit code"
+               ],
+    "DurationSeconds":  23.34,
+    "CodeHashAlgorithm":  "SHA256-UTF8-noBOM-LF-v1",
+    "CodeHashes":  [
+                       {
+                           "Path":  "updates/Update-Manager.ps1",
+                           "Sha256":  "32E4FB8FFD1A42AE35BEAE740FA0277774D10E325A3E4AC9D3BB561C27390823"
+                       },
+                       {
+                           "Path":  "updates/双击更新管理器.cmd",
+                           "Sha256":  "A89472E3407FB7C2E1F4353204A6CD80A3A55E21D5BF8D3F8B2F7A13E48A1630"
+                       },
+                       {
+                           "Path":  "updates/tests/Test-UpdateManager.ps1",
+                           "Sha256":  "5C975A74DA161702CACED085F6F32F9C4E6C7E063221F59061C4F191CA70BE45"
+                       }
+                   ],
+    "Scope":  "Isolated inert package fixtures under Windows PowerShell 5.1. No official game, real user installation, GUI interaction or network access. Source and target manifests are synthetic, with pinned hashes derived separately for each fixture. Actual published package reconstruction is a separate acceptance."
+}
