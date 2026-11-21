@@ -5,6 +5,7 @@ import json
 import os
 from pathlib import Path
 import tempfile
+from contextlib import nullcontext
 from zipfile import ZIP_DEFLATED, ZipFile
 
 
@@ -64,12 +65,25 @@ def frozen_bytes(name, data, expected):
     if digest(data) == expected:
         return data
     # Git checkouts on different platforms can apply different text endings.
-    if Path(name).suffix.lower() in {".ps1", ".psm1", ".cmd", ".md", ".py", ".json", ".cs", ".txt", ".tsv"}:
+    if name == "LICENSE" or Path(name).suffix.lower() in {".ps1", ".psm1", ".cmd", ".md", ".py", ".json", ".cs", ".txt", ".tsv"}:
         lf = data.replace(b"\r\n", b"\n")
         for candidate in (lf, lf.replace(b"\n", b"\r\n")):
             if digest(candidate) == expected:
                 return candidate
     raise ValueError(f"File differs from the verified v2.2.4 release: {name}")
+
+
+def package_bytes(name, original):
+    data = source_bytes(name)
+    if name in original and name not in CHANGED:
+        return frozen_bytes(name, data, original[name])
+    if name in VERSION_FILES:
+        old = frozen_bytes(name, data.replace(b"2.2.5", b"2.2.4"), original[name])
+        return old.replace(b"2.2.4", b"2.2.5")
+    if name.startswith("verification/"):
+        return data
+    lf = data.replace(b"\r\n", b"\n")
+    return lf.replace(b"\n", b"\r\n") if Path(name).suffix.lower() in {".ps1", ".psm1", ".cmd"} else lf
 
 
 def build(output, check_only):
@@ -97,7 +111,6 @@ def build(output, check_only):
             raise FileExistsError(archive)
     with tempfile.TemporaryDirectory(dir=output if not check_only else None) as tmp:
         tmpzip = Path(tmp) / "release.zip"
-        from contextlib import nullcontext
         with (nullcontext() if check_only else ZipFile(tmpzip, "x", ZIP_DEFLATED, compresslevel=6)) as zipped:
             def write(name, data):
                 if zipped is not None:
@@ -105,9 +118,7 @@ def build(output, check_only):
 
             entries = []
             for name in paths:
-                data = source_bytes(name)
-                if name in original and name not in CHANGED:
-                    data = frozen_bytes(name, data, original[name])
+                data = package_bytes(name, original)
                 entries.append({"Path": name, "SHA256": digest(data), "Bytes": len(data)})
                 write(name, data)
             manifest = {key: baseline[key] for key in (
@@ -116,7 +127,7 @@ def build(output, check_only):
                 "PortraitCount", "SharedPluginFiles", "KnownGameFingerprintGroups", "CompatibilityCheck",
             )}
             manifest.update({
-                "Version": VERSION, "Catalog": {"Path": "VariantCatalog.json", "SHA256": digest(source_bytes("VariantCatalog.json"))},
+                "Version": VERSION, "Catalog": {"Path": "VariantCatalog.json", "SHA256": digest(package_bytes("VariantCatalog.json", original))},
                 "ManagerHotfixValidation": {"SteamDiscovery": steam, "OfflineUpdater": updater},
                 "HistoricalValidation": {"Version": "2.2.4", "Manifest": BASE, "SHA256": BASE_SHA256,
                                          "Scope": "Unchanged portrait art, layouts, runtime plugin and compatibility baselines. Prior gameplay evidence was collected on v2.2.4."},
