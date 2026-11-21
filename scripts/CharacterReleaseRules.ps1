@@ -1,6 +1,6 @@
 ﻿#requires -Version 5.1
 # Frozen release inventories, separate from editable catalog readiness and hashes.
-$releaseVersion='2.2.4'
+$releaseVersion='2.2.5'
 $releaseRuntimeVersion='2.1.0'
 $releaseArtworkPatchPath='scripts/artwork-patch-v2.2.1.json'
 $releaseArtworkPatch=Get-Content -LiteralPath (Join-Path $PSScriptRoot 'artwork-patch-v2.2.1.json') -Raw -Encoding UTF8|ConvertFrom-Json

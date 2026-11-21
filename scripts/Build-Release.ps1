@@ -1,13 +1,26 @@
 ﻿#requires -Version 5.1
 [CmdletBinding()]
 param(
-    [ValidatePattern('^[0-9]+\.[0-9]+\.[0-9]+$')][string]$Version='2.2.4',
+    [ValidatePattern('^[0-9]+\.[0-9]+\.[0-9]+$')][string]$Version='2.2.5',
     [string]$OutputDirectory,
     [switch]$CheckOnly
 )
 $ErrorActionPreference='Stop'
 Set-StrictMode -Version 2.0
 $repo=[IO.Path]::GetFullPath((Join-Path $PSScriptRoot '..'))
+if($Version -eq '2.2.5'){
+    # Python is a release-building dependency only. The player-facing tools use Windows PowerShell 5.1.
+    $python=Get-Command python -CommandType Application -ErrorAction SilentlyContinue | Select-Object -First 1
+    if(-not $python){throw 'Building the maintainer package requires Python 3.11 or later on PATH.'}
+    & $python.Source -c 'import sys; sys.exit(sys.version_info < (3,11))'
+    if($LASTEXITCODE -ne 0){throw 'Building the maintainer package requires Python 3.11 or later.'}
+    if(-not $OutputDirectory){$OutputDirectory=Join-Path $repo 'dist'}
+    $builderArgs=@((Join-Path $PSScriptRoot 'build-manager-hotfix.py'),'--output',$OutputDirectory)
+    if($CheckOnly){$builderArgs+='--check-only'}
+    $result=& $python.Source @builderArgs
+    if($LASTEXITCODE -ne 0){throw 'Manager hotfix validation or packaging failed.'}
+    return ($result | ConvertFrom-Json)
+}
 $pluginRelative='BepInEx/plugins/ZhaoHuoNatural'
 . (Join-Path $PSScriptRoot 'CharacterReleaseRules.ps1')
 $knownFingerprints=[ordered]@{

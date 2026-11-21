@@ -24,7 +24,7 @@ function New-Case([string]$Name,[string]$Version='2.2.3'){
     $dir=Join-Path $root $Name;$base=Join-Path $dir '旧 管理器';$patch=Join-Path $dir '小 更新';$parent=Join-Path $dir '输出'
     foreach($p in @($base,$patch,$parent)){[IO.Directory]::CreateDirectory($p)|Out-Null}
     $target=[ordered]@{
-        'VariantCatalog.json'='{"PackageVersion":"2.2.4"}'
+        'VariantCatalog.json'='{"PackageVersion":"2.2.5"}'
         'Install.cmd'='@echo SCRIPT EXECUTED>"%~dp0executed.txt"'
         'installer/Gui.ps1'='Set-Content -LiteralPath (Join-Path $PSScriptRoot executed.txt) -Value executed; throw "Old script must never execute"'
         'Portraits/normal.png'='INERT PORTRAIT TEST BYTES'
@@ -44,15 +44,15 @@ function New-Case([string]$Name,[string]$Version='2.2.3'){
     Save (Join-Path $base ReleaseManifest.json) @{Version=$Version}
     Put (Join-Path $base '用户便签.txt') 'PRESERVE THIS EXTRA FILE'
     Put (Join-Path $base 'Install.ps1') 'throw "Unexpected script execution"'
-    $release=Join-Path $patch Payload/ReleaseManifest.json;Save $release @{Version='2.2.4';Files=$entries}
+    $release=Join-Path $patch Payload/ReleaseManifest.json;Save $release @{Version='2.2.5';Files=$entries}
     $all+=[pscustomobject]@{Path='ReleaseManifest.json';SHA256=(FixtureHash $release);Bytes=(Get-Item -LiteralPath $release).Length;Source='Payload'}
     $sums=Join-Path $patch Payload/SHA256SUMS.txt;Put $sums ((@($all|ForEach-Object{$_.SHA256+'  '+$_.Path})-join "`n")+"`n")
     $all+=[pscustomobject]@{Path='SHA256SUMS.txt';SHA256=(FixtureHash $sums);Bytes=(Get-Item -LiteralPath $sums).Length;Source='Payload'}
-    $manifest=[pscustomobject]@{SchemaVersion=1;TargetVersion='2.2.4';TargetFolderName='ZhaoHuoPortraitManager-v2.2.4-win-x64';TargetManifestSHA256=(FixtureHash $release);TargetSumsSHA256=(FixtureHash $sums);SupportedBaseVersions=@('2.2.1','2.2.2','2.2.3');Files=$all}
+    $manifest=[pscustomobject]@{SchemaVersion=1;TargetVersion='2.2.5';TargetFolderName='ZhaoHuoPortraitManager-v2.2.5-win-x64';TargetManifestSHA256=(FixtureHash $release);TargetSumsSHA256=(FixtureHash $sums);SupportedBaseVersions=@('2.2.1','2.2.2','2.2.3','2.2.4');Files=$all}
     $case=[pscustomobject]@{Dir=$dir;Base=$base;Patch=$patch;Parent=$parent;Output=(Join-Path $parent $manifest.TargetFolderName);Runner=(Join-Path $patch 'Update-Manager.ps1');Manifest=$manifest}
     Pin $case;return $case
 }
-foreach($version in @('2.2.1','2.2.2','2.2.3')){
+foreach($version in @('2.2.1','2.2.2','2.2.3','2.2.4')){
     $c=New-Case ('happy-'+$version) $version;. $c.Runner
     $before=Snapshot $c.Base;$patchBefore=Snapshot $c.Patch
     $checked=Invoke-UMUpdate $c.Base $c.Output -InspectOnly
@@ -67,7 +67,7 @@ foreach($version in @('2.2.1','2.2.2','2.2.3')){
 }
 $c=New-Case 'unsupported' '2.2.0';. $c.Runner
 Reject {Invoke-UMUpdate $c.Base $c.Output} '*仅支持*' 'Unsupported v2.2.0 gets complete-package guidance'
-$c=New-Case 'already' '2.2.4';. $c.Runner
+$c=New-Case 'already' '2.2.5';. $c.Runner
 Check ((Invoke-UMUpdate $c.Base $c.Output).Status-eq 'AlreadyCurrent'-and-not(Test-Path -LiteralPath $c.Output)) 'Already-current package creates no new directory'
 $c=New-Case 'version-disagreement';Put (Join-Path $c.Base ReleaseManifest.json) '{"Version":"2.2.1"}';. $c.Runner
 Reject {Invoke-UMUpdate $c.Base $c.Output} '*版本记录不一致*' 'Disagreeing old JSON versions are rejected'

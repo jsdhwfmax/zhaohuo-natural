@@ -659,6 +659,16 @@ function Invoke-ZHUninstallCore {
     Write-ZHLog $Log '卸载完成，已恢复安装前的受管文件状态。用户另加文件、存档和其他插件未删除。'
     Write-ZHLog $Log "备份、历史与修改文件保留在：$backupRoot"
 }
+function Get-ZHSteamDirectoryCandidate([string]$Path) {
+    # Registry, environment and VDF values are optional discovery hints. A bad
+    # hint must not hide other libraries or prevent the GUI from opening.
+    # Keep Get-ZHCanonical/Get-ZHLocations strict for explicitly selected paths.
+    if ([string]::IsNullOrWhiteSpace($Path)) { return }
+    try {
+        $canonical = Get-ZHCanonical $Path
+        if (Test-Path -LiteralPath $canonical -PathType Container -ErrorAction Stop) { return $canonical }
+    } catch { return }
+}
 function Get-ZhaoHuoSteamCandidates {
     [CmdletBinding()]
     param([string[]]$SteamRoots)
@@ -666,37 +676,45 @@ function Get-ZhaoHuoSteamCandidates {
     if ($SteamRoots) { $roots += $SteamRoots }
     else {
         foreach ($key in @('HKCU:\Software\Valve\Steam', 'HKLM:\SOFTWARE\WOW6432Node\Valve\Steam', 'HKLM:\SOFTWARE\Valve\Steam')) {
-            $properties = Get-ItemProperty -LiteralPath $key -ErrorAction SilentlyContinue
+            try { $properties = Get-ItemProperty -LiteralPath $key -ErrorAction Stop } catch { continue }
             if ($properties) {
                 foreach ($name in @('SteamPath', 'InstallPath')) { if ($properties.PSObject.Properties[$name]) { $roots += [string]$properties.$name } }
             }
         }
-        foreach ($programRoot in @(${env:ProgramFiles(x86)}, $env:ProgramFiles)) { if ($programRoot) { $roots += Join-Path $programRoot 'Steam' } }
+        foreach ($programRoot in @(${env:ProgramFiles(x86)}, $env:ProgramFiles)) {
+            $programDirectory = Get-ZHSteamDirectoryCandidate $programRoot
+            if ($programDirectory) { $roots += Join-Path $programDirectory 'Steam' }
+        }
     }
     $libraries = @{}
     foreach ($root in @($roots | Where-Object { $_ } | Select-Object -Unique)) {
-        if (-not (Test-Path -LiteralPath $root -PathType Container)) { continue }
-        $canonical = Get-ZHCanonical $root
+        $canonical = Get-ZHSteamDirectoryCandidate $root
+        if (-not $canonical) { continue }
         $libraries[$canonical] = $true
         $vdf = Join-Path $canonical 'steamapps\libraryfolders.vdf'
-        if (Test-Path -LiteralPath $vdf -PathType Leaf) {
-            $text = Get-Content -LiteralPath $vdf -Raw -Encoding UTF8
-            foreach ($match in [regex]::Matches($text, '"(?:path|[0-9]+)"\s+"([^"\r\n]+)"')) {
-                $candidate = $match.Groups[1].Value.Replace('\\', '\')
-                if ([IO.Path]::IsPathRooted($candidate) -and (Test-Path -LiteralPath $candidate -PathType Container)) { $libraries[(Get-ZHCanonical $candidate)] = $true }
-            }
+        try {
+            if (-not (Test-Path -LiteralPath $vdf -PathType Leaf -ErrorAction Stop)) { continue }
+            $text = Get-Content -LiteralPath $vdf -Raw -Encoding UTF8 -ErrorAction Stop
+        } catch { continue }
+        foreach ($match in [regex]::Matches([string]$text, '"(?:path|[0-9]+)"\s+"([^"\r\n]+)"')) {
+            $candidate = $match.Groups[1].Value.Replace('\\', '\')
+            try { if (-not [IO.Path]::IsPathRooted($candidate)) { continue } } catch { continue }
+            $libraryDirectory = Get-ZHSteamDirectoryCandidate $candidate
+            if ($libraryDirectory) { $libraries[$libraryDirectory] = $true }
         }
     }
     $found = @{}
     foreach ($library in $libraries.Keys) {
-        $common = Join-Path $library 'steamapps\common'
-        $installDir = 'LegendOfMortal'
-        $acf = Join-Path $library 'steamapps\appmanifest_1859910.acf'
-        if (Test-Path -LiteralPath $acf -PathType Leaf) {
-            if ((Get-Content -LiteralPath $acf -Raw -Encoding UTF8) -match '"installdir"\s+"([^"\r\n]+)"') { $installDir = $Matches[1] }
-        }
-        try { $candidate = Get-ZHChild $common $installDir } catch { continue }
-        if (Test-Path -LiteralPath (Join-Path $candidate 'Mortal.exe') -PathType Leaf) { $found[$candidate] = $true }
+        try {
+            $common = Join-Path $library 'steamapps\common'
+            $installDir = 'LegendOfMortal'
+            $acf = Join-Path $library 'steamapps\appmanifest_1859910.acf'
+            if (Test-Path -LiteralPath $acf -PathType Leaf -ErrorAction Stop) {
+                if ((Get-Content -LiteralPath $acf -Raw -Encoding UTF8 -ErrorAction Stop) -match '"installdir"\s+"([^"\r\n]+)"') { $installDir = $Matches[1] }
+            }
+            $candidate = Get-ZHChild $common $installDir
+            if (Test-Path -LiteralPath (Join-Path $candidate 'Mortal.exe') -PathType Leaf -ErrorAction Stop) { $found[$candidate] = $true }
+        } catch { continue }
     }
     return @($found.Keys | Sort-Object)
 }

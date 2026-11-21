@@ -80,7 +80,7 @@ function Read-UMPackage{
     if($script:UMManifestHash-notmatch '^[0-9A-Fa-f]{64}$'){throw '这是未打包的更新器源码，请下载正式小更新包后完整解压。'}
     $path=Get-UMChild $root 'UpdateManifest.json'
     $manifest=(Read-UMPinnedText $path $script:UMManifestHash)|ConvertFrom-Json
-    if($manifest.SchemaVersion-ne 1-or $manifest.TargetVersion-ne '2.2.4'-or $manifest.TargetFolderName-ne 'ZhaoHuoPortraitManager-v2.2.4-win-x64'-or (@($manifest.SupportedBaseVersions)-join ',')-cne '2.2.1,2.2.2,2.2.3'-or $manifest.TargetManifestSHA256-notmatch '^[0-9A-Fa-f]{64}$'-or $manifest.TargetSumsSHA256-notmatch '^[0-9A-Fa-f]{64}$'){throw '小更新包版本或协议不受支持。'}
+    if($manifest.SchemaVersion-ne 1-or $manifest.TargetVersion-ne '2.2.5'-or $manifest.TargetFolderName-ne 'ZhaoHuoPortraitManager-v2.2.5-win-x64'-or (@($manifest.SupportedBaseVersions)-join ',')-cne '2.2.1,2.2.2,2.2.3,2.2.4'-or $manifest.TargetManifestSHA256-notmatch '^[0-9A-Fa-f]{64}$'-or $manifest.TargetSumsSHA256-notmatch '^[0-9A-Fa-f]{64}$'){throw '小更新包版本或协议不受支持。'}
     $files=@($manifest.Files);$byPath=@{}
     foreach($entry in $files){
         Assert-UMEntry $entry
@@ -120,7 +120,7 @@ function Get-UMPlan([string]$Base,[string]$Output){
     $release=Read-UMJson (Get-UMChild $baseRoot 'ReleaseManifest.json')
     if($catalog.PackageVersion-ne $release.Version){throw '旧管理器版本记录不一致，请选择完整的正式安装包目录。'}
     if($catalog.PackageVersion-eq $package.Manifest.TargetVersion){return [pscustomobject]@{AlreadyCurrent=$true;Base=$baseRoot;Package=$package}}
-    if($catalog.PackageVersion-cnotin @($package.Manifest.SupportedBaseVersions)){throw '本小更新包仅支持 v2.2.1、v2.2.2、v2.2.3。v2.2.0 及更早版本请下载完整安装包。'}
+    if($catalog.PackageVersion-cnotin @($package.Manifest.SupportedBaseVersions)){throw '本小更新包仅支持 v2.2.1 至 v2.2.4。v2.2.0 及更早版本请下载完整安装包。'}
     if(-not $Output){$Output=Join-Path ([IO.Path]::GetDirectoryName($baseRoot)) $package.Manifest.TargetFolderName}
     $destination=Get-UMFullPath $Output;Assert-UMNoReparse $destination;Assert-UMOutsideGame $destination
     if([IO.Path]::GetFileName($destination)-cne $package.Manifest.TargetFolderName){throw ('目标文件夹名称必须为 '+$package.Manifest.TargetFolderName)}
@@ -179,7 +179,7 @@ function Remove-UMStage([string]$Stage,[string]$Parent,[string]$Token){
 }
 function Invoke-UMUpdate([string]$Base,[string]$Output,[switch]$InspectOnly){
     try{$plan=Get-UMPlan $Base $Output}finally{Write-Progress -Id 1 -Activity '小更新：核对旧素材' -Completed}
-    if($plan.AlreadyCurrent){return [pscustomobject]@{Status='AlreadyCurrent';Message='选择的目录已标记为 v2.2.4，无需本小更新包；若文件不完整，请重新下载完整包。';OutputDirectory=$plan.Base}}
+    if($plan.AlreadyCurrent){return [pscustomobject]@{Status='AlreadyCurrent';Message='选择的目录已标记为 v2.2.5，无需本小更新包；若文件不完整，请重新下载完整包。';OutputDirectory=$plan.Base}}
     if($InspectOnly){return [pscustomobject]@{Status='Checked';BaseVersion=$plan.BaseVersion;TargetVersion=$plan.Package.Manifest.TargetVersion;Files=$plan.Package.Files.Count;ReusedFiles=$plan.ReusedFiles;RequiredBytes=$plan.RequiredBytes;OutputDirectory=$plan.Destination;FilesWritten=0}}
     $token=[Guid]::NewGuid().ToString('N');$stage=Join-Path $plan.Parent ('.zhaohuo-update-'+$token);$created=$false
     try{
@@ -213,7 +213,7 @@ try{
     if($interactive){
         Add-Type -AssemblyName System.Windows.Forms
         $dialog=New-Object Windows.Forms.FolderBrowserDialog
-        $dialog.Description='选择 v2.2.1 / v2.2.2 / v2.2.3 的管理器解压目录（里面有 Install.cmd 和 VariantCatalog.json）'
+        $dialog.Description='选择 v2.2.1 至 v2.2.4 的管理器解压目录（里面有 Install.cmd 和 VariantCatalog.json）'
         $dialog.ShowNewFolderButton=$false
         try{if($dialog.ShowDialog()-ne [Windows.Forms.DialogResult]::OK){exit 0};$BasePackagePath=$dialog.SelectedPath}finally{$dialog.Dispose()}
     }
