@@ -18,8 +18,13 @@ $output=[IO.Path]::GetFullPath($OutputPath)
 if ($output -eq $game -or $output.StartsWith($game+'\',[StringComparison]::OrdinalIgnoreCase)) {throw 'Baseline output must be outside the game directory.'}
 if ((Test-Path -LiteralPath $output) -and -not $Force) {throw 'Output already exists; choose a new candidate path or explicitly use -Force.'}
 if (-not (Test-Path -LiteralPath (Split-Path -Parent $output) -PathType Container)) {throw 'Output parent directory must already exist.'}
-$referencePath=Get-ZHCPChild $PackageRoot $ReferenceBaseline
-if ((Get-ZHCPHash $referencePath) -ne $script:ZHCompatibilityBaselineHash) {throw 'Reference baseline is not the frozen prior baseline.'}
+# A reviewed baseline may extend the protected surface. Reproduction can use
+# that pinned snapshot, but arbitrary caller-provided reference files cannot
+# approve an unknown implementation change.
+$referenceSpecs=@(Get-ZHCompatibilityBaselineFiles | Where-Object {$_.RelativePath -ceq $ReferenceBaseline.Replace('\','/')})
+if($referenceSpecs.Count-ne1){throw 'Reference baseline is not in the frozen approved baseline set.'}
+$referencePath=Get-ZHCPChild $PackageRoot $referenceSpecs[0].RelativePath
+if ((Get-ZHCPHash $referencePath) -ne $referenceSpecs[0].Sha256) {throw 'Reference baseline does not match its frozen checksum.'}
 $reference=Get-Content -LiteralPath $referencePath -Raw -Encoding UTF8|ConvertFrom-Json
 $parent=[IO.Directory]::GetParent($game)
 $acf=Join-Path $parent.Parent.FullName 'appmanifest_1859910.acf'

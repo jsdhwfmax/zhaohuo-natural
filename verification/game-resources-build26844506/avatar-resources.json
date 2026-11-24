@@ -1,0 +1,491 @@
+{
+  "SchemaVersion": 1,
+  "Passed": true,
+  "Scope": "Read-only PlayerAvatarPanel serialized references in level2/level3 and both referenced sprite layouts/raw texture bytes. No scene or game launch.",
+  "SourceBuildId": "26844506",
+  "ComparisonSnapshotBuild": "26237817",
+  "ComparisonSnapshotBasis": "Private prior probe fixture independently verified against the full published build26237817 compatibility baseline before this audit.",
+  "ScriptDefinitionUnchanged": true,
+  "PreviousComponentCount": 5,
+  "CurrentComponents": [
+    {
+      "Scene": "level2",
+      "PathId": 33056,
+      "GameObjectName": "Avatar (2)",
+      "SerializedLength": 80,
+      "Sprites": [
+        {
+          "Field": "_normal",
+          "File": "sharedassets2.assets",
+          "PathId": 1038,
+          "SpriteName": "normal",
+          "Rect": {
+            "x": 0.0,
+            "y": 0.0,
+            "width": 1060.0,
+            "height": 1700.0
+          },
+          "Pivot": {
+            "x": 0.5,
+            "y": 0.5
+          },
+          "PixelsPerUnit": 100.0,
+          "Offset": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "TextureRect": {
+            "x": 124.0146713256836,
+            "y": 0.0,
+            "width": 723.9092407226562,
+            "height": 1279.923828125
+          },
+          "TextureRectOffset": {
+            "x": 124.0146713256836,
+            "y": 0.0
+          },
+          "TextureSize": [
+            1060,
+            1700
+          ],
+          "AlphaBoundsGT16": [
+            193,
+            427,
+            845,
+            1700
+          ],
+          "RGBA_SHA256": "F49ED022E53F08D5DDBBF462767F424262DF0F205C451EA39A1605581DD44CC9"
+        },
+        {
+          "Field": "_normal2",
+          "File": "sharedassets2.assets",
+          "PathId": 888,
+          "SpriteName": "normal",
+          "Rect": {
+            "x": 0.0,
+            "y": 0.0,
+            "width": 1060.0,
+            "height": 1700.0
+          },
+          "Pivot": {
+            "x": 0.5,
+            "y": 0.5
+          },
+          "PixelsPerUnit": 100.0,
+          "Offset": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "TextureRect": {
+            "x": 124.0146713256836,
+            "y": 0.0,
+            "width": 723.9092407226562,
+            "height": 1279.923828125
+          },
+          "TextureRectOffset": {
+            "x": 124.0146713256836,
+            "y": 0.0
+          },
+          "TextureSize": [
+            1060,
+            1700
+          ],
+          "AlphaBoundsGT16": [
+            190,
+            427,
+            845,
+            1700
+          ],
+          "RGBA_SHA256": "7565637433EFE1295227D1D1435E79352F233FC7CAD41036A7098FFAA3FBE41E"
+        }
+      ],
+      "LayoutAndPixelsMatchPriorVerifiedSnapshot": true
+    },
+    {
+      "Scene": "level2",
+      "PathId": 33262,
+      "GameObjectName": "Avatar (1)",
+      "SerializedLength": 80,
+      "Sprites": [
+        {
+          "Field": "_normal",
+          "File": "sharedassets2.assets",
+          "PathId": 1038,
+          "SpriteName": "normal",
+          "Rect": {
+            "x": 0.0,
+            "y": 0.0,
+            "width": 1060.0,
+            "height": 1700.0
+          },
+          "Pivot": {
+            "x": 0.5,
+            "y": 0.5
+          },
+          "PixelsPerUnit": 100.0,
+          "Offset": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "TextureRect": {
+            "x": 124.0146713256836,
+            "y": 0.0,
+            "width": 723.9092407226562,
+            "height": 1279.923828125
+          },
+          "TextureRectOffset": {
+            "x": 124.0146713256836,
+            "y": 0.0
+          },
+          "TextureSize": [
+            1060,
+            1700
+          ],
+          "AlphaBoundsGT16": [
+            193,
+            427,
+            845,
+            1700
+          ],
+          "RGBA_SHA256": "F49ED022E53F08D5DDBBF462767F424262DF0F205C451EA39A1605581DD44CC9"
+        },
+        {
+          "Field": "_normal2",
+          "File": "sharedassets2.assets",
+          "PathId": 888,
+          "SpriteName": "normal",
+          "Rect": {
+            "x": 0.0,
+            "y": 0.0,
+            "width": 1060.0,
+            "height": 1700.0
+          },
+          "Pivot": {
+            "x": 0.5,
+            "y": 0.5
+          },
+          "PixelsPerUnit": 100.0,
+          "Offset": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "TextureRect": {
+            "x": 124.0146713256836,
+            "y": 0.0,
+            "width": 723.9092407226562,
+            "height": 1279.923828125
+          },
+          "TextureRectOffset": {
+            "x": 124.0146713256836,
+            "y": 0.0
+          },
+          "TextureSize": [
+            1060,
+            1700
+          ],
+          "AlphaBoundsGT16": [
+            190,
+            427,
+            845,
+            1700
+          ],
+          "RGBA_SHA256": "7565637433EFE1295227D1D1435E79352F233FC7CAD41036A7098FFAA3FBE41E"
+        }
+      ],
+      "LayoutAndPixelsMatchPriorVerifiedSnapshot": true
+    },
+    {
+      "Scene": "level3",
+      "PathId": 8065,
+      "GameObjectName": "Avatar",
+      "SerializedLength": 80,
+      "Sprites": [
+        {
+          "Field": "_normal",
+          "File": "sharedassets2.assets",
+          "PathId": 1038,
+          "SpriteName": "normal",
+          "Rect": {
+            "x": 0.0,
+            "y": 0.0,
+            "width": 1060.0,
+            "height": 1700.0
+          },
+          "Pivot": {
+            "x": 0.5,
+            "y": 0.5
+          },
+          "PixelsPerUnit": 100.0,
+          "Offset": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "TextureRect": {
+            "x": 124.0146713256836,
+            "y": 0.0,
+            "width": 723.9092407226562,
+            "height": 1279.923828125
+          },
+          "TextureRectOffset": {
+            "x": 124.0146713256836,
+            "y": 0.0
+          },
+          "TextureSize": [
+            1060,
+            1700
+          ],
+          "AlphaBoundsGT16": [
+            193,
+            427,
+            845,
+            1700
+          ],
+          "RGBA_SHA256": "F49ED022E53F08D5DDBBF462767F424262DF0F205C451EA39A1605581DD44CC9"
+        },
+        {
+          "Field": "_normal2",
+          "File": "sharedassets2.assets",
+          "PathId": 888,
+          "SpriteName": "normal",
+          "Rect": {
+            "x": 0.0,
+            "y": 0.0,
+            "width": 1060.0,
+            "height": 1700.0
+          },
+          "Pivot": {
+            "x": 0.5,
+            "y": 0.5
+          },
+          "PixelsPerUnit": 100.0,
+          "Offset": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "TextureRect": {
+            "x": 124.0146713256836,
+            "y": 0.0,
+            "width": 723.9092407226562,
+            "height": 1279.923828125
+          },
+          "TextureRectOffset": {
+            "x": 124.0146713256836,
+            "y": 0.0
+          },
+          "TextureSize": [
+            1060,
+            1700
+          ],
+          "AlphaBoundsGT16": [
+            190,
+            427,
+            845,
+            1700
+          ],
+          "RGBA_SHA256": "7565637433EFE1295227D1D1435E79352F233FC7CAD41036A7098FFAA3FBE41E"
+        }
+      ],
+      "LayoutAndPixelsMatchPriorVerifiedSnapshot": true
+    },
+    {
+      "Scene": "level3",
+      "PathId": 11709,
+      "GameObjectName": "Avatar (2)",
+      "SerializedLength": 80,
+      "Sprites": [
+        {
+          "Field": "_normal",
+          "File": "sharedassets2.assets",
+          "PathId": 1038,
+          "SpriteName": "normal",
+          "Rect": {
+            "x": 0.0,
+            "y": 0.0,
+            "width": 1060.0,
+            "height": 1700.0
+          },
+          "Pivot": {
+            "x": 0.5,
+            "y": 0.5
+          },
+          "PixelsPerUnit": 100.0,
+          "Offset": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "TextureRect": {
+            "x": 124.0146713256836,
+            "y": 0.0,
+            "width": 723.9092407226562,
+            "height": 1279.923828125
+          },
+          "TextureRectOffset": {
+            "x": 124.0146713256836,
+            "y": 0.0
+          },
+          "TextureSize": [
+            1060,
+            1700
+          ],
+          "AlphaBoundsGT16": [
+            193,
+            427,
+            845,
+            1700
+          ],
+          "RGBA_SHA256": "F49ED022E53F08D5DDBBF462767F424262DF0F205C451EA39A1605581DD44CC9"
+        },
+        {
+          "Field": "_normal2",
+          "File": "sharedassets2.assets",
+          "PathId": 888,
+          "SpriteName": "normal",
+          "Rect": {
+            "x": 0.0,
+            "y": 0.0,
+            "width": 1060.0,
+            "height": 1700.0
+          },
+          "Pivot": {
+            "x": 0.5,
+            "y": 0.5
+          },
+          "PixelsPerUnit": 100.0,
+          "Offset": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "TextureRect": {
+            "x": 124.0146713256836,
+            "y": 0.0,
+            "width": 723.9092407226562,
+            "height": 1279.923828125
+          },
+          "TextureRectOffset": {
+            "x": 124.0146713256836,
+            "y": 0.0
+          },
+          "TextureSize": [
+            1060,
+            1700
+          ],
+          "AlphaBoundsGT16": [
+            190,
+            427,
+            845,
+            1700
+          ],
+          "RGBA_SHA256": "7565637433EFE1295227D1D1435E79352F233FC7CAD41036A7098FFAA3FBE41E"
+        }
+      ],
+      "LayoutAndPixelsMatchPriorVerifiedSnapshot": true
+    },
+    {
+      "Scene": "level3",
+      "PathId": 11778,
+      "GameObjectName": "Avatar (1)",
+      "SerializedLength": 80,
+      "Sprites": [
+        {
+          "Field": "_normal",
+          "File": "sharedassets2.assets",
+          "PathId": 1038,
+          "SpriteName": "normal",
+          "Rect": {
+            "x": 0.0,
+            "y": 0.0,
+            "width": 1060.0,
+            "height": 1700.0
+          },
+          "Pivot": {
+            "x": 0.5,
+            "y": 0.5
+          },
+          "PixelsPerUnit": 100.0,
+          "Offset": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "TextureRect": {
+            "x": 124.0146713256836,
+            "y": 0.0,
+            "width": 723.9092407226562,
+            "height": 1279.923828125
+          },
+          "TextureRectOffset": {
+            "x": 124.0146713256836,
+            "y": 0.0
+          },
+          "TextureSize": [
+            1060,
+            1700
+          ],
+          "AlphaBoundsGT16": [
+            193,
+            427,
+            845,
+            1700
+          ],
+          "RGBA_SHA256": "F49ED022E53F08D5DDBBF462767F424262DF0F205C451EA39A1605581DD44CC9"
+        },
+        {
+          "Field": "_normal2",
+          "File": "sharedassets2.assets",
+          "PathId": 888,
+          "SpriteName": "normal",
+          "Rect": {
+            "x": 0.0,
+            "y": 0.0,
+            "width": 1060.0,
+            "height": 1700.0
+          },
+          "Pivot": {
+            "x": 0.5,
+            "y": 0.5
+          },
+          "PixelsPerUnit": 100.0,
+          "Offset": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "TextureRect": {
+            "x": 124.0146713256836,
+            "y": 0.0,
+            "width": 723.9092407226562,
+            "height": 1279.923828125
+          },
+          "TextureRectOffset": {
+            "x": 124.0146713256836,
+            "y": 0.0
+          },
+          "TextureSize": [
+            1060,
+            1700
+          ],
+          "AlphaBoundsGT16": [
+            190,
+            427,
+            845,
+            1700
+          ],
+          "RGBA_SHA256": "7565637433EFE1295227D1D1435E79352F233FC7CAD41036A7098FFAA3FBE41E"
+        }
+      ],
+      "LayoutAndPixelsMatchPriorVerifiedSnapshot": true
+    }
+  ],
+  "CurrentInputSHA256": {
+    "globalgamemanagers.assets": "E8DF7E0E3900C1794312361C8A962BAD6C864D54806D1798532D01083FB75A37",
+    "sharedassets2.assets": "4C73BC6DC7A5306273AC5FB873B81D5335869AFFEFAA8D16C46C5D3677E55260",
+    "sharedassets2.assets.resS": "94F7C54C765B2D541083DC84CE5E9422EA17BA05A34C74DD62007FF0EB592A34",
+    "level2": "8BE17EBC0130EFB65C547184596AB5D5B8A6CEB8924BCAE6EBC3BF8990554F69",
+    "level3": "BCFC8AB4E3597C137CE80C4068A30CEEB38AA1ADE26578F61E66B97D0AEF9B0C"
+  },
+  "InputFilesUnchangedDuringInspection": true,
+  "OriginalGameModified": false,
+  "ActualGameRun": false,
+  "Limitations": [
+    "Sprite references/layout/raw textures only; other UI behavior is outside this audit.",
+    "The comparison snapshot is build26237817 and all 395 fixed files were independently verified against its published baseline."
+  ]
+}

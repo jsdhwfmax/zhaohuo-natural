@@ -1,14 +1,14 @@
 ﻿#requires -Version 5.1
 [CmdletBinding()]
 param(
-    [ValidatePattern('^[0-9]+\.[0-9]+\.[0-9]+$')][string]$Version='2.2.5',
+    [ValidatePattern('^[0-9]+\.[0-9]+\.[0-9]+$')][string]$Version='2.2.6',
     [string]$OutputDirectory,
     [switch]$CheckOnly
 )
 $ErrorActionPreference='Stop'
 Set-StrictMode -Version 2.0
 $repo=[IO.Path]::GetFullPath((Join-Path $PSScriptRoot '..'))
-if($Version -eq '2.2.5'){
+if($Version -eq '2.2.6'){
     # Python is a release-building dependency only. The player-facing tools use Windows PowerShell 5.1.
     $python=Get-Command python -CommandType Application -ErrorAction SilentlyContinue | Select-Object -First 1
     if(-not $python){throw 'Building the maintainer package requires Python 3.11 or later on PATH.'}

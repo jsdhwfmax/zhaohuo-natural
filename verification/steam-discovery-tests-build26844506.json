@@ -1,0 +1,44 @@
+{
+    "Passed":  true,
+    "TestsPassed":  24,
+    "PowerShellVersion":  "5.1.26100.9818",
+    "CodeHashAlgorithm":  "SHA256-UTF8-noBOM-LF-v1",
+    "CodeHashes":  [
+                       {
+                           "Path":  "installer/ZhaoHuoInstaller.psm1",
+                           "Sha256":  "F9890C2EFF7C80F6F8EDCA97F0DBC7F1E733AC03F802499090A427DEC95D9783"
+                       },
+                       {
+                           "Path":  "tests/Test-SteamDiscovery.ps1",
+                           "Sha256":  "D93B537D1C398B2EAA5A35E935A70A061EAF40ADD3177FC25F7ED873CB48ED02"
+                       }
+                   ],
+    "Scope":  "Isolated Steam discovery fixtures and explicit-path rejection; no actual registry, game installation, or game execution",
+    "DurationSeconds":  0.57,
+    "Assertions":  [
+                       "Bad root is isolated: pipe",
+                       "Bad root is isolated: quote",
+                       "Bad root is isolated: NUL",
+                       "Bad root is isolated: newline",
+                       "Bad root is isolated: invalid colon",
+                       "Bad root is isolated: whitespace",
+                       "Bad root is isolated: missing directory",
+                       "Null and empty roots do not suppress valid candidates",
+                       "All malformed roots return no candidates",
+                       "Canonical duplicates return one literal Unicode/bracket path",
+                       "Modern VDF keeps valid library after malformed and relative entries",
+                       "Legacy VDF keeps valid library before an embedded NUL entry",
+                       "Unreadable optional VDF preserves its root and other roots",
+                       "Manifest custom Unicode installation directory remains supported",
+                       "Unsafe manifest path is skipped without suppressing another library",
+                       "Illegal manifest directory is skipped without suppressing another library",
+                       "Unreadable manifest does not prevent other library discovery",
+                       "Bad registry and environment candidates preserve a valid registry installation",
+                       "Valid Program Files fallback survives corrupt registry values",
+                       "Explicit valid game path is unchanged",
+                       "Explicit malformed game path is still rejected",
+                       "Containment checks still reject traversal",
+                       "Tested source unchanged: installer/ZhaoHuoInstaller.psm1",
+                       "Tested source unchanged: tests/Test-SteamDiscovery.ps1"
+                   ]
+}

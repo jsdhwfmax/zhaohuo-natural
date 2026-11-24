@@ -85,6 +85,11 @@ if (-not @($baseline.CoreSurface.Methods | Where-Object {$_.Name -eq 'T Mortal.C
 Rewrite-Core {param($module) Add-Nop $module 'Mortal.Core.AssetReferenceCache`1' 'LoadSync'}
 Assert-Probe 'Changed transitive asset loader helper rejected' $false
 Reset-Core
+if(@($baseline.CoreSurface.Methods | Where-Object {$_.Name -ceq 'System.Int32 Mortal.Core.PlayerTalentData::get_MaxLevel()'}).Count){
+    Rewrite-Core {param($module) Add-Nop $module 'Mortal.Core.PlayerTalentData' 'get_MaxLevel'}
+    Assert-Probe 'Changed newly reviewed property getter rejected' $false
+    Reset-Core
+}
 Rewrite-Core {
     param($module)
     $type=@($module.Types | Where-Object {$_.FullName -eq 'Mortal.Core.PlayerAvatarPanel'})[0]
@@ -156,14 +161,25 @@ if($GeneratorPowerShell){
     # consumer regressions above still run entirely in this PowerShell process.
     $generatorVersion=((& $GeneratorPowerShell -NoProfile -Command '$PSVersionTable.PSVersion.ToString()')|Out-String).Trim()
     if($LASTEXITCODE-ne 0){throw 'Could not identify the explicit baseline generator engine'}
-    & $GeneratorPowerShell -NoProfile -ExecutionPolicy Bypass -File (Join-Path $PackageRoot 'scripts/Generate-CompatibilityBaseline.ps1') -GamePath $GamePath -BuildId $baseline.CapturedFromBuildId -OutputPath $generatedPath -PackageRoot $PackageRoot | Out-Host
+    & $GeneratorPowerShell -NoProfile -ExecutionPolicy Bypass -File (Join-Path $PackageRoot 'scripts/Generate-CompatibilityBaseline.ps1') -GamePath $GamePath -BuildId $baseline.CapturedFromBuildId -OutputPath $generatedPath -PackageRoot $PackageRoot -ReferenceBaseline $initial.MatchedBaselineFile | Out-Host
     if($LASTEXITCODE-ne 0){throw 'Explicit-engine baseline generation failed'}
 }else{
-    $null=& (Join-Path $PackageRoot 'scripts/Generate-CompatibilityBaseline.ps1') -GamePath $GamePath -BuildId $baseline.CapturedFromBuildId -OutputPath $generatedPath -PackageRoot $PackageRoot
+    $null=& (Join-Path $PackageRoot 'scripts/Generate-CompatibilityBaseline.ps1') -GamePath $GamePath -BuildId $baseline.CapturedFromBuildId -OutputPath $generatedPath -PackageRoot $PackageRoot -ReferenceBaseline $initial.MatchedBaselineFile
 }
 if((Get-ZHCPHash $generatedPath) -ne (Get-ZHCPHash (Join-Path $PackageRoot $initial.MatchedBaselineFile))){throw 'Baseline generator did not reproduce the frozen current snapshot'}
 $generated=Get-Content -LiteralPath $generatedPath -Raw -Encoding UTF8|ConvertFrom-Json
 $results.Add([pscustomobject]@{Test='Baseline generator reproduces frozen bytes in the original generation engine';Passed=$true;ActualGameRun=$false;GeneratorPowerShellVersion=$generatorVersion;GeneratedSha256=(Get-ZHCPHash $generatedPath);FixedFileCount=@($generated.FixedFiles).Count;Methods=@($generated.CoreSurface.Methods).Count;Types=@($generated.CoreSurface.Types).Count;GameMemberReferenceCount=$generated.GameMemberReferenceCount})
+$rejected=$false
+try{$null=& (Join-Path $PackageRoot 'scripts/Generate-CompatibilityBaseline.ps1') -GamePath $GamePath -BuildId $baseline.CapturedFromBuildId -OutputPath (Join-Path $work 'unapproved-baseline.json') -PackageRoot $PackageRoot -ReferenceBaseline 'caller-supplied.json'}catch{$rejected=$_.Exception.Message-eq'Reference baseline is not in the frozen approved baseline set.'}
+if(-not$rejected){throw 'Generator accepted an unapproved reference path'}
+$results.Add([pscustomobject]@{Test='Baseline generator rejects unapproved reference paths';Passed=$true})
+Copy-ToFixture $PackageRoot $fixturePackage $initial.MatchedBaselineFile
+Copy-ToFixture $PackageRoot $fixturePackage 'installer/CompatibilityProbe.ps1'
+[IO.File]::AppendAllText((Join-Path $fixturePackage $initial.MatchedBaselineFile),' ')
+$rejected=$false
+try{$null=& (Join-Path $PackageRoot 'scripts/Generate-CompatibilityBaseline.ps1') -GamePath $GamePath -BuildId $baseline.CapturedFromBuildId -OutputPath (Join-Path $work 'tampered-reference.json') -PackageRoot $fixturePackage -ReferenceBaseline $initial.MatchedBaselineFile}catch{$rejected=$_.Exception.Message-eq'Reference baseline does not match its frozen checksum.'}
+if(-not$rejected){throw 'Generator accepted a modified approved reference'}
+$results.Add([pscustomobject]@{Test='Baseline generator rejects modified approved references';Passed=$true})
 $baselineRecords=@(foreach($spec in (Get-ZHCompatibilityBaselineFiles)){$b=Get-Content -LiteralPath (Join-Path $PackageRoot $spec.RelativePath) -Raw -Encoding UTF8|ConvertFrom-Json;[pscustomobject]@{Path=$spec.RelativePath;Sha256=$spec.Sha256;BuildIds=@($b.BaselineBuildIds);FixedFileCount=@($b.FixedFiles).Count;GameMemberReferenceCount=$b.GameMemberReferenceCount}})
 $codePaths=@('installer/CompatibilityProbe.ps1','installer/ZhaoHuoInstaller.psm1')+@(Get-ZHCompatibilityBaselineFiles|ForEach-Object RelativePath)+@('scripts/Generate-CompatibilityBaseline.ps1','tests/Test-CompatibilityProbe.ps1','Source/Plugin.cs','Source/CharacterPolicy.cs','Source/CharacterSupport.cs','Source/build.ps1')
 $codeHashes=@(foreach($relative in $codePaths){$text=[IO.File]::ReadAllText((Join-Path $PackageRoot $relative)).TrimStart([char]0xFEFF).Replace("`r`n","`n");[pscustomobject]@{Path=$relative;Sha256=(Get-ZHCPTextHash $text)}})
